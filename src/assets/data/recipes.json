@@ -1,0 +1,648 @@
+[
+  {
+    "name": "Advanced Baking Advanced Upgrade",
+    "levelReq": 7,
+    "labor": 10000,
+    "skill": "Advanced Baking",
+    "products": [
+      {
+        "name": "Advanced Baking Advanced Upgrade"
+      }
+    ],
+    "ingredients": [
+      {
+        "name": "Advanced Upgrade 4",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Bearclaw",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": [
+      {
+        "name": "Bearclaw"
+      }
+    ],
+    "ingredients": [
+      {
+        "name": "Pastry Dough",
+        "amount": 1
+      },
+      {
+        "name": "Sugar",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "Bread",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": [
+      {
+        "name": "Bread"
+      }
+    ],
+    "ingredients": [
+      {
+        "name": "Leavened Dough",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Camas Bread",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": [
+      {
+        "name": "Camas Bread"
+      }
+    ],
+    "ingredients": [
+      {
+        "name": "Leavened Dough",
+        "amount": 1
+      },
+      {
+        "name": "Camas Mash",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Elk Wellington",
+    "levelReq": 3,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": [
+      {
+        "name": "Elk Wellington"
+      }
+    ],
+    "ingredients": [
+      {
+        "name": "Leavened Dough",
+        "amount": 2
+      },
+      {
+        "name": "Prime Cut",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Fruit Tart",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": "Fruit Tart",
+    "ingredients": [
+      {
+        "name": "Pastry Dough",
+        "amount": 1
+      },
+      {
+        "name": "Fruit",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "Leavened Dough",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": "Leavened Dough",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": 4
+      },
+      {
+        "name": "Yeast",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Macaroons",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": "Macaroon",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": 4
+      },
+      {
+        "name": "Simple Syrup",
+        "amount": 1
+      },
+      {
+        "name": "Huckleberry Extract",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Pastry Dough",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": "Pastry Dough",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": 2
+      },
+      {
+        "name": "Yeast",
+        "amount": 1
+      },
+      {
+        "name": "Fat",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Pirozhok",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": "Pirozhok",
+    "ingredients": [
+      {
+        "name": "Pastry Dough",
+        "amount": 1
+      },
+      {
+        "name": "Prepared Meat",
+        "amount": 2
+      },
+      {
+        "name": "Fungi",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Stuffed Turkey",
+    "levelReq": 4,
+    "labor": 20,
+    "skill": "Advanced Baking",
+    "products": "Stuffed Turkey",
+    "ingredients": [
+      {
+        "name": "Prime Cut",
+        "amount": 4
+      },
+      {
+        "name": "Bread",
+        "amount": 1
+      },
+      {
+        "name": "Vegetable Medley",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Advanced Cooking Advanced Upgrade",
+    "levelReq": 7,
+    "labor": 10000,
+    "skill": "Advanced Cooking",
+    "products": "Advanced Cooking Advanced Upgrade",
+    "ingredients": [
+      {
+        "name": "Advanced Upgrade 4",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Bear S U P R E M E",
+    "levelReq": 3,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "products": "Bear S U P R E M E",
+    "ingredients": [
+      {
+        "name": "Prime Cut",
+        "amount": 4
+      },
+      {
+        "name": "Vegetable Medley",
+        "amount": 2
+      },
+      {
+        "name": "Meat Stock",
+        "amount": 2
+      },
+      {
+        "name": "Infused Oil",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Boiled Rice",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "products": "Boiled Rice",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "name": "Boiled Sausage",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "products": "Boiled Sausage",
+    "ingredients": [
+      {
+        "name": "Raw Sausage",
+        "amount": 4
+      },
+      {
+        "name": "Meat Stock",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "Corn Fritters",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "products": "Corn Fritters",
+    "ingredients": [
+      {
+        "name": "Cornmeal",
+        "amount": 6
+      },
+      {
+        "name": "Corn",
+        "amount": 4
+      },
+      {
+        "name": "Fat",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "Crimson Salad",
+    "levelReq": 3,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "products": "Crimson Salad",
+    "ingredients": [
+      {
+        "name": "Basic Salad",
+        "amount": 2
+      },
+      {
+        "name": "Infused Oil",
+        "amount": 2
+      },
+      {
+        "name": "Charred Beet",
+        "amount": 4
+      },
+      {
+        "name": "Tomato",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "Culinary Research Paper Modern",
+    "levelReq": 2,
+    "labor": 1000,
+    "skill": "Advanced Cooking",
+    "products": "Culinary Research Paper Modern",
+    "ingredients": [
+      {
+        "name": "Boiled Sausage",
+        "amount": 10
+      },
+      {
+        "name": "Bread",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "name": "Elk Taco",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Scrap Meat",
+        "amount": 10
+      },
+      {
+        "name": "Tortilla",
+        "amount": 2
+      },
+      {
+        "name": "Wild Mix",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Fried Hare Haunches",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Prepared Meat",
+        "amount": 4
+      },
+      {
+        "name": "Flour",
+        "amount": 8
+      },
+      {
+        "name": "Oil",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "Huckleberry Extract",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Huckleberries",
+        "amount": 20
+      }
+    ]
+  },
+  {
+    "name": "Infused Oil",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "amount": 2
+      },
+      {
+        "name": "Huckleberry Extract",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Pineapple Friend Rice",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Charred Pineapple",
+        "amount": 5
+      },
+      {
+        "name": "Boiled Rice",
+        "amount": 5
+      },
+      {
+        "name": "Scrap Meat",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "name": "Refine Tallow",
+    "levelReq": 1,
+    "labor": 30,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Tallow",
+        "amount": 18
+      }
+    ]
+  },
+  {
+    "name": "Seared Meat",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Prime Cut",
+        "amount": 2
+      },
+      {
+        "name": "Infused Oil",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Simple Syrup",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "name": "Sweet Salad",
+    "levelReq": 3,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Basic Salad",
+        "amount": 2
+      },
+      {
+        "name": "Fruit Salad",
+        "amount": 2
+      },
+      {
+        "name": "Simple Syrup",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "Tortilla",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Cornmeal",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Wild Mix",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Advanced Cooking",
+    "ingredients": [
+      {
+        "name": "Basic Salad",
+        "amount": 2
+      },
+      {
+        "name": "Huckleberry Extract",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Bannock",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Wheat",
+        "amount": 3
+      },
+      {
+        "name": "Fat",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Beet Campfire Salad",
+    "levelReq": 1,
+    "labor": 20,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Beet Green",
+        "amount": 4
+      },
+      {
+        "name": "Beet",
+        "amount": 2
+      },
+      {
+        "name": "Fruit",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "Boiled Grain",
+    "levelReq": 0,
+    "labor": 20,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Grain",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Campfire Cooking Basic Upgrade",
+    "levelReq": 7,
+    "labor": 5000,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Basic Upgrade 4",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Campfire Roast",
+    "levelReq": 2,
+    "labor": 20,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Raw Roast",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Charred Agave",
+    "levelReq": 0,
+    "labor": 20,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Agave Leaf",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Charred Beans",
+    "levelReq": 0,
+    "labor": 20,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Bean",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Charred Beet",
+    "levelReq": 0,
+    "labor": 20,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Beet",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Culinary Research Paper Basic",
+    "levelReq": 1,
+    "labor": 50,
+    "skill": "Campfire Cooking",
+    "ingredients": [
+      {
+        "name": "Fried Vegetable",
+        "amount": 3
+      },
+      {
+        "name": "Campfire Salad",
+        "amount": 5
+      }
+    ]
+  }
+]

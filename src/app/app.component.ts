@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {SkillService} from './data/skill.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'EcoCraftingTool';
+  skills = this.skillService.getSkills();
+
+  constructor(private skillService: SkillService) {
+  }
+
 }

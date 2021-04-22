@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-dark-base {
+  background-color: #121212;
+}
+
+.bg-dark-elevated-1 {
+  background-color: #212121;
+}
+
+.bg-dark-elevated-2 {
+  background-color: #303030;
+}
+
+.bg-dark-elevated-3 {
+  background-color: #3f3f3f;
+}
+
+.hoverable:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

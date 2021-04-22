@@ -1,0 +1,9 @@
+.logo-margin {
+  margin-right: .5em;
+}
+
+.border-bottom-primary {
+  border-style: none none solid none;
+  border-bottom-width: thin;
+  border-bottom-color: #47b4cd;
+}
