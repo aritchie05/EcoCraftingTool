@@ -1,10 +1,21 @@
-import {RecipeIngredient} from './recipe-ingredient';
+import {Skill} from './skill';
+import {CraftingTable} from './crafting-table';
+import {Ingredient} from './ingredient';
+import {Output} from './output';
+import {SetItem} from './actual-set';
 
-export interface Recipe {
+export class Recipe implements SetItem<Recipe> {
   name: string;
-  levelReq: number;
-  labor: number;
-  skill: string;
-  products: Array<RecipeIngredient>;
-  ingredients: Array<RecipeIngredient>;
+  nameID: string;
+  skill: Skill;
+  level: bigint;
+  labor: bigint;
+  craftingTable: CraftingTable;
+  ingredients: Ingredient[];
+  outputs: Output[];
+  price?: number;
+
+  public equals(other: Recipe): boolean {
+    return this.nameID.localeCompare(other.nameID) === 0;
+  }
 }

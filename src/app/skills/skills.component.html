@@ -3,7 +3,7 @@
 <form>
   <div class="form-group">
     <div class="dropdown w-95 mx-auto">
-      <label class="sr-only" for="skillSelectInput">Skill</label>
+      <label class="visually-hidden-focusable" for="skillSelectInput">Skill</label>
       <input #searchBox (input)="onSkillsSearchInput(searchBox.value)" class="dropdown-toggle form-control"
              data-toggle="dropdown" id="skillSelectInput" placeholder="Choose a skill..."
              type="search">
@@ -16,15 +16,15 @@
 
     <div id="selectedSkills">
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
-        <div class="col-8">
-          <label for="{{skill.name}}-levelInput">{{skill.name}}</label>
+        <div class="col-xxl-10 col-md-6 col-5">
+          <label for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
         <div class="col">
           <input (keydown)="onLevelChange(skill, $event)" [value]="skill.level"
-                 class="levelInput form-control" id="{{skill.name}}-levelInput"
+                 class="levelInput form-control" id="{{skill.nameID}}-levelInput"
                  type="number">
         </div>
-        <div class="col-md-auto">
+        <div class="col">
           <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1">close</span>
         </div>
       </div>

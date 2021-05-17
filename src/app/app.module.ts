@@ -8,7 +8,9 @@ import {RouterModule} from '@angular/router';
 import {SkillsComponent} from './skills/skills.component';
 import {IngredientsComponent} from './ingredients/ingredients.component';
 import {OutputsComponent} from './outputs/outputs.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     FooterComponent,
     SkillsComponent,
     IngredientsComponent,
-    OutputsComponent
+    OutputsComponent,
+    CraftingParentComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

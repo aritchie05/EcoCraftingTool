@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {SkillService} from '../data/skill.service';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {CraftingDataService} from '../service/crafting-data.service';
 import {Skill} from '../interface/skill';
 
 @Component({
@@ -9,11 +9,14 @@ import {Skill} from '../interface/skill';
 })
 export class SkillsComponent implements OnInit {
 
-  filteredSkills: Array<Skill>;
-  selectedSkills: Array<Skill>;
+  filteredSkills: Skill[];
+  selectedSkills: Skill[];
 
-  constructor(private skillService: SkillService) {
-    this.filteredSkills = this.skillService.skills;
+  @Output() skillAddedEvent = new EventEmitter<Skill>();
+  @Output() skillLevelChangedEvent = new EventEmitter<Skill>();
+  @Output() skillRemovedEvent = new EventEmitter<Skill>();
+
+  constructor(private dataService: CraftingDataService) {
     this.selectedSkills = [];
   }
 
@@ -21,15 +24,16 @@ export class SkillsComponent implements OnInit {
   }
 
   onSkillsSearchInput(value: string): void {
-    this.filteredSkills = this.skillService.filterSkillList(value);
+    this.filteredSkills = this.dataService.filterSkillList(value);
   }
 
   onSkillSelect(skill: Skill): void {
     console.log(`Skill selected ${skill.name}`);
-    if (this.selectedSkills.find(s => s.name === skill.name) === undefined) {
+    if (this.selectedSkills.find(s => s.nameID === skill.nameID) === undefined) {
       console.log(`Skill not found in existing list, pushing ${skill.name}`);
       skill.level = 1;
       this.selectedSkills.push(skill);
+      this.skillAddedEvent.emit(skill);
     }
   }
 
@@ -38,25 +42,32 @@ export class SkillsComponent implements OnInit {
     document.activeElement.blur();
 
     let level = parseInt(event.key, 10);
-    if (isNaN(level)) {
-      level = 1;
+    if (level !== skill.level) {
+      if (isNaN(level)) {
+        level = 1;
+      }
+      console.log(`Level changed for skill ${skill.name} to level ${level}`);
+      const index = this.selectedSkills.findIndex(s => s.nameID === skill.nameID);
+      let newLevel = level;
+      if (level < 0) {
+        newLevel = 0;
+      } else if (level > 7) {
+        newLevel = 7;
+      }
+      skill.level = newLevel;
+      console.log(`Propagating level ${skill.level} back`);
+      this.selectedSkills[index] = skill;
+      this.skillLevelChangedEvent.emit(skill);
     }
-    console.log(`Level changed for skill ${skill.name} to level ${level}`);
-    const index = this.selectedSkills.findIndex(s => s.name === skill.name);
-    let newLevel = level;
-    if (level < 0) {
-      newLevel = 0;
-    } else if (level > 7) {
-      newLevel = 7;
-    }
-    skill.level = newLevel;
-    console.log(`Propagating level ${skill.level} back`);
-    this.selectedSkills[index] = skill;
+
   }
 
   onRemoveSkill(skill: Skill): void {
     console.log(`Removing skill ${skill.name}`);
-    const index = this.selectedSkills.findIndex(s => s.name === skill.name);
-    this.selectedSkills.splice(index, 1);
+    const index = this.selectedSkills.findIndex(s => s.nameID === skill.nameID);
+    if (index !== -1) {
+      let removedSkills = this.selectedSkills.splice(index, 1);
+      removedSkills.forEach(removedSkill => this.skillRemovedEvent.emit(removedSkill));
+    }
   }
 }

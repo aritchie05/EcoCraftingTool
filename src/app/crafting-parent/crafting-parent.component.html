@@ -1,0 +1,11 @@
+<div class="row">
+  <app-skills (skillAddedEvent)="onSkillAdded($event)"
+              (skillLevelChangedEvent)="onSkillLevelChanged($event)"
+              (skillRemovedEvent)="onSkillRemoved($event)"
+              class="col bg-dark-elevated-2 col-border fill-screen">
+  </app-skills>
+  <app-ingredients class="col bg-dark-elevated-2 col-border">
+  </app-ingredients>
+  <app-outputs class="col-5 bg-dark-elevated-2 col-border">
+  </app-outputs>
+</div>

@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {CraftingDataService} from '../service/crafting-data.service';
+import {Item} from '../interface/item';
 
 @Component({
   selector: 'app-ingredients',
@@ -7,10 +9,17 @@ import {Component, OnInit} from '@angular/core';
 })
 export class IngredientsComponent implements OnInit {
 
-  constructor() {
+  itemIngredients: Item[];
+
+  constructor(private dataService: CraftingDataService) {
+    this.itemIngredients = [];
   }
 
   ngOnInit(): void {
+
   }
 
+  onPriceChange(ingredient: Item, $event: KeyboardEvent) {
+
+  }
 }

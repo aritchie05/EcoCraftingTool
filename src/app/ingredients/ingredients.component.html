@@ -1,2 +1,19 @@
 <h1 class="text-center">Ingredients</h1>
 
+<form>
+  <div class="form-group">
+    <div id="ingredients">
+      <div *ngFor="let ingredient of itemIngredients" class="row ingredientRow mx-auto form-group">
+        <div class="col-9">
+          <label for="{{ingredient.nameID}}-priceInput">{{ingredient.name}}</label>
+        </div>
+        <div class="col">
+          <input (keydown)="onPriceChange(ingredient, $event)" [value]="ingredient.price"
+                 class="priceInput form-control" id="{{ingredient.nameID}}-priceInput"
+                 type="number">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
