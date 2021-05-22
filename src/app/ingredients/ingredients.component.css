@@ -1,10 +1,16 @@
 .priceInput {
-  width: 50px;
+  width: 80px;
   height: 30px;
   border-radius: .25rem;
+  text-align: right;
 }
 
 .ingredientRow {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.laborRow {
+  margin-top: 10px;
+  padding-bottom: 14px;
 }

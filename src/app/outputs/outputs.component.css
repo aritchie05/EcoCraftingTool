@@ -1,10 +1,11 @@
-.priceInput {
-  width: 50px;
-  height: 30px;
-  border-radius: .25rem;
-}
-
-.ingredientRow {
+.recipeRow {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.priceDisplay {
+  width: 80px;
+  height: 30px;
+  border-radius: .25rem;
+  text-align: right;
 }

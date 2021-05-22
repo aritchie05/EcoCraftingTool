@@ -3,29 +3,67 @@
 <form>
   <div class="form-group">
     <div class="dropdown w-95 mx-auto">
-      <label class="visually-hidden-focusable" for="skillSelectInput">Skill</label>
-      <input #searchBox (input)="onSkillsSearchInput(searchBox.value)" class="dropdown-toggle form-control"
+      <label class="sr-only" for="skillSelectInput">Skill</label>
+      <input #searchBox (input)="onSkillsSearchInput(searchBox.value)" class="dropdown-toggle form-control dark-input"
              data-toggle="dropdown" id="skillSelectInput" placeholder="Choose a skill..."
              type="search">
-      <div aria-labelledby="skillSelectInput" class="dropdown-menu">
-        <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item" href="#">
+      <div aria-labelledby="skillSelectInput" class="dropdown-menu dark-input">
+        <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
+           href="#">
           {{skill.name}}
         </a>
       </div>
     </div>
 
-    <div id="selectedSkills">
+    <div class="divider form-group" id="selectedSkills">
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
-        <div class="col-xxl-10 col-md-6 col-5">
-          <label for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
+        <div class="col-9">
+          <label class="bump-down" for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
-        <div class="col">
+        <div class="col-2">
           <input (keydown)="onLevelChange(skill, $event)" [value]="skill.level"
-                 class="levelInput form-control" id="{{skill.nameID}}-levelInput"
+                 class="levelInput form-control dark-input" id="{{skill.nameID}}-levelInput"
                  type="number">
         </div>
-        <div class="col">
+        <div class="col-1">
           <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1">close</span>
+        </div>
+        <div class="w-100"></div>
+        <ng-template [ngIf]="skill.lavishWorkspace && skill.level > 5">
+          <div class="col-5">
+            <label class="bump-down small pl-5" for="{{skill.nameID}}-lavishWorkspace">Lavish Workspace </label>
+          </div>
+          <div class="col">
+            <input #lavish (change)="onUpdateLavish(skill, lavish.checked)"
+                   class="lavishInput form-control dark-input" id="{{skill.nameID}}-lavishWorkspace" type="checkbox">
+          </div>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="pt-1" id="craftingTables">
+      <div *ngFor="let table of craftingTables">
+        <div *ngIf="table.availableUpgrades !== undefined && table.availableUpgrades.length > 0"
+             class="row upgradeRow mx-auto form-group">
+          <div class="col">
+            <label class="bump-down" for="{{table.nameID}}-upgradeButton">{{table.name}}</label>
+          </div>
+          <div class="col dropdown">
+            <button aria-expanded="false" aria-haspopup="true"
+                    class="btn dark-input dropdown-toggle float-right"
+                    data-toggle="dropdown" id="{{table.nameID}}-upgradeButton" type="button">
+              {{table.selectedUpgrade.name}}
+            </button>
+            <div aria-labelledby="{{table.nameID}}-upgradeButton" class="dropdown-menu dark-input">
+              <a (click)="onUpgradeSelect(table, upgrade)" *ngFor="let upgrade of table.availableUpgrades"
+                 class="dropdown-item dark-input" href="#">
+                {{upgrade.name}}
+              </a>
+            </div>
+          </div>
+          <div class="col-1">
+            <span (click)="onRemoveTable(table)" class="material-icons md-light hoverable mt-1">close</span>
+          </div>
         </div>
       </div>
     </div>

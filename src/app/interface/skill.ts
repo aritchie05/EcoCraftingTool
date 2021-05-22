@@ -1,6 +1,4 @@
-import {SetItem} from './actual-set';
-
-export class Skill implements SetItem<Skill> {
+export class Skill {
   name: string;
   nameID: string;
   basicUpgrade: boolean;
@@ -8,8 +6,5 @@ export class Skill implements SetItem<Skill> {
   modernUpgrade: boolean;
   lavishWorkspace: boolean;
   level?: number;
-
-  public equals(other: Skill): boolean {
-    return this.nameID.localeCompare(other.nameID) === 0;
-  }
+  lavishChecked?: boolean;
 }

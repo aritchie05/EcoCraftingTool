@@ -7,3 +7,7 @@
 .fill-screen {
   height: 86vh;
 }
+
+.bottom-padding {
+  padding-bottom: 62px;
+}

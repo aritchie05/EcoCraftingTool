@@ -5,6 +5,7 @@ import {Skill} from './skill';
 import {Ingredient} from './ingredient';
 import {Output} from './output';
 import {UpgradeModule} from './upgrade-module';
+import {LaborCost} from './labor-cost';
 
 export interface CraftingData {
   craftingTables: CraftingTable[];
@@ -14,4 +15,5 @@ export interface CraftingData {
   skills: Skill[];
   ingredients: Ingredient[];
   outputs: Output[];
+  laborCosts: LaborCost[];
 }

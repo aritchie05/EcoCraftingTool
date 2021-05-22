@@ -29,3 +29,28 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.dark-input {
+  color: #f8f9fa !important;
+  background-color: #212121 !important;
+  border-color: #505050 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #3f3f3f !important;
+  color: #c0c0c0 !important;
+}
+
+.dropdown-item:active {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.divider {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #505050;
+}
+
+.bump-down {
+  padding-top: .3rem;
+}

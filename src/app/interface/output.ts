@@ -1,12 +1,7 @@
 import {Item} from './item';
-import {SetItem} from './actual-set';
 
-export class Output implements SetItem<Output> {
+export class Output {
   item: Item;
-  quantity: bigint;
+  quantity: number;
   reducible: boolean;
-
-  public equals(other: Output): boolean {
-    return this.item.equals(other.item);
-  }
 }

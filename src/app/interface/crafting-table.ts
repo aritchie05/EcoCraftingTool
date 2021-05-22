@@ -1,12 +1,10 @@
-import {SetItem} from './actual-set';
+import {UpgradeModule} from './upgrade-module';
 
-export class CraftingTable implements SetItem<CraftingTable> {
+export class CraftingTable {
   name: string;
   nameID: string;
   upgradeModuleType: string;
-
-  public equals(other: CraftingTable): boolean {
-    return this.nameID.localeCompare(other.nameID) === 0;
-  }
-
+  selectedUpgrade?: UpgradeModule;
+  availableUpgrades?: UpgradeModule[];
 }
+

@@ -1,1 +1,45 @@
 <h1 class="text-center">Outputs</h1>
+
+<form>
+  <div class="form-group">
+    <div id="recipes">
+      <div *ngFor="let outputDisplay of outputDisplays">
+        <div class="row recipeRow mx-auto form-group">
+          <div class="col-8">
+            <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
+              <strong>{{outputDisplay.itemName}}</strong>
+            </label>
+          </div>
+          <div class="col-3">
+            <input [value]="outputDisplay.itemPrice
+            .toLocaleString('en-US',{ maximumFractionDigits: 2, minimumFractionDigits: 0})"
+                   class="priceDisplay form-control dark-input" id="{{outputDisplay.itemNameID}}-itemPriceDisplay"
+                   readonly type="number">
+          </div>
+          <div class="col-1">
+            <span (click)="onRemoveItem(outputDisplay.itemNameID)"
+                  class="material-icons md-light hoverable mt-1">close</span>
+          </div>
+        </div>
+        <ng-template [ngIf]="outputDisplay.subRecipes.length > 1">
+          <div *ngFor="let subRecipe of outputDisplay.subRecipes" class="row recipeRow mx-auto form-group">
+            <div class="col-8">
+              <label class="pl-3" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
+                {{subRecipe.recipeName}} Recipe
+              </label>
+            </div>
+            <div class="col-3">
+              <input [value]="subRecipe.recipePrice
+                  .toLocaleString('en-US',{ maximumFractionDigits: 2, minimumFractionDigits: 0})"
+                     class="priceDisplay form-control dark-input" id="{{subRecipe.recipeNameID}}-itemPriceDisplay"
+                     readonly type="number">
+            </div>
+            <div class="col-1">
+              <span (click)="onRemoveSubRecipe(subRecipe)" class="material-icons md-light hoverable mt-1">close</span>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</form>

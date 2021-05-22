@@ -1,11 +1,18 @@
-<div class="row">
+<div class="row fill-screen">
   <app-skills (skillAddedEvent)="onSkillAdded($event)"
               (skillLevelChangedEvent)="onSkillLevelChanged($event)"
               (skillRemovedEvent)="onSkillRemoved($event)"
-              class="col bg-dark-elevated-2 col-border fill-screen">
+              (lavishUpdatedEvent)="onLavishUpdated($event)"
+              (tableRemovedEvent)="onTableRemoved($event)"
+              (upgradeChangedEvent)="onUpgradeChanged($event)"
+              class="col bg-dark-elevated-2 col-border bottom-padding">
   </app-skills>
-  <app-ingredients class="col bg-dark-elevated-2 col-border">
+  <app-ingredients (ingredientPriceChangedEvent)="onIngredientPriceChanged($event)"
+                   (laborCostChangedEvent)="onLaborCostChanged($event)"
+                   class="col bg-dark-elevated-2 col-border bottom-padding">
   </app-ingredients>
-  <app-outputs class="col-5 bg-dark-elevated-2 col-border">
+  <app-outputs (itemRemovedEvent)="onItemRemoved($event)"
+               (subRecipeRemovedEvent)="onSubRecipeRemoved($event)"
+               class="col-5 bg-dark-elevated-2 col-border bottom-padding">
   </app-outputs>
 </div>

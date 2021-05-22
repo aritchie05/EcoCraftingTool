@@ -21,9 +21,10 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .levelInput {
-  width: 50px;
+  width: 40px;
   height: 30px;
   border-radius: .25rem;
+  text-align: right;
 }
 
 .skillRow {
@@ -31,6 +32,17 @@ input::-webkit-calendar-picker-indicator {
   margin-bottom: 10px;
 }
 
+.upgradeRow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .w-95 {
-  width: 95%;
+  width: 98%;
+}
+
+.lavishInput {
+  width: auto;
+  height: auto;
+  margin-top: .6rem;
 }
