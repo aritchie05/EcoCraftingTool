@@ -26,12 +26,14 @@
                  type="number">
         </div>
         <div class="col-1">
-          <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1" i18n>close</span>
+          <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1">close</span>
         </div>
         <div class="w-100"></div>
         <ng-template [ngIf]="skill.lavishWorkspace && skill.level > 5">
-          <div class="col-5">
-            <label class="bump-down small pl-5" for="{{skill.nameID}}-lavishWorkspace" i18n>Lavish Workspace</label>
+          <div class="col-6">
+            <label class="bump-down small pl-5" for="{{skill.nameID}}-lavishWorkspace">
+              {{message('lavishWorkspace')}}
+            </label>
           </div>
           <div class="col">
             <input #lavish (change)="onUpdateLavish(skill, lavish.checked)"
@@ -62,7 +64,7 @@
             </div>
           </div>
           <div class="col-1">
-            <span (click)="onRemoveTable(table)" class="material-icons md-light hoverable mt-1" i18n>close</span>
+            <span (click)="onRemoveTable(table)" class="material-icons md-light hoverable mt-1">close</span>
           </div>
         </div>
       </div>

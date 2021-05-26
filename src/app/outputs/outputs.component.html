@@ -31,7 +31,7 @@
           </div>
           <div class="col-1">
             <span (click)="onRemoveItem(outputDisplay.itemNameID)"
-                  class="material-icons md-light hoverable mt-1"></span>
+                  class="material-icons md-light hoverable mt-1">close</span>
           </div>
         </div>
         <ng-template [ngIf]="outputDisplay.subRecipes.length > 1">
@@ -48,7 +48,7 @@
                      readonly type="text">
             </div>
             <div class="col-1">
-              <span (click)="onRemoveSubRecipe(subRecipe)" class="material-icons md-light hoverable mt-1"></span>
+              <span (click)="onRemoveSubRecipe(subRecipe)" class="material-icons md-light hoverable mt-1">close</span>
             </div>
           </div>
         </ng-template>

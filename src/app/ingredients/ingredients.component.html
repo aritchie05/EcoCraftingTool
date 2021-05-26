@@ -4,7 +4,7 @@
   <div class="form-group">
     <div id="ingredients">
       <div class="row laborRow divider mx-auto form-group">
-        <div class="col-9">
+        <div class="col">
           <label for="laborInput">
             <strong>{{message('calorieCostLabel')}}</strong>
           </label>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div *ngFor="let ingredient of itemIngredients" class="row ingredientRow mx-auto form-group">
-        <div class="col-9">
+        <div class="col">
           <label *ngIf="ingredient.tag; else nonTagName" for="{{ingredient.nameID}}-priceInput">
             {{ingredient.name}}*
           </label>

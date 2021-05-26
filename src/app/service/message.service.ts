@@ -208,6 +208,51 @@ const messages: Message[] =
       ]
     },
     {
+      'id': 'lavishWorkspace',
+      'localizedMessages': [
+        {
+          'text': 'Lavish Workspace',
+          'lang': 'en'
+        },
+        {
+          'text': 'Espace de travail somptueux',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Espacio de trabajo lujoso',
+          'lang': 'es'
+        },
+        {
+          'text': 'Aufwändiger Arbeitsbereich',
+          'lang': 'de'
+        },
+        {
+          'text': 'Bogate miejsce do pracy',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Роскошное рабочее место',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Розкішна робоча область',
+          'lang': 'uk'
+        },
+        {
+          'text': '호화로운 작업 공간',
+          'lang': 'ko'
+        },
+        {
+          'text': '奢华的工作区',
+          'lang': 'zh'
+        },
+        {
+          'text': '豪華なワークスペース',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'ingredientsHeader',
       'localizedMessages': [
         {
