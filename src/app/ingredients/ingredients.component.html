@@ -1,4 +1,4 @@
-<h1 class="text-center">Inputs</h1>
+<h1 class="text-center">{{message('ingredientsHeader')}}</h1>
 
 <form>
   <div class="form-group">
@@ -6,12 +6,14 @@
       <div class="row laborRow divider mx-auto form-group">
         <div class="col-9">
           <label for="laborInput">
-            <strong>Price Per 1000 Calories</strong>
+            <strong>{{message('calorieCostLabel')}}</strong>
           </label>
         </div>
         <div class="col">
-          <input #laborBox (focusout)="onLaborCostChange(laborBox.value)" [value]="laborCost"
-                 class="priceInput form-control float-right dark-input" id="laborInput" type="number">
+          <input #laborBox (focusout)="onLaborCostChange(laborBox.value)"
+                 [value]="laborCost.toLocaleString(locale.code)"
+                 class="priceInput form-control float-right dark-input" id="laborInput"
+                 pattern="[0-9]*[.,]?[0-9]+" type="text">
         </div>
       </div>
       <div *ngFor="let ingredient of itemIngredients" class="row ingredientRow mx-auto form-group">
@@ -26,9 +28,10 @@
           </ng-template>
         </div>
         <div class="col">
-          <input #priceBox (focusout)="onPriceChange(ingredient, priceBox.value)" [value]="ingredient.price"
+          <input #priceBox (focusout)="onPriceChange(ingredient, priceBox.value)"
+                 [value]="ingredient.price.toLocaleString(locale.code)"
                  class="priceInput form-control float-right dark-input" id="{{ingredient.nameID}}-priceInput"
-                 type="number">
+                 pattern="[0-9]*[.,]?[0-9]+" type="text">
         </div>
       </div>
     </div>

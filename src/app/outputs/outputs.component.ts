@@ -1,27 +1,38 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Recipe} from '../interface/recipe';
 import {OutputDisplay, SubRecipe} from '../interface/output-display';
+import {Locale, LocaleService} from '../service/locale.service';
+import {MessageService} from '../service/message.service';
 
 @Component({
   selector: 'app-outputs',
   templateUrl: './outputs.component.html',
   styleUrls: ['./outputs.component.css']
 })
-export class OutputsComponent implements OnInit {
+export class OutputsComponent implements AfterContentInit {
 
-  recipes: Recipe[];
+  outputRecipes: Recipe[];
+  filteredRecipes: Recipe[];
   outputDisplays: OutputDisplay[];
+  locale: Locale;
 
-  @Output() itemRemovedEvent = new EventEmitter<string>();
+  @Output() recipeAddedEvent = new EventEmitter<Recipe>();
+  @Output() itemRemovedEvent = new EventEmitter<Recipe[]>();
   @Output() subRecipeRemovedEvent = new EventEmitter<Recipe>();
 
-  constructor(private dataService: CraftingDataService) {
-    this.recipes = [];
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private messageService: MessageService) {
+    this.outputRecipes = [];
     this.outputDisplays = [];
+    this.locale = localeService.selectedLocale;
   }
 
-  ngOnInit(): void {
+  ngAfterContentInit(): void {
+    this.filteredRecipes = this.dataService.getRecipes();
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id, this.locale);
   }
 
   convertRecipesToOutputDisplays(): void {
@@ -29,17 +40,17 @@ export class OutputsComponent implements OnInit {
     this.outputDisplays = [];
 
     //Loop through recipes and populate data
-    this.recipes.forEach(recipe => {
+    this.outputRecipes.forEach(recipe => {
 
       //Check if the outputDisplays already contains at least one of the primary output item
       let exists = this.outputDisplays.some(outputDisplay => {
-          if (outputDisplay.itemNameID.localeCompare(recipe.primaryOutput.item.nameID) === 0) {
-            outputDisplay.subRecipes.push({
-              recipeNameID: recipe.nameID,
-              recipeName: recipe.name,
-              recipePrice: recipe.price
-            });
-            return true;
+        if (outputDisplay.itemNameID.localeCompare(recipe.primaryOutput.item.nameID) === 0) {
+          outputDisplay.subRecipes.push({
+            recipeNameID: recipe.nameID,
+            recipeName: recipe.name,
+            recipePrice: recipe.price
+          });
+          return true;
           }
           return false;
         }
@@ -90,21 +101,23 @@ export class OutputsComponent implements OnInit {
     });
     this.outputDisplays.splice(index, 1);
 
+    let removedRecipes = new Array<Recipe>();
+
     //Loop backwards to prevent array reindexing on splice
-    for (let i = this.recipes.length - 1; i >= 0; i--) {
-      if (this.recipes[i].primaryOutput.item.nameID.localeCompare(itemNameID) === 0) {
-        this.recipes.splice(i, 1);
+    for (let i = this.outputRecipes.length - 1; i >= 0; i--) {
+      if (this.outputRecipes[i].primaryOutput.item.nameID.localeCompare(itemNameID) === 0) {
+        removedRecipes.push(...this.outputRecipes.splice(i, 1));
       }
     }
-    this.itemRemovedEvent.emit(itemNameID);
+    this.itemRemovedEvent.emit(removedRecipes);
   }
 
   onRemoveSubRecipe(subRecipe: SubRecipe): void {
     let recipe;
-    for (let i = this.recipes.length - 1; i >= 0; i--) {
-      if (this.recipes[i].nameID.localeCompare(subRecipe.recipeNameID) === 0) {
-        recipe = this.recipes[i];
-        this.recipes.splice(i, 1);
+    for (let i = this.outputRecipes.length - 1; i >= 0; i--) {
+      if (this.outputRecipes[i].nameID.localeCompare(subRecipe.recipeNameID) === 0) {
+        recipe = this.outputRecipes[i];
+        this.outputRecipes.splice(i, 1);
         break;
       }
     }
@@ -114,16 +127,50 @@ export class OutputsComponent implements OnInit {
   }
 
   sortRecipes(): void {
-    this.recipes.sort((a, b) => a.name.localeCompare(b.name));
+    this.outputRecipes.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
   }
 
   sortOutputDisplays(): void {
-    this.outputDisplays.sort((a, b) => a.itemName.localeCompare(b.itemName));
+    this.outputDisplays.sort((a, b) => a.itemName.localeCompare(b.itemName, this.locale.code));
   }
 
   sortOutputDisplaySubRecipes(outputDisplay: OutputDisplay): void {
     outputDisplay.subRecipes.sort((a, b) => {
       return a.recipePrice - b.recipePrice;
     });
+  }
+
+  onRecipeSearchInput(value: string): void {
+    this.filteredRecipes = this.dataService.filterRecipeList(value);
+  }
+
+  onRecipeSelect(recipe: Recipe): void {
+    let exists = this.outputDisplays.some(outputDisplay => {
+      return outputDisplay.subRecipes.some(subRecipe => subRecipe.recipeNameID.localeCompare(recipe.nameID) === 0);
+    });
+    if (!exists) {
+      recipe.primaryOutput = recipe.outputs[0];
+      this.outputRecipes.push(recipe);
+      this.convertRecipesToOutputDisplays();
+      this.recipeAddedEvent.emit(recipe);
+    }
+  }
+
+  localize(locale: Locale): void {
+    this.locale = locale;
+    this.outputRecipes.forEach(recipe => {
+      recipe.name = this.localeService.localizeRecipeName(recipe.nameID, locale.langCode());
+      recipe.primaryOutput.item.name = this.localeService.localizeItemName(recipe.primaryOutput.item.nameID, locale.langCode());
+    });
+    this.filteredRecipes.forEach(recipe => {
+      recipe.name = this.localeService.localizeRecipeName(recipe.nameID, locale.langCode());
+      recipe.ingredients.forEach(ingredient => {
+        ingredient.item.name = this.localeService.localizeItemName(ingredient.item.nameID, locale.langCode());
+      });
+      recipe.outputs.forEach(output => {
+        output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode());
+      });
+    });
+    this.convertRecipesToOutputDisplays();
   }
 }

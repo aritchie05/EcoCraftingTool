@@ -1,11 +1,11 @@
-<h1 class="text-center">Skills</h1>
+<h1 class="text-center">{{message('skillsHeader')}}</h1>
 
 <form>
   <div class="form-group">
     <div class="dropdown w-95 mx-auto">
-      <label class="sr-only" for="skillSelectInput">Skill</label>
+      <label class="sr-only" for="skillSelectInput">{{message('skillsHeader')}}</label>
       <input #searchBox (input)="onSkillsSearchInput(searchBox.value)" class="dropdown-toggle form-control dark-input"
-             data-toggle="dropdown" id="skillSelectInput" placeholder="Choose a skill..."
+             [placeholder]="message('skillSearchPlaceholder')" data-toggle="dropdown" id="skillSelectInput"
              type="search">
       <div aria-labelledby="skillSelectInput" class="dropdown-menu dark-input">
         <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
@@ -26,12 +26,12 @@
                  type="number">
         </div>
         <div class="col-1">
-          <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1">close</span>
+          <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1" i18n>close</span>
         </div>
         <div class="w-100"></div>
         <ng-template [ngIf]="skill.lavishWorkspace && skill.level > 5">
           <div class="col-5">
-            <label class="bump-down small pl-5" for="{{skill.nameID}}-lavishWorkspace">Lavish Workspace </label>
+            <label class="bump-down small pl-5" for="{{skill.nameID}}-lavishWorkspace" i18n>Lavish Workspace</label>
           </div>
           <div class="col">
             <input #lavish (change)="onUpdateLavish(skill, lavish.checked)"
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="col-1">
-            <span (click)="onRemoveTable(table)" class="material-icons md-light hoverable mt-1">close</span>
+            <span (click)="onRemoveTable(table)" class="material-icons md-light hoverable mt-1" i18n>close</span>
           </div>
         </div>
       </div>

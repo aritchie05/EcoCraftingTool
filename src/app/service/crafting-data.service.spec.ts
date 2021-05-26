@@ -1,6 +1,6 @@
 import {TestBed} from '@angular/core/testing';
 
-import {CraftingDataService} from '../crafting-data.service';
+import {CraftingDataService} from './crafting-data.service';
 import {HttpClientModule} from '@angular/common/http';
 
 describe('CraftingDataService', () => {

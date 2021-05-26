@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {SkillsComponent} from '../skills/skills.component';
 import {IngredientsComponent} from '../ingredients/ingredients.component';
 import {OutputsComponent} from '../outputs/outputs.component';
@@ -7,6 +7,7 @@ import {Skill} from '../interface/skill';
 import {Item} from '../interface/item';
 import {Recipe} from '../interface/recipe';
 import {CraftingTable} from '../interface/crafting-table';
+import {Locale, LocaleService} from '../service/locale.service';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -14,7 +15,7 @@ import {CraftingTable} from '../interface/crafting-table';
   styleUrls: ['./crafting-parent.component.css'],
   providers: [CraftingDataService]
 })
-export class CraftingParentComponent implements OnInit {
+export class CraftingParentComponent {
 
   @ViewChild(SkillsComponent)
   private skillsComponent: SkillsComponent;
@@ -25,11 +26,7 @@ export class CraftingParentComponent implements OnInit {
   @ViewChild(OutputsComponent)
   private outputsComponent: OutputsComponent;
 
-  constructor(private dataService: CraftingDataService) {
-  }
-
-  ngOnInit(): void {
-
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService) {
   }
 
 
@@ -85,7 +82,7 @@ export class CraftingParentComponent implements OnInit {
           recipesNotConfirmed.push(recipe);
         } else {
           recipe.price = price;
-          this.outputsComponent.recipes.push(recipe);
+          this.outputsComponent.outputRecipes.push(recipe);
         }
       } else {
         recipesNotConfirmed.push(recipe);
@@ -102,7 +99,7 @@ export class CraftingParentComponent implements OnInit {
           console.log(`Confirming price ${price} for ${recipe.primaryOutput.item.name}`);
           recipe.price = price;
           recipesNotConfirmed.splice(i, 1);
-          this.outputsComponent.recipes.push(recipe);
+          this.outputsComponent.outputRecipes.push(recipe);
         } else if (i < 10) {
           console.log(`Could not calculate price for recipe ${recipe.name}, will try again on next loop.`);
         } else {
@@ -134,7 +131,7 @@ export class CraftingParentComponent implements OnInit {
 
   onSkillRemoved(skill: Skill): void {
     //Filter out all recipes that are based on the removed skill
-    this.outputsComponent.recipes = this.outputsComponent.recipes.filter(recipe => {
+    this.outputsComponent.outputRecipes = this.outputsComponent.outputRecipes.filter(recipe => {
       return recipe.skill.nameID.localeCompare(skill.nameID) !== 0;
     });
 
@@ -142,7 +139,7 @@ export class CraftingParentComponent implements OnInit {
     for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
       let ingredient = this.ingredientsComponent.itemIngredients[i];
       let stillNeeded = false;
-      this.outputsComponent.recipes.forEach(recipe => {
+      this.outputsComponent.outputRecipes.forEach(recipe => {
         if (recipe.ingredients.some(recipeIngredient => recipeIngredient.item.nameID.localeCompare(ingredient.nameID) === 0)) {
           stillNeeded = true;
         }
@@ -166,7 +163,7 @@ export class CraftingParentComponent implements OnInit {
     //Remove any crafting tables that are no longer needed
     for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
       let table = this.skillsComponent.craftingTables[i];
-      let stillNeeded = this.outputsComponent.recipes.some(recipe => {
+      let stillNeeded = this.outputsComponent.outputRecipes.some(recipe => {
         return recipe.craftingTable.nameID.localeCompare(table.nameID) === 0;
       });
       if (!stillNeeded) {
@@ -185,7 +182,7 @@ export class CraftingParentComponent implements OnInit {
   }
 
   onIngredientPriceChanged(item: Item): void {
-    let affectedRecipes = this.outputsComponent.recipes.filter(recipe => {
+    let affectedRecipes = this.outputsComponent.outputRecipes.filter(recipe => {
       return recipe.ingredients.some(ingredient => {
           return ingredient.item.nameID.localeCompare(item.nameID) === 0;
         }
@@ -196,9 +193,9 @@ export class CraftingParentComponent implements OnInit {
     this.addDownstreamAffectedRecipes(affectedRecipes);
     affectedRecipes.forEach(recipe => {
       recipe.price = this.calculatePrice(recipe);
-      this.outputsComponent.recipes.forEach((recipe2, index) => {
+      this.outputsComponent.outputRecipes.forEach((recipe2, index) => {
         if (recipe.nameID.localeCompare(recipe2.nameID) === 0) {
-          this.outputsComponent.recipes[index] = recipe;
+          this.outputsComponent.outputRecipes[index] = recipe;
         }
       });
     });
@@ -206,12 +203,49 @@ export class CraftingParentComponent implements OnInit {
     this.outputsComponent.convertRecipesToOutputDisplays();
   }
 
+  onRecipeAdded(recipe: Recipe) {
+    let hasSkill = this.skillsComponent.selectedSkills.some(skill => this.strMatch(recipe.skill.nameID, skill.nameID));
+    if (!hasSkill) {
+      recipe.skill.level = 1;
+      recipe.skill.lavishChecked = false;
+      this.skillsComponent.selectedSkills.push(recipe.skill);
+    }
+
+    let hasTable = this.skillsComponent.craftingTables.some(table => this.strMatch(recipe.craftingTable.nameID, table.nameID));
+    if (!hasTable) {
+      let table = recipe.craftingTable;
+      table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+      table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
+      this.skillsComponent.craftingTables.push(table);
+    }
+
+    recipe.ingredients.forEach(ingredient => {
+      let itemExists = this.ingredientsComponent.itemIngredients.some(item => this.strMatch(ingredient.item.nameID, item.nameID));
+      if (!itemExists) {
+        let item = ingredient.item;
+        item.price = 0;
+        this.ingredientsComponent.itemIngredients.push(item);
+      }
+    });
+
+    for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
+      let item = this.ingredientsComponent.itemIngredients[i];
+      if (this.strMatch(item.nameID, recipe.primaryOutput.item.nameID)) {
+        this.ingredientsComponent.itemIngredients.splice(i, 1);
+      }
+    }
+
+    this.ingredientsComponent.sortIngredients();
+
+    this.recalculateOutputPrices();
+  }
+
   onSubRecipeRemoved(recipe: Recipe): void {
     //Check the recipe inputs and see if they are still needed for some other output recipe
     recipe.ingredients.forEach(ingredient => {
       let stillNeeded = false;
-      for (let i = this.outputsComponent.recipes.length - 1; i >= 0; i--) {
-        let recipe = this.outputsComponent.recipes[i];
+      for (let i = this.outputsComponent.outputRecipes.length - 1; i >= 0; i--) {
+        let recipe = this.outputsComponent.outputRecipes[i];
         recipe.ingredients.forEach(ingredient2 => {
           if (ingredient.item.nameID.localeCompare(ingredient2.item.nameID) === 0) {
             stillNeeded = true;
@@ -231,20 +265,24 @@ export class CraftingParentComponent implements OnInit {
     this.recalculateOutputPrices();
   }
 
-  onItemRemoved(itemNameID: string): void {
-    //Check the recipe inputs and see if they are still needed for some other item
-    let filteredRecipes = this.outputsComponent.recipes.filter(recipe => {
-      return recipe.ingredients.some(ingredient => {
-        return ingredient.item.nameID.localeCompare(itemNameID) === 0;
-      });
+  onItemRemoved(recipes: Recipe[]): void {
+    recipes.forEach(recipe => {
+      this.onSubRecipeRemoved(recipe);
     });
 
-    //Item no longer needed as an input, remove it
-    if (filteredRecipes.length === 0) {
-      this.removeItemIngredient(itemNameID);
+    for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
+      let table = this.skillsComponent.craftingTables[i];
+      if (!this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.craftingTable.nameID, table.nameID))) {
+        this.skillsComponent.craftingTables.splice(i, 1);
+      }
     }
 
-    this.recalculateOutputPrices();
+    for (let i = this.skillsComponent.selectedSkills.length - 1; i >= 0; i--) {
+      let skill = this.skillsComponent.selectedSkills[i];
+      if (!this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.skill.nameID, skill.nameID))) {
+        this.skillsComponent.selectedSkills.splice(i, 1);
+      }
+    }
   }
 
   /**
@@ -253,7 +291,7 @@ export class CraftingParentComponent implements OnInit {
    */
   onTableRemoved(table: CraftingTable): void {
     //Filter recipes that are not performed on the given crafting table
-    this.outputsComponent.recipes = this.outputsComponent.recipes.filter(recipe => {
+    this.outputsComponent.outputRecipes = this.outputsComponent.outputRecipes.filter(recipe => {
       return recipe.craftingTable.nameID.localeCompare(table.nameID) !== 0;
     });
 
@@ -264,6 +302,13 @@ export class CraftingParentComponent implements OnInit {
     this.checkSkillsForRemoval();
 
     this.recalculateOutputPrices();
+  }
+
+  updateLocale(locale: Locale) {
+    this.skillsComponent.localize(locale);
+    this.ingredientsComponent.localize(locale);
+    this.outputsComponent.localize(locale);
+    this.dataService.localize(locale);
   }
 
   /**
@@ -279,7 +324,7 @@ export class CraftingParentComponent implements OnInit {
     let downstreamRecipes = [];
     affectedRecipes.forEach(recipe => {
       let primaryItemID = recipe.primaryOutput.item.nameID;
-      let newRecipes = this.outputsComponent.recipes.filter(outputRecipe => {
+      let newRecipes = this.outputsComponent.outputRecipes.filter(outputRecipe => {
         return outputRecipe.ingredients.some(ingredient => ingredient.item.nameID.localeCompare(primaryItemID) === 0);
       });
       downstreamRecipes.push(...newRecipes);
@@ -313,7 +358,7 @@ export class CraftingParentComponent implements OnInit {
         }
       });
       if (!found) {
-        this.outputsComponent.recipes.forEach(recipe => {
+        this.outputsComponent.outputRecipes.forEach(recipe => {
           let output = recipe.primaryOutput;
           if (ingredient.item.nameID.localeCompare(output.item.nameID) === 0) {
             if (!found) {
@@ -367,7 +412,7 @@ export class CraftingParentComponent implements OnInit {
     return this.dataService.getRecipesForSkills(this.skillsComponent.selectedSkills, false)
       .some(otherRecipe => {
         return recipe.nameID.localeCompare(otherRecipe.nameID) !== 0 &&
-          otherRecipe.primaryOutput.item.nameID.localeCompare(recipe.primaryOutput.item.nameID) === 0;
+          otherRecipe.outputs[0].item.nameID.localeCompare(recipe.primaryOutput.item.nameID) === 0;
       });
   }
 
@@ -391,7 +436,7 @@ export class CraftingParentComponent implements OnInit {
    */
   private recalculateOutputPrices(): void {
     for (let i = 0; i < 10; i++) {
-      this.outputsComponent.recipes.forEach(recipe => {
+      this.outputsComponent.outputRecipes.forEach(recipe => {
         recipe.price = this.calculatePrice(recipe);
       });
     }
@@ -406,7 +451,7 @@ export class CraftingParentComponent implements OnInit {
   private checkSkillsForRemoval(): void {
     this.skillsComponent.selectedSkills = this.skillsComponent.selectedSkills
       .filter(skill => {
-        return this.outputsComponent.recipes.some(recipe => recipe.skill.nameID.localeCompare(skill.nameID) === 0);
+        return this.outputsComponent.outputRecipes.some(recipe => recipe.skill.nameID.localeCompare(skill.nameID) === 0);
       });
   }
 
@@ -419,7 +464,7 @@ export class CraftingParentComponent implements OnInit {
    * @private
    */
   private checkRecipesForRemoval(): void {
-    this.outputsComponent.recipes = this.outputsComponent.recipes
+    this.outputsComponent.outputRecipes = this.outputsComponent.outputRecipes
       .filter(recipe => {
         return this.skillsComponent.craftingTables.some(table => table.nameID.localeCompare(recipe.nameID));
       })
@@ -435,7 +480,7 @@ export class CraftingParentComponent implements OnInit {
   private checkIngredientsForRemoval(): void {
     for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
       let item = this.ingredientsComponent.itemIngredients[i];
-      let stillNeeded = this.outputsComponent.recipes.some(recipe => {
+      let stillNeeded = this.outputsComponent.outputRecipes.some(recipe => {
         return recipe.ingredients.some(ingredient => this.strMatch(ingredient.item.nameID, item.nameID));
       });
       if (!stillNeeded) {

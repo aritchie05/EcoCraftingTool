@@ -1,12 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark-elevated-1 border-bottom-primary text-light">
+<nav class="navbar navbar-expand navbar-dark fixed-top bg-dark-elevated-1 border-bottom-primary text-light mb-2">
   <a class="navbar-brand" href="#">
-    <img alt="Eco Logo" class="d-inline-block align-top logo-margin" height="30" src="assets/img/eco-logo-new.png">
-    Crafting Calculator
+    <img alt="Eco" class="d-inline-block align-top logo-margin" height="30"
+         src="assets/img/eco-logo-new.png">
+    {{message('navTitle')}}
   </a>
   <div class="collapse navbar-collapse" id="navbarLinks">
     <ul class="navbar-nav mr-auto">
     </ul>
 
-    <span class="navbar-text text-light">Eco Version 9.3.4</span>
+    <form class="form-inline dropdown mr-2">
+      <button aria-expanded="false" aria-haspopup="true"
+              class="btn dark-input dropdown-toggle f16"
+              data-toggle="dropdown" id="localeButton" type="button">
+        <span [className]="'flag ' + locale.code.substr(3, 2).toLowerCase() + ' mt-1'"></span>
+        {{locale.name}}
+      </button>
+      <div aria-labelledby="localeButton" class="dropdown-menu dark-input">
+        <a (click)="onLocaleSelect(locale)" *ngFor="let locale of locales"
+           [lang]="locale.code" class="dropdown-item dark-input f16" href="#">
+          <span [className]="'flag ' + locale.code.substr(3, 2).toLowerCase() + ' mt-1'"></span>
+          <span> {{locale.name}}</span>
+        </a>
+      </div>
+    </form>
+    <span class="navbar-text text-light">{{message('version')}} 9.3.4</span>
   </div>
 </nav>

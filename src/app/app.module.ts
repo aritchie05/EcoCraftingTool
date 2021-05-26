@@ -28,7 +28,6 @@ import {CraftingParentComponent} from './crafting-parent/crafting-parent.compone
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Skill} from '../interface/skill';
 import {CraftingData} from '../interface/crafting-data';
-import {HttpClient} from '@angular/common/http';
 import {UpgradeModule} from '../interface/upgrade-module';
 import {CraftingTable} from '../interface/crafting-table';
 import {Item} from '../interface/item';
@@ -10,6 +9,7 @@ import {Ingredient} from '../interface/ingredient';
 import {Output} from '../interface/output';
 import {LaborCost} from '../interface/labor-cost';
 import {craftingData} from '../../assets/data/crafting-data';
+import {Locale, LocaleService} from './locale.service';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,17 @@ export class CraftingDataService {
   //private subjectData = new Subject<CraftingData>();
   //responseStatus = this.subjectData.asObservable();
 
-  constructor(private http: HttpClient) {
+  locale: Locale;
+
+  constructor(private localeService: LocaleService) {
+    this.locale = localeService.selectedLocale;
+    if (!this.locale.langCode().match('en')) {
+      this.localize(this.locale);
+    }
+    craftingData.skills = craftingData.skills.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+    craftingData.recipes = craftingData.recipes.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+    craftingData.items = craftingData.items.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+
     /*
     this.http.get<CraftingData>(environment.craftingDataApi)
       .subscribe(resp => {
@@ -69,6 +79,10 @@ export class CraftingDataService {
     return this.getSkills().filter(skill => skill.name.toUpperCase().includes(searchQuery.toUpperCase()));
   }
 
+  filterRecipeList(searchQuery: string) {
+    return this.getRecipes().filter(recipe => recipe.name.toUpperCase().includes(searchQuery.toUpperCase()));
+  }
+
   getRecipesForSkills(skills: Skill[], includeLvl5Upgrades: boolean): Array<Recipe> {
     let recipes = new Array<Recipe>();
 
@@ -81,7 +95,7 @@ export class CraftingDataService {
         filteredRecipes = filteredRecipes.filter(recipe => {
           let shouldAdd = true;
           recipe.outputs.forEach(output => {
-            let searchString = recipe.skill.name.replace(' ', '');
+            let searchString = recipe.skill.nameID.replace('Skill', '');
             if (output.item.nameID.toUpperCase().includes(searchString.toUpperCase())) {
               shouldAdd = false;
             }
@@ -154,8 +168,24 @@ export class CraftingDataService {
 
   getUpgradeModulesForTable(craftingTable: CraftingTable): UpgradeModule[] {
     return this.getUpgradeModules().filter(upgrade => {
-      return upgrade.nameID.localeCompare(craftingTable.upgradeModuleType) === 0;
+      return upgrade.typeNameID.localeCompare(craftingTable.upgradeModuleType) === 0;
     });
+  }
+
+  localize(locale: Locale): void {
+    craftingData.craftingTables.forEach(table => table.name = this.localeService.localizeCraftingTableName(table.nameID, locale.langCode()));
+    craftingData.upgradeModules.forEach(upgrade => upgrade.name = this.localeService.localizeUpgradeName(upgrade.nameID, locale.langCode()));
+    craftingData.items.forEach(item => item.name = this.localeService.localizeItemName(item.nameID, locale.langCode()));
+    craftingData.recipes.forEach(recipe => {
+      recipe.name = this.localeService.localizeRecipeName(recipe.nameID, locale.langCode());
+      recipe.ingredients.forEach(input => input.item.name = this.localeService.localizeItemName(input.item.nameID, locale.langCode()));
+      recipe.outputs.forEach(output => output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode()));
+      recipe.craftingTable.name = this.localeService.localizeCraftingTableName(recipe.craftingTable.nameID, locale.langCode());
+      recipe.skill.name = this.localeService.localizeSkillName(recipe.skill.nameID, locale.langCode());
+    });
+    craftingData.skills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.nameID, locale.langCode()));
+    craftingData.ingredients.forEach(ingredient => ingredient.item.name = this.localeService.localizeItemName(ingredient.item.nameID, locale.langCode()));
+    craftingData.outputs.forEach(output => output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode()));
   }
 
   private arrayContains(items: Item[], searchItem: Item) {

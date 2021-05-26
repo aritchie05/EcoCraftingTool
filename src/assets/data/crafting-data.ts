@@ -119,43 +119,52 @@ export const craftingData: CraftingData = {
     'nameID': 'WorkbenchObject',
     'upgradeModuleType': 'None'
   }],
-  'upgradeModules': [{'name': 'Basic Upgrade 1', 'nameID': 'BasicUpgrade', 'modifier': 0.9}, {
+  'upgradeModules': [{'name': 'Basic Upgrade 1', 'typeNameID': 'BasicUpgrade', 'nameID': 'BasicUpgrade1', 'modifier': 0.9}, {
     'name': 'Basic Upgrade 2',
-    'nameID': 'BasicUpgrade',
+    'typeNameID': 'BasicUpgrade',
+    'nameID': 'BasicUpgrade2',
     'modifier': 0.75
-  }, {'name': 'Basic Upgrade 3', 'nameID': 'BasicUpgrade', 'modifier': 0.6}, {
+  }, {'name': 'Basic Upgrade 3', 'typeNameID': 'BasicUpgrade', 'nameID': 'BasicUpgrade3', 'modifier': 0.6}, {
     'name': 'Basic Upgrade 4',
-    'nameID': 'BasicUpgrade',
+    'typeNameID': 'BasicUpgrade',
+    'nameID': 'BasicUpgrade4',
     'modifier': 0.55
-  }, {'name': 'Specialized Basic Upgrade', 'nameID': 'BasicUpgrade', 'modifier': 0.5}, {
+  }, {'name': 'Specialized Basic Upgrade', 'typeNameID': 'BasicUpgrade', 'nameID': 'SpecializedBasicUpgrade', 'modifier': 0.5}, {
     'name': 'Advanced Upgrade 1',
-    'nameID': 'AdvancedUpgrade',
+    'typeNameID': 'AdvancedUpgrade',
+    'nameID': 'AdvancedUpgrade1',
     'modifier': 0.9
-  }, {'name': 'Advanced Upgrade 2', 'nameID': 'AdvancedUpgrade', 'modifier': 0.75}, {
+  }, {'name': 'Advanced Upgrade 2', 'typeNameID': 'AdvancedUpgrade', 'nameID': 'AdvancedUpgrade2', 'modifier': 0.75}, {
     'name': 'Advanced Upgrade 3',
-    'nameID': 'AdvancedUpgrade',
+    'typeNameID': 'AdvancedUpgrade',
+    'nameID': 'AdvancedUpgrade3',
     'modifier': 0.6
-  }, {'name': 'Advanced Upgrade 4', 'nameID': 'AdvancedUpgrade', 'modifier': 0.55}, {
+  }, {'name': 'Advanced Upgrade 4', 'typeNameID': 'AdvancedUpgrade', 'nameID': 'AdvancedUpgrade4', 'modifier': 0.55}, {
     'name': 'Specialized Advanced Upgrade',
-    'nameID': 'AdvancedUpgrade',
+    'typeNameID': 'AdvancedUpgrade',
+    'nameID': 'SpecializedAdvancedUpgrade',
     'modifier': 0.5
-  }, {'name': 'Modern Upgrade 1', 'nameID': 'ModernUpgrade', 'modifier': 0.9}, {
+  }, {'name': 'Modern Upgrade 1', 'typeNameID': 'ModernUpgrade', 'nameID': 'ModernUpgrade1', 'modifier': 0.9}, {
     'name': 'Modern Upgrade 2',
-    'nameID': 'ModernUpgrade',
+    'typeNameID': 'ModernUpgrade',
+    'nameID': 'ModernUpgrade2',
     'modifier': 0.75
-  }, {'name': 'Modern Upgrade 3', 'nameID': 'ModernUpgrade', 'modifier': 0.6}, {
+  }, {'name': 'Modern Upgrade 3', 'typeNameID': 'ModernUpgrade', 'nameID': 'ModernUpgrade3', 'modifier': 0.6}, {
     'name': 'Modern Upgrade 4',
-    'nameID': 'ModernUpgrade',
+    'typeNameID': 'ModernUpgrade',
+    'nameID': 'ModernUpgrade4',
     'modifier': 0.55
-  }, {'name': 'Specialized Modern Upgrade', 'nameID': 'ModernUpgrade', 'modifier': 0.5}, {
+  }, {'name': 'Specialized Modern Upgrade', 'typeNameID': 'ModernUpgrade', 'nameID': 'SpecializedModernUpgrade', 'modifier': 0.5}, {
     'name': 'No Upgrade',
-    'nameID': 'BasicUpgrade',
+    'typeNameID': 'BasicUpgrade',
+    'nameID': 'NoUpgradeBasic',
     'modifier': 1.0
-  }, {'name': 'No Upgrade', 'nameID': 'AdvancedUpgrade', 'modifier': 1.0}, {
+  }, {'name': 'No Upgrade', 'typeNameID': 'AdvancedUpgrade', 'nameID': 'NoUpgradeAdvanced', 'modifier': 1.0}, {
     'name': 'No Upgrade',
-    'nameID': 'ModernUpgrade',
+    'typeNameID': 'ModernUpgrade',
+    'nameID': 'NoUpgradeModern',
     'modifier': 1.0
-  }, {'name': 'No Upgrade', 'nameID': 'None', 'modifier': 1.0}],
+  }, {'name': 'No Upgrade', 'typeNameID': 'None', 'nameID': 'NoUpgradeNone', 'modifier': 1.0}],
   'items': [{'name': 'Ashlar Basalt', 'nameID': 'AshlarBasaltItem', 'tag': false}, {
     'name': 'Ashlar Gneiss',
     'nameID': 'AshlarGneissItem',

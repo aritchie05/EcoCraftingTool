@@ -9,3 +9,21 @@
   border-radius: .25rem;
   text-align: right;
 }
+
+.dropdown-menu {
+  max-height: 500px;
+  overflow-y: auto;
+  min-width: 100%;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #121212;
+  text-decoration: none;
+  background-color: #bfbfbf;
+}
+
+.dropdown-item:active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #007bff;
+}
