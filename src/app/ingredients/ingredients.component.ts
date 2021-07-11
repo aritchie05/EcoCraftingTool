@@ -3,6 +3,8 @@ import {CraftingDataService} from '../service/crafting-data.service';
 import {Item} from '../interface/item';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
+import {CookieService} from 'ngx-cookie-service';
+import {IngredientCookie} from '../cookie/ingredient-cookie';
 
 @Component({
   selector: 'app-ingredients',
@@ -18,13 +20,25 @@ export class IngredientsComponent implements OnInit {
   @Output() ingredientPriceChangedEvent = new EventEmitter<Item>();
   @Output() laborCostChangedEvent = new EventEmitter<number>();
 
-  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private messageService: MessageService) {
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService,
+              private messageService: MessageService, private cookieService: CookieService) {
     this.itemIngredients = [];
     this.laborCost = 0;
     this.locale = localeService.selectedLocale;
   }
 
   ngOnInit(): void {
+    if (this.cookieService.check('ingredients')) {
+      let ingredientCookies: IngredientCookie[] = JSON.parse(atob(this.cookieService.get('ingredients')));
+      ingredientCookies.forEach(cookie => {
+        let item = this.dataService.getItems().find(item => item.nameID.localeCompare(cookie.id) === 0);
+        item.price = cookie.pr;
+        this.itemIngredients.push(item);
+      });
+    }
+    if (this.cookieService.check('laborCost')) {
+      this.laborCost = Number.parseFloat(this.cookieService.get('laborCost'));
+    }
   }
 
   message(id: string): string {

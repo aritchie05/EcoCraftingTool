@@ -31,7 +31,7 @@ export class AppComponent {
     document.getElementById('page-title').innerText = 'Eco ' +
       this.messageService.getMessage('navTitle', this.locale);
     document.head.lang = this.locale.langCode();
+    this.localeService.selectedLocale = locale;
     this.craftingParentComponent.updateLocale(locale);
-    this.footerComponent.locale = locale;
   }
 }

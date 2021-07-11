@@ -1,16 +1,18 @@
-import {AfterContentInit, Component, EventEmitter, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Recipe} from '../interface/recipe';
 import {OutputDisplay, SubRecipe} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
+import {CookieService} from 'ngx-cookie-service';
+import {OutputCookie} from '../cookie/output-cookie';
 
 @Component({
   selector: 'app-outputs',
   templateUrl: './outputs.component.html',
   styleUrls: ['./outputs.component.css']
 })
-export class OutputsComponent implements AfterContentInit {
+export class OutputsComponent implements OnInit, AfterContentInit {
 
   outputRecipes: Recipe[];
   filteredRecipes: Recipe[];
@@ -21,10 +23,24 @@ export class OutputsComponent implements AfterContentInit {
   @Output() itemRemovedEvent = new EventEmitter<Recipe[]>();
   @Output() subRecipeRemovedEvent = new EventEmitter<Recipe>();
 
-  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private messageService: MessageService) {
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService,
+              private messageService: MessageService, private cookieService: CookieService) {
     this.outputRecipes = [];
     this.outputDisplays = [];
     this.locale = localeService.selectedLocale;
+  }
+
+  ngOnInit(): void {
+    if (this.cookieService.check('recipes')) {
+      let outputsCookies: OutputCookie[] = JSON.parse(atob(this.cookieService.get('recipes')));
+      outputsCookies.forEach(cookie => {
+        let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
+        recipe.price = cookie.pr;
+        recipe.primaryOutput = recipe.outputs[0];
+        this.outputRecipes.push(recipe);
+      });
+      this.convertRecipesToOutputDisplays();
+    }
   }
 
   ngAfterContentInit(): void {
@@ -44,13 +60,13 @@ export class OutputsComponent implements AfterContentInit {
 
       //Check if the outputDisplays already contains at least one of the primary output item
       let exists = this.outputDisplays.some(outputDisplay => {
-        if (outputDisplay.itemNameID.localeCompare(recipe.primaryOutput.item.nameID) === 0) {
-          outputDisplay.subRecipes.push({
-            recipeNameID: recipe.nameID,
-            recipeName: recipe.name,
-            recipePrice: recipe.price
-          });
-          return true;
+          if (outputDisplay.itemNameID.localeCompare(recipe.primaryOutput.item.nameID) === 0) {
+            outputDisplay.subRecipes.push({
+              recipeNameID: recipe.nameID,
+              recipeName: recipe.name,
+              recipePrice: recipe.price
+            });
+            return true;
           }
           return false;
         }

@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {localeData} from '../../assets/data/locale-data';
+import {CookieService} from 'ngx-cookie-service';
 
 export class Locale {
   name: string;
@@ -22,7 +23,7 @@ export class LocaleService {
   selectedLocale: Locale;
   supportedLocales: Locale[];
 
-  constructor() {
+  constructor(private cookieService: CookieService) {
     this.supportedLocales = [
       new Locale('English', 'en-US'),
       new Locale('Français', 'fr-FR'),
@@ -35,8 +36,13 @@ export class LocaleService {
       new Locale('汉语', 'zh-CN'),
       new Locale('日本語', 'ja-JP')
     ];
-    let userLang = this.getUsersLocale('en-US').substr(0, 2);
-    this.selectedLocale = this.supportedLocales.find(locale => locale.code.match(userLang));
+    if (this.cookieService.check('locale')) {
+      let jsonLocale = JSON.parse(this.cookieService.get('locale'));
+      this.selectedLocale = new Locale(jsonLocale.name, jsonLocale.code);
+    } else {
+      let userLang = this.getUsersLocale('en-US').substr(0, 2);
+      this.selectedLocale = this.supportedLocales.find(locale => locale.code.match(userLang));
+    }
   }
 
   getUsersLocale(defaultValue: string): string {

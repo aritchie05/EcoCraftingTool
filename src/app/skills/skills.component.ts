@@ -1,17 +1,20 @@
-import {AfterContentInit, Component, EventEmitter, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Skill} from '../interface/skill';
 import {CraftingTable} from '../interface/crafting-table';
 import {UpgradeModule} from '../interface/upgrade-module';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
+import {CookieService} from 'ngx-cookie-service';
+import {SkillCookie} from '../cookie/skill-cookie';
+import {TableCookie} from '../cookie/table-cookie';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
-export class SkillsComponent implements AfterContentInit {
+export class SkillsComponent implements OnInit, AfterContentInit {
 
   filteredSkills: Skill[];
   selectedSkills: Skill[];
@@ -25,14 +28,32 @@ export class SkillsComponent implements AfterContentInit {
   @Output() tableRemovedEvent = new EventEmitter<CraftingTable>();
   @Output() lavishUpdatedEvent = new EventEmitter<Skill>();
 
-  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private messageService: MessageService) {
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService,
+              private messageService: MessageService, private cookieService: CookieService) {
     this.selectedSkills = [];
     this.craftingTables = [];
     this.locale = localeService.selectedLocale;
   }
 
-  message(id: string): string {
-    return this.messageService.getMessage(id, this.locale);
+  ngOnInit(): void {
+    if (this.cookieService.check('skills')) {
+      let skillCookies: SkillCookie[] = JSON.parse(atob(this.cookieService.get('skills')));
+      skillCookies.forEach(cookie => {
+        let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(cookie.id) === 0);
+        skill.level = cookie.lvl;
+        skill.lavishChecked = cookie.lav;
+        this.selectedSkills.push(skill);
+      });
+    }
+    if (this.cookieService.check('tables')) {
+      let tableCookies: TableCookie[] = JSON.parse(atob(this.cookieService.get('tables')));
+      tableCookies.forEach(cookie => {
+        let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(cookie.id) === 0);
+        table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+        table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(cookie.up) === 0);
+        this.craftingTables.push(table);
+      });
+    }
   }
 
   ngAfterContentInit(): void {
@@ -42,6 +63,10 @@ export class SkillsComponent implements AfterContentInit {
       this.filteredSkills = resp.skills;
     });
     */
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id, this.locale);
   }
 
   onSkillsSearchInput(value: string): void {

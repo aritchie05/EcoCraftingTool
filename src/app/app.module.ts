@@ -8,9 +8,9 @@ import {RouterModule} from '@angular/router';
 import {SkillsComponent} from './skills/skills.component';
 import {IngredientsComponent} from './ingredients/ingredients.component';
 import {OutputsComponent} from './outputs/outputs.component';
-import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
+import {CookieService} from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -25,8 +25,10 @@ import {CraftingParentComponent} from './crafting-parent/crafting-parent.compone
   imports: [
     BrowserModule,
     RouterModule,
-    FormsModule,
     HttpClientModule
+  ],
+  providers: [
+    CookieService
   ],
   bootstrap: [AppComponent]
 })

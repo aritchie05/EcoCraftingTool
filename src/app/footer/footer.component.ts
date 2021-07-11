@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Locale, LocaleService} from '../service/locale.service';
+import {LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 
 @Component({
@@ -9,14 +9,11 @@ import {MessageService} from '../service/message.service';
 })
 export class FooterComponent {
 
-  locale: Locale;
-
   constructor(private localeService: LocaleService, private messageService: MessageService) {
-    this.locale = localeService.selectedLocale;
   }
 
   message(id: string): string {
-    return this.messageService.getMessage(id, this.locale);
+    return this.messageService.getMessage(id, this.localeService.selectedLocale);
   }
 
 }
