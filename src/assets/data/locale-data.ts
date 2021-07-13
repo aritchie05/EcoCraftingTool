@@ -18564,6 +18564,30 @@ export const localeData: LocaleData[] =
       'zh': '砂精矿',
       'ja': '砂濃縮物'
     }, {
+      'id': 'SandConcentrateLv2',
+      'en': 'Sand Concentrate Lv2',
+      'fr': 'Concentré de sable 2',
+      'es': 'Concentrado de arena 2',
+      'de': 'Sandkonzentrat 2',
+      'pl': 'Koncentrat piasku 2',
+      'ru': 'Концентрат песка 2',
+      'uk': 'Піщаний концентрат 2',
+      'ko': '모래 농축 물 2',
+      'zh': '砂精矿 2',
+      'ja': '砂濃縮物2'
+    }, {
+      'id': 'SandConcentrateLv3',
+      'en': 'Sand Concentrate Lv3',
+      'fr': 'Concentré de sable 3',
+      'es': 'Concentrado de arena 3',
+      'de': 'Sandkonzentrat 3',
+      'pl': 'Koncentrat piasku 3',
+      'ru': 'Концентрат песка 3',
+      'uk': 'Піщаний концентрат 3',
+      'ko': '모래 농축 물 3',
+      'zh': '砂精矿 3',
+      'ja': '砂濃縮物3'
+    }, {
       'id': 'Sawmill',
       'en': 'Sawmill',
       'fr': 'Scierie',
