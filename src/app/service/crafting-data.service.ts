@@ -56,7 +56,16 @@ export class CraftingDataService {
   }
 
   getRecipes(): Recipe[] {
-    return craftingData.recipes;
+    let recipes = craftingData.recipes;
+    recipes.forEach(recipe => {
+      for (let i = 0; i < recipe.outputs.length; i++) {
+        if (recipe.outputs[i].primary) {
+          recipe.primaryOutput = recipe.outputs[i];
+          break;
+        }
+      }
+    });
+    return recipes;
   }
 
   getSkills(): Skill[] {

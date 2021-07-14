@@ -74,7 +74,6 @@ export class CraftingParentComponent {
 
     //Now check new recipes
     let recipes = this.dataService.getRecipesForSkills([skill], false);
-    recipes.forEach(recipe => recipe.primaryOutput = recipe.outputs[0]);
 
     let recipesNotConfirmed = new Array<Recipe>();
 
@@ -414,7 +413,7 @@ export class CraftingParentComponent {
       recipe.ingredients.forEach(ingredient => {
         if (ingredient.reducible) {
           if (skill.lavishWorkspace && skill.lavishChecked) {
-            price += (ingredient.price * (ingredient.quantity * .95) * table.selectedUpgrade.modifier);
+            price += (ingredient.price * ingredient.quantity * .95 * table.selectedUpgrade.modifier);
           } else {
             price += (ingredient.price * ingredient.quantity * table.selectedUpgrade.modifier);
           }
@@ -422,6 +421,20 @@ export class CraftingParentComponent {
           price += (ingredient.price * ingredient.quantity);
         }
       });
+
+      //Special case for oil drilling where barrels are secondary output, reducing cost of epoxy, plastic, rubber, & nylon
+      if (recipe.primaryOutput.item.nameID.localeCompare('BarrelItem') !== 0 &&
+        recipe.outputs.some(output => output.item.nameID.localeCompare('BarrelItem') === 0) &&
+        this.outputsComponent.outputRecipes.some(recipe => recipe.nameID.localeCompare('Barrel') === 0)) {
+        let barrelPrice = this.outputsComponent.outputRecipes.find(recipe => recipe.nameID.localeCompare('Barrel') === 0).price;
+        let barrelQuantity = recipe.outputs.find(output => output.item.nameID.localeCompare('BarrelItem') === 0).quantity;
+        let barrelSavings = barrelPrice * barrelQuantity * table.selectedUpgrade.modifier;
+        if (skill.lavishWorkspace && skill.lavishChecked) {
+          barrelSavings *= .95;
+        }
+        console.log(`Subtracting ${barrelSavings} from ${recipe.name} price because of barrels returned.`);
+        price -= barrelSavings;
+      }
 
       //Add the labor cost
       let laborSkill = this.skillsComponent.selectedSkills.find(skill => {
@@ -441,7 +454,7 @@ export class CraftingParentComponent {
     return this.dataService.getRecipesForSkills(this.skillsComponent.selectedSkills, false)
       .some(otherRecipe => {
         return recipe.nameID.localeCompare(otherRecipe.nameID) !== 0 &&
-          otherRecipe.outputs[0].item.nameID.localeCompare(recipe.primaryOutput.item.nameID) === 0;
+          otherRecipe.primaryOutput.item.nameID.localeCompare(recipe.primaryOutput.item.nameID) === 0;
       });
   }
 

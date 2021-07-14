@@ -36,7 +36,6 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       outputsCookies.forEach(cookie => {
         let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
         recipe.price = cookie.pr;
-        recipe.primaryOutput = recipe.outputs[0];
         this.outputRecipes.push(recipe);
       });
       this.convertRecipesToOutputDisplays();
@@ -165,7 +164,6 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       return outputDisplay.subRecipes.some(subRecipe => subRecipe.recipeNameID.localeCompare(recipe.nameID) === 0);
     });
     if (!exists) {
-      recipe.primaryOutput = recipe.outputs[0];
       this.outputRecipes.push(recipe);
       this.convertRecipesToOutputDisplays();
       this.recipeAddedEvent.emit(recipe);
