@@ -4,4 +4,5 @@ export class Output {
   item: Item;
   quantity: number;
   reducible: boolean;
+  primary: boolean;
 }

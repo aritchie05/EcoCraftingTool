@@ -2468,7 +2468,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Acorn', 'nameID': 'AcornItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Acorn Powder', 'nameID': 'AcornPowderItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Acorn Powder', 'nameID': 'AcornPowderItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Adorned Ashlar Stone Bench',
     'nameID': 'AdornedAshlarStoneBench',
@@ -2491,7 +2496,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Adorned Ashlar Stone Bench', 'nameID': 'AdornedAshlarStoneBenchItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Adorned Ashlar Stone Chair',
@@ -2515,7 +2521,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Adorned Ashlar Stone Chair', 'nameID': 'AdornedAshlarStoneChairItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Adorned Ashlar Stone Table',
@@ -2539,7 +2546,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Adorned Ashlar Stone Table', 'nameID': 'AdornedAshlarStoneTableItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Baking Upgrade',
@@ -2563,7 +2571,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Baking Upgrade', 'nameID': 'AdvancedBakingUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Carpentry Table',
@@ -2591,7 +2600,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Carpentry Table', 'nameID': 'AdvancedCarpentryTableItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Circuit',
@@ -2620,7 +2630,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Substrate', 'nameID': 'SubstrateItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Advanced Circuit', 'nameID': 'AdvancedCircuitItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Advanced Circuit', 'nameID': 'AdvancedCircuitItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Advanced Combustion Engine',
     'nameID': 'AdvancedCombustionEngine',
@@ -2659,7 +2674,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Combustion Engine', 'nameID': 'AdvancedCombustionEngineItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Cooking Upgrade',
@@ -2683,7 +2699,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Cooking Upgrade', 'nameID': 'AdvancedCookingUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Masonry Table',
@@ -2707,7 +2724,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Masonry Table', 'nameID': 'AdvancedMasonryTableItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Masonry Upgrade',
@@ -2731,7 +2749,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Masonry Upgrade', 'nameID': 'AdvancedMasonryUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Smelting Upgrade',
@@ -2755,7 +2774,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Smelting Upgrade', 'nameID': 'AdvancedSmeltingUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Tailoring Table',
@@ -2779,7 +2799,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Upgrade 1',
@@ -2803,7 +2824,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Upgrade 1', 'nameID': 'AdvancedUpgradeLvl1Item', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Upgrade 2',
@@ -2833,7 +2855,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Upgrade 2', 'nameID': 'AdvancedUpgradeLvl2Item', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Upgrade 3',
@@ -2863,7 +2886,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Upgrade 3', 'nameID': 'AdvancedUpgradeLvl3Item', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Advanced Upgrade 4',
@@ -2895,7 +2919,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Advanced Upgrade 4', 'nameID': 'AdvancedUpgradeLvl4Item', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Agave Seed',
@@ -2912,7 +2937,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Agave Leaves', 'nameID': 'AgaveLeavesItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Agave Seed', 'nameID': 'AgaveSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Agave Seed', 'nameID': 'AgaveSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Agriculture Research Paper Advanced',
     'nameID': 'AgricultureResearchPaperAdvanced',
@@ -2931,7 +2961,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Agriculture Research Paper Advanced', 'nameID': 'AgricultureResearchPaperAdvancedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Agriculture Research Paper Modern',
@@ -2955,7 +2986,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Agriculture Research Paper Modern', 'nameID': 'AgricultureResearchPaperModernItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Amanita Mushroom Spores',
@@ -2979,7 +3011,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Amanita Mushroom Spores', 'nameID': 'AmanitaMushroomSporesItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Anvil',
@@ -3000,7 +3033,7 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Anvil', 'nameID': 'AnvilItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Anvil', 'nameID': 'AnvilItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Arrastra',
     'nameID': 'Arrastra',
@@ -3026,7 +3059,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 5, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Arrastra', 'nameID': 'ArrastraItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Arrastra', 'nameID': 'ArrastraItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Ashlar Large Stone Fountain',
     'nameID': 'AshlarLargeStoneFountain',
@@ -3045,7 +3078,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Large Stone Fountain', 'nameID': 'AshlarLargeStoneFountainItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Ashlar Small Stone Fountain',
@@ -3065,7 +3099,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Small Stone Fountain', 'nameID': 'AshlarSmallStoneFountainItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Ashlar Basalt',
@@ -3095,8 +3130,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Ashlar Gneiss',
     'nameID': 'AshlarGneiss',
@@ -3125,8 +3166,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Ashlar Granite',
     'nameID': 'AshlarGranite',
@@ -3155,8 +3202,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Ashlar Limestone',
     'nameID': 'AshlarLimestone',
@@ -3185,8 +3238,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Ashlar Sandstone',
     'nameID': 'AshlarSandstone',
@@ -3213,8 +3272,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Ashlar Shale',
     'nameID': 'AshlarShale',
@@ -3243,8 +3308,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Ashlar Stone Bench',
     'nameID': 'AshlarStoneBench',
@@ -3260,7 +3326,12 @@ export const craftingData: CraftingData = {
     'labor': 300,
     'craftingTable': {'name': 'Advanced Masonry Table', 'nameID': 'AdvancedMasonryTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Ashlar Stone Bench', 'nameID': 'AshlarStoneBenchItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Ashlar Stone Bench', 'nameID': 'AshlarStoneBenchItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Ashlar Stone Chair',
     'nameID': 'AshlarStoneChair',
@@ -3276,7 +3347,12 @@ export const craftingData: CraftingData = {
     'labor': 300,
     'craftingTable': {'name': 'Advanced Masonry Table', 'nameID': 'AdvancedMasonryTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Ashlar Stone Chair', 'nameID': 'AshlarStoneChairItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Ashlar Stone Chair', 'nameID': 'AshlarStoneChairItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Ashlar Stone Door',
     'nameID': 'AshlarStoneDoor',
@@ -3292,7 +3368,12 @@ export const craftingData: CraftingData = {
     'labor': 300,
     'craftingTable': {'name': 'Advanced Masonry Table', 'nameID': 'AdvancedMasonryTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Ashlar Stone Door', 'nameID': 'AshlarStoneDoorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Ashlar Stone Door', 'nameID': 'AshlarStoneDoorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Ashlar Stone Fireplace',
     'nameID': 'AshlarStoneFireplace',
@@ -3311,7 +3392,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Ashlar Stone Fireplace', 'nameID': 'AshlarStoneFireplaceItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Ashlar Stone Table',
@@ -3328,7 +3410,12 @@ export const craftingData: CraftingData = {
     'labor': 300,
     'craftingTable': {'name': 'Advanced Masonry Table', 'nameID': 'AdvancedMasonryTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Ashlar Stone Table', 'nameID': 'AshlarStoneTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Ashlar Stone Table', 'nameID': 'AshlarStoneTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Asphalt Concrete',
     'nameID': 'AsphaltConcrete',
@@ -3354,7 +3441,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 2, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Asphalt Concrete', 'nameID': 'AsphaltConcreteItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Asphalt Concrete', 'nameID': 'AsphaltConcreteItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Assembly Line',
     'nameID': 'AssemblyLine',
@@ -3382,7 +3474,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Assembly Line', 'nameID': 'AssemblyLineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Assembly Line', 'nameID': 'AssemblyLineItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Automatic Loom',
     'nameID': 'AutomaticLoom',
@@ -3402,7 +3499,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Automatic Loom', 'nameID': 'AutomaticLoomItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Automatic Loom', 'nameID': 'AutomaticLoomItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Agave',
     'nameID': 'BakedAgave',
@@ -3418,7 +3520,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Agave Leaves', 'nameID': 'AgaveLeavesItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Baked Agave', 'nameID': 'BakedAgaveItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baked Agave', 'nameID': 'BakedAgaveItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Beet',
     'nameID': 'BakedBeet',
@@ -3434,7 +3541,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Beet', 'nameID': 'BeetItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Baked Beet', 'nameID': 'BakedBeetItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baked Beet', 'nameID': 'BakedBeetItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Corn',
     'nameID': 'BakedCorn',
@@ -3450,7 +3562,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Corn', 'nameID': 'CornItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Baked Corn', 'nameID': 'BakedCornItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baked Corn', 'nameID': 'BakedCornItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Heart Of Palm',
     'nameID': 'BakedHeartOfPalm',
@@ -3469,7 +3586,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Baked Heart Of Palm', 'nameID': 'BakedHeartOfPalmItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Baked Meat',
@@ -3486,7 +3604,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Baked Meat', 'nameID': 'BakedMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baked Meat', 'nameID': 'BakedMeatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Roast',
     'nameID': 'BakedRoast',
@@ -3502,7 +3625,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Roast', 'nameID': 'RawRoastItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Baked Roast', 'nameID': 'BakedRoastItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baked Roast', 'nameID': 'BakedRoastItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Taro',
     'nameID': 'BakedTaro',
@@ -3518,7 +3646,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Taro Root', 'nameID': 'TaroRootItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Baked Taro', 'nameID': 'BakedTaroItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baked Taro', 'nameID': 'BakedTaroItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Tomato',
     'nameID': 'BakedTomato',
@@ -3534,7 +3667,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Tomato', 'nameID': 'TomatoItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Baked Tomato', 'nameID': 'BakedTomatoItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baked Tomato', 'nameID': 'BakedTomatoItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Bakery Oven',
     'nameID': 'BakeryOven',
@@ -3554,7 +3692,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baking Upgrade',
     'nameID': 'BakingUpgrade',
@@ -3574,7 +3717,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Baking Upgrade', 'nameID': 'BakingUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Baking Upgrade', 'nameID': 'BakingUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Bandana',
     'nameID': 'Bandana',
@@ -3594,7 +3742,7 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bandana', 'nameID': 'BandanaItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bandana', 'nameID': 'BandanaItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Bank',
     'nameID': 'Bank',
@@ -3624,7 +3772,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 16, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Bank', 'nameID': 'BankItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bank', 'nameID': 'BankItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Bannock',
     'nameID': 'Bannock',
@@ -3646,7 +3794,7 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Bannock', 'nameID': 'BannockItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bannock', 'nameID': 'BannockItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Barrel',
     'nameID': 'Barrel',
@@ -3662,7 +3810,7 @@ export const craftingData: CraftingData = {
     'labor': 180,
     'craftingTable': {'name': 'Electric Machinist Table', 'nameID': 'ElectricMachinistTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Epoxy',
     'nameID': 'Epoxy',
@@ -3681,8 +3829,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
       'quantity': 3,
-      'reducible': true
-    }, {'item': {'name': 'Epoxy', 'nameID': 'EpoxyItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': true,
+      'primary': false
+    }, {'item': {'name': 'Epoxy', 'nameID': 'EpoxyItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Nylon',
     'nameID': 'Nylon',
@@ -3701,8 +3850,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
       'quantity': 3,
-      'reducible': true
-    }, {'item': {'name': 'Nylon', 'nameID': 'NylonItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': true,
+      'primary': false
+    }, {'item': {'name': 'Nylon', 'nameID': 'NylonItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Plastic',
     'nameID': 'Plastic',
@@ -3721,8 +3871,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
       'quantity': 3,
-      'reducible': true
-    }, {'item': {'name': 'Plastic', 'nameID': 'PlasticItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': true,
+      'primary': false
+    }, {'item': {'name': 'Plastic', 'nameID': 'PlasticItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Synthetic Rubber',
     'nameID': 'SyntheticRubber',
@@ -3741,8 +3892,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
       'quantity': 3,
-      'reducible': true
-    }, {'item': {'name': 'Synthetic Rubber', 'nameID': 'SyntheticRubberItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': true,
+      'primary': false
+    }, {
+      'item': {'name': 'Synthetic Rubber', 'nameID': 'SyntheticRubberItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Basic Circuit',
     'nameID': 'BasicCircuit',
@@ -3766,7 +3923,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Substrate', 'nameID': 'SubstrateItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Basic Circuit', 'nameID': 'BasicCircuitItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Circuit', 'nameID': 'BasicCircuitItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Basic Engineering Upgrade',
     'nameID': 'BasicEngineeringUpgrade',
@@ -3789,7 +3951,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Basic Engineering Upgrade', 'nameID': 'BasicEngineeringUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Exotic Salad',
@@ -3814,7 +3977,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Rice', 'nameID': 'RiceItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Forest Salad',
     'nameID': 'ForestSalad',
@@ -3838,7 +4006,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Huckleberries', 'nameID': 'HuckleberriesItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Grassland Salad',
     'nameID': 'GrasslandSalad',
@@ -3864,7 +4037,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 6, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Mixed Salad',
     'nameID': 'MixedSalad',
@@ -3888,7 +4066,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Tomato', 'nameID': 'TomatoItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Rainforest Salad',
     'nameID': 'RainforestSalad',
@@ -3914,7 +4097,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 4, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Basic Upgrade 1',
     'nameID': 'BasicUpgradeLvl1',
@@ -3930,7 +4118,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Carpentry Table', 'nameID': 'CarpentryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Basic Upgrade 1', 'nameID': 'BasicUpgradeLvl1Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Upgrade 1', 'nameID': 'BasicUpgradeLvl1Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Basic Upgrade 2',
     'nameID': 'BasicUpgradeLvl2',
@@ -3954,7 +4147,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Mortared Stone', 'nameID': 'MortaredStone', 'tag': true}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Basic Upgrade 2', 'nameID': 'BasicUpgradeLvl2Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Upgrade 2', 'nameID': 'BasicUpgradeLvl2Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Basic Upgrade 3',
     'nameID': 'BasicUpgradeLvl3',
@@ -3980,7 +4178,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 80, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Basic Upgrade 3', 'nameID': 'BasicUpgradeLvl3Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Upgrade 3', 'nameID': 'BasicUpgradeLvl3Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Basic Upgrade 4',
     'nameID': 'BasicUpgradeLvl4',
@@ -4004,7 +4207,12 @@ export const craftingData: CraftingData = {
       'quantity': 120,
       'reducible': true
     }, {'item': {'name': 'Wooden Wheel', 'nameID': 'WoodenWheelItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Basic Upgrade 4', 'nameID': 'BasicUpgradeLvl4Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Basic Upgrade 4', 'nameID': 'BasicUpgradeLvl4Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Bathtub',
     'nameID': 'Bathtub',
@@ -4024,7 +4232,7 @@ export const craftingData: CraftingData = {
       'quantity': 40,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bathtub', 'nameID': 'BathtubItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bathtub', 'nameID': 'BathtubItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Bean Paste',
     'nameID': 'BeanPaste',
@@ -4040,7 +4248,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Beans', 'nameID': 'BeansItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bean Paste', 'nameID': 'BeanPasteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Bean Paste', 'nameID': 'BeanPasteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Bear S U P R E M E',
     'nameID': 'BearSUPREME',
@@ -4068,7 +4281,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bear S U P R E M E', 'nameID': 'BearSUPREMEItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Bear S U P R E M E', 'nameID': 'BearSUPREMEItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Bearclaw',
     'nameID': 'Bearclaw',
@@ -4088,7 +4306,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bearclaw', 'nameID': 'BearclawItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bearclaw', 'nameID': 'BearclawItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Bearpack',
     'nameID': 'Bearpack',
@@ -4114,7 +4332,7 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 25, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Bearpack', 'nameID': 'BearpackItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bearpack', 'nameID': 'BearpackItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Beet Campfire Salad',
     'nameID': 'BeetCampfireSalad',
@@ -4141,7 +4359,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Beet Campfire Salad', 'nameID': 'BeetCampfireSaladItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Beet Seed',
@@ -4158,7 +4377,7 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Beet', 'nameID': 'BeetItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Beet Seed', 'nameID': 'BeetSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Beet Seed', 'nameID': 'BeetSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Berry Extract Fertilizer',
     'nameID': 'BerryExtractFertilizer',
@@ -4181,7 +4400,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Berry Extract Fertilizer', 'nameID': 'BerryExtractFertilizerItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Big Backpack',
@@ -4202,7 +4422,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Big Backpack', 'nameID': 'BigBackpackItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Big Backpack', 'nameID': 'BigBackpackItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Biodiesel',
     'nameID': 'Biodiesel',
@@ -4222,7 +4447,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Fat', 'nameID': 'Fat', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Biodiesel', 'nameID': 'BiodieselItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Biodiesel', 'nameID': 'BiodieselItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Bison Mount',
     'nameID': 'BisonMount',
@@ -4248,7 +4478,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 10, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Bison Mount', 'nameID': 'BisonMountItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Bison Mount', 'nameID': 'BisonMountItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Blast Furnace',
     'nameID': 'BlastFurnace',
@@ -4276,7 +4511,12 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Blast Furnace', 'nameID': 'BlastFurnaceItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Blast Furnace', 'nameID': 'BlastFurnaceItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Blood Meal Fertilizer',
     'nameID': 'BloodMealFertilizer',
@@ -4299,7 +4539,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Blood Meal Fertilizer', 'nameID': 'BloodMealFertilizerItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Bloomery',
@@ -4324,7 +4565,7 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bloomery', 'nameID': 'BloomeryItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bloomery', 'nameID': 'BloomeryItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Board',
     'nameID': 'Board',
@@ -4340,7 +4581,7 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Carpentry Table', 'nameID': 'CarpentryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Saw Boards',
     'nameID': 'SawBoards',
@@ -4356,7 +4597,7 @@ export const craftingData: CraftingData = {
     'labor': 30,
     'craftingTable': {'name': 'Sawmill', 'nameID': 'SawmillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true}, 'quantity': 3, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Boiled Grains',
     'nameID': 'BoiledGrains',
@@ -4372,7 +4613,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Grain', 'nameID': 'Grain', 'tag': true}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Boiled Grains', 'nameID': 'BoiledGrainsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Boiled Grains', 'nameID': 'BoiledGrainsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Boiled Rice',
     'nameID': 'BoiledRice',
@@ -4388,7 +4634,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Kitchen', 'nameID': 'KitchenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Rice', 'nameID': 'RiceItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Boiled Rice', 'nameID': 'BoiledRiceItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Boiled Rice', 'nameID': 'BoiledRiceItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Boiled Sausage',
     'nameID': 'BoiledSausage',
@@ -4408,7 +4659,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Raw Sausage', 'nameID': 'RawSausageItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Boiled Sausage', 'nameID': 'BoiledSausageItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Boiled Sausage', 'nameID': 'BoiledSausageItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Boiler',
     'nameID': 'Boiler',
@@ -4428,7 +4684,7 @@ export const craftingData: CraftingData = {
       'quantity': 15,
       'reducible': true
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Boiler', 'nameID': 'BoilerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Boiler', 'nameID': 'BoilerItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Bolete Mushroom Spores',
     'nameID': 'BoleteMushroomSpores',
@@ -4451,7 +4707,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Bolete Mushroom Spores', 'nameID': 'BoleteMushroomSporesItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Bookshelf',
@@ -4478,7 +4735,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 50, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Bookshelf', 'nameID': 'BookshelfItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Bookshelf', 'nameID': 'BookshelfItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Brazier',
     'nameID': 'Brazier',
@@ -4498,7 +4760,7 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Brazier', 'nameID': 'BrazierItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Brazier', 'nameID': 'BrazierItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Bread',
     'nameID': 'Bread',
@@ -4514,7 +4776,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Leavened Dough', 'nameID': 'LeavenedDoughItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Bread', 'nameID': 'BreadItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Bread', 'nameID': 'BreadItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Brick',
     'nameID': 'Brick',
@@ -4534,7 +4796,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Shale Brick',
     'nameID': 'ShaleBrick',
@@ -4558,7 +4820,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Brick Fireplace',
     'nameID': 'BrickFireplace',
@@ -4578,7 +4840,12 @@ export const craftingData: CraftingData = {
       'quantity': 50,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Brick Fireplace', 'nameID': 'BrickFireplaceItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Brick Fireplace', 'nameID': 'BrickFireplaceItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Builder Boots',
     'nameID': 'BuilderBoots',
@@ -4602,7 +4869,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Builder Boots', 'nameID': 'BuilderBootsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Builder Boots', 'nameID': 'BuilderBootsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Builder Gloves',
     'nameID': 'BuilderGloves',
@@ -4622,7 +4894,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Builder Gloves', 'nameID': 'BuilderGlovesItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Builder Gloves', 'nameID': 'BuilderGlovesItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Builder Helmet',
     'nameID': 'BuilderHelmet',
@@ -4642,7 +4919,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Plastic', 'nameID': 'PlasticItem', 'tag': false}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Builder Helmet', 'nameID': 'BuilderHelmetItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Builder Helmet', 'nameID': 'BuilderHelmetItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Builder Overalls',
     'nameID': 'BuilderOveralls',
@@ -4658,7 +4940,12 @@ export const craftingData: CraftingData = {
     'labor': 2000,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Builder Overalls', 'nameID': 'BuilderOverallsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Builder Overalls', 'nameID': 'BuilderOverallsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Builder Shirt',
     'nameID': 'BuilderShirt',
@@ -4678,7 +4965,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Builder Shirt', 'nameID': 'BuilderShirtItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Builder Shirt', 'nameID': 'BuilderShirtItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Butchery Table',
     'nameID': 'ButcheryTable',
@@ -4698,7 +4990,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Butchery Table', 'nameID': 'ButcheryTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Butchery Table', 'nameID': 'ButcheryTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Butchery Upgrade',
     'nameID': 'ButcheryUpgrade',
@@ -4718,7 +5015,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Butchery Upgrade', 'nameID': 'ButcheryUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Butchery Upgrade', 'nameID': 'ButcheryUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'C O2 Canister',
     'nameID': 'CO2Canister',
@@ -4734,7 +5036,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'C O2 Canister', 'nameID': 'CO2CanisterItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'C O2 Canister', 'nameID': 'CO2CanisterItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Camas Ash Fertilizer',
     'nameID': 'CamasAshFertilizer',
@@ -4757,7 +5064,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Camas Ash Fertilizer', 'nameID': 'CamasAshFertilizerItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Camas Bread',
@@ -4778,7 +5086,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Leavened Dough', 'nameID': 'LeavenedDoughItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Camas Bread', 'nameID': 'CamasBreadItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Camas Bread', 'nameID': 'CamasBreadItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Camas Bulb Bake',
     'nameID': 'CamasBulbBake',
@@ -4794,7 +5107,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Camas Bulb', 'nameID': 'CamasBulbItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Camas Bulb Bake', 'nameID': 'CamasBulbBakeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Camas Bulb Bake', 'nameID': 'CamasBulbBakeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Camas Paste',
     'nameID': 'CamasPaste',
@@ -4810,7 +5128,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Camas Bulb', 'nameID': 'CamasBulbItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Camas Paste', 'nameID': 'CamasPasteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Camas Paste', 'nameID': 'CamasPasteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Camo Pants',
     'nameID': 'CamoPants',
@@ -4836,7 +5159,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 20, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Camo Pants', 'nameID': 'CamoPantsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Camo Pants', 'nameID': 'CamoPantsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Camo Shirt',
     'nameID': 'CamoShirt',
@@ -4862,7 +5190,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 20, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Camo Shirt', 'nameID': 'CamoShirtItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Camo Shirt', 'nameID': 'CamoShirtItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Campfire Cooking Upgrade',
     'nameID': 'CampfireCookingUpgrade',
@@ -4885,7 +5218,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Campfire Cooking Upgrade', 'nameID': 'CampfireCookingUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Campfire Roast',
@@ -4902,7 +5236,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Roast', 'nameID': 'RawRoastItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Campfire Roast', 'nameID': 'CampfireRoastItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Campfire Roast', 'nameID': 'CampfireRoastItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Campsite',
     'nameID': 'Campsite',
@@ -4922,7 +5261,7 @@ export const craftingData: CraftingData = {
       'quantity': 24,
       'reducible': true
     }, {'item': {'name': 'Wood', 'nameID': 'Wood', 'tag': true}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Campsite', 'nameID': 'CampsiteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Campsite', 'nameID': 'CampsiteItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Candle Stand',
     'nameID': 'CandleStand',
@@ -4942,7 +5281,12 @@ export const craftingData: CraftingData = {
       'quantity': 3,
       'reducible': true
     }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Candle Stand', 'nameID': 'CandleStandItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Candle Stand', 'nameID': 'CandleStandItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Capris',
     'nameID': 'Capris',
@@ -4962,7 +5306,7 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Capris', 'nameID': 'CaprisItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Capris', 'nameID': 'CaprisItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Carpentry Advanced Upgrade',
     'nameID': 'CarpentryAdvancedUpgrade',
@@ -4985,7 +5329,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Carpentry Advanced Upgrade', 'nameID': 'CarpentryAdvancedUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Carpentry Basic Upgrade',
@@ -5009,7 +5354,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Carpentry Basic Upgrade', 'nameID': 'CarpentryBasicUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Cast Iron Stove',
@@ -5030,7 +5376,12 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cast Iron Stove', 'nameID': 'CastIronStoveItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cast Iron Stove', 'nameID': 'CastIronStoveItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Ceiling Candle',
     'nameID': 'CeilingCandle',
@@ -5050,7 +5401,12 @@ export const craftingData: CraftingData = {
       'quantity': 3,
       'reducible': true
     }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Ceiling Candle', 'nameID': 'CeilingCandleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Ceiling Candle', 'nameID': 'CeilingCandleItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cellulose Fiber',
     'nameID': 'CelluloseFiber',
@@ -5066,7 +5422,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Natural Fiber', 'nameID': 'NaturalFiber', 'tag': true}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cellulose Fiber', 'nameID': 'CelluloseFiberItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cellulose Fiber', 'nameID': 'CelluloseFiberItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cement',
     'nameID': 'Cement',
@@ -5086,7 +5447,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cement', 'nameID': 'CementItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Cement', 'nameID': 'CementItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Cement Kiln',
     'nameID': 'CementKiln',
@@ -5110,7 +5471,12 @@ export const craftingData: CraftingData = {
       'quantity': 24,
       'reducible': true
     }, {'item': {'name': 'Iron Piston', 'nameID': 'PistonItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cement Kiln', 'nameID': 'CementKilnItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cement Kiln', 'nameID': 'CementKilnItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Chainsaw',
     'nameID': 'Chainsaw',
@@ -5134,7 +5500,7 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Chainsaw', 'nameID': 'ChainsawItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Chainsaw', 'nameID': 'ChainsawItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Charcoal',
     'nameID': 'Charcoal',
@@ -5150,7 +5516,7 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Kiln', 'nameID': 'KilnObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Wood', 'nameID': 'Wood', 'tag': true}, 'quantity': 7, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Charcoal', 'nameID': 'CharcoalItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Charcoal', 'nameID': 'CharcoalItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Charred Agave',
     'nameID': 'CharredAgave',
@@ -5166,7 +5532,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Agave Leaves', 'nameID': 'AgaveLeavesItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Agave', 'nameID': 'CharredAgaveItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Agave', 'nameID': 'CharredAgaveItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Beans',
     'nameID': 'CharredBeans',
@@ -5182,7 +5553,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Beans', 'nameID': 'BeansItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Beans', 'nameID': 'CharredBeansItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Beans', 'nameID': 'CharredBeansItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Beet',
     'nameID': 'CharredBeet',
@@ -5198,7 +5574,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Beet', 'nameID': 'BeetItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Beet', 'nameID': 'CharredBeetItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Beet', 'nameID': 'CharredBeetItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Cactus Fruit',
     'nameID': 'CharredCactusFruit',
@@ -5221,7 +5602,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Charred Cactus Fruit', 'nameID': 'CharredCactusFruitItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Charred Camas Bulb',
@@ -5238,7 +5620,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Camas Bulb', 'nameID': 'CamasBulbItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Camas Bulb', 'nameID': 'CharredCamasBulbItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Camas Bulb', 'nameID': 'CharredCamasBulbItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Corn',
     'nameID': 'CharredCorn',
@@ -5254,7 +5641,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Corn', 'nameID': 'CornItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Corn', 'nameID': 'CharredCornItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Corn', 'nameID': 'CharredCornItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Fireweed Shoots',
     'nameID': 'CharredFireweedShoots',
@@ -5273,7 +5665,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Charred Fireweed Shoots', 'nameID': 'CharredFireweedShootsItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Campfire Fish Large',
@@ -5290,7 +5683,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Large Fish', 'nameID': 'LargeFish', 'tag': true}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Campfire Fish Medium',
     'nameID': 'CampfireFishMedium',
@@ -5306,7 +5704,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Medium Fish', 'nameID': 'MediumFish', 'tag': true}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Campfire Moon Jellyfish',
     'nameID': 'CampfireMoonJellyfish',
@@ -5322,7 +5725,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Moon Jellyfish', 'nameID': 'MoonJellyfishItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Campfire Pacific Sardine',
     'nameID': 'CampfirePacificSardine',
@@ -5338,7 +5746,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Pacific Sardine', 'nameID': 'PacificSardineItem', 'tag': false}, 'quantity': 3, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Fish',
     'nameID': 'CharredFish',
@@ -5354,7 +5767,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Fish', 'nameID': 'RawFishItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Heart Of Palm',
     'nameID': 'CharredHeartOfPalm',
@@ -5373,7 +5791,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Charred Heart Of Palm', 'nameID': 'CharredHeartOfPalmItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Campfire Animal Medium',
@@ -5393,8 +5812,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
       'quantity': 4,
-      'reducible': false
-    }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Campfire Animal Small',
     'nameID': 'CampfireAnimalSmall',
@@ -5413,8 +5833,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Campfire Animal Tiny',
     'nameID': 'CampfireAnimalTiny',
@@ -5430,7 +5851,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Tiny Carcass', 'nameID': 'TinyCarcass', 'tag': true}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Campfire Bison',
     'nameID': 'CampfireBison',
@@ -5449,8 +5875,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
       'quantity': 8,
-      'reducible': false
-    }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 4, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 4, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Charred Meat',
     'nameID': 'CharredMeat',
@@ -5466,7 +5893,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Mushrooms',
     'nameID': 'CharredMushrooms',
@@ -5482,7 +5914,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Fungus', 'nameID': 'Fungus', 'tag': true}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Mushrooms', 'nameID': 'CharredMushroomsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Mushrooms', 'nameID': 'CharredMushroomsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Papaya',
     'nameID': 'CharredPapaya',
@@ -5498,7 +5935,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Papaya', 'nameID': 'PapayaItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Papaya', 'nameID': 'CharredPapayaItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Papaya', 'nameID': 'CharredPapayaItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Pineapple',
     'nameID': 'CharredPineapple',
@@ -5514,7 +5956,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Pineapple', 'nameID': 'PineappleItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Pineapple', 'nameID': 'CharredPineappleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Pineapple', 'nameID': 'CharredPineappleItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Sausage',
     'nameID': 'CharredSausage',
@@ -5530,7 +5977,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Sausage', 'nameID': 'RawSausageItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Charred Sausage', 'nameID': 'CharredSausageItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Sausage', 'nameID': 'CharredSausageItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Taro',
     'nameID': 'CharredTaro',
@@ -5546,7 +5998,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Taro Root', 'nameID': 'TaroRootItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Taro', 'nameID': 'CharredTaroItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Taro', 'nameID': 'CharredTaroItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Charred Tomato',
     'nameID': 'CharredTomato',
@@ -5562,7 +6019,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Tomato', 'nameID': 'TomatoItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Charred Tomato', 'nameID': 'CharredTomatoItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Charred Tomato', 'nameID': 'CharredTomatoItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cloth',
     'nameID': 'Cloth',
@@ -5578,7 +6040,7 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cloth', 'nameID': 'ClothItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Cloth', 'nameID': 'ClothItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Cloth Belt',
     'nameID': 'ClothBelt',
@@ -5594,7 +6056,12 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Fabric', 'nameID': 'Fabric', 'tag': true}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cloth Belt', 'nameID': 'ClothBeltItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cloth Belt', 'nameID': 'ClothBeltItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cloth Cape',
     'nameID': 'ClothCape',
@@ -5620,7 +6087,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 30, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Cloth Cape', 'nameID': 'ClothCapeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cloth Cape', 'nameID': 'ClothCapeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Combustion Engine',
     'nameID': 'CombustionEngine',
@@ -5648,7 +6120,12 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Rivet', 'nameID': 'RivetItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Combustion Engine', 'nameID': 'CombustionEngineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Combustion Engine', 'nameID': 'CombustionEngineItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Combustion Generator',
     'nameID': 'CombustionGenerator',
@@ -5675,7 +6152,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Combustion Generator', 'nameID': 'CombustionGeneratorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Composite Bow',
@@ -5696,7 +6174,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Nylon Thread', 'nameID': 'NylonThreadItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Composite Bow', 'nameID': 'CompositeBowItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Composite Bow', 'nameID': 'CompositeBowItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Composite Filler',
     'nameID': 'CompositeFiller',
@@ -5716,7 +6199,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Pulp Filler', 'nameID': 'PulpFillerItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Composite Filler', 'nameID': 'CompositeFillerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Composite Filler', 'nameID': 'CompositeFillerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Composite Lumber Bench',
     'nameID': 'CompositeLumberBench',
@@ -5739,7 +6227,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Composite Lumber Bench', 'nameID': 'CompositeLumberBenchItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Composite Lumber Chair',
@@ -5763,7 +6252,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Composite Lumber Chair', 'nameID': 'CompositeLumberChairItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Composite Lumber Door',
@@ -5787,7 +6277,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Composite Lumber Door', 'nameID': 'CompositeLumberDoorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Composite Lumber Table',
@@ -5811,7 +6302,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Composite Lumber Table', 'nameID': 'CompositeLumberTableItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Composite Lumber',
@@ -5838,7 +6330,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': true
     }, {'item': {'name': 'Wood', 'nameID': 'Wood', 'tag': true}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'CompositeLumber', 'nameID': 'CompositeLumber', 'tag': true}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'CompositeLumber', 'nameID': 'CompositeLumber', 'tag': true},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Composites Upgrade',
     'nameID': 'CompositesUpgrade',
@@ -5861,7 +6358,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Composites Upgrade', 'nameID': 'CompositesUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Compost Fertilizer',
@@ -5885,7 +6383,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Compost Fertilizer', 'nameID': 'CompostFertilizerItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Computer Lab',
@@ -5914,7 +6413,12 @@ export const craftingData: CraftingData = {
       'quantity': 100,
       'reducible': true
     }, {'item': {'name': 'Reinforced Concrete', 'nameID': 'ReinforcedConcreteItem', 'tag': false}, 'quantity': 100, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Computer Lab', 'nameID': 'ComputerLabItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Computer Lab', 'nameID': 'ComputerLabItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cookeina Mushroom Spores',
     'nameID': 'CookeinaMushroomSpores',
@@ -5937,7 +6441,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Cookeina Mushroom Spores', 'nameID': 'CookeinaMushroomSporesItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Cooking Upgrade',
@@ -5958,7 +6463,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Cooking Upgrade', 'nameID': 'CookingUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cooking Upgrade', 'nameID': 'CookingUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Copper Bar',
     'nameID': 'CopperBar',
@@ -5981,8 +6491,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Copper Bar', 'nameID': 'CopperBarItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Smelt Copper',
     'nameID': 'SmeltCopper',
@@ -6005,8 +6516,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Copper Bar', 'nameID': 'CopperBarItem', 'tag': false},
       'quantity': 3,
-      'reducible': false
-    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 2, 'reducible': true}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 2, 'reducible': true, 'primary': false}]
   }, {
     'name': 'Concentrate Copper Lv2',
     'nameID': 'ConcentrateCopperLv2',
@@ -6029,7 +6541,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Copper Concentrate', 'nameID': 'CopperConcentrateItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Copper Concentrate',
@@ -6053,7 +6566,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Copper Concentrate', 'nameID': 'CopperConcentrateItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Copper Pipe',
@@ -6070,7 +6584,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Anvil', 'nameID': 'AnvilObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Copper Bar', 'nameID': 'CopperBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Copper Pipe', 'nameID': 'CopperPipeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Copper Pipe', 'nameID': 'CopperPipeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Copper Wiring',
     'nameID': 'CopperWiring',
@@ -6086,7 +6605,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Electric Machinist Table', 'nameID': 'ElectricMachinistTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Copper Bar', 'nameID': 'CopperBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Copper Wiring', 'nameID': 'CopperWiringItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Copper Wiring', 'nameID': 'CopperWiringItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Corn Fritters',
     'nameID': 'CornFritters',
@@ -6112,7 +6636,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 4, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Corn Fritters', 'nameID': 'CornFrittersItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Corn Fritters', 'nameID': 'CornFrittersItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Corn Seed',
     'nameID': 'CornSeed',
@@ -6128,7 +6657,7 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Corn', 'nameID': 'CornItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Corn Seed', 'nameID': 'CornSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Corn Seed', 'nameID': 'CornSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Corn Starch',
     'nameID': 'CornStarch',
@@ -6144,7 +6673,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Corn', 'nameID': 'CornItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Corn Starch', 'nameID': 'CornStarchItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Corn Starch', 'nameID': 'CornStarchItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cornmeal',
     'nameID': 'Cornmeal',
@@ -6160,7 +6694,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Corn', 'nameID': 'CornItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cornmeal', 'nameID': 'CornmealItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Cornmeal', 'nameID': 'CornmealItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Corrugated Steel',
     'nameID': 'CorrugatedSteel',
@@ -6176,7 +6710,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Rolling Mill', 'nameID': 'RollingMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Corrugated Steel', 'nameID': 'CorrugatedSteelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Corrugated Steel', 'nameID': 'CorrugatedSteelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Corrugated Steel Door',
     'nameID': 'CorrugatedSteelDoor',
@@ -6199,7 +6738,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Corrugated Steel Door', 'nameID': 'CorrugatedSteelDoorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Corrugated Steel Fence Door',
@@ -6223,7 +6763,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Corrugated Steel Fence Door', 'nameID': 'CorrugatedSteelFenceDoorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Cotton Carpet',
@@ -6250,7 +6791,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 1, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Cotton Carpet', 'nameID': 'CottonCarpetItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cotton Carpet', 'nameID': 'CottonCarpetItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cotton Fabric',
     'nameID': 'CottonFabric',
@@ -6266,7 +6812,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Loom', 'nameID': 'LoomObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Cotton Thread', 'nameID': 'CottonThreadItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Weave Cotton Fabric',
     'nameID': 'WeaveCottonFabric',
@@ -6282,7 +6833,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Automatic Loom', 'nameID': 'AutomaticLoomObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Cotton Thread', 'nameID': 'CottonThreadItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cotton Thread',
     'nameID': 'CottonThread',
@@ -6301,8 +6857,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Cotton Seed', 'nameID': 'CottonSeedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Cotton Thread', 'nameID': 'CottonThreadItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Cotton Thread', 'nameID': 'CottonThreadItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Couch',
     'nameID': 'Couch',
@@ -6328,7 +6885,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 10, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Couch', 'nameID': 'CouchItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Couch', 'nameID': 'CouchItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Crane',
     'nameID': 'Crane',
@@ -6368,7 +6925,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Crane', 'nameID': 'CraneItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Crane', 'nameID': 'CraneItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Crimini Mushroom Spores',
     'nameID': 'CriminiMushroomSpores',
@@ -6391,7 +6948,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Crimini Mushroom Spores', 'nameID': 'CriminiMushroomSporesItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Crimson Salad',
@@ -6420,7 +6978,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Tomato', 'nameID': 'TomatoItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Crimson Salad', 'nameID': 'CrimsonSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crimson Salad', 'nameID': 'CrimsonSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crispy Bacon',
     'nameID': 'CrispyBacon',
@@ -6436,7 +6999,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Cast Iron Stove', 'nameID': 'CastIronStoveObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Bacon', 'nameID': 'RawBaconItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Crispy Bacon', 'nameID': 'CrispyBaconItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crispy Bacon', 'nameID': 'CrispyBaconItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Basalt Lv2',
     'nameID': 'CrushedBasaltLv2',
@@ -6452,7 +7020,12 @@ export const craftingData: CraftingData = {
     'labor': 500,
     'craftingTable': {'name': 'Stamp Mill', 'nameID': 'StampMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Basalt', 'nameID': 'BasaltItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Basalt Lv3',
     'nameID': 'CrushedBasaltLv3',
@@ -6468,7 +7041,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Basalt', 'nameID': 'BasaltItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Copper Lv2',
     'nameID': 'CrushedCopperLv2',
@@ -6487,8 +7065,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Crushed Copper Ore', 'nameID': 'CrushedCopperOreItem', 'tag': false},
       'quantity': 4,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Crushed Copper Lv3',
     'nameID': 'CrushedCopperLv3',
@@ -6504,7 +7088,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Copper Ore', 'nameID': 'CopperOreItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Copper Ore', 'nameID': 'CrushedCopperOreItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Copper Ore', 'nameID': 'CrushedCopperOreItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Copper Ore',
     'nameID': 'CrushedCopperOre',
@@ -6523,8 +7112,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Crushed Copper Ore', 'nameID': 'CrushedCopperOreItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Crushed Gneiss Lv2',
     'nameID': 'CrushedGneissLv2',
@@ -6540,7 +7135,12 @@ export const craftingData: CraftingData = {
     'labor': 250,
     'craftingTable': {'name': 'Stamp Mill', 'nameID': 'StampMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Gneiss', 'nameID': 'GneissItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Gneiss Lv3',
     'nameID': 'CrushedGneissLv3',
@@ -6556,7 +7156,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Gneiss', 'nameID': 'GneissItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Gold Lv2',
     'nameID': 'CrushedGoldLv2',
@@ -6575,8 +7180,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Crushed Gold Ore', 'nameID': 'CrushedGoldOreItem', 'tag': false},
       'quantity': 4,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Crushed Gold Lv3',
     'nameID': 'CrushedGoldLv3',
@@ -6592,7 +7203,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Gold Ore', 'nameID': 'GoldOreItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Gold Ore', 'nameID': 'CrushedGoldOreItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Gold Ore', 'nameID': 'CrushedGoldOreItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Gold Ore',
     'nameID': 'CrushedGoldOre',
@@ -6611,8 +7227,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Crushed Gold Ore', 'nameID': 'CrushedGoldOreItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Crushed Granite',
     'nameID': 'CrushedGranite',
@@ -6628,7 +7250,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Arrastra', 'nameID': 'ArrastraObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Granite', 'nameID': 'GraniteItem', 'tag': false}, 'quantity': 12, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 3,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Granite Lv2',
     'nameID': 'CrushedGraniteLv2',
@@ -6644,7 +7271,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Stamp Mill', 'nameID': 'StampMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Granite', 'nameID': 'GraniteItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Granite Lv3',
     'nameID': 'CrushedGraniteLv3',
@@ -6660,7 +7292,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Granite', 'nameID': 'GraniteItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Iron Lv2',
     'nameID': 'CrushedIronLv2',
@@ -6679,8 +7316,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Crushed Iron Ore', 'nameID': 'CrushedIronOreItem', 'tag': false},
       'quantity': 4,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Crushed Iron Lv3',
     'nameID': 'CrushedIronLv3',
@@ -6696,7 +7339,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Ore', 'nameID': 'IronOreItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Iron Ore', 'nameID': 'CrushedIronOreItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Iron Ore', 'nameID': 'CrushedIronOreItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Iron Ore',
     'nameID': 'CrushedIronOre',
@@ -6715,8 +7363,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Crushed Iron Ore', 'nameID': 'CrushedIronOreItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {
+      'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': false
+    }]
   }, {
     'name': 'Crushed Limestone',
     'nameID': 'CrushedLimestone',
@@ -6732,7 +7386,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Arrastra', 'nameID': 'ArrastraObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Limestone', 'nameID': 'LimestoneItem', 'tag': false}, 'quantity': 12, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
+      'quantity': 3,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Limestone Lv2',
     'nameID': 'CrushedLimestoneLv2',
@@ -6748,7 +7407,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Stamp Mill', 'nameID': 'StampMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Limestone', 'nameID': 'LimestoneItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Limestone Lv3',
     'nameID': 'CrushedLimestoneLv3',
@@ -6764,7 +7428,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Limestone', 'nameID': 'LimestoneItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Sandstone',
     'nameID': 'CrushedSandstone',
@@ -6780,7 +7449,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Arrastra', 'nameID': 'ArrastraObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Sandstone', 'nameID': 'SandstoneItem', 'tag': false}, 'quantity': 12, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
+      'quantity': 3,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Sandstone Lv2',
     'nameID': 'CrushedSandstoneLv2',
@@ -6796,7 +7470,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Stamp Mill', 'nameID': 'StampMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Sandstone', 'nameID': 'SandstoneItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Sandstone Lv3',
     'nameID': 'CrushedSandstoneLv3',
@@ -6812,7 +7491,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Sandstone', 'nameID': 'SandstoneItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Shale',
     'nameID': 'CrushedShale',
@@ -6828,7 +7512,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Arrastra', 'nameID': 'ArrastraObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Shale', 'nameID': 'ShaleItem', 'tag': false}, 'quantity': 12, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false},
+      'quantity': 3,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Shale Lv2',
     'nameID': 'CrushedShaleLv2',
@@ -6844,7 +7533,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Stamp Mill', 'nameID': 'StampMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Shale', 'nameID': 'ShaleItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Shale Lv3',
     'nameID': 'CrushedShaleLv3',
@@ -6860,7 +7554,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Shale', 'nameID': 'ShaleItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Slag Lv2',
     'nameID': 'CrushedSlagLv2',
@@ -6876,7 +7575,12 @@ export const craftingData: CraftingData = {
     'labor': 200,
     'craftingTable': {'name': 'Stamp Mill', 'nameID': 'StampMillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Slag', 'nameID': 'CrushedSlagItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Slag', 'nameID': 'CrushedSlagItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Crushed Slag Lv3',
     'nameID': 'CrushedSlagLv3',
@@ -6892,7 +7596,12 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 20, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Crushed Slag', 'nameID': 'CrushedSlagItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Crushed Slag', 'nameID': 'CrushedSlagItem', 'tag': false},
+      'quantity': 5,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Culinary Research Paper Advanced',
     'nameID': 'CulinaryResearchPaperAdvanced',
@@ -6915,7 +7624,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Culinary Research Paper Advanced', 'nameID': 'CulinaryResearchPaperAdvancedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Culinary Research Paper Advanced Meat',
@@ -6935,7 +7645,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Culinary Research Paper Advanced', 'nameID': 'CulinaryResearchPaperAdvancedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Culinary Research Paper Basic',
@@ -6959,7 +7670,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Culinary Research Paper Basic', 'nameID': 'CulinaryResearchPaperBasicItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Culinary Research Paper Basic Fish',
@@ -6979,7 +7691,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Culinary Research Paper Basic', 'nameID': 'CulinaryResearchPaperBasicItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Culinary Research Paper Basic Meat',
@@ -6999,7 +7712,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Culinary Research Paper Basic', 'nameID': 'CulinaryResearchPaperBasicItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Culinary Research Paper Modern',
@@ -7023,7 +7737,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Culinary Research Paper Modern', 'nameID': 'CulinaryResearchPaperModernItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Currency Exchange',
@@ -7054,7 +7769,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 40, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Currency Exchange', 'nameID': 'CurrencyExchangeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Currency Exchange', 'nameID': 'CurrencyExchangeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Cutting Edge Cooking Upgrade',
     'nameID': 'CuttingEdgeCookingUpgrade',
@@ -7077,7 +7797,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Cutting Edge Cooking Upgrade', 'nameID': 'CuttingEdgeCookingUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Dendrology Research Paper Advanced',
@@ -7097,7 +7818,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Dendrology Research Paper Advanced', 'nameID': 'DendrologyResearchPaperAdvancedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Dendrology Research Paper Basic',
@@ -7117,7 +7839,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Dendrology Research Paper Basic', 'nameID': 'DendrologyResearchPaperBasicItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Dendrology Research Paper Modern',
@@ -7137,7 +7860,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Dendrology Research Paper Modern', 'nameID': 'DendrologyResearchPaperModernItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Derpy Hat',
@@ -7158,7 +7882,7 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Derpy Hat', 'nameID': 'DerpyHatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Derpy Hat', 'nameID': 'DerpyHatItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Distribution Station',
     'nameID': 'DistributionStation',
@@ -7181,7 +7905,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Distribution Station', 'nameID': 'DistributionStationItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Electric Lathe',
@@ -7202,7 +7927,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Electric Lathe', 'nameID': 'ElectricLatheItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Electric Lathe', 'nameID': 'ElectricLatheItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Electric Machinist Table',
     'nameID': 'ElectricMachinistTable',
@@ -7229,7 +7959,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Electric Machinist Table', 'nameID': 'ElectricMachinistTableItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Electric Motor',
@@ -7254,7 +7985,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Electric Motor', 'nameID': 'ElectricMotorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Electric Motor', 'nameID': 'ElectricMotorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Electric Planer',
     'nameID': 'ElectricPlaner',
@@ -7274,7 +8010,12 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Electric Planer', 'nameID': 'ElectricPlanerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Electric Planer', 'nameID': 'ElectricPlanerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Electric Stamping Press',
     'nameID': 'ElectricStampingPress',
@@ -7293,7 +8034,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Electric Stamping Press', 'nameID': 'ElectricStampingPressItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Electric Wall Lamp',
@@ -7318,7 +8060,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Electric Wall Lamp', 'nameID': 'ElectricWallLampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Electric Wall Lamp', 'nameID': 'ElectricWallLampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Electric Water Pump',
     'nameID': 'ElectricWaterPump',
@@ -7341,7 +8088,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Electric Water Pump', 'nameID': 'ElectricWaterPumpItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Electronics Assembly',
@@ -7365,7 +8113,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Electronics Assembly', 'nameID': 'ElectronicsAssemblyItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Electronics Upgrade',
@@ -7389,7 +8138,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Electronics Upgrade', 'nameID': 'ElectronicsUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Elk Mount',
@@ -7416,7 +8166,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 10, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Elk Mount', 'nameID': 'ElkMountItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Elk Mount', 'nameID': 'ElkMountItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Elk Taco',
     'nameID': 'ElkTaco',
@@ -7440,7 +8190,7 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Wild Mix', 'nameID': 'WildMixItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Elk Taco', 'nameID': 'ElkTacoItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Elk Taco', 'nameID': 'ElkTacoItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Elk Wellington',
     'nameID': 'ElkWellington',
@@ -7460,7 +8210,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Prime Cut', 'nameID': 'PrimeCutItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Elk Wellington', 'nameID': 'ElkWellingtonItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Elk Wellington', 'nameID': 'ElkWellingtonItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Engineering Research Paper Advanced',
     'nameID': 'EngineeringResearchPaperAdvanced',
@@ -7483,7 +8238,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Engineering Research Paper Advanced', 'nameID': 'EngineeringResearchPaperAdvancedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Engineering Research Paper Modern',
@@ -7511,7 +8267,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Engineering Research Paper Modern', 'nameID': 'EngineeringResearchPaperModernItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Excavator',
@@ -7552,7 +8309,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Excavator', 'nameID': 'ExcavatorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Excavator', 'nameID': 'ExcavatorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Farmer Boots',
     'nameID': 'FarmerBoots',
@@ -7572,7 +8334,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Synthetic Rubber', 'nameID': 'SyntheticRubberItem', 'tag': false}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Farmer Boots', 'nameID': 'FarmerBootsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Farmer Boots', 'nameID': 'FarmerBootsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Farmer Gloves',
     'nameID': 'FarmerGloves',
@@ -7592,7 +8359,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Farmer Gloves', 'nameID': 'FarmerGlovesItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Farmer Gloves', 'nameID': 'FarmerGlovesItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Farmer Hat',
     'nameID': 'FarmerHat',
@@ -7612,7 +8384,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 60, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Farmer Hat', 'nameID': 'FarmerHatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Farmer Hat', 'nameID': 'FarmerHatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Farmer Overalls',
     'nameID': 'FarmerOveralls',
@@ -7628,7 +8405,12 @@ export const craftingData: CraftingData = {
     'labor': 2000,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Farmer Overalls', 'nameID': 'FarmerOverallsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Farmer Overalls', 'nameID': 'FarmerOverallsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Farmer Shirt',
     'nameID': 'FarmerShirt',
@@ -7644,7 +8426,12 @@ export const craftingData: CraftingData = {
     'labor': 2000,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Wool Fabric', 'nameID': 'WoolFabricItem', 'tag': false}, 'quantity': 30, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Farmer Shirt', 'nameID': 'FarmerShirtItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Farmer Shirt', 'nameID': 'FarmerShirtItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Farmers Table',
     'nameID': 'FarmersTable',
@@ -7670,7 +8457,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 8, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Farmers Table', 'nameID': 'FarmersTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Farmers Table', 'nameID': 'FarmersTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Farming Upgrade',
     'nameID': 'FarmingUpgrade',
@@ -7690,7 +8482,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Farming Upgrade', 'nameID': 'FarmingUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Farming Upgrade', 'nameID': 'FarmingUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fern Campfire Salad',
     'nameID': 'FernCampfireSalad',
@@ -7717,7 +8514,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Fern Campfire Salad', 'nameID': 'FernCampfireSaladItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Fern Spore',
@@ -7734,7 +8532,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Fiddleheads', 'nameID': 'FiddleheadsItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fern Spore', 'nameID': 'FernSporeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fern Spore', 'nameID': 'FernSporeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fertilizers Upgrade',
     'nameID': 'FertilizersUpgrade',
@@ -7757,7 +8560,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Fertilizers Upgrade', 'nameID': 'FertilizersUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Fiber Filler',
@@ -7778,7 +8582,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fiber Filler', 'nameID': 'FiberFillerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fiber Filler', 'nameID': 'FiberFillerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fiberglass',
     'nameID': 'Fiberglass',
@@ -7798,7 +8607,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Plastic', 'nameID': 'PlasticItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fiberglass', 'nameID': 'FiberglassItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fiberglass', 'nameID': 'FiberglassItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Field Campfire Stew',
     'nameID': 'FieldCampfireStew',
@@ -7827,7 +8641,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Field Campfire Stew', 'nameID': 'FieldCampfireStewItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Fireweed Seed',
@@ -7844,7 +8659,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Fireweed Shoots', 'nameID': 'FireweedShootsItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fireweed Seed', 'nameID': 'FireweedSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fireweed Seed', 'nameID': 'FireweedSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fish Trap',
     'nameID': 'FishTrap',
@@ -7864,7 +8684,7 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fish Trap', 'nameID': 'FishTrapItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Fish Trap', 'nameID': 'FishTrapItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Fishery',
     'nameID': 'Fishery',
@@ -7884,7 +8704,7 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 14, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fishery', 'nameID': 'FisheryItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Fishery', 'nameID': 'FisheryItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Flat Steel',
     'nameID': 'FlatSteel',
@@ -7904,7 +8724,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Flat Steel', 'nameID': 'FlatSteelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Flat Steel', 'nameID': 'FlatSteelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Flat Steel Door',
     'nameID': 'FlatSteelDoor',
@@ -7924,7 +8749,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Flat Steel Door', 'nameID': 'FlatSteelDoorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Flat Steel Door', 'nameID': 'FlatSteelDoorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Flatbread',
     'nameID': 'Flatbread',
@@ -7940,7 +8770,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Flour', 'nameID': 'FlourItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Flatbread', 'nameID': 'FlatbreadItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Flatbread', 'nameID': 'FlatbreadItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Flour',
     'nameID': 'Flour',
@@ -7956,7 +8791,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Wheat', 'nameID': 'WheatItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Flour', 'nameID': 'FlourItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Flour', 'nameID': 'FlourItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Framed Glass',
     'nameID': 'FramedGlass',
@@ -7976,7 +8811,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Framed Glass', 'nameID': 'FramedGlassItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Framed Glass', 'nameID': 'FramedGlassItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Framed Glass Door',
     'nameID': 'FramedGlassDoor',
@@ -7996,7 +8836,12 @@ export const craftingData: CraftingData = {
       'quantity': 30,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Framed Glass Door', 'nameID': 'FramedGlassDoorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Framed Glass Door', 'nameID': 'FramedGlassDoorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fried Camas',
     'nameID': 'FriedCamas',
@@ -8016,7 +8861,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Fat', 'nameID': 'Fat', 'tag': true}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fried Camas', 'nameID': 'FriedCamasItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fried Camas', 'nameID': 'FriedCamasItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fried Fiddleheads',
     'nameID': 'FriedFiddleheads',
@@ -8036,7 +8886,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Fiddleheads', 'nameID': 'FiddleheadsItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fried Fiddleheads', 'nameID': 'FriedFiddleheadsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fried Fiddleheads', 'nameID': 'FriedFiddleheadsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fried Hare Haunches',
     'nameID': 'FriedHareHaunches',
@@ -8065,7 +8920,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Fried Hare Haunches', 'nameID': 'FriedHareHaunchesItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Fried Hearts Of Palm',
@@ -8089,7 +8945,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Fried Hearts Of Palm', 'nameID': 'FriedHeartsOfPalmItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Fried Taro',
@@ -8110,7 +8967,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Taro Root', 'nameID': 'TaroRootItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fried Taro', 'nameID': 'FriedTaroItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fried Taro', 'nameID': 'FriedTaroItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fried Tomatoes',
     'nameID': 'FriedTomatoes',
@@ -8132,7 +8994,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Fried Tomatoes', 'nameID': 'FriedTomatoesItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fried Tomatoes', 'nameID': 'FriedTomatoesItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Froth Floatation Cell',
     'nameID': 'FrothFloatationCell',
@@ -8163,7 +9030,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Froth Floatation Cell', 'nameID': 'FrothFloatationCellItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Fruit Muffin',
@@ -8184,7 +9052,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Fruit', 'nameID': 'Fruit', 'tag': true}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fruit Muffin', 'nameID': 'FruitMuffinItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fruit Muffin', 'nameID': 'FruitMuffinItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Exotic Fruit Salad',
     'nameID': 'ExoticFruitSalad',
@@ -8204,7 +9077,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Pumpkin', 'nameID': 'PumpkinItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Mixed Fruit Salad',
     'nameID': 'MixedFruitSalad',
@@ -8224,7 +9102,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Huckleberries', 'nameID': 'HuckleberriesItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Rainforest Fruit Salad',
     'nameID': 'RainforestFruitSalad',
@@ -8244,7 +9127,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Pineapple', 'nameID': 'PineappleItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fruit Tart',
     'nameID': 'FruitTart',
@@ -8264,7 +9152,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Pastry Dough', 'nameID': 'PastryDoughItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Fruit Tart', 'nameID': 'FruitTartItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Fruit Tart', 'nameID': 'FruitTartItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Butcher Hare',
     'nameID': 'ButcherHare',
@@ -8283,12 +9176,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': false
     }, {
       'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Butcher Small Animal',
     'nameID': 'ButcherSmallAnimal',
@@ -8307,8 +9202,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': false
+    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Butcher Tiny Fur Animal',
     'nameID': 'ButcherTinyFurAnimal',
@@ -8327,8 +9223,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': false
+    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Garden Boots',
     'nameID': 'GardenBoots',
@@ -8348,7 +9245,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Garden Boots', 'nameID': 'GardenBootsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Garden Boots', 'nameID': 'GardenBootsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Gasoline',
     'nameID': 'Gasoline',
@@ -8364,7 +9266,7 @@ export const craftingData: CraftingData = {
     'labor': 200,
     'craftingTable': {'name': 'Oil Refinery', 'nameID': 'OilRefineryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Petroleum', 'nameID': 'PetroleumItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Gasoline', 'nameID': 'GasolineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Gasoline', 'nameID': 'GasolineItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Gathering Research Paper Basic',
     'nameID': 'GatheringResearchPaperBasic',
@@ -8383,7 +9285,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Gathering Research Paper Basic', 'nameID': 'GatheringResearchPaperBasicItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Gearbox',
@@ -8404,7 +9307,7 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Iron Gear', 'nameID': 'IronGearItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Gearbox', 'nameID': 'GearboxItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Gearbox', 'nameID': 'GearboxItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Geology Research Paper Advanced',
     'nameID': 'GeologyResearchPaperAdvanced',
@@ -8423,7 +9326,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Geology Research Paper Advanced', 'nameID': 'GeologyResearchPaperAdvancedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Geology Research Paper Basic',
@@ -8443,7 +9347,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Geology Research Paper Basic', 'nameID': 'GeologyResearchPaperBasicItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Geology Research Paper Modern',
@@ -8463,7 +9368,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Geology Research Paper Modern', 'nameID': 'GeologyResearchPaperModernItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Gigot Sleeve Shirt',
@@ -8480,7 +9386,12 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 30, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Gigot Sleeve Shirt', 'nameID': 'GigotSleeveShirtItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Gigot Sleeve Shirt', 'nameID': 'GigotSleeveShirtItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Glass',
     'nameID': 'Glass',
@@ -8500,7 +9411,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Quicklime Glass',
     'nameID': 'QuicklimeGlass',
@@ -8520,7 +9431,7 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Glassworking Advanced Upgrade',
     'nameID': 'GlassworkingAdvancedUpgrade',
@@ -8543,7 +9454,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Glassworking Advanced Upgrade', 'nameID': 'GlassworkingAdvancedUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Glassworking Modern Upgrade',
@@ -8567,7 +9479,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Glassworking Modern Upgrade', 'nameID': 'GlassworkingModernUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Goat Mount',
@@ -8592,7 +9505,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Mountain Goat Carcass', 'nameID': 'MountainGoatCarcassItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Goat Mount', 'nameID': 'GoatMountItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Goat Mount', 'nameID': 'GoatMountItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Gold Bar',
     'nameID': 'GoldBar',
@@ -8615,8 +9533,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Gold Bar', 'nameID': 'GoldBarItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Smelt Gold',
     'nameID': 'SmeltGold',
@@ -8639,8 +9558,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Gold Bar', 'nameID': 'GoldBarItem', 'tag': false},
       'quantity': 3,
-      'reducible': false
-    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 2, 'reducible': true}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 2, 'reducible': true, 'primary': false}]
   }, {
     'name': 'Concentrate Gold Lv2',
     'nameID': 'ConcentrateGoldLv2',
@@ -8660,7 +9580,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Wet Tailings', 'nameID': 'WetTailingsItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Gold Concentrate', 'nameID': 'GoldConcentrateItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Gold Concentrate', 'nameID': 'GoldConcentrateItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Gold Concentrate',
     'nameID': 'GoldConcentrate',
@@ -8680,7 +9605,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Wet Tailings', 'nameID': 'WetTailingsItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Gold Concentrate', 'nameID': 'GoldConcentrateItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Gold Concentrate', 'nameID': 'GoldConcentrateItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Gold Flakes',
     'nameID': 'GoldFlakes',
@@ -8696,7 +9626,12 @@ export const craftingData: CraftingData = {
     'labor': 120,
     'craftingTable': {'name': 'Electronics Assembly', 'nameID': 'ElectronicsAssemblyObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Gold Bar', 'nameID': 'GoldBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Gold Flakes', 'nameID': 'GoldFlakesItem', 'tag': false}, 'quantity': 4, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Gold Flakes', 'nameID': 'GoldFlakesItem', 'tag': false},
+      'quantity': 4,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Gold Wiring',
     'nameID': 'GoldWiring',
@@ -8712,7 +9647,12 @@ export const craftingData: CraftingData = {
     'labor': 200,
     'craftingTable': {'name': 'Electric Machinist Table', 'nameID': 'ElectricMachinistTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Gold Bar', 'nameID': 'GoldBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Gold Wiring', 'nameID': 'GoldWiringItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Gold Wiring', 'nameID': 'GoldWiringItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Hand Plow',
     'nameID': 'HandPlow',
@@ -8738,7 +9678,7 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 10, 'reducible': true
     }, {'item': {'name': 'Wooden Wheel', 'nameID': 'WoodenWheelItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Hand Plow', 'nameID': 'HandPlowItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Hand Plow', 'nameID': 'HandPlowItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Hanging Long Steel Sign',
     'nameID': 'HangingLongSteelSign',
@@ -8767,7 +9707,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Hanging Long Steel Sign', 'nameID': 'HangingLongSteelSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Hanging Steel Framed Sign',
@@ -8797,7 +9738,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Hanging Steel Framed Sign', 'nameID': 'HangingSteelFramedSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Hanging Steel Mine Sign',
@@ -8827,7 +9769,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Hanging Steel Mine Sign', 'nameID': 'HangingSteelMineSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Hanging Steel Plain Sign',
@@ -8857,7 +9800,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Hanging Steel Plain Sign', 'nameID': 'HangingSteelPlainSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Hanging Steel Shop Sign',
@@ -8887,7 +9831,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Hanging Steel Shop Sign', 'nameID': 'HangingSteelShopSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Heat Sink',
@@ -8904,7 +9849,7 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Shaper', 'nameID': 'ShaperObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Copper Bar', 'nameID': 'CopperBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Heat Sink', 'nameID': 'HeatSinkItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Heat Sink', 'nameID': 'HeatSinkItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Henley',
     'nameID': 'Henley',
@@ -8924,7 +9869,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 25, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Henley', 'nameID': 'HenleyItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Henley', 'nameID': 'HenleyItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Hewn Bench',
     'nameID': 'HewnBench',
@@ -8944,7 +9889,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 18, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hewn Bench', 'nameID': 'HewnBenchItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Hewn Bench', 'nameID': 'HewnBenchItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Hewn Chair',
     'nameID': 'HewnChair',
@@ -8968,7 +9918,12 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hewn Chair', 'nameID': 'HewnChairItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Hewn Chair', 'nameID': 'HewnChairItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Hewn Door',
     'nameID': 'HewnDoor',
@@ -8984,7 +9939,7 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Carpentry Table', 'nameID': 'CarpentryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hewn Door', 'nameID': 'HewnDoorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Hewn Door', 'nameID': 'HewnDoorItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Hewn Logs',
     'nameID': 'HewnLogs',
@@ -9000,7 +9955,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Carpentry Table', 'nameID': 'CarpentryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Wood', 'nameID': 'Wood', 'tag': true}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Hewn Table',
     'nameID': 'HewnTable',
@@ -9020,7 +9975,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hewn Table', 'nameID': 'HewnTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Hewn Table', 'nameID': 'HewnTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Hide Ash Fertilizer',
     'nameID': 'HideAshFertilizer',
@@ -9043,7 +10003,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Hide Ash Fertilizer', 'nameID': 'HideAshFertilizerItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Huckleberry Extract',
@@ -9063,7 +10024,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Huckleberry Extract', 'nameID': 'HuckleberryExtractItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Huckleberry Pie',
@@ -9086,7 +10048,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 4, 'reducible': true
     }, {'item': {'name': 'Huckleberries', 'nameID': 'HuckleberriesItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Huckleberry Pie', 'nameID': 'HuckleberryPieItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Huckleberry Pie', 'nameID': 'HuckleberryPieItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Huckleberry Seed',
     'nameID': 'HuckleberrySeed',
@@ -9102,7 +10069,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Huckleberries', 'nameID': 'HuckleberriesItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Huckleberry Seed', 'nameID': 'HuckleberrySeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Huckleberry Seed', 'nameID': 'HuckleberrySeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Hydrocolloids',
     'nameID': 'Hydrocolloids',
@@ -9118,7 +10090,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Corn Starch', 'nameID': 'CornStarchItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Refine Fish',
     'nameID': 'RefineFish',
@@ -9134,7 +10111,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Fish', 'nameID': 'RawFishItem', 'tag': false}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Refine Kelp',
     'nameID': 'RefineKelp',
@@ -9150,7 +10132,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Kelp', 'nameID': 'KelpItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Refine Meat',
     'nameID': 'RefineMeat',
@@ -9166,7 +10153,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Icebox',
     'nameID': 'Icebox',
@@ -9186,7 +10178,7 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Icebox', 'nameID': 'IceboxItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Icebox', 'nameID': 'IceboxItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Industrial Elevator',
     'nameID': 'IndustrialElevator',
@@ -9217,7 +10209,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Industrial Elevator', 'nameID': 'IndustrialElevatorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Industry Upgrade',
@@ -9238,7 +10231,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Industry Upgrade', 'nameID': 'IndustryUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Industry Upgrade', 'nameID': 'IndustryUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Infused Oil',
     'nameID': 'InfusedOil',
@@ -9258,7 +10256,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Infused Oil', 'nameID': 'InfusedOilItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Infused Oil', 'nameID': 'InfusedOilItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Axe',
     'nameID': 'IronAxe',
@@ -9278,7 +10281,7 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Axe', 'nameID': 'IronAxeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Iron Axe', 'nameID': 'IronAxeItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Iron Axle',
     'nameID': 'IronAxle',
@@ -9294,7 +10297,7 @@ export const craftingData: CraftingData = {
     'labor': 120,
     'craftingTable': {'name': 'Lathe', 'nameID': 'LatheObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Axle', 'nameID': 'IronAxleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Iron Axle', 'nameID': 'IronAxleItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Iron Bar',
     'nameID': 'IronBar',
@@ -9317,8 +10320,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Smelt Iron',
     'nameID': 'SmeltIron',
@@ -9341,8 +10345,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false},
       'quantity': 3,
-      'reducible': false
-    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 2, 'reducible': true}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 2, 'reducible': true, 'primary': false}]
   }, {
     'name': 'Concentrate Dry Iron',
     'nameID': 'ConcentrateDryIron',
@@ -9362,7 +10367,12 @@ export const craftingData: CraftingData = {
       'quantity': 3,
       'reducible': true
     }, {'item': {'name': 'Tailings', 'nameID': 'TailingsItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Concentrate Dry Iron Lv2',
     'nameID': 'ConcentrateDryIronLv2',
@@ -9382,7 +10392,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Tailings', 'nameID': 'TailingsItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Concentrate Iron Lv2',
     'nameID': 'ConcentrateIronLv2',
@@ -9402,7 +10417,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Wet Tailings', 'nameID': 'WetTailingsItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Concentrate',
     'nameID': 'IronConcentrate',
@@ -9422,7 +10442,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Wet Tailings', 'nameID': 'WetTailingsItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Gear',
     'nameID': 'IronGear',
@@ -9438,7 +10463,7 @@ export const craftingData: CraftingData = {
     'labor': 120,
     'craftingTable': {'name': 'Shaper', 'nameID': 'ShaperObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Gear', 'nameID': 'IronGearItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Iron Gear', 'nameID': 'IronGearItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Iron Hammer',
     'nameID': 'IronHammer',
@@ -9458,7 +10483,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Hammer', 'nameID': 'IronHammerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Hammer', 'nameID': 'IronHammerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Hoe',
     'nameID': 'IronHoe',
@@ -9478,7 +10508,7 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Hoe', 'nameID': 'IronHoeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Iron Hoe', 'nameID': 'IronHoeItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Iron Machete',
     'nameID': 'IronMachete',
@@ -9498,7 +10528,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Machete', 'nameID': 'IronMacheteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Machete', 'nameID': 'IronMacheteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Pickaxe',
     'nameID': 'IronPickaxe',
@@ -9518,7 +10553,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Pickaxe', 'nameID': 'IronPickaxeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Pickaxe', 'nameID': 'IronPickaxeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Pipe',
     'nameID': 'IronPipe',
@@ -9534,7 +10574,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Anvil', 'nameID': 'AnvilObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Pipe', 'nameID': 'IronPipeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Iron Pipe', 'nameID': 'IronPipeItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Iron Piston',
     'nameID': 'Piston',
@@ -9554,7 +10594,7 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Iron Pipe', 'nameID': 'IronPipeItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Piston', 'nameID': 'PistonItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Iron Piston', 'nameID': 'PistonItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Iron Plate',
     'nameID': 'IronPlate',
@@ -9570,7 +10610,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Screw Press', 'nameID': 'ScrewPressObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Plate', 'nameID': 'IronPlateItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Plate', 'nameID': 'IronPlateItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Rock Drill',
     'nameID': 'IronRockDrill',
@@ -9590,7 +10635,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Rock Drill', 'nameID': 'IronRockDrillItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Rock Drill', 'nameID': 'IronRockDrillItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Saw Blade',
     'nameID': 'IronSawBlade',
@@ -9606,7 +10656,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Anvil', 'nameID': 'AnvilObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Saw Blade', 'nameID': 'IronSawBladeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Saw Blade', 'nameID': 'IronSawBladeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Shovel',
     'nameID': 'IronShovel',
@@ -9626,7 +10681,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Shovel', 'nameID': 'IronShovelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Shovel', 'nameID': 'IronShovelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Sickle',
     'nameID': 'IronSickle',
@@ -9646,7 +10706,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Sickle', 'nameID': 'IronSickleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Sickle', 'nameID': 'IronSickleItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Iron Wheel',
     'nameID': 'IronWheel',
@@ -9662,7 +10727,12 @@ export const craftingData: CraftingData = {
     'labor': 160,
     'craftingTable': {'name': 'Wainwright Table', 'nameID': 'WainwrightTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Iron Wheel', 'nameID': 'IronWheelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Iron Wheel', 'nameID': 'IronWheelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Jaw Crusher',
     'nameID': 'JawCrusher',
@@ -9690,7 +10760,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Synthetic Rubber', 'nameID': 'SyntheticRubberItem', 'tag': false}, 'quantity': 25, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Jungle Campfire Salad',
     'nameID': 'JungleCampfireSalad',
@@ -9719,7 +10794,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Jungle Campfire Salad', 'nameID': 'JungleCampfireSaladItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Jungle Campfire Stew',
@@ -9751,7 +10827,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Jungle Campfire Stew', 'nameID': 'JungleCampfireStewItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Kiln',
@@ -9772,7 +10849,7 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Mortared Stone', 'nameID': 'MortaredStone', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Kiln', 'nameID': 'KilnItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Kiln', 'nameID': 'KilnItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Kitchen',
     'nameID': 'Kitchen',
@@ -9798,7 +10875,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 12, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Kitchen', 'nameID': 'KitchenItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Kitchen', 'nameID': 'KitchenItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Laboratory',
     'nameID': 'Laboratory',
@@ -9818,7 +10895,12 @@ export const craftingData: CraftingData = {
       'quantity': 15,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Laboratory', 'nameID': 'LaboratoryItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Laboratory', 'nameID': 'LaboratoryItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Large Corrugated Steel Door',
     'nameID': 'LargeCorrugatedSteelDoor',
@@ -9841,7 +10923,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Corrugated Steel Door', 'nameID': 'LargeCorrugatedSteelDoorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Hanging Ashlar Stone Sign',
@@ -9861,7 +10944,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Hanging Ashlar Stone Sign', 'nameID': 'LargeHangingAshlarStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Hanging Lumber Sign',
@@ -9885,7 +10969,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Hanging Lumber Sign', 'nameID': 'LargeHangingLumberSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Hanging Mortared Stone Sign',
@@ -9905,7 +10990,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Hanging Mortared Stone Sign', 'nameID': 'LargeHangingMortaredStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Hanging Wood Sign',
@@ -9935,7 +11021,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Hanging Wood Sign', 'nameID': 'LargeHangingWoodSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Lumber Door',
@@ -9956,7 +11043,12 @@ export const craftingData: CraftingData = {
       'quantity': 60,
       'reducible': true
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Large Lumber Door', 'nameID': 'LargeLumberDoorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Large Lumber Door', 'nameID': 'LargeLumberDoorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Large Lumber Stockpile',
     'nameID': 'LargeLumberStockpile',
@@ -9979,7 +11071,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Lumber Stockpile', 'nameID': 'LargeLumberStockpileItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Standing Ashlar Stone Sign',
@@ -9999,7 +11092,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Standing Ashlar Stone Sign', 'nameID': 'LargeStandingAshlarStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Standing Lumber Sign',
@@ -10023,7 +11117,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Standing Lumber Sign', 'nameID': 'LargeStandingLumberSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Standing Mortared Stone Sign',
@@ -10043,7 +11138,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Standing Mortared Stone Sign', 'nameID': 'LargeStandingMortaredStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Standing Wood Sign',
@@ -10073,7 +11169,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Standing Wood Sign', 'nameID': 'LargeStandingWoodSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Large Windowed Lumber Door',
@@ -10103,7 +11200,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Large Windowed Lumber Door', 'nameID': 'LargeWindowedLumberDoorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Laser',
@@ -10140,7 +11238,7 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': false
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 80, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Laser', 'nameID': 'LaserItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Laser', 'nameID': 'LaserItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Lathe',
     'nameID': 'Lathe',
@@ -10160,7 +11258,7 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Iron Wheel', 'nameID': 'IronWheelItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Lathe', 'nameID': 'LatheItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Lathe', 'nameID': 'LatheItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Butcher Bison',
     'nameID': 'ButcherBison',
@@ -10179,12 +11277,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
+      'reducible': false,
+      'primary': false
     }, {
       'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
       'quantity': 10,
-      'reducible': false
-    }, {'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 3, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Butcher Medium Animal',
     'nameID': 'ButcherMediumAnimal',
@@ -10203,8 +11303,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 5, 'reducible': false}]
+      'reducible': false,
+      'primary': false
+    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 5, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Butcher Medium Wooly Animal',
     'nameID': 'ButcherMediumWoolyAnimal',
@@ -10227,12 +11328,14 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': false
     }, {
       'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
       'quantity': 5,
-      'reducible': false
-    }, {'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+      'reducible': false,
+      'primary': true
+    }, {'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': false}]
   }, {
     'name': 'Butcher Tiny Leather Animal',
     'nameID': 'ButcherTinyLeatherAnimal',
@@ -10255,8 +11358,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
-    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': false
+    }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Leavened Dough',
     'nameID': 'LeavenedDough',
@@ -10276,7 +11380,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Yeast', 'nameID': 'YeastItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Leavened Dough', 'nameID': 'LeavenedDoughItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Leavened Dough', 'nameID': 'LeavenedDoughItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Light Backpack',
     'nameID': 'LightBackpack',
@@ -10296,7 +11405,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Fabric', 'nameID': 'Fabric', 'tag': true}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Light Backpack', 'nameID': 'LightBackpackItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Light Backpack', 'nameID': 'LightBackpackItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Light Bulb',
     'nameID': 'LightBulb',
@@ -10316,7 +11430,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Light Bulb', 'nameID': 'LightBulbItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Light Bulb', 'nameID': 'LightBulbItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Limestone Bison Statue',
     'nameID': 'LimestoneBisonStatue',
@@ -10335,7 +11454,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Limestone Bison Statue', 'nameID': 'LimestoneBisonStatueItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Limestone Otter Statue',
@@ -10355,7 +11475,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Limestone Otter Statue', 'nameID': 'LimestoneOtterStatueItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Limestone Owl Statue',
@@ -10375,7 +11496,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Limestone Owl Statue', 'nameID': 'LimestoneOwlStatueItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Limestone Wolf Statue',
@@ -10395,7 +11517,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Limestone Wolf Statue', 'nameID': 'LimestoneWolfStatueItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Liquid Nitrogen',
@@ -10412,7 +11535,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Liquid Nitrogen', 'nameID': 'LiquidNitrogenItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Liquid Nitrogen', 'nameID': 'LiquidNitrogenItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Logging Advanced Upgrade',
     'nameID': 'LoggingAdvancedUpgrade',
@@ -10435,7 +11563,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Logging Advanced Upgrade', 'nameID': 'LoggingAdvancedUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Logging Basic Upgrade',
@@ -10459,7 +11588,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Logging Basic Upgrade', 'nameID': 'LoggingBasicUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Loom',
@@ -10480,7 +11610,7 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Loom', 'nameID': 'LoomItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Loom', 'nameID': 'LoomItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Low Top Shoes',
     'nameID': 'LowTopShoes',
@@ -10496,7 +11626,12 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Low Top Shoes', 'nameID': 'LowTopShoesItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Low Top Shoes', 'nameID': 'LowTopShoesItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Lumber',
     'nameID': 'Lumber',
@@ -10516,7 +11651,7 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Nail', 'nameID': 'NailItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Lumber Bench',
     'nameID': 'LumberBench',
@@ -10542,7 +11677,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 2, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Lumber Bench', 'nameID': 'LumberBenchItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Lumber Bench', 'nameID': 'LumberBenchItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Lumber Chair',
     'nameID': 'LumberChair',
@@ -10562,7 +11702,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Nail', 'nameID': 'NailItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Lumber Chair', 'nameID': 'LumberChairItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Lumber Chair', 'nameID': 'LumberChairItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Lumber Door',
     'nameID': 'LumberDoor',
@@ -10582,7 +11727,12 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Lumber Door', 'nameID': 'LumberDoorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Lumber Door', 'nameID': 'LumberDoorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Lumber Stockpile',
     'nameID': 'LumberStockpile',
@@ -10602,7 +11752,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Lumber Stockpile', 'nameID': 'LumberStockpileItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Lumber Stockpile', 'nameID': 'LumberStockpileItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Lumber Table',
     'nameID': 'LumberTable',
@@ -10622,7 +11777,12 @@ export const craftingData: CraftingData = {
       'quantity': 18,
       'reducible': true
     }, {'item': {'name': 'Nail', 'nameID': 'NailItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Lumber Table', 'nameID': 'LumberTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Lumber Table', 'nameID': 'LumberTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Macaroons',
     'nameID': 'Macaroons',
@@ -10646,7 +11806,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Macaroons', 'nameID': 'MacaroonsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Macaroons', 'nameID': 'MacaroonsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Machinist Table',
     'nameID': 'MachinistTable',
@@ -10672,7 +11837,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 12, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Machinist Table', 'nameID': 'MachinistTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Machinist Table', 'nameID': 'MachinistTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Maltodextrin',
     'nameID': 'Maltodextrin',
@@ -10688,7 +11858,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Corn Starch', 'nameID': 'CornStarchItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Maltodextrin', 'nameID': 'MaltodextrinItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Maltodextrin', 'nameID': 'MaltodextrinItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Masonry Advanced Upgrade',
     'nameID': 'MasonryAdvancedUpgrade',
@@ -10711,7 +11886,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Masonry Advanced Upgrade', 'nameID': 'MasonryAdvancedUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Masonry Basic Upgrade',
@@ -10735,7 +11911,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Masonry Basic Upgrade', 'nameID': 'MasonryBasicUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Meat Pie',
@@ -10758,7 +11935,7 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 4, 'reducible': true
     }, {'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Meat Pie', 'nameID': 'MeatPieItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Meat Pie', 'nameID': 'MeatPieItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Meat Stock',
     'nameID': 'MeatStock',
@@ -10774,7 +11951,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Cast Iron Stove', 'nameID': 'CastIronStoveObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Meat Stock', 'nameID': 'MeatStockItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Meat Stock', 'nameID': 'MeatStockItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Fish Stew',
     'nameID': 'FishStew',
@@ -10794,7 +11976,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Fat', 'nameID': 'Fat', 'tag': true}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Meaty Stew', 'nameID': 'MeatyStewItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Meaty Stew', 'nameID': 'MeatyStewItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Meaty Stew',
     'nameID': 'MeatyStew',
@@ -10820,7 +12007,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Meaty Stew', 'nameID': 'MeatyStewItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Meaty Stew', 'nameID': 'MeatyStewItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Mechanical Water Pump',
     'nameID': 'MechanicalWaterPump',
@@ -10843,7 +12035,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mechanical Water Pump', 'nameID': 'MechanicalWaterPumpItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mechanics Advanced Upgrade',
@@ -10867,7 +12060,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mechanics Advanced Upgrade', 'nameID': 'MechanicsAdvancedUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mechanics Modern Upgrade',
@@ -10891,7 +12085,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mechanics Modern Upgrade', 'nameID': 'MechanicsModernUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Metallurgy Research Paper Advanced',
@@ -10915,7 +12110,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Metallurgy Research Paper Advanced', 'nameID': 'MetallurgyResearchPaperAdvancedItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Metallurgy Research Paper Basic',
@@ -10935,7 +12131,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Metallurgy Research Paper Basic', 'nameID': 'MetallurgyResearchPaperBasicItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Metallurgy Research Paper Modern',
@@ -10959,7 +12156,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Metallurgy Research Paper Modern', 'nameID': 'MetallurgyResearchPaperModernItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mill',
@@ -10982,7 +12180,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 20, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Mill', 'nameID': 'MillItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Mill', 'nameID': 'MillItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Milling Upgrade',
     'nameID': 'MillingUpgrade',
@@ -11002,7 +12200,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Milling Upgrade', 'nameID': 'MillingUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Milling Upgrade', 'nameID': 'MillingUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Mining Advanced Upgrade',
     'nameID': 'MiningAdvancedUpgrade',
@@ -11025,7 +12228,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mining Advanced Upgrade', 'nameID': 'MiningAdvancedUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mining Basic Upgrade',
@@ -11049,7 +12253,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mining Basic Upgrade', 'nameID': 'MiningBasicUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mining Modern Upgrade',
@@ -11073,7 +12278,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mining Modern Upgrade', 'nameID': 'MiningModernUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mint',
@@ -11100,7 +12306,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 30, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Mint', 'nameID': 'MintItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Mint', 'nameID': 'MintItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Modern Axe',
     'nameID': 'ModernAxe',
@@ -11120,7 +12326,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Axe', 'nameID': 'ModernAxeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Axe', 'nameID': 'ModernAxeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Double Street Light',
     'nameID': 'ModernDoubleStreetLight',
@@ -11151,7 +12362,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Modern Double Street Light', 'nameID': 'ModernDoubleStreetLightItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Modern Hammer',
@@ -11172,7 +12384,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Hammer', 'nameID': 'ModernHammerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Hammer', 'nameID': 'ModernHammerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Hoe',
     'nameID': 'ModernHoe',
@@ -11192,7 +12409,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Hoe', 'nameID': 'ModernHoeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Hoe', 'nameID': 'ModernHoeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Machete',
     'nameID': 'ModernMachete',
@@ -11212,7 +12434,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Machete', 'nameID': 'ModernMacheteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Machete', 'nameID': 'ModernMacheteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Pickaxe',
     'nameID': 'ModernPickaxe',
@@ -11232,7 +12459,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Pickaxe', 'nameID': 'ModernPickaxeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Pickaxe', 'nameID': 'ModernPickaxeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Rock Drill',
     'nameID': 'ModernRockDrill',
@@ -11256,7 +12488,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Steel Gear', 'nameID': 'SteelGearItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Rock Drill', 'nameID': 'ModernRockDrillItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Rock Drill', 'nameID': 'ModernRockDrillItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Scythe',
     'nameID': 'ModernScythe',
@@ -11276,7 +12513,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Scythe', 'nameID': 'ModernScytheItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Scythe', 'nameID': 'ModernScytheItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Shovel',
     'nameID': 'ModernShovel',
@@ -11296,7 +12538,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Shovel', 'nameID': 'ModernShovelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Shovel', 'nameID': 'ModernShovelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Street Light',
     'nameID': 'ModernStreetLight',
@@ -11327,7 +12574,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Modern Street Light', 'nameID': 'ModernStreetLightItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Modern Upgrade 1',
@@ -11348,7 +12596,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Upgrade 1', 'nameID': 'ModernUpgradeLvl1Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Upgrade 1', 'nameID': 'ModernUpgradeLvl1Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Upgrade 2',
     'nameID': 'ModernUpgradeLvl2',
@@ -11372,7 +12625,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Upgrade 2', 'nameID': 'ModernUpgradeLvl2Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Upgrade 2', 'nameID': 'ModernUpgradeLvl2Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Upgrade 3',
     'nameID': 'ModernUpgradeLvl3',
@@ -11400,7 +12658,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Plastic', 'nameID': 'PlasticItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Modern Upgrade 3', 'nameID': 'ModernUpgradeLvl3Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Upgrade 3', 'nameID': 'ModernUpgradeLvl3Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Modern Upgrade 4',
     'nameID': 'ModernUpgradeLvl4',
@@ -11420,7 +12683,12 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Modern Upgrade 3', 'nameID': 'ModernUpgradeLvl3Item', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Modern Upgrade 4', 'nameID': 'ModernUpgradeLvl4Item', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Modern Upgrade 4', 'nameID': 'ModernUpgradeLvl4Item', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Baked Mortar',
     'nameID': 'BakedMortar',
@@ -11436,7 +12704,7 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Wood Pulp', 'nameID': 'WoodPulpItem', 'tag': false}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Masonry Mortar',
     'nameID': 'MasonryMortar',
@@ -11452,7 +12720,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Masonry Table', 'nameID': 'MasonryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 3, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Wheat Mortar',
     'nameID': 'WheatMortar',
@@ -11468,7 +12736,7 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Wheat', 'nameID': 'WheatItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 3, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Mortared Stone',
     'nameID': 'MortaredStone',
@@ -11488,7 +12756,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Rock', 'nameID': 'Rock', 'tag': true}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Mortared Stone', 'nameID': 'MortaredStone', 'tag': true}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Mortared Stone', 'nameID': 'MortaredStone', 'tag': true},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Mortared Stone Bench',
     'nameID': 'MortaredStoneBench',
@@ -11507,7 +12780,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mortared Stone Bench', 'nameID': 'MortaredStoneBenchItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mortared Stone Chair',
@@ -11527,7 +12801,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mortared Stone Chair', 'nameID': 'MortaredStoneChairItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mortared Stone Door',
@@ -11547,7 +12822,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mortared Stone Door', 'nameID': 'MortaredStoneDoorItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mortared Stone Fireplace',
@@ -11567,7 +12843,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mortared Stone Fireplace', 'nameID': 'MortaredStoneFireplaceItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Mortared Stone Table',
@@ -11587,7 +12864,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Mortared Stone Table', 'nameID': 'MortaredStoneTableItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Nail',
@@ -11604,7 +12882,7 @@ export const craftingData: CraftingData = {
     'labor': 80,
     'craftingTable': {'name': 'Anvil', 'nameID': 'AnvilObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Nail', 'nameID': 'NailItem', 'tag': false}, 'quantity': 16, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Nail', 'nameID': 'NailItem', 'tag': false}, 'quantity': 16, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Nylon Carpet',
     'nameID': 'NylonCarpet',
@@ -11630,7 +12908,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 5, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Nylon Carpet', 'nameID': 'NylonCarpetItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Nylon Carpet', 'nameID': 'NylonCarpetItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Weave Nylon Fabric',
     'nameID': 'WeaveNylonFabric',
@@ -11646,7 +12929,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Automatic Loom', 'nameID': 'AutomaticLoomObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Nylon Thread', 'nameID': 'NylonThreadItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Nylon Thread',
     'nameID': 'NylonThread',
@@ -11662,7 +12950,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Spin Melter', 'nameID': 'SpinMelterObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Nylon', 'nameID': 'NylonItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Nylon Thread', 'nameID': 'NylonThreadItem', 'tag': false}, 'quantity': 4, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Nylon Thread', 'nameID': 'NylonThreadItem', 'tag': false},
+      'quantity': 4,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Oil',
     'nameID': 'Oil',
@@ -11678,7 +12971,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Cereal Germ', 'nameID': 'CerealGermItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Refine Tallow',
     'nameID': 'RefineTallow',
@@ -11694,7 +12987,7 @@ export const craftingData: CraftingData = {
     'labor': 30,
     'craftingTable': {'name': 'Stove', 'nameID': 'StoveObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 18, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Oil Drilling Upgrade',
     'nameID': 'OilDrillingUpgrade',
@@ -11717,7 +13010,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Oil Drilling Upgrade', 'nameID': 'OilDrillingUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Oil Refinery',
@@ -11742,7 +13036,12 @@ export const craftingData: CraftingData = {
       'quantity': 16,
       'reducible': true
     }, {'item': {'name': 'Iron Gear', 'nameID': 'IronGearItem', 'tag': false}, 'quantity': 24, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Oil Refinery', 'nameID': 'OilRefineryItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Oil Refinery', 'nameID': 'OilRefineryItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Padded Chair',
     'nameID': 'PaddedChair',
@@ -11768,7 +13067,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 10, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Padded Chair', 'nameID': 'PaddedChairItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Padded Chair', 'nameID': 'PaddedChairItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Papaya Seed',
     'nameID': 'PapayaSeed',
@@ -11784,7 +13088,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Papaya', 'nameID': 'PapayaItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Papaya Seed', 'nameID': 'PapayaSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Papaya Seed', 'nameID': 'PapayaSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Paper',
     'nameID': 'Paper',
@@ -11800,7 +13109,7 @@ export const craftingData: CraftingData = {
     'labor': 35,
     'craftingTable': {'name': 'Carpentry Table', 'nameID': 'CarpentryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Cellulose Fiber', 'nameID': 'CelluloseFiberItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Paper', 'nameID': 'PaperItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Paper', 'nameID': 'PaperItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Paper Milling Upgrade',
     'nameID': 'PaperMillingUpgrade',
@@ -11823,7 +13132,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Paper Milling Upgrade', 'nameID': 'PaperMillingUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Pastry Dough',
@@ -11846,7 +13156,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 2, 'reducible': true
     }, {'item': {'name': 'Yeast', 'nameID': 'YeastItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Pastry Dough', 'nameID': 'PastryDoughItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Pastry Dough', 'nameID': 'PastryDoughItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Pelt Fertilizer',
     'nameID': 'PeltFertilizer',
@@ -11866,7 +13181,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Pelt Fertilizer', 'nameID': 'PeltFertilizerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Pelt Fertilizer', 'nameID': 'PeltFertilizerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Petroleum',
     'nameID': 'Petroleum',
@@ -11882,7 +13202,12 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Pump Jack', 'nameID': 'PumpJackObject', 'upgradeModuleType': 'None'},
     'ingredients': [{'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Petroleum', 'nameID': 'PetroleumItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Petroleum', 'nameID': 'PetroleumItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Phosphate Fertilizer',
     'nameID': 'PhosphateFertilizer',
@@ -11905,7 +13230,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Phosphate Fertilizer', 'nameID': 'PhosphateFertilizerItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Pineapple Friend Rice',
@@ -11933,7 +13259,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Pineapple Friend Rice', 'nameID': 'PineappleFriendRiceItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Pineapple Seed',
@@ -11950,7 +13277,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Pineapple', 'nameID': 'PineappleItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Pineapple Seed', 'nameID': 'PineappleSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Pineapple Seed', 'nameID': 'PineappleSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Pirozhok',
     'nameID': 'Pirozhok',
@@ -11974,7 +13306,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Prepared Meat', 'nameID': 'PreparedMeatItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Pirozhok', 'nameID': 'PirozhokItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Pirozhok', 'nameID': 'PirozhokItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Portable Steam Engine',
     'nameID': 'PortableSteamEngine',
@@ -12009,7 +13341,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Portable Steam Engine', 'nameID': 'PortableSteamEngineItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Pottery Upgrade',
@@ -12030,7 +13363,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Pottery Upgrade', 'nameID': 'PotteryUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Pottery Upgrade', 'nameID': 'PotteryUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Powered Cart',
     'nameID': 'PoweredCart',
@@ -12060,7 +13398,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 3, 'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Powered Cart', 'nameID': 'PoweredCartItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Powered Cart', 'nameID': 'PoweredCartItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Prepared Meat',
     'nameID': 'PreparedMeat',
@@ -12076,7 +13419,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Butchery Table', 'nameID': 'ButcheryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Prepared Meat', 'nameID': 'PreparedMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Prepared Meat', 'nameID': 'PreparedMeatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Prickly Pear Seed',
     'nameID': 'PricklyPearSeed',
@@ -12096,7 +13444,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Prickly Pear Seed', 'nameID': 'PricklyPearSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Prickly Pear Seed', 'nameID': 'PricklyPearSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Prime Cut',
     'nameID': 'PrimeCut',
@@ -12112,7 +13465,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Butchery Table', 'nameID': 'ButcheryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Prime Cut', 'nameID': 'PrimeCutItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Prime Cut', 'nameID': 'PrimeCutItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Pulp Filler',
     'nameID': 'PulpFiller',
@@ -12132,7 +13485,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Wood Pulp', 'nameID': 'WoodPulpItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Pulp Filler', 'nameID': 'PulpFillerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Pulp Filler', 'nameID': 'PulpFillerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Pump Jack',
     'nameID': 'PumpJack',
@@ -12156,7 +13514,7 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Reinforced Concrete', 'nameID': 'ReinforcedConcreteItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Pump Jack', 'nameID': 'PumpJackItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Pump Jack', 'nameID': 'PumpJackItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Pumpkin Seed',
     'nameID': 'PumpkinSeed',
@@ -12172,7 +13530,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Pumpkin', 'nameID': 'PumpkinItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Pumpkin Seed', 'nameID': 'PumpkinSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Pumpkin Seed', 'nameID': 'PumpkinSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Quicklime',
     'nameID': 'Quicklime',
@@ -12192,7 +13555,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Quicklime', 'nameID': 'QuicklimeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Quicklime', 'nameID': 'QuicklimeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Radiator',
     'nameID': 'Radiator',
@@ -12212,7 +13580,7 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Heat Sink', 'nameID': 'HeatSinkItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Radiator', 'nameID': 'RadiatorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Radiator', 'nameID': 'RadiatorItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Raw Bacon',
     'nameID': 'RawBacon',
@@ -12228,7 +13596,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Butchery Table', 'nameID': 'ButcheryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Raw Bacon', 'nameID': 'RawBaconItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Raw Bacon', 'nameID': 'RawBaconItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Raw Roast',
     'nameID': 'RawRoast',
@@ -12244,7 +13612,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Butchery Table', 'nameID': 'ButcheryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Raw Roast', 'nameID': 'RawRoastItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Raw Roast', 'nameID': 'RawRoastItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Raw Sausage',
     'nameID': 'RawSausage',
@@ -12260,7 +13628,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Butchery Table', 'nameID': 'ButcheryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Raw Sausage', 'nameID': 'RawSausageItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Raw Sausage', 'nameID': 'RawSausageItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Real Estate Desk',
     'nameID': 'RealEstateDesk',
@@ -12284,7 +13657,12 @@ export const craftingData: CraftingData = {
       'quantity': 15,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Real Estate Desk', 'nameID': 'RealEstateDeskItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Real Estate Desk', 'nameID': 'RealEstateDeskItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Rebar',
     'nameID': 'Rebar',
@@ -12300,7 +13678,7 @@ export const craftingData: CraftingData = {
     'labor': 80,
     'craftingTable': {'name': 'Blast Furnace', 'nameID': 'BlastFurnaceObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Rebar', 'nameID': 'RebarItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Rebar', 'nameID': 'RebarItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Recurve Bow',
     'nameID': 'RecurveBow',
@@ -12326,7 +13704,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 10, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Recurve Bow', 'nameID': 'RecurveBowItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Recurve Bow', 'nameID': 'RecurveBowItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Refrigerator',
     'nameID': 'Refrigerator',
@@ -12350,7 +13733,12 @@ export const craftingData: CraftingData = {
       'quantity': 3,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Refrigerator', 'nameID': 'RefrigeratorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Refrigerator', 'nameID': 'RefrigeratorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Registrar',
     'nameID': 'Registrar',
@@ -12376,7 +13764,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 16, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Registrar', 'nameID': 'RegistrarItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Registrar', 'nameID': 'RegistrarItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Reinforced Concrete',
     'nameID': 'ReinforcedConcrete',
@@ -12409,7 +13802,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Reinforced Concrete', 'nameID': 'ReinforcedConcreteItem', 'tag': false},
       'quantity': 4,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Rivet',
@@ -12426,7 +13820,7 @@ export const craftingData: CraftingData = {
     'labor': 140,
     'craftingTable': {'name': 'Blast Furnace', 'nameID': 'BlastFurnaceObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Rivet', 'nameID': 'RivetItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Rivet', 'nameID': 'RivetItem', 'tag': false}, 'quantity': 3, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Robotic Assembly Line',
     'nameID': 'RoboticAssemblyLine',
@@ -12459,7 +13853,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Robotic Assembly Line', 'nameID': 'RoboticAssemblyLineItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Rocker Box',
@@ -12480,7 +13875,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Wood', 'nameID': 'Wood', 'tag': true}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Rocker Box', 'nameID': 'RockerBoxItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Rocker Box', 'nameID': 'RockerBoxItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Rolling Mill',
     'nameID': 'RollingMill',
@@ -12500,7 +13900,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Rolling Mill', 'nameID': 'RollingMillItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Rolling Mill', 'nameID': 'RollingMillItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Root Campfire Salad',
     'nameID': 'RootCampfireSalad',
@@ -12529,7 +13934,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Root Campfire Salad', 'nameID': 'RootCampfireSaladItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Root Campfire Stew',
@@ -12556,7 +13962,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 1, 'reducible': true
     }, {'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Root Campfire Stew', 'nameID': 'RootCampfireStewItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Root Campfire Stew', 'nameID': 'RootCampfireStewItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Round Pot',
     'nameID': 'PlanterPotRound',
@@ -12572,7 +13983,12 @@ export const craftingData: CraftingData = {
     'labor': 75,
     'craftingTable': {'name': 'Kiln', 'nameID': 'KilnObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Clay', 'nameID': 'ClayItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Round Pot', 'nameID': 'PlanterPotRoundItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Round Pot', 'nameID': 'PlanterPotRoundItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Rubber Wheel',
     'nameID': 'RubberWheel',
@@ -12592,7 +14008,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Synthetic Rubber', 'nameID': 'SyntheticRubberItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Rubber Wheel', 'nameID': 'RubberWheelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Rubber Wheel', 'nameID': 'RubberWheelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Rug Large',
     'nameID': 'RugLarge',
@@ -12618,7 +14039,7 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 40, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Rug Large', 'nameID': 'RugLargeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Rug Large', 'nameID': 'RugLargeItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Rug Medium',
     'nameID': 'RugMedium',
@@ -12644,7 +14065,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 20, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Rug Medium', 'nameID': 'RugMediumItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Rug Medium', 'nameID': 'RugMediumItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Rug Small',
     'nameID': 'RugSmall',
@@ -12660,7 +14086,7 @@ export const craftingData: CraftingData = {
     'labor': 50,
     'craftingTable': {'name': 'Loom', 'nameID': 'LoomObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Rug Small', 'nameID': 'RugSmallItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Rug Small', 'nameID': 'RugSmallItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Running Shoes',
     'nameID': 'RunningShoes',
@@ -12680,7 +14106,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Running Shoes', 'nameID': 'RunningShoesItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Running Shoes', 'nameID': 'RunningShoesItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Salt Basket',
     'nameID': 'SaltBasket',
@@ -12696,7 +14127,12 @@ export const craftingData: CraftingData = {
     'labor': 160,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Salt Basket', 'nameID': 'SaltBasketItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Salt Basket', 'nameID': 'SaltBasketItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Sand Concentrate',
     'nameID': 'SandConcentrate',
@@ -12712,7 +14148,7 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Rocker Box', 'nameID': 'RockerBoxObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Silica', 'nameID': 'Silica', 'tag': true}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Sand Concentrate Lv2',
     'nameID': 'SandConcentrateLv2',
@@ -12728,7 +14164,7 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Screening Machine', 'nameID': 'ScreeningMachineObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Silica', 'nameID': 'Silica', 'tag': true}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Sand Concentrate Lv3',
     'nameID': 'SandConcentrateLv3',
@@ -12744,7 +14180,7 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Sensor Based Belt Sorter', 'nameID': 'SensorBasedBeltSorterObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Silica', 'nameID': 'Silica', 'tag': true}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 3, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Sawmill',
     'nameID': 'Sawmill',
@@ -12768,7 +14204,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Wood', 'nameID': 'Wood', 'tag': true}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sawmill', 'nameID': 'SawmillItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Sawmill', 'nameID': 'SawmillItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Scrap Meat',
     'nameID': 'ScrapMeat',
@@ -12784,7 +14220,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Butchery Table', 'nameID': 'ButcheryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false},
+      'quantity': 3,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Screening Machine',
     'nameID': 'ScreeningMachine',
@@ -12808,7 +14249,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Screening Machine', 'nameID': 'ScreeningMachineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Screening Machine', 'nameID': 'ScreeningMachineItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Screw Press',
     'nameID': 'ScrewPress',
@@ -12824,7 +14270,12 @@ export const craftingData: CraftingData = {
     'labor': 500,
     'craftingTable': {'name': 'Machinist Table', 'nameID': 'MachinistTableObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 25, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Screw Press', 'nameID': 'ScrewPressItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Screw Press', 'nameID': 'ScrewPressItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Screws',
     'nameID': 'Screws',
@@ -12840,7 +14291,7 @@ export const craftingData: CraftingData = {
     'labor': 35,
     'craftingTable': {'name': 'Lathe', 'nameID': 'LatheObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 4, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 4, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Seared Meat',
     'nameID': 'SearedMeat',
@@ -12860,7 +14311,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Prime Cut', 'nameID': 'PrimeCutItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Seared Meat', 'nameID': 'SearedMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Seared Meat', 'nameID': 'SearedMeatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Sensor Based Belt Sorter',
     'nameID': 'SensorBasedBeltSorter',
@@ -12899,7 +14355,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Sensor Based Belt Sorter', 'nameID': 'SensorBasedBeltSorterItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Servo',
@@ -12920,7 +14377,7 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Fiberglass', 'nameID': 'FiberglassItem', 'tag': false}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Servo', 'nameID': 'ServoItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Servo', 'nameID': 'ServoItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Shaper',
     'nameID': 'Shaper',
@@ -12940,7 +14397,7 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 30, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Shaper', 'nameID': 'ShaperItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Shaper', 'nameID': 'ShaperItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Sheep Mount',
     'nameID': 'SheepMount',
@@ -12966,7 +14423,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 10, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Sheep Mount', 'nameID': 'SheepMountItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Sheep Mount', 'nameID': 'SheepMountItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Shelf Cabinet',
     'nameID': 'ShelfCabinet',
@@ -12986,7 +14448,12 @@ export const craftingData: CraftingData = {
       'quantity': 16,
       'reducible': true
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 14, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Shelf Cabinet', 'nameID': 'ShelfCabinetItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Shelf Cabinet', 'nameID': 'ShelfCabinetItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Shorts',
     'nameID': 'Shorts',
@@ -13006,7 +14473,7 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Shorts', 'nameID': 'ShortsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Shorts', 'nameID': 'ShortsItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Simmered Meat',
     'nameID': 'SimmeredMeat',
@@ -13026,7 +14493,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Prepared Meat', 'nameID': 'PreparedMeatItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Simmered Meat', 'nameID': 'SimmeredMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Simmered Meat', 'nameID': 'SimmeredMeatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Simple Syrup',
     'nameID': 'SimpleSyrup',
@@ -13042,7 +14514,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Kitchen', 'nameID': 'KitchenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Simple Syrup', 'nameID': 'SimpleSyrupItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Simple Syrup', 'nameID': 'SimpleSyrupItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Sink',
     'nameID': 'Sink',
@@ -13062,7 +14539,7 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sink', 'nameID': 'SinkItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Sink', 'nameID': 'SinkItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Skid Steer',
     'nameID': 'SkidSteer',
@@ -13102,7 +14579,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Skid Steer', 'nameID': 'SkidSteerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Skid Steer', 'nameID': 'SkidSteerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Bar',
     'nameID': 'SteelBar',
@@ -13129,8 +14611,9 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
       'quantity': 2,
-      'reducible': false
-    }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+      'reducible': false,
+      'primary': false
+    }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Small Hanging Ashlar Stone Sign',
     'nameID': 'SmallHangingAshlarStoneSign',
@@ -13149,7 +14632,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Hanging Ashlar Stone Sign', 'nameID': 'SmallHangingAshlarStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Hanging Lumber Sign',
@@ -13173,7 +14657,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Hanging Lumber Sign', 'nameID': 'SmallHangingLumberSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Hanging Mortared Stone Sign',
@@ -13193,7 +14678,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Hanging Mortared Stone Sign', 'nameID': 'SmallHangingMortaredStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Hanging Wood Sign',
@@ -13223,7 +14709,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Hanging Wood Sign', 'nameID': 'SmallHangingWoodSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Sink',
@@ -13244,7 +14731,12 @@ export const craftingData: CraftingData = {
       'quantity': 30,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Small Sink', 'nameID': 'SmallSinkItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Small Sink', 'nameID': 'SmallSinkItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Small Standing Ashlar Stone Sign',
     'nameID': 'SmallStandingAshlarStoneSign',
@@ -13263,7 +14755,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Standing Ashlar Stone Sign', 'nameID': 'SmallStandingAshlarStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Standing Lumber Sign',
@@ -13287,7 +14780,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Standing Lumber Sign', 'nameID': 'SmallStandingLumberSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Standing Mortared Stone Sign',
@@ -13307,7 +14801,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Standing Mortared Stone Sign', 'nameID': 'SmallStandingMortaredStoneSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Standing Wood Sign',
@@ -13337,7 +14832,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Small Standing Wood Sign', 'nameID': 'SmallStandingWoodSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Small Wood Cart',
@@ -13358,7 +14854,12 @@ export const craftingData: CraftingData = {
       'quantity': 15,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Small Wood Cart', 'nameID': 'SmallWoodCartItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Small Wood Cart', 'nameID': 'SmallWoodCartItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Smelting Upgrade',
     'nameID': 'SmeltingUpgrade',
@@ -13378,7 +14879,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Smelting Upgrade', 'nameID': 'SmeltingUpgradeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Smelting Upgrade', 'nameID': 'SmeltingUpgradeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Smith Apron',
     'nameID': 'SmithApron',
@@ -13394,7 +14900,12 @@ export const craftingData: CraftingData = {
     'labor': 2000,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 30, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Smith Apron', 'nameID': 'SmithApronItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Smith Apron', 'nameID': 'SmithApronItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Smith Bandana',
     'nameID': 'SmithBandana',
@@ -13410,7 +14921,12 @@ export const craftingData: CraftingData = {
     'labor': 2000,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 25, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Smith Bandana', 'nameID': 'SmithBandanaItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Smith Bandana', 'nameID': 'SmithBandanaItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Smith Boots',
     'nameID': 'SmithBoots',
@@ -13434,7 +14950,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Smith Boots', 'nameID': 'SmithBootsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Smith Boots', 'nameID': 'SmithBootsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Smith Gloves',
     'nameID': 'SmithGloves',
@@ -13454,7 +14975,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Smith Gloves', 'nameID': 'SmithGlovesItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Smith Gloves', 'nameID': 'SmithGlovesItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Smith Pants',
     'nameID': 'SmithPants',
@@ -13470,7 +14996,12 @@ export const craftingData: CraftingData = {
     'labor': 2000,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Smith Pants', 'nameID': 'SmithPantsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Smith Pants', 'nameID': 'SmithPantsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Soil Sampler',
     'nameID': 'SoilSampler',
@@ -13490,7 +15021,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Wood', 'nameID': 'Wood', 'tag': true}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Soil Sampler', 'nameID': 'SoilSamplerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Soil Sampler', 'nameID': 'SoilSamplerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Solar Generator',
     'nameID': 'SolarGenerator',
@@ -13516,7 +15052,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 12, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Solar Generator', 'nameID': 'SolarGeneratorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Solar Generator', 'nameID': 'SolarGeneratorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Spin Melter',
     'nameID': 'SpinMelter',
@@ -13536,7 +15077,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Spin Melter', 'nameID': 'SpinMelterItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Spin Melter', 'nameID': 'SpinMelterItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Square Belt',
     'nameID': 'SquareBelt',
@@ -13552,7 +15098,12 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Square Belt', 'nameID': 'SquareBeltItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Square Belt', 'nameID': 'SquareBeltItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Square Pot',
     'nameID': 'PlanterPotSquare',
@@ -13568,7 +15119,12 @@ export const craftingData: CraftingData = {
     'labor': 75,
     'craftingTable': {'name': 'Kiln', 'nameID': 'KilnObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Clay', 'nameID': 'ClayItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Square Pot', 'nameID': 'PlanterPotSquareItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Square Pot', 'nameID': 'PlanterPotSquareItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stamp Mill',
     'nameID': 'StampMill',
@@ -13596,7 +15152,12 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 14, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stamp Mill', 'nameID': 'StampMillItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stamp Mill', 'nameID': 'StampMillItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Standing Glass Sign',
     'nameID': 'StandingGlassSign',
@@ -13625,7 +15186,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Standing Glass Sign', 'nameID': 'StandingGlassSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Standing Long Steel Sign',
@@ -13655,7 +15217,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Standing Long Steel Sign', 'nameID': 'StandingLongSteelSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Standing Steel Brick Sign',
@@ -13683,7 +15246,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Standing Steel Brick Sign', 'nameID': 'StandingSteelBrickSignItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Steam Engine',
@@ -13716,7 +15280,12 @@ export const craftingData: CraftingData = {
       'quantity': 24,
       'reducible': true
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 30, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steam Engine', 'nameID': 'SteamEngineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steam Engine', 'nameID': 'SteamEngineItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steam Tractor',
     'nameID': 'SteamTractor',
@@ -13760,7 +15329,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 24, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steam Tractor', 'nameID': 'SteamTractorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steam Tractor', 'nameID': 'SteamTractorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steam Tractor Harvester',
     'nameID': 'SteamTractorHarvester',
@@ -13787,7 +15361,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Steam Tractor Harvester', 'nameID': 'SteamTractorHarvesterItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Steam Tractor Plow',
@@ -13808,7 +15383,12 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 18, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steam Tractor Plow', 'nameID': 'SteamTractorPlowItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steam Tractor Plow', 'nameID': 'SteamTractorPlowItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steam Tractor Sower',
     'nameID': 'SteamTractorSower',
@@ -13835,7 +15415,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Steam Tractor Sower', 'nameID': 'SteamTractorSowerItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Steam Truck',
@@ -13880,7 +15461,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 24, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steam Truck', 'nameID': 'SteamTruckItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steam Truck', 'nameID': 'SteamTruckItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Axe',
     'nameID': 'SteelAxe',
@@ -13900,7 +15486,7 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Axe', 'nameID': 'SteelAxeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Steel Axe', 'nameID': 'SteelAxeItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Steel Axle',
     'nameID': 'SteelAxle',
@@ -13920,7 +15506,12 @@ export const craftingData: CraftingData = {
       'quantity': 3,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Axle', 'nameID': 'SteelAxleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Axle', 'nameID': 'SteelAxleItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Ceiling Light',
     'nameID': 'SteelCeilingLight',
@@ -13951,7 +15542,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Steel Ceiling Light', 'nameID': 'SteelCeilingLightItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Steel Floor Lamp',
@@ -13980,7 +15572,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Floor Lamp', 'nameID': 'SteelFloorLampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Floor Lamp', 'nameID': 'SteelFloorLampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Gear',
     'nameID': 'SteelGear',
@@ -14000,7 +15597,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Gear', 'nameID': 'SteelGearItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Gear', 'nameID': 'SteelGearItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Gearbox',
     'nameID': 'SteelGearbox',
@@ -14020,7 +15622,12 @@ export const craftingData: CraftingData = {
       'quantity': 8,
       'reducible': true
     }, {'item': {'name': 'Steel Gear', 'nameID': 'SteelGearItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Gearbox', 'nameID': 'SteelGearboxItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Gearbox', 'nameID': 'SteelGearboxItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Hammer',
     'nameID': 'SteelHammer',
@@ -14040,7 +15647,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Hammer', 'nameID': 'SteelHammerItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Hammer', 'nameID': 'SteelHammerItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Hoe',
     'nameID': 'SteelHoe',
@@ -14060,7 +15672,7 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Hoe', 'nameID': 'SteelHoeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Steel Hoe', 'nameID': 'SteelHoeItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Steel Machete',
     'nameID': 'SteelMachete',
@@ -14080,7 +15692,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Machete', 'nameID': 'SteelMacheteItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Machete', 'nameID': 'SteelMacheteItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Pickaxe',
     'nameID': 'SteelPickaxe',
@@ -14100,7 +15717,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Pickaxe', 'nameID': 'SteelPickaxeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Pickaxe', 'nameID': 'SteelPickaxeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Pipe',
     'nameID': 'SteelPipe',
@@ -14116,7 +15738,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Blast Furnace', 'nameID': 'BlastFurnaceObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Pipe', 'nameID': 'SteelPipeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Pipe', 'nameID': 'SteelPipeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Plate',
     'nameID': 'SteelPlate',
@@ -14132,7 +15759,12 @@ export const craftingData: CraftingData = {
     'labor': 200,
     'craftingTable': {'name': 'Electric Stamping Press', 'nameID': 'ElectricStampingPressObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Road Tool',
     'nameID': 'SteelRoadTool',
@@ -14152,7 +15784,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Road Tool', 'nameID': 'SteelRoadToolItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Road Tool', 'nameID': 'SteelRoadToolItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Saw Blade',
     'nameID': 'SteelSawBlade',
@@ -14168,7 +15805,12 @@ export const craftingData: CraftingData = {
     'labor': 300,
     'craftingTable': {'name': 'Anvil', 'nameID': 'AnvilObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Saw Blade', 'nameID': 'SteelSawBladeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Saw Blade', 'nameID': 'SteelSawBladeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Shovel',
     'nameID': 'SteelShovel',
@@ -14188,7 +15830,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Shovel', 'nameID': 'SteelShovelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Shovel', 'nameID': 'SteelShovelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Sickle',
     'nameID': 'SteelSickle',
@@ -14208,7 +15855,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Sickle', 'nameID': 'SteelSickleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Sickle', 'nameID': 'SteelSickleItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Steel Table Lamp',
     'nameID': 'SteelTableLamp',
@@ -14236,7 +15888,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Steel Table Lamp', 'nameID': 'SteelTableLampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Steel Table Lamp', 'nameID': 'SteelTableLampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stone Brazier',
     'nameID': 'StoneBrazier',
@@ -14252,7 +15909,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Masonry Table', 'nameID': 'MasonryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Rock', 'nameID': 'Rock', 'tag': true}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stone Brazier', 'nameID': 'StoneBrazierItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stone Brazier', 'nameID': 'StoneBrazierItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stone Ramp',
     'nameID': 'StoneRamp',
@@ -14272,7 +15934,12 @@ export const craftingData: CraftingData = {
       'quantity': 3,
       'reducible': true
     }, {'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stone Ramp', 'nameID': 'StoneRampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stone Ramp', 'nameID': 'StoneRampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stone Road',
     'nameID': 'StoneRoad',
@@ -14292,7 +15959,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stone Road', 'nameID': 'StoneRoadItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stone Road', 'nameID': 'StoneRoadItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stone Road Tool',
     'nameID': 'StoneRoadTool',
@@ -14314,7 +15986,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 4, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Stone Road Tool', 'nameID': 'StoneRoadToolItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stone Road Tool', 'nameID': 'StoneRoadToolItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stop Sign',
     'nameID': 'StopSign',
@@ -14330,7 +16007,7 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Wainwright Table', 'nameID': 'WainwrightTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stop Sign', 'nameID': 'StopSignItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Stop Sign', 'nameID': 'StopSignItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Storage Silo',
     'nameID': 'StorageSilo',
@@ -14354,7 +16031,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Storage Silo', 'nameID': 'StorageSiloItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Storage Silo', 'nameID': 'StorageSiloItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stove',
     'nameID': 'Stove',
@@ -14374,7 +16056,7 @@ export const craftingData: CraftingData = {
       'quantity': 12,
       'reducible': true
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 16, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stove', 'nameID': 'StoveItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Stove', 'nameID': 'StoveItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Street Sign',
     'nameID': 'StreetSign',
@@ -14390,7 +16072,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Wainwright Table', 'nameID': 'WainwrightTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Street Sign', 'nameID': 'StreetSignItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Street Sign', 'nameID': 'StreetSignItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Streetlamp',
     'nameID': 'Streetlamp',
@@ -14416,7 +16103,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': false
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Streetlamp', 'nameID': 'StreetlampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Streetlamp', 'nameID': 'StreetlampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stuffed Alligator',
     'nameID': 'StuffedAlligator',
@@ -14442,7 +16134,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 5, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Stuffed Alligator', 'nameID': 'StuffedAlligatorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stuffed Alligator', 'nameID': 'StuffedAlligatorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stuffed Bison',
     'nameID': 'StuffedBison',
@@ -14468,7 +16165,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 5, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Stuffed Bison', 'nameID': 'StuffedBisonItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stuffed Bison', 'nameID': 'StuffedBisonItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stuffed Elk',
     'nameID': 'StuffedElk',
@@ -14494,7 +16196,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 5, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Stuffed Elk', 'nameID': 'StuffedElkItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stuffed Elk', 'nameID': 'StuffedElkItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stuffed Goat',
     'nameID': 'StuffedGoat',
@@ -14518,7 +16225,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Mountain Goat Carcass', 'nameID': 'MountainGoatCarcassItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Stuffed Goat', 'nameID': 'StuffedGoatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stuffed Goat', 'nameID': 'StuffedGoatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stuffed Jaguar',
     'nameID': 'StuffedJaguar',
@@ -14542,7 +16254,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stuffed Jaguar', 'nameID': 'StuffedJaguarItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stuffed Jaguar', 'nameID': 'StuffedJaguarItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stuffed Turkey',
     'nameID': 'StuffedTurkey',
@@ -14566,7 +16283,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Stuffed Turkey', 'nameID': 'StuffedTurkeyItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stuffed Turkey', 'nameID': 'StuffedTurkeyItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Stuffed Wolf',
     'nameID': 'StuffedWolf',
@@ -14592,7 +16314,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Stuffed Wolf', 'nameID': 'StuffedWolfItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Stuffed Wolf', 'nameID': 'StuffedWolfItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Substrate',
     'nameID': 'Substrate',
@@ -14612,7 +16339,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Fiberglass', 'nameID': 'FiberglassItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Substrate', 'nameID': 'SubstrateItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Substrate', 'nameID': 'SubstrateItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Beet Sugar',
     'nameID': 'BeetSugar',
@@ -14628,7 +16360,7 @@ export const craftingData: CraftingData = {
     'labor': 80,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Beet', 'nameID': 'BeetItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 3, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 3, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Sugar',
     'nameID': 'Sugar',
@@ -14644,7 +16376,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Huckleberries', 'nameID': 'HuckleberriesItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Sweet Salad',
     'nameID': 'SweetSalad',
@@ -14668,7 +16400,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Simple Syrup', 'nameID': 'SimpleSyrupItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Sweet Salad', 'nameID': 'SweetSaladItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Sweet Salad', 'nameID': 'SweetSaladItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tailor Bowler Hat',
     'nameID': 'TailorBowlerHat',
@@ -14688,7 +16425,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tailor Bowler Hat', 'nameID': 'TailorBowlerHatItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tailor Bowler Hat', 'nameID': 'TailorBowlerHatItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tailor Pants',
     'nameID': 'TailorPants',
@@ -14704,7 +16446,12 @@ export const craftingData: CraftingData = {
     'labor': 2000,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tailor Pants', 'nameID': 'TailorPantsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tailor Pants', 'nameID': 'TailorPantsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tailor Shirt',
     'nameID': 'TailorShirt',
@@ -14724,7 +16471,12 @@ export const craftingData: CraftingData = {
       'quantity': 30,
       'reducible': true
     }, {'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tailor Shirt', 'nameID': 'TailorShirtItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tailor Shirt', 'nameID': 'TailorShirtItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tailor Shoes',
     'nameID': 'TailorShoes',
@@ -14744,7 +16496,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tailor Shoes', 'nameID': 'TailorShoesItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tailor Shoes', 'nameID': 'TailorShoesItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tailoring Basic Upgrade',
     'nameID': 'TailoringUpgrade',
@@ -14767,7 +16524,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Tailoring Basic Upgrade', 'nameID': 'TailoringBasicUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Tailoring Modern Upgrade',
@@ -14791,7 +16549,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Tailoring Modern Upgrade', 'nameID': 'TailoringModernUpgradeItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Tailoring Table',
@@ -14812,7 +16571,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 50, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tailoring Table', 'nameID': 'TailoringTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tailoring Table', 'nameID': 'TailoringTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tall Boots',
     'nameID': 'TallBoots',
@@ -14832,7 +16596,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tall Boots', 'nameID': 'TallBootsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tall Boots', 'nameID': 'TallBootsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Render Fat',
     'nameID': 'RenderFat',
@@ -14848,7 +16617,7 @@ export const craftingData: CraftingData = {
     'labor': 30,
     'craftingTable': {'name': 'Campfire', 'nameID': 'CampfireObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Tallow Lamp',
     'nameID': 'TallowLamp',
@@ -14868,7 +16637,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tallow Lamp', 'nameID': 'TallowLampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tallow Lamp', 'nameID': 'TallowLampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tallow Wall Lamp',
     'nameID': 'TallowWallLamp',
@@ -14888,7 +16662,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tallow Wall Lamp', 'nameID': 'TallowWallLampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tallow Wall Lamp', 'nameID': 'TallowWallLampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Taro Seed',
     'nameID': 'TaroSeed',
@@ -14904,7 +16683,7 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Taro Root', 'nameID': 'TaroRootItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Taro Seed', 'nameID': 'TaroSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Taro Seed', 'nameID': 'TaroSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Toilet',
     'nameID': 'Toilet',
@@ -14924,7 +16703,7 @@ export const craftingData: CraftingData = {
       'quantity': 30,
       'reducible': true
     }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Toilet', 'nameID': 'ToiletItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Toilet', 'nameID': 'ToiletItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Tomato Seed',
     'nameID': 'TomatoSeed',
@@ -14940,7 +16719,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Tomato', 'nameID': 'TomatoItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tomato Seed', 'nameID': 'TomatoSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Tomato Seed', 'nameID': 'TomatoSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Topped Porridge',
     'nameID': 'ToppedPorridge',
@@ -14960,7 +16744,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Fruit', 'nameID': 'Fruit', 'tag': true}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Topped Porridge', 'nameID': 'ToppedPorridgeItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Topped Porridge', 'nameID': 'ToppedPorridgeItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Tortilla',
     'nameID': 'Tortilla',
@@ -14976,7 +16765,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Kitchen', 'nameID': 'KitchenObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Cornmeal', 'nameID': 'CornmealItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Tortilla', 'nameID': 'TortillaItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Tortilla', 'nameID': 'TortillaItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Transglutaminase',
     'nameID': 'Transglutaminase',
@@ -14992,7 +16781,12 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Laboratory', 'nameID': 'LaboratoryObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false}, 'quantity': 30, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Transglutaminase', 'nameID': 'TransglutaminaseItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Transglutaminase', 'nameID': 'TransglutaminaseItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Transmission Pole',
     'nameID': 'TransmissionPole',
@@ -15018,7 +16812,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 8, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Transmission Pole', 'nameID': 'TransmissionPoleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Transmission Pole', 'nameID': 'TransmissionPoleItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Treasury',
     'nameID': 'Treasury',
@@ -15044,7 +16843,7 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 60, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Treasury', 'nameID': 'TreasuryItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Treasury', 'nameID': 'TreasuryItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Trousers',
     'nameID': 'Trousers',
@@ -15068,7 +16867,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Trousers', 'nameID': 'TrousersItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Trousers', 'nameID': 'TrousersItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Truck',
     'nameID': 'Truck',
@@ -15108,7 +16907,7 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': false
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 20, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Truck', 'nameID': 'TruckItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Truck', 'nameID': 'TruckItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Valve',
     'nameID': 'Valve',
@@ -15132,7 +16931,7 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Valve', 'nameID': 'ValveItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Valve', 'nameID': 'ValveItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Exotic Vegetable Medley',
     'nameID': 'ExoticVegetableMedley',
@@ -15158,7 +16957,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 6, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Mixed Vegetable Medley',
     'nameID': 'MixedVegetableMedley',
@@ -15178,7 +16982,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Corn', 'nameID': 'CornItem', 'tag': false}, 'quantity': 6, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Mushroom Medley',
     'nameID': 'MushroomMedley',
@@ -15202,7 +17011,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Crimini Mushrooms', 'nameID': 'CriminiMushroomsItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Vegetable Soup',
     'nameID': 'VegetableSoup',
@@ -15222,7 +17036,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }, {'item': {'name': 'Vegetable Stock', 'nameID': 'VegetableStockItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Vegetable Soup', 'nameID': 'VegetableSoupItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Vegetable Soup', 'nameID': 'VegetableSoupItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Vegetable Stock',
     'nameID': 'VegetableStock',
@@ -15242,7 +17061,12 @@ export const craftingData: CraftingData = {
       'quantity': 1,
       'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Vegetable Stock', 'nameID': 'VegetableStockItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Vegetable Stock', 'nameID': 'VegetableStockItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wainwright Table',
     'nameID': 'WainwrightTable',
@@ -15262,7 +17086,12 @@ export const craftingData: CraftingData = {
       'quantity': 10,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wainwright Table', 'nameID': 'WainwrightTableItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wainwright Table', 'nameID': 'WainwrightTableItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wall Candle',
     'nameID': 'WallCandle',
@@ -15282,7 +17111,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wall Candle', 'nameID': 'WallCandleItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wall Candle', 'nameID': 'WallCandleItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Washboard',
     'nameID': 'Washboard',
@@ -15298,7 +17132,12 @@ export const craftingData: CraftingData = {
     'labor': 200,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Washboard', 'nameID': 'WashboardItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Washboard', 'nameID': 'WashboardItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Washing Machine',
     'nameID': 'WashingMachine',
@@ -15318,7 +17157,12 @@ export const craftingData: CraftingData = {
       'quantity': 6,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Washing Machine', 'nameID': 'WashingMachineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Washing Machine', 'nameID': 'WashingMachineItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Waste Filter',
     'nameID': 'WasteFilter',
@@ -15346,7 +17190,12 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 12, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Waste Filter', 'nameID': 'WasteFilterItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Waste Filter', 'nameID': 'WasteFilterItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Waterwheel',
     'nameID': 'Waterwheel',
@@ -15366,7 +17215,12 @@ export const craftingData: CraftingData = {
       'quantity': 5,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Waterwheel', 'nameID': 'WaterwheelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Waterwheel', 'nameID': 'WaterwheelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wheat Seed',
     'nameID': 'WheatSeed',
@@ -15382,7 +17236,12 @@ export const craftingData: CraftingData = {
     'labor': 40,
     'craftingTable': {'name': 'Farmers Table', 'nameID': 'FarmersTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Wheat', 'nameID': 'WheatItem', 'tag': false}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wheat Seed', 'nameID': 'WheatSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wheat Seed', 'nameID': 'WheatSeedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wheelbarrow',
     'nameID': 'Wheelbarrow',
@@ -15408,7 +17267,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Wheelbarrow', 'nameID': 'WheelbarrowItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wheelbarrow', 'nameID': 'WheelbarrowItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wild Mix',
     'nameID': 'WildMix',
@@ -15428,7 +17292,7 @@ export const craftingData: CraftingData = {
       'quantity': 2,
       'reducible': true
     }, {'item': {'name': 'Huckleberry Extract', 'nameID': 'HuckleberryExtractItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wild Mix', 'nameID': 'WildMixItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Wild Mix', 'nameID': 'WildMixItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Wild Stew',
     'nameID': 'WildStew',
@@ -15454,7 +17318,7 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 2, 'reducible': true
     }, {'item': {'name': 'Vegetable', 'nameID': 'Vegetable', 'tag': true}, 'quantity': 1, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wild Stew', 'nameID': 'WildStewItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Wild Stew', 'nameID': 'WildStewItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Wilted Fiddleheads',
     'nameID': 'WiltedFiddleheads',
@@ -15473,7 +17337,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Wilted Fiddleheads', 'nameID': 'WiltedFiddleheadsItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Wind Turbine',
@@ -15498,7 +17363,12 @@ export const craftingData: CraftingData = {
       'quantity': 4,
       'reducible': true
     }, {'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wind Turbine', 'nameID': 'WindTurbineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wind Turbine', 'nameID': 'WindTurbineItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Windmill',
     'nameID': 'Windmill',
@@ -15518,7 +17388,7 @@ export const craftingData: CraftingData = {
       'quantity': 16,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 15, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Windmill', 'nameID': 'WindmillItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Windmill', 'nameID': 'WindmillItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Wood Cart',
     'nameID': 'WoodCart',
@@ -15544,7 +17414,7 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 2, 'reducible': false
     }],
-    'outputs': [{'item': {'name': 'Wood Cart', 'nameID': 'WoodCartItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Wood Cart', 'nameID': 'WoodCartItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Wooden Ceiling Light',
     'nameID': 'WoodenCeilingLight',
@@ -15577,7 +17447,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Wooden Ceiling Light', 'nameID': 'WoodenCeilingLightItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Wooden Elevator',
@@ -15604,7 +17475,12 @@ export const craftingData: CraftingData = {
         'tag': true
       }, 'quantity': 30, 'reducible': true
     }, {'item': {'name': 'Portable Steam Engine', 'nameID': 'PortableSteamEngineItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
-    'outputs': [{'item': {'name': 'Wooden Elevator', 'nameID': 'WoodenElevatorItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wooden Elevator', 'nameID': 'WoodenElevatorItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wooden Elevator Call Post',
     'nameID': 'WoodenElevatorCallPost',
@@ -15627,7 +17503,8 @@ export const craftingData: CraftingData = {
     'outputs': [{
       'item': {'name': 'Wooden Elevator Call Post', 'nameID': 'WoodenElevatorCallPostItem', 'tag': false},
       'quantity': 1,
-      'reducible': false
+      'reducible': false,
+      'primary': true
     }]
   }, {
     'name': 'Wooden Fabric Bed',
@@ -15654,7 +17531,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 10, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Wooden Fabric Bed', 'nameID': 'WoodenFabricBedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wooden Fabric Bed', 'nameID': 'WoodenFabricBedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wooden Floor Lamp',
     'nameID': 'WoodenFloorLamp',
@@ -15684,7 +17566,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': false
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 8, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wooden Floor Lamp', 'nameID': 'WoodenFloorLampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wooden Floor Lamp', 'nameID': 'WoodenFloorLampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wooden Latrine',
     'nameID': 'Latrine',
@@ -15704,7 +17591,12 @@ export const craftingData: CraftingData = {
       'quantity': 20,
       'reducible': true
     }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 5, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wooden Latrine', 'nameID': 'WoodenLatrineItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wooden Latrine', 'nameID': 'WoodenLatrineItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wooden Straw Bed',
     'nameID': 'WoodenStrawBed',
@@ -15728,7 +17620,12 @@ export const craftingData: CraftingData = {
       'quantity': 15,
       'reducible': true
     }, {'item': {'name': 'Plant Fibers', 'nameID': 'PlantFibersItem', 'tag': false}, 'quantity': 40, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wooden Straw Bed', 'nameID': 'WoodenStrawBedItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wooden Straw Bed', 'nameID': 'WoodenStrawBedItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wooden Table Lamp',
     'nameID': 'WoodenTableLamp',
@@ -15758,7 +17655,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 1, 'reducible': false
     }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 10, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wooden Table Lamp', 'nameID': 'WoodenTableLampItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wooden Table Lamp', 'nameID': 'WoodenTableLampItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wooden Wheel',
     'nameID': 'WoodenWheel',
@@ -15774,7 +17676,12 @@ export const craftingData: CraftingData = {
     'labor': 60,
     'craftingTable': {'name': 'Wainwright Table', 'nameID': 'WainwrightTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wooden Wheel', 'nameID': 'WoodenWheelItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wooden Wheel', 'nameID': 'WoodenWheelItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wool Carpet',
     'nameID': 'WoolCarpet',
@@ -15800,7 +17707,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 5, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Wool Carpet', 'nameID': 'WoolCarpetItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wool Carpet', 'nameID': 'WoolCarpetItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Weave Wool Fabric',
     'nameID': 'WeaveWoolFabric',
@@ -15816,7 +17728,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Automatic Loom', 'nameID': 'AutomaticLoomObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wool Fabric', 'nameID': 'WoolFabricItem', 'tag': false}, 'quantity': 2, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wool Fabric', 'nameID': 'WoolFabricItem', 'tag': false},
+      'quantity': 2,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Wool Fabric',
     'nameID': 'WoolFabric',
@@ -15832,7 +17749,12 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Loom', 'nameID': 'LoomObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wool Fabric', 'nameID': 'WoolFabricItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Wool Fabric', 'nameID': 'WoolFabricItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Spin Wool Yarn',
     'nameID': 'SpinWoolYarn',
@@ -15848,7 +17770,7 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Tailoring Table', 'nameID': 'TailoringTableObject', 'upgradeModuleType': 'BasicUpgrade'},
     'ingredients': [{'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 4, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Wool Yarn',
     'nameID': 'WoolYarn',
@@ -15864,7 +17786,7 @@ export const craftingData: CraftingData = {
     'labor': 100,
     'craftingTable': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false}, 'quantity': 3, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }, {
     'name': 'Work Backpack',
     'nameID': 'WorkBackpack',
@@ -15890,7 +17812,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 20, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Work Backpack', 'nameID': 'WorkBackpackItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Work Backpack', 'nameID': 'WorkBackpackItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Work Boots',
     'nameID': 'WorkBoots',
@@ -15916,7 +17843,12 @@ export const craftingData: CraftingData = {
         'tag': false
       }, 'quantity': 20, 'reducible': true
     }],
-    'outputs': [{'item': {'name': 'Work Boots', 'nameID': 'WorkBootsItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{
+      'item': {'name': 'Work Boots', 'nameID': 'WorkBootsItem', 'tag': false},
+      'quantity': 1,
+      'reducible': false,
+      'primary': true
+    }]
   }, {
     'name': 'Yeast',
     'nameID': 'Yeast',
@@ -15932,7 +17864,7 @@ export const craftingData: CraftingData = {
     'labor': 20,
     'craftingTable': {'name': 'Mill', 'nameID': 'MillObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 2, 'reducible': true}],
-    'outputs': [{'item': {'name': 'Yeast', 'nameID': 'YeastItem', 'tag': false}, 'quantity': 1, 'reducible': false}]
+    'outputs': [{'item': {'name': 'Yeast', 'nameID': 'YeastItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}]
   }],
   'skills': [{
     'name': 'Advanced Baking',
@@ -20438,2558 +22370,3319 @@ export const craftingData: CraftingData = {
   'outputs': [{
     'item': {'name': 'Acorn Powder', 'nameID': 'AcornPowderItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Adorned Ashlar Stone Bench', 'nameID': 'AdornedAshlarStoneBenchItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Adorned Ashlar Stone Chair', 'nameID': 'AdornedAshlarStoneChairItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Adorned Ashlar Stone Table', 'nameID': 'AdornedAshlarStoneTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Baking Upgrade', 'nameID': 'AdvancedBakingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Carpentry Table', 'nameID': 'AdvancedCarpentryTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Circuit', 'nameID': 'AdvancedCircuitItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Combustion Engine', 'nameID': 'AdvancedCombustionEngineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Cooking Upgrade', 'nameID': 'AdvancedCookingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Masonry Table', 'nameID': 'AdvancedMasonryTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Masonry Upgrade', 'nameID': 'AdvancedMasonryUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Smelting Upgrade', 'nameID': 'AdvancedSmeltingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Tailoring Table', 'nameID': 'AdvancedTailoringTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Upgrade 1', 'nameID': 'AdvancedUpgradeLvl1Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Upgrade 2', 'nameID': 'AdvancedUpgradeLvl2Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Upgrade 3', 'nameID': 'AdvancedUpgradeLvl3Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Advanced Upgrade 4', 'nameID': 'AdvancedUpgradeLvl4Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Agave Seed', 'nameID': 'AgaveSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Agriculture Research Paper Advanced', 'nameID': 'AgricultureResearchPaperAdvancedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Agriculture Research Paper Modern', 'nameID': 'AgricultureResearchPaperModernItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Amanita Mushroom Spores', 'nameID': 'AmanitaMushroomSporesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Anvil', 'nameID': 'AnvilItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Arrastra',
-      'nameID': 'ArrastraItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Anvil', 'nameID': 'AnvilItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Arrastra', 'nameID': 'ArrastraItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Large Stone Fountain', 'nameID': 'AshlarLargeStoneFountainItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Small Stone Fountain', 'nameID': 'AshlarSmallStoneFountainItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone', 'nameID': 'AshlarStone', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone Bench', 'nameID': 'AshlarStoneBenchItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone Chair', 'nameID': 'AshlarStoneChairItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone Door', 'nameID': 'AshlarStoneDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone Fireplace', 'nameID': 'AshlarStoneFireplaceItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ashlar Stone Table', 'nameID': 'AshlarStoneTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Asphalt Concrete', 'nameID': 'AsphaltConcreteItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Assembly Line', 'nameID': 'AssemblyLineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Automatic Loom', 'nameID': 'AutomaticLoomItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Agave', 'nameID': 'BakedAgaveItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Beet', 'nameID': 'BakedBeetItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Corn', 'nameID': 'BakedCornItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Heart Of Palm', 'nameID': 'BakedHeartOfPalmItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Meat', 'nameID': 'BakedMeatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Roast', 'nameID': 'BakedRoastItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Taro', 'nameID': 'BakedTaroItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baked Tomato', 'nameID': 'BakedTomatoItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bakery Oven', 'nameID': 'BakeryOvenItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Baking Upgrade', 'nameID': 'BakingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Bandana', 'nameID': 'BandanaItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Bank',
-      'nameID': 'BankItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Bannock', 'nameID': 'BannockItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Barrel',
-      'nameID': 'BarrelItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false}, 'quantity': 3, 'reducible': true}, {
-    'item': {
-      'name': 'Barrel',
-      'nameID': 'BarrelItem',
-      'tag': false
-    }, 'quantity': 3, 'reducible': true
-  }, {'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false}, 'quantity': 3, 'reducible': true}, {
-    'item': {
-      'name': 'Barrel',
-      'nameID': 'BarrelItem',
-      'tag': false
-    }, 'quantity': 3, 'reducible': true
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Bandana', 'nameID': 'BandanaItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Bank', 'nameID': 'BankItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Bannock', 'nameID': 'BannockItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
+    'quantity': 3,
+    'reducible': true,
+    'primary': false
+  }, {
+    'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
+    'quantity': 3,
+    'reducible': true,
+    'primary': false
+  }, {
+    'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
+    'quantity': 3,
+    'reducible': true,
+    'primary': false
+  }, {
+    'item': {'name': 'Barrel', 'nameID': 'BarrelItem', 'tag': false},
+    'quantity': 3,
+    'reducible': true,
+    'primary': false
   }, {
     'item': {'name': 'Basic Circuit', 'nameID': 'BasicCircuitItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Engineering Upgrade', 'nameID': 'BasicEngineeringUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Salad', 'nameID': 'BasicSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Upgrade 1', 'nameID': 'BasicUpgradeLvl1Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Upgrade 2', 'nameID': 'BasicUpgradeLvl2Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Upgrade 3', 'nameID': 'BasicUpgradeLvl3Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Basic Upgrade 4', 'nameID': 'BasicUpgradeLvl4Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bathtub', 'nameID': 'BathtubItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bean Paste', 'nameID': 'BeanPasteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bear S U P R E M E', 'nameID': 'BearSUPREMEItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bearclaw', 'nameID': 'BearclawItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bearpack', 'nameID': 'BearpackItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Beet Campfire Salad', 'nameID': 'BeetCampfireSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Beet Seed', 'nameID': 'BeetSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Berry Extract Fertilizer', 'nameID': 'BerryExtractFertilizerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Big Backpack', 'nameID': 'BigBackpackItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Biodiesel', 'nameID': 'BiodieselItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bison Mount', 'nameID': 'BisonMountItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Blast Furnace', 'nameID': 'BlastFurnaceItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Blood Meal Fertilizer', 'nameID': 'BloodMealFertilizerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Bloomery', 'nameID': 'BloomeryItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Board',
-      'nameID': 'WoodBoard',
-      'tag': true
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true}, 'quantity': 3, 'reducible': false}, {
-    'item': {
-      'name': 'Boiled Grains',
-      'nameID': 'BoiledGrainsItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Bloomery', 'nameID': 'BloomeryItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Board', 'nameID': 'WoodBoard', 'tag': true},
+    'quantity': 3,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Boiled Grains', 'nameID': 'BoiledGrainsItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Boiled Rice', 'nameID': 'BoiledRiceItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Boiled Sausage', 'nameID': 'BoiledSausageItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Boiler', 'nameID': 'BoilerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bolete Mushroom Spores', 'nameID': 'BoleteMushroomSporesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Bookshelf', 'nameID': 'BookshelfItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Brazier', 'nameID': 'BrazierItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Bread',
-      'nameID': 'BreadItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Brick',
-      'nameID': 'BrickItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Brazier', 'nameID': 'BrazierItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Bread', 'nameID': 'BreadItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Brick Fireplace', 'nameID': 'BrickFireplaceItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Builder Boots', 'nameID': 'BuilderBootsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Builder Gloves', 'nameID': 'BuilderGlovesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Builder Helmet', 'nameID': 'BuilderHelmetItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Builder Overalls', 'nameID': 'BuilderOverallsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Builder Shirt', 'nameID': 'BuilderShirtItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Butchery Table', 'nameID': 'ButcheryTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Butchery Upgrade', 'nameID': 'ButcheryUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'C O2 Canister', 'nameID': 'CO2CanisterItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Camas Ash Fertilizer', 'nameID': 'CamasAshFertilizerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Camas Bread', 'nameID': 'CamasBreadItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Camas Bulb Bake', 'nameID': 'CamasBulbBakeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Camas Paste', 'nameID': 'CamasPasteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Camo Pants', 'nameID': 'CamoPantsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Camo Shirt', 'nameID': 'CamoShirtItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Campfire Cooking Upgrade', 'nameID': 'CampfireCookingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Campfire Roast', 'nameID': 'CampfireRoastItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Campsite', 'nameID': 'CampsiteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Candle Stand', 'nameID': 'CandleStandItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Capris', 'nameID': 'CaprisItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Carpentry Advanced Upgrade', 'nameID': 'CarpentryAdvancedUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Carpentry Basic Upgrade', 'nameID': 'CarpentryBasicUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cast Iron Stove', 'nameID': 'CastIronStoveItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Ceiling Candle', 'nameID': 'CeilingCandleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cellulose Fiber', 'nameID': 'CelluloseFiberItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Cement', 'nameID': 'CementItem', 'tag': false}, 'quantity': 2, 'reducible': false}, {
-    'item': {
-      'name': 'Cement Kiln',
-      'nameID': 'CementKilnItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Cement', 'nameID': 'CementItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Cement Kiln', 'nameID': 'CementKilnItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Chainsaw', 'nameID': 'ChainsawItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charcoal', 'nameID': 'CharcoalItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Agave', 'nameID': 'CharredAgaveItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Beans', 'nameID': 'CharredBeansItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Beet', 'nameID': 'CharredBeetItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Cactus Fruit', 'nameID': 'CharredCactusFruitItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Camas Bulb', 'nameID': 'CharredCamasBulbItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Corn', 'nameID': 'CharredCornItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Fireweed Shoots', 'nameID': 'CharredFireweedShootsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Fish', 'nameID': 'CharredFishItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Heart Of Palm', 'nameID': 'CharredHeartOfPalmItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
     'quantity': 4,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Meat', 'nameID': 'CharredMeatItem', 'tag': false},
     'quantity': 8,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Mushrooms', 'nameID': 'CharredMushroomsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Papaya', 'nameID': 'CharredPapayaItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Pineapple', 'nameID': 'CharredPineappleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Sausage', 'nameID': 'CharredSausageItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Taro', 'nameID': 'CharredTaroItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Charred Tomato', 'nameID': 'CharredTomatoItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Cloth', 'nameID': 'ClothItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Cloth Belt',
-      'nameID': 'ClothBeltItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Cloth', 'nameID': 'ClothItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Cloth Belt', 'nameID': 'ClothBeltItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cloth Cape', 'nameID': 'ClothCapeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Combustion Engine', 'nameID': 'CombustionEngineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Combustion Generator', 'nameID': 'CombustionGeneratorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Composite Bow', 'nameID': 'CompositeBowItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Composite Filler', 'nameID': 'CompositeFillerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Composite Lumber Bench', 'nameID': 'CompositeLumberBenchItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Composite Lumber Chair', 'nameID': 'CompositeLumberChairItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Composite Lumber Door', 'nameID': 'CompositeLumberDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Composite Lumber Table', 'nameID': 'CompositeLumberTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'CompositeLumber', 'nameID': 'CompositeLumber', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Composites Upgrade', 'nameID': 'CompositesUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Compost Fertilizer', 'nameID': 'CompostFertilizerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Computer Lab', 'nameID': 'ComputerLabItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cookeina Mushroom Spores', 'nameID': 'CookeinaMushroomSporesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cooking Upgrade', 'nameID': 'CookingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Copper Bar', 'nameID': 'CopperBarItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Copper Bar', 'nameID': 'CopperBarItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Copper Concentrate', 'nameID': 'CopperConcentrateItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Copper Concentrate', 'nameID': 'CopperConcentrateItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Copper Pipe', 'nameID': 'CopperPipeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Copper Wiring', 'nameID': 'CopperWiringItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Corn Fritters', 'nameID': 'CornFrittersItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Corn Seed', 'nameID': 'CornSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Corn Starch', 'nameID': 'CornStarchItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cornmeal', 'nameID': 'CornmealItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Corrugated Steel', 'nameID': 'CorrugatedSteelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Corrugated Steel Door', 'nameID': 'CorrugatedSteelDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Corrugated Steel Fence Door', 'nameID': 'CorrugatedSteelFenceDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cotton Carpet', 'nameID': 'CottonCarpetItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cotton Fabric', 'nameID': 'CottonFabricItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cotton Seed', 'nameID': 'CottonSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cotton Thread', 'nameID': 'CottonThreadItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
-  }, {'item': {'name': 'Couch', 'nameID': 'CouchItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Crane',
-      'nameID': 'CraneItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Couch', 'nameID': 'CouchItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Crane', 'nameID': 'CraneItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crimini Mushroom Spores', 'nameID': 'CriminiMushroomSporesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crimson Salad', 'nameID': 'CrimsonSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crispy Bacon', 'nameID': 'CrispyBaconItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Basalt', 'nameID': 'CrushedBasaltItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Copper Ore', 'nameID': 'CrushedCopperOreItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Copper Ore', 'nameID': 'CrushedCopperOreItem', 'tag': false},
     'quantity': 4,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Copper Ore', 'nameID': 'CrushedCopperOreItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Gneiss', 'nameID': 'CrushedGneissItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Gold Ore', 'nameID': 'CrushedGoldOreItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Gold Ore', 'nameID': 'CrushedGoldOreItem', 'tag': false},
     'quantity': 4,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Gold Ore', 'nameID': 'CrushedGoldOreItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Granite', 'nameID': 'CrushedGraniteItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Iron Ore', 'nameID': 'CrushedIronOreItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Iron Ore', 'nameID': 'CrushedIronOreItem', 'tag': false},
     'quantity': 4,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Iron Ore', 'nameID': 'CrushedIronOreItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Limestone', 'nameID': 'CrushedLimestoneItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Sandstone', 'nameID': 'CrushedSandstoneItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Shale', 'nameID': 'CrushedShaleItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Slag', 'nameID': 'CrushedSlagItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Crushed Slag', 'nameID': 'CrushedSlagItem', 'tag': false},
     'quantity': 5,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Culinary Research Paper Advanced', 'nameID': 'CulinaryResearchPaperAdvancedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Culinary Research Paper Advanced', 'nameID': 'CulinaryResearchPaperAdvancedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Culinary Research Paper Basic', 'nameID': 'CulinaryResearchPaperBasicItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Culinary Research Paper Basic', 'nameID': 'CulinaryResearchPaperBasicItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Culinary Research Paper Basic', 'nameID': 'CulinaryResearchPaperBasicItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Culinary Research Paper Modern', 'nameID': 'CulinaryResearchPaperModernItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Currency Exchange', 'nameID': 'CurrencyExchangeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Cutting Edge Cooking Upgrade', 'nameID': 'CuttingEdgeCookingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Dendrology Research Paper Advanced', 'nameID': 'DendrologyResearchPaperAdvancedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Dendrology Research Paper Basic', 'nameID': 'DendrologyResearchPaperBasicItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Dendrology Research Paper Modern', 'nameID': 'DendrologyResearchPaperModernItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Derpy Hat', 'nameID': 'DerpyHatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Distribution Station', 'nameID': 'DistributionStationItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electric Lathe', 'nameID': 'ElectricLatheItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electric Machinist Table', 'nameID': 'ElectricMachinistTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electric Motor', 'nameID': 'ElectricMotorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electric Planer', 'nameID': 'ElectricPlanerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electric Stamping Press', 'nameID': 'ElectricStampingPressItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electric Wall Lamp', 'nameID': 'ElectricWallLampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electric Water Pump', 'nameID': 'ElectricWaterPumpItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electronics Assembly', 'nameID': 'ElectronicsAssemblyItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Electronics Upgrade', 'nameID': 'ElectronicsUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Elk Mount', 'nameID': 'ElkMountItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Elk Taco', 'nameID': 'ElkTacoItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Elk Wellington', 'nameID': 'ElkWellingtonItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Engineering Research Paper Advanced', 'nameID': 'EngineeringResearchPaperAdvancedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Engineering Research Paper Modern', 'nameID': 'EngineeringResearchPaperModernItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Epoxy', 'nameID': 'EpoxyItem', 'tag': false}, 'quantity': 2, 'reducible': false}, {
-    'item': {
-      'name': 'Excavator',
-      'nameID': 'ExcavatorItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Epoxy', 'nameID': 'EpoxyItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Excavator', 'nameID': 'ExcavatorItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Farmer Boots', 'nameID': 'FarmerBootsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Farmer Gloves', 'nameID': 'FarmerGlovesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Farmer Hat', 'nameID': 'FarmerHatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Farmer Overalls', 'nameID': 'FarmerOverallsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Farmer Shirt', 'nameID': 'FarmerShirtItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Farmers Table', 'nameID': 'FarmersTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Farming Upgrade', 'nameID': 'FarmingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fern Campfire Salad', 'nameID': 'FernCampfireSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fern Spore', 'nameID': 'FernSporeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fertilizers Upgrade', 'nameID': 'FertilizersUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fiber Filler', 'nameID': 'FiberFillerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fiberglass', 'nameID': 'FiberglassItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Field Campfire Stew', 'nameID': 'FieldCampfireStewItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fireweed Seed', 'nameID': 'FireweedSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fish Trap', 'nameID': 'FishTrapItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fishery', 'nameID': 'FisheryItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Flat Steel', 'nameID': 'FlatSteelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Flat Steel Door', 'nameID': 'FlatSteelDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Flatbread', 'nameID': 'FlatbreadItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Flour',
-      'nameID': 'FlourItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Flatbread', 'nameID': 'FlatbreadItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Flour', 'nameID': 'FlourItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Framed Glass', 'nameID': 'FramedGlassItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Framed Glass Door', 'nameID': 'FramedGlassDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fried Camas', 'nameID': 'FriedCamasItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fried Fiddleheads', 'nameID': 'FriedFiddleheadsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fried Hare Haunches', 'nameID': 'FriedHareHaunchesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fried Hearts Of Palm', 'nameID': 'FriedHeartsOfPalmItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fried Taro', 'nameID': 'FriedTaroItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fried Tomatoes', 'nameID': 'FriedTomatoesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Froth Floatation Cell', 'nameID': 'FrothFloatationCellItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fruit Muffin', 'nameID': 'FruitMuffinItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fruit Salad', 'nameID': 'FruitSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fruit Tart', 'nameID': 'FruitTartItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Fur Pelt',
-      'nameID': 'FurPeltItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Fur Pelt', 'nameID': 'FurPeltItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Garden Boots', 'nameID': 'GardenBootsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gasoline', 'nameID': 'GasolineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gathering Research Paper Basic', 'nameID': 'GatheringResearchPaperBasicItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gearbox', 'nameID': 'GearboxItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Geology Research Paper Advanced', 'nameID': 'GeologyResearchPaperAdvancedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Geology Research Paper Basic', 'nameID': 'GeologyResearchPaperBasicItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Geology Research Paper Modern', 'nameID': 'GeologyResearchPaperModernItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gigot Sleeve Shirt', 'nameID': 'GigotSleeveShirtItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Glass',
-      'nameID': 'GlassItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Glass', 'nameID': 'GlassItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Glassworking Advanced Upgrade', 'nameID': 'GlassworkingAdvancedUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Glassworking Modern Upgrade', 'nameID': 'GlassworkingModernUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Goat Mount', 'nameID': 'GoatMountItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Gold Bar', 'nameID': 'GoldBarItem', 'tag': false}, 'quantity': 2, 'reducible': false}, {
-    'item': {
-      'name': 'Gold Bar',
-      'nameID': 'GoldBarItem',
-      'tag': false
-    }, 'quantity': 3, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Gold Bar', 'nameID': 'GoldBarItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Gold Bar', 'nameID': 'GoldBarItem', 'tag': false},
+    'quantity': 3,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gold Concentrate', 'nameID': 'GoldConcentrateItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gold Concentrate', 'nameID': 'GoldConcentrateItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gold Flakes', 'nameID': 'GoldFlakesItem', 'tag': false},
     'quantity': 4,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Gold Wiring', 'nameID': 'GoldWiringItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hand Plow', 'nameID': 'HandPlowItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hanging Long Steel Sign', 'nameID': 'HangingLongSteelSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hanging Steel Framed Sign', 'nameID': 'HangingSteelFramedSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hanging Steel Mine Sign', 'nameID': 'HangingSteelMineSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hanging Steel Plain Sign', 'nameID': 'HangingSteelPlainSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hanging Steel Shop Sign', 'nameID': 'HangingSteelShopSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Heat Sink', 'nameID': 'HeatSinkItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Henley',
-      'nameID': 'HenleyItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Heat Sink', 'nameID': 'HeatSinkItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Henley', 'nameID': 'HenleyItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hewn Bench', 'nameID': 'HewnBenchItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hewn Chair', 'nameID': 'HewnChairItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hewn Door', 'nameID': 'HewnDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Hewn Table',
-      'nameID': 'HewnTableItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Hewn Log', 'nameID': 'HewnLog', 'tag': true},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Hewn Table', 'nameID': 'HewnTableItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hide Ash Fertilizer', 'nameID': 'HideAshFertilizerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Huckleberry Extract', 'nameID': 'HuckleberryExtractItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Huckleberry Pie', 'nameID': 'HuckleberryPieItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Huckleberry Seed', 'nameID': 'HuckleberrySeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Hydrocolloids', 'nameID': 'HydrocolloidsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Icebox', 'nameID': 'IceboxItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Industrial Elevator', 'nameID': 'IndustrialElevatorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Industry Upgrade', 'nameID': 'IndustryUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Infused Oil', 'nameID': 'InfusedOilItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Axe', 'nameID': 'IronAxeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Axle', 'nameID': 'IronAxleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false}, 'quantity': 2, 'reducible': false}, {
-    'item': {
-      'name': 'Iron Bar',
-      'nameID': 'IronBarItem',
-      'tag': false
-    }, 'quantity': 3, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Iron Bar', 'nameID': 'IronBarItem', 'tag': false},
+    'quantity': 3,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Concentrate', 'nameID': 'IronConcentrateItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Gear', 'nameID': 'IronGearItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Hammer', 'nameID': 'IronHammerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Hoe', 'nameID': 'IronHoeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Machete', 'nameID': 'IronMacheteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Pickaxe', 'nameID': 'IronPickaxeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Pipe', 'nameID': 'IronPipeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Piston', 'nameID': 'PistonItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Plate', 'nameID': 'IronPlateItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Rock Drill', 'nameID': 'IronRockDrillItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Saw Blade', 'nameID': 'IronSawBladeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Shovel', 'nameID': 'IronShovelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Sickle', 'nameID': 'IronSickleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Iron Wheel', 'nameID': 'IronWheelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Jaw Crusher', 'nameID': 'JawCrusherItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Jungle Campfire Salad', 'nameID': 'JungleCampfireSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Jungle Campfire Stew', 'nameID': 'JungleCampfireStewItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Kiln', 'nameID': 'KilnItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Kitchen',
-      'nameID': 'KitchenItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Kiln', 'nameID': 'KilnItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Kitchen', 'nameID': 'KitchenItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Laboratory', 'nameID': 'LaboratoryItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Corrugated Steel Door', 'nameID': 'LargeCorrugatedSteelDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Hanging Ashlar Stone Sign', 'nameID': 'LargeHangingAshlarStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Hanging Lumber Sign', 'nameID': 'LargeHangingLumberSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Hanging Mortared Stone Sign', 'nameID': 'LargeHangingMortaredStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Hanging Wood Sign', 'nameID': 'LargeHangingWoodSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Lumber Door', 'nameID': 'LargeLumberDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Lumber Stockpile', 'nameID': 'LargeLumberStockpileItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Standing Ashlar Stone Sign', 'nameID': 'LargeStandingAshlarStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Standing Lumber Sign', 'nameID': 'LargeStandingLumberSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Standing Mortared Stone Sign', 'nameID': 'LargeStandingMortaredStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Standing Wood Sign', 'nameID': 'LargeStandingWoodSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Large Windowed Lumber Door', 'nameID': 'LargeWindowedLumberDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Laser', 'nameID': 'LaserItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Lathe',
-      'nameID': 'LatheItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Laser', 'nameID': 'LaserItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Lathe', 'nameID': 'LatheItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Leather Hide', 'nameID': 'LeatherHideItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Leavened Dough', 'nameID': 'LeavenedDoughItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Light Backpack', 'nameID': 'LightBackpackItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Light Bulb', 'nameID': 'LightBulbItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Limestone Bison Statue', 'nameID': 'LimestoneBisonStatueItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Limestone Otter Statue', 'nameID': 'LimestoneOtterStatueItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Limestone Owl Statue', 'nameID': 'LimestoneOwlStatueItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Limestone Wolf Statue', 'nameID': 'LimestoneWolfStatueItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Liquid Nitrogen', 'nameID': 'LiquidNitrogenItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Logging Advanced Upgrade', 'nameID': 'LoggingAdvancedUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Logging Basic Upgrade', 'nameID': 'LoggingBasicUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Loom', 'nameID': 'LoomItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Low Top Shoes',
-      'nameID': 'LowTopShoesItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Lumber Bench',
-      'nameID': 'LumberBenchItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Loom', 'nameID': 'LoomItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Low Top Shoes', 'nameID': 'LowTopShoesItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Lumber', 'nameID': 'Lumber', 'tag': true},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Lumber Bench', 'nameID': 'LumberBenchItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Lumber Chair', 'nameID': 'LumberChairItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Lumber Door', 'nameID': 'LumberDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Lumber Stockpile', 'nameID': 'LumberStockpileItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Lumber Table', 'nameID': 'LumberTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Macaroons', 'nameID': 'MacaroonsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Machinist Table', 'nameID': 'MachinistTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Maltodextrin', 'nameID': 'MaltodextrinItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Masonry Advanced Upgrade', 'nameID': 'MasonryAdvancedUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Masonry Basic Upgrade', 'nameID': 'MasonryBasicUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Meat Pie', 'nameID': 'MeatPieItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Meat Stock', 'nameID': 'MeatStockItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Meaty Stew', 'nameID': 'MeatyStewItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Meaty Stew', 'nameID': 'MeatyStewItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mechanical Water Pump', 'nameID': 'MechanicalWaterPumpItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mechanics Advanced Upgrade', 'nameID': 'MechanicsAdvancedUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mechanics Modern Upgrade', 'nameID': 'MechanicsModernUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Metallurgy Research Paper Advanced', 'nameID': 'MetallurgyResearchPaperAdvancedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Metallurgy Research Paper Basic', 'nameID': 'MetallurgyResearchPaperBasicItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Metallurgy Research Paper Modern', 'nameID': 'MetallurgyResearchPaperModernItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Mill', 'nameID': 'MillItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Milling Upgrade',
-      'nameID': 'MillingUpgradeItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Mill', 'nameID': 'MillItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Milling Upgrade', 'nameID': 'MillingUpgradeItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mining Advanced Upgrade', 'nameID': 'MiningAdvancedUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mining Basic Upgrade', 'nameID': 'MiningBasicUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mining Modern Upgrade', 'nameID': 'MiningModernUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Mint', 'nameID': 'MintItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Modern Axe',
-      'nameID': 'ModernAxeItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Mint', 'nameID': 'MintItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Modern Axe', 'nameID': 'ModernAxeItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Double Street Light', 'nameID': 'ModernDoubleStreetLightItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Hammer', 'nameID': 'ModernHammerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Hoe', 'nameID': 'ModernHoeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Machete', 'nameID': 'ModernMacheteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Pickaxe', 'nameID': 'ModernPickaxeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Rock Drill', 'nameID': 'ModernRockDrillItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Scythe', 'nameID': 'ModernScytheItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Shovel', 'nameID': 'ModernShovelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Street Light', 'nameID': 'ModernStreetLightItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Upgrade 1', 'nameID': 'ModernUpgradeLvl1Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Upgrade 2', 'nameID': 'ModernUpgradeLvl2Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Upgrade 3', 'nameID': 'ModernUpgradeLvl3Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Modern Upgrade 4', 'nameID': 'ModernUpgradeLvl4Item', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Mortar',
-      'nameID': 'MortarItem',
-      'tag': false
-    }, 'quantity': 3, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Mortar', 'nameID': 'MortarItem', 'tag': false},
+    'quantity': 3,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mortared Stone', 'nameID': 'MortaredStone', 'tag': true},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mortared Stone Bench', 'nameID': 'MortaredStoneBenchItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mortared Stone Chair', 'nameID': 'MortaredStoneChairItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mortared Stone Door', 'nameID': 'MortaredStoneDoorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mortared Stone Fireplace', 'nameID': 'MortaredStoneFireplaceItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Mortared Stone Table', 'nameID': 'MortaredStoneTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Nail', 'nameID': 'NailItem', 'tag': false}, 'quantity': 16, 'reducible': false}, {
-    'item': {
-      'name': 'Nylon',
-      'nameID': 'NylonItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Nail', 'nameID': 'NailItem', 'tag': false},
+    'quantity': 16,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Nylon', 'nameID': 'NylonItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Nylon Carpet', 'nameID': 'NylonCarpetItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Nylon Fabric', 'nameID': 'NylonFabricItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Nylon Thread', 'nameID': 'NylonThreadItem', 'tag': false},
     'quantity': 4,
-    'reducible': false
-  }, {'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Oil',
-      'nameID': 'OilItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Oil', 'nameID': 'OilItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Oil Drilling Upgrade', 'nameID': 'OilDrillingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Oil Refinery', 'nameID': 'OilRefineryItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Padded Chair', 'nameID': 'PaddedChairItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Papaya Seed', 'nameID': 'PapayaSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Paper', 'nameID': 'PaperItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Paper Milling Upgrade', 'nameID': 'PaperMillingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pastry Dough', 'nameID': 'PastryDoughItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pelt Fertilizer', 'nameID': 'PeltFertilizerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Petroleum', 'nameID': 'PetroleumItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Phosphate Fertilizer', 'nameID': 'PhosphateFertilizerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pineapple Friend Rice', 'nameID': 'PineappleFriendRiceItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pineapple Seed', 'nameID': 'PineappleSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Pirozhok', 'nameID': 'PirozhokItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Plastic',
-      'nameID': 'PlasticItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Pirozhok', 'nameID': 'PirozhokItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Plastic', 'nameID': 'PlasticItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Portable Steam Engine', 'nameID': 'PortableSteamEngineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pottery Upgrade', 'nameID': 'PotteryUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Powered Cart', 'nameID': 'PoweredCartItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Prepared Meat', 'nameID': 'PreparedMeatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Prickly Pear Seed', 'nameID': 'PricklyPearSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Prime Cut', 'nameID': 'PrimeCutItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pulp Filler', 'nameID': 'PulpFillerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pump Jack', 'nameID': 'PumpJackItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Pumpkin Seed', 'nameID': 'PumpkinSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Quicklime', 'nameID': 'QuicklimeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Radiator', 'nameID': 'RadiatorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Raw Bacon', 'nameID': 'RawBaconItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
     'quantity': 10,
-    'reducible': false
-  }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Raw Meat',
-      'nameID': 'RawMeatItem',
-      'tag': false
-    }, 'quantity': 5, 'reducible': false
-  }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 5, 'reducible': false}, {
-    'item': {
-      'name': 'Raw Meat',
-      'nameID': 'RawMeatItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': false
-  }, {'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Raw Meat',
-      'nameID': 'RawMeatItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
+    'quantity': 5,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
+    'quantity': 5,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Raw Meat', 'nameID': 'RawMeatItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Raw Roast', 'nameID': 'RawRoastItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Raw Sausage', 'nameID': 'RawSausageItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Real Estate Desk', 'nameID': 'RealEstateDeskItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Rebar', 'nameID': 'RebarItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Recurve Bow',
-      'nameID': 'RecurveBowItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Rebar', 'nameID': 'RebarItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Recurve Bow', 'nameID': 'RecurveBowItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Refrigerator', 'nameID': 'RefrigeratorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Registrar', 'nameID': 'RegistrarItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Reinforced Concrete', 'nameID': 'ReinforcedConcreteItem', 'tag': false},
     'quantity': 4,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Rivet', 'nameID': 'RivetItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Robotic Assembly Line', 'nameID': 'RoboticAssemblyLineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Rocker Box', 'nameID': 'RockerBoxItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Rolling Mill', 'nameID': 'RollingMillItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Root Campfire Salad', 'nameID': 'RootCampfireSaladItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Root Campfire Stew', 'nameID': 'RootCampfireStewItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Round Pot', 'nameID': 'PlanterPotRoundItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Rubber Wheel', 'nameID': 'RubberWheelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Rug Large', 'nameID': 'RugLargeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Rug Medium', 'nameID': 'RugMediumItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Rug Small', 'nameID': 'RugSmallItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Running Shoes', 'nameID': 'RunningShoesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Salt Basket', 'nameID': 'SaltBasketItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Sand',
-      'nameID': 'SandItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': false
-  }, {'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false}, 'quantity': 3, 'reducible': false}, {
-    'item': {
-      'name': 'Sawmill',
-      'nameID': 'SawmillItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sand', 'nameID': 'SandItem', 'tag': false},
+    'quantity': 3,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sawmill', 'nameID': 'SawmillItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Scrap Meat', 'nameID': 'ScrapMeatItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Screening Machine', 'nameID': 'ScreeningMachineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Screw Press', 'nameID': 'ScrewPressItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false}, 'quantity': 4, 'reducible': false}, {
-    'item': {
-      'name': 'Seared Meat',
-      'nameID': 'SearedMeatItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Screws', 'nameID': 'ScrewsItem', 'tag': false},
+    'quantity': 4,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Seared Meat', 'nameID': 'SearedMeatItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Sensor Based Belt Sorter', 'nameID': 'SensorBasedBeltSorterItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Servo', 'nameID': 'ServoItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Shaper',
-      'nameID': 'ShaperItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Servo', 'nameID': 'ServoItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Shaper', 'nameID': 'ShaperItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Sheep Mount', 'nameID': 'SheepMountItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Shelf Cabinet', 'nameID': 'ShelfCabinetItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false},
     'quantity': 3,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Shorn Wool', 'nameID': 'ShornWoolItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Shorts', 'nameID': 'ShortsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Simmered Meat', 'nameID': 'SimmeredMeatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Simple Syrup', 'nameID': 'SimpleSyrupItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Sink', 'nameID': 'SinkItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Skid Steer',
-      'nameID': 'SkidSteerItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Slag',
-      'nameID': 'SlagItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Slag',
-      'nameID': 'SlagItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': false
-  }, {'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false}, 'quantity': 2, 'reducible': true}, {
-    'item': {
-      'name': 'Slag',
-      'nameID': 'SlagItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': true
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sink', 'nameID': 'SinkItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Skid Steer', 'nameID': 'SkidSteerItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': false
   }, {
     'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
     'quantity': 2,
-    'reducible': true
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
+    'quantity': 2,
+    'reducible': true,
+    'primary': false
+  }, {
+    'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
+    'quantity': 2,
+    'reducible': true,
+    'primary': false
+  }, {
+    'item': {'name': 'Slag', 'nameID': 'SlagItem', 'tag': false},
+    'quantity': 2,
+    'reducible': true,
+    'primary': false
   }, {
     'item': {'name': 'Small Hanging Ashlar Stone Sign', 'nameID': 'SmallHangingAshlarStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Hanging Lumber Sign', 'nameID': 'SmallHangingLumberSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Hanging Mortared Stone Sign', 'nameID': 'SmallHangingMortaredStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Hanging Wood Sign', 'nameID': 'SmallHangingWoodSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Sink', 'nameID': 'SmallSinkItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Standing Ashlar Stone Sign', 'nameID': 'SmallStandingAshlarStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Standing Lumber Sign', 'nameID': 'SmallStandingLumberSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Standing Mortared Stone Sign', 'nameID': 'SmallStandingMortaredStoneSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Standing Wood Sign', 'nameID': 'SmallStandingWoodSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Small Wood Cart', 'nameID': 'SmallWoodCartItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Smelting Upgrade', 'nameID': 'SmeltingUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Smith Apron', 'nameID': 'SmithApronItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Smith Bandana', 'nameID': 'SmithBandanaItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Smith Boots', 'nameID': 'SmithBootsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Smith Gloves', 'nameID': 'SmithGlovesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Smith Pants', 'nameID': 'SmithPantsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Soil Sampler', 'nameID': 'SoilSamplerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Solar Generator', 'nameID': 'SolarGeneratorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Spin Melter', 'nameID': 'SpinMelterItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Square Belt', 'nameID': 'SquareBeltItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Square Pot', 'nameID': 'PlanterPotSquareItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stamp Mill', 'nameID': 'StampMillItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Standing Glass Sign', 'nameID': 'StandingGlassSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Standing Long Steel Sign', 'nameID': 'StandingLongSteelSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Standing Steel Brick Sign', 'nameID': 'StandingSteelBrickSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steam Engine', 'nameID': 'SteamEngineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steam Tractor', 'nameID': 'SteamTractorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steam Tractor Harvester', 'nameID': 'SteamTractorHarvesterItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steam Tractor Plow', 'nameID': 'SteamTractorPlowItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steam Tractor Sower', 'nameID': 'SteamTractorSowerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steam Truck', 'nameID': 'SteamTruckItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Axe', 'nameID': 'SteelAxeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Axle', 'nameID': 'SteelAxleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Bar', 'nameID': 'SteelBarItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Ceiling Light', 'nameID': 'SteelCeilingLightItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Floor Lamp', 'nameID': 'SteelFloorLampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Gear', 'nameID': 'SteelGearItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Gearbox', 'nameID': 'SteelGearboxItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Hammer', 'nameID': 'SteelHammerItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Hoe', 'nameID': 'SteelHoeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Machete', 'nameID': 'SteelMacheteItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Pickaxe', 'nameID': 'SteelPickaxeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Pipe', 'nameID': 'SteelPipeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Road Tool', 'nameID': 'SteelRoadToolItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Saw Blade', 'nameID': 'SteelSawBladeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Shovel', 'nameID': 'SteelShovelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Sickle', 'nameID': 'SteelSickleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Steel Table Lamp', 'nameID': 'SteelTableLampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stone Brazier', 'nameID': 'StoneBrazierItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stone Ramp', 'nameID': 'StoneRampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stone Road', 'nameID': 'StoneRoadItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stone Road Tool', 'nameID': 'StoneRoadToolItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stop Sign', 'nameID': 'StopSignItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Storage Silo', 'nameID': 'StorageSiloItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Stove', 'nameID': 'StoveItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Street Sign',
-      'nameID': 'StreetSignItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Stove', 'nameID': 'StoveItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Street Sign', 'nameID': 'StreetSignItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Streetlamp', 'nameID': 'StreetlampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stuffed Alligator', 'nameID': 'StuffedAlligatorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stuffed Bison', 'nameID': 'StuffedBisonItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stuffed Elk', 'nameID': 'StuffedElkItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stuffed Goat', 'nameID': 'StuffedGoatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stuffed Jaguar', 'nameID': 'StuffedJaguarItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stuffed Turkey', 'nameID': 'StuffedTurkeyItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Stuffed Wolf', 'nameID': 'StuffedWolfItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Substrate', 'nameID': 'SubstrateItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Sugar',
-      'nameID': 'SugarItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false}, 'quantity': 3, 'reducible': false}, {
-    'item': {
-      'name': 'Sweet Salad',
-      'nameID': 'SweetSaladItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Substrate', 'nameID': 'SubstrateItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sugar', 'nameID': 'SugarItem', 'tag': false},
+    'quantity': 3,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Sweet Salad', 'nameID': 'SweetSaladItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Synthetic Rubber', 'nameID': 'SyntheticRubberItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tailor Bowler Hat', 'nameID': 'TailorBowlerHatItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tailor Pants', 'nameID': 'TailorPantsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tailor Shirt', 'nameID': 'TailorShirtItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tailor Shoes', 'nameID': 'TailorShoesItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tailoring Basic Upgrade', 'nameID': 'TailoringBasicUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tailoring Modern Upgrade', 'nameID': 'TailoringModernUpgradeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tailoring Table', 'nameID': 'TailoringTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tall Boots', 'nameID': 'TallBootsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 2, 'reducible': false}, {
-    'item': {
-      'name': 'Tallow',
-      'nameID': 'TallowItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
-  }, {'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false}, 'quantity': 4, 'reducible': false}, {
-    'item': {
-      'name': 'Tallow',
-      'nameID': 'TallowItem',
-      'tag': false
-    }, 'quantity': 2, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false},
+    'quantity': 4,
+    'reducible': false,
+    'primary': false
+  }, {
+    'item': {'name': 'Tallow', 'nameID': 'TallowItem', 'tag': false},
+    'quantity': 2,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tallow Lamp', 'nameID': 'TallowLampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tallow Wall Lamp', 'nameID': 'TallowWallLampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Taro Seed', 'nameID': 'TaroSeedItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Toilet',
-      'nameID': 'ToiletItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Taro Seed', 'nameID': 'TaroSeedItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Toilet', 'nameID': 'ToiletItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tomato Seed', 'nameID': 'TomatoSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Topped Porridge', 'nameID': 'ToppedPorridgeItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Tortilla', 'nameID': 'TortillaItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Transglutaminase', 'nameID': 'TransglutaminaseItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Transmission Pole', 'nameID': 'TransmissionPoleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Treasury', 'nameID': 'TreasuryItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Trousers', 'nameID': 'TrousersItem', 'tag': false}, 'quantity': 1, 'reducible': false}, {
-    'item': {
-      'name': 'Truck',
-      'nameID': 'TruckItem',
-      'tag': false
-    }, 'quantity': 1, 'reducible': false
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Trousers', 'nameID': 'TrousersItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
+  }, {
+    'item': {'name': 'Truck', 'nameID': 'TruckItem', 'tag': false},
+    'quantity': 1,
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Valve', 'nameID': 'ValveItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Vegetable Medley', 'nameID': 'VegetableMedleyItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Vegetable Soup', 'nameID': 'VegetableSoupItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Vegetable Stock', 'nameID': 'VegetableStockItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wainwright Table', 'nameID': 'WainwrightTableItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wall Candle', 'nameID': 'WallCandleItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Washboard', 'nameID': 'WashboardItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Washing Machine', 'nameID': 'WashingMachineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Waste Filter', 'nameID': 'WasteFilterItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Waterwheel', 'nameID': 'WaterwheelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wheat Seed', 'nameID': 'WheatSeedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wheelbarrow', 'nameID': 'WheelbarrowItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wild Mix', 'nameID': 'WildMixItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wild Stew', 'nameID': 'WildStewItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wilted Fiddleheads', 'nameID': 'WiltedFiddleheadsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wind Turbine', 'nameID': 'WindTurbineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Windmill', 'nameID': 'WindmillItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wood Cart', 'nameID': 'WoodCartItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Ceiling Light', 'nameID': 'WoodenCeilingLightItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Elevator', 'nameID': 'WoodenElevatorItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Elevator Call Post', 'nameID': 'WoodenElevatorCallPostItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Fabric Bed', 'nameID': 'WoodenFabricBedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Floor Lamp', 'nameID': 'WoodenFloorLampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Latrine', 'nameID': 'WoodenLatrineItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Straw Bed', 'nameID': 'WoodenStrawBedItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Table Lamp', 'nameID': 'WoodenTableLampItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wooden Wheel', 'nameID': 'WoodenWheelItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wool Carpet', 'nameID': 'WoolCarpetItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wool Fabric', 'nameID': 'WoolFabricItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wool Fabric', 'nameID': 'WoolFabricItem', 'tag': false},
     'quantity': 2,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Wool Yarn', 'nameID': 'WoolYarnItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Work Backpack', 'nameID': 'WorkBackpackItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
+    'reducible': false,
+    'primary': true
   }, {
     'item': {'name': 'Work Boots', 'nameID': 'WorkBootsItem', 'tag': false},
     'quantity': 1,
-    'reducible': false
-  }, {'item': {'name': 'Yeast', 'nameID': 'YeastItem', 'tag': false}, 'quantity': 1, 'reducible': false}],
+    'reducible': false,
+    'primary': true
+  }, {'item': {'name': 'Yeast', 'nameID': 'YeastItem', 'tag': false}, 'quantity': 1, 'reducible': false, 'primary': true}],
   'laborCosts': [{'level': 0, 'modifier': 1.0}, {'level': 1, 'modifier': 0.5}, {'level': 2, 'modifier': 0.45}, {
     'level': 3,
     'modifier': 0.4
