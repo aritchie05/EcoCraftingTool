@@ -32,7 +32,6 @@ export class CraftingDataService {
     /*
     this.http.get<CraftingData>(environment.craftingDataApi)
       .subscribe(resp => {
-        console.log('Got response');
         craftingData = resp;
         this.subjectData.next(resp);
       });
@@ -142,8 +141,6 @@ export class CraftingDataService {
           if (recipe !== recipe2) {
             recipe2.outputs.forEach(output => {
               if (!this.arrayContains(removedItems, output.item) && output.item.nameID === ingredient.item.nameID) {
-                console.log(`Removing ingredient ${ingredient.item.name} ${ingredient.item.tag} from recipe ${recipe.name}
-                since it is an output of recipe ${recipe2.name} in a valid selected skill.`);
                 let index = itemIngredients.findIndex((item) => {
                   return item.nameID.localeCompare(ingredient.item.nameID) === 0;
                 });

@@ -41,7 +41,6 @@ export class CraftingParentComponent {
     //Remove any item ingredients that are no longer relevant
     for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
       let item = this.ingredientsComponent.itemIngredients[i];
-      console.log(`Checking item ${item.nameID} from current ingredients list.`);
       let relevant = false;
       itemIngredients.forEach(newItem => {
         if (item.nameID.localeCompare(newItem.nameID) === 0) {
@@ -49,7 +48,6 @@ export class CraftingParentComponent {
         }
       });
       if (!relevant) {
-        console.log(`Splicing ${item.name} from the item ingredients array`);
         this.ingredientsComponent.itemIngredients.splice(i, 1);
       }
     }
@@ -64,7 +62,6 @@ export class CraftingParentComponent {
         }
       });
       if (!exists) {
-        console.log(`Pushing new input ${item.name} to the list`);
         this.ingredientsComponent.itemIngredients.push(item);
       }
     });
@@ -82,7 +79,6 @@ export class CraftingParentComponent {
       let price = this.calculatePrice(recipe);
       if (price !== Number.MIN_VALUE) {
         if (this.hasOtherRecipes(recipe)) {
-          console.log(`${recipe.primaryOutput.item.name} has other recipes! Adding to unconfirmed list`);
           recipesNotConfirmed.push(recipe);
         } else {
           recipe.price = price;
@@ -100,7 +96,6 @@ export class CraftingParentComponent {
         let recipe = recipesNotConfirmed[i];
         let price = this.calculatePrice(recipe);
         if (price !== Number.MIN_VALUE) {
-          console.log(`Confirming price ${price} for ${recipe.primaryOutput.item.name}`);
           recipe.price = price;
           recipesNotConfirmed.splice(i, 1);
           this.outputsComponent.outputRecipes.push(recipe);
@@ -157,7 +152,6 @@ export class CraftingParentComponent {
         }
       });
       if (!stillNeeded) {
-        console.log(`${ingredient.name} no longer needed, removing...`);
         this.ingredientsComponent.itemIngredients.splice(i, 1);
       }
     }
@@ -432,7 +426,6 @@ export class CraftingParentComponent {
         if (skill.lavishWorkspace && skill.lavishChecked) {
           barrelSavings *= .95;
         }
-        console.log(`Subtracting ${barrelSavings} from ${recipe.name} price because of barrels returned.`);
         price -= barrelSavings;
       }
 

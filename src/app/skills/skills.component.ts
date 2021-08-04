@@ -74,9 +74,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   }
 
   onSkillSelect(skill: Skill): void {
-    console.log(`Skill selected ${skill.name}`);
     if (this.selectedSkills.find(s => s.nameID.localeCompare(skill.nameID) === 0) === undefined) {
-      console.log(`Skill not found in existing list, pushing ${skill.name}`);
       skill.level = 1;
       skill.lavishChecked = false;
       let newTables = this.dataService.getCraftingTablesForSkill(skill);
@@ -101,7 +99,6 @@ export class SkillsComponent implements OnInit, AfterContentInit {
       if (isNaN(level)) {
         level = 1;
       }
-      console.log(`Level changed for skill ${skill.name} to level ${level}`);
       const index = this.selectedSkills.findIndex(s => s.nameID.localeCompare(skill.nameID) === 0);
       let newLevel = level;
       if (level < 0) {
@@ -110,7 +107,6 @@ export class SkillsComponent implements OnInit, AfterContentInit {
         newLevel = 7;
       }
       skill.level = newLevel;
-      console.log(`Propagating level ${skill.level} back`);
       this.selectedSkills[index] = skill;
       this.skillLevelChangedEvent.emit(skill);
     }
@@ -118,7 +114,6 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   }
 
   onRemoveSkill(skill: Skill): void {
-    console.log(`Removing skill ${skill.name}`);
     const index = this.selectedSkills.findIndex(s => s.nameID.localeCompare(skill.nameID) === 0);
     if (index !== -1) {
       let removedSkills = this.selectedSkills.splice(index, 1);

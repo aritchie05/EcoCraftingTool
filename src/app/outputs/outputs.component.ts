@@ -95,7 +95,6 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       if (outputDisplay.subRecipes.length > 1) {
         outputDisplay.subRecipes.forEach(subRecipe => {
           if (subRecipe.recipePrice < cheapestPrice) {
-            console.log(`Setting new cheapest price to ${subRecipe.recipePrice} from recipe ${subRecipe.recipeName}`);
             cheapestPrice = subRecipe.recipePrice;
           }
         });

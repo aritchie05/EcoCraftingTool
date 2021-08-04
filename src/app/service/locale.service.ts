@@ -79,7 +79,6 @@ export class LocaleService {
     let locData = localeData.find(l => l.type.localeCompare(type) === 0);
     let entry = locData.entries.find(entry => entry.id.localeCompare(nameID) === 0);
     if (entry === undefined) {
-      console.log(`Could not find an entry for ${nameID} for type ${type} in language ${lang}`);
       return nameID;
     } else {
       switch (lang) {
