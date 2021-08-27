@@ -216,6 +216,7 @@ export class CraftingParentComponent {
   }
 
   onRecipeAdded(recipe: Recipe) {
+    //Add the skill if it is not there
     let hasSkill = this.skillsComponent.selectedSkills.some(skill => this.strMatch(recipe.skill.nameID, skill.nameID));
     if (!hasSkill) {
       recipe.skill.level = 1;
@@ -223,6 +224,7 @@ export class CraftingParentComponent {
       this.skillsComponent.selectedSkills.push(recipe.skill);
     }
 
+    //Add the crafting table if it is not there
     let hasTable = this.skillsComponent.craftingTables.some(table => this.strMatch(recipe.craftingTable.nameID, table.nameID));
     if (!hasTable) {
       let table = recipe.craftingTable;
@@ -231,8 +233,10 @@ export class CraftingParentComponent {
       this.skillsComponent.craftingTables.push(table);
     }
 
+    //Add ingredient if it is not in inputs or outputs
     recipe.ingredients.forEach(ingredient => {
       let itemExists = this.ingredientsComponent.itemIngredients.some(item => this.strMatch(ingredient.item.nameID, item.nameID));
+      itemExists = itemExists || this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.primaryOutput.item.nameID, ingredient.item.nameID));
       if (!itemExists) {
         let item = ingredient.item;
         item.price = 0;
