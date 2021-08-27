@@ -37,7 +37,9 @@
           </div>
           <div class="col">
             <input #lavish (change)="onUpdateLavish(skill, lavish.checked)"
-                   class="lavishInput form-control dark-input" id="{{skill.nameID}}-lavishWorkspace" type="checkbox">
+                   [checked]="skill.lavishChecked" class="lavishInput form-control dark-input"
+                   id="{{skill.nameID}}-lavishWorkspace"
+                   type="checkbox">
           </div>
         </ng-template>
       </div>
