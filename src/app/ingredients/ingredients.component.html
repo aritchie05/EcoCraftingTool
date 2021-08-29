@@ -3,7 +3,7 @@
 <form>
   <div class="form-group">
     <div id="ingredients">
-      <div class="row laborRow divider mx-auto form-group">
+      <div class="row mx-auto form-group">
         <div class="col">
           <label for="laborInput">
             <strong>{{message('calorieCostLabel')}}</strong>
@@ -13,6 +13,19 @@
           <input #laborBox (focusout)="onLaborCostChange(laborBox.value)"
                  [value]="laborCost.toLocaleString(locale.code)"
                  class="priceInput form-control float-right dark-input" id="laborInput"
+                 pattern="[0-9]*[.,]?[0-9]+" type="text">
+        </div>
+      </div>
+      <div class="row laborRow divider mx-auto form-group">
+        <div class="col">
+          <label for="profitInput">
+            <strong>{{message('profitPercentLabel')}}</strong>
+          </label>
+        </div>
+        <div class="col">
+          <input #profitBox (focusout)="onProfitPercentChange(profitBox.value)"
+                 [value]="profitPercent.toLocaleString(locale.code)"
+                 class="priceInput form-control float-right dark-input" id="profitInput"
                  pattern="[0-9]*[.,]?[0-9]+" type="text">
         </div>
       </div>

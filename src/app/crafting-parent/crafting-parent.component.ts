@@ -191,6 +191,12 @@ export class CraftingParentComponent {
     this.saveDataToCookies();
   }
 
+  onProfitPercentChanged(profitPercent: number): void {
+    this.recalculateOutputPrices();
+
+    this.saveDataToCookies();
+  }
+
   onIngredientPriceChanged(item: Item): void {
     let affectedRecipes = this.outputsComponent.outputRecipes.filter(recipe => {
       return recipe.ingredients.some(ingredient => {
@@ -441,6 +447,11 @@ export class CraftingParentComponent {
       let calories = recipe.labor * reductionModifier;
       price += ((this.ingredientsComponent.laborCost / 1000) * calories);
 
+      //Add the profit
+      let profitPercent = this.ingredientsComponent.profitPercent;
+      price *= 1 + (profitPercent / 100);
+
+      //Divide by the number of items the recipe makes
       price /= recipe.primaryOutput.quantity;
     }
 
@@ -500,6 +511,8 @@ export class CraftingParentComponent {
     this.cookieService.set('locale', JSON.stringify(this.localeService.selectedLocale), expDays);
     this.cookieService.set('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
       {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
+    this.cookieService.set('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
+      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
 
     let skillsCookie: SkillCookie[] = [];
     this.skillsComponent.selectedSkills.forEach(skill => skillsCookie.push(new SkillCookie(skill)));
