@@ -191,6 +191,12 @@ export class CraftingParentComponent {
     this.saveDataToCookies();
   }
 
+  onProfitPercentChanged(profitPercent: number): void {
+    this.recalculateOutputPrices();
+
+    this.saveDataToCookies();
+  }
+
   onIngredientPriceChanged(item: Item): void {
     let affectedRecipes = this.outputsComponent.outputRecipes.filter(recipe => {
       return recipe.ingredients.some(ingredient => {
@@ -441,6 +447,11 @@ export class CraftingParentComponent {
       let calories = recipe.labor * reductionModifier;
       price += ((this.ingredientsComponent.laborCost / 1000) * calories);
 
+      //Add the profit
+      let profitPercent = this.ingredientsComponent.profitPercent;
+      price *= 1 + (profitPercent / 100);
+
+      //Divide by the number of items the recipe makes
       price /= recipe.primaryOutput.quantity;
     }
 

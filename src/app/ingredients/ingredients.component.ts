@@ -15,15 +15,18 @@ export class IngredientsComponent implements OnInit {
 
   itemIngredients: Item[];
   laborCost: number;
+  profitPercent: number;
   locale: Locale;
 
   @Output() ingredientPriceChangedEvent = new EventEmitter<Item>();
   @Output() laborCostChangedEvent = new EventEmitter<number>();
+  @Output() profitPercentChangedEvent = new EventEmitter<number>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService) {
     this.itemIngredients = [];
     this.laborCost = 0;
+    this.profitPercent = 0;
     this.locale = localeService.selectedLocale;
   }
 
@@ -61,6 +64,15 @@ export class IngredientsComponent implements OnInit {
     if (!isNaN(newValue)) {
       this.laborCost = newValue;
       this.laborCostChangedEvent.emit(this.laborCost);
+    }
+  }
+
+  onProfitPercentChange(value: string): void {
+    let newValue = this.toFloat(value);
+
+    if (!isNaN(newValue)) {
+      this.profitPercent = newValue;
+      this.profitPercentChangedEvent.emit(this.profitPercent);
     }
   }
 

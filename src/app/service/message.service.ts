@@ -343,6 +343,51 @@ const messages: Message[] =
       ]
     },
     {
+      'id': 'profitPercentLabel',
+      'localizedMessages': [
+        {
+          'text': 'Profit Percentage',
+          'lang': 'en'
+        },
+        {
+          'text': 'Pourcentage de profit',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Porcentaje de beneficio',
+          'lang': 'es'
+        },
+        {
+          'text': 'Gewinnprozentsatz',
+          'lang': 'de'
+        },
+        {
+          'text': 'Procent zysku',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Процент прибыли',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Відсоток прибутку',
+          'lang': 'uk'
+        },
+        {
+          'text': '이익 비율',
+          'lang': 'ko'
+        },
+        {
+          'text': '利润百分比',
+          'lang': 'zh'
+        },
+        {
+          'text': '利益率',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'outputsHeader',
       'localizedMessages': [
         {
