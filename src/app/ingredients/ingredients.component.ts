@@ -42,6 +42,9 @@ export class IngredientsComponent implements OnInit {
     if (this.cookieService.check('laborCost')) {
       this.laborCost = Number.parseFloat(this.cookieService.get('laborCost'));
     }
+    if (this.cookieService.check('profitPercent')) {
+      this.profitPercent = Number.parseFloat(this.cookieService.get('profitPercent'));
+    }
   }
 
   message(id: string): string {

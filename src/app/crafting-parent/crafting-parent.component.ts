@@ -511,6 +511,8 @@ export class CraftingParentComponent {
     this.cookieService.set('locale', JSON.stringify(this.localeService.selectedLocale), expDays);
     this.cookieService.set('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
       {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
+    this.cookieService.set('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
+      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
 
     let skillsCookie: SkillCookie[] = [];
     this.skillsComponent.selectedSkills.forEach(skill => skillsCookie.push(new SkillCookie(skill)));
