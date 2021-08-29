@@ -6,10 +6,10 @@ export class OutputCookie {
   /**
    * Cost of the recipe
    */
-  pr: number;
+  pr: string;
 
   constructor(recipe: Recipe) {
     this.id = recipe.nameID;
-    this.pr = Number.parseFloat(recipe.price.toFixed(2));
+    this.pr = recipe.price.toFixed(2);
   }
 }

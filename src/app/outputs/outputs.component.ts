@@ -35,7 +35,7 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       let outputsCookies: OutputCookie[] = JSON.parse(atob(this.cookieService.get('recipes')));
       outputsCookies.forEach(cookie => {
         let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
-        recipe.price = cookie.pr;
+        recipe.price = Number.parseFloat(cookie.pr);
         this.outputRecipes.push(recipe);
       });
       this.convertRecipesToOutputDisplays();
