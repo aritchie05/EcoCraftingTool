@@ -43,6 +43,10 @@ export class LocaleService {
       let userLang = this.getUsersLocale('en-US').substr(0, 2);
       this.selectedLocale = this.supportedLocales.find(locale => locale.code.match(userLang));
     }
+
+    if (this.selectedLocale === undefined) {
+      this.selectedLocale = this.supportedLocales.find(locale => locale.code.match('en-US'));
+    }
   }
 
   getUsersLocale(defaultValue: string): string {
