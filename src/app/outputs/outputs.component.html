@@ -8,6 +8,7 @@
              [placeholder]="message('recipeSearchPlaceholder')"
              class="dropdown-toggle form-control dark-input" data-toggle="dropdown" id="recipeSearchInput"
              type="search">
+
       <div aria-labelledby="recipeSearchInput" class="dropdown-menu dark-input">
         <a (click)="onRecipeSelect(recipe)" *ngFor="let recipe of filteredRecipes" class="dropdown-item dark-input"
            href="#">
@@ -48,7 +49,7 @@
                      readonly type="text">
             </div>
             <div class="col-1">
-              <span (click)="onRemoveSubRecipe(subRecipe)" class="material-icons md-light hoverable mt-1">close</span>
+              <span (click)="onRemoveSubRecipe(subRecipe.recipeNameID)" class="material-icons md-light hoverable mt-1">close</span>
             </div>
           </div>
         </ng-template>

@@ -12,6 +12,7 @@ export class Recipe {
   craftingTable: CraftingTable;
   ingredients: Ingredient[];
   outputs: Output[];
+  hidden: boolean;
   primaryOutput?: Output;
 
   //Price PER PRIMARY OUTPUT ITEM

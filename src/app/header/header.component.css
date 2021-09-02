@@ -7,3 +7,35 @@
   border-bottom-width: thin;
   border-bottom-color: #47b4cd;
 }
+
+.priceInput {
+  width: 80px;
+  height: 30px;
+  border-radius: .25rem;
+  text-align: right;
+}
+
+.settings-button {
+  font-size: 24px;
+  border: none;
+}
+
+.settings-checkbox {
+  height: 1rem;
+  margin-top: .3rem;
+  margin-left: .9rem;
+}
+
+.settings-menu {
+  min-width: 19rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.settings-label {
+  margin-left: 5px;
+}
+
+.dropdown-divider {
+  border-top: 2px solid #505050;
+}

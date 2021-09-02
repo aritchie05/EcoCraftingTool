@@ -10,6 +10,30 @@
 
     <form class="form-inline dropdown mr-2">
       <button aria-expanded="false" aria-haspopup="true"
+              class="btn dark-input hoverable material-icons md-light settings-button"
+              data-toggle="dropdown" id="settingsButton" type="button">
+        settings
+      </button>
+      <div aria-labelledby="settingsButton" class="dropdown-menu dark-input settings-menu">
+        <div class="row">
+          <span class="col-9 settings-label">{{message('endGameCraftOption')}}</span>
+          <input #expensiveEndgameCraftBox (change)="onEndgameCostChange(expensiveEndgameCraftBox.checked)"
+                 [checked]="expensiveEndgameCostChecked"
+                 class="form-control float-right dark-input col-2 settings-checkbox"
+                 id="expensiveEndgameCost" type="checkbox">
+        </div>
+        <hr class="dropdown-divider">
+        <div class="row">
+          <span class="col-9 settings-label">{{message('resourceCostMultiplier')}}</span>
+          <input #resourceCostMultiplierBox (focusout)="onResourceCostMultiplierChange(resourceCostMultiplierBox.value)"
+                 [value]="resourceCostMultiplier.toLocaleString(locale.code)"
+                 class="priceInput form-control float-right dark-input col-2" id="resourceCostMultiplierInput"
+                 pattern="[0-9]*[.,]?[0-9]+" type="text">
+        </div>
+      </div>
+    </form>
+    <form class="form-inline dropdown mr-3">
+      <button aria-expanded="false" aria-haspopup="true"
               class="btn dark-input dropdown-toggle f16"
               data-toggle="dropdown" id="localeButton" type="button">
         <span [className]="'flag ' + locale.code.substr(3, 2).toLowerCase() + ' mt-1'"></span>

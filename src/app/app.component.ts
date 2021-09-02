@@ -26,12 +26,20 @@ export class AppComponent {
     document.head.lang = this.locale.langCode();
   }
 
-  onUpdateLocale(locale: Locale) {
+  onUpdateLocale(locale: Locale): void {
     this.locale = locale;
     document.getElementById('page-title').innerText = 'Eco ' +
       this.messageService.getMessage('navTitle', this.locale);
     document.head.lang = this.locale.langCode();
     this.localeService.selectedLocale = locale;
     this.craftingParentComponent.updateLocale(locale);
+  }
+
+  onUpdateEndgameCost(isExpensive: boolean): void {
+    this.craftingParentComponent.updateEndgameCost(isExpensive);
+  }
+
+  onUpdateResourceCostMultiplier(newMultiplier: number): void {
+    this.craftingParentComponent.updateResourceCostMultiplier(newMultiplier);
   }
 }

@@ -1,4 +1,8 @@
-<app-header (updateLocaleEvent)="onUpdateLocale($event)"></app-header>
+<app-header
+  (updateExpensiveEndgameCostEvent)="onUpdateEndgameCost($event)"
+  (updateLocaleEvent)="onUpdateLocale($event)"
+  (updateResourceCostMultiplierEvent)="onUpdateResourceCostMultiplier($event)"
+></app-header>
 
 <div class="container-fluid top-padding bottom-margin">
   <app-crafting-parent></app-crafting-parent>
