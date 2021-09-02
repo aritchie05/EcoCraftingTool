@@ -73,6 +73,96 @@ const messages: Message[] =
       ]
     },
     {
+      'id': 'resourceCostMultiplier',
+      'localizedMessages': [
+        {
+          'text': 'Craft Resource Modifier',
+          'lang': 'en'
+        },
+        {
+          'text': 'Modificateur de ressource artisanale',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Modificador de recursos de artesanía',
+          'lang': 'es'
+        },
+        {
+          'text': 'Ressourcenmodifikator herstellen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Modyfikator zasobów rzemieślniczych',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Создание модификатора ресурсов',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Модифікатор ресурсу Craft',
+          'lang': 'uk'
+        },
+        {
+          'text': '공예 자원 수정자',
+          'lang': 'ko'
+        },
+        {
+          'text': '工艺资源修改器',
+          'lang': 'zh'
+        },
+        {
+          'text': 'クラフトリソース修飾子',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'endGameCraftOption',
+      'localizedMessages': [
+        {
+          'text': 'Expensive End Game Recipes',
+          'lang': 'en'
+        },
+        {
+          'text': 'Recettes de fin de partie chères',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Recetas costosas para el final del juego',
+          'lang': 'es'
+        },
+        {
+          'text': 'Teure Endspielrezepte',
+          'lang': 'de'
+        },
+        {
+          'text': 'Drogie przepisy na koniec gry',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Дорогие рецепты финальной игры',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Дорогі рецепти закінчення гри',
+          'lang': 'uk'
+        },
+        {
+          'text': '비싼 엔드 게임 레시피',
+          'lang': 'ko'
+        },
+        {
+          'text': '昂贵的最终游戏食谱',
+          'lang': 'zh'
+        },
+        {
+          'text': '高価なエンドゲームレシピ',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'version',
       'localizedMessages': [
         {

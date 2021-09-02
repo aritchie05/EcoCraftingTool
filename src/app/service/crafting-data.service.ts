@@ -18,6 +18,12 @@ export class CraftingDataService {
   //private subjectData = new Subject<CraftingData>();
   //responseStatus = this.subjectData.asObservable();
 
+  expensiveRecipeNameIDs = ['ComputerLabExpensive', 'LaserExpensive'];
+  cheapRecipeNameIDs = ['ComputerLab', 'Laser'];
+
+  expensiveRecipes: Recipe[];
+  cheapRecipes: Recipe[];
+
   locale: Locale;
 
   constructor(private localeService: LocaleService) {
@@ -28,6 +34,13 @@ export class CraftingDataService {
     craftingData.skills = craftingData.skills.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
     craftingData.recipes = craftingData.recipes.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
     craftingData.items = craftingData.items.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+
+    this.expensiveRecipes = craftingData.recipes.filter(recipe =>
+      this.expensiveRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
+      .sort((a, b) => a.nameID.localeCompare(b.nameID));
+    this.cheapRecipes = craftingData.recipes.filter(recipe =>
+      this.cheapRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
+      .sort((a, b) => a.nameID.localeCompare(b.nameID));
 
     /*
     this.http.get<CraftingData>(environment.craftingDataApi)
@@ -64,7 +77,7 @@ export class CraftingDataService {
         }
       }
     });
-    return recipes;
+    return recipes.filter(recipe => !recipe.hidden);
   }
 
   getSkills(): Skill[] {
@@ -88,7 +101,7 @@ export class CraftingDataService {
   }
 
   filterRecipeList(searchQuery: string) {
-    return this.getRecipes().filter(recipe => recipe.name.toUpperCase().includes(searchQuery.toUpperCase()));
+    return this.getRecipes().filter(recipe => recipe.name.toUpperCase().includes(searchQuery.toUpperCase()) && !recipe.hidden);
   }
 
   getRecipesForSkills(skills: Skill[], includeLvl5Upgrades: boolean): Array<Recipe> {
@@ -111,7 +124,11 @@ export class CraftingDataService {
           return shouldAdd;
         });
       }
-      filteredRecipes.forEach(filteredRecipe => recipes.push(filteredRecipe));
+      filteredRecipes.forEach(filteredRecipe => {
+        if (!filteredRecipe.hidden) {
+          recipes.push(filteredRecipe);
+        }
+      });
     });
 
     return recipes;
@@ -194,9 +211,20 @@ export class CraftingDataService {
     craftingData.outputs.forEach(output => output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode()));
   }
 
+  setExpensiveEndgameCost(isExpensive: boolean): void {
+    if (isExpensive) {
+      this.expensiveRecipes.forEach(recipe => recipe.hidden = false);
+      this.cheapRecipes.forEach(recipe => recipe.hidden = true);
+    } else {
+      this.expensiveRecipes.forEach(recipe => recipe.hidden = true);
+      this.cheapRecipes.forEach(recipe => recipe.hidden = false);
+    }
+  }
+
   private arrayContains(items: Item[], searchItem: Item) {
     return items.some(item => {
       return searchItem.nameID.localeCompare(item.nameID) === 0;
     });
   }
+
 }

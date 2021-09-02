@@ -1,7 +1,7 @@
 import {AfterContentInit, Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Recipe} from '../interface/recipe';
-import {OutputDisplay, SubRecipe} from '../interface/output-display';
+import {OutputDisplay} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
@@ -57,32 +57,35 @@ export class OutputsComponent implements OnInit, AfterContentInit {
     //Loop through recipes and populate data
     this.outputRecipes.forEach(recipe => {
 
-      //Check if the outputDisplays already contains at least one of the primary output item
-      let exists = this.outputDisplays.some(outputDisplay => {
-          if (outputDisplay.itemNameID.localeCompare(recipe.primaryOutput.item.nameID) === 0) {
-            outputDisplay.subRecipes.push({
+      //Only show the recipe if it is not hidden
+      if (!recipe.hidden) {
+        //Check if the outputDisplays already contains at least one of the primary output item
+        let exists = this.outputDisplays.some(outputDisplay => {
+            if (outputDisplay.itemNameID.localeCompare(recipe.primaryOutput.item.nameID) === 0) {
+              outputDisplay.subRecipes.push({
+                recipeNameID: recipe.nameID,
+                recipeName: recipe.name,
+                recipePrice: recipe.price
+              });
+              return true;
+            }
+            return false;
+          }
+        );
+
+        if (!exists) {
+          //Output displays doesn't contain this output item, create a new element
+          this.outputDisplays.push({
+            itemName: recipe.primaryOutput.item.name,
+            itemNameID: recipe.primaryOutput.item.nameID,
+            itemPrice: recipe.price,
+            subRecipes: [{
               recipeNameID: recipe.nameID,
               recipeName: recipe.name,
               recipePrice: recipe.price
-            });
-            return true;
-          }
-          return false;
+            }]
+          });
         }
-      );
-
-      if (!exists) {
-        //Output displays doesn't contain this output item, create a new element
-        this.outputDisplays.push({
-          itemName: recipe.primaryOutput.item.name,
-          itemNameID: recipe.primaryOutput.item.nameID,
-          itemPrice: recipe.price,
-          subRecipes: [{
-            recipeNameID: recipe.nameID,
-            recipeName: recipe.name,
-            recipePrice: recipe.price
-          }]
-        });
       }
     });
 
@@ -126,10 +129,10 @@ export class OutputsComponent implements OnInit, AfterContentInit {
     this.itemRemovedEvent.emit(removedRecipes);
   }
 
-  onRemoveSubRecipe(subRecipe: SubRecipe): void {
+  onRemoveSubRecipe(recipeNameID: string): void {
     let recipe;
     for (let i = this.outputRecipes.length - 1; i >= 0; i--) {
-      if (this.outputRecipes[i].nameID.localeCompare(subRecipe.recipeNameID) === 0) {
+      if (this.outputRecipes[i].nameID.localeCompare(recipeNameID) === 0) {
         recipe = this.outputRecipes[i];
         this.outputRecipes.splice(i, 1);
         break;
@@ -167,6 +170,12 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       this.convertRecipesToOutputDisplays();
       this.recipeAddedEvent.emit(recipe);
     }
+  }
+
+  refreshFilterList(): void {
+    this.filteredRecipes = this.dataService.getRecipes();
+    document.getElementById('recipeSearchInput').innerText = '';
+    document.getElementById('recipeSearchInput').blur();
   }
 
   localize(locale: Locale): void {

@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {SkillsComponent} from '../skills/skills.component';
 import {IngredientsComponent} from '../ingredients/ingredients.component';
 import {OutputsComponent} from '../outputs/outputs.component';
@@ -20,7 +20,7 @@ import {OutputCookie} from '../cookie/output-cookie';
   styleUrls: ['./crafting-parent.component.css'],
   providers: [CraftingDataService]
 })
-export class CraftingParentComponent {
+export class CraftingParentComponent implements OnInit {
 
   @ViewChild(SkillsComponent)
   private skillsComponent: SkillsComponent;
@@ -31,9 +31,21 @@ export class CraftingParentComponent {
   @ViewChild(OutputsComponent)
   private outputsComponent: OutputsComponent;
 
+  private resourceCostMultiplier: number;
+
   constructor(private dataService: CraftingDataService, private localeService: LocaleService, private cookieService: CookieService) {
+    this.resourceCostMultiplier = 1;
   }
 
+  ngOnInit() {
+    if (this.cookieService.check('resourceCostMultiplier')) {
+      this.resourceCostMultiplier = Number.parseFloat(this.cookieService.get('resourceCostMultiplier'));
+    }
+
+    if (this.cookieService.check('expensiveEndgameCost')) {
+      this.dataService.setExpensiveEndgameCost(this.cookieService.get('expensiveEndgameCost') === 'true');
+    }
+  }
 
   onSkillAdded(skill: Skill) {
     let itemIngredients = this.dataService.getUniqueItemIngredientsForSkills(this.skillsComponent.selectedSkills, false);
@@ -334,6 +346,46 @@ export class CraftingParentComponent {
     this.saveDataToCookies();
   }
 
+  updateResourceCostMultiplier(newMultiplier: number): void {
+    this.resourceCostMultiplier = newMultiplier;
+
+    this.recalculateOutputPrices();
+
+    this.saveDataToCookies();
+  }
+
+  updateEndgameCost(isExpensive: boolean): void {
+    this.dataService.setExpensiveEndgameCost(isExpensive);
+
+    let outputRecipes = this.outputsComponent.outputRecipes;
+
+    for (let i = outputRecipes.length - 1; i >= 0; i--) {
+      let recipe = outputRecipes[i];
+      if (isExpensive) {
+        for (let j = 0; j < this.dataService.cheapRecipes.length; j++) {
+          let cheapRecipe = this.dataService.cheapRecipes[j];
+          //If we find a cheap recipe remove it, and add the corresponding expensive recipe to the outputs component with index j
+          if (this.strMatch(cheapRecipe.nameID, recipe.nameID)) {
+            this.outputsComponent.onRecipeSelect(this.dataService.expensiveRecipes[j]);
+            this.outputsComponent.onRemoveSubRecipe(cheapRecipe.nameID);
+          }
+        }
+      } else {
+        for (let j = 0; j < this.dataService.expensiveRecipes.length; j++) {
+          let expensiveRecipe = this.dataService.expensiveRecipes[j];
+          //If we find an expensive recipe remove it, and add the corresponding cheap recipe to the outputs component with index j
+          if (this.strMatch(expensiveRecipe.nameID, recipe.nameID)) {
+            this.outputsComponent.onRecipeSelect(this.dataService.cheapRecipes[j]);
+            this.outputsComponent.onRemoveSubRecipe(expensiveRecipe.nameID);
+          }
+        }
+      }
+
+    }
+
+    this.outputsComponent.refreshFilterList();
+  }
+
   updateLocale(locale: Locale) {
     this.skillsComponent.localize(locale);
     this.ingredientsComponent.localize(locale);
@@ -417,12 +469,12 @@ export class CraftingParentComponent {
       recipe.ingredients.forEach(ingredient => {
         if (ingredient.reducible) {
           if (skill.lavishWorkspace && skill.lavishChecked) {
-            price += (ingredient.price * ingredient.quantity * .95 * table.selectedUpgrade.modifier);
+            price += (ingredient.price * ingredient.quantity * .95 * table.selectedUpgrade.modifier * this.resourceCostMultiplier);
           } else {
-            price += (ingredient.price * ingredient.quantity * table.selectedUpgrade.modifier);
+            price += (ingredient.price * ingredient.quantity * table.selectedUpgrade.modifier * this.resourceCostMultiplier);
           }
         } else {
-          price += (ingredient.price * ingredient.quantity);
+          price += (ingredient.price * ingredient.quantity * this.resourceCostMultiplier);
         }
       });
 
