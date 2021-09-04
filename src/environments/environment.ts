@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  craftingDataApi: 'https://us-east1-eco-crafting-api.cloudfunctions.net/eco-crafting-data'
+  craftingDataApi: 'https://us-east1-eco-crafting-api.cloudfunctions.net/eco-crafting-data',
+  releasesRssUrl: 'https://github.com/aritchie05/EcoCraftingTool/releases.atom'
 };
 
 /*
