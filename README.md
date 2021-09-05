@@ -11,7 +11,8 @@ SQLite database. The database is not used in this project because of compatibili
 
 ## Translations
 
-Translations are provided by Google Translate API and stored at `src/assets/data/locale-data.ts`.
+Translations are provided by [Google Translate API](https://cloud.google.com/translate) and stored
+at `src/assets/data/locale-data.ts`.
 
 ## Angular Details
 
