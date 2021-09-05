@@ -61,3 +61,13 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
+
+.link-text {
+  color: #17c4dd;
+}
+
+.link-text:hover {
+  color: #17c4dd;
+  opacity: 80%;
+  text-decoration: none;
+}

@@ -1,9 +1,10 @@
 <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark-elevated-1 border-bottom-primary text-light mb-2">
-  <a class="navbar-brand" href="#">
+  <div class="navbar-brand dropdown">
     <img alt="Eco" class="d-inline-block align-top logo-margin" height="30"
          src="assets/img/eco-logo-new.png">
     {{message('navTitle')}}
-  </a>
+    <app-release-notes></app-release-notes>
+  </div>
   <div class="collapse navbar-collapse" id="navbarLinks">
     <ul class="navbar-nav mr-auto">
     </ul>
