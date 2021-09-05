@@ -3,6 +3,16 @@
 Crafting calculator for Eco Global Survival by Strange Loop Games. Computes production costs for in-game items based on
 labor, materials, and crafting table upgrades.
 
+## Editing Recipes
+
+Recipes and items are stored at `src/assets/data/crafting-data.ts`. They are generated
+from [Eco Crafting Data API](https://github.com/aritchie05/EcoCraftingDataApi). This API stores the information in a
+SQLite database. The database is not used in this project because of compatibility issues with Angular.
+
+## Translations
+
+Translations are provided by Google Translate API and stored at `src/assets/data/locale-data.ts`.
+
 ## Angular Details
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
