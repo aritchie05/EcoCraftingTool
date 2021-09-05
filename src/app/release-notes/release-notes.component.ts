@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {environment} from '../../environments/environment';
 import {Observable} from 'rxjs';
+import {Release} from '../interface/release';
 
 @Component({
   selector: 'app-release-notes',
@@ -10,29 +11,22 @@ import {Observable} from 'rxjs';
 })
 export class ReleaseNotesComponent implements OnInit {
 
-  data: any;
+  releases: Release[];
 
   constructor(private httpClient: HttpClient) {
-    this.data = '';
+    this.releases = [];
   }
 
   ngOnInit(): void {
-    this.getReleaseRssFeed().subscribe((xmlData) => {
-      console.log('Received xml data ' + xmlData);
-      this.data = xmlData;
+    this.getReleases().subscribe((releases) => {
+      console.log('Received release data ' + releases);
+      this.releases = releases;
     });
   }
 
-  getReleaseRssFeed(): Observable<any> {
-    console.log('Getting from url ' + environment.releasesRssUrl);
-    return this.httpClient.get(environment.releasesRssUrl, {
-      headers: new HttpHeaders({
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
-        'Access-Control-Allow-Headers': 'Origin, Content-Type'
-      }),
-      responseType: 'text'
-    });
+  getReleases(): Observable<Release[]> {
+    console.log('Getting from url ' + environment.releasesUrl);
+    return this.httpClient.get<Release[]>(environment.releasesUrl);
   }
 
 
