@@ -18,14 +18,12 @@ export class ReleaseNotesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getReleases().subscribe((releases) => {
-      console.log('Received release data ' + releases);
+    this.getReleases().subscribe(releases => {
       this.releases = releases;
     });
   }
 
   getReleases(): Observable<Release[]> {
-    console.log('Getting from url ' + environment.releasesUrl);
     return this.httpClient.get<Release[]>(environment.releasesUrl);
   }
 

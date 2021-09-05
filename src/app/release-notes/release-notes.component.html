@@ -1,4 +1,5 @@
-<button aria-expanded="false" aria-haspopup="true" class="btn dark-input app-version hoverable"
+<button *ngIf="releases.length > 0" aria-expanded="false" aria-haspopup="true"
+        class="btn dark-input app-version hoverable"
         data-toggle="dropdown" id="app-version" type="button">
   {{releases[0].tag_name.substr(1)}}
 </button>
