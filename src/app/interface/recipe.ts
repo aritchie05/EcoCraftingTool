@@ -15,6 +15,9 @@ export class Recipe {
   hidden: boolean;
   primaryOutput?: Output;
 
+  //Price per primary output without profit
+  basePrice?: number;
+
   //Price PER PRIMARY OUTPUT ITEM
   price?: number;
 }

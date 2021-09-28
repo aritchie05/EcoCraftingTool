@@ -431,6 +431,7 @@ export class CraftingParentComponent implements OnInit {
    */
   private calculatePrice(recipe: Recipe): number {
     //Get the ingredient prices on the recipe
+    let basePrice = 0;
     let price = 0;
 
     recipe.ingredients.forEach(ingredient => {
@@ -446,9 +447,9 @@ export class CraftingParentComponent implements OnInit {
           let output = recipe.primaryOutput;
           if (ingredient.item.nameID.localeCompare(output.item.nameID) === 0) {
             if (!found) {
-              ingredient.price = recipe.price;
-            } else if (ingredient.price > recipe.price) {
-              ingredient.price = recipe.price;
+              ingredient.price = recipe.basePrice;
+            } else if (ingredient.price > recipe.basePrice) {
+              ingredient.price = recipe.basePrice;
             }
             found = true;
           }
@@ -482,7 +483,7 @@ export class CraftingParentComponent implements OnInit {
       if (recipe.primaryOutput.item.nameID.localeCompare('BarrelItem') !== 0 &&
         recipe.outputs.some(output => output.item.nameID.localeCompare('BarrelItem') === 0) &&
         this.outputsComponent.outputRecipes.some(recipe => recipe.nameID.localeCompare('Barrel') === 0)) {
-        let barrelPrice = this.outputsComponent.outputRecipes.find(recipe => recipe.nameID.localeCompare('Barrel') === 0).price;
+        let barrelPrice = this.outputsComponent.outputRecipes.find(recipe => recipe.nameID.localeCompare('Barrel') === 0).basePrice;
         let barrelQuantity = recipe.outputs.find(output => output.item.nameID.localeCompare('BarrelItem') === 0).quantity;
         let barrelSavings = barrelPrice * barrelQuantity * table.selectedUpgrade.modifier;
         if (skill.lavishWorkspace && skill.lavishChecked) {
@@ -499,13 +500,18 @@ export class CraftingParentComponent implements OnInit {
       let calories = recipe.labor * reductionModifier;
       price += ((this.ingredientsComponent.laborCost / 1000) * calories);
 
+      //Divide by the number of items the recipe makes
+      price /= recipe.primaryOutput.quantity;
+
+      basePrice = price;
+
       //Add the profit
       let profitPercent = this.ingredientsComponent.profitPercent;
       price *= 1 + (profitPercent / 100);
-
-      //Divide by the number of items the recipe makes
-      price /= recipe.primaryOutput.quantity;
     }
+
+    recipe.basePrice = basePrice;
+    recipe.price = price;
 
     return price;
   }
