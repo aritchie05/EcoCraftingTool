@@ -5,7 +5,6 @@ import {OutputDisplay} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
-import {OutputCookie} from '../cookie/output-cookie';
 
 @Component({
   selector: 'app-outputs',
@@ -32,10 +31,17 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   ngOnInit(): void {
     if (this.cookieService.check('recipes')) {
-      let outputsCookies: OutputCookie[] = JSON.parse(atob(this.cookieService.get('recipes')));
+      let outputsCookies = JSON.parse(atob(this.cookieService.get('recipes')));
       outputsCookies.forEach(cookie => {
         let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
         recipe.price = Number.parseFloat(cookie.pr);
+        if (cookie.hasOwnProperty('bp')) {
+          recipe.basePrice = Number.parseFloat(cookie.bp);
+        } else {
+          let profitPercent = Number.parseFloat(this.cookieService.get('profitPercent')) / 100;
+          recipe.basePrice = recipe.price / (1 + profitPercent);
+        }
+
         this.outputRecipes.push(recipe);
       });
       this.convertRecipesToOutputDisplays();
