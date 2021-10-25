@@ -156,15 +156,13 @@ export class CraftingDataService {
       recipe.ingredients.forEach(ingredient => {
         recipes.forEach(recipe2 => {
           if (recipe !== recipe2) {
-            recipe2.outputs.forEach(output => {
-              if (!this.arrayContains(removedItems, output.item) && output.item.nameID === ingredient.item.nameID) {
-                let index = itemIngredients.findIndex((item) => {
-                  return item.nameID.localeCompare(ingredient.item.nameID) === 0;
-                });
-                itemIngredients.splice(index, 1);
-                removedItems.push(ingredient.item);
-              }
-            });
+            if (!this.arrayContains(removedItems, recipe2.primaryOutput.item) && recipe2.primaryOutput.item.nameID === ingredient.item.nameID) {
+              let index = itemIngredients.findIndex((item) => {
+                return item.nameID.localeCompare(ingredient.item.nameID) === 0;
+              });
+              itemIngredients.splice(index, 1);
+              removedItems.push(ingredient.item);
+            }
           }
         });
       });
