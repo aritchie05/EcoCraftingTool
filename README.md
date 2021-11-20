@@ -7,7 +7,7 @@ costs for in-game items based on labor, materials, and crafting table upgrades.
 
 Recipes and items are stored at `src/assets/data/crafting-data.ts`. They are generated
 from [Eco Crafting Data API](https://github.com/aritchie05/EcoCraftingDataApi). This API stores the information in a
-SQLite database. The database is not used in this project because of compatibility issues with Angular.
+SQLite database. The database is not used in this project because of compatibility issues with Angular. This should be updated at some point, the current solution is pretty bad.
 
 ## Translations
 
