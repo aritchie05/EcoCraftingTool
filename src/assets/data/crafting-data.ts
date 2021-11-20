@@ -5139,7 +5139,7 @@ export const craftingData: CraftingData = {
     },
     'level': 4,
     'labor': 500,
-    'craftingTable': {'name': 'Masonry Table', 'nameID': 'MasonryTableObject', 'upgradeModuleType': 'BasicUpgrade'},
+    'craftingTable': {'name': 'Kiln', 'nameID': 'KilnObject', 'upgradeModuleType': 'AdvancedUpgrade'},
     'ingredients': [{
       'item': {'name': 'Brick', 'nameID': 'BrickItem', 'tag': false},
       'quantity': 50,
