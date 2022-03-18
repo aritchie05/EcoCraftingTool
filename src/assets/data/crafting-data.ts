@@ -14019,9 +14019,18 @@ export const craftingData: CraftingData = {
     'craftingTable': {'name': 'Advanced Carpentry Table', 'nameID': 'AdvancedCarpentryTableObject', 'upgradeModuleType': 'ModernUpgrade'},
     'ingredients': [{
       'item': {'name': 'CompositeLumber', 'nameID': 'CompositeLumber', 'tag': true},
-      'quantity': 12,
+      'quantity': 16,
       'reducible': true
-    }, {'item': {'name': 'Modern Upgrade 2', 'nameID': 'ModernUpgradeLvl2Item', 'tag': false}, 'quantity': 1, 'reducible': false}],
+    }, {
+      'item': {'name': 'Rivet', 'nameID': 'RivetItem', 'tag': false},
+      'quantity': 10,
+      'reducible': true
+    },
+      {
+        'item': {'name': 'Steel Plate', 'nameID': 'SteelPlateItem', 'tag': false},
+        'quantity': 10,
+        'reducible': true
+      }, {'item': {'name': 'Modern Upgrade 2', 'nameID': 'ModernUpgradeLvl2Item', 'tag': false}, 'quantity': 1, 'reducible': false}],
     'outputs': [{
       'item': {'name': 'Modern Upgrade 3', 'nameID': 'ModernUpgradeLvl3Item', 'tag': false},
       'quantity': 1,
