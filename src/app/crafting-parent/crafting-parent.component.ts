@@ -233,47 +233,14 @@ export class CraftingParentComponent implements OnInit {
     this.saveDataToCookies();
   }
 
-  onRecipeAdded(recipe: Recipe) {
-    //Add the skill if it is not there
-    let hasSkill = this.skillsComponent.selectedSkills.some(skill => this.strMatch(recipe.skill.nameID, skill.nameID));
-    if (!hasSkill) {
-      recipe.skill.level = 1;
-      recipe.skill.lavishChecked = false;
-      this.skillsComponent.selectedSkills.push(recipe.skill);
-    }
-
-    //Add the crafting table if it is not there
-    let hasTable = this.skillsComponent.craftingTables.some(table => this.strMatch(recipe.craftingTable.nameID, table.nameID));
-    if (!hasTable) {
-      let table = recipe.craftingTable;
-      table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
-      table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
-      this.skillsComponent.craftingTables.push(table);
-    }
-
-    //Add ingredient if it is not in inputs or outputs
-    recipe.ingredients.forEach(ingredient => {
-      let itemExists = this.ingredientsComponent.itemIngredients.some(item => this.strMatch(ingredient.item.nameID, item.nameID));
-      itemExists = itemExists || this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.primaryOutput.item.nameID, ingredient.item.nameID));
-      if (!itemExists) {
-        let item = ingredient.item;
-        item.price = 0;
-        this.ingredientsComponent.itemIngredients.push(item);
-      }
-    });
-
-    for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
-      let item = this.ingredientsComponent.itemIngredients[i];
-      if (this.strMatch(item.nameID, recipe.primaryOutput.item.nameID)) {
-        this.ingredientsComponent.itemIngredients.splice(i, 1);
-      }
-    }
-
-    this.ingredientsComponent.sortIngredients();
-
-    this.recalculateOutputPrices();
-
-    this.saveDataToCookies();
+  /**
+   * Utility method for matching two strings.
+   * @param str1 first string to match
+   * @param str2 second string to match
+   * @private
+   */
+  private static strMatch(str1: string, str2: string): boolean {
+    return str1.localeCompare(str2) === 0;
   }
 
   onSubRecipeRemoved(recipe: Recipe): void {
@@ -303,24 +270,45 @@ export class CraftingParentComponent implements OnInit {
     this.saveDataToCookies();
   }
 
-  onItemRemoved(recipes: Recipe[]): void {
-    recipes.forEach(recipe => {
-      this.onSubRecipeRemoved(recipe);
+  onRecipeAdded(recipe: Recipe) {
+    //Add the skill if it is not there
+    let hasSkill = this.skillsComponent.selectedSkills.some(skill => CraftingParentComponent.strMatch(recipe.skill.nameID, skill.nameID));
+    if (!hasSkill) {
+      recipe.skill.level = 1;
+      recipe.skill.lavishChecked = false;
+      this.skillsComponent.selectedSkills.push(recipe.skill);
+    }
+
+    //Add the crafting table if it is not there
+    let hasTable = this.skillsComponent.craftingTables.some(table => CraftingParentComponent.strMatch(recipe.craftingTable.nameID, table.nameID));
+    if (!hasTable) {
+      let table = recipe.craftingTable;
+      table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+      table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
+      this.skillsComponent.craftingTables.push(table);
+    }
+
+    //Add ingredient if it is not in inputs or outputs
+    recipe.ingredients.forEach(ingredient => {
+      let itemExists = this.ingredientsComponent.itemIngredients.some(item => CraftingParentComponent.strMatch(ingredient.item.nameID, item.nameID));
+      itemExists = itemExists || this.outputsComponent.outputRecipes.some(recipe => CraftingParentComponent.strMatch(recipe.primaryOutput.item.nameID, ingredient.item.nameID));
+      if (!itemExists) {
+        let item = ingredient.item;
+        item.price = 0;
+        this.ingredientsComponent.itemIngredients.push(item);
+      }
     });
 
-    for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
-      let table = this.skillsComponent.craftingTables[i];
-      if (!this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.craftingTable.nameID, table.nameID))) {
-        this.skillsComponent.craftingTables.splice(i, 1);
+    for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
+      let item = this.ingredientsComponent.itemIngredients[i];
+      if (CraftingParentComponent.strMatch(item.nameID, recipe.primaryOutput.item.nameID)) {
+        this.ingredientsComponent.itemIngredients.splice(i, 1);
       }
     }
 
-    for (let i = this.skillsComponent.selectedSkills.length - 1; i >= 0; i--) {
-      let skill = this.skillsComponent.selectedSkills[i];
-      if (!this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.skill.nameID, skill.nameID))) {
-        this.skillsComponent.selectedSkills.splice(i, 1);
-      }
-    }
+    this.ingredientsComponent.sortIngredients();
+
+    this.recalculateOutputPrices();
 
     this.saveDataToCookies();
   }
@@ -354,36 +342,26 @@ export class CraftingParentComponent implements OnInit {
     this.saveDataToCookies();
   }
 
-  updateEndgameCost(isExpensive: boolean): void {
-    this.dataService.setExpensiveEndgameCost(isExpensive);
+  onItemRemoved(recipes: Recipe[]): void {
+    recipes.forEach(recipe => {
+      this.onSubRecipeRemoved(recipe);
+    });
 
-    let outputRecipes = this.outputsComponent.outputRecipes;
-
-    for (let i = outputRecipes.length - 1; i >= 0; i--) {
-      let recipe = outputRecipes[i];
-      if (isExpensive) {
-        for (let j = 0; j < this.dataService.cheapRecipes.length; j++) {
-          let cheapRecipe = this.dataService.cheapRecipes[j];
-          //If we find a cheap recipe remove it, and add the corresponding expensive recipe to the outputs component with index j
-          if (this.strMatch(cheapRecipe.nameID, recipe.nameID)) {
-            this.outputsComponent.onRecipeSelect(this.dataService.expensiveRecipes[j]);
-            this.outputsComponent.onRemoveSubRecipe(cheapRecipe.nameID);
-          }
-        }
-      } else {
-        for (let j = 0; j < this.dataService.expensiveRecipes.length; j++) {
-          let expensiveRecipe = this.dataService.expensiveRecipes[j];
-          //If we find an expensive recipe remove it, and add the corresponding cheap recipe to the outputs component with index j
-          if (this.strMatch(expensiveRecipe.nameID, recipe.nameID)) {
-            this.outputsComponent.onRecipeSelect(this.dataService.cheapRecipes[j]);
-            this.outputsComponent.onRemoveSubRecipe(expensiveRecipe.nameID);
-          }
-        }
+    for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
+      let table = this.skillsComponent.craftingTables[i];
+      if (!this.outputsComponent.outputRecipes.some(recipe => CraftingParentComponent.strMatch(recipe.craftingTable.nameID, table.nameID))) {
+        this.skillsComponent.craftingTables.splice(i, 1);
       }
-
     }
 
-    this.outputsComponent.refreshFilterList();
+    for (let i = this.skillsComponent.selectedSkills.length - 1; i >= 0; i--) {
+      let skill = this.skillsComponent.selectedSkills[i];
+      if (!this.outputsComponent.outputRecipes.some(recipe => CraftingParentComponent.strMatch(recipe.skill.nameID, skill.nameID))) {
+        this.skillsComponent.selectedSkills.splice(i, 1);
+      }
+    }
+
+    this.saveDataToCookies();
   }
 
   updateLocale(locale: Locale) {
@@ -589,6 +567,38 @@ export class CraftingParentComponent implements OnInit {
     this.cookieService.set('recipes', btoa(JSON.stringify(outputsCookie)), expDays);
   }
 
+  updateEndgameCost(isExpensive: boolean): void {
+    this.dataService.setExpensiveEndgameCost(isExpensive);
+
+    let outputRecipes = this.outputsComponent.outputRecipes;
+
+    for (let i = outputRecipes.length - 1; i >= 0; i--) {
+      let recipe = outputRecipes[i];
+      if (isExpensive) {
+        for (let j = 0; j < this.dataService.cheapRecipes.length; j++) {
+          let cheapRecipe = this.dataService.cheapRecipes[j];
+          //If we find a cheap recipe remove it, and add the corresponding expensive recipe to the outputs component with index j
+          if (CraftingParentComponent.strMatch(cheapRecipe.nameID, recipe.nameID)) {
+            this.outputsComponent.onRecipeSelect(this.dataService.expensiveRecipes[j]);
+            this.outputsComponent.onRemoveSubRecipe(cheapRecipe.nameID);
+          }
+        }
+      } else {
+        for (let j = 0; j < this.dataService.expensiveRecipes.length; j++) {
+          let expensiveRecipe = this.dataService.expensiveRecipes[j];
+          //If we find an expensive recipe remove it, and add the corresponding cheap recipe to the outputs component with index j
+          if (CraftingParentComponent.strMatch(expensiveRecipe.nameID, recipe.nameID)) {
+            this.outputsComponent.onRecipeSelect(this.dataService.cheapRecipes[j]);
+            this.outputsComponent.onRemoveSubRecipe(expensiveRecipe.nameID);
+          }
+        }
+      }
+
+    }
+
+    this.outputsComponent.refreshFilterList();
+  }
+
   /**
    * Removes recipes that are no longer relevant based on the crafting tables and skills in the skills component.
    * @private
@@ -599,7 +609,7 @@ export class CraftingParentComponent implements OnInit {
         return this.skillsComponent.craftingTables.some(table => table.nameID.localeCompare(recipe.nameID));
       })
       .filter(recipe => {
-        return this.skillsComponent.selectedSkills.some(skill => this.strMatch(skill.nameID, recipe.skill.nameID));
+        return this.skillsComponent.selectedSkills.some(skill => CraftingParentComponent.strMatch(skill.nameID, recipe.skill.nameID));
       });
   }
 
@@ -611,21 +621,11 @@ export class CraftingParentComponent implements OnInit {
     for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
       let item = this.ingredientsComponent.itemIngredients[i];
       let stillNeeded = this.outputsComponent.outputRecipes.some(recipe => {
-        return recipe.ingredients.some(ingredient => this.strMatch(ingredient.item.nameID, item.nameID));
+        return recipe.ingredients.some(ingredient => CraftingParentComponent.strMatch(ingredient.item.nameID, item.nameID));
       });
       if (!stillNeeded) {
         this.ingredientsComponent.itemIngredients.splice(i, 1);
       }
     }
-  }
-
-  /**
-   * Utility method for matching two strings.
-   * @param str1 first string to match
-   * @param str2 second string to match
-   * @private
-   */
-  private strMatch(str1: string, str2: string): boolean {
-    return str1.localeCompare(str2) === 0;
   }
 }

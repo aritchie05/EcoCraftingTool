@@ -1,15 +1,17 @@
 import {Injectable} from '@angular/core';
 import {Skill} from '../interface/skill';
-import {CraftingData} from '../interface/crafting-data';
 import {UpgradeModule} from '../interface/upgrade-module';
 import {CraftingTable} from '../interface/crafting-table';
 import {Item} from '../interface/item';
 import {Recipe} from '../interface/recipe';
-import {Ingredient} from '../interface/ingredient';
-import {Output} from '../interface/output';
 import {LaborCost} from '../interface/labor-cost';
-import {craftingData} from '../../assets/data/crafting-data';
 import {Locale, LocaleService} from './locale.service';
+import {craftingTables} from '../../assets/data/crafting-tables';
+import {upgradeModules} from '../../assets/data/upgrade-modules';
+import {items} from '../../assets/data/items';
+import {recipes} from '../../assets/data/recipes';
+import {skills} from '../../assets/data/skills';
+import {laborCosts} from '../../assets/data/labor-costs';
 
 @Injectable({
   providedIn: 'root'
@@ -26,21 +28,33 @@ export class CraftingDataService {
 
   locale: Locale;
 
+  skills: Skill[];
+  recipes: Recipe[];
+  items: Item[];
+  tables: CraftingTable[];
+  upgrades: UpgradeModule[];
+
   constructor(private localeService: LocaleService) {
     this.locale = localeService.selectedLocale;
+
+    this.skills = skills.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+    this.recipes = recipes.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+    this.items = items.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+    this.tables = craftingTables.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+    this.upgrades = upgradeModules.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+
+    CraftingDataService.setPrimaryOutputs(this.recipes);
+
+    this.expensiveRecipes = this.recipes.filter(recipe =>
+      this.expensiveRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
+      .sort((a, b) => a.nameID.localeCompare(b.nameID));
+    this.cheapRecipes = this.recipes.filter(recipe =>
+      this.cheapRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
+      .sort((a, b) => a.nameID.localeCompare(b.nameID));
+
     if (!this.locale.langCode().match('en')) {
       this.localize(this.locale);
     }
-    craftingData.skills = craftingData.skills.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
-    craftingData.recipes = craftingData.recipes.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
-    craftingData.items = craftingData.items.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
-
-    this.expensiveRecipes = craftingData.recipes.filter(recipe =>
-      this.expensiveRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
-      .sort((a, b) => a.nameID.localeCompare(b.nameID));
-    this.cheapRecipes = craftingData.recipes.filter(recipe =>
-      this.cheapRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
-      .sort((a, b) => a.nameID.localeCompare(b.nameID));
 
     /*
     this.http.get<CraftingData>(environment.craftingDataApi)
@@ -51,24 +65,7 @@ export class CraftingDataService {
     */
   }
 
-  getCraftingData(): CraftingData {
-    return craftingData;
-  }
-
-  getCraftingTables(): CraftingTable[] {
-    return craftingData.craftingTables;
-  }
-
-  getUpgradeModules(): UpgradeModule[] {
-    return craftingData.upgradeModules;
-  }
-
-  getItems(): Item[] {
-    return craftingData.items;
-  }
-
-  getRecipes(): Recipe[] {
-    let recipes = craftingData.recipes;
+  private static setPrimaryOutputs(recipes: Recipe[]) {
     recipes.forEach(recipe => {
       for (let i = 0; i < recipe.outputs.length; i++) {
         if (recipe.outputs[i].primary) {
@@ -77,23 +74,30 @@ export class CraftingDataService {
         }
       }
     });
-    return recipes.filter(recipe => !recipe.hidden);
+  }
+
+  getCraftingTables(): CraftingTable[] {
+    return this.tables;
+  }
+
+  getUpgradeModules(): UpgradeModule[] {
+    return this.upgrades;
+  }
+
+  getItems(): Item[] {
+    return this.items;
+  }
+
+  getRecipes(): Recipe[] {
+    return this.recipes.filter(recipe => !recipe.hidden);
   }
 
   getSkills(): Skill[] {
-    return craftingData.skills;
-  }
-
-  getIngredients(): Ingredient[] {
-    return craftingData.ingredients;
-  }
-
-  getOutputs(): Output[] {
-    return craftingData.outputs;
+    return this.skills;
   }
 
   getLaborCosts(): LaborCost[] {
-    return craftingData.laborCosts;
+    return laborCosts;
   }
 
   filterSkillList(searchQuery: string) {
@@ -173,10 +177,7 @@ export class CraftingDataService {
 
   getLaborReductionForSkillLevel(level: number): number {
     let laborCosts = this.getLaborCosts();
-    let index = laborCosts.findIndex(laborCost => {
-      return laborCost.level === level;
-    });
-    return laborCosts[index].modifier;
+    return laborCosts.find(laborCost => laborCost.level === level).modifier;
   }
 
   getCraftingTablesForSkill(skill: Skill): CraftingTable[] {
@@ -194,19 +195,17 @@ export class CraftingDataService {
   }
 
   localize(locale: Locale): void {
-    craftingData.craftingTables.forEach(table => table.name = this.localeService.localizeCraftingTableName(table.nameID, locale.langCode()));
-    craftingData.upgradeModules.forEach(upgrade => upgrade.name = this.localeService.localizeUpgradeName(upgrade.nameID, locale.langCode()));
-    craftingData.items.forEach(item => item.name = this.localeService.localizeItemName(item.nameID, locale.langCode()));
-    craftingData.recipes.forEach(recipe => {
+    this.tables.forEach(table => table.name = this.localeService.localizeCraftingTableName(table.nameID, locale.langCode()));
+    this.upgrades.forEach(upgrade => upgrade.name = this.localeService.localizeUpgradeName(upgrade.nameID, locale.langCode()));
+    this.items.forEach(item => item.name = this.localeService.localizeItemName(item.nameID, locale.langCode()));
+    this.recipes.forEach(recipe => {
       recipe.name = this.localeService.localizeRecipeName(recipe.nameID, locale.langCode());
       recipe.ingredients.forEach(input => input.item.name = this.localeService.localizeItemName(input.item.nameID, locale.langCode()));
       recipe.outputs.forEach(output => output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode()));
       recipe.craftingTable.name = this.localeService.localizeCraftingTableName(recipe.craftingTable.nameID, locale.langCode());
       recipe.skill.name = this.localeService.localizeSkillName(recipe.skill.nameID, locale.langCode());
     });
-    craftingData.skills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.nameID, locale.langCode()));
-    craftingData.ingredients.forEach(ingredient => ingredient.item.name = this.localeService.localizeItemName(ingredient.item.nameID, locale.langCode()));
-    craftingData.outputs.forEach(output => output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode()));
+    this.skills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.nameID, locale.langCode()));
   }
 
   setExpensiveEndgameCost(isExpensive: boolean): void {

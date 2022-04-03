@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {localeData} from '../../assets/data/locale-data';
+import {localeData} from '../../assets/data/locale/locale-data';
 import {CookieService} from 'ngx-cookie-service';
 
 export class Locale {

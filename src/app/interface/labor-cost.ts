@@ -1,4 +1,4 @@
-export interface LaborCost {
+export class LaborCost {
   level: number;
   modifier: number;
 }
