@@ -13,6 +13,8 @@ import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {OutputCookie} from '../cookie/output-cookie';
+import {LocalStorageService} from 'ngx-webstorage-v2';
+import {EXP_DAYS} from '../app.component';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -33,17 +35,21 @@ export class CraftingParentComponent implements OnInit {
 
   private resourceCostMultiplier: number;
 
-  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private cookieService: CookieService) {
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private cookieService: CookieService,
+              private storageService: LocalStorageService) {
     this.resourceCostMultiplier = 1;
   }
 
   ngOnInit() {
-    if (this.cookieService.check('resourceCostMultiplier')) {
-      this.resourceCostMultiplier = Number.parseFloat(this.cookieService.get('resourceCostMultiplier'));
+    let multiplier = this.storageService.retrieve('resourceCostMultiplier');
+    let expensiveEndgame = this.storageService.retrieve('expensiveEndgameCost');
+
+    if (multiplier != null) {
+      this.resourceCostMultiplier = Number.parseFloat(multiplier);
     }
 
-    if (this.cookieService.check('expensiveEndgameCost')) {
-      this.dataService.setExpensiveEndgameCost(this.cookieService.get('expensiveEndgameCost') === 'true');
+    if (expensiveEndgame != null) {
+      this.dataService.setExpensiveEndgameCost(expensiveEndgame === 'true');
     }
   }
 
@@ -126,26 +132,26 @@ export class CraftingParentComponent implements OnInit {
     //Tell the outputs component to populate the output displays
     this.outputsComponent.convertRecipesToOutputDisplays();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
 
   onSkillLevelChanged(skill: Skill): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onLavishUpdated(skill: Skill): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onUpgradeChanged(table: CraftingTable) {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onSkillRemoved(skill: Skill): void {
@@ -194,19 +200,19 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onLaborCostChanged(value: number): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onProfitPercentChanged(profitPercent: number): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onIngredientPriceChanged(item: Item): void {
@@ -230,7 +236,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.outputsComponent.convertRecipesToOutputDisplays();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   /**
@@ -267,7 +273,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onRecipeAdded(recipe: Recipe) {
@@ -310,7 +316,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   /**
@@ -331,7 +337,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   updateResourceCostMultiplier(newMultiplier: number): void {
@@ -339,7 +345,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onItemRemoved(recipes: Recipe[]): void {
@@ -361,7 +367,7 @@ export class CraftingParentComponent implements OnInit {
       }
     }
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   updateLocale(locale: Locale) {
@@ -370,7 +376,7 @@ export class CraftingParentComponent implements OnInit {
     this.outputsComponent.localize(locale);
     this.dataService.localize(locale);
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   /**
@@ -541,30 +547,28 @@ export class CraftingParentComponent implements OnInit {
       });
   }
 
-  private saveDataToCookies(): void {
-    let expDays = 60;
+  private saveDataToLocalStorage(): void {
 
-    this.cookieService.set('locale', JSON.stringify(this.localeService.selectedLocale), expDays);
-    this.cookieService.set('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
-      {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
-    this.cookieService.set('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
-      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
+    this.storageService.store('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
+      {minimumFractionDigits: 0, maximumFractionDigits: 2}), EXP_DAYS);
+    this.storageService.store('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
+      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}), EXP_DAYS);
 
     let skillsCookie: SkillCookie[] = [];
     this.skillsComponent.selectedSkills.forEach(skill => skillsCookie.push(new SkillCookie(skill)));
-    this.cookieService.set('skills', btoa(JSON.stringify(skillsCookie)), expDays);
+    this.storageService.store('skills', skillsCookie, EXP_DAYS);
 
     let tablesCookie: TableCookie[] = [];
     this.skillsComponent.craftingTables.forEach(table => tablesCookie.push(new TableCookie(table)));
-    this.cookieService.set('tables', btoa(JSON.stringify(tablesCookie)), expDays);
+    this.storageService.store('tables', tablesCookie, EXP_DAYS);
 
     let ingredientsCookie: IngredientCookie[] = [];
     this.ingredientsComponent.itemIngredients.forEach(item => ingredientsCookie.push(new IngredientCookie(item)));
-    this.cookieService.set('ingredients', btoa(JSON.stringify(ingredientsCookie)), expDays);
+    this.storageService.store('ingredients', ingredientsCookie, EXP_DAYS);
 
     let outputsCookie: OutputCookie[] = [];
     this.outputsComponent.outputRecipes.forEach(recipe => outputsCookie.push(new OutputCookie(recipe)));
-    this.cookieService.set('recipes', btoa(JSON.stringify(outputsCookie)), expDays);
+    this.storageService.store('recipes', outputsCookie, EXP_DAYS);
   }
 
   updateEndgameCost(isExpensive: boolean): void {

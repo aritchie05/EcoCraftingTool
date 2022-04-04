@@ -5,6 +5,8 @@ import {OutputDisplay} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
+import {EXP_DAYS} from '../app.component';
+import {LocalStorageService} from 'ngx-webstorage-v2';
 
 @Component({
   selector: 'app-outputs',
@@ -23,14 +25,38 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   @Output() subRecipeRemovedEvent = new EventEmitter<Recipe>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService) {
+              private messageService: MessageService, private cookieService: CookieService,
+              private storageService: LocalStorageService) {
     this.outputRecipes = [];
     this.outputDisplays = [];
     this.locale = localeService.selectedLocale;
   }
 
   ngOnInit(): void {
-    if (this.cookieService.check('recipes')) {
+    let outputsCookie = this.storageService.retrieve('recipes');
+    console.log(`Outputs cookie: ${outputsCookie}`);
+    if (outputsCookie != null) {
+      outputsCookie.forEach(cookie => {
+        let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
+        recipe.price = Number.parseFloat(cookie.pr);
+        if (cookie.hasOwnProperty('bp')) {
+          console.log(`Recipe ${cookie.id} has bp of ${cookie.bp}`);
+          recipe.basePrice = Number.parseFloat(cookie.bp);
+        } else {
+          let profitStored = this.storageService.retrieve('profitPercent');
+          if (profitStored != null) {
+            let profitPercent = Number.parseFloat(profitStored) / 100;
+            recipe.basePrice = recipe.price / (1 + profitPercent);
+          } else {
+            let profitPercent = Number.parseFloat(this.cookieService.get('profitPercent')) / 100;
+            recipe.basePrice = recipe.price / (1 + profitPercent);
+          }
+        }
+
+        this.outputRecipes.push(recipe);
+        this.convertRecipesToOutputDisplays();
+      });
+    } else if (this.cookieService.check('recipes')) {
       let outputsCookies = JSON.parse(atob(this.cookieService.get('recipes')));
       outputsCookies.forEach(cookie => {
         let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
@@ -45,6 +71,9 @@ export class OutputsComponent implements OnInit, AfterContentInit {
         this.outputRecipes.push(recipe);
       });
       this.convertRecipesToOutputDisplays();
+
+      this.cookieService.delete('recipes');
+      this.storageService.store('recipes', outputsCookie, EXP_DAYS);
     }
   }
 

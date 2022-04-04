@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
 import {CookieService} from 'ngx-cookie-service';
 import {ReleaseNotesComponent} from './release-notes/release-notes.component';
+import {NgxWebstorageModule} from 'ngx-webstorage-v2';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {ReleaseNotesComponent} from './release-notes/release-notes.component';
   imports: [
     BrowserModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxWebstorageModule.forRoot()
   ],
   providers: [
     CookieService

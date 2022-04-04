@@ -8,6 +8,8 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
+import {EXP_DAYS} from '../app.component';
+import {LocalStorageService} from 'ngx-webstorage-v2';
 
 @Component({
   selector: 'app-skills',
@@ -29,14 +31,23 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   @Output() lavishUpdatedEvent = new EventEmitter<Skill>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService) {
+              private messageService: MessageService, private cookieService: CookieService,
+              private storageService: LocalStorageService) {
     this.selectedSkills = [];
     this.craftingTables = [];
     this.locale = localeService.selectedLocale;
   }
 
   ngOnInit(): void {
-    if (this.cookieService.check('skills')) {
+    let skills = this.storageService.retrieve('skills');
+    if (skills != null) {
+      skills.forEach(sk => {
+        let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(sk.id) === 0);
+        skill.level = sk.lvl;
+        skill.lavishChecked = sk.lav;
+        this.selectedSkills.push(skill);
+      });
+    } else if (this.cookieService.check('skills')) {
       let skillCookies: SkillCookie[] = JSON.parse(atob(this.cookieService.get('skills')));
       skillCookies.forEach(cookie => {
         let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(cookie.id) === 0);
@@ -44,8 +55,20 @@ export class SkillsComponent implements OnInit, AfterContentInit {
         skill.lavishChecked = cookie.lav;
         this.selectedSkills.push(skill);
       });
+
+      this.cookieService.delete('skills');
+      this.storageService.store('skills', skillCookies, EXP_DAYS);
     }
-    if (this.cookieService.check('tables')) {
+
+    let tables = this.storageService.retrieve('tables');
+    if (tables != null) {
+      tables.forEach(tb => {
+        let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(tb.id) === 0);
+        table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+        table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(tb.up) === 0);
+        this.craftingTables.push(table);
+      });
+    } else if (this.cookieService.check('tables')) {
       let tableCookies: TableCookie[] = JSON.parse(atob(this.cookieService.get('tables')));
       tableCookies.forEach(cookie => {
         let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(cookie.id) === 0);
@@ -53,6 +76,9 @@ export class SkillsComponent implements OnInit, AfterContentInit {
         table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(cookie.up) === 0);
         this.craftingTables.push(table);
       });
+
+      this.cookieService.delete('tables');
+      this.storageService.store('tables', tableCookies, EXP_DAYS);
     }
   }
 

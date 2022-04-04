@@ -5,6 +5,9 @@ import {CraftingParentComponent} from './crafting-parent/crafting-parent.compone
 import {FooterComponent} from './footer/footer.component';
 import {MessageService} from './service/message.service';
 
+//Expiration days for local storage
+export const EXP_DAYS = 60;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -5,6 +5,8 @@ import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
+import {EXP_DAYS} from '../app.component';
+import {LocalStorageService} from 'ngx-webstorage-v2';
 
 @Component({
   selector: 'app-ingredients',
@@ -23,7 +25,8 @@ export class IngredientsComponent implements OnInit {
   @Output() profitPercentChangedEvent = new EventEmitter<number>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService) {
+              private messageService: MessageService, private cookieService: CookieService,
+              private storageService: LocalStorageService) {
     this.itemIngredients = [];
     this.laborCost = 0;
     this.profitPercent = 0;
@@ -31,19 +34,43 @@ export class IngredientsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.cookieService.check('ingredients')) {
+
+    let ingredients = this.storageService.retrieve('ingredients');
+    if (ingredients != null) {
+      ingredients.forEach(ing => {
+        let item = this.dataService.getItems().find(item => item.nameID.localeCompare(ing.id) === 0);
+        item.price = ing.pr;
+        this.itemIngredients.push(item);
+      });
+    } else if (this.cookieService.check('ingredients')) {
       let ingredientCookies: IngredientCookie[] = JSON.parse(atob(this.cookieService.get('ingredients')));
       ingredientCookies.forEach(cookie => {
         let item = this.dataService.getItems().find(item => item.nameID.localeCompare(cookie.id) === 0);
         item.price = cookie.pr;
         this.itemIngredients.push(item);
       });
+      this.cookieService.delete('ingredients');
+      this.storageService.store('ingredients', ingredientCookies, EXP_DAYS);
     }
-    if (this.cookieService.check('laborCost')) {
+
+    let laborCost = this.storageService.retrieve('laborCost');
+    if (laborCost != null) {
+      this.laborCost = Number.parseFloat(laborCost);
+    } else if (this.cookieService.check('laborCost')) {
       this.laborCost = Number.parseFloat(this.cookieService.get('laborCost'));
+      this.cookieService.delete('laborCost');
+      this.storageService.store('laborCost', this.laborCost.toLocaleString(this.localeService.selectedLocale.code,
+        {minimumFractionDigits: 0, maximumFractionDigits: 2}), EXP_DAYS);
     }
-    if (this.cookieService.check('profitPercent')) {
+
+    let profit = this.storageService.retrieve('profitPercent');
+    if (profit != null) {
+      this.profitPercent = Number.parseFloat(profit);
+    } else if (this.cookieService.check('profitPercent')) {
       this.profitPercent = Number.parseFloat(this.cookieService.get('profitPercent'));
+      this.cookieService.delete('profitPercent');
+      this.storageService.store('profitPercent', this.profitPercent.toLocaleString(this.localeService.selectedLocale.code,
+        {minimumFractionDigits: 0, maximumFractionDigits: 2}), EXP_DAYS);
     }
   }
 
