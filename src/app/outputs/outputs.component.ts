@@ -1,12 +1,11 @@
-import {AfterContentInit, Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Recipe} from '../interface/recipe';
 import {OutputDisplay} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
-import {EXP_DAYS} from '../app.component';
-import {LocalStorageService} from 'ngx-webstorage-v2';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 @Component({
   selector: 'app-outputs',
@@ -26,14 +25,14 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService,
-              private storageService: LocalStorageService) {
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.outputRecipes = [];
     this.outputDisplays = [];
     this.locale = localeService.selectedLocale;
   }
 
   ngOnInit(): void {
-    let outputsCookie = this.storageService.retrieve('recipes');
+    let outputsCookie = this.storageService.get('recipes');
     console.log(`Outputs cookie: ${outputsCookie}`);
     if (outputsCookie != null) {
       outputsCookie.forEach(cookie => {
@@ -43,7 +42,7 @@ export class OutputsComponent implements OnInit, AfterContentInit {
           console.log(`Recipe ${cookie.id} has bp of ${cookie.bp}`);
           recipe.basePrice = Number.parseFloat(cookie.bp);
         } else {
-          let profitStored = this.storageService.retrieve('profitPercent');
+          let profitStored = this.storageService.get('profitPercent');
           if (profitStored != null) {
             let profitPercent = Number.parseFloat(profitStored) / 100;
             recipe.basePrice = recipe.price / (1 + profitPercent);
@@ -73,7 +72,7 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       this.convertRecipesToOutputDisplays();
 
       this.cookieService.delete('recipes');
-      this.storageService.store('recipes', outputsCookie, EXP_DAYS);
+      this.storageService.set('recipes', outputsCookie);
     }
   }
 

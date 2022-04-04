@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Skill} from '../interface/skill';
 import {CraftingTable} from '../interface/crafting-table';
@@ -8,8 +8,7 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
-import {EXP_DAYS} from '../app.component';
-import {LocalStorageService} from 'ngx-webstorage-v2';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 @Component({
   selector: 'app-skills',
@@ -32,14 +31,14 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService,
-              private storageService: LocalStorageService) {
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.selectedSkills = [];
     this.craftingTables = [];
     this.locale = localeService.selectedLocale;
   }
 
   ngOnInit(): void {
-    let skills = this.storageService.retrieve('skills');
+    let skills = this.storageService.get('skills');
     if (skills != null) {
       skills.forEach(sk => {
         let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(sk.id) === 0);
@@ -57,10 +56,10 @@ export class SkillsComponent implements OnInit, AfterContentInit {
       });
 
       this.cookieService.delete('skills');
-      this.storageService.store('skills', skillCookies, EXP_DAYS);
+      this.storageService.set('skills', skillCookies);
     }
 
-    let tables = this.storageService.retrieve('tables');
+    let tables = this.storageService.get('tables');
     if (tables != null) {
       tables.forEach(tb => {
         let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(tb.id) === 0);
@@ -78,7 +77,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
       });
 
       this.cookieService.delete('tables');
-      this.storageService.store('tables', tableCookies, EXP_DAYS);
+      this.storageService.set('tables', tableCookies);
     }
   }
 

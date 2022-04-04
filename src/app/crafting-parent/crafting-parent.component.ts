@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, Inject, OnInit, ViewChild} from '@angular/core';
 import {SkillsComponent} from '../skills/skills.component';
 import {IngredientsComponent} from '../ingredients/ingredients.component';
 import {OutputsComponent} from '../outputs/outputs.component';
@@ -13,8 +13,7 @@ import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {OutputCookie} from '../cookie/output-cookie';
-import {LocalStorageService} from 'ngx-webstorage-v2';
-import {EXP_DAYS} from '../app.component';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -36,13 +35,13 @@ export class CraftingParentComponent implements OnInit {
   private resourceCostMultiplier: number;
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService, private cookieService: CookieService,
-              private storageService: LocalStorageService) {
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.resourceCostMultiplier = 1;
   }
 
   ngOnInit() {
-    let multiplier = this.storageService.retrieve('resourceCostMultiplier');
-    let expensiveEndgame = this.storageService.retrieve('expensiveEndgameCost');
+    let multiplier = this.storageService.get('resourceCostMultiplier');
+    let expensiveEndgame = this.storageService.get('expensiveEndgameCost');
 
     if (multiplier != null) {
       this.resourceCostMultiplier = Number.parseFloat(multiplier);
@@ -549,26 +548,26 @@ export class CraftingParentComponent implements OnInit {
 
   private saveDataToLocalStorage(): void {
 
-    this.storageService.store('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
-      {minimumFractionDigits: 0, maximumFractionDigits: 2}), EXP_DAYS);
-    this.storageService.store('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
-      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}), EXP_DAYS);
+    this.storageService.set('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
+      {minimumFractionDigits: 0, maximumFractionDigits: 2}));
+    this.storageService.set('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
+      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
 
     let skillsCookie: SkillCookie[] = [];
     this.skillsComponent.selectedSkills.forEach(skill => skillsCookie.push(new SkillCookie(skill)));
-    this.storageService.store('skills', skillsCookie, EXP_DAYS);
+    this.storageService.set('skills', skillsCookie);
 
     let tablesCookie: TableCookie[] = [];
     this.skillsComponent.craftingTables.forEach(table => tablesCookie.push(new TableCookie(table)));
-    this.storageService.store('tables', tablesCookie, EXP_DAYS);
+    this.storageService.set('tables', tablesCookie);
 
     let ingredientsCookie: IngredientCookie[] = [];
     this.ingredientsComponent.itemIngredients.forEach(item => ingredientsCookie.push(new IngredientCookie(item)));
-    this.storageService.store('ingredients', ingredientsCookie, EXP_DAYS);
+    this.storageService.set('ingredients', ingredientsCookie);
 
     let outputsCookie: OutputCookie[] = [];
     this.outputsComponent.outputRecipes.forEach(recipe => outputsCookie.push(new OutputCookie(recipe)));
-    this.storageService.store('recipes', outputsCookie, EXP_DAYS);
+    this.storageService.set('recipes', outputsCookie);
   }
 
   updateEndgameCost(isExpensive: boolean): void {

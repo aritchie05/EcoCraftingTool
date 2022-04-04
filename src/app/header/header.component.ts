@@ -1,9 +1,8 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
-import {LocalStorageService} from 'ngx-webstorage-v2';
-import {EXP_DAYS} from '../app.component';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 @Component({
   selector: 'app-header',
@@ -23,7 +22,7 @@ export class HeaderComponent implements OnInit {
 
 
   constructor(private localeService: LocaleService, private messageService: MessageService, private cookieService: CookieService,
-              private storageService: LocalStorageService) {
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.locale = localeService.selectedLocale;
     this.locales = localeService.supportedLocales;
     this.expensiveEndgameCostChecked = false;
@@ -32,29 +31,29 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
 
-    let expensiveEndgame = this.storageService.retrieve('expensiveEndgameCost');
+    let expensiveEndgame = this.storageService.get('expensiveEndgameCost');
     if (expensiveEndgame != null) {
       this.expensiveEndgameCostChecked = expensiveEndgame === 'true';
     } else if (this.cookieService.check('expensiveEndgameCost')) {
       this.expensiveEndgameCostChecked = this.cookieService.get('expensiveEndgameCost') === 'true';
       this.cookieService.delete('expensiveEndgameCost');
-      this.storageService.store('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked, EXP_DAYS);
+      this.storageService.set('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked);
     }
 
-    let multiplier = this.storageService.retrieve('resourceCostMultiplier');
+    let multiplier = this.storageService.get('resourceCostMultiplier');
     if (multiplier != null) {
       this.resourceCostMultiplier = Number.parseFloat(multiplier);
     } else if (this.cookieService.check('resourceCostMultiplier')) {
       this.resourceCostMultiplier = Number.parseFloat(this.cookieService.get('resourceCostMultiplier'));
       this.cookieService.delete('resourceCostMultiplier');
-      this.storageService.store('resourceCostMultiplier', this.resourceCostMultiplier.toFixed(2), EXP_DAYS);
+      this.storageService.set('resourceCostMultiplier', this.resourceCostMultiplier.toFixed(2));
     }
   }
 
   saveDataToLocalStorage(): void {
-    this.storageService.store('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked, EXP_DAYS);
-    this.storageService.store('resourceCostMultiplier', this.resourceCostMultiplier.toFixed(2), EXP_DAYS);
-    this.storageService.store('locale', this.localeService.selectedLocale, EXP_DAYS);
+    this.storageService.set('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked);
+    this.storageService.set('resourceCostMultiplier', this.resourceCostMultiplier.toFixed(2));
+    this.storageService.set('locale', this.localeService.selectedLocale);
   }
 
   message(id: string): string {
