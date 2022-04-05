@@ -21,6 +21,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   filteredSkills: Skill[];
   selectedSkills: Skill[];
+  filteredTables: CraftingTable[];
   craftingTables: CraftingTable[];
   locale: Locale;
 
@@ -28,6 +29,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   @Output() skillLevelChangedEvent = new EventEmitter<Skill>();
   @Output() skillRemovedEvent = new EventEmitter<Skill>();
   @Output() upgradeChangedEvent = new EventEmitter<CraftingTable>();
+  @Output() tableAddedEvent = new EventEmitter<CraftingTable>();
   @Output() tableRemovedEvent = new EventEmitter<CraftingTable>();
   @Output() lavishUpdatedEvent = new EventEmitter<Skill>();
 
@@ -85,6 +87,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   ngAfterContentInit(): void {
     this.filteredSkills = this.dataService.getSkills();
+    this.filteredTables = this.dataService.getCraftingTables();
     /*
     this.dataService.responseStatus.subscribe((resp) => {
       this.filteredSkills = resp.skills;
@@ -145,6 +148,25 @@ export class SkillsComponent implements OnInit, AfterContentInit {
     if (index !== -1) {
       let removedSkills = this.selectedSkills.splice(index, 1);
       removedSkills.forEach(removedSkill => this.skillRemovedEvent.emit(removedSkill));
+    }
+  }
+
+  onTablesSearchInput(value: string): void {
+    this.filteredTables = this.dataService.filterTableList(value);
+  }
+
+  onTableSelect(table: CraftingTable): void {
+    if (!this.craftingTables.some(tbl => tbl.nameID.localeCompare(table.nameID) === 0)) {
+      table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+      table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
+      let newSkills = this.dataService.getSkillsForCraftingTable(table);
+      newSkills.forEach(newSkill => {
+        if (!this.selectedSkills.some(skill => skill.nameID.localeCompare(newSkill.nameID) === 0)) {
+          this.selectedSkills.push(newSkill);
+        }
+      });
+      this.craftingTables.push(table);
+      this.tableAddedEvent.emit(table);
     }
   }
 

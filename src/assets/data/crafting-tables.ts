@@ -74,7 +74,7 @@ export let craftingTables: CraftingTable[] =
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false
     },
-    {
+    /*{
       'name': 'Campsite',
       'nameID': 'CampsiteObject',
       'upgradeModuleType': 'None',
@@ -85,7 +85,7 @@ export let craftingTables: CraftingTable[] =
       'nameID': 'CapitolObject',
       'upgradeModuleType': 'None',
       'hidden': false
-    },
+    },*/
     {
       'name': 'Carpentry Table',
       'nameID': 'CarpentryTableObject',
@@ -170,12 +170,12 @@ export let craftingTables: CraftingTable[] =
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false
     },
-    {
+    /*{
       'name': 'Laboratory',
       'nameID': 'LaboratoryObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false
-    },
+    },*/
     {
       'name': 'Lathe',
       'nameID': 'LatheObject',

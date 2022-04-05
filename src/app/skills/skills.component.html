@@ -4,23 +4,24 @@
   <div class="form-group">
     <div class="dropdown w-95 mx-auto">
       <label class="sr-only" for="skillSelectInput">{{message('skillsHeader')}}</label>
-      <input #searchBox (input)="onSkillsSearchInput(searchBox.value)" class="dropdown-toggle form-control dark-input"
+      <input #skillSearchBox (input)="onSkillsSearchInput(skillSearchBox.value)"
+             class="dropdown-toggle form-control dark-input"
              [placeholder]="message('skillSearchPlaceholder')" data-toggle="dropdown" id="skillSelectInput"
              type="search">
       <div aria-labelledby="skillSelectInput" class="dropdown-menu dark-input">
         <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
            href="#">
-          {{skill.name}}
+          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-1"
+               src="assets/img/32px-template.png">{{skill.name}}
         </a>
       </div>
     </div>
 
     <div class="divider form-group" id="selectedSkills">
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
-        <div class="col-1">
-          <div [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite"></div>
-        </div>
-        <div class="col-8">
+        <div class="col-9">
+          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-1"
+               src="assets/img/32px-template.png">
           <label class="bump-down" for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
         <div class="col-2">
@@ -45,6 +46,19 @@
                    type="checkbox">
           </div>
         </ng-template>
+      </div>
+    </div>
+
+    <div class="dropdown w-95 mx-auto">
+      <input #tableSearchBox (input)="onTablesSearchInput(tableSearchBox.value)"
+             [placeholder]="message('tableSearchPlaceholder')"
+             class="dropdown-toggle form-control dark-input" data-toggle="dropdown" id="tableSelectInput"
+             type="search">
+      <div aria-labelledby="tableSelectInput" class="dropdown-menu dark-input">
+        <a (click)="onTableSelect(table)" *ngFor="let table of filteredTables" class="dropdown-item dark-input"
+           href="#">
+          {{table.name}}
+        </a>
       </div>
     </div>
 

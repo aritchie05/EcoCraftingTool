@@ -50,7 +50,7 @@ input::-webkit-calendar-picker-indicator {
 .skillSprite {
   background: url(../../assets/img/skill-icons-sprite.png) no-repeat;
   background-size: 256px;
-  display: flex;
+  display: inline;
   height: 32px;
   width: 32px;
 }

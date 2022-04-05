@@ -343,6 +343,51 @@ const messages: Message[] =
       ]
     },
     {
+      'id': 'tableSearchPlaceholder',
+      'localizedMessages': [
+        {
+          'text': 'Choose a crafting table...',
+          'lang': 'en'
+        },
+        {
+          'text': 'Choisissez une table de bricolage...',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Elige una mesa de trabajo...',
+          'lang': 'es'
+        },
+        {
+          'text': 'Wähle einen Basteltisch...',
+          'lang': 'de'
+        },
+        {
+          'text': 'Wybierz stół rzemieślniczy...',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Выберите верстак...',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Виберіть стіл для крафта...',
+          'lang': 'uk'
+        },
+        {
+          'text': '크래프팅 테이블을 선택하세요...',
+          'lang': 'ko'
+        },
+        {
+          'text': '选择工作台...',
+          'lang': 'zh'
+        },
+        {
+          'text': 'クラフトテーブルを選択してください...',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'ingredientsHeader',
       'localizedMessages': [
         {

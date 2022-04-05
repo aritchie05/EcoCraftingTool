@@ -212,6 +212,10 @@ export class OutputsComponent implements OnInit, AfterContentInit {
     document.getElementById('recipeSearchInput').blur();
   }
 
+  outputExists(itemNameID: string): boolean {
+    return this.outputRecipes.some(recipe => recipe.primaryOutput.item.nameID.localeCompare(itemNameID) === 0);
+  }
+
   localize(locale: Locale): void {
     this.locale = locale;
     this.outputRecipes.forEach(recipe => {

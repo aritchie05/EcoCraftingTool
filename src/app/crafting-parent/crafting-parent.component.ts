@@ -39,6 +39,16 @@ export class CraftingParentComponent implements OnInit {
     this.resourceCostMultiplier = 1;
   }
 
+  /**
+   * Utility method for matching two strings.
+   * @param str1 first string to match
+   * @param str2 second string to match
+   * @private
+   */
+  private static strMatch(str1: string, str2: string): boolean {
+    return str1.localeCompare(str2) === 0;
+  }
+
   ngOnInit() {
     let multiplier = this.storageService.get('resourceCostMultiplier');
     let expensiveEndgame = this.storageService.get('expensiveEndgameCost');
@@ -135,6 +145,35 @@ export class CraftingParentComponent implements OnInit {
     this.saveDataToLocalStorage();
   }
 
+  onTableAdded(table: CraftingTable) {
+    let recipes = this.dataService.getRecipesForTable(table, false);
+    recipes.forEach(recipe => {
+      let exists = this.outputsComponent.outputRecipes.some(outputRecipe => {
+        return outputRecipe.nameID.localeCompare(recipe.nameID) === 0;
+      });
+      if (!exists) {
+        this.outputsComponent.outputRecipes.push(recipe);
+        recipe.ingredients.forEach(ing => {
+          if (!this.ingredientsComponent.ingredientExists(ing.item.nameID) && !this.outputsComponent.outputExists(ing.item.nameID)) {
+            let item = this.dataService.getItems().find(itm => itm.nameID.localeCompare(ing.item.nameID) === 0);
+            item.price = 0;
+            this.ingredientsComponent.itemIngredients.push(item);
+          }
+        });
+
+        for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
+          let item = this.ingredientsComponent.itemIngredients[i];
+          if (CraftingParentComponent.strMatch(item.nameID, recipe.primaryOutput.item.nameID)) {
+            this.ingredientsComponent.itemIngredients.splice(i, 1);
+          }
+        }
+      }
+    });
+
+    this.ingredientsComponent.sortIngredients();
+    this.recalculateOutputPrices();
+    this.saveDataToLocalStorage();
+  }
 
   onSkillLevelChanged(skill: Skill): void {
     this.recalculateOutputPrices();
@@ -239,16 +278,6 @@ export class CraftingParentComponent implements OnInit {
     this.outputsComponent.convertRecipesToOutputDisplays();
 
     this.saveDataToLocalStorage();
-  }
-
-  /**
-   * Utility method for matching two strings.
-   * @param str1 first string to match
-   * @param str2 second string to match
-   * @private
-   */
-  private static strMatch(str1: string, str2: string): boolean {
-    return str1.localeCompare(str2) === 0;
   }
 
   onSubRecipeRemoved(recipe: Recipe): void {
@@ -388,6 +417,38 @@ export class CraftingParentComponent implements OnInit {
     this.dataService.localize(locale);
 
     this.saveDataToLocalStorage();
+  }
+
+  updateEndgameCost(isExpensive: boolean): void {
+    this.dataService.setExpensiveEndgameCost(isExpensive);
+
+    let outputRecipes = this.outputsComponent.outputRecipes;
+
+    for (let i = outputRecipes.length - 1; i >= 0; i--) {
+      let recipe = outputRecipes[i];
+      if (isExpensive) {
+        for (let j = 0; j < this.dataService.cheapRecipes.length; j++) {
+          let cheapRecipe = this.dataService.cheapRecipes[j];
+          //If we find a cheap recipe remove it, and add the corresponding expensive recipe to the outputs component with index j
+          if (CraftingParentComponent.strMatch(cheapRecipe.nameID, recipe.nameID)) {
+            this.outputsComponent.onRecipeSelect(this.dataService.expensiveRecipes[j]);
+            this.outputsComponent.onRemoveSubRecipe(cheapRecipe.nameID);
+          }
+        }
+      } else {
+        for (let j = 0; j < this.dataService.expensiveRecipes.length; j++) {
+          let expensiveRecipe = this.dataService.expensiveRecipes[j];
+          //If we find an expensive recipe remove it, and add the corresponding cheap recipe to the outputs component with index j
+          if (CraftingParentComponent.strMatch(expensiveRecipe.nameID, recipe.nameID)) {
+            this.outputsComponent.onRecipeSelect(this.dataService.cheapRecipes[j]);
+            this.outputsComponent.onRemoveSubRecipe(expensiveRecipe.nameID);
+          }
+        }
+      }
+
+    }
+
+    this.outputsComponent.refreshFilterList();
   }
 
   /**
@@ -582,38 +643,6 @@ export class CraftingParentComponent implements OnInit {
     this.storageService.set('recipes', outputsCookie);
   }
 
-  updateEndgameCost(isExpensive: boolean): void {
-    this.dataService.setExpensiveEndgameCost(isExpensive);
-
-    let outputRecipes = this.outputsComponent.outputRecipes;
-
-    for (let i = outputRecipes.length - 1; i >= 0; i--) {
-      let recipe = outputRecipes[i];
-      if (isExpensive) {
-        for (let j = 0; j < this.dataService.cheapRecipes.length; j++) {
-          let cheapRecipe = this.dataService.cheapRecipes[j];
-          //If we find a cheap recipe remove it, and add the corresponding expensive recipe to the outputs component with index j
-          if (CraftingParentComponent.strMatch(cheapRecipe.nameID, recipe.nameID)) {
-            this.outputsComponent.onRecipeSelect(this.dataService.expensiveRecipes[j]);
-            this.outputsComponent.onRemoveSubRecipe(cheapRecipe.nameID);
-          }
-        }
-      } else {
-        for (let j = 0; j < this.dataService.expensiveRecipes.length; j++) {
-          let expensiveRecipe = this.dataService.expensiveRecipes[j];
-          //If we find an expensive recipe remove it, and add the corresponding cheap recipe to the outputs component with index j
-          if (CraftingParentComponent.strMatch(expensiveRecipe.nameID, recipe.nameID)) {
-            this.outputsComponent.onRecipeSelect(this.dataService.cheapRecipes[j]);
-            this.outputsComponent.onRemoveSubRecipe(expensiveRecipe.nameID);
-          }
-        }
-      }
-
-    }
-
-    this.outputsComponent.refreshFilterList();
-  }
-
   /**
    * Removes recipes that are no longer relevant based on the crafting tables and skills in the skills component.
    * @private
@@ -643,4 +672,6 @@ export class CraftingParentComponent implements OnInit {
       }
     }
   }
+
+
 }

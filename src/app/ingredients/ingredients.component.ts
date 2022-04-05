@@ -105,6 +105,10 @@ export class IngredientsComponent implements OnInit {
     }
   }
 
+  ingredientExists(nameID: string): boolean {
+    return this.itemIngredients.some(ing => ing.nameID.localeCompare(nameID) === 0);
+  }
+
   sortIngredients() {
     this.itemIngredients.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
   }

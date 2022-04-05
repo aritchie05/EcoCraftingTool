@@ -43,7 +43,8 @@ export class CraftingDataService {
     this.tables = craftingTables.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
     this.upgrades = upgradeModules.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
 
-    CraftingDataService.setIngredientPricesAndPrimaryOutputs(this.recipes);
+    this.setIngredientPricesAndPrimaryOutputs();
+    this.setSkillLevelAndLavish();
 
     this.expensiveRecipes = this.recipes.filter(recipe =>
       this.expensiveRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
@@ -65,20 +66,25 @@ export class CraftingDataService {
     */
   }
 
-  private static setIngredientPricesAndPrimaryOutputs(recipes: Recipe[]) {
-    recipes.forEach(recipe => {
-      for (let i = 0; i < recipe.ingredients.length; i++) {
-        if (recipe.ingredients[i].price === undefined) {
-          recipe.ingredients[i].price = 0;
+  filterTableList(searchQuery: string) {
+    return this.getCraftingTables().filter(table => table.name.toUpperCase().includes(searchQuery.toUpperCase()));
+  }
+
+  getRecipesForTable(table: CraftingTable, includeLvl5Upgrades: boolean): Recipe[] {
+    let recipes = this.getRecipes().filter(rec => rec.craftingTable.nameID.localeCompare(table.nameID) === 0);
+
+    if (!includeLvl5Upgrades) {
+      recipes = recipes.filter(recipe => {
+        let shouldAdd = true;
+        let searchString = recipe.skill.nameID.replace('Skill', '');
+        if (recipe.primaryOutput.item.nameID.toUpperCase().includes(searchString.toUpperCase())) {
+          shouldAdd = false;
         }
-      }
-      for (let i = 0; i < recipe.outputs.length; i++) {
-        if (recipe.outputs[i].primary) {
-          recipe.primaryOutput = recipe.outputs[i];
-          break;
-        }
-      }
-    });
+        return shouldAdd;
+      });
+    }
+
+    return recipes;
   }
 
   getCraftingTables(): CraftingTable[] {
@@ -111,6 +117,18 @@ export class CraftingDataService {
 
   filterRecipeList(searchQuery: string) {
     return this.getRecipes().filter(recipe => recipe.name.toUpperCase().includes(searchQuery.toUpperCase()) && !recipe.hidden);
+  }
+
+  getSkillsForCraftingTable(table: CraftingTable): Skill[] {
+    let newRecipes = this.getRecipesForTable(table, false);
+    let skills: Skill[] = [];
+    newRecipes.forEach(recipe => {
+      if (!skills.some(skill => skill.nameID.localeCompare(recipe.skill.nameID) === 0)) {
+        skills.push(this.getSkills().find(skill => skill.nameID.localeCompare(recipe.skill.nameID) === 0));
+      }
+    });
+
+    return skills;
   }
 
   getRecipesForSkills(skills: Skill[], includeLvl5Upgrades: boolean): Array<Recipe> {
@@ -146,6 +164,22 @@ export class CraftingDataService {
   getUniqueItemIngredientsForSkills(skills: Skill[], includeLvl5Upgrades: boolean): Item[] {
     let recipes = this.getRecipesForSkills(skills, includeLvl5Upgrades);
     return this.getUniqueItemIngredientsForRecipes(recipes);
+  }
+
+  private setIngredientPricesAndPrimaryOutputs() {
+    this.recipes.forEach(recipe => {
+      for (let i = 0; i < recipe.ingredients.length; i++) {
+        if (recipe.ingredients[i].price === undefined) {
+          recipe.ingredients[i].price = 0;
+        }
+      }
+      for (let i = 0; i < recipe.outputs.length; i++) {
+        if (recipe.outputs[i].primary) {
+          recipe.primaryOutput = recipe.outputs[i];
+          break;
+        }
+      }
+    });
   }
 
   getUniqueItemIngredientsForRecipes(recipes: Recipe[]): Item[] {
@@ -197,6 +231,13 @@ export class CraftingDataService {
     });
   }
 
+  private setSkillLevelAndLavish() {
+    this.skills.forEach(skill => {
+      skill.level = 1;
+      skill.lavishChecked = false;
+    });
+  }
+
   getUpgradeModulesForTable(craftingTable: CraftingTable): UpgradeModule[] {
     return this.getUpgradeModules().filter(upgrade => {
       return upgrade.typeNameID.localeCompare(craftingTable.upgradeModuleType) === 0;
@@ -232,5 +273,4 @@ export class CraftingDataService {
       return searchItem.nameID.localeCompare(item.nameID) === 0;
     });
   }
-
 }
