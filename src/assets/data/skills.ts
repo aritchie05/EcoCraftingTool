@@ -8,7 +8,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 2,
+      'yPos': 0
     },
     {
       'name': 'Advanced Cooking',
@@ -16,7 +19,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 3,
+      'yPos': 0
     },
     {
       'name': 'Advanced Masonry',
@@ -24,7 +30,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 2
     },
     {
       'name': 'Advanced Smelting',
@@ -32,7 +41,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 2,
+      'yPos': 2
     },
     {
       'name': 'Baking',
@@ -40,7 +52,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 6,
+      'yPos': 2
     },
     {
       'name': 'Basic Engineering',
@@ -48,7 +63,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 6,
+      'yPos': 0
     },
     {
       'name': 'Butchery',
@@ -56,7 +74,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 7,
+      'yPos': 2
     },
     {
       'name': 'Campfire Cooking',
@@ -64,7 +85,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 4,
+      'yPos': 0
     },
     {
       'name': 'Carpentry',
@@ -72,7 +96,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 0,
+      'yPos': 4
     },
     {
       'name': 'Composites',
@@ -80,7 +107,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 0,
+      'yPos': 0
     },
     {
       'name': 'Cooking',
@@ -88,7 +118,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 0,
+      'yPos': 3
     },
     {
       'name': 'Cutting Edge Cooking',
@@ -96,7 +129,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 5,
+      'yPos': 0
     },
     {
       'name': 'Electronics',
@@ -104,7 +140,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 3
     },
     {
       'name': 'Farming',
@@ -112,7 +151,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 2,
+      'yPos': 3
     },
     {
       'name': 'Fertilizers',
@@ -120,7 +162,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 5,
+      'yPos': 1
     },
     {
       'name': 'Gathering',
@@ -128,7 +173,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': false
+      'lavishWorkspace': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 3,
+      'yPos': 1
     },
     {
       'name': 'Glassworking',
@@ -136,7 +184,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 6,
+      'yPos': 1
     },
     {
       'name': 'Hunting',
@@ -144,7 +195,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': false
+      'lavishWorkspace': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 3,
+      'yPos': 3
     },
     {
       'name': 'Industry',
@@ -152,7 +206,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 7,
+      'yPos': 0
     },
     {
       'name': 'Logging',
@@ -160,7 +217,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': false
+      'lavishWorkspace': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 4,
+      'yPos': 3
     },
     {
       'name': 'Masonry',
@@ -168,7 +228,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 0,
+      'yPos': 2
     },
     {
       'name': 'Mechanics',
@@ -176,7 +239,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 0,
+      'yPos': 1
     },
     {
       'name': 'Milling',
@@ -184,7 +250,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 4,
+      'yPos': 1
     },
     {
       'name': 'Mining',
@@ -192,7 +261,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': true,
       'modernUpgrade': true,
-      'lavishWorkspace': false
+      'lavishWorkspace': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 5,
+      'yPos': 3
     },
     {
       'name': 'Oil Drilling',
@@ -200,7 +272,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 1
     },
     {
       'name': 'Paper Milling',
@@ -208,7 +283,10 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 0
     },
     {
       'name': 'Pottery',
@@ -216,7 +294,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 7,
+      'yPos': 1
     },
     {
       'name': 'Smelting',
@@ -224,7 +305,10 @@ export var skills: Skill[] =
       'basicUpgrade': false,
       'advancedUpgrade': true,
       'modernUpgrade': false,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 6,
+      'yPos': 3
     },
     {
       'name': 'Tailoring',
@@ -232,6 +316,9 @@ export var skills: Skill[] =
       'basicUpgrade': true,
       'advancedUpgrade': false,
       'modernUpgrade': true,
-      'lavishWorkspace': true
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 4,
+      'yPos': 2
     }
   ];

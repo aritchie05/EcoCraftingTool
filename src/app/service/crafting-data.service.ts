@@ -43,7 +43,7 @@ export class CraftingDataService {
     this.tables = craftingTables.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
     this.upgrades = upgradeModules.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
 
-    CraftingDataService.setPrimaryOutputs(this.recipes);
+    CraftingDataService.setIngredientPricesAndPrimaryOutputs(this.recipes);
 
     this.expensiveRecipes = this.recipes.filter(recipe =>
       this.expensiveRecipeNameIDs.some(recipeNameID => recipeNameID.localeCompare(recipe.nameID) === 0))
@@ -65,8 +65,13 @@ export class CraftingDataService {
     */
   }
 
-  private static setPrimaryOutputs(recipes: Recipe[]) {
+  private static setIngredientPricesAndPrimaryOutputs(recipes: Recipe[]) {
     recipes.forEach(recipe => {
+      for (let i = 0; i < recipe.ingredients.length; i++) {
+        if (recipe.ingredients[i].price === undefined) {
+          recipe.ingredients[i].price = 0;
+        }
+      }
       for (let i = 0; i < recipe.outputs.length; i++) {
         if (recipe.outputs[i].primary) {
           recipe.primaryOutput = recipe.outputs[i];
@@ -138,17 +143,21 @@ export class CraftingDataService {
     return recipes;
   }
 
-  getUniqueItemIngredientsForSkills(skills: Skill[], includeLvl5Upgrades: boolean): Array<Item> {
-    let itemIngredients = new Array<Item>();
-
-    //Get recipes for the selected skills
+  getUniqueItemIngredientsForSkills(skills: Skill[], includeLvl5Upgrades: boolean): Item[] {
     let recipes = this.getRecipesForSkills(skills, includeLvl5Upgrades);
+    return this.getUniqueItemIngredientsForRecipes(recipes);
+  }
+
+  getUniqueItemIngredientsForRecipes(recipes: Recipe[]): Item[] {
+    let itemIngredients: Item[] = [];
 
     //Add all item ingredients to the set
     recipes.forEach(recipe => {
       recipe.ingredients.forEach(ingredient => {
         if (!this.arrayContains(itemIngredients, ingredient.item)) {
-          ingredient.item.price = 0;
+          if (ingredient.item.price === undefined) {
+            ingredient.item.price = 0;
+          }
           itemIngredients.push(ingredient.item);
         }
       });

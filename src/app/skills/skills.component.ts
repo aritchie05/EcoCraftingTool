@@ -10,6 +10,8 @@ import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
+export const SKILL_SPRITE_SIZE = 32;
+
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -162,6 +164,14 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   onUpdateLavish(skill: Skill, value: boolean): void {
     skill.lavishChecked = value;
     this.lavishUpdatedEvent.emit(skill);
+  }
+
+  /**
+   * Gets the sprite position of the skill icon image based on the skill provided
+   * @param skill the skill to use the xPos and yPos
+   */
+  getSpritePosition(skill: Skill): string {
+    return `-${skill.xPos * SKILL_SPRITE_SIZE}px -${skill.yPos * SKILL_SPRITE_SIZE}px`;
   }
 
   localize(locale: Locale): void {

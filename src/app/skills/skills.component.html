@@ -17,7 +17,10 @@
 
     <div class="divider form-group" id="selectedSkills">
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
-        <div class="col-9">
+        <div class="col-1">
+          <div [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite"></div>
+        </div>
+        <div class="col-8">
           <label class="bump-down" for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
         <div class="col-2">

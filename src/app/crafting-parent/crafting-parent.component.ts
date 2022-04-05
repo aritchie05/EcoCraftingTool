@@ -53,13 +53,14 @@ export class CraftingParentComponent implements OnInit {
   }
 
   onSkillAdded(skill: Skill) {
-    let itemIngredients = this.dataService.getUniqueItemIngredientsForSkills(this.skillsComponent.selectedSkills, false);
+    let newItemIngredients = this.dataService.getUniqueItemIngredientsForSkills([skill], false)
+      .concat(this.ingredientsComponent.itemIngredients);
 
     //Remove any item ingredients that are no longer relevant
     for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
       let item = this.ingredientsComponent.itemIngredients[i];
       let relevant = false;
-      itemIngredients.forEach(newItem => {
+      newItemIngredients.forEach(newItem => {
         if (item.nameID.localeCompare(newItem.nameID) === 0) {
           relevant = true;
         }
@@ -70,7 +71,7 @@ export class CraftingParentComponent implements OnInit {
     }
 
     //Add all the new item ingredients associated with the skill
-    itemIngredients.forEach(item => {
+    newItemIngredients.forEach(item => {
 
       let exists = false;
       this.ingredientsComponent.itemIngredients.forEach(ingredient => {
@@ -174,14 +175,16 @@ export class CraftingParentComponent implements OnInit {
     }
 
     //Add new item ingredients that may have been covered by recipes from the removed skill
-    let newIngredients = this.dataService.getUniqueItemIngredientsForSkills(this.skillsComponent.selectedSkills, false);
+    let newIngredients = this.dataService.getUniqueItemIngredientsForRecipes(this.outputsComponent.outputRecipes);
 
     //Filter array to only ingredients that are not already present
-    newIngredients = newIngredients.filter(ingredient => {
-      this.ingredientsComponent.itemIngredients.some(existingIngredient => {
-        return existingIngredient.nameID.localeCompare(ingredient.nameID) === 0;
-      });
-    });
+    for (let i = newIngredients.length - 1; i >= 0; i--) {
+      let ingredient = newIngredients[i];
+      if (this.ingredientsComponent.itemIngredients.some(item => item.nameID.localeCompare(ingredient.nameID) === 0)) {
+        console.log(`Splicing ${ingredient.name} from newIngredients as it already exists in the ingredients component`);
+        newIngredients.splice(i, 1);
+      }
+    }
 
     //Remove any crafting tables that are no longer needed
     for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
@@ -364,6 +367,15 @@ export class CraftingParentComponent implements OnInit {
       if (!this.outputsComponent.outputRecipes.some(recipe => CraftingParentComponent.strMatch(recipe.skill.nameID, skill.nameID))) {
         this.skillsComponent.selectedSkills.splice(i, 1);
       }
+    }
+
+    let item = recipes[0].primaryOutput.item;
+
+    //Add new item ingredient that was removed if it is necessary
+    let reqIngredients = this.dataService.getUniqueItemIngredientsForRecipes(this.outputsComponent.outputRecipes);
+    if (reqIngredients.some(ing => CraftingParentComponent.strMatch(ing.nameID, item.nameID))) {
+      this.ingredientsComponent.itemIngredients.push(item);
+      this.ingredientsComponent.sortIngredients();
     }
 
     this.saveDataToLocalStorage();
