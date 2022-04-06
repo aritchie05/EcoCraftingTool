@@ -87,6 +87,11 @@ export class CraftingDataService {
     return recipes;
   }
 
+  getRecipesForTableAndSkills(table: CraftingTable, skills: Skill[]): Recipe[] {
+    let recipes = this.getRecipesForTable(table, false);
+    return recipes.filter(recipe => skills.some(skill => skill.nameID.localeCompare(recipe.skill.nameID) === 0));
+  }
+
   getCraftingTables(): CraftingTable[] {
     return this.tables;
   }

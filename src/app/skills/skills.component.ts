@@ -160,11 +160,12 @@ export class SkillsComponent implements OnInit, AfterContentInit {
       table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
       table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
       let newSkills = this.dataService.getSkillsForCraftingTable(table);
-      newSkills.forEach(newSkill => {
-        if (!this.selectedSkills.some(skill => skill.nameID.localeCompare(newSkill.nameID) === 0)) {
-          this.selectedSkills.push(newSkill);
-        }
-      });
+
+      //Check if any of the table recipes use one of the currently selected skills
+      if (!newSkills.some(skill => this.selectedSkills.some(sk => sk.nameID.localeCompare(skill.nameID) === 0))) {
+        //If not, add all skills
+        this.selectedSkills.push(...newSkills);
+      }
       this.craftingTables.push(table);
       this.tableAddedEvent.emit(table);
     }

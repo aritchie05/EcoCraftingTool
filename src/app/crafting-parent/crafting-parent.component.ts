@@ -146,7 +146,7 @@ export class CraftingParentComponent implements OnInit {
   }
 
   onTableAdded(table: CraftingTable) {
-    let recipes = this.dataService.getRecipesForTable(table, false);
+    let recipes = this.dataService.getRecipesForTableAndSkills(table, this.skillsComponent.selectedSkills);
     recipes.forEach(recipe => {
       let exists = this.outputsComponent.outputRecipes.some(outputRecipe => {
         return outputRecipe.nameID.localeCompare(recipe.nameID) === 0;
