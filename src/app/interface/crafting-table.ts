@@ -7,5 +7,8 @@ export class CraftingTable {
   hidden: boolean;
   selectedUpgrade?: UpgradeModule;
   availableUpgrades?: UpgradeModule[];
+  imageFile?: string;
+  xPos?: number;
+  yPos?: number;
 }
 

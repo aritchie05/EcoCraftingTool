@@ -11,6 +11,7 @@ import {TableCookie} from '../cookie/table-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 export const SKILL_SPRITE_SIZE = 32;
+export const TABLE_SPRITE_SIZE = 32;
 
 @Component({
   selector: 'app-skills',
@@ -195,6 +196,10 @@ export class SkillsComponent implements OnInit, AfterContentInit {
    */
   getSpritePosition(skill: Skill): string {
     return `-${skill.xPos * SKILL_SPRITE_SIZE}px -${skill.yPos * SKILL_SPRITE_SIZE}px`;
+  }
+
+  getTableSpritePosition(table: CraftingTable): string {
+    return `-${table.xPos * TABLE_SPRITE_SIZE}px -${table.yPos * TABLE_SPRITE_SIZE}px`;
   }
 
   localize(locale: Locale): void {

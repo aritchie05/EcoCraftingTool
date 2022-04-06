@@ -11,7 +11,7 @@
       <div aria-labelledby="skillSelectInput" class="dropdown-menu dark-input">
         <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
            href="#">
-          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-1"
+          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-2"
                src="assets/img/32px-template.png">{{skill.name}}
         </a>
       </div>
@@ -20,7 +20,7 @@
     <div class="divider form-group" id="selectedSkills">
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
         <div class="col-9">
-          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-1"
+          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-2"
                src="assets/img/32px-template.png">
           <label class="bump-down" for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
@@ -57,7 +57,12 @@
       <div aria-labelledby="tableSelectInput" class="dropdown-menu dark-input">
         <a (click)="onTableSelect(table)" *ngFor="let table of filteredTables" class="dropdown-item dark-input"
            href="#">
-          {{table.name}}
+          <img [alt]="table.name"
+               [ngStyle]="{'background': 'url(../../assets/img/' + table.imageFile + ') no-repeat',
+                'background-position': getTableSpritePosition(table),
+                'background-size': '512px'}"
+               class="tableSprite mr-2"
+               src="assets/img/32px-template.png">{{table.name}}
         </a>
       </div>
     </div>
@@ -67,6 +72,12 @@
         <div *ngIf="table.availableUpgrades !== undefined && table.availableUpgrades.length > 0"
              class="row upgradeRow mx-auto form-group">
           <div class="col">
+            <img [alt]="table.name"
+                 [ngStyle]="{'background': 'url(../../assets/img/' + table.imageFile + ') no-repeat',
+                'background-position': getTableSpritePosition(table),
+                'background-size': '512px'}"
+                 class="tableSprite mr-2"
+                 src="assets/img/32px-template.png">
             <label class="bump-down" for="{{table.nameID}}-upgradeButton">{{table.name}}</label>
           </div>
           <div class="col dropdown">
