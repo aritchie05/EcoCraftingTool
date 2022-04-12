@@ -5,6 +5,7 @@
     <div id="ingredients">
       <div class="row mx-auto form-group">
         <div class="col">
+          <img [alt]="message('calorieCostLabel')" class="calorieSprite mr-2" src="assets/img/32px-template.png">
           <label for="laborInput">
             <strong>{{message('calorieCostLabel')}}</strong>
           </label>
@@ -18,6 +19,7 @@
       </div>
       <div class="row laborRow divider mx-auto form-group">
         <div class="col">
+          <img [alt]="message('profitPercentLabel')" class="profitSprite mr-2" src="assets/img/32px-template.png">
           <label for="profitInput">
             <strong>{{message('profitPercentLabel')}}</strong>
           </label>
@@ -31,6 +33,10 @@
       </div>
       <div *ngFor="let ingredient of itemIngredients" class="row ingredientRow mx-auto form-group">
         <div class="col">
+          <img [alt]=ingredient.name [ngStyle]="{'background': 'url(../../assets/img/' + ingredient.imageFile + ') no-repeat',
+                'background-position': getItemSpritePosition(ingredient),
+                'background-size': '512px'}"
+               class="itemSprite mr-2" src="assets/img/32px-template.png">
           <label *ngIf="ingredient.tag; else nonTagName" for="{{ingredient.nameID}}-priceInput">
             {{ingredient.name}}*
           </label>

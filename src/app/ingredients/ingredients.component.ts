@@ -7,6 +7,8 @@ import {CookieService} from 'ngx-cookie-service';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
+export const ITEM_SPRITE_SIZE = 32;
+
 @Component({
   selector: 'app-ingredients',
   templateUrl: './ingredients.component.html',
@@ -111,6 +113,10 @@ export class IngredientsComponent implements OnInit {
 
   sortIngredients() {
     this.itemIngredients.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+  }
+
+  getItemSpritePosition(item: Item): string {
+    return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
   }
 
   localize(locale: Locale) {

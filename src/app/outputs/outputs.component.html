@@ -20,6 +20,10 @@
       <div *ngFor="let outputDisplay of outputDisplays">
         <div class="row recipeRow mx-auto form-group">
           <div class="col-8">
+            <img [alt]=outputDisplay.itemName [ngStyle]="{'background': 'url(../../assets/img/' + outputDisplay.imageFile + ') no-repeat',
+                'background-position': getOutputDisplaySpritePosition(outputDisplay),
+                'background-size': '512px'}"
+                 class="outputSprite mr-2" src="assets/img/32px-template.png">
             <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
               <strong>{{outputDisplay.itemName}}</strong>
             </label>
@@ -27,7 +31,8 @@
           <div class="col-3">
             <input [value]="outputDisplay.itemPrice
             .toLocaleString(locale.code,{ maximumFractionDigits: 2, minimumFractionDigits: 0})"
-                   class="priceDisplay form-control dark-input" id="{{outputDisplay.itemNameID}}-itemPriceDisplay"
+                   class="priceDisplay form-control dark-input read-only"
+                   id="{{outputDisplay.itemNameID}}-itemPriceDisplay"
                    readonly type="text">
           </div>
           <div class="col-1">
@@ -38,14 +43,15 @@
         <ng-template [ngIf]="outputDisplay.subRecipes.length > 1">
           <div *ngFor="let subRecipe of outputDisplay.subRecipes" class="row recipeRow mx-auto form-group">
             <div class="col-8">
-              <label class="pl-3" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
+              <label class="pl-5" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
                 {{subRecipe.recipeName}} {{message('recipeSuffix')}}
               </label>
             </div>
             <div class="col-3">
               <input [value]="subRecipe.recipePrice
                   .toLocaleString(locale.code,{ maximumFractionDigits: 2, minimumFractionDigits: 0})"
-                     class="priceDisplay form-control dark-input" id="{{subRecipe.recipeNameID}}-itemPriceDisplay"
+                     class="priceDisplay form-control dark-input read-only"
+                     id="{{subRecipe.recipeNameID}}-itemPriceDisplay"
                      readonly type="text">
             </div>
             <div class="col-1">

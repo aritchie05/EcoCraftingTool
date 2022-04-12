@@ -16,7 +16,7 @@
 }
 
 .settings-button {
-  font-size: 24px;
+  font-size: 24px !important;
   border: none;
 }
 

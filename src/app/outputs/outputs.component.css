@@ -27,3 +27,9 @@
   text-decoration: none;
   background-color: #007bff;
 }
+
+.outputSprite {
+  display: inline;
+  height: 32px;
+  width: 32px;
+}

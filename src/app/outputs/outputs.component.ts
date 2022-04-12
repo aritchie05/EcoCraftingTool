@@ -7,6 +7,8 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
+export const ITEM_SPRITE_SIZE = 32;
+
 @Component({
   selector: 'app-outputs',
   templateUrl: './outputs.component.html',
@@ -117,7 +119,10 @@ export class OutputsComponent implements OnInit, AfterContentInit {
               recipeNameID: recipe.nameID,
               recipeName: recipe.name,
               recipePrice: recipe.price
-            }]
+            }],
+            imageFile: recipe.primaryOutput.item.imageFile,
+            xPos: recipe.primaryOutput.item.xPos,
+            yPos: recipe.primaryOutput.item.yPos
           });
         }
       }
@@ -214,6 +219,10 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   outputExists(itemNameID: string): boolean {
     return this.outputRecipes.some(recipe => recipe.primaryOutput.item.nameID.localeCompare(itemNameID) === 0);
+  }
+
+  getOutputDisplaySpritePosition(outputDisplay: OutputDisplay): string {
+    return `-${outputDisplay.xPos * ITEM_SPRITE_SIZE}px -${outputDisplay.yPos * ITEM_SPRITE_SIZE}px`;
   }
 
   localize(locale: Locale): void {

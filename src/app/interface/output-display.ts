@@ -11,4 +11,8 @@ export class OutputDisplay {
   //Price PER OUTPUT ITEM
   itemPrice: number;
   subRecipes: SubRecipe[];
+
+  imageFile?: string;
+  xPos?: number;
+  yPos?: number;
 }

@@ -149,7 +149,7 @@ export class CraftingDataService {
           let shouldAdd = true;
           recipe.outputs.forEach(output => {
             let searchString = recipe.skill.nameID.replace('Skill', '');
-            if (output.item.nameID.toUpperCase().includes(searchString.toUpperCase())) {
+            if (output.item.nameID.toUpperCase().includes(searchString.toUpperCase()) && output.item.nameID.includes('Upgrade')) {
               shouldAdd = false;
             }
           });

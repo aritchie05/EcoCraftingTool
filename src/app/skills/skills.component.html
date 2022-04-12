@@ -52,9 +52,10 @@
     <div class="dropdown w-95 mx-auto">
       <input #tableSearchBox (input)="onTablesSearchInput(tableSearchBox.value)"
              [placeholder]="message('tableSearchPlaceholder')"
-             class="dropdown-toggle form-control dark-input" data-toggle="dropdown" id="tableSelectInput"
+             class="dropdown-toggle form-control dark-input" data-display="static" data-toggle="dropdown"
+             id="tableSelectInput"
              type="search">
-      <div aria-labelledby="tableSelectInput" class="dropdown-menu dark-input">
+      <div aria-labelledby="tableSelectInput" class="dropdown-menu dark-input dropdown-menu-right">
         <a (click)="onTableSelect(table)" *ngFor="let table of filteredTables" class="dropdown-item dark-input"
            href="#">
           <img [alt]="table.name"
@@ -71,7 +72,7 @@
       <div *ngFor="let table of craftingTables">
         <div *ngIf="table.availableUpgrades !== undefined && table.availableUpgrades.length > 0"
              class="row upgradeRow mx-auto form-group">
-          <div class="col">
+          <div class="col-8">
             <img [alt]="table.name"
                  [ngStyle]="{'background': 'url(../../assets/img/' + table.imageFile + ') no-repeat',
                 'background-position': getTableSpritePosition(table),
@@ -80,7 +81,7 @@
                  src="assets/img/32px-template.png">
             <label class="bump-down" for="{{table.nameID}}-upgradeButton">{{table.name}}</label>
           </div>
-          <div class="col dropdown">
+          <div class="col-3 dropdown">
             <button aria-expanded="false" aria-haspopup="true"
                     class="btn dark-input dropdown-toggle float-right"
                     data-toggle="dropdown" id="{{table.nameID}}-upgradeButton" type="button">

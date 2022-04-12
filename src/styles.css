@@ -71,3 +71,19 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 80%;
   text-decoration: none;
 }
+
+body {
+  font-size: .9rem !important;
+}
+
+.btn {
+  font-size: .9rem !important;
+}
+
+.dropdown-menu {
+  font-size: .9rem !important;
+}
+
+.read-only {
+  cursor: not-allowed;
+}
