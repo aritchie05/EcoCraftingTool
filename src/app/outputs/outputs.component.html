@@ -43,7 +43,7 @@
         <ng-template [ngIf]="outputDisplay.subRecipes.length > 1">
           <div *ngFor="let subRecipe of outputDisplay.subRecipes" class="row recipeRow mx-auto form-group">
             <div class="col-8">
-              <label class="pl-5" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
+              <label class="pl-6" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
                 {{subRecipe.recipeName}} {{message('recipeSuffix')}}
               </label>
             </div>
