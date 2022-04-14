@@ -1315,7 +1315,10 @@ export let items: Item[] =
     {
       'name': 'C O2 Canister',
       'nameID': 'CO2CanisterItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 14,
+      'yPos': 13
     },
     {
       'name': 'Camas Ash Fertilizer',
@@ -2356,7 +2359,10 @@ export let items: Item[] =
     {
       'name': 'Corn Starch',
       'nameID': 'CornStarchItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 6,
+      'yPos': 12
     },
     {
       'name': 'Cornmeal',
@@ -2933,6 +2939,14 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_00.png',
       'xPos': 10,
       'yPos': 6
+    },
+    {
+      'name': 'Ethanol',
+      'nameID': 'EthanolItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 11
     },
     {
       'name': 'Excavator',
@@ -3820,7 +3834,10 @@ export let items: Item[] =
     {
       'name': 'Hydrocolloids',
       'nameID': 'HydrocolloidsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 13,
+      'yPos': 56
     },
     {
       'name': 'Icebox',
@@ -4552,7 +4569,10 @@ export let items: Item[] =
     {
       'name': 'Liquid Nitrogen',
       'nameID': 'LiquidNitrogenItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 19,
+      'yPos': 56
     },
     {
       'name': 'Loaded Taro Fries',
@@ -4692,7 +4712,10 @@ export let items: Item[] =
     {
       'name': 'Maltodextrin',
       'nameID': 'MaltodextrinItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 22,
+      'yPos': 56
     },
     {
       'name': 'Masonry Advanced Upgrade',
@@ -7449,7 +7472,10 @@ export let items: Item[] =
     {
       'name': 'Transglutaminase',
       'nameID': 'TransglutaminaseItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 55,
+      'yPos': 56
     },
     {
       'name': 'Transmission Pole',

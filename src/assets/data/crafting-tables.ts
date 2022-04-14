@@ -254,7 +254,7 @@ export let craftingTables: CraftingTable[] =
       'xPos': 15,
       'yPos': 9
     },
-    /*{
+    {
       'name': 'Laboratory',
       'nameID': 'LaboratoryObject',
       'upgradeModuleType': 'ModernUpgrade',
@@ -262,7 +262,7 @@ export let craftingTables: CraftingTable[] =
       'imageFile': 'UI_Icons_00.png',
       'xPos': 5,
       'yPos': 10
-    },*/
+    },
     {
       'name': 'Lathe',
       'nameID': 'LatheObject',

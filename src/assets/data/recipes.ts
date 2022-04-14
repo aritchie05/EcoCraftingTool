@@ -3198,7 +3198,7 @@ export let recipes: Recipe[] =
         }
       ]
     },
-    /*{
+    {
       'name': 'C O2 Canister',
       'nameID': 'CO2Canister',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
@@ -3221,7 +3221,7 @@ export let recipes: Recipe[] =
           'primary': true
         }
       ]
-    },*/
+    },
     {
       'name': 'Camas Ash Fertilizer',
       'nameID': 'CamasAshFertilizer',
@@ -5342,7 +5342,7 @@ export let recipes: Recipe[] =
         }
       ]
     },
-    /*{
+    {
       'name': 'Corn Starch',
       'nameID': 'CornStarch',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
@@ -5365,7 +5365,7 @@ export let recipes: Recipe[] =
           'primary': true
         }
       ]
-    },*/
+    },
     {
       'name': 'Cornmeal',
       'nameID': 'Cornmeal',
@@ -6631,7 +6631,7 @@ export let recipes: Recipe[] =
         }
       ]
     },
-    /*{
+    {
       'name': 'Cutting Edge Cooking Upgrade',
       'nameID': 'CuttingEdgeCookingUpgrade',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
@@ -6654,7 +6654,7 @@ export let recipes: Recipe[] =
           'primary': true
         }
       ]
-    },*/
+    },
     {
       'name': 'Dendrology Research Paper Advanced',
       'nameID': 'DendrologyResearchPaperAdvanced',
@@ -9747,7 +9747,7 @@ export let recipes: Recipe[] =
         }
       ]
     },
-    /*{
+    {
       'name': 'Hydrocolloids',
       'nameID': 'Hydrocolloids',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
@@ -9842,7 +9842,7 @@ export let recipes: Recipe[] =
           'primary': true
         }
       ]
-    },*/
+    },
     {
       'name': 'Icebox',
       'nameID': 'Icebox',
@@ -11563,7 +11563,7 @@ export let recipes: Recipe[] =
         }
       ]
     },
-    /*{
+    {
       'name': 'Liquid Nitrogen',
       'nameID': 'LiquidNitrogen',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
@@ -11586,7 +11586,7 @@ export let recipes: Recipe[] =
           'primary': true
         }
       ]
-    },*/
+    },
     {
       'name': 'Loaded Taro Fries',
       'nameID': 'LoadedTaroFriesRecipe',
@@ -11969,7 +11969,7 @@ export let recipes: Recipe[] =
         }
       ]
     },
-    /*{
+    {
       'name': 'Maltodextrin',
       'nameID': 'Maltodextrin',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
@@ -11992,7 +11992,7 @@ export let recipes: Recipe[] =
           'primary': true
         }
       ]
-    },*/
+    },
     {
       'name': 'Masonry Advanced Upgrade',
       'nameID': 'MasonryAdvancedUpgrade',
@@ -18352,7 +18352,7 @@ export let recipes: Recipe[] =
         }
       ]
     },
-    /*{
+    {
       'name': 'Transglutaminase',
       'nameID': 'Transglutaminase',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
@@ -18375,7 +18375,7 @@ export let recipes: Recipe[] =
           'primary': true
         }
       ]
-    },*/
+    },
     {
       'name': 'Transmission Pole',
       'nameID': 'TransmissionPole',

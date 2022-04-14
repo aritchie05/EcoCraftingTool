@@ -123,7 +123,7 @@ export var skills: Skill[] =
       'xPos': 0,
       'yPos': 3
     },
-    /*{
+    {
       'name': 'Cutting Edge Cooking',
       'nameID': 'CuttingEdgeCookingSkill',
       'basicUpgrade': false,
@@ -133,7 +133,7 @@ export var skills: Skill[] =
       'imageFile': 'skill-icons-sprite.png',
       'xPos': 5,
       'yPos': 0
-    },*/
+    },
     {
       'name': 'Electronics',
       'nameID': 'ElectronicsSkill',
