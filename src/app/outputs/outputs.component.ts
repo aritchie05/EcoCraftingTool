@@ -36,13 +36,11 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   ngOnInit(): void {
     let outputsCookie = this.storageService.get('recipes');
-    console.log(`Outputs cookie: ${outputsCookie}`);
     if (outputsCookie != null) {
       outputsCookie.forEach(cookie => {
         let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
         recipe.price = Number.parseFloat(cookie.pr);
         if (cookie.hasOwnProperty('bp')) {
-          console.log(`Recipe ${cookie.id} has bp of ${cookie.bp}`);
           recipe.basePrice = Number.parseFloat(cookie.bp);
         } else {
           let profitStored = this.storageService.get('profitPercent');

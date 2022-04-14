@@ -4010,7 +4010,8 @@ export let items: Item[] =
       'tag': false,
       'imageFile': 'UI_Icons_01.png',
       'xPos': 11,
-      'yPos': 7
+      'yPos': 7,
+      'filter': 'brightness(0.5)'
     },
     {
       'name': 'Jaguar Carcass',

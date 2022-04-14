@@ -220,7 +220,6 @@ export class CraftingParentComponent implements OnInit {
     for (let i = newIngredients.length - 1; i >= 0; i--) {
       let ingredient = newIngredients[i];
       if (this.ingredientsComponent.itemIngredients.some(item => item.nameID.localeCompare(ingredient.nameID) === 0)) {
-        console.log(`Splicing ${ingredient.name} from newIngredients as it already exists in the ingredients component`);
         newIngredients.splice(i, 1);
       }
     }
