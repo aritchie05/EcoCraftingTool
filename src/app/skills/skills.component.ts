@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Skill} from '../interface/skill';
 import {CraftingTable} from '../interface/crafting-table';
@@ -8,6 +8,10 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+
+export const SKILL_SPRITE_SIZE = 32;
+export const TABLE_SPRITE_SIZE = 32;
 
 @Component({
   selector: 'app-skills',
@@ -18,6 +22,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   filteredSkills: Skill[];
   selectedSkills: Skill[];
+  filteredTables: CraftingTable[];
   craftingTables: CraftingTable[];
   locale: Locale;
 
@@ -25,18 +30,28 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   @Output() skillLevelChangedEvent = new EventEmitter<Skill>();
   @Output() skillRemovedEvent = new EventEmitter<Skill>();
   @Output() upgradeChangedEvent = new EventEmitter<CraftingTable>();
+  @Output() tableAddedEvent = new EventEmitter<CraftingTable>();
   @Output() tableRemovedEvent = new EventEmitter<CraftingTable>();
   @Output() lavishUpdatedEvent = new EventEmitter<Skill>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService) {
+              private messageService: MessageService, private cookieService: CookieService,
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.selectedSkills = [];
     this.craftingTables = [];
     this.locale = localeService.selectedLocale;
   }
 
   ngOnInit(): void {
-    if (this.cookieService.check('skills')) {
+    let skills = this.storageService.get('skills');
+    if (skills != null) {
+      skills.forEach(sk => {
+        let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(sk.id) === 0);
+        skill.level = sk.lvl;
+        skill.lavishChecked = sk.lav;
+        this.selectedSkills.push(skill);
+      });
+    } else if (this.cookieService.check('skills')) {
       let skillCookies: SkillCookie[] = JSON.parse(atob(this.cookieService.get('skills')));
       skillCookies.forEach(cookie => {
         let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(cookie.id) === 0);
@@ -44,8 +59,20 @@ export class SkillsComponent implements OnInit, AfterContentInit {
         skill.lavishChecked = cookie.lav;
         this.selectedSkills.push(skill);
       });
+
+      this.cookieService.delete('skills');
+      this.storageService.set('skills', skillCookies);
     }
-    if (this.cookieService.check('tables')) {
+
+    let tables = this.storageService.get('tables');
+    if (tables != null) {
+      tables.forEach(tb => {
+        let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(tb.id) === 0);
+        table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+        table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(tb.up) === 0);
+        this.craftingTables.push(table);
+      });
+    } else if (this.cookieService.check('tables')) {
       let tableCookies: TableCookie[] = JSON.parse(atob(this.cookieService.get('tables')));
       tableCookies.forEach(cookie => {
         let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(cookie.id) === 0);
@@ -53,11 +80,15 @@ export class SkillsComponent implements OnInit, AfterContentInit {
         table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(cookie.up) === 0);
         this.craftingTables.push(table);
       });
+
+      this.cookieService.delete('tables');
+      this.storageService.set('tables', tableCookies);
     }
   }
 
   ngAfterContentInit(): void {
     this.filteredSkills = this.dataService.getSkills();
+    this.filteredTables = this.dataService.getCraftingTables();
     /*
     this.dataService.responseStatus.subscribe((resp) => {
       this.filteredSkills = resp.skills;
@@ -121,6 +152,26 @@ export class SkillsComponent implements OnInit, AfterContentInit {
     }
   }
 
+  onTablesSearchInput(value: string): void {
+    this.filteredTables = this.dataService.filterTableList(value);
+  }
+
+  onTableSelect(table: CraftingTable): void {
+    if (!this.craftingTables.some(tbl => tbl.nameID.localeCompare(table.nameID) === 0)) {
+      table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+      table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
+      let newSkills = this.dataService.getSkillsForCraftingTable(table);
+
+      //Check if any of the table recipes use one of the currently selected skills
+      if (!newSkills.some(skill => this.selectedSkills.some(sk => sk.nameID.localeCompare(skill.nameID) === 0))) {
+        //If not, add all skills
+        this.selectedSkills.push(...newSkills);
+      }
+      this.craftingTables.push(table);
+      this.tableAddedEvent.emit(table);
+    }
+  }
+
   onUpgradeSelect(table: CraftingTable, upgrade: UpgradeModule): void {
     if (table.selectedUpgrade.nameID.localeCompare(upgrade.nameID) !== 0) {
       table.selectedUpgrade = upgrade;
@@ -137,6 +188,18 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   onUpdateLavish(skill: Skill, value: boolean): void {
     skill.lavishChecked = value;
     this.lavishUpdatedEvent.emit(skill);
+  }
+
+  /**
+   * Gets the sprite position of the skill icon image based on the skill provided
+   * @param skill the skill to use the xPos and yPos
+   */
+  getSpritePosition(skill: Skill): string {
+    return `-${skill.xPos * SKILL_SPRITE_SIZE}px -${skill.yPos * SKILL_SPRITE_SIZE}px`;
+  }
+
+  getTableSpritePosition(table: CraftingTable): string {
+    return `-${table.xPos * TABLE_SPRITE_SIZE}px -${table.yPos * TABLE_SPRITE_SIZE}px`;
   }
 
   localize(locale: Locale): void {

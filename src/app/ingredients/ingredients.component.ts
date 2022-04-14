@@ -1,10 +1,13 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Item} from '../interface/item';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+
+export const ITEM_SPRITE_SIZE = 32;
 
 @Component({
   selector: 'app-ingredients',
@@ -23,7 +26,8 @@ export class IngredientsComponent implements OnInit {
   @Output() profitPercentChangedEvent = new EventEmitter<number>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService) {
+              private messageService: MessageService, private cookieService: CookieService,
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.itemIngredients = [];
     this.laborCost = 0;
     this.profitPercent = 0;
@@ -31,19 +35,43 @@ export class IngredientsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.cookieService.check('ingredients')) {
+
+    let ingredients = this.storageService.get('ingredients');
+    if (ingredients != null) {
+      ingredients.forEach(ing => {
+        let item = this.dataService.getItems().find(item => item.nameID.localeCompare(ing.id) === 0);
+        item.price = ing.pr;
+        this.itemIngredients.push(item);
+      });
+    } else if (this.cookieService.check('ingredients')) {
       let ingredientCookies: IngredientCookie[] = JSON.parse(atob(this.cookieService.get('ingredients')));
       ingredientCookies.forEach(cookie => {
         let item = this.dataService.getItems().find(item => item.nameID.localeCompare(cookie.id) === 0);
         item.price = cookie.pr;
         this.itemIngredients.push(item);
       });
+      this.cookieService.delete('ingredients');
+      this.storageService.set('ingredients', ingredientCookies);
     }
-    if (this.cookieService.check('laborCost')) {
+
+    let laborCost = this.storageService.get('laborCost');
+    if (laborCost != null) {
+      this.laborCost = Number.parseFloat(laborCost);
+    } else if (this.cookieService.check('laborCost')) {
       this.laborCost = Number.parseFloat(this.cookieService.get('laborCost'));
+      this.cookieService.delete('laborCost');
+      this.storageService.set('laborCost', this.laborCost.toLocaleString(this.localeService.selectedLocale.code,
+        {minimumFractionDigits: 0, maximumFractionDigits: 2}));
     }
-    if (this.cookieService.check('profitPercent')) {
+
+    let profit = this.storageService.get('profitPercent');
+    if (profit != null) {
+      this.profitPercent = Number.parseFloat(profit);
+    } else if (this.cookieService.check('profitPercent')) {
       this.profitPercent = Number.parseFloat(this.cookieService.get('profitPercent'));
+      this.cookieService.delete('profitPercent');
+      this.storageService.set('profitPercent', this.profitPercent.toLocaleString(this.localeService.selectedLocale.code,
+        {minimumFractionDigits: 0, maximumFractionDigits: 2}));
     }
   }
 
@@ -79,8 +107,30 @@ export class IngredientsComponent implements OnInit {
     }
   }
 
+  ingredientExists(nameID: string): boolean {
+    return this.itemIngredients.some(ing => ing.nameID.localeCompare(nameID) === 0);
+  }
+
   sortIngredients() {
     this.itemIngredients.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+  }
+
+  getItemSpritePosition(item: Item): string {
+    return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
+  }
+
+  getItemBackgroundSize(item: Item): string {
+    if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
+      return '2048px';
+    }
+    return '512px';
+  }
+
+  getItemFilter(item: Item): string {
+    if (item.filter != undefined) {
+      return item.filter;
+    }
+    return '';
   }
 
   localize(locale: Locale) {

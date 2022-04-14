@@ -46,3 +46,17 @@ input::-webkit-calendar-picker-indicator {
   height: auto;
   margin-top: .6rem;
 }
+
+.skillSprite {
+  background: url(../../assets/img/skill-icons-sprite.png) no-repeat;
+  background-size: 256px;
+  display: inline;
+  height: 32px;
+  width: 32px;
+}
+
+.tableSprite {
+  display: inline;
+  height: 32px;
+  width: 32px;
+}

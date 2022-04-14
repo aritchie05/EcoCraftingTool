@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, Inject, OnInit, ViewChild} from '@angular/core';
 import {SkillsComponent} from '../skills/skills.component';
 import {IngredientsComponent} from '../ingredients/ingredients.component';
 import {OutputsComponent} from '../outputs/outputs.component';
@@ -13,6 +13,7 @@ import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {OutputCookie} from '../cookie/output-cookie';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -33,28 +34,43 @@ export class CraftingParentComponent implements OnInit {
 
   private resourceCostMultiplier: number;
 
-  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private cookieService: CookieService) {
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private cookieService: CookieService,
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.resourceCostMultiplier = 1;
   }
 
+  /**
+   * Utility method for matching two strings.
+   * @param str1 first string to match
+   * @param str2 second string to match
+   * @private
+   */
+  private static strMatch(str1: string, str2: string): boolean {
+    return str1.localeCompare(str2) === 0;
+  }
+
   ngOnInit() {
-    if (this.cookieService.check('resourceCostMultiplier')) {
-      this.resourceCostMultiplier = Number.parseFloat(this.cookieService.get('resourceCostMultiplier'));
+    let multiplier = this.storageService.get('resourceCostMultiplier');
+    let expensiveEndgame = this.storageService.get('expensiveEndgameCost');
+
+    if (multiplier != null) {
+      this.resourceCostMultiplier = Number.parseFloat(multiplier);
     }
 
-    if (this.cookieService.check('expensiveEndgameCost')) {
-      this.dataService.setExpensiveEndgameCost(this.cookieService.get('expensiveEndgameCost') === 'true');
+    if (expensiveEndgame != null) {
+      this.dataService.setExpensiveEndgameCost(expensiveEndgame === 'true');
     }
   }
 
   onSkillAdded(skill: Skill) {
-    let itemIngredients = this.dataService.getUniqueItemIngredientsForSkills(this.skillsComponent.selectedSkills, false);
+    let newItemIngredients = this.dataService.getUniqueItemIngredientsForSkills([skill], false)
+      .concat(this.ingredientsComponent.itemIngredients);
 
     //Remove any item ingredients that are no longer relevant
     for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
       let item = this.ingredientsComponent.itemIngredients[i];
       let relevant = false;
-      itemIngredients.forEach(newItem => {
+      newItemIngredients.forEach(newItem => {
         if (item.nameID.localeCompare(newItem.nameID) === 0) {
           relevant = true;
         }
@@ -65,7 +81,7 @@ export class CraftingParentComponent implements OnInit {
     }
 
     //Add all the new item ingredients associated with the skill
-    itemIngredients.forEach(item => {
+    newItemIngredients.forEach(item => {
 
       let exists = false;
       this.ingredientsComponent.itemIngredients.forEach(ingredient => {
@@ -126,26 +142,55 @@ export class CraftingParentComponent implements OnInit {
     //Tell the outputs component to populate the output displays
     this.outputsComponent.convertRecipesToOutputDisplays();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
+  onTableAdded(table: CraftingTable) {
+    let recipes = this.dataService.getRecipesForTableAndSkills(table, this.skillsComponent.selectedSkills);
+    recipes.forEach(recipe => {
+      let exists = this.outputsComponent.outputRecipes.some(outputRecipe => {
+        return outputRecipe.nameID.localeCompare(recipe.nameID) === 0;
+      });
+      if (!exists) {
+        this.outputsComponent.outputRecipes.push(recipe);
+        recipe.ingredients.forEach(ing => {
+          if (!this.ingredientsComponent.ingredientExists(ing.item.nameID) && !this.outputsComponent.outputExists(ing.item.nameID)) {
+            let item = this.dataService.getItems().find(itm => itm.nameID.localeCompare(ing.item.nameID) === 0);
+            item.price = 0;
+            this.ingredientsComponent.itemIngredients.push(item);
+          }
+        });
+
+        for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
+          let item = this.ingredientsComponent.itemIngredients[i];
+          if (CraftingParentComponent.strMatch(item.nameID, recipe.primaryOutput.item.nameID)) {
+            this.ingredientsComponent.itemIngredients.splice(i, 1);
+          }
+        }
+      }
+    });
+
+    this.ingredientsComponent.sortIngredients();
+    this.recalculateOutputPrices();
+    this.saveDataToLocalStorage();
+  }
 
   onSkillLevelChanged(skill: Skill): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onLavishUpdated(skill: Skill): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onUpgradeChanged(table: CraftingTable) {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onSkillRemoved(skill: Skill): void {
@@ -169,14 +214,15 @@ export class CraftingParentComponent implements OnInit {
     }
 
     //Add new item ingredients that may have been covered by recipes from the removed skill
-    let newIngredients = this.dataService.getUniqueItemIngredientsForSkills(this.skillsComponent.selectedSkills, false);
+    let newIngredients = this.dataService.getUniqueItemIngredientsForRecipes(this.outputsComponent.outputRecipes);
 
     //Filter array to only ingredients that are not already present
-    newIngredients = newIngredients.filter(ingredient => {
-      this.ingredientsComponent.itemIngredients.some(existingIngredient => {
-        return existingIngredient.nameID.localeCompare(ingredient.nameID) === 0;
-      });
-    });
+    for (let i = newIngredients.length - 1; i >= 0; i--) {
+      let ingredient = newIngredients[i];
+      if (this.ingredientsComponent.itemIngredients.some(item => item.nameID.localeCompare(ingredient.nameID) === 0)) {
+        newIngredients.splice(i, 1);
+      }
+    }
 
     //Remove any crafting tables that are no longer needed
     for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
@@ -194,19 +240,19 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onLaborCostChanged(value: number): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onProfitPercentChanged(profitPercent: number): void {
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onIngredientPriceChanged(item: Item): void {
@@ -230,50 +276,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.outputsComponent.convertRecipesToOutputDisplays();
 
-    this.saveDataToCookies();
-  }
-
-  onRecipeAdded(recipe: Recipe) {
-    //Add the skill if it is not there
-    let hasSkill = this.skillsComponent.selectedSkills.some(skill => this.strMatch(recipe.skill.nameID, skill.nameID));
-    if (!hasSkill) {
-      recipe.skill.level = 1;
-      recipe.skill.lavishChecked = false;
-      this.skillsComponent.selectedSkills.push(recipe.skill);
-    }
-
-    //Add the crafting table if it is not there
-    let hasTable = this.skillsComponent.craftingTables.some(table => this.strMatch(recipe.craftingTable.nameID, table.nameID));
-    if (!hasTable) {
-      let table = recipe.craftingTable;
-      table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
-      table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
-      this.skillsComponent.craftingTables.push(table);
-    }
-
-    //Add ingredient if it is not in inputs or outputs
-    recipe.ingredients.forEach(ingredient => {
-      let itemExists = this.ingredientsComponent.itemIngredients.some(item => this.strMatch(ingredient.item.nameID, item.nameID));
-      itemExists = itemExists || this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.primaryOutput.item.nameID, ingredient.item.nameID));
-      if (!itemExists) {
-        let item = ingredient.item;
-        item.price = 0;
-        this.ingredientsComponent.itemIngredients.push(item);
-      }
-    });
-
-    for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
-      let item = this.ingredientsComponent.itemIngredients[i];
-      if (this.strMatch(item.nameID, recipe.primaryOutput.item.nameID)) {
-        this.ingredientsComponent.itemIngredients.splice(i, 1);
-      }
-    }
-
-    this.ingredientsComponent.sortIngredients();
-
-    this.recalculateOutputPrices();
-
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   onSubRecipeRemoved(recipe: Recipe): void {
@@ -300,29 +303,50 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
-  onItemRemoved(recipes: Recipe[]): void {
-    recipes.forEach(recipe => {
-      this.onSubRecipeRemoved(recipe);
+  onRecipeAdded(recipe: Recipe) {
+    //Add the skill if it is not there
+    let hasSkill = this.skillsComponent.selectedSkills.some(skill => CraftingParentComponent.strMatch(recipe.skill.nameID, skill.nameID));
+    if (!hasSkill) {
+      recipe.skill.level = 1;
+      recipe.skill.lavishChecked = false;
+      this.skillsComponent.selectedSkills.push(recipe.skill);
+    }
+
+    //Add the crafting table if it is not there
+    let hasTable = this.skillsComponent.craftingTables.some(table => CraftingParentComponent.strMatch(recipe.craftingTable.nameID, table.nameID));
+    if (!hasTable) {
+      let table = recipe.craftingTable;
+      table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
+      table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.match('NoUpgrade'));
+      this.skillsComponent.craftingTables.push(table);
+    }
+
+    //Add ingredient if it is not in inputs or outputs
+    recipe.ingredients.forEach(ingredient => {
+      let itemExists = this.ingredientsComponent.itemIngredients.some(item => CraftingParentComponent.strMatch(ingredient.item.nameID, item.nameID));
+      itemExists = itemExists || this.outputsComponent.outputRecipes.some(recipe => CraftingParentComponent.strMatch(recipe.primaryOutput.item.nameID, ingredient.item.nameID));
+      if (!itemExists) {
+        let item = ingredient.item;
+        item.price = 0;
+        this.ingredientsComponent.itemIngredients.push(item);
+      }
     });
 
-    for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
-      let table = this.skillsComponent.craftingTables[i];
-      if (!this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.craftingTable.nameID, table.nameID))) {
-        this.skillsComponent.craftingTables.splice(i, 1);
+    for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
+      let item = this.ingredientsComponent.itemIngredients[i];
+      if (CraftingParentComponent.strMatch(item.nameID, recipe.primaryOutput.item.nameID)) {
+        this.ingredientsComponent.itemIngredients.splice(i, 1);
       }
     }
 
-    for (let i = this.skillsComponent.selectedSkills.length - 1; i >= 0; i--) {
-      let skill = this.skillsComponent.selectedSkills[i];
-      if (!this.outputsComponent.outputRecipes.some(recipe => this.strMatch(recipe.skill.nameID, skill.nameID))) {
-        this.skillsComponent.selectedSkills.splice(i, 1);
-      }
-    }
+    this.ingredientsComponent.sortIngredients();
 
-    this.saveDataToCookies();
+    this.recalculateOutputPrices();
+
+    this.saveDataToLocalStorage();
   }
 
   /**
@@ -343,7 +367,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
   }
 
   updateResourceCostMultiplier(newMultiplier: number): void {
@@ -351,7 +375,47 @@ export class CraftingParentComponent implements OnInit {
 
     this.recalculateOutputPrices();
 
-    this.saveDataToCookies();
+    this.saveDataToLocalStorage();
+  }
+
+  onItemRemoved(recipes: Recipe[]): void {
+    recipes.forEach(recipe => {
+      this.onSubRecipeRemoved(recipe);
+    });
+
+    for (let i = this.skillsComponent.craftingTables.length - 1; i >= 0; i--) {
+      let table = this.skillsComponent.craftingTables[i];
+      if (!this.outputsComponent.outputRecipes.some(recipe => CraftingParentComponent.strMatch(recipe.craftingTable.nameID, table.nameID))) {
+        this.skillsComponent.craftingTables.splice(i, 1);
+      }
+    }
+
+    for (let i = this.skillsComponent.selectedSkills.length - 1; i >= 0; i--) {
+      let skill = this.skillsComponent.selectedSkills[i];
+      if (!this.outputsComponent.outputRecipes.some(recipe => CraftingParentComponent.strMatch(recipe.skill.nameID, skill.nameID))) {
+        this.skillsComponent.selectedSkills.splice(i, 1);
+      }
+    }
+
+    let item = recipes[0].primaryOutput.item;
+
+    //Add new item ingredient that was removed if it is necessary
+    let reqIngredients = this.dataService.getUniqueItemIngredientsForRecipes(this.outputsComponent.outputRecipes);
+    if (reqIngredients.some(ing => CraftingParentComponent.strMatch(ing.nameID, item.nameID))) {
+      this.ingredientsComponent.itemIngredients.push(item);
+      this.ingredientsComponent.sortIngredients();
+    }
+
+    this.saveDataToLocalStorage();
+  }
+
+  updateLocale(locale: Locale) {
+    this.skillsComponent.localize(locale);
+    this.ingredientsComponent.localize(locale);
+    this.outputsComponent.localize(locale);
+    this.dataService.localize(locale);
+
+    this.saveDataToLocalStorage();
   }
 
   updateEndgameCost(isExpensive: boolean): void {
@@ -365,7 +429,7 @@ export class CraftingParentComponent implements OnInit {
         for (let j = 0; j < this.dataService.cheapRecipes.length; j++) {
           let cheapRecipe = this.dataService.cheapRecipes[j];
           //If we find a cheap recipe remove it, and add the corresponding expensive recipe to the outputs component with index j
-          if (this.strMatch(cheapRecipe.nameID, recipe.nameID)) {
+          if (CraftingParentComponent.strMatch(cheapRecipe.nameID, recipe.nameID)) {
             this.outputsComponent.onRecipeSelect(this.dataService.expensiveRecipes[j]);
             this.outputsComponent.onRemoveSubRecipe(cheapRecipe.nameID);
           }
@@ -374,7 +438,7 @@ export class CraftingParentComponent implements OnInit {
         for (let j = 0; j < this.dataService.expensiveRecipes.length; j++) {
           let expensiveRecipe = this.dataService.expensiveRecipes[j];
           //If we find an expensive recipe remove it, and add the corresponding cheap recipe to the outputs component with index j
-          if (this.strMatch(expensiveRecipe.nameID, recipe.nameID)) {
+          if (CraftingParentComponent.strMatch(expensiveRecipe.nameID, recipe.nameID)) {
             this.outputsComponent.onRecipeSelect(this.dataService.cheapRecipes[j]);
             this.outputsComponent.onRemoveSubRecipe(expensiveRecipe.nameID);
           }
@@ -384,15 +448,6 @@ export class CraftingParentComponent implements OnInit {
     }
 
     this.outputsComponent.refreshFilterList();
-  }
-
-  updateLocale(locale: Locale) {
-    this.skillsComponent.localize(locale);
-    this.ingredientsComponent.localize(locale);
-    this.outputsComponent.localize(locale);
-    this.dataService.localize(locale);
-
-    this.saveDataToCookies();
   }
 
   /**
@@ -563,30 +618,28 @@ export class CraftingParentComponent implements OnInit {
       });
   }
 
-  private saveDataToCookies(): void {
-    let expDays = 60;
+  private saveDataToLocalStorage(): void {
 
-    this.cookieService.set('locale', JSON.stringify(this.localeService.selectedLocale), expDays);
-    this.cookieService.set('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
-      {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
-    this.cookieService.set('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
-      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}), expDays);
+    this.storageService.set('laborCost', this.ingredientsComponent.laborCost.toLocaleString(this.localeService.selectedLocale.code,
+      {minimumFractionDigits: 0, maximumFractionDigits: 2}));
+    this.storageService.set('profitPercent', this.ingredientsComponent.profitPercent.toLocaleString(
+      this.localeService.selectedLocale.code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
 
     let skillsCookie: SkillCookie[] = [];
     this.skillsComponent.selectedSkills.forEach(skill => skillsCookie.push(new SkillCookie(skill)));
-    this.cookieService.set('skills', btoa(JSON.stringify(skillsCookie)), expDays);
+    this.storageService.set('skills', skillsCookie);
 
     let tablesCookie: TableCookie[] = [];
     this.skillsComponent.craftingTables.forEach(table => tablesCookie.push(new TableCookie(table)));
-    this.cookieService.set('tables', btoa(JSON.stringify(tablesCookie)), expDays);
+    this.storageService.set('tables', tablesCookie);
 
     let ingredientsCookie: IngredientCookie[] = [];
     this.ingredientsComponent.itemIngredients.forEach(item => ingredientsCookie.push(new IngredientCookie(item)));
-    this.cookieService.set('ingredients', btoa(JSON.stringify(ingredientsCookie)), expDays);
+    this.storageService.set('ingredients', ingredientsCookie);
 
     let outputsCookie: OutputCookie[] = [];
     this.outputsComponent.outputRecipes.forEach(recipe => outputsCookie.push(new OutputCookie(recipe)));
-    this.cookieService.set('recipes', btoa(JSON.stringify(outputsCookie)), expDays);
+    this.storageService.set('recipes', outputsCookie);
   }
 
   /**
@@ -599,7 +652,7 @@ export class CraftingParentComponent implements OnInit {
         return this.skillsComponent.craftingTables.some(table => table.nameID.localeCompare(recipe.nameID));
       })
       .filter(recipe => {
-        return this.skillsComponent.selectedSkills.some(skill => this.strMatch(skill.nameID, recipe.skill.nameID));
+        return this.skillsComponent.selectedSkills.some(skill => CraftingParentComponent.strMatch(skill.nameID, recipe.skill.nameID));
       });
   }
 
@@ -611,7 +664,7 @@ export class CraftingParentComponent implements OnInit {
     for (let i = this.ingredientsComponent.itemIngredients.length - 1; i >= 0; i--) {
       let item = this.ingredientsComponent.itemIngredients[i];
       let stillNeeded = this.outputsComponent.outputRecipes.some(recipe => {
-        return recipe.ingredients.some(ingredient => this.strMatch(ingredient.item.nameID, item.nameID));
+        return recipe.ingredients.some(ingredient => CraftingParentComponent.strMatch(ingredient.item.nameID, item.nameID));
       });
       if (!stillNeeded) {
         this.ingredientsComponent.itemIngredients.splice(i, 1);
@@ -619,13 +672,5 @@ export class CraftingParentComponent implements OnInit {
     }
   }
 
-  /**
-   * Utility method for matching two strings.
-   * @param str1 first string to match
-   * @param str2 second string to match
-   * @private
-   */
-  private strMatch(str1: string, str2: string): boolean {
-    return str1.localeCompare(str2) === 0;
-  }
+
 }

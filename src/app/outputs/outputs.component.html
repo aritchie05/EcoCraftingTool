@@ -12,6 +12,13 @@
       <div aria-labelledby="recipeSearchInput" class="dropdown-menu dark-input">
         <a (click)="onRecipeSelect(recipe)" *ngFor="let recipe of filteredRecipes" class="dropdown-item dark-input"
            href="#">
+          <!-- Performance is pretty bad on the recipe list with images.. maybe load 50 at a time or something?
+          <img [alt]=recipe.name [ngStyle]="{'background': 'url(../../assets/img/' + recipe.primaryOutput.item.imageFile + ') no-repeat',
+                'background-position': getItemSpritePosition(recipe.primaryOutput.item),
+                'background-size': getItemBackgroundSize(recipe.primaryOutput.item),
+                'filter': getItemFilter(recipe.primaryOutput.item)}"
+               class="outputSprite mr-2" src="assets/img/32px-template.png">
+           -->
           {{recipe.name}}
         </a>
       </div>
@@ -20,6 +27,11 @@
       <div *ngFor="let outputDisplay of outputDisplays">
         <div class="row recipeRow mx-auto form-group">
           <div class="col-8">
+            <img [alt]=outputDisplay.itemName [ngStyle]="{'background': 'url(../../assets/img/' + outputDisplay.imageFile + ') no-repeat',
+                'background-position': getOutputDisplaySpritePosition(outputDisplay),
+                'background-size': getOutputDisplayBackgroundSize(outputDisplay),
+                'filter': getOutputDisplayFilter(outputDisplay)}"
+                 class="outputSprite mr-2" src="assets/img/32px-template.png">
             <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
               <strong>{{outputDisplay.itemName}}</strong>
             </label>
@@ -27,7 +39,8 @@
           <div class="col-3">
             <input [value]="outputDisplay.itemPrice
             .toLocaleString(locale.code,{ maximumFractionDigits: 2, minimumFractionDigits: 0})"
-                   class="priceDisplay form-control dark-input" id="{{outputDisplay.itemNameID}}-itemPriceDisplay"
+                   class="priceDisplay form-control dark-input read-only"
+                   id="{{outputDisplay.itemNameID}}-itemPriceDisplay"
                    readonly type="text">
           </div>
           <div class="col-1">
@@ -38,14 +51,15 @@
         <ng-template [ngIf]="outputDisplay.subRecipes.length > 1">
           <div *ngFor="let subRecipe of outputDisplay.subRecipes" class="row recipeRow mx-auto form-group">
             <div class="col-8">
-              <label class="pl-3" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
+              <label class="pl-6" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
                 {{subRecipe.recipeName}} {{message('recipeSuffix')}}
               </label>
             </div>
             <div class="col-3">
               <input [value]="subRecipe.recipePrice
                   .toLocaleString(locale.code,{ maximumFractionDigits: 2, minimumFractionDigits: 0})"
-                     class="priceDisplay form-control dark-input" id="{{subRecipe.recipeNameID}}-itemPriceDisplay"
+                     class="priceDisplay form-control dark-input read-only"
+                     id="{{subRecipe.recipeNameID}}-itemPriceDisplay"
                      readonly type="text">
             </div>
             <div class="col-1">

@@ -1,10 +1,14 @@
-import {AfterContentInit, Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Recipe} from '../interface/recipe';
 import {OutputDisplay} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {Item} from '../interface/item';
+
+export const ITEM_SPRITE_SIZE = 32;
 
 @Component({
   selector: 'app-outputs',
@@ -23,14 +27,36 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   @Output() subRecipeRemovedEvent = new EventEmitter<Recipe>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService) {
+              private messageService: MessageService, private cookieService: CookieService,
+              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.outputRecipes = [];
     this.outputDisplays = [];
     this.locale = localeService.selectedLocale;
   }
 
   ngOnInit(): void {
-    if (this.cookieService.check('recipes')) {
+    let outputsCookie = this.storageService.get('recipes');
+    if (outputsCookie != null) {
+      outputsCookie.forEach(cookie => {
+        let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
+        recipe.price = Number.parseFloat(cookie.pr);
+        if (cookie.hasOwnProperty('bp')) {
+          recipe.basePrice = Number.parseFloat(cookie.bp);
+        } else {
+          let profitStored = this.storageService.get('profitPercent');
+          if (profitStored != null) {
+            let profitPercent = Number.parseFloat(profitStored) / 100;
+            recipe.basePrice = recipe.price / (1 + profitPercent);
+          } else {
+            let profitPercent = Number.parseFloat(this.cookieService.get('profitPercent')) / 100;
+            recipe.basePrice = recipe.price / (1 + profitPercent);
+          }
+        }
+
+        this.outputRecipes.push(recipe);
+        this.convertRecipesToOutputDisplays();
+      });
+    } else if (this.cookieService.check('recipes')) {
       let outputsCookies = JSON.parse(atob(this.cookieService.get('recipes')));
       outputsCookies.forEach(cookie => {
         let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
@@ -45,6 +71,9 @@ export class OutputsComponent implements OnInit, AfterContentInit {
         this.outputRecipes.push(recipe);
       });
       this.convertRecipesToOutputDisplays();
+
+      this.cookieService.delete('recipes');
+      this.storageService.set('recipes', outputsCookie);
     }
   }
 
@@ -89,7 +118,11 @@ export class OutputsComponent implements OnInit, AfterContentInit {
               recipeNameID: recipe.nameID,
               recipeName: recipe.name,
               recipePrice: recipe.price
-            }]
+            }],
+            imageFile: recipe.primaryOutput.item.imageFile,
+            xPos: recipe.primaryOutput.item.xPos,
+            yPos: recipe.primaryOutput.item.yPos,
+            filter: recipe.primaryOutput.item.filter
           });
         }
       }
@@ -182,6 +215,46 @@ export class OutputsComponent implements OnInit, AfterContentInit {
     this.filteredRecipes = this.dataService.getRecipes();
     document.getElementById('recipeSearchInput').innerText = '';
     document.getElementById('recipeSearchInput').blur();
+  }
+
+  outputExists(itemNameID: string): boolean {
+    return this.outputRecipes.some(recipe => recipe.primaryOutput.item.nameID.localeCompare(itemNameID) === 0);
+  }
+
+  getOutputDisplaySpritePosition(outputDisplay: OutputDisplay): string {
+    return `-${outputDisplay.xPos * ITEM_SPRITE_SIZE}px -${outputDisplay.yPos * ITEM_SPRITE_SIZE}px`;
+  }
+
+  getOutputDisplayBackgroundSize(outputDisplay: OutputDisplay): string {
+    if ('UI_Icons_Baked_0.png'.localeCompare(outputDisplay.imageFile) === 0) {
+      return '2048px';
+    }
+    return '512px';
+  }
+
+  getOutputDisplayFilter(outputDisplay: OutputDisplay): string {
+    if (outputDisplay != undefined) {
+      return outputDisplay.filter;
+    }
+    return '';
+  }
+
+  getItemSpritePosition(item: Item): string {
+    return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
+  }
+
+  getItemBackgroundSize(item: Item): string {
+    if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
+      return '2048px';
+    }
+    return '512px';
+  }
+
+  getItemFilter(item: Item): string {
+    if (item.filter != undefined) {
+      return item.filter;
+    }
+    return '';
   }
 
   localize(locale: Locale): void {

@@ -47,7 +47,7 @@ input[type=number] {
 }
 
 .divider {
-  padding-bottom: 10px;
+  padding-bottom: 16px;
   border-bottom: 2px solid #505050;
 }
 
@@ -70,4 +70,24 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #17c4dd;
   opacity: 80%;
   text-decoration: none;
+}
+
+body {
+  font-size: .9rem !important;
+}
+
+.btn {
+  font-size: .9rem !important;
+}
+
+.dropdown-menu {
+  font-size: .9rem !important;
+}
+
+.read-only {
+  cursor: not-allowed;
+}
+
+.pl-6 {
+  padding-left: 3.5rem;
 }
