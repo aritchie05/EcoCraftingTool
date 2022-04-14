@@ -7,4 +7,5 @@ export class Item {
   imageFile?: string;
   xPos?: number;
   yPos?: number;
+  filter?: string;
 }

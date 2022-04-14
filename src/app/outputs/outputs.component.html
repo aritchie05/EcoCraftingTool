@@ -12,7 +12,11 @@
       <div aria-labelledby="recipeSearchInput" class="dropdown-menu dark-input">
         <a (click)="onRecipeSelect(recipe)" *ngFor="let recipe of filteredRecipes" class="dropdown-item dark-input"
            href="#">
-          {{recipe.name}}
+          <img [alt]=recipe.name [ngStyle]="{'background': 'url(../../assets/img/' + recipe.primaryOutput.item.imageFile + ') no-repeat',
+                'background-position': getItemSpritePosition(recipe.primaryOutput.item),
+                'background-size': getItemBackgroundSize(recipe.primaryOutput.item),
+                'filter': getItemFilter(recipe.primaryOutput.item)}"
+               class="outputSprite mr-2" src="assets/img/32px-template.png">{{recipe.name}}
         </a>
       </div>
     </div>
@@ -22,7 +26,8 @@
           <div class="col-8">
             <img [alt]=outputDisplay.itemName [ngStyle]="{'background': 'url(../../assets/img/' + outputDisplay.imageFile + ') no-repeat',
                 'background-position': getOutputDisplaySpritePosition(outputDisplay),
-                'background-size': '512px'}"
+                'background-size': getOutputDisplayBackgroundSize(outputDisplay),
+                'filter': getOutputDisplayFilter(outputDisplay)}"
                  class="outputSprite mr-2" src="assets/img/32px-template.png">
             <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
               <strong>{{outputDisplay.itemName}}</strong>

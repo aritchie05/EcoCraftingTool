@@ -35,7 +35,8 @@
         <div class="col">
           <img [alt]=ingredient.name [ngStyle]="{'background': 'url(../../assets/img/' + ingredient.imageFile + ') no-repeat',
                 'background-position': getItemSpritePosition(ingredient),
-                'background-size': '512px'}"
+                'background-size': getItemBackgroundSize(ingredient),
+                'filter': getItemFilter(ingredient)}"
                class="itemSprite mr-2" src="assets/img/32px-template.png">
           <label *ngIf="ingredient.tag; else nonTagName" for="{{ingredient.nameID}}-priceInput">
             {{ingredient.name}}*

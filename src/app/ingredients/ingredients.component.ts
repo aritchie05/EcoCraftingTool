@@ -119,6 +119,20 @@ export class IngredientsComponent implements OnInit {
     return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
   }
 
+  getItemBackgroundSize(item: Item): string {
+    if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
+      return '2048px';
+    }
+    return '512px';
+  }
+
+  getItemFilter(item: Item): string {
+    if (item.filter != undefined) {
+      return item.filter;
+    }
+    return '';
+  }
+
   localize(locale: Locale) {
     this.locale = locale;
     this.itemIngredients.forEach(item => item.name = this.localeService.localizeItemName(item.nameID, locale.langCode()));

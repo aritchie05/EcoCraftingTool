@@ -5564,7 +5564,7 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('CottonSeedItem'),
           'quantity': 1,
           'reducible': false,
-          'primary': true
+          'primary': false
         },
         {
           'item': getItemByNameID('CottonThreadItem'),

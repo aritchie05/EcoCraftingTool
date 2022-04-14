@@ -13,7 +13,10 @@ export let items: Item[] =
     {
       'name': 'Acorn Powder',
       'nameID': 'AcornPowderItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 2,
+      'yPos': 57
     },
     {
       'name': 'Adorned Ashlar Basalt Bench',
@@ -132,7 +135,10 @@ export let items: Item[] =
     {
       'name': 'Advanced Baking Upgrade',
       'nameID': 'AdvancedBakingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 28,
+      'yPos': 31
     },
     {
       'name': 'Advanced Carpentry Table',
@@ -153,12 +159,18 @@ export let items: Item[] =
     {
       'name': 'Advanced Combustion Engine',
       'nameID': 'AdvancedCombustionEngineItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_03.png',
+      'xPos': 1,
+      'yPos': 11
     },
     {
       'name': 'Advanced Cooking Upgrade',
       'nameID': 'AdvancedCookingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 30,
+      'yPos': 31
     },
     {
       'name': 'Advanced Masonry Table',
@@ -171,7 +183,10 @@ export let items: Item[] =
     {
       'name': 'Advanced Masonry Upgrade',
       'nameID': 'AdvancedMasonryUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 32,
+      'yPos': 31
     },
     {
       'name': 'Advanced Research',
@@ -184,7 +199,10 @@ export let items: Item[] =
     {
       'name': 'Advanced Smelting Upgrade',
       'nameID': 'AdvancedSmeltingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 34,
+      'yPos': 31
     },
     {
       'name': 'Advanced Tailoring Table',
@@ -237,7 +255,10 @@ export let items: Item[] =
     {
       'name': 'Agave Seed',
       'nameID': 'AgaveSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 5,
+      'yPos': 1
     },
     {
       'name': 'Agouti Carcass',
@@ -282,7 +303,10 @@ export let items: Item[] =
     {
       'name': 'Amanita Mushroom Spores',
       'nameID': 'AmanitaMushroomSporesItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 53,
+      'yPos': 55
     },
     {
       'name': 'Amanita Mushrooms',
@@ -594,9 +618,9 @@ export let items: Item[] =
       'name': 'Ashlar Stone',
       'nameID': 'AshlarStone',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
-      'xPos': 4,
-      'yPos': 1
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 13,
+      'yPos': 7
     },
     {
       'name': 'Ashlar Stone Bench',
@@ -711,9 +735,9 @@ export let items: Item[] =
       'name': 'Baked Meat',
       'nameID': 'BakedMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 8,
-      'yPos': 14
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 9
     },
     {
       'name': 'Baked Roast',
@@ -743,9 +767,9 @@ export let items: Item[] =
       'name': 'Baked Vegetable',
       'nameID': 'BakedVegetable',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
-      'xPos': 4,
-      'yPos': 7
+      'imageFile': 'UI_Icons_03.png',
+      'xPos': 6,
+      'yPos': 2
     },
     {
       'name': 'Bakery Oven',
@@ -758,7 +782,10 @@ export let items: Item[] =
     {
       'name': 'Baking Upgrade',
       'nameID': 'BakingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 44,
+      'yPos': 31
     },
     {
       'name': 'Ballot Box',
@@ -795,7 +822,10 @@ export let items: Item[] =
     {
       'name': 'Bannock',
       'nameID': 'BannockItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 15,
+      'yPos': 4
     },
     {
       'name': 'Barrel',
@@ -834,7 +864,10 @@ export let items: Item[] =
     {
       'name': 'Basic Engineering Upgrade',
       'nameID': 'BasicEngineeringUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 46,
+      'yPos': 31
     },
     {
       'name': 'Basic Research',
@@ -847,7 +880,10 @@ export let items: Item[] =
     {
       'name': 'Basic Salad',
       'nameID': 'BasicSaladItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 4,
+      'yPos': 9
     },
     {
       'name': 'Basic Upgrade 1',
@@ -897,7 +933,10 @@ export let items: Item[] =
     {
       'name': 'Bean Paste',
       'nameID': 'BeanPasteItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 9,
+      'yPos': 57
     },
     {
       'name': 'Bean Sprout',
@@ -934,7 +973,10 @@ export let items: Item[] =
     {
       'name': 'Bearpack',
       'nameID': 'BearpackItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_03.png',
+      'xPos': 5,
+      'yPos': 7
     },
     {
       'name': 'Beet',
@@ -963,17 +1005,26 @@ export let items: Item[] =
     {
       'name': 'Beet Seed',
       'nameID': 'BeetSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 15,
+      'yPos': 57
     },
     {
       'name': 'Berry Extract Fertilizer',
       'nameID': 'BerryExtractFertilizerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 0,
+      'yPos': 53
     },
     {
       'name': 'Big Backpack',
       'nameID': 'BigBackpackItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_03.png',
+      'xPos': 4,
+      'yPos': 7
     },
     {
       'name': 'Big Bluestem Seed',
@@ -1049,7 +1100,10 @@ export let items: Item[] =
     {
       'name': 'Blood Meal Fertilizer',
       'nameID': 'BloodMealFertilizerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 6,
+      'yPos': 53
     },
     {
       'name': 'Bloomery',
@@ -1062,7 +1116,10 @@ export let items: Item[] =
     {
       'name': 'Blue Shark',
       'nameID': 'BlueSharkItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 3,
+      'yPos': 7
     },
     {
       'name': 'Board',
@@ -1092,22 +1149,25 @@ export let items: Item[] =
       'name': 'Boiled Grains',
       'nameID': 'BoiledGrainsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
-      'xPos': 12,
-      'yPos': 1
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 13,
+      'yPos': 9
     },
     {
       'name': 'Boiled Rice',
       'nameID': 'BoiledRiceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
-      'xPos': 15,
-      'yPos': 2
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 5,
+      'yPos': 9
     },
     {
       'name': 'Boiled Sausage',
       'nameID': 'BoiledSausageItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 5,
+      'yPos': 12
     },
     {
       'name': 'Boiler',
@@ -1120,7 +1180,10 @@ export let items: Item[] =
     {
       'name': 'Bolete Mushroom Spores',
       'nameID': 'BoleteMushroomSporesItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 10,
+      'yPos': 55
     },
     {
       'name': 'Bolete Mushrooms',
@@ -1244,7 +1307,10 @@ export let items: Item[] =
     {
       'name': 'Butchery Upgrade',
       'nameID': 'ButcheryUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 56,
+      'yPos': 31
     },
     {
       'name': 'C O2 Canister',
@@ -1254,12 +1320,18 @@ export let items: Item[] =
     {
       'name': 'Camas Ash Fertilizer',
       'nameID': 'CamasAshFertilizerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 10,
+      'yPos': 53
     },
     {
       'name': 'Camas Bread',
       'nameID': 'CamasBreadItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 12,
+      'yPos': 9
     },
     {
       'name': 'Camas Bulb',
@@ -1272,22 +1344,36 @@ export let items: Item[] =
     {
       'name': 'Camas Bulb Bake',
       'nameID': 'CamasBulbBakeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 7,
+      'yPos': 10
     },
     {
       'name': 'Camas Paste',
       'nameID': 'CamasPasteItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 25,
+      'yPos': 57
     },
     {
       'name': 'Camo Pants',
       'nameID': 'CamoPantsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 0,
+      'yPos': 1,
+      'filter': 'invert(15%) sepia(99%) saturate(150%) hue-rotate(83deg) brightness(80%) contrast(180%)'
     },
     {
       'name': 'Camo Shirt',
       'nameID': 'CamoShirtItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 0,
+      'yPos': 0,
+      'filter': 'invert(15%) sepia(99%) saturate(150%) hue-rotate(83deg) brightness(70%) contrast(180%)'
     },
     {
       'name': 'Campfire',
@@ -1300,12 +1386,18 @@ export let items: Item[] =
     {
       'name': 'Campfire Cooking Upgrade',
       'nameID': 'CampfireCookingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 58,
+      'yPos': 31
     },
     {
       'name': 'Campfire Roast',
       'nameID': 'CampfireRoastItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 24,
+      'yPos': 54
     },
     {
       'name': 'Campfire Salad',
@@ -1318,7 +1410,8 @@ export let items: Item[] =
       'tag': true,
       'imageFile': 'UI_Icons_03.png',
       'xPos': 8,
-      'yPos': 2
+      'yPos': 2,
+      'filter': 'grayscale(1)'
     },
     {
       'name': 'Campfire Stew',
@@ -1360,12 +1453,18 @@ export let items: Item[] =
     {
       'name': 'Carpentry Advanced Upgrade',
       'nameID': 'CarpentryAdvancedUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 60,
+      'yPos': 31
     },
     {
       'name': 'Carpentry Basic Upgrade',
       'nameID': 'CarpentryBasicUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 62,
+      'yPos': 31
     },
     {
       'name': 'Carpentry Table',
@@ -1444,7 +1543,10 @@ export let items: Item[] =
     {
       'name': 'Cellulose Fiber',
       'nameID': 'CelluloseFiberItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 12,
+      'yPos': 53
     },
     {
       'name': 'Cement',
@@ -1521,7 +1623,10 @@ export let items: Item[] =
     {
       'name': 'Charred Beet',
       'nameID': 'CharredBeetItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 14,
+      'yPos': 9
     },
     {
       'name': 'Charred Cactus Fruit',
@@ -1534,22 +1639,34 @@ export let items: Item[] =
     {
       'name': 'Charred Camas Bulb',
       'nameID': 'CharredCamasBulbItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 15,
+      'yPos': 9
     },
     {
       'name': 'Charred Corn',
       'nameID': 'CharredCornItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 0,
+      'yPos': 10
     },
     {
       'name': 'Charred Fireweed Shoots',
       'nameID': 'CharredFireweedShootsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_03.png',
+      'xPos': 13,
+      'yPos': 1
     },
     {
       'name': 'Charred Fish',
       'nameID': 'CharredFishItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 1,
+      'yPos': 10
     },
     {
       'name': 'Charred Heart Of Palm',
@@ -1562,7 +1679,10 @@ export let items: Item[] =
     {
       'name': 'Charred Meat',
       'nameID': 'CharredMeatItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 2,
+      'yPos': 10
     },
     {
       'name': 'Charred Mushrooms',
@@ -1584,14 +1704,17 @@ export let items: Item[] =
       'name': 'Charred Pineapple',
       'nameID': 'CharredPineappleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
-      'xPos': 2,
-      'yPos': 2
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 3,
+      'yPos': 10
     },
     {
       'name': 'Charred Sausage',
       'nameID': 'CharredSausageItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 4,
+      'yPos': 10
     },
     {
       'name': 'Charred Taro',
@@ -1604,7 +1727,10 @@ export let items: Item[] =
     {
       'name': 'Charred Tomato',
       'nameID': 'CharredTomatoItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 5,
+      'yPos': 10
     },
     {
       'name': 'Chef Hat',
@@ -1673,7 +1799,10 @@ export let items: Item[] =
     {
       'name': 'Cloth Belt',
       'nameID': 'ClothBeltItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_03.png',
+      'xPos': 3,
+      'yPos': 7
     },
     {
       'name': 'Cloth Cape',
@@ -1811,7 +1940,10 @@ export let items: Item[] =
     {
       'name': 'Composite Filler',
       'nameID': 'CompositeFillerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 19,
+      'yPos': 53
     },
     {
       'name': 'Composite Fir Bench',
@@ -2079,17 +2211,26 @@ export let items: Item[] =
     {
       'name': 'Composites Upgrade',
       'nameID': 'CompositesUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 0,
+      'yPos': 30
     },
     {
       'name': 'Compost',
       'nameID': 'CompostItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 2,
+      'yPos': 5
     },
     {
       'name': 'Compost Fertilizer',
       'nameID': 'CompostFertilizerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 22,
+      'yPos': 53
     },
     {
       'name': 'Computer Lab',
@@ -2126,7 +2267,10 @@ export let items: Item[] =
     {
       'name': 'Cookeina Mushroom Spores',
       'nameID': 'CookeinaMushroomSporesItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 17,
+      'yPos': 55
     },
     {
       'name': 'Cookeina Mushrooms',
@@ -2139,7 +2283,10 @@ export let items: Item[] =
     {
       'name': 'Cooking Upgrade',
       'nameID': 'CookingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 2,
+      'yPos': 30
     },
     {
       'name': 'Copper Bar',
@@ -2168,7 +2315,11 @@ export let items: Item[] =
     {
       'name': 'Copper Pipe',
       'nameID': 'CopperPipeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 1,
+      'yPos': 4,
+      'filter': 'invert(33%) sepia(40%) saturate(275%) hue-rotate(344deg) brightness(80%) contrast(250%)'
     },
     {
       'name': 'Copper Wiring',
@@ -2189,12 +2340,18 @@ export let items: Item[] =
     {
       'name': 'Corn Fritters',
       'nameID': 'CornFrittersItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 6,
+      'yPos': 9
     },
     {
       'name': 'Corn Seed',
       'nameID': 'CornSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 42,
+      'yPos': 57
     },
     {
       'name': 'Corn Starch',
@@ -2204,7 +2361,10 @@ export let items: Item[] =
     {
       'name': 'Cornmeal',
       'nameID': 'CornmealItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 40,
+      'yPos': 57
     },
     {
       'name': 'Corrugated Steel',
@@ -2323,7 +2483,10 @@ export let items: Item[] =
     {
       'name': 'Crane',
       'nameID': 'CraneItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 7,
+      'yPos': 5
     },
     {
       'name': 'Creosote Bush Seed',
@@ -2333,7 +2496,10 @@ export let items: Item[] =
     {
       'name': 'Crimini Mushroom Spores',
       'nameID': 'CriminiMushroomSporesItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 48,
+      'yPos': 57
     },
     {
       'name': 'Crimini Mushrooms',
@@ -2346,12 +2512,18 @@ export let items: Item[] =
     {
       'name': 'Crimson Salad',
       'nameID': 'CrimsonSaladItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 7,
+      'yPos': 9
     },
     {
       'name': 'Crispy Bacon',
       'nameID': 'CrispyBaconItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 51,
+      'yPos': 57
     },
     {
       'name': 'Crop',
@@ -2504,12 +2676,18 @@ export let items: Item[] =
     {
       'name': 'Currency Exchange',
       'nameID': 'CurrencyExchangeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 21,
+      'yPos': 47
     },
     {
       'name': 'Cutting Edge Cooking Upgrade',
       'nameID': 'CuttingEdgeCookingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 4,
+      'yPos': 30
     },
     {
       'name': 'Deer Carcass',
@@ -2690,7 +2868,10 @@ export let items: Item[] =
     {
       'name': 'Electronics Upgrade',
       'nameID': 'ElectronicsUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 6,
+      'yPos': 30
     },
     {
       'name': 'Elk Carcass',
@@ -2716,12 +2897,18 @@ export let items: Item[] =
     {
       'name': 'Elk Taco',
       'nameID': 'ElkTacoItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 8,
+      'yPos': 9
     },
     {
       'name': 'Elk Wellington',
       'nameID': 'ElkWellingtonItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 8,
+      'yPos': 10
     },
     {
       'name': 'Engineering Research Paper Advanced',
@@ -2753,7 +2940,7 @@ export let items: Item[] =
       'tag': false,
       'imageFile': 'UI_Icons_01.png',
       'xPos': 2,
-      'yPos': 8
+      'yPos': 9
     },
     {
       'name': 'Executive Office',
@@ -2875,7 +3062,10 @@ export let items: Item[] =
     {
       'name': 'Farming Upgrade',
       'nameID': 'FarmingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 8,
+      'yPos': 30
     },
     {
       'name': 'Fat',
@@ -2888,7 +3078,10 @@ export let items: Item[] =
     {
       'name': 'Fern Campfire Salad',
       'nameID': 'FernCampfireSaladItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 5,
+      'yPos': 54
     },
     {
       'name': 'Fern Spore',
@@ -2909,12 +3102,18 @@ export let items: Item[] =
     {
       'name': 'Fertilizers Upgrade',
       'nameID': 'FertilizersUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 10,
+      'yPos': 30
     },
     {
       'name': 'Fiber Filler',
       'nameID': 'FiberFillerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 32,
+      'yPos': 53
     },
     {
       'name': 'Fiberglass',
@@ -2928,9 +3127,9 @@ export let items: Item[] =
       'name': 'Fiddleheads',
       'nameID': 'FiddleheadsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 7,
-      'yPos': 4
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 10,
+      'yPos': 8
     },
     {
       'name': 'Field Campfire Stew',
@@ -2961,12 +3160,18 @@ export let items: Item[] =
     {
       'name': 'Fireweed Seed',
       'nameID': 'FireweedSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 58,
+      'yPos': 57
     },
     {
       'name': 'Fireweed Shoots',
       'nameID': 'FireweedShootsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 60,
+      'yPos': 57
     },
     {
       'name': 'Fish',
@@ -3020,9 +3225,9 @@ export let items: Item[] =
       'name': 'Flatbread',
       'nameID': 'FlatbreadItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 15,
-      'yPos': 4
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 10
     },
     {
       'name': 'Flour',
@@ -3107,7 +3312,10 @@ export let items: Item[] =
     {
       'name': 'Fried Tomatoes',
       'nameID': 'FriedTomatoesItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 5,
+      'yPos': 11
     },
     {
       'name': 'Fried Vegetable',
@@ -3192,7 +3400,10 @@ export let items: Item[] =
     {
       'name': 'Garden Boots',
       'nameID': 'GardenBootsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 4,
+      'yPos': 5
     },
     {
       'name': 'Gasoline',
@@ -3269,12 +3480,18 @@ export let items: Item[] =
     {
       'name': 'Glassworking Advanced Upgrade',
       'nameID': 'GlassworkingAdvancedUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 12,
+      'yPos': 30
     },
     {
       'name': 'Glassworking Modern Upgrade',
       'nameID': 'GlassworkingModernUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 14,
+      'yPos': 30
     },
     {
       'name': 'Gneiss',
@@ -3458,9 +3675,9 @@ export let items: Item[] =
       'name': 'Heat Sink',
       'nameID': 'HeatSinkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 13,
-      'yPos': 15
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 42,
+      'yPos': 53
     },
     {
       'name': 'Heliconia Seed',
@@ -3542,7 +3759,10 @@ export let items: Item[] =
     {
       'name': 'Hide Ash Fertilizer',
       'nameID': 'HideAshFertilizerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 44,
+      'yPos': 53
     },
     {
       'name': 'Hosomaki',
@@ -3568,7 +3788,10 @@ export let items: Item[] =
     {
       'name': 'Huckleberry Extract',
       'nameID': 'HuckleberryExtractItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 8,
+      'yPos': 56
     },
     {
       'name': 'Huckleberry Fritter',
@@ -3589,7 +3812,10 @@ export let items: Item[] =
     {
       'name': 'Huckleberry Seed',
       'nameID': 'HuckleberrySeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 11,
+      'yPos': 56
     },
     {
       'name': 'Hydrocolloids',
@@ -3620,12 +3846,18 @@ export let items: Item[] =
     {
       'name': 'Industry Upgrade',
       'nameID': 'IndustryUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 16,
+      'yPos': 30
     },
     {
       'name': 'Infused Oil',
       'nameID': 'InfusedOilItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 15,
+      'yPos': 56
     },
     {
       'name': 'Injection Mold Machine',
@@ -3643,7 +3875,11 @@ export let items: Item[] =
     {
       'name': 'Iron Axle',
       'nameID': 'IronAxleItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 11,
+      'yPos': 6,
+      'filter': 'brightness(0.5)'
     },
     {
       'name': 'Iron Bar',
@@ -3664,7 +3900,11 @@ export let items: Item[] =
     {
       'name': 'Iron Gear',
       'nameID': 'IronGearItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 6,
+      'yPos': 7,
+      'filter': 'brightness(0.5)'
     },
     {
       'name': 'Iron Hammer',
@@ -3709,7 +3949,11 @@ export let items: Item[] =
     {
       'name': 'Iron Pipe',
       'nameID': 'IronPipeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 1,
+      'yPos': 4,
+      'filter': 'brightness(0.5)'
     },
     {
       'name': 'Iron Piston',
@@ -3722,7 +3966,11 @@ export let items: Item[] =
     {
       'name': 'Iron Plate',
       'nameID': 'IronPlateItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 12,
+      'yPos': 6,
+      'filter': 'brightness(0.5)'
     },
     {
       'name': 'Iron Rock Drill',
@@ -3825,7 +4073,10 @@ export let items: Item[] =
     {
       'name': 'Kelp Seed',
       'nameID': 'KelpSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 17,
+      'yPos': 56
     },
     {
       'name': 'Kelpy Crab Roll',
@@ -4252,7 +4503,10 @@ export let items: Item[] =
     {
       'name': 'Light Bulb',
       'nameID': 'LightBulbItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 9,
+      'yPos': 1
     },
     {
       'name': 'Limestone',
@@ -4315,12 +4569,18 @@ export let items: Item[] =
     {
       'name': 'Logging Advanced Upgrade',
       'nameID': 'LoggingAdvancedUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 20,
+      'yPos': 30
     },
     {
       'name': 'Logging Basic Upgrade',
       'nameID': 'LoggingBasicUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 18,
+      'yPos': 30
     },
     {
       'name': 'Loom',
@@ -4333,7 +4593,10 @@ export let items: Item[] =
     {
       'name': 'Low Top Shoes',
       'nameID': 'LowTopShoesItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 2,
+      'yPos': 5
     },
     {
       'name': 'Lumber',
@@ -4407,7 +4670,10 @@ export let items: Item[] =
     {
       'name': 'Macaroons',
       'nameID': 'MacaroonsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 9,
+      'yPos': 10
     },
     {
       'name': 'Machinist Table',
@@ -4430,12 +4696,18 @@ export let items: Item[] =
     {
       'name': 'Masonry Advanced Upgrade',
       'nameID': 'MasonryAdvancedUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 22,
+      'yPos': 30
     },
     {
       'name': 'Masonry Basic Upgrade',
       'nameID': 'MasonryBasicUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 24,
+      'yPos': 30
     },
     {
       'name': 'Masonry Table',
@@ -4480,12 +4752,18 @@ export let items: Item[] =
     {
       'name': 'Mechanics Advanced Upgrade',
       'nameID': 'MechanicsAdvancedUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 26,
+      'yPos': 30
     },
     {
       'name': 'Mechanics Modern Upgrade',
       'nameID': 'MechanicsModernUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 28,
+      'yPos': 30
     },
     {
       'name': 'Medium Carcass',
@@ -4556,7 +4834,10 @@ export let items: Item[] =
     {
       'name': 'Milling Upgrade',
       'nameID': 'MillingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 30,
+      'yPos': 30
     },
     {
       'name': 'Millionaires Salad',
@@ -4569,28 +4850,34 @@ export let items: Item[] =
     {
       'name': 'Mining Advanced Upgrade',
       'nameID': 'MiningAdvancedUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 32,
+      'yPos': 30
     },
     {
       'name': 'Mining Basic Upgrade',
       'nameID': 'MiningBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 4,
-      'yPos': 13
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 34,
+      'yPos': 30
     },
     {
       'name': 'Mining Modern Upgrade',
       'nameID': 'MiningModernUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 36,
+      'yPos': 30
     },
     {
       'name': 'Mint',
       'nameID': 'MintItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 11,
-      'yPos': 0
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 40,
+      'yPos': 47
     },
     {
       'name': 'Mochi',
@@ -5021,7 +5308,10 @@ export let items: Item[] =
     {
       'name': 'Oil Drilling Upgrade',
       'nameID': 'OilDrillingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 46,
+      'yPos': 30
     },
     {
       'name': 'Oil Refinery',
@@ -5055,7 +5345,10 @@ export let items: Item[] =
     {
       'name': 'Pacific Sardine',
       'nameID': 'PacificSardineItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 14,
+      'yPos': 6
     },
     {
       'name': 'Padded Chair',
@@ -5110,7 +5403,10 @@ export let items: Item[] =
     {
       'name': 'Paper Milling Upgrade',
       'nameID': 'PaperMillingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 48,
+      'yPos': 30
     },
     {
       'name': 'Pastry Dough',
@@ -5128,12 +5424,18 @@ export let items: Item[] =
     {
       'name': 'Pelt Fertilizer',
       'nameID': 'PeltFertilizerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 61,
+      'yPos': 53
     },
     {
       'name': 'Petroleum',
       'nameID': 'PetroleumItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 7,
+      'yPos': 11
     },
     {
       'name': 'Phad Thai',
@@ -5146,7 +5448,10 @@ export let items: Item[] =
     {
       'name': 'Phosphate Fertilizer',
       'nameID': 'PhosphateFertilizerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 63,
+      'yPos': 53
     },
     {
       'name': 'Pickaxe',
@@ -5220,7 +5525,10 @@ export let items: Item[] =
     {
       'name': 'Pottery Upgrade',
       'nameID': 'PotteryUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 50,
+      'yPos': 30
     },
     {
       'name': 'Power',
@@ -5270,12 +5578,18 @@ export let items: Item[] =
     {
       'name': 'Prickly Pear Seed',
       'nameID': 'PricklyPearSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 31,
+      'yPos': 56
     },
     {
       'name': 'Prime Cut',
       'nameID': 'PrimeCutItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 8,
+      'yPos': 14
     },
     {
       'name': 'Printing Press',
@@ -5285,7 +5599,10 @@ export let items: Item[] =
     {
       'name': 'Pulp Filler',
       'nameID': 'PulpFillerItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 9,
+      'yPos': 52
     },
     {
       'name': 'Pump Jack',
@@ -5338,7 +5655,10 @@ export let items: Item[] =
     {
       'name': 'Raw Bacon',
       'nameID': 'RawBaconItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 4,
+      'yPos': 13
     },
     {
       'name': 'Raw Fish',
@@ -5351,12 +5671,18 @@ export let items: Item[] =
     {
       'name': 'Raw Meat',
       'nameID': 'RawMeatItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 8,
+      'yPos': 15
     },
     {
       'name': 'Raw Roast',
       'nameID': 'RawRoastItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 1,
+      'yPos': 14
     },
     {
       'name': 'Raw Sausage',
@@ -5642,7 +5968,10 @@ export let items: Item[] =
     {
       'name': 'Scrap Meat',
       'nameID': 'ScrapMeatItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 40,
+      'yPos': 56
     },
     {
       'name': 'Screening Machine',
@@ -5681,7 +6010,10 @@ export let items: Item[] =
     {
       'name': 'Seared Meat',
       'nameID': 'SearedMeatItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 8,
+      'yPos': 14
     },
     {
       'name': 'Seeded Camas Roll',
@@ -6193,12 +6525,18 @@ export let items: Item[] =
     {
       'name': 'Small Wood Cart',
       'nameID': 'SmallWoodCartItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 47,
+      'yPos': 46
     },
     {
       'name': 'Smelting Upgrade',
       'nameID': 'SmeltingUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 52,
+      'yPos': 30
     },
     {
       'name': 'Smith Apron',
@@ -6794,7 +7132,10 @@ export let items: Item[] =
     {
       'name': 'Stuffed Turkey',
       'nameID': 'StuffedTurkeyItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 10,
+      'yPos': 10
     },
     {
       'name': 'Stuffed Wolf',
@@ -6815,7 +7156,10 @@ export let items: Item[] =
     {
       'name': 'Sugar',
       'nameID': 'SugarItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 47,
+      'yPos': 56
     },
     {
       'name': 'Sugarcane',
@@ -6902,12 +7246,18 @@ export let items: Item[] =
     {
       'name': 'Tailoring Basic Upgrade',
       'nameID': 'TailoringBasicUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 54,
+      'yPos': 30
     },
     {
       'name': 'Tailoring Modern Upgrade',
       'nameID': 'TailoringModernUpgradeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 56,
+      'yPos': 30
     },
     {
       'name': 'Tailoring Table',
@@ -6920,7 +7270,10 @@ export let items: Item[] =
     {
       'name': 'Tall Boots',
       'nameID': 'TallBootsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 0,
+      'yPos': 5
     },
     {
       'name': 'Tallow',
@@ -7034,7 +7387,10 @@ export let items: Item[] =
     {
       'name': 'Tomato Seed',
       'nameID': 'TomatoSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 52,
+      'yPos': 56
     },
     {
       'name': 'Tool',
@@ -7076,7 +7432,10 @@ export let items: Item[] =
     {
       'name': 'Tortilla',
       'nameID': 'TortillaItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 9,
+      'yPos': 9
     },
     {
       'name': 'Towel Rack',
@@ -7186,7 +7545,10 @@ export let items: Item[] =
     {
       'name': 'Valve',
       'nameID': 'ValveItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 11,
+      'yPos': 7
     },
     {
       'name': 'Vegetable',
@@ -7199,14 +7561,17 @@ export let items: Item[] =
     {
       'name': 'Vegetable Medley',
       'nameID': 'VegetableMedleyItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 57,
+      'yPos': 56
     },
     {
       'name': 'Vegetable Soup',
       'nameID': 'VegetableSoupItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
-      'xPos': 3,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 4,
       'yPos': 9
     },
     {
@@ -7227,8 +7592,8 @@ export let items: Item[] =
       'nameID': 'WainwrightTableItem',
       'tag': false,
       'imageFile': 'UI_Icons_00.png',
-      'xPos': 14,
-      'yPos': 0
+      'xPos': 3,
+      'yPos': 10
     },
     {
       'name': 'Wall Candle',
@@ -7294,7 +7659,10 @@ export let items: Item[] =
     {
       'name': 'Wheat Seed',
       'nameID': 'WheatSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 62,
+      'yPos': 56
     },
     {
       'name': 'Wheelbarrow',
@@ -7312,17 +7680,26 @@ export let items: Item[] =
     {
       'name': 'Wild Mix',
       'nameID': 'WildMixItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 10,
+      'yPos': 9
     },
     {
       'name': 'Wild Stew',
       'nameID': 'WildStewItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 2,
+      'yPos': 6
     },
     {
       'name': 'Wilted Fiddleheads',
       'nameID': 'WiltedFiddleheadsItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 6,
+      'yPos': 10
     },
     {
       'name': 'Wind Turbine',
@@ -7367,7 +7744,10 @@ export let items: Item[] =
     {
       'name': 'Wood Pulp',
       'nameID': 'WoodPulpItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png',
+      'xPos': 38,
+      'yPos': 52
     },
     {
       'name': 'Wood Sign',

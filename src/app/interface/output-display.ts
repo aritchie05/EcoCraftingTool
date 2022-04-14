@@ -15,4 +15,5 @@ export class OutputDisplay {
   imageFile?: string;
   xPos?: number;
   yPos?: number;
+  filter?: string;
 }

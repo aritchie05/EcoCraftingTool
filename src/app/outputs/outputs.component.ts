@@ -6,6 +6,7 @@ import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {Item} from '../interface/item';
 
 export const ITEM_SPRITE_SIZE = 32;
 
@@ -122,7 +123,8 @@ export class OutputsComponent implements OnInit, AfterContentInit {
             }],
             imageFile: recipe.primaryOutput.item.imageFile,
             xPos: recipe.primaryOutput.item.xPos,
-            yPos: recipe.primaryOutput.item.yPos
+            yPos: recipe.primaryOutput.item.yPos,
+            filter: recipe.primaryOutput.item.filter
           });
         }
       }
@@ -223,6 +225,38 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   getOutputDisplaySpritePosition(outputDisplay: OutputDisplay): string {
     return `-${outputDisplay.xPos * ITEM_SPRITE_SIZE}px -${outputDisplay.yPos * ITEM_SPRITE_SIZE}px`;
+  }
+
+  getOutputDisplayBackgroundSize(outputDisplay: OutputDisplay): string {
+    if ('UI_Icons_Baked_0.png'.localeCompare(outputDisplay.imageFile) === 0) {
+      return '2048px';
+    }
+    return '512px';
+  }
+
+  getOutputDisplayFilter(outputDisplay: OutputDisplay): string {
+    if (outputDisplay != undefined) {
+      return outputDisplay.filter;
+    }
+    return '';
+  }
+
+  getItemSpritePosition(item: Item): string {
+    return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
+  }
+
+  getItemBackgroundSize(item: Item): string {
+    if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
+      return '2048px';
+    }
+    return '512px';
+  }
+
+  getItemFilter(item: Item): string {
+    if (item.filter != undefined) {
+      return item.filter;
+    }
+    return '';
   }
 
   localize(locale: Locale): void {
