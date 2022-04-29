@@ -13019,7 +13019,7 @@ export let recipes: Recipe[] =
         },
         {
           'item': getItemByNameID('HeartOfPalmItem'),
-          'quantity': 8,
+          'quantity': 2,
           'reducible': true
         },
         {
