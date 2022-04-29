@@ -19262,7 +19262,7 @@ export let recipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('ScrapMeatItem'),
-          'quantity': 5,
+          'quantity': 10,
           'reducible': true
         }
       ],
