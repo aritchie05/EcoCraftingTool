@@ -2479,7 +2479,10 @@ export let items: Item[] =
     {
       'name': 'Crab Pot',
       'nameID': 'CrabPotItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 8,
+      'yPos': 9
     },
     {
       'name': 'Crafting Table',
@@ -2541,7 +2544,7 @@ export let items: Item[] =
     },
     {
       'name': 'Crop Seed',
-      'nameID': 'Crop Seed',
+      'nameID': 'CropSeed',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 9,
@@ -2611,7 +2614,10 @@ export let items: Item[] =
     {
       'name': 'Crushed Mixed Rock',
       'nameID': 'CrushedMixedRockItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 12,
+      'yPos': 10
     },
     {
       'name': 'Crushed Oil Shale',
@@ -3112,6 +3118,14 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 15,
       'yPos': 7
+    },
+    {
+      'name': 'Fertilizer Filler',
+      'nameID': 'FertilizerFiller',
+      'tag': true,
+      'imageFile': 'UI_Icons_Tags.png',
+      'xPos': 2,
+      'yPos': 8
     },
     {
       'name': 'Fertilizers Upgrade',
@@ -5693,6 +5707,14 @@ export let items: Item[] =
       'yPos': 11
     },
     {
+      'name': 'Raw Food',
+      'nameID': 'RawFood',
+      'tag': true,
+      'imageFile': 'UI_Icons_Tags.png',
+      'xPos': 14,
+      'yPos': 2
+    },
+    {
       'name': 'Raw Meat',
       'nameID': 'RawMeatItem',
       'tag': false,
@@ -6240,6 +6262,14 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 6,
       'yPos': 4
+    },
+    {
+      'name': 'Small Fish',
+      'nameID': 'SmallFish',
+      'tag': true,
+      'imageFile': 'UI_Icons_Tags.png',
+      'xPos': 3,
+      'yPos': 8
     },
     {
       'name': 'Small Hanging Ashlar Basalt Sign',
@@ -6942,6 +6972,14 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_00.png',
       'xPos': 7,
       'yPos': 0
+    },
+    {
+      'name': 'Steel Square Fixture',
+      'nameID': 'SteelSquareFixtureItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 13,
+      'yPos': 10
     },
     {
       'name': 'Steel Table Lamp',
