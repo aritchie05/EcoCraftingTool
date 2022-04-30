@@ -6026,7 +6026,7 @@ export let recipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('RawBaconItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true
         }
       ],
