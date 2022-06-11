@@ -2886,6 +2886,14 @@ export let items: Item[] =
       'yPos': 30
     },
     {
+      'name': 'Elevator Call Post',
+      'nameID': 'ElevatorCallPostItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_0.png', // TODO
+      'xPos': 6,
+      'yPos': 30
+    },
+    {
       'name': 'Elk Carcass',
       'nameID': 'ElkCarcassItem',
       'tag': false,
@@ -4806,6 +4814,14 @@ export let items: Item[] =
     {
       'name': 'Medium Carcass',
       'nameID': 'MediumCarcass',
+      'tag': true,
+      'imageFile': 'UI_Icons_Tags.png',
+      'xPos': 6,
+      'yPos': 4
+    },
+    {
+      'name': 'Medium Leather Carcass',
+      'nameID': 'MediumLeatherCarcass',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 6,
@@ -7241,6 +7257,14 @@ export let items: Item[] =
       'nameID': 'SunflowerSeedItem',
       'tag': false,
       'imageFile': 'UI_Icons_02.png',
+      'xPos': 12,
+      'yPos': 3
+    },
+    {
+      'name': 'Sunflower Item',
+      'nameID': 'SunflowerItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_02.png', // TODO
       'xPos': 12,
       'yPos': 3
     },
