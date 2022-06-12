@@ -7,7 +7,7 @@
       <input #skillSearchBox (input)="onSkillsSearchInput(skillSearchBox.value)"
              class="dropdown-toggle form-control dark-input"
              [placeholder]="message('skillSearchPlaceholder')" data-toggle="dropdown" id="skillSelectInput"
-             type="search">
+             type="search" autocomplete="off">
       <div aria-labelledby="skillSelectInput" class="dropdown-menu dark-input">
         <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
            href="#">
