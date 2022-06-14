@@ -11930,7 +11930,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('MacaronsItem'),
+          'item': getItemByNameID('MacaroonsItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
