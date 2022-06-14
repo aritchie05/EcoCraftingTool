@@ -2889,9 +2889,9 @@ export let items: Item[] =
       'name': 'Elevator Call Post',
       'nameID': 'ElevatorCallPostItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png', // TODO
-      'xPos': 6,
-      'yPos': 30
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 4,
+      'yPos': 9
     },
     {
       'name': 'Elk Carcass',
@@ -7264,9 +7264,9 @@ export let items: Item[] =
       'name': 'Sunflower Item',
       'nameID': 'SunflowerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png', // TODO
-      'xPos': 12,
-      'yPos': 3
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 6,
+      'yPos': 4
     },
     {
       'name': 'Sweet Salad',
