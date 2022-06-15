@@ -530,7 +530,7 @@ export class CraftingParentComponent implements OnInit {
             price += (ingredient.price * ingredient.quantity * table.selectedUpgrade.modifier * this.resourceCostMultiplier);
           }
         } else {
-          price += (ingredient.price * ingredient.quantity * this.resourceCostMultiplier);
+          price += (ingredient.price * ingredient.quantity);
         }
       });
 
