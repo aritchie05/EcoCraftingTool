@@ -792,7 +792,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarBasaltItem'),
+          'item': getItemByNameID('AshlarStone'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -832,7 +832,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarGneissItem'),
+          'item': getItemByNameID('AshlarStone'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -872,7 +872,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarGraniteItem'),
+          'item': getItemByNameID('AshlarStone'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -936,7 +936,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarLimestoneItem'),
+          'item': getItemByNameID('AshlarStone'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -976,7 +976,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarSandstoneItem'),
+          'item': getItemByNameID('AshlarStone'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -1016,7 +1016,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarShaleItem'),
+          'item': getItemByNameID('AshlarStone'),
           'quantity': 1,
           'reducible': false,
           'primary': true
