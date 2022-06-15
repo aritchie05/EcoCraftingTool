@@ -2472,7 +2472,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('BoardItem'),
+          'item': getItemByNameID('WoodBoard'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -4824,7 +4824,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('CompositeLumberItem'),
+          'item': getItemByNameID('CompositeLumber'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -9830,7 +9830,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('HewnLogItem'),
+          'item': getItemByNameID('HewnLog'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -11712,7 +11712,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('LumberItem'),
+          'item': getItemByNameID('Lumber'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -15432,7 +15432,7 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('BoardItem'),
+          'item': getItemByNameID('WoodBoard'),
           'quantity': 3,
           'reducible': false,
           'primary': true
