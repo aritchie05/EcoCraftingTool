@@ -14374,6 +14374,35 @@ export let recipes: Recipe[] =
       ]
     },
     {
+      'name': 'Quicklime Glass',
+      'nameID': 'QuicklimeGlass',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 6,
+      'labor': 45,
+      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('QuicklimeItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SandItem'),
+          'quantity': 3,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
       'name': 'Radiator',
       'nameID': 'Radiator',
       'skill': getSkillByNameID('IndustrySkill'),
