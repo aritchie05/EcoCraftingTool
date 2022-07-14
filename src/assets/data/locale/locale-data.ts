@@ -299,7 +299,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedBakingUpgradeItem',
       'en': 'Advanced Baking Upgrade',
-      'fr': 'Mise à niveau de cuisson avancée',
+      'fr': 'Mise à niveau de cuisine avancée',
       'es': 'Actualización avanzada de horneado',
       'de': 'Fortgeschrittenes Back-Upgrade',
       'pl': 'Zaawansowana aktualizacja pieczenia',
@@ -359,7 +359,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedMasonryTableItem',
       'en': 'Advanced Masonry Table',
-      'fr': 'Table de maçonnerie avancée',
+      'fr': 'Établi de maçonnerie avancée',
       'es': 'Mesa de albañilería avanzada',
       'de': 'Fortgeschrittener Mauerwerkstisch',
       'pl': 'Zaawansowany stół murarski',
@@ -395,7 +395,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedSmeltingUpgradeItem',
       'en': 'Advanced Smelting Upgrade',
-      'fr': 'Mise à niveau avancée de la fusion',
+      'fr': 'Mise à niveau avancée de la fonte',
       'es': 'Actualización de fundición avanzada',
       'de': 'Fortgeschrittenes Schmelz-Upgrade',
       'pl': 'Zaawansowane Ulepszenie Wytapiania',
@@ -491,7 +491,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AgoutiCarcassItem',
       'en': 'Agouti Carcass',
-      'fr': 'Carcasse agouti',
+      'fr': 'Cadavre dagouti',
       'es': 'canal agutí',
       'de': 'Agouti-Kadaver',
       'pl': 'Tusza Aguti',
@@ -503,7 +503,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AgoutiEnchiladasItem',
       'en': 'Agouti Enchiladas',
-      'fr': 'Enchiladas agouti',
+      'fr': 'Enchiladas d\u0027agouti',
       'es': 'Enchiladas Agutí',
       'de': 'Agouti-Enchiladas',
       'pl': 'Aguti Enchiladas',
@@ -515,7 +515,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AgricultureResearchPaperAdvancedItem',
       'en': 'Agriculture Research Paper Advanced',
-      'fr': 'Document de recherche agricole avancé',
+      'fr': 'Papier de recherche agricole avancé',
       'es': 'Trabajo de investigación agrícola avanzado',
       'de': 'Landwirtschaftliches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany dokument z badań rolnictwa',
@@ -527,7 +527,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AgricultureResearchPaperModernItem',
       'en': 'Agriculture Research Paper Modern',
-      'fr': 'Document de recherche agricole moderne',
+      'fr': 'Papier de recherche agricole moderne',
       'es': 'Papel de investigación agrícola moderno',
       'de': 'Agrarwissenschaftliches Papier Modern',
       'pl': 'Nowoczesna praca naukowa w dziedzinie rolnictwa',
@@ -539,7 +539,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AlligatorCarcassItem',
       'en': 'Alligator Carcass',
-      'fr': 'Carcasse d\u0027alligator',
+      'fr': 'Cadavre d\u0027alligator',
       'es': 'Cadáver de cocodrilo',
       'de': 'Alligator-Kadaver',
       'pl': 'Tusza aligatora',
@@ -623,7 +623,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ArrastraItem',
       'en': 'Arrastra',
-      'fr': 'Arrastra',
+      'fr': 'Moulin primitif',
       'es': 'arrastra',
       'de': 'Arrastra',
       'pl': 'Arrastra',
@@ -1499,7 +1499,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BakingUpgradeItem',
       'en': 'Baking Upgrade',
-      'fr': 'Mise à niveau de cuisson',
+      'fr': 'Mise à niveau de cuisine',
       'es': 'Mejora para hornear',
       'de': 'Back-Upgrade',
       'pl': 'Ulepszenie pieczenia',
@@ -1535,7 +1535,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BanhXeoItem',
       'en': 'Banh Xeo',
-      'fr': 'Banh Xéo',
+      'fr': 'Crêpe vietnamienne',
       'es': 'Banh Xeo',
       'de': 'Banh Xeo',
       'pl': 'Banh Xeo',
@@ -1631,7 +1631,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BasicEngineeringUpgradeItem',
       'en': 'Basic Engineering Upgrade',
-      'fr': 'Mise à niveau d\u0027ingénierie de base',
+      'fr': 'Mise à niveau d\u0027ingénierie basique',
       'es': 'Actualización de ingeniería básica',
       'de': 'Basic Engineering-Upgrade',
       'pl': 'Podstawowe ulepszenie inżynierii',
@@ -1763,7 +1763,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BeansItem',
       'en': 'Beans',
-      'fr': 'Des haricots',
+      'fr': 'Haricots',
       'es': 'Frijoles',
       'de': 'Bohnen',
       'pl': 'fasolki',
@@ -1787,7 +1787,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BearclawItem',
       'en': 'Bearclaw',
-      'fr': 'Griffe d\u0027ours',
+      'fr': 'Gâteau patte d\u0027ours',
       'es': 'Garra de oso',
       'de': 'Bärentatze',
       'pl': 'Niedźwiedzi pazur',
@@ -1895,7 +1895,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BighornCarcassItem',
       'en': 'Bighorn Carcass',
-      'fr': 'Carcasse de mouflon d\u0027Amérique',
+      'fr': 'Cadavre de mouflon d\u0027Amérique',
       'es': 'Cadáver de Bighorn',
       'de': 'Bighorn-Kadaver',
       'pl': 'Tusza Bighorn',
@@ -1943,7 +1943,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BisonCarcassItem',
       'en': 'Bison Carcass',
-      'fr': 'Carcasse de bison',
+      'fr': 'Cadavre de bison',
       'es': 'cadáver de bisonte',
       'de': 'Bisonkadaver',
       'pl': 'Tusza żubra',
@@ -1967,7 +1967,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BisonMountItem',
       'en': 'Bison Mount',
-      'fr': 'Mont bison',
+      'fr': 'Trophée de bison',
       'es': 'Monte bisonte',
       'de': 'Bison-Berg',
       'pl': 'Góra żubra',
@@ -2123,7 +2123,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BoleteMushroomSporesItem',
       'en': 'Bolete Mushroom Spores',
-      'fr': 'Spores de champignons bolets',
+      'fr': 'Spores de Cèpes de Bordeaux',
       'es': 'Esporas de hongos bolete',
       'de': 'Bolete-Pilz-Sporen',
       'pl': 'Zarodniki grzybów borowików',
@@ -2135,7 +2135,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BoleteMushroomsItem',
       'en': 'Bolete Mushrooms',
-      'fr': 'Bolets',
+      'fr': 'Cèpes de Bordeaux',
       'es': 'Hongos Boletes',
       'de': 'Steinpilze',
       'pl': 'Podgrzybki',
@@ -2351,7 +2351,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasAshFertilizerItem',
       'en': 'Camas Ash Fertilizer',
-      'fr': 'Engrais de cendres Camas',
+      'fr': 'Engrais de cendres camassia',
       'es': 'Fertilizante Ceniza Camas',
       'de': 'Camas-Aschendünger',
       'pl': 'Nawóz Camas Ash',
@@ -2363,7 +2363,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasBreadItem',
       'en': 'Camas Bread',
-      'fr': 'Pain Camas',
+      'fr': 'Pain camassia',
       'es': 'Pan Camas',
       'de': 'Camas-Brot',
       'pl': 'Chleb',
@@ -2375,7 +2375,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasBulbItem',
       'en': 'Camas Bulb',
-      'fr': 'Camas Ampoule',
+      'fr': 'Bulbe de camassia',
       'es': 'Bombilla Camas',
       'de': 'Camas-Birne',
       'pl': 'Żarówka Cama',
@@ -2387,7 +2387,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasBulbBakeItem',
       'en': 'Camas Bulb Bake',
-      'fr': 'Cuisson au bulbe de Camas',
+      'fr': 'Bulbe de camassia cuisiné',
       'es': 'Camas Bulbo Horneado',
       'de': 'Camas Bulb Bake',
       'pl': 'Camas Piec Żarówki',
@@ -2399,7 +2399,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasPasteItem',
       'en': 'Camas Paste',
-      'fr': 'Camas Pâte',
+      'fr': 'Pâte de camassia',
       'es': 'Pasta Camas',
       'de': 'Camas-Paste',
       'pl': 'Pasta Cama',
@@ -2447,7 +2447,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CampfireCookingUpgradeItem',
       'en': 'Campfire Cooking Upgrade',
-      'fr': 'Amélioration de la cuisson au feu de camp',
+      'fr': 'Amélioration de la cuisine au feu de camp',
       'es': 'Actualización de cocina de fogata',
       'de': 'Lagerfeuerkoch-Upgrade',
       'pl': 'Ulepszenie gotowania przy ognisku',
@@ -2699,7 +2699,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CelluloseFiberItem',
       'en': 'Cellulose Fiber',
-      'fr': 'Fibre cellulosique',
+      'fr': 'Fibres de cellulose',
       'es': 'Fibra de celulosa',
       'de': 'Zellulosefaser',
       'pl': 'Włókno celulozowe',
@@ -2843,7 +2843,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CharredCamasBulbItem',
       'en': 'Charred Camas Bulb',
-      'fr': 'Ampoule Camas carbonisée',
+      'fr': 'Bulbe de camassia carbonisée',
       'es': 'Bulbo de Camas carbonizado',
       'de': 'Verkohlte Camas-Birne',
       'pl': 'Zwęglona żarówka Cama',
@@ -3071,7 +3071,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ClothItem',
       'en': 'Cloth',
-      'fr': 'Chiffon',
+      'fr': 'Tissu',
       'es': 'Tela',
       'de': 'Tuch',
       'pl': 'Płótno',
@@ -3371,7 +3371,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CompositeFillerItem',
       'en': 'Composite Filler',
-      'fr': 'Charge composite',
+      'fr': 'Garnissage mélangé',
       'es': 'Relleno compuesto',
       'de': 'Komposit-Füller',
       'pl': 'Wypełniacz kompozytowy',
@@ -4091,7 +4091,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CopperBarItem',
       'en': 'Copper Bar',
-      'fr': 'Barre de cuivre',
+      'fr': 'Lingot de cuivre',
       'es': 'Barra de cobre',
       'de': 'Kupfer Barren',
       'pl': 'Miedziana sztabka',
@@ -4343,7 +4343,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CoyoteCarcassItem',
       'en': 'Coyote Carcass',
-      'fr': 'Carcasse de coyote',
+      'fr': 'Cadavre de coyote',
       'es': 'Cadáver de coyote',
       'de': 'Kojotenkadaver',
       'pl': 'Tusza kojota',
@@ -4355,7 +4355,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrabCarcassItem',
       'en': 'Crab Carcass',
-      'fr': 'Carcasse de crabe',
+      'fr': 'Cadavre de crabe',
       'es': 'Canal de cangrejo',
       'de': 'Krabbenkadaver',
       'pl': 'Tusza kraba',
@@ -4367,7 +4367,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrabPotItem',
       'en': 'Crab Pot',
-      'fr': 'Casserole de crabe',
+      'fr': 'Casier à crabes',
       'es': 'olla de cangrejo',
       'de': 'Krabbentopf',
       'pl': 'Garnek z krabem',
@@ -4643,7 +4643,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedSlagItem',
       'en': 'Crushed Slag',
-      'fr': 'Laitier broyé',
+      'fr': 'Scorie broyé',
       'es': 'Escoria triturada',
       'de': 'Zerkleinerte Schlacke',
       'pl': 'kruszony żużel',
@@ -4667,7 +4667,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperAdvancedItem',
       'en': 'Culinary Research Paper Advanced',
-      'fr': 'Document de recherche culinaire avancé',
+      'fr': 'Papier de recherche culinaire avancé',
       'es': 'Trabajo de investigación culinaria avanzada',
       'de': 'Kulinarisches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany artykuł do badań kulinarnych',
@@ -4679,7 +4679,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperBasicItem',
       'en': 'Culinary Research Paper Basic',
-      'fr': 'Document de recherche culinaire de base',
+      'fr': 'Papier de recherche culinaire de base',
       'es': 'Trabajo básico de investigación culinaria',
       'de': 'Kulinarisches Forschungspapier Basic',
       'pl': 'Artykuł do badań kulinarnych Basic',
@@ -4691,7 +4691,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperModernItem',
       'en': 'Culinary Research Paper Modern',
-      'fr': 'Document de recherche culinaire moderne',
+      'fr': 'Papier de recherche culinaire moderne',
       'es': 'Documento de investigación culinaria moderno',
       'de': 'Kulinarisches Forschungspapier Modern',
       'pl': 'Artykuł do badań kulinarnych Nowoczesny',
@@ -4715,7 +4715,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CuttingEdgeCookingUpgradeItem',
       'en': 'Cutting Edge Cooking Upgrade',
-      'fr': 'Mise à niveau de cuisson de pointe',
+      'fr': 'Mise à niveau de cuisine moléculaire',
       'es': 'Actualización de cocina de vanguardia',
       'de': 'Modernstes Koch-Upgrade',
       'pl': 'Najnowocześniejsze ulepszenie gotowania',
@@ -4727,7 +4727,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DeerCarcassItem',
       'en': 'Deer Carcass',
-      'fr': 'Carcasse de cerf',
+      'fr': 'Cadavre de cerf',
       'es': 'cadáver de venado',
       'de': 'Hirschkadaver',
       'pl': 'Tusza jelenia',
@@ -4739,7 +4739,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DendrologyResearchPaperAdvancedItem',
       'en': 'Dendrology Research Paper Advanced',
-      'fr': 'Document de recherche en dendrologie avancé',
+      'fr': 'Papier de recherche en dendrologie avancé',
       'es': 'Trabajo de investigación de dendrología avanzada',
       'de': 'Dendrologische Forschungsarbeit Fortgeschritten',
       'pl': 'Zaawansowany artykuł badawczy dendrologiczny',
@@ -4751,7 +4751,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DendrologyResearchPaperBasicItem',
       'en': 'Dendrology Research Paper Basic',
-      'fr': 'Document de recherche sur la dendrologie',
+      'fr': 'Papier de recherche sur la dendrologie',
       'es': 'Documento de investigación de dendrología básico',
       'de': 'Dendrologisches Forschungspapier Basic',
       'pl': 'Podstawowy papier do badań dendrologicznych',
@@ -4763,7 +4763,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DendrologyResearchPaperModernItem',
       'en': 'Dendrology Research Paper Modern',
-      'fr': 'Document de recherche sur la dendrologie moderne',
+      'fr': 'Papier de recherche sur la dendrologie moderne',
       'es': 'Documento de investigación de dendrología moderno',
       'de': 'Dendrologische Forschungsarbeit Modern',
       'pl': 'Nowoczesny papier do badań dendrologicznych',
@@ -4787,7 +4787,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DirtItem',
       'en': 'Dirt',
-      'fr': 'Saleté',
+      'fr': 'Terre',
       'es': 'Suciedad',
       'de': 'Schmutz',
       'pl': 'Brud',
@@ -4943,7 +4943,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElectricMachinistTableItem',
       'en': 'Electric Machinist Table',
-      'fr': 'Table de machiniste électrique',
+      'fr': 'Table d\u0027électricien',
       'es': 'Mesa de maquinista eléctrico',
       'de': 'Elektrischer Maschinistentisch',
       'pl': 'Elektryczny stół mechanika',
@@ -5051,7 +5051,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElkCarcassItem',
       'en': 'Elk Carcass',
-      'fr': 'Carcasse d\u0027élan',
+      'fr': 'Cadavre de wapiti',
       'es': 'cadáver de alce',
       'de': 'Elch-Kadaver',
       'pl': 'Tusza łosia',
@@ -5063,7 +5063,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElkMountItem',
       'en': 'Elk Mount',
-      'fr': 'Mont Elk',
+      'fr': 'Trophée de wapiti',
       'es': 'Monte alce',
       'de': 'Elchberg',
       'pl': 'Góra Łosia',
@@ -5075,7 +5075,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElkSkypiercerItem',
       'en': 'Elk Skypiercer',
-      'fr': 'Elk Skypiercer',
+      'fr': 'Wapiti Perce-ciel',
       'es': 'Alce perforacielos',
       'de': 'Elch Skypiercer',
       'pl': 'Ełk Skypiercer',
@@ -5099,7 +5099,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElkWellingtonItem',
       'en': 'Elk Wellington',
-      'fr': 'Wapiti Wellington',
+      'fr': 'Rôti de wapiti façon Wellington',
       'es': 'Alce Wellington',
       'de': 'Elch Wellington',
       'pl': 'Ełk Wellington',
@@ -5111,7 +5111,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'EngineeringResearchPaperAdvancedItem',
       'en': 'Engineering Research Paper Advanced',
-      'fr': 'Document de recherche en ingénierie avancé',
+      'fr': 'Papier de recherche en ingénierie avancé',
       'es': 'Trabajo de investigación de ingeniería avanzado',
       'de': 'Technisches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany papier badawczy inżynierski',
@@ -5123,7 +5123,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'EngineeringResearchPaperModernItem',
       'en': 'Engineering Research Paper Modern',
-      'fr': 'Document de recherche en ingénierie moderne',
+      'fr': 'Papier de recherche en ingénierie moderne',
       'es': 'Papel de investigación de ingeniería moderno',
       'de': 'Engineering Research Paper Modern',
       'pl': 'Nowoczesny papier do badań inżynierskich',
@@ -5363,7 +5363,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Fat',
       'en': 'Fat',
-      'fr': 'Gros',
+      'fr': 'Matières grasses',
       'es': 'gordo',
       'de': 'Fett',
       'pl': 'Tłuszcz',
@@ -5411,7 +5411,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FertilizerFiller',
       'en': 'Fertilizer Filler',
-      'fr': 'Charge d\u0027engrais',
+      'fr': 'Garnissage d\u0027engrais',
       'es': 'Llenadora de fertilizantes',
       'de': 'Düngemittelfüller',
       'pl': 'Wypełniacz nawozów',
@@ -5435,7 +5435,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FiberFillerItem',
       'en': 'Fiber Filler',
-      'fr': 'Remplissage de fibres',
+      'fr': 'Garnissage de fibres',
       'es': 'Relleno de fibra',
       'de': 'Faserfüller',
       'pl': 'Wypełniacz włóknisty',
@@ -5459,7 +5459,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FiddleheadsItem',
       'en': 'Fiddleheads',
-      'fr': 'Têtes de violon',
+      'fr': 'Crosses de fougère flétries',
       'es': 'cabezas de violín',
       'de': 'Fiddleheads',
       'pl': 'Skrzypkowie',
@@ -5651,7 +5651,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FoxCarcassItem',
       'en': 'Fox Carcass',
-      'fr': 'Carcasse de renard',
+      'fr': 'Cadavre de renard',
       'es': 'carcasa de zorro',
       'de': 'Fuchskadaver',
       'pl': 'Tusza lisa',
@@ -5687,7 +5687,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FriedCamasItem',
       'en': 'Fried Camas',
-      'fr': 'Camas frits',
+      'fr': 'Camassia frits',
       'es': 'Camas Fritas',
       'de': 'Gebratene Camas',
       'pl': 'smażone kamasze',
@@ -5699,7 +5699,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FriedFiddleheadsItem',
       'en': 'Fried Fiddleheads',
-      'fr': 'Têtes de violon frites',
+      'fr': 'Crosses de fougère frites',
       'es': 'Cabezas de violín fritas',
       'de': 'Gebratene Fiddleheads',
       'pl': 'Smażone Fiddleheads',
@@ -5927,7 +5927,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GeologyResearchPaperAdvancedItem',
       'en': 'Geology Research Paper Advanced',
-      'fr': 'Document de recherche en géologie avancé',
+      'fr': 'Papier de recherche en géologie avancé',
       'es': 'Trabajo de investigación de geología avanzada',
       'de': 'Geologisches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany artykuł badawczy z zakresu geologii',
@@ -5939,7 +5939,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GeologyResearchPaperBasicItem',
       'en': 'Geology Research Paper Basic',
-      'fr': 'Document de recherche en géologie de base',
+      'fr': 'Papier de recherche en géologie de base',
       'es': 'Trabajo de investigación de geología básico',
       'de': 'Geologisches Forschungspapier Basic',
       'pl': 'Podstawowy artykuł badawczy z geologii',
@@ -5951,7 +5951,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GeologyResearchPaperModernItem',
       'en': 'Geology Research Paper Modern',
-      'fr': 'Document de recherche en géologie moderne',
+      'fr': 'Papier de recherche en géologie moderne',
       'es': 'Papel de investigación de geología moderno',
       'de': 'Geologische Forschungsarbeit Modern',
       'pl': 'Współczesna praca naukowa z zakresu geologii',
@@ -6035,7 +6035,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GoatMountItem',
       'en': 'Goat Mount',
-      'fr': 'Monture de chèvre',
+      'fr': 'Trophée de chèvre des montagnes',
       'es': 'Monte Cabra',
       'de': 'Ziegenberg',
       'pl': 'Koza Góra',
@@ -6263,7 +6263,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'HareCarcassItem',
       'en': 'Hare Carcass',
-      'fr': 'Carcasse de lièvre',
+      'fr': 'Cadavre de lièvre',
       'es': 'Canal de liebre',
       'de': 'Hasenkadaver',
       'pl': 'Tusza zająca',
@@ -6383,7 +6383,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'HewnLogItem',
       'en': 'Hewn Log',
-      'fr': 'Bûche taillée',
+      'fr': 'Rondin taillé',
       'es': 'Tronco tallado',
       'de': 'Behauenes Protokoll',
       'pl': 'Ciosany dziennik',
@@ -6395,7 +6395,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'HewnLog',
       'en': 'Hewn Log',
-      'fr': 'Bûche taillée',
+      'fr': 'Rondin taillé',
       'es': 'Tronco tallado',
       'de': 'Behauenes Protokoll',
       'pl': 'Ciosany dziennik',
@@ -6431,7 +6431,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'HideAshFertilizerItem',
       'en': 'Hide Ash Fertilizer',
-      'fr': 'Masquer l\u0027engrais de cendres',
+      'fr': 'Engrais à base de cendres de peaux',
       'es': 'Ocultar fertilizante de cenizas',
       'de': 'Aschedünger verstecken',
       'pl': 'Ukryj nawóz popiołowy',
@@ -6635,7 +6635,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'IronBarItem',
       'en': 'Iron Bar',
-      'fr': 'Barre de fer',
+      'fr': 'Lingot de fer',
       'es': 'Barra de acero',
       'de': 'Eisenstange',
       'pl': 'Żelazna sztabka',
@@ -6755,7 +6755,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'IronPlateItem',
       'en': 'Iron Plate',
-      'fr': 'Plat en fer',
+      'fr': 'Plaque de fer',
       'es': 'Placa de hierro',
       'de': 'Eisenplatte',
       'pl': 'Żelazny talerz',
@@ -6767,7 +6767,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'IronRockDrillItem',
       'en': 'Iron Rock Drill',
-      'fr': 'Perceuse à roche en fer',
+      'fr': 'Foreuse de roche en fer',
       'es': 'Taladro de roca de hierro',
       'de': 'Iron Rock-Bohrer',
       'pl': 'Żelazna wiertarka do skał',
@@ -6827,7 +6827,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'JaguarCarcassItem',
       'en': 'Jaguar Carcass',
-      'fr': 'Carcasse de jaguar',
+      'fr': 'Cadavre de jaguar',
       'es': 'carcasa de jaguar',
       'de': 'Jaguar-Karkasse',
       'pl': 'Tusza Jaguara',
@@ -7031,7 +7031,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeFish',
       'en': 'Large Fish',
-      'fr': 'Gros poisson',
+      'fr': 'Grand poisson',
       'es': 'pez grande',
       'de': 'Großer Fisch',
       'pl': 'Duża ryba',
@@ -7247,7 +7247,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeHangingMortaredStoneSignItem',
       'en': 'Large Hanging Mortared Stone Sign',
-      'fr': 'Grand panneau en pierre mortier suspendu',
+      'fr': 'Grand panneau en pierre cimenté suspendu',
       'es': 'Letrero colgante grande de piedra con mortero',
       'de': 'Großes hängendes Schild aus gemörteltem Stein',
       'pl': 'Duży wiszący znak z zaprawą murarską',
@@ -7367,7 +7367,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeLumberStockpileItem',
       'en': 'Large Lumber Stockpile',
-      'fr': 'Grand stock de bois',
+      'fr': 'Réserve en bois d\u0027oeuvre grande',
       'es': 'Gran reserva de madera',
       'de': 'Großer Holzvorrat',
       'pl': 'Duże zapasy drewna',
@@ -7379,7 +7379,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingAshlarBasaltSignItem',
       'en': 'Large Standing Ashlar Basalt Sign',
-      'fr': 'Grand panneau de basalte en pierre de taille debout',
+      'fr': 'Grand panneau de basalte en pierre de taille',
       'es': 'Letrero grande de basalto de sillería de pie',
       'de': 'Großes stehendes Quader-Basalt-Schild',
       'pl': 'Duży stojący znak bazaltowy z Ashlar',
@@ -7391,7 +7391,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingAshlarGneissSignItem',
       'en': 'Large Standing Ashlar Gneiss Sign',
-      'fr': 'Grande enseigne en gneiss en pierre de taille debout',
+      'fr': 'Grande enseigne en gneiss en pierre de taille',
       'es': 'Letrero grande de pie de sillería gneis',
       'de': 'Großes stehendes Quader-Gneis-Schild',
       'pl': 'Duży stojący znak gnejsowy Ashlar',
@@ -7403,7 +7403,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingAshlarGraniteSignItem',
       'en': 'Large Standing Ashlar Granite Sign',
-      'fr': 'Grande enseigne debout en granit de pierre de taille',
+      'fr': 'Grande enseigne en granit de pierre de taille',
       'es': 'Gran letrero de granito de sillería de pie',
       'de': 'Großes stehendes Quader-Granit-Schild',
       'pl': 'Duży stojący znak granitowy Ashlar',
@@ -7427,7 +7427,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingAshlarSandstoneSignItem',
       'en': 'Large Standing Ashlar Sandstone Sign',
-      'fr': 'Grande enseigne debout en grès de pierre de taille',
+      'fr': 'Grande enseigne en grès de pierre de taille',
       'es': 'Letrero grande de piedra arenisca de sillar de pie',
       'de': 'Großes stehendes Quader-Sandstein-Schild',
       'pl': 'Duży stojący znak z piaskowca Ashlar',
@@ -7451,7 +7451,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingAshlarStoneSignItem',
       'en': 'Large Standing Ashlar Stone Sign',
-      'fr': 'Grand panneau en pierre de taille debout',
+      'fr': 'Grand panneau en pierre de taille',
       'es': 'Cartel grande de piedra de sillería de pie',
       'de': 'Großes stehendes Quadersteinschild',
       'pl': 'Duży stojący znak z kamienia Ashlar',
@@ -7487,7 +7487,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingCeibaSignItem',
       'en': 'Large Standing Ceiba Sign',
-      'fr': 'Grande Enseigne Ceiba Debout',
+      'fr': 'Grande Enseigne Ceiba',
       'es': 'Letrero de Ceiba de pie grande',
       'de': 'Großes stehendes Ceiba-Schild',
       'pl': 'Duży stojący znak Ceiba',
@@ -7499,7 +7499,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingFirSignItem',
       'en': 'Large Standing Fir Sign',
-      'fr': 'Grande enseigne en sapin debout',
+      'fr': 'Grande enseigne en sapin',
       'es': 'Gran cartel de abeto de pie',
       'de': 'Großes stehendes Tannenschild',
       'pl': 'Duży stojący znak jodły',
@@ -7523,7 +7523,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingJoshuaSignItem',
       'en': 'Large Standing Joshua Sign',
-      'fr': 'Grand panneau Josué debout',
+      'fr': 'Grand panneau Josué',
       'es': 'Cartel de Josué grande de pie',
       'de': 'Großes stehendes Joshua-Schild',
       'pl': 'Duży stojący znak Joshua',
@@ -7535,7 +7535,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingLumberSignItem',
       'en': 'Large Standing Lumber Sign',
-      'fr': 'Grand panneau de bois debout',
+      'fr': 'Grand panneau de bois',
       'es': 'Letrero grande de madera de pie',
       'de': 'Großes stehendes Holzschild',
       'pl': 'Duży stojący znak drewna',
@@ -7547,7 +7547,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingMortaredGraniteSignItem',
       'en': 'Large Standing Mortared Granite Sign',
-      'fr': 'Grand panneau de granit mortier debout',
+      'fr': 'Grand panneau de granit mortier',
       'es': 'Letrero de granito con mortero de pie grande',
       'de': 'Großes stehendes Schild aus gemörteltem Granit',
       'pl': 'Duży stojący szyld z zaprawy granitowej',
@@ -7583,7 +7583,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingMortaredStoneSignItem',
       'en': 'Large Standing Mortared Stone Sign',
-      'fr': 'Grand panneau de pierre mortier debout',
+      'fr': 'Grand panneau de  pierre cimenté',
       'es': 'Letrero de piedra con mortero de pie grande',
       'de': 'Großes stehendes Schild aus gemörteltem Stein',
       'pl': 'Duży stojący znak z zaprawą murarską',
@@ -7595,7 +7595,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingOakSignItem',
       'en': 'Large Standing Oak Sign',
-      'fr': 'Grande Enseigne En Chêne Debout',
+      'fr': 'Grande Enseigne En Chêne',
       'es': 'Letrero grande de roble de pie',
       'de': 'Großes stehendes Eichenschild',
       'pl': 'Duży stojący szyld dębowy',
@@ -7607,7 +7607,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingPalmSignItem',
       'en': 'Large Standing Palm Sign',
-      'fr': 'Grand panneau de palmier debout',
+      'fr': 'Grand panneau de palmier',
       'es': 'Gran cartel de palma de pie.',
       'de': 'Großes stehendes Palmenschild',
       'pl': 'Duży stojący znak palmowy',
@@ -7631,7 +7631,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingSaguaroSignItem',
       'en': 'Large Standing Saguaro Sign',
-      'fr': 'Grand panneau Saguaro debout',
+      'fr': 'Grand panneau Saguaro',
       'es': 'Gran cartel de Saguaro de pie',
       'de': 'Großes stehendes Saguaro-Schild',
       'pl': 'Duży stojący znak Saguaro',
@@ -7655,7 +7655,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingSpruceSignItem',
       'en': 'Large Standing Spruce Sign',
-      'fr': 'Grande enseigne debout en épicéa',
+      'fr': 'Grande enseigne en épicéa',
       'es': 'Gran cartel de abeto de pie',
       'de': 'Großes stehendes Fichtenschild',
       'pl': 'Duży stojący znak świerkowy',
@@ -7859,7 +7859,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LoadedTaroFriesItem',
       'en': 'Loaded Taro Fries',
-      'fr': 'Frites Taro Chargées',
+      'fr': 'Frites de taro gras',
       'es': 'Patatas Fritas Taro Cargadas',
       'de': 'Geladene Taro-Pommes',
       'pl': 'Załadowane Frytki Taro',
@@ -7931,7 +7931,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LumberItem',
       'en': 'Lumber',
-      'fr': 'Bois de charpente',
+      'fr': 'Bois d\u0027oeuvre',
       'es': 'Tablas de madera',
       'de': 'Holz',
       'pl': 'Graty',
@@ -7943,7 +7943,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Lumber',
       'en': 'Lumber',
-      'fr': 'Bois de charpente',
+      'fr': 'Bois d\u0027oeuvre',
       'es': 'Tablas de madera',
       'de': 'Holz',
       'pl': 'Graty',
@@ -8003,7 +8003,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LumberStockpileItem',
       'en': 'Lumber Stockpile',
-      'fr': 'Stock de bois',
+      'fr': 'Réserve en bois d\u0027oeuvre',
       'es': 'Reserva de madera',
       'de': 'Holzvorrat',
       'pl': 'Skład drewna',
@@ -8051,7 +8051,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MachinistTableItem',
       'en': 'Machinist Table',
-      'fr': 'Table de machiniste',
+      'fr': 'Table de mécanicien',
       'es': 'Mesa de maquinista',
       'de': 'Maschinentisch',
       'pl': 'Stół maszynisty',
@@ -8111,7 +8111,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MasonryTableItem',
       'en': 'Masonry Table',
-      'fr': 'Tableau de maçonnerie',
+      'fr': 'Établi de maçonnerie',
       'es': 'Mesa de mampostería',
       'de': 'Mauerwerk Tisch',
       'pl': 'Stół murowany',
@@ -8135,7 +8135,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MeatStockItem',
       'en': 'Meat Stock',
-      'fr': 'Stock de viande',
+      'fr': 'Bouillon de viande',
       'es': 'Caldo de carne',
       'de': 'Fleischbestand',
       'pl': 'Zapas mięsny',
@@ -8195,7 +8195,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MediumCarcass',
       'en': 'Medium Carcass',
-      'fr': 'Carcasse moyenne',
+      'fr': 'Cadavre moyenne',
       'es': 'Canal mediana',
       'de': 'Mittlere Karkasse',
       'pl': 'Średnia tusza',
@@ -8219,7 +8219,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MediumLeatherCarcass',
       'en': 'Medium Leather Carcass',
-      'fr': 'Carcasse en cuir moyen',
+      'fr': 'Cadavre en cuir moyen',
       'es': 'Carcasa de cuero mediana',
       'de': 'Mittlere Lederkarkasse',
       'pl': 'Średniej Skóry Tusza',
@@ -8231,7 +8231,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MediumWoolyCarcass',
       'en': 'Medium Wooly Carcass',
-      'fr': 'Carcasse laineuse moyenne',
+      'fr': 'Cadavre moyen à laine',
       'es': 'Canal mediana de lana',
       'de': 'Mittlere wollige Karkasse',
       'pl': 'Średnio wełnista tusza',
@@ -8255,7 +8255,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MetallurgyResearchPaperAdvancedItem',
       'en': 'Metallurgy Research Paper Advanced',
-      'fr': 'Document de recherche sur la métallurgie avancé',
+      'fr': 'Papier de recherche sur la métallurgie avancé',
       'es': 'Trabajo de investigación de metalurgia avanzado',
       'de': 'Forschungsbericht zur Metallurgie für Fortgeschrittene',
       'pl': 'Zaawansowany papier do badań metalurgicznych',
@@ -8267,7 +8267,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MetallurgyResearchPaperBasicItem',
       'en': 'Metallurgy Research Paper Basic',
-      'fr': 'Document de recherche sur la métallurgie',
+      'fr': 'Papier de recherche sur la métallurgie',
       'es': 'Papel de investigación de metalurgia básico',
       'de': 'Grundlegendes Forschungspapier zur Metallurgie',
       'pl': 'Podstawowy papier do badań metalurgicznych',
@@ -8279,7 +8279,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MetallurgyResearchPaperModernItem',
       'en': 'Metallurgy Research Paper Modern',
-      'fr': 'Document de recherche sur la métallurgie moderne',
+      'fr': 'Papier de recherche sur la métallurgie moderne',
       'es': 'Papel de investigación de metalurgia moderno',
       'de': 'Metallurgisches Forschungspapier Modern',
       'pl': 'Nowoczesna praca naukowo-badawcza w dziedzinie metalurgii',
@@ -8315,7 +8315,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MillingUpgradeItem',
       'en': 'Milling Upgrade',
-      'fr': 'Mise à niveau de fraisage',
+      'fr': 'Mise à niveau de Mouture',
       'es': 'Actualización de fresado',
       'de': 'Fräs-Upgrade',
       'pl': 'Ulepszenie frezowania',
@@ -8339,7 +8339,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MiningAdvancedUpgradeItem',
       'en': 'Mining Advanced Upgrade',
-      'fr': 'Mise à niveau avancée de l\u0027exploitation minière',
+      'fr': 'Mise à niveau avancée de minage',
       'es': 'Actualización avanzada de minería',
       'de': 'Erweitertes Mining-Upgrade',
       'pl': 'Zaawansowane ulepszenie górnictwa',
@@ -8351,7 +8351,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MiningBasicUpgradeItem',
       'en': 'Mining Basic Upgrade',
-      'fr': 'Mise à niveau de base de l\u0027exploitation minière',
+      'fr': 'Mise à niveau de base de minage',
       'es': 'Actualización básica de minería',
       'de': 'Bergbau-Basis-Upgrade',
       'pl': 'Podstawowe ulepszenie górnictwa',
@@ -8363,7 +8363,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MiningModernUpgradeItem',
       'en': 'Mining Modern Upgrade',
-      'fr': 'Mise à niveau moderne de l\u0027exploitation minière',
+      'fr': 'Mise à niveau moderne de minage',
       'es': 'Actualización moderna de minería',
       'de': 'Modernes Bergbau-Upgrade',
       'pl': 'Modernizacja górnicza',
@@ -8375,7 +8375,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MintItem',
       'en': 'Mint',
-      'fr': 'menthe',
+      'fr': 'Hôtel des monnaies',
       'es': 'menta',
       'de': 'Minze',
       'pl': 'Mennica',
@@ -8483,7 +8483,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ModernRockDrillItem',
       'en': 'Modern Rock Drill',
-      'fr': 'Perceuse à roche moderne',
+      'fr': 'Foreuse de roche moderne',
       'es': 'Taladro de roca moderno',
       'de': 'Moderner Felsbohrer',
       'pl': 'Nowoczesna wiertarka do skał',
@@ -8855,7 +8855,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneItem',
       'en': 'Mortared Stone',
-      'fr': 'Pierre Mortier',
+      'fr': 'Pierre cimenté',
       'es': 'Piedra con mortero',
       'de': 'Gemörtelter Stein',
       'pl': 'Kamień zaprawy',
@@ -8867,7 +8867,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStone',
       'en': 'Mortared Stone',
-      'fr': 'Pierre Mortier',
+      'fr': 'Pierre cimenté',
       'es': 'Piedra con mortero',
       'de': 'Gemörtelter Stein',
       'pl': 'Kamień zaprawy',
@@ -8879,7 +8879,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneBenchItem',
       'en': 'Mortared Stone Bench',
-      'fr': 'Banc de pierre mortier',
+      'fr': 'Banc de pierre cimenté',
       'es': 'Banco de piedra con mortero',
       'de': 'Bank aus gemörteltem Stein',
       'pl': 'Kamienna ławka z zaprawą murarską',
@@ -8891,7 +8891,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneChairItem',
       'en': 'Mortared Stone Chair',
-      'fr': 'Chaise en pierre mortier',
+      'fr': 'Chaise en pierre cimenté',
       'es': 'Silla de piedra con mortero',
       'de': 'Gemörtelter Steinstuhl',
       'pl': 'Kamienne krzesło z zaprawą murarską',
@@ -8903,7 +8903,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneDoorItem',
       'en': 'Mortared Stone Door',
-      'fr': 'Porte en pierre mortier',
+      'fr': 'Porte en pierre cimenté',
       'es': 'Puerta de piedra con mortero',
       'de': 'Gemörtelte Steintür',
       'pl': 'Zamurowane kamienne drzwi',
@@ -8915,7 +8915,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneFireplaceItem',
       'en': 'Mortared Stone Fireplace',
-      'fr': 'Foyer en pierre mortier',
+      'fr': 'Foyer en pierre cimenté',
       'es': 'Chimenea de piedra con argamasa',
       'de': 'Kamin aus gemörteltem Stein',
       'pl': 'Kominek z zaprawy murarskiej',
@@ -8927,7 +8927,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneTableItem',
       'en': 'Mortared Stone Table',
-      'fr': 'Table en pierre mortier',
+      'fr': 'Table en pierre cimenté',
       'es': 'Mesa de piedra con mortero',
       'de': 'Gemörtelter Steintisch',
       'pl': 'Kamienny stół z zaprawą murarską',
@@ -8939,7 +8939,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MountainGoatCarcassItem',
       'en': 'Mountain Goat Carcass',
-      'fr': 'Carcasse de chèvre de montagne',
+      'fr': 'Cadavre de chèvre de montagne',
       'es': 'Canal de cabra montés',
       'de': 'Bergziegenkadaver',
       'pl': 'Tusza kozy górskiej',
@@ -9191,7 +9191,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'OtterCarcassItem',
       'en': 'Otter Carcass',
-      'fr': 'Carcasse de loutre',
+      'fr': 'Cadavre de loutre',
       'es': 'Cadáver de nutria',
       'de': 'Otter-Kadaver',
       'pl': 'Tusza wydry',
@@ -9215,7 +9215,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PaddedChairItem',
       'en': 'Padded Chair',
-      'fr': 'Chaise rembourrée',
+      'fr': 'Fauteuil',
       'es': 'silla acolchada',
       'de': 'Gepolsterter Stuhl',
       'pl': 'Wyściełane krzesło',
@@ -9359,7 +9359,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PhadThaiItem',
       'en': 'Phad Thai',
-      'fr': 'Phad thaï',
+      'fr': 'Nouilles sautées à la thaïlandaise',
       'es': 'Phad tailandés',
       'de': 'Phad Thai',
       'pl': 'Phad Thai',
@@ -9539,7 +9539,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PrairieDogCarcassItem',
       'en': 'Prairie Dog Carcass',
-      'fr': 'Carcasse de chien de prairie',
+      'fr': 'Cadavre de chien de prairie',
       'es': 'Cadáver de perrito de las praderas',
       'de': 'Präriehund-Kadaver',
       'pl': 'Tusza psa preriowego',
@@ -9587,7 +9587,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PrimeCutItem',
       'en': 'Prime Cut',
-      'fr': 'Premier coupe',
+      'fr': 'Morceau de choix',
       'es': 'Primer corte',
       'de': 'Prime-Schnitt',
       'pl': 'Prime Cut',
@@ -9611,7 +9611,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PulpFillerItem',
       'en': 'Pulp Filler',
-      'fr': 'Remplisseur de pulpe',
+      'fr': 'Garnissage de copeaux de bois',
       'es': 'Relleno de pulpa',
       'de': 'Zellstoff-Füller',
       'pl': 'Wypełniacz miazgi',
@@ -9623,7 +9623,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PumpJackItem',
       'en': 'Pump Jack',
-      'fr': 'Cric à pompe',
+      'fr': 'Chevalet de pompage',
       'es': 'Bomba extractora',
       'de': 'Pumpenheber',
       'pl': 'Pompa Jack',
@@ -9695,7 +9695,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'RawBaconItem',
       'en': 'Raw Bacon',
-      'fr': 'Lard cru',
+      'fr': 'Bacon cru',
       'es': 'tocino crudo',
       'de': 'Roher Speck',
       'pl': 'Surowy Boczek',
@@ -9791,7 +9791,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'RecurveBowItem',
       'en': 'Recurve Bow',
-      'fr': 'Arc classique',
+      'fr': 'Arc recourbé',
       'es': 'Arco recurvo',
       'de': 'Recurvebogen',
       'pl': 'Wygięty łuk',
@@ -9839,7 +9839,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'RegistrarItem',
       'en': 'Registrar',
-      'fr': 'Greffier',
+      'fr': 'Registre',
       'es': 'Registrador',
       'de': 'Registrator',
       'pl': 'Rejestrator',
@@ -9959,7 +9959,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Rock',
       'en': 'Rock',
-      'fr': 'Rock',
+      'fr': 'Pierre',
       'es': 'Roca',
       'de': 'Felsen',
       'pl': 'Głaz',
@@ -10151,7 +10151,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SandItem',
       'en': 'Sand',
-      'fr': 'Le sable',
+      'fr': 'Sable',
       'es': 'Arena',
       'de': 'Sand',
       'pl': 'Piasek',
@@ -10235,7 +10235,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ScrewsItem',
       'en': 'Screws',
-      'fr': 'Des vis',
+      'fr': 'Vis',
       'es': 'Tornillos',
       'de': 'Schrauben',
       'pl': 'Śruby',
@@ -10283,7 +10283,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SeededCamasRollItem',
       'en': 'Seeded Camas Roll',
-      'fr': 'Rouleau de camas ensemencées',
+      'fr': 'Rouleau de camassia ensemencées',
       'es': 'Rollo de Camas con Semillas',
       'de': 'Gesäte Camas-Rolle',
       'pl': 'Rolka z nasionami Camas',
@@ -10295,7 +10295,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Seeds',
       'en': 'Seeds',
-      'fr': 'Des graines',
+      'fr': 'Graines',
       'es': 'Semillas',
       'de': 'Saatgut',
       'pl': 'Posiew',
@@ -10343,7 +10343,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ShaleItem',
       'en': 'Shale',
-      'fr': 'Schiste argileux',
+      'fr': 'Schiste',
       'es': 'Esquisto',
       'de': 'Schiefer',
       'pl': 'Łupek ilasty',
@@ -10355,7 +10355,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ShaperItem',
       'en': 'Shaper',
-      'fr': 'Façonneur',
+      'fr': 'Formeuse',
       'es': 'Moldeador',
       'de': 'Former',
       'pl': 'Shaper',
@@ -10379,7 +10379,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SheepMountItem',
       'en': 'Sheep Mount',
-      'fr': 'Mont Mouton',
+      'fr': 'Trophée de mouflon',
       'es': 'Monte Ovejas',
       'de': 'Schafberg',
       'pl': 'Wierzchowiec owiec',
@@ -10535,7 +10535,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SkidSteerItem',
       'en': 'Skid Steer',
-      'fr': 'Skid Steer',
+      'fr': 'Bulldozer',
       'es': 'Minicargador',
       'de': 'Kompaktlader',
       'pl': 'Skid Steer',
@@ -10583,7 +10583,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallCarcass',
       'en': 'Small Carcass',
-      'fr': 'Petite carcasse',
+      'fr': 'Petit Cadavre',
       'es': 'Carcasa pequeña',
       'de': 'Kleine Karkasse',
       'pl': 'Mała tusza',
@@ -10811,7 +10811,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallHangingMortaredStoneSignItem',
       'en': 'Small Hanging Mortared Stone Sign',
-      'fr': 'Petit panneau en pierre mortier suspendu',
+      'fr': 'Petit panneau en pierre cimenté suspendu',
       'es': 'Pequeño letrero colgante de piedra con mortero',
       'de': 'Kleines hängendes Schild aus gemörteltem Stein',
       'pl': 'Mały wiszący znak z zaprawą murarską',
@@ -10931,7 +10931,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingAshlarBasaltSignItem',
       'en': 'Small Standing Ashlar Basalt Sign',
-      'fr': 'Petite enseigne en basalte en pierre de taille debout',
+      'fr': 'Petite enseigne en basalte en pierre de taille',
       'es': 'Letrero pequeño de pie de sillería de basalto',
       'de': 'Kleines stehendes Quader-Basalt-Schild',
       'pl': 'Mały stojący znak bazaltowy z Ashlar',
@@ -10943,7 +10943,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingAshlarGneissSignItem',
       'en': 'Small Standing Ashlar Gneiss Sign',
-      'fr': 'Petite enseigne en gneiss en pierre de taille debout',
+      'fr': 'Petite enseigne en gneiss en pierre de taille',
       'es': 'Letrero pequeño de pie de sillería gneis',
       'de': 'Kleines stehendes Quader-Gneis-Schild',
       'pl': 'Mały stojący znak z gnejsu Ashlar',
@@ -10955,7 +10955,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingAshlarGraniteSignItem',
       'en': 'Small Standing Ashlar Granite Sign',
-      'fr': 'Petite enseigne en granit de pierre de taille debout',
+      'fr': 'Petite enseigne en granit de pierre de taille',
       'es': 'Pequeño letrero de granito de sillar de pie',
       'de': 'Kleines stehendes Quader-Granit-Schild',
       'pl': 'Mały stojący znak z granitu Ashlar',
@@ -10979,7 +10979,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingAshlarSandstoneSignItem',
       'en': 'Small Standing Ashlar Sandstone Sign',
-      'fr': 'Petite enseigne debout en grès de pierre de taille',
+      'fr': 'Petite enseigne en grès de pierre de taille',
       'es': 'Pequeño letrero de pie de piedra arenisca de sillería',
       'de': 'Kleines stehendes Quader-Sandstein-Schild',
       'pl': 'Mały stojący znak z piaskowca Ashlar',
@@ -10991,7 +10991,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingAshlarShaleSignItem',
       'en': 'Small Standing Ashlar Shale Sign',
-      'fr': 'Petit panneau de schiste en pierre de taille debout',
+      'fr': 'Petit panneau de schiste en pierre de taille',
       'es': 'Letrero de esquisto de sillería pequeño de pie',
       'de': 'Kleines stehendes Quader-Schiefer-Schild',
       'pl': 'Mały stojący znak łupków Ashlar',
@@ -11003,7 +11003,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingAshlarStoneSignItem',
       'en': 'Small Standing Ashlar Stone Sign',
-      'fr': 'Petite enseigne en pierre de taille debout',
+      'fr': 'Petite enseigne en pierre de taille',
       'es': 'Pequeño letrero de piedra de sillería de pie',
       'de': 'Kleines stehendes Quadersteinschild',
       'pl': 'Mały stojący znak z kamienia Ashlar',
@@ -11015,7 +11015,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingBirchSignItem',
       'en': 'Small Standing Birch Sign',
-      'fr': 'Petite enseigne debout en bouleau',
+      'fr': 'Petite enseigne en bouleau',
       'es': 'Letrero pequeño de abedul de pie',
       'de': 'Kleines stehendes Schild aus Birke',
       'pl': 'Mały stojący znak brzozy',
@@ -11039,7 +11039,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingCeibaSignItem',
       'en': 'Small Standing Ceiba Sign',
-      'fr': 'Petite Enseigne Ceiba Debout',
+      'fr': 'Petite Enseigne Ceiba',
       'es': 'Letrero de Ceiba Pequeño de Pie',
       'de': 'Kleines stehendes Ceiba-Schild',
       'pl': 'Mały stojący znak Ceiba',
@@ -11051,7 +11051,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingFirSignItem',
       'en': 'Small Standing Fir Sign',
-      'fr': 'Petite enseigne en sapin debout',
+      'fr': 'Petite enseigne en sapin',
       'es': 'Pequeño cartel de abeto de pie',
       'de': 'Kleines stehendes Tannenschild',
       'pl': 'Mały stojący znak jodły',
@@ -11075,7 +11075,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingJoshuaSignItem',
       'en': 'Small Standing Joshua Sign',
-      'fr': 'Petit signe Josué debout',
+      'fr': 'Petit signe Josué',
       'es': 'Pequeño cartel de Josué de pie',
       'de': 'Kleines stehendes Joshua-Schild',
       'pl': 'Mały stojący znak Joshua',
@@ -11087,7 +11087,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingLumberSignItem',
       'en': 'Small Standing Lumber Sign',
-      'fr': 'Petit panneau de bois debout',
+      'fr': 'Petit panneau de bois',
       'es': 'Pequeño letrero de madera de pie',
       'de': 'Kleines stehendes Holzschild',
       'pl': 'Mały stojący znak drewna',
@@ -11099,7 +11099,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingMortaredGraniteSignItem',
       'en': 'Small Standing Mortared Granite Sign',
-      'fr': 'Petite enseigne en granit mortier debout',
+      'fr': 'Petite enseigne en granit mortier',
       'es': 'Pequeño letrero de granito con mortero de pie',
       'de': 'Kleines stehendes Schild aus gemörteltem Granit',
       'pl': 'Mały stojący znak z zaprawy granitowej',
@@ -11135,7 +11135,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingMortaredStoneSignItem',
       'en': 'Small Standing Mortared Stone Sign',
-      'fr': 'Petit panneau de pierre mortier debout',
+      'fr': 'Petit panneau de pierre cimenté',
       'es': 'Pequeño letrero de piedra con mortero de pie',
       'de': 'Kleines stehendes Schild aus gemörteltem Stein',
       'pl': 'Mały stojący znak z zaprawą murarską',
@@ -11147,7 +11147,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingOakSignItem',
       'en': 'Small Standing Oak Sign',
-      'fr': 'Petite Enseigne En Chêne Debout',
+      'fr': 'Petite Enseigne En Chêne',
       'es': 'Pequeño letrero de roble de pie',
       'de': 'Kleines stehendes Eichenschild',
       'pl': 'Mały stojący szyld dębowy',
@@ -11159,7 +11159,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingPalmSignItem',
       'en': 'Small Standing Palm Sign',
-      'fr': 'Petit panneau de palmier debout',
+      'fr': 'Petit panneau de palmier',
       'es': 'Pequeño cartel de palma de pie',
       'de': 'Kleines stehendes Palmenschild',
       'pl': 'Mały stojący znak dłoni',
@@ -11183,7 +11183,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingSaguaroSignItem',
       'en': 'Small Standing Saguaro Sign',
-      'fr': 'Petit panneau Saguaro debout',
+      'fr': 'Petit panneau Saguaro',
       'es': 'Pequeño letrero de Saguaro de pie',
       'de': 'Kleines stehendes Saguaro-Schild',
       'pl': 'Mały stojący znak Saguaro',
@@ -11207,7 +11207,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingSpruceSignItem',
       'en': 'Small Standing Spruce Sign',
-      'fr': 'Petite enseigne debout en épicéa',
+      'fr': 'Petite enseigne en épicéa',
       'es': 'Letrero de abeto pequeño de pie',
       'de': 'Kleines stehendes Fichtenschild',
       'pl': 'Mały stojący znak świerkowy',
@@ -11219,7 +11219,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingStoneSignItem',
       'en': 'Small Standing Stone Sign',
-      'fr': 'Petite enseigne en pierre debout',
+      'fr': 'Petite enseigne en pierre',
       'es': 'Pequeño letrero de piedra de pie',
       'de': 'Kleines Stehendes Steinschild',
       'pl': 'Mały stojący kamienny znak',
@@ -11243,7 +11243,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStockpileItem',
       'en': 'Small Stockpile',
-      'fr': 'Petit stock',
+      'fr': 'Réserve petite',
       'es': 'Pequeña reserva',
       'de': 'Kleiner Vorrat',
       'pl': 'Mały zapas',
@@ -11279,7 +11279,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmeltingUpgradeItem',
       'en': 'Smelting Upgrade',
-      'fr': 'Mise à niveau de la fusion',
+      'fr': 'Mise à niveau de la fonte',
       'es': 'Actualización de fundición',
       'de': 'Schmelz-Upgrade',
       'pl': 'Ulepszenie wytopu',
@@ -11363,7 +11363,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SnappingTurtleCarcassItem',
       'en': 'Snapping Turtle Carcass',
-      'fr': 'Carcasse de tortue serpentine',
+      'fr': 'Cadavre de tortue serpentine',
       'es': 'Cadáver de tortuga mordedora',
       'de': 'Kadaver der Schnappschildkröte',
       'pl': 'Tusza Żółwia Jaszczurczego',
@@ -11483,7 +11483,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StampMillItem',
       'en': 'Stamp Mill',
-      'fr': 'Moulin à timbres',
+      'fr': 'Bocard',
       'es': 'Molino de sellos',
       'de': 'Stempelmühle',
       'pl': 'Pieczęć Młyn',
@@ -11495,7 +11495,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StandingGlassSignItem',
       'en': 'Standing Glass Sign',
-      'fr': 'Signe de verre debout',
+      'fr': 'Signe de verre',
       'es': 'Letrero de vidrio de pie',
       'de': 'Stehendes Glasschild',
       'pl': 'Stojący szklany znak',
@@ -11507,7 +11507,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StandingLongSteelSignItem',
       'en': 'Standing Long Steel Sign',
-      'fr': 'Panneau en acier long debout',
+      'fr': 'Panneau en acier long',
       'es': 'Letrero de acero largo de pie',
       'de': 'Stehendes langes Stahlschild',
       'pl': 'Stojący długi znak ze stali',
@@ -11519,7 +11519,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StandingSteelBrickSignItem',
       'en': 'Standing Steel Brick Sign',
-      'fr': 'Panneau de brique en acier debout',
+      'fr': 'Panneau de brique en acier',
       'es': 'Letrero de ladrillo de acero de pie',
       'de': 'Stehendes Backsteinschild aus Stahl',
       'pl': 'Stojący znak ze stali ceglanej',
@@ -11639,7 +11639,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SteelBarItem',
       'en': 'Steel Bar',
-      'fr': 'Barre d\u0027acier',
+      'fr': 'Lingot d\u0027acier',
       'es': 'Barra de acero',
       'de': 'Stahlstange',
       'pl': 'Sztabka stali',
@@ -11891,7 +11891,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StockpileItem',
       'en': 'Stockpile',
-      'fr': 'Stocker',
+      'fr': 'Réserve',
       'es': 'Reservas',
       'de': 'Vorrat',
       'pl': 'Robić zapasy żywności',
@@ -12143,7 +12143,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedAlligatorItem',
       'en': 'Stuffed Alligator',
-      'fr': 'Alligator farci',
+      'fr': 'Alligator empaillé',
       'es': 'Cocodrilo Relleno',
       'de': 'Gefüllter Alligator',
       'pl': 'Nadziewany aligator',
@@ -12155,7 +12155,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedBisonItem',
       'en': 'Stuffed Bison',
-      'fr': 'Bison farci',
+      'fr': 'Bison empaillé',
       'es': 'bisonte relleno',
       'de': 'Gefüllter Bison',
       'pl': 'Faszerowany żubr',
@@ -12167,7 +12167,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedElkItem',
       'en': 'Stuffed Elk',
-      'fr': 'Élan farci',
+      'fr': 'Wapiti empaillé',
       'es': 'Alce Relleno',
       'de': 'Gefüllter Elch',
       'pl': 'Faszerowany Łoś',
@@ -12179,7 +12179,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedGoatItem',
       'en': 'Stuffed Goat',
-      'fr': 'Chèvre en peluche',
+      'fr': 'Chèvre des montagnes empaillé',
       'es': 'Cabra Rellena',
       'de': 'Gefüllte Ziege',
       'pl': 'Faszerowana Koza',
@@ -12191,7 +12191,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedJaguarItem',
       'en': 'Stuffed Jaguar',
-      'fr': 'Jaguar en peluche',
+      'fr': 'Jaguar empaillé',
       'es': 'Jaguar relleno',
       'de': 'Ausgestopfter Jaguar',
       'pl': 'Nadziewany Jaguar',
@@ -12203,7 +12203,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedTurkeyItem',
       'en': 'Stuffed Turkey',
-      'fr': 'Dinde farcie',
+      'fr': 'Dinde empaillée',
       'es': 'Pavo relleno',
       'de': 'Gefüllter Truthahn',
       'pl': 'Faszerowany indyk',
@@ -12215,7 +12215,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedWolfItem',
       'en': 'Stuffed Wolf',
-      'fr': 'Loup en peluche',
+      'fr': 'Loup empaillé',
       'es': 'Lobo relleno',
       'de': 'Ausgestopfter Wolf',
       'pl': 'wypchany wilk',
@@ -12263,7 +12263,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SunCheeseItem',
       'en': 'Sun Cheese',
-      'fr': 'Fromage du soleil',
+      'fr': 'Margarine',
       'es': 'Queso de sol',
       'de': 'Sonnenkäse',
       'pl': 'Ser Słoneczny',
@@ -12419,7 +12419,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'TailoringTableItem',
       'en': 'Tailoring Table',
-      'fr': 'Tableau de couture',
+      'fr': 'Table de couture',
       'es': 'Mesa de sastrería',
       'de': 'Schneidertisch',
       'pl': 'Stół krawiecki',
@@ -12539,7 +12539,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'TinyCarcass',
       'en': 'Tiny Carcass',
-      'fr': 'Petite carcasse',
+      'fr': 'Petit cadavre',
       'es': 'carcasa diminuta',
       'de': 'Winziger Kadaver',
       'pl': 'Drobna Tusza',
@@ -12551,7 +12551,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'TinyFurCarcass',
       'en': 'Tiny Fur Carcass',
-      'fr': 'Petite carcasse de fourrure',
+      'fr': 'Minuscule cadavre à fourrure',
       'es': 'Carcasa de piel diminuta',
       'de': 'Winziger Fellkadaver',
       'pl': 'Tusz z małego futra',
@@ -12563,7 +12563,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'TinyLeatherCarcass',
       'en': 'Tiny Leather Carcass',
-      'fr': 'Petite carcasse en cuir',
+      'fr': 'Minuscule cadavre à cuir',
       'es': 'Carcasa de cuero diminuta',
       'de': 'Winzige Lederkarkasse',
       'pl': 'Mały skórzany tusz',
@@ -12575,7 +12575,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'TinyStockpileItem',
       'en': 'Tiny Stockpile',
-      'fr': 'Petit stock',
+      'fr': 'Réserve minuscule',
       'es': 'Reserva minúscula',
       'de': 'Kleiner Vorrat',
       'pl': 'Mały zapas',
@@ -12815,7 +12815,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'TurkeyCarcassItem',
       'en': 'Turkey Carcass',
-      'fr': 'Carcasse de dinde',
+      'fr': 'Cadavre de dinde',
       'es': 'canal de pavo',
       'de': 'Putenkadaver',
       'pl': 'Tusza z indyka',
@@ -12839,7 +12839,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'UpholsteredChairItem',
       'en': 'Upholstered Chair',
-      'fr': 'Chaise rembourrée',
+      'fr': 'Fauteuil rembourrée',
       'es': 'Silla tapizada',
       'de': 'Gepolsterter Stuhl',
       'pl': 'Krzesło tapicerowane',
@@ -12947,7 +12947,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'WainwrightTableItem',
       'en': 'Wainwright Table',
-      'fr': 'Table Wainwright',
+      'fr': 'Établi d\u0027ingénierie routière',
       'es': 'Mesa Wainwright',
       'de': 'Wainwright-Tisch',
       'pl': 'Stół Wainwrighta',
@@ -13043,7 +13043,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'WheatItem',
       'en': 'Wheat',
-      'fr': 'Du blé',
+      'fr': 'Blé',
       'es': 'Trigo',
       'de': 'Weizen',
       'pl': 'Pszenica',
@@ -13115,7 +13115,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'WiltedFiddleheadsItem',
       'en': 'Wilted Fiddleheads',
-      'fr': 'Têtes de violon fanées',
+      'fr': 'Crosses de fougère flétries',
       'es': 'Cabezas de violín marchitas',
       'de': 'Verwelkte Fiddleheads',
       'pl': 'Zwiędłe Fiddleheads',
@@ -13151,7 +13151,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'WolfCarcassItem',
       'en': 'Wolf Carcass',
-      'fr': 'Carcasse de loup',
+      'fr': 'Cadavre de loup',
       'es': 'cadáver de lobo',
       'de': 'Wolfskadaver',
       'pl': 'truchło wilka',
@@ -13187,7 +13187,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'WoodPulpItem',
       'en': 'Wood Pulp',
-      'fr': 'Pâte de bois',
+      'fr': 'Copeaux de bois',
       'es': 'Pulpa de madera',
       'de': 'Zellstoff',
       'pl': 'Miazga drzewna',
@@ -13537,7 +13537,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedBakingUpgrade',
       'en': 'Advanced Baking Upgrade',
-      'fr': 'Mise à niveau de cuisson avancée',
+      'fr': 'Mise à niveau de cuisine avancée',
       'es': 'Actualización avanzada de horneado',
       'de': 'Fortgeschrittenes Back-Upgrade',
       'pl': 'Zaawansowana aktualizacja pieczenia',
@@ -13597,7 +13597,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedMasonryTable',
       'en': 'Advanced Masonry Table',
-      'fr': 'Table de maçonnerie avancée',
+      'fr': 'Établi de maçonnerie avancé',
       'es': 'Mesa de albañilería avanzada',
       'de': 'Fortgeschrittener Mauerwerkstisch',
       'pl': 'Zaawansowany stół murarski',
@@ -13621,7 +13621,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedSmeltingUpgrade',
       'en': 'Advanced Smelting Upgrade',
-      'fr': 'Mise à niveau avancée de la fusion',
+      'fr': 'Mise à niveau avancée de la fonte',
       'es': 'Actualización de fundición avanzada',
       'de': 'Fortgeschrittenes Schmelz-Upgrade',
       'pl': 'Zaawansowane Ulepszenie Wytapiania',
@@ -13717,7 +13717,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AgricultureResearchPaperAdvanced',
       'en': 'Agriculture Research Paper Advanced',
-      'fr': 'Document de recherche agricole avancé',
+      'fr': 'Papier de recherche agricole avancé',
       'es': 'Trabajo de investigación agrícola avanzado',
       'de': 'Landwirtschaftliches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany dokument z badań rolnictwa',
@@ -13729,7 +13729,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AgricultureResearchPaperModern',
       'en': 'Agriculture Research Paper Modern',
-      'fr': 'Document de recherche agricole moderne',
+      'fr': 'Papier de recherche agricole moderne',
       'es': 'Papel de investigación agrícola moderno',
       'de': 'Agrarwissenschaftliches Papier Modern',
       'pl': 'Nowoczesna praca naukowa w dziedzinie rolnictwa',
@@ -13765,7 +13765,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Arrastra',
       'en': 'Arrastra',
-      'fr': 'Arrastra',
+      'fr': 'Moulin primitif',
       'es': 'arrastra',
       'de': 'Arrastra',
       'pl': 'Arrastra',
@@ -14089,7 +14089,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BakingUpgrade',
       'en': 'Baking Upgrade',
-      'fr': 'Mise à niveau de cuisson',
+      'fr': 'Mise à niveau de cuisine',
       'es': 'Mejora para hornear',
       'de': 'Back-Upgrade',
       'pl': 'Ulepszenie pieczenia',
@@ -14113,7 +14113,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BanhXeo',
       'en': 'Banh Xeo',
-      'fr': 'Banh Xéo',
+      'fr': 'Crêpe vietnamienne',
       'es': 'Banh Xeo',
       'de': 'Banh Xeo',
       'pl': 'Banh Xeo',
@@ -14173,7 +14173,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BasicEngineeringUpgrade',
       'en': 'Basic Engineering Upgrade',
-      'fr': 'Mise à niveau d\u0027ingénierie de base',
+      'fr': 'Mise à niveau d\u0027ingénierie basique',
       'es': 'Actualización de ingeniería básica',
       'de': 'Basic Engineering-Upgrade',
       'pl': 'Podstawowe ulepszenie inżynierii',
@@ -14437,7 +14437,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BisonMount',
       'en': 'Bison Mount',
-      'fr': 'Mont bison',
+      'fr': 'Trophée de bison',
       'es': 'Monte bisonte',
       'de': 'Bison-Berg',
       'pl': 'Góra żubra',
@@ -14473,7 +14473,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Bloomery',
       'en': 'Bloomery',
-      'fr': 'Floraison',
+      'fr': 'Bas fourneau',
       'es': 'Floración',
       'de': 'Bloomery',
       'pl': 'Bloomery',
@@ -14557,7 +14557,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BoleteMushroomSpores',
       'en': 'Bolete Mushroom Spores',
-      'fr': 'Spores de champignons bolets',
+      'fr': 'Spores de Cèpes de Bordeaux',
       'es': 'Esporas de hongos bolete',
       'de': 'Bolete-Pilz-Sporen',
       'pl': 'Zarodniki grzybów borowików',
@@ -14737,7 +14737,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasAshFertilizer',
       'en': 'Camas Ash Fertilizer',
-      'fr': 'Engrais de cendres Camas',
+      'fr': 'Engrais de cendres camassia',
       'es': 'Fertilizante Ceniza Camas',
       'de': 'Camas-Aschendünger',
       'pl': 'Nawóz Camas Ash',
@@ -14749,7 +14749,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasBread',
       'en': 'Camas Bread',
-      'fr': 'Pain Camas',
+      'fr': 'Pain camassia',
       'es': 'Pan Camas',
       'de': 'Camas-Brot',
       'pl': 'Chleb',
@@ -14761,7 +14761,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasBulbBake',
       'en': 'Camas Bulb Bake',
-      'fr': 'Cuisson au bulbe de Camas',
+      'fr': 'Bulbe de camassia cuisiné',
       'es': 'Camas Bulbo Horneado',
       'de': 'Camas Bulb Bake',
       'pl': 'Camas Piec Żarówki',
@@ -14773,7 +14773,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CamasPaste',
       'en': 'Camas Paste',
-      'fr': 'Camas Pâte',
+      'fr': 'Pâte de camassia',
       'es': 'Pasta Camas',
       'de': 'Camas-Paste',
       'pl': 'Pasta Cama',
@@ -14809,7 +14809,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CampfireCookingUpgrade',
       'en': 'Campfire Cooking Upgrade',
-      'fr': 'Amélioration de la cuisson au feu de camp',
+      'fr': 'Amélioration de la cuisine au feu de camp',
       'es': 'Actualización de cocina de fogata',
       'de': 'Lagerfeuerkoch-Upgrade',
       'pl': 'Ulepszenie gotowania przy ognisku',
@@ -14953,7 +14953,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CelluloseFiber',
       'en': 'Cellulose Fiber',
-      'fr': 'Fibre cellulosique',
+      'fr': 'Fibres de cellulose',
       'es': 'Fibra de celulosa',
       'de': 'Zellulosefaser',
       'pl': 'Włókno celulozowe',
@@ -15061,7 +15061,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CharredCamasBulb',
       'en': 'Charred Camas Bulb',
-      'fr': 'Ampoule Camas carbonisée',
+      'fr': 'Bulbe de camassia carbonisée',
       'es': 'Bulbo de Camas carbonizado',
       'de': 'Verkohlte Camas-Birne',
       'pl': 'Zwęglona żarówka Cama',
@@ -15385,7 +15385,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Cloth',
       'en': 'Cloth',
-      'fr': 'Chiffon',
+      'fr': 'Tissu',
       'es': 'Tela',
       'de': 'Tuch',
       'pl': 'Płótno',
@@ -15433,7 +15433,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CompositeFiller',
       'en': 'Composite Filler',
-      'fr': 'Charge composite',
+      'fr': 'Garnissage mélangé',
       'es': 'Relleno compuesto',
       'de': 'Komposit-Füller',
       'pl': 'Wypełniacz kompozytowy',
@@ -15565,7 +15565,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CopperBar',
       'en': 'Copper Bar',
-      'fr': 'Barre de cuivre',
+      'fr': 'Lingot de cuivre',
       'es': 'Barra de cobre',
       'de': 'Kupfer Barren',
       'pl': 'Miedziana sztabka',
@@ -15805,7 +15805,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrabPot',
       'en': 'Crab Pot',
-      'fr': 'Casserole de crabe',
+      'fr': 'Casier à crabes',
       'es': 'olla de cangrejo',
       'de': 'Krabbentopf',
       'pl': 'Garnek z krabem',
@@ -15865,7 +15865,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedBasaltLv2',
       'en': 'Crushed Basalt Lv2',
-      'fr': 'Basalte concassé Lv2',
+      'fr': 'Basalte concassé Nv2',
       'es': 'Basalto triturado Lv2',
       'de': 'Zerkleinerter Basalt Lv2',
       'pl': 'Kruszony Bazalt Lv2',
@@ -15877,7 +15877,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedBasaltLv3',
       'en': 'Crushed Basalt Lv3',
-      'fr': 'Basalte concassé Lv3',
+      'fr': 'Basalte concassé Nv3',
       'es': 'Basalto triturado Lv3',
       'de': 'Zerkleinerter Basalt Lv3',
       'pl': 'Kruszony Bazalt Lv3',
@@ -15889,7 +15889,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedCopperLv2',
       'en': 'Crushed Copper Lv2',
-      'fr': 'Cuivre concassé Lv2',
+      'fr': 'Cuivre concassé Nv2',
       'es': 'Cobre triturado Lv2',
       'de': 'Zerkleinertes Kupfer Lv2',
       'pl': 'Kruszona miedź Lv2',
@@ -15901,7 +15901,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedCopperLv3',
       'en': 'Crushed Copper Lv3',
-      'fr': 'Cuivre concassé Lv3',
+      'fr': 'Cuivre concassé Nv3',
       'es': 'Cobre triturado Lv3',
       'de': 'Zerkleinertes Kupfer Lv3',
       'pl': 'Kruszona miedź Lv3',
@@ -15925,7 +15925,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedGneissLv2',
       'en': 'Crushed Gneiss Lv2',
-      'fr': 'Gneiss concassé Lv2',
+      'fr': 'Gneiss concassé Nv2',
       'es': 'Gneis triturado Lv2',
       'de': 'Zerkleinerter Gneis Lv2',
       'pl': 'Zmiażdżony Gnejs Lv2',
@@ -15937,7 +15937,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedGneissLv3',
       'en': 'Crushed Gneiss Lv3',
-      'fr': 'Gneiss concassé Lv3',
+      'fr': 'Gneiss concassé Nv3',
       'es': 'Gneis triturado Lv3',
       'de': 'Zerkleinerter Gneis Lv3',
       'pl': 'Zmiażdżony Gnejs Lv3',
@@ -15949,7 +15949,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedGoldLv2',
       'en': 'Crushed Gold Lv2',
-      'fr': 'Or concassé Lv2',
+      'fr': 'Or concassé Nv2',
       'es': 'Oro triturado Lv2',
       'de': 'Zerkleinertes Gold Lv2',
       'pl': 'Zmiażdżone złoto Lv2',
@@ -15961,7 +15961,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedGoldLv3',
       'en': 'Crushed Gold Lv3',
-      'fr': 'Or concassé Lv3',
+      'fr': 'Or concassé Nv3',
       'es': 'Oro triturado Lv3',
       'de': 'Zerkleinertes Gold Lv3',
       'pl': 'Zmiażdżone złoto Lv3',
@@ -15997,7 +15997,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedGraniteLv2',
       'en': 'Crushed Granite Lv2',
-      'fr': 'Granit concassé Lv2',
+      'fr': 'Granit concassé Nv2',
       'es': 'Granito triturado Lv2',
       'de': 'Zerkleinerter Granit Lv2',
       'pl': 'Kruszony Granit Lv2',
@@ -16009,7 +16009,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedGraniteLv3',
       'en': 'Crushed Granite Lv3',
-      'fr': 'Granit concassé Lv3',
+      'fr': 'Granit concassé Nv3',
       'es': 'Granito triturado Lv3',
       'de': 'Zerkleinerter Granit Lv3',
       'pl': 'Kruszony Granit Lv3',
@@ -16069,7 +16069,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedLimestoneLv2',
       'en': 'Crushed Limestone Lv2',
-      'fr': 'Calcaire concassé Lv2',
+      'fr': 'Calcaire concassé Nv2',
       'es': 'Piedra caliza triturada Lv2',
       'de': 'Zerkleinerter Kalkstein Lv2',
       'pl': 'Kruszony Wapień Lv2',
@@ -16081,7 +16081,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedLimestoneLv3',
       'en': 'Crushed Limestone Lv3',
-      'fr': 'Calcaire concassé Lv3',
+      'fr': 'Calcaire concassé Nv3',
       'es': 'Piedra caliza triturada Lv3',
       'de': 'Zerkleinerter Kalkstein Lv3',
       'pl': 'Kruszony Wapień Lv3',
@@ -16177,7 +16177,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedSandstoneLv2',
       'en': 'Crushed Sandstone Lv2',
-      'fr': 'Grès concassé Lv2',
+      'fr': 'Grès concassé Nv2',
       'es': 'Arenisca triturada Lv2',
       'de': 'Zerkleinerter Sandstein Lv2',
       'pl': 'Kruszony piaskowiec Lv2',
@@ -16189,7 +16189,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedSandstoneLv3',
       'en': 'Crushed Sandstone Lv3',
-      'fr': 'Grès concassé Lv3',
+      'fr': 'Grès concassé Nv3',
       'es': 'Arenisca triturada Lv3',
       'de': 'Zerkleinerter Sandstein Lv3',
       'pl': 'Kruszony Piaskowiec Lv3',
@@ -16213,7 +16213,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedShaleLv2',
       'en': 'Crushed Shale Lv2',
-      'fr': 'Schiste concassé Lv2',
+      'fr': 'Schiste concassé Nv2',
       'es': 'Esquisto triturado Lv2',
       'de': 'Zerkleinerter Schiefer Lv2',
       'pl': 'Kruszony łupek Lv2',
@@ -16225,7 +16225,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedShaleLv3',
       'en': 'Crushed Shale Lv3',
-      'fr': 'Schiste concassé Lv3',
+      'fr': 'Schiste concassé Nv3',
       'es': 'Esquisto triturado Lv3',
       'de': 'Zerkleinerter Schiefer Lv3',
       'pl': 'Skruszony łupek Lv3',
@@ -16237,7 +16237,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedSlagLv2',
       'en': 'Crushed Slag Lv2',
-      'fr': 'Laitier concassé Lv2',
+      'fr': 'Scorie concassé Nv2',
       'es': 'Escoria triturada Lv2',
       'de': 'Zerkleinerte Schlacke Lv2',
       'pl': 'Skruszony Żużel Lv2',
@@ -16249,7 +16249,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CrushedSlagLv3',
       'en': 'Crushed Slag Lv3',
-      'fr': 'Laitier concassé Lv3',
+      'fr': 'Scorie concassé Nv3',
       'es': 'Escoria triturada Lv3',
       'de': 'Zerkleinerte Schlacke Lv3',
       'pl': 'Skruszony Żużel Lv3',
@@ -16261,7 +16261,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperAdvanced',
       'en': 'Culinary Research Paper Advanced',
-      'fr': 'Document de recherche culinaire avancé',
+      'fr': 'Papier de recherche culinaire avancé',
       'es': 'Trabajo de investigación culinaria avanzada',
       'de': 'Kulinarisches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany artykuł do badań kulinarnych',
@@ -16273,7 +16273,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperAdvancedMeat',
       'en': 'Culinary Research Paper Advanced Meat',
-      'fr': 'Document de recherche culinaire Viande avancée',
+      'fr': 'Papier de recherche culinaire Viande avancée',
       'es': 'Trabajo de investigación culinaria Carne avanzada',
       'de': 'Kulinarisches Forschungspapier Advanced Meat',
       'pl': 'Papier do badań kulinarnych Zaawansowane mięso',
@@ -16285,7 +16285,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperBasic',
       'en': 'Culinary Research Paper Basic',
-      'fr': 'Document de recherche culinaire de base',
+      'fr': 'Papier de recherche culinaire de base',
       'es': 'Trabajo básico de investigación culinaria',
       'de': 'Kulinarisches Forschungspapier Basic',
       'pl': 'Artykuł do badań kulinarnych Basic',
@@ -16297,7 +16297,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperBasicFish',
       'en': 'Culinary Research Paper Basic Fish',
-      'fr': 'Document de recherche culinaire Basic Fish',
+      'fr': 'Papier de recherche culinaire Basic Fish',
       'es': 'Trabajo de investigación culinaria Pescado básico',
       'de': 'Kulinarisches Forschungspapier Basic Fish',
       'pl': 'Artykuł do badań kulinarnych Podstawowe ryby',
@@ -16309,7 +16309,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperBasicMeat',
       'en': 'Culinary Research Paper Basic Meat',
-      'fr': 'Document de recherche culinaire Viande de base',
+      'fr': 'Papier de recherche culinaire Viande de base',
       'es': 'Documento de investigación culinaria Carne básica',
       'de': 'Kulinarisches Forschungspapier Basic Meat',
       'pl': 'Papier do badań kulinarnych Mięso podstawowe',
@@ -16321,7 +16321,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CulinaryResearchPaperModern',
       'en': 'Culinary Research Paper Modern',
-      'fr': 'Document de recherche culinaire moderne',
+      'fr': 'Papier de recherche culinaire moderne',
       'es': 'Documento de investigación culinaria moderno',
       'de': 'Kulinarisches Forschungspapier Modern',
       'pl': 'Artykuł do badań kulinarnych Nowoczesny',
@@ -16345,7 +16345,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CuttingEdgeCookingUpgrade',
       'en': 'Cutting Edge Cooking Upgrade',
-      'fr': 'Mise à niveau de cuisson de pointe',
+      'fr': 'Mise à niveau de cuisine moléculaire',
       'es': 'Actualización de cocina de vanguardia',
       'de': 'Modernstes Koch-Upgrade',
       'pl': 'Najnowocześniejsze ulepszenie gotowania',
@@ -16357,7 +16357,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DendrologyResearchPaperAdvanced',
       'en': 'Dendrology Research Paper Advanced',
-      'fr': 'Document de recherche en dendrologie avancé',
+      'fr': 'Papier de recherche en dendrologie avancé',
       'es': 'Trabajo de investigación de dendrología avanzada',
       'de': 'Dendrologische Forschungsarbeit Fortgeschritten',
       'pl': 'Zaawansowany artykuł badawczy dendrologiczny',
@@ -16369,7 +16369,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DendrologyResearchPaperBasic',
       'en': 'Dendrology Research Paper Basic',
-      'fr': 'Document de recherche sur la dendrologie',
+      'fr': 'Papier de recherche sur la dendrologie',
       'es': 'Documento de investigación de dendrología básico',
       'de': 'Dendrologisches Forschungspapier Basic',
       'pl': 'Podstawowy papier do badań dendrologicznych',
@@ -16381,7 +16381,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'DendrologyResearchPaperModern',
       'en': 'Dendrology Research Paper Modern',
-      'fr': 'Document de recherche sur la dendrologie moderne',
+      'fr': 'Papier de recherche sur la dendrologie moderne',
       'es': 'Documento de investigación de dendrología moderno',
       'de': 'Dendrologische Forschungsarbeit Modern',
       'pl': 'Nowoczesny papier do badań dendrologicznych',
@@ -16429,7 +16429,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElectricMachinistTable',
       'en': 'Electric Machinist Table',
-      'fr': 'Table de machiniste électrique',
+      'fr': '',
       'es': 'Mesa de maquinista eléctrico',
       'de': 'Elektrischer Maschinistentisch',
       'pl': 'Elektryczny stół mechanika',
@@ -16537,7 +16537,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElkMount',
       'en': 'Elk Mount',
-      'fr': 'Mont Elk',
+      'fr': 'Trophée de wapiti',
       'es': 'Monte alce',
       'de': 'Elchberg',
       'pl': 'Góra Łosia',
@@ -16573,7 +16573,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'EngineeringResearchPaperAdvanced',
       'en': 'Engineering Research Paper Advanced',
-      'fr': 'Document de recherche en ingénierie avancé',
+      'fr': 'Papier de recherche en ingénierie avancé',
       'es': 'Trabajo de investigación de ingeniería avanzado',
       'de': 'Technisches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany papier badawczy inżynierski',
@@ -16585,7 +16585,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'EngineeringResearchPaperModern',
       'en': 'Engineering Research Paper Modern',
-      'fr': 'Document de recherche en ingénierie moderne',
+      'fr': 'Papier de recherche en ingénierie moderne',
       'es': 'Papel de investigación de ingeniería moderno',
       'de': 'Engineering Research Paper Modern',
       'pl': 'Nowoczesny papier do badań inżynierskich',
@@ -17005,7 +17005,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FriedCamas',
       'en': 'Fried Camas',
-      'fr': 'Camas frits',
+      'fr': 'Camassia frits',
       'es': 'Camas Fritas',
       'de': 'Gebratene Camas',
       'pl': 'smażone kamasze',
@@ -17017,7 +17017,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FriedFiddleheads',
       'en': 'Fried Fiddleheads',
-      'fr': 'Têtes de violon frites',
+      'fr': 'Têtes de violon frits',
       'es': 'Cabezas de violín fritas',
       'de': 'Gebratene Fiddleheads',
       'pl': 'Smażone Fiddleheads',
@@ -17161,7 +17161,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Gasoline',
       'en': 'Gasoline',
-      'fr': 'De l\u0027essence',
+      'fr': 'Éssence',
       'es': 'Gasolina',
       'de': 'Benzin',
       'pl': 'Benzyna',
@@ -17197,7 +17197,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GeologyResearchPaperAdvanced',
       'en': 'Geology Research Paper Advanced',
-      'fr': 'Document de recherche en géologie avancé',
+      'fr': 'Papier de recherche en géologie avancé',
       'es': 'Trabajo de investigación de geología avanzada',
       'de': 'Geologisches Forschungspapier für Fortgeschrittene',
       'pl': 'Zaawansowany artykuł badawczy z zakresu geologii',
@@ -17209,7 +17209,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GeologyResearchPaperBasic',
       'en': 'Geology Research Paper Basic',
-      'fr': 'Document de recherche en géologie de base',
+      'fr': 'Papier de recherche en géologie de base',
       'es': 'Trabajo de investigación de geología básico',
       'de': 'Geologisches Forschungspapier Basic',
       'pl': 'Podstawowy artykuł badawczy z geologii',
@@ -17221,7 +17221,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GeologyResearchPaperModern',
       'en': 'Geology Research Paper Modern',
-      'fr': 'Document de recherche en géologie moderne',
+      'fr': 'Papier de recherche en géologie moderne',
       'es': 'Papel de investigación de geología moderno',
       'de': 'Geologische Forschungsarbeit Modern',
       'pl': 'Współczesna praca naukowa z zakresu geologii',
@@ -17281,7 +17281,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GoatMount',
       'en': 'Goat Mount',
-      'fr': 'Monture de chèvre',
+      'fr': 'Trophée de chèvre des montagnes',
       'es': 'Monte Cabra',
       'de': 'Ziegenberg',
       'pl': 'Koza Góra',
@@ -17557,7 +17557,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'HideAshFertilizer',
       'en': 'Hide Ash Fertilizer',
-      'fr': 'Masquer l\u0027engrais de cendres',
+      'fr': 'Engrais à base de cendres de peaux',
       'es': 'Ocultar fertilizante de cenizas',
       'de': 'Aschedünger verstecken',
       'pl': 'Ukryj nawóz popiołowy',
@@ -17749,7 +17749,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'IronBar',
       'en': 'Iron Bar',
-      'fr': 'Barre de fer',
+      'fr': 'Lingot de fer',
       'es': 'Barra de acero',
       'de': 'Eisenstange',
       'pl': 'Żelazna sztabka',
@@ -17893,7 +17893,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'IronPlate',
       'en': 'Iron Plate',
-      'fr': 'Plat en fer',
+      'fr': 'Plaque de fer',
       'es': 'Placa de hierro',
       'de': 'Eisenplatte',
       'pl': 'Żelazny talerz',
@@ -18109,7 +18109,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeHangingMortaredStoneSign',
       'en': 'Large Hanging Mortared Stone Sign',
-      'fr': 'Grand panneau en pierre mortier suspendu',
+      'fr': 'Grand panneau en pierre cimenté suspendu',
       'es': 'Letrero colgante grande de piedra con mortero',
       'de': 'Großes hängendes Schild aus gemörteltem Stein',
       'pl': 'Duży wiszący znak z zaprawą murarską',
@@ -18145,7 +18145,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeLumberStockpile',
       'en': 'Large Lumber Stockpile',
-      'fr': 'Grand stock de bois',
+      'fr': 'Réserve en bois d\u0027oeuvre grande',
       'es': 'Gran reserva de madera',
       'de': 'Großer Holzvorrat',
       'pl': 'Duże zapasy drewna',
@@ -18157,7 +18157,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingAshlarStoneSign',
       'en': 'Large Standing Ashlar Stone Sign',
-      'fr': 'Grand panneau en pierre de taille debout',
+      'fr': 'Grand panneau en pierre de taille',
       'es': 'Cartel grande de piedra de sillería de pie',
       'de': 'Großes stehendes Quadersteinschild',
       'pl': 'Duży stojący znak z kamienia Ashlar',
@@ -18169,7 +18169,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingLumberSign',
       'en': 'Large Standing Lumber Sign',
-      'fr': 'Grand panneau de bois debout',
+      'fr': 'Grand panneau de bois',
       'es': 'Letrero grande de madera de pie',
       'de': 'Großes stehendes Holzschild',
       'pl': 'Duży stojący znak drewna',
@@ -18181,7 +18181,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LargeStandingMortaredStoneSign',
       'en': 'Large Standing Mortared Stone Sign',
-      'fr': 'Grand panneau de pierre mortier debout',
+      'fr': 'Grand panneau de pierre cimenté',
       'es': 'Letrero de piedra con mortero de pie grande',
       'de': 'Großes stehendes Schild aus gemörteltem Stein',
       'pl': 'Duży stojący znak z zaprawą murarską',
@@ -18337,7 +18337,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LoadedTaroFries',
       'en': 'Loaded Taro Fries',
-      'fr': 'Frites Taro Chargées',
+      'fr': 'Frites de taro gras',
       'es': 'Patatas Fritas Taro Cargadas',
       'de': 'Geladene Taro-Pommes',
       'pl': 'Załadowane Frytki Taro',
@@ -18445,7 +18445,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Lumber',
       'en': 'Lumber',
-      'fr': 'Bois de charpente',
+      'fr': 'Bois d\u0027oeuvre',
       'es': 'Tablas de madera',
       'de': 'Holz',
       'pl': 'Graty',
@@ -18457,7 +18457,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LumberStockpile',
       'en': 'Lumber Stockpile',
-      'fr': 'Stock de bois',
+      'fr': 'Réserve en bois d\u0027oeuvre',
       'es': 'Reserva de madera',
       'de': 'Holzvorrat',
       'pl': 'Skład drewna',
@@ -18493,7 +18493,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MachinistTable',
       'en': 'Machinist Table',
-      'fr': 'Table de machiniste',
+      'fr': 'Table de mécanicien',
       'es': 'Mesa de maquinista',
       'de': 'Maschinentisch',
       'pl': 'Stół maszynisty',
@@ -18553,7 +18553,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MeatStock',
       'en': 'Meat Stock',
-      'fr': 'Stock de viande',
+      'fr': 'Bouillon de viande',
       'es': 'Caldo de carne',
       'de': 'Fleischbestand',
       'pl': 'Zapas mięsny',
@@ -18625,7 +18625,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MetallurgyResearchPaperAdvanced',
       'en': 'Metallurgy Research Paper Advanced',
-      'fr': 'Document de recherche sur la métallurgie avancé',
+      'fr': 'Papier de recherche sur la métallurgie avancé',
       'es': 'Trabajo de investigación de metalurgia avanzado',
       'de': 'Forschungsbericht zur Metallurgie für Fortgeschrittene',
       'pl': 'Zaawansowany papier do badań metalurgicznych',
@@ -18637,7 +18637,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MetallurgyResearchPaperBasic',
       'en': 'Metallurgy Research Paper Basic',
-      'fr': 'Document de recherche sur la métallurgie',
+      'fr': 'Papier de recherche sur la métallurgie',
       'es': 'Papel de investigación de metalurgia básico',
       'de': 'Grundlegendes Forschungspapier zur Metallurgie',
       'pl': 'Podstawowy papier do badań metalurgicznych',
@@ -18649,7 +18649,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MetallurgyResearchPaperModern',
       'en': 'Metallurgy Research Paper Modern',
-      'fr': 'Document de recherche sur la métallurgie moderne',
+      'fr': 'Papier de recherche sur la métallurgie moderne',
       'es': 'Papel de investigación de metalurgia moderno',
       'de': 'Metallurgisches Forschungspapier Modern',
       'pl': 'Nowoczesna praca naukowo-badawcza w dziedzinie metalurgii',
@@ -18673,7 +18673,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MillingUpgrade',
       'en': 'Milling Upgrade',
-      'fr': 'Mise à niveau de fraisage',
+      'fr': 'Mise à niveau de Mouture',
       'es': 'Actualización de fresado',
       'de': 'Fräs-Upgrade',
       'pl': 'Ulepszenie frezowania',
@@ -18697,7 +18697,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MiningAdvancedUpgrade',
       'en': 'Mining Advanced Upgrade',
-      'fr': 'Mise à niveau avancée de l\u0027exploitation minière',
+      'fr': 'Mise à niveau avancée de minage',
       'es': 'Actualización avanzada de minería',
       'de': 'Erweitertes Mining-Upgrade',
       'pl': 'Zaawansowane ulepszenie górnictwa',
@@ -18709,7 +18709,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MiningBasicUpgrade',
       'en': 'Mining Basic Upgrade',
-      'fr': 'Mise à niveau de base de l\u0027exploitation minière',
+      'fr': 'Mise à niveau de base de minage',
       'es': 'Actualización básica de minería',
       'de': 'Bergbau-Basis-Upgrade',
       'pl': 'Podstawowe ulepszenie górnictwa',
@@ -18721,7 +18721,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MiningModernUpgrade',
       'en': 'Mining Modern Upgrade',
-      'fr': 'Mise à niveau moderne de l\u0027exploitation minière',
+      'fr': 'Mise à niveau moderne de minage',
       'es': 'Actualización moderna de minería',
       'de': 'Modernes Bergbau-Upgrade',
       'pl': 'Modernizacja górnicza',
@@ -18733,7 +18733,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Mint',
       'en': 'Mint',
-      'fr': 'menthe',
+      'fr': 'Hôtel des monnaies',
       'es': 'menta',
       'de': 'Minze',
       'pl': 'Mennica',
@@ -18829,7 +18829,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ModernRockDrill',
       'en': 'Modern Rock Drill',
-      'fr': 'Perceuse à roche moderne',
+      'fr': 'Foreuse de roche moderne',
       'es': 'Taladro de roca moderno',
       'de': 'Moderner Felsbohrer',
       'pl': 'Nowoczesna wiertarka do skał',
@@ -18961,7 +18961,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneBench',
       'en': 'Mortared Stone Bench',
-      'fr': 'Banc de pierre mortier',
+      'fr': 'Banc de pierre cimenté',
       'es': 'Banco de piedra con mortero',
       'de': 'Bank aus gemörteltem Stein',
       'pl': 'Kamienna ławka z zaprawą murarską',
@@ -18973,7 +18973,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneChair',
       'en': 'Mortared Stone Chair',
-      'fr': 'Chaise en pierre mortier',
+      'fr': 'Chaise en pierre cimenté',
       'es': 'Silla de piedra con mortero',
       'de': 'Gemörtelter Steinstuhl',
       'pl': 'Kamienne krzesło z zaprawą murarską',
@@ -18985,7 +18985,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneDoor',
       'en': 'Mortared Stone Door',
-      'fr': 'Porte en pierre mortier',
+      'fr': 'Porte en pierre cimenté',
       'es': 'Puerta de piedra con mortero',
       'de': 'Gemörtelte Steintür',
       'pl': 'Zamurowane kamienne drzwi',
@@ -18997,7 +18997,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneFireplace',
       'en': 'Mortared Stone Fireplace',
-      'fr': 'Foyer en pierre mortier',
+      'fr': 'Foyer en pierre cimenté',
       'es': 'Chimenea de piedra con argamasa',
       'de': 'Kamin aus gemörteltem Stein',
       'pl': 'Kominek z zaprawy murarskiej',
@@ -19009,7 +19009,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStone',
       'en': 'Mortared Stone',
-      'fr': 'Pierre Mortier',
+      'fr': 'Pierre cimenté',
       'es': 'Piedra con mortero',
       'de': 'Gemörtelter Stein',
       'pl': 'Kamień zaprawy',
@@ -19021,7 +19021,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MortaredStoneTable',
       'en': 'Mortared Stone Table',
-      'fr': 'Table en pierre mortier',
+      'fr': 'Table en pierre cimenté',
       'es': 'Mesa de piedra con mortero',
       'de': 'Gemörtelter Steintisch',
       'pl': 'Kamienny stół z zaprawą murarską',
@@ -19141,7 +19141,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Oil',
       'en': 'Oil',
-      'fr': 'Pétrole',
+      'fr': 'Huile',
       'es': 'Aceite',
       'de': 'Öl',
       'pl': 'Olej',
@@ -19189,7 +19189,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PaddedChair',
       'en': 'Padded Chair',
-      'fr': 'Chaise rembourrée',
+      'fr': 'Fauteuil',
       'es': 'silla acolchada',
       'de': 'Gepolsterter Stuhl',
       'pl': 'Wyściełane krzesło',
@@ -19321,7 +19321,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Pirozhok',
       'en': 'Pirozhok',
-      'fr': 'Pirozhok',
+      'fr': 'Chaussons à la viande',
       'es': 'pirozhok',
       'de': 'Pirozhok',
       'pl': 'Pirozhok',
@@ -19453,7 +19453,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PrimeCut',
       'en': 'Prime Cut',
-      'fr': 'Premier coupe',
+      'fr': 'Morceau de choix',
       'es': 'Primer corte',
       'de': 'Prime-Schnitt',
       'pl': 'Prime Cut',
@@ -19465,7 +19465,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PulpFiller',
       'en': 'Pulp Filler',
-      'fr': 'Remplisseur de pulpe',
+      'fr': 'Garnissage de copeaux de bois',
       'es': 'Relleno de pulpa',
       'de': 'Zellstoff-Füller',
       'pl': 'Wypełniacz miazgi',
@@ -19477,7 +19477,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PumpJack',
       'en': 'Pump Jack',
-      'fr': 'Cric à pompe',
+      'fr': 'Chevalet de pompage',
       'es': 'Bomba extractora',
       'de': 'Pumpenheber',
       'pl': 'Pompa Jack',
@@ -19681,7 +19681,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'RecurveBow',
       'en': 'Recurve Bow',
-      'fr': 'Arc classique',
+      'fr': 'Arc recourbé',
       'es': 'Arco recurvo',
       'de': 'Recurvebogen',
       'pl': 'Wygięty łuk',
@@ -19957,7 +19957,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ScrapMeat',
       'en': 'Scrap Meat',
-      'fr': 'Déchets de viande',
+      'fr': 'Restes de viande',
       'es': 'Carne de desecho',
       'de': 'Fleischreste',
       'pl': 'Złom Mięsa',
@@ -19993,7 +19993,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'Screws',
       'en': 'Screws',
-      'fr': 'Des vis',
+      'fr': 'Vis',
       'es': 'Tornillos',
       'de': 'Schrauben',
       'pl': 'Śruby',
@@ -20017,7 +20017,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SeededCamasRoll',
       'en': 'Seeded Camas Roll',
-      'fr': 'Rouleau de camas ensemencées',
+      'fr': 'Rouleau aux graines de camassia',
       'es': 'Rollo de Camas con Semillas',
       'de': 'Gesäte Camas-Rolle',
       'pl': 'Rolka z nasionami Camas',
@@ -20089,7 +20089,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SheepMount',
       'en': 'Sheep Mount',
-      'fr': 'Mont Mouton',
+      'fr': 'Trophée de mouflon',
       'es': 'Monte Ovejas',
       'de': 'Schafberg',
       'pl': 'Wierzchowiec owiec',
@@ -20161,7 +20161,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SkidSteer',
       'en': 'Skid Steer',
-      'fr': 'Skid Steer',
+      'fr': 'Bulldozer',
       'es': 'Minicargador',
       'de': 'Kompaktlader',
       'pl': 'Skid Steer',
@@ -20221,7 +20221,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallHangingMortaredStoneSign',
       'en': 'Small Hanging Mortared Stone Sign',
-      'fr': 'Petit panneau en pierre mortier suspendu',
+      'fr': 'Petit panneau en pierre cimenté suspendu',
       'es': 'Pequeño letrero colgante de piedra con mortero',
       'de': 'Kleines hängendes Schild aus gemörteltem Stein',
       'pl': 'Mały wiszący znak z zaprawą murarską',
@@ -20257,7 +20257,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingAshlarStoneSign',
       'en': 'Small Standing Ashlar Stone Sign',
-      'fr': 'Petite enseigne en pierre de taille debout',
+      'fr': 'Petite enseigne en pierre de taille',
       'es': 'Pequeño letrero de piedra de sillería de pie',
       'de': 'Kleines stehendes Quadersteinschild',
       'pl': 'Mały stojący znak z kamienia Ashlar',
@@ -20269,7 +20269,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingLumberSign',
       'en': 'Small Standing Lumber Sign',
-      'fr': 'Petit panneau de bois debout',
+      'fr': 'Petit panneau de bois',
       'es': 'Pequeño letrero de madera de pie',
       'de': 'Kleines stehendes Holzschild',
       'pl': 'Mały stojący znak drewna',
@@ -20281,7 +20281,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmallStandingMortaredStoneSign',
       'en': 'Small Standing Mortared Stone Sign',
-      'fr': 'Petit panneau de pierre mortier debout',
+      'fr': 'Petit panneau de pierre cimenté',
       'es': 'Pequeño letrero de piedra con mortero de pie',
       'de': 'Kleines stehendes Schild aus gemörteltem Stein',
       'pl': 'Mały stojący znak z zaprawą murarską',
@@ -20317,7 +20317,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmeltingUpgrade',
       'en': 'Smelting Upgrade',
-      'fr': 'Mise à niveau de la fusion',
+      'fr': 'Mise à niveau de la Fonte',
       'es': 'Actualización de fundición',
       'de': 'Schmelz-Upgrade',
       'pl': 'Ulepszenie wytopu',
@@ -20341,7 +20341,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmithBandana',
       'en': 'Smith Bandana',
-      'fr': 'Bandana Smith',
+      'fr': 'Bandana de forgeron',
       'es': 'Pañuelo Smith',
       'de': 'Schmied Bandana',
       'pl': 'Chustka Smith',
@@ -20377,7 +20377,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SmithPants',
       'en': 'Smith Pants',
-      'fr': 'Pantalon Smith',
+      'fr': 'Pantalon de forgeron',
       'es': 'Pantalones Smith',
       'de': 'Smith-Hosen',
       'pl': 'Spodnie Smith',
@@ -20461,7 +20461,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StampMill',
       'en': 'Stamp Mill',
-      'fr': 'Moulin à timbres',
+      'fr': 'Bocard',
       'es': 'Molino de sellos',
       'de': 'Stempelmühle',
       'pl': 'Pieczęć Młyn',
@@ -20473,7 +20473,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StandingGlassSign',
       'en': 'Standing Glass Sign',
-      'fr': 'Signe de verre debout',
+      'fr': 'Signe de verre',
       'es': 'Letrero de vidrio de pie',
       'de': 'Stehendes Glasschild',
       'pl': 'Stojący szklany znak',
@@ -20485,7 +20485,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StandingLongSteelSign',
       'en': 'Standing Long Steel Sign',
-      'fr': 'Panneau en acier long debout',
+      'fr': 'Panneau en acier long',
       'es': 'Letrero de acero largo de pie',
       'de': 'Stehendes langes Stahlschild',
       'pl': 'Stojący długi znak ze stali',
@@ -20497,7 +20497,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StandingSteelBrickSign',
       'en': 'Standing Steel Brick Sign',
-      'fr': 'Panneau de brique en acier debout',
+      'fr': 'Panneau de brique en acier',
       'es': 'Letrero de ladrillo de acero de pie',
       'de': 'Stehendes Backsteinschild aus Stahl',
       'pl': 'Stojący znak ze stali ceglanej',
@@ -20605,7 +20605,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SteelBar',
       'en': 'Steel Bar',
-      'fr': 'Barre d\u0027acier',
+      'fr': 'Lingot d\u0027acier',
       'es': 'Barra de acero',
       'de': 'Stahlstange',
       'pl': 'Sztabka stali',
@@ -20905,7 +20905,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedAlligator',
       'en': 'Stuffed Alligator',
-      'fr': 'Alligator farci',
+      'fr': 'Alligator empaillé',
       'es': 'Cocodrilo Relleno',
       'de': 'Gefüllter Alligator',
       'pl': 'Nadziewany aligator',
@@ -20917,7 +20917,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedBison',
       'en': 'Stuffed Bison',
-      'fr': 'Bison Farci',
+      'fr': 'Bison empaillé',
       'es': 'bisonte relleno',
       'de': 'Gefüllter Bison',
       'pl': 'Faszerowany żubr',
@@ -20929,7 +20929,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedElk',
       'en': 'Stuffed Elk',
-      'fr': 'Élan farci',
+      'fr': 'Wapiti empaillé',
       'es': 'Alce Relleno',
       'de': 'Gefüllter Elch',
       'pl': 'Faszerowany Łoś',
@@ -20941,7 +20941,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedGoat',
       'en': 'Stuffed Goat',
-      'fr': 'Chèvre en peluche',
+      'fr': 'Chèvre des montagnes empaillé',
       'es': 'Cabra Rellena',
       'de': 'Gefüllte Ziege',
       'pl': 'Faszerowana Koza',
@@ -20953,7 +20953,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedJaguar',
       'en': 'Stuffed Jaguar',
-      'fr': 'Jaguar en peluche',
+      'fr': 'Jaguar empaillé',
       'es': 'Jaguar relleno',
       'de': 'Ausgestopfter Jaguar',
       'pl': 'Nadziewany Jaguar',
@@ -20965,7 +20965,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedTurkey',
       'en': 'Stuffed Turkey',
-      'fr': 'Dinde farcie',
+      'fr': 'Dinde empaillée',
       'es': 'Pavo relleno',
       'de': 'Gefüllter Truthahn',
       'pl': 'Faszerowany indyk',
@@ -20977,7 +20977,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StuffedWolf',
       'en': 'Stuffed Wolf',
-      'fr': 'Loup en peluche',
+      'fr': 'Loup empaillé',
       'es': 'Lobo relleno',
       'de': 'Ausgestopfter Wolf',
       'pl': 'wypchany wilk',
@@ -21025,7 +21025,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'SunCheese',
       'en': 'Sun Cheese',
-      'fr': 'Fromage du soleil',
+      'fr': 'Margarine',
       'es': 'Queso de sol',
       'de': 'Sonnenkäse',
       'pl': 'Ser Słoneczny',
@@ -21385,7 +21385,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'UpholsteredChair',
       'en': 'Upholstered Chair',
-      'fr': 'Chaise rembourrée',
+      'fr': 'Fauteuil rembourrée',
       'es': 'Silla tapizada',
       'de': 'Gepolsterter Stuhl',
       'pl': 'Krzesło tapicerowane',
@@ -21601,7 +21601,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'WiltedFiddleheads',
       'en': 'Wilted Fiddleheads',
-      'fr': 'Têtes de violon fanées',
+      'fr': 'Crosses de fougère flétries',
       'es': 'Cabezas de violín marchitas',
       'de': 'Verwelkte Fiddleheads',
       'pl': 'Zwiędłe Fiddleheads',
@@ -21891,7 +21891,7 @@ export const localeData: LocaleData[] =
     'type': 'skills', 'entries': [{
       'id': 'AdvancedBakingSkill',
       'en': 'Advanced Baking',
-      'fr': 'Cuisson avancée',
+      'fr': 'cuisine avancée',
       'es': 'Horneado avanzado',
       'de': 'Fortgeschrittenes Backen',
       'pl': 'Zaawansowane pieczenie',
@@ -21927,7 +21927,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedSmeltingSkill',
       'en': 'Advanced Smelting',
-      'fr': 'Fusion avancée',
+      'fr': 'Fonte avancée',
       'es': 'Fundición avanzada',
       'de': 'Fortgeschrittenes Schmelzen',
       'pl': 'Zaawansowane wytapianie',
@@ -21939,7 +21939,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BakingSkill',
       'en': 'Baking',
-      'fr': 'Pâtisserie',
+      'fr': 'Boulangerie',
       'es': 'Horneando',
       'de': 'Backen',
       'pl': 'Pieczenie',
@@ -21951,7 +21951,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BasicEngineeringSkill',
       'en': 'Basic Engineering',
-      'fr': 'Ingénierie de base',
+      'fr': 'Ingénierie basique',
       'es': 'Ingeniería básica',
       'de': 'Grundlagentechnik',
       'pl': 'Inżynieria podstawowa',
@@ -21987,7 +21987,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CarpentrySkill',
       'en': 'Carpentry',
-      'fr': 'Charpenterie',
+      'fr': 'Menuiserie',
       'es': 'Carpintería',
       'de': 'Zimmerei',
       'pl': 'Stolarstwo',
@@ -21999,7 +21999,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CompositesSkill',
       'en': 'Composites',
-      'fr': 'Matériaux composites',
+      'fr': 'Composites',
       'es': 'Composicion',
       'de': 'Verbundwerkstoffe',
       'pl': 'Kompozyty',
@@ -22011,7 +22011,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'CookingSkill',
       'en': 'Cooking',
-      'fr': 'Cuisson',
+      'fr': 'cuisine',
       'es': 'Cocinando',
       'de': 'Kochen',
       'pl': 'Gotowanie',
@@ -22059,7 +22059,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FertilizersSkill',
       'en': 'Fertilizers',
-      'fr': 'Les engrais',
+      'fr': 'Engrais',
       'es': 'Fertilizantes',
       'de': 'Düngemittel',
       'pl': 'Nawozy',
@@ -22071,7 +22071,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'GatheringSkill',
       'en': 'Gathering',
-      'fr': 'La cueillette',
+      'fr': 'Récolte',
       'es': 'Reunión',
       'de': 'Sammeln',
       'pl': 'Zgromadzenie',
@@ -22119,7 +22119,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'LoggingSkill',
       'en': 'Logging',
-      'fr': 'Enregistrement',
+      'fr': 'Abattage',
       'es': 'Inicio sesión',
       'de': 'Protokollierung',
       'pl': 'Logowanie',
@@ -22155,7 +22155,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MillingSkill',
       'en': 'Milling',
-      'fr': 'Fraisage',
+      'fr': 'Mouture',
       'es': 'Molienda',
       'de': 'Mahlen',
       'pl': 'Przemiał',
@@ -22167,7 +22167,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MiningSkill',
       'en': 'Mining',
-      'fr': 'Exploitation minière',
+      'fr': 'Minage',
       'es': 'Minería',
       'de': 'Bergbau',
       'pl': 'Górnictwo',
@@ -22191,7 +22191,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PaperMillingSkill',
       'en': 'Paper Milling',
-      'fr': 'Fraisage du papier',
+      'fr': 'Production de papier',
       'es': 'Fresado de papel',
       'de': 'Papierfräsen',
       'pl': 'Frezowanie papieru',
@@ -22227,7 +22227,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'TailoringSkill',
       'en': 'Tailoring',
-      'fr': 'Adaptation',
+      'fr': 'Couture',
       'es': 'Sastrería',
       'de': 'Schneiderei',
       'pl': 'Krawiectwo',
@@ -22253,7 +22253,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'AdvancedMasonryTableObject',
       'en': 'Advanced Masonry Table',
-      'fr': 'Table de maçonnerie avancée',
+      'fr': 'Établi de maçonnerie avancé',
       'es': 'Mesa de mampostería avanzada',
       'de': 'Erweiterter Mauerwerkstisch',
       'pl': 'Zaawansowany stół murarski',
@@ -22289,7 +22289,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ArrastraObject',
       'en': 'Arrastra',
-      'fr': 'Arrastra',
+      'fr': 'Moulin primitif',
       'es': 'Arrastra',
       'de': 'Arrastra',
       'pl': 'Arrastra',
@@ -22349,7 +22349,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'BloomeryObject',
       'en': 'Bloomery',
-      'fr': 'Floraison',
+      'fr': 'Bas fourneau',
       'es': 'Bloomery',
       'de': 'Bloomery',
       'pl': 'Bloomery',
@@ -22457,7 +22457,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'ElectricMachinistTableObject',
       'en': 'Electric Machinist Table',
-      'fr': 'Table de machiniste électrique',
+      'fr': 'Table d\u0027électricien',
       'es': 'Mesa de maquinista eléctrico',
       'de': 'Tisch für Elektromechaniker',
       'pl': 'Elektryczny stół mechanika',
@@ -22517,7 +22517,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'FisheryObject',
       'en': 'Fishery',
-      'fr': 'Pêcherie',
+      'fr': 'Atelier de pêche',
       'es': 'Pesquería',
       'de': 'Fischerei',
       'pl': 'Rybołówstwo',
@@ -22613,7 +22613,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MachinistTableObject',
       'en': 'Machinist Table',
-      'fr': 'Table de machiniste',
+      'fr': 'Table de mécanicien',
       'es': 'Mesa de maquinista',
       'de': 'Maschinentisch',
       'pl': 'Stół maszynisty',
@@ -22625,7 +22625,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'MasonryTableObject',
       'en': 'Masonry Table',
-      'fr': 'Table de maçonnerie',
+      'fr': 'Établi de maçonnerie',
       'es': 'Mesa de mampostería',
       'de': 'Mauerwerkstisch',
       'pl': 'Stół murowany',
@@ -22661,7 +22661,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'PumpJackObject',
       'en': 'Pump Jack',
-      'fr': 'Cric de pompe',
+      'fr': 'Chevalet de pompage',
       'es': 'Bomba extractora',
       'de': 'Pumpenheber',
       'pl': 'Pompa Jack',
@@ -22793,7 +22793,7 @@ export const localeData: LocaleData[] =
     }, {
       'id': 'StampMillObject',
       'en': 'Stamp Mill',
-      'fr': 'Moulin à timbres',
+      'fr': 'Bocard',
       'es': 'Molino de sellos',
       'de': 'Stempelmühle',
       'pl': 'Pieczęć Młyn',
