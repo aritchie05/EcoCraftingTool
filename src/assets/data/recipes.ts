@@ -429,7 +429,7 @@ export let recipes: Recipe[] =
       'name': 'Advanced Upgrade 2',
       'nameID': 'AdvancedUpgradeLvl2',
       'skill': getSkillByNameID('GlassworkingSkill'),
-      'level': 4,
+      'level': 3,
       'labor': 90,
       'craftingTable': getCraftingTableByNameID('KilnObject'),
       'hidden': false,
@@ -604,7 +604,7 @@ export let recipes: Recipe[] =
       'name': 'Agriculture Research Paper Advanced',
       'nameID': 'AgricultureResearchPaperAdvanced',
       'skill': getSkillByNameID('FarmingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 240,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -616,7 +616,7 @@ export let recipes: Recipe[] =
         },
         {
           'item': getItemByNameID('DirtItem'),
-          'quantity': 5,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -638,7 +638,7 @@ export let recipes: Recipe[] =
       'name': 'Agriculture Research Paper Modern',
       'nameID': 'AgricultureResearchPaperModern',
       'skill': getSkillByNameID('FarmingSkill'),
-      'level': 0,
+      'level': 3,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -785,8 +785,8 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'item': getItemByNameID('ReinforcedConcreteItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -796,12 +796,6 @@ export let recipes: Recipe[] =
           'quantity': 1,
           'reducible': false,
           'primary': true
-        },
-        {
-          'item': getItemByNameID('CrushedBasaltItem'),
-          'quantity': 2,
-          'reducible': false,
-          'primary': false
         }
       ]
     },
@@ -825,8 +819,8 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'item': getItemByNameID('ReinforcedConcreteItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -836,12 +830,6 @@ export let recipes: Recipe[] =
           'quantity': 1,
           'reducible': false,
           'primary': true
-        },
-        {
-          'item': getItemByNameID('CrushedGneissItem'),
-          'quantity': 2,
-          'reducible': false,
-          'primary': false
         }
       ]
     },
@@ -865,8 +853,8 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'item': getItemByNameID('ReinforcedConcreteItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -876,12 +864,6 @@ export let recipes: Recipe[] =
           'quantity': 1,
           'reducible': false,
           'primary': true
-        },
-        {
-          'item': getItemByNameID('CrushedGraniteItem'),
-          'quantity': 2,
-          'reducible': false,
-          'primary': false
         }
       ]
     },
@@ -929,8 +911,8 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'item': getItemByNameID('ReinforcedConcreteItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -940,12 +922,6 @@ export let recipes: Recipe[] =
           'quantity': 1,
           'reducible': false,
           'primary': true
-        },
-        {
-          'item': getItemByNameID('CrushedLimestoneItem'),
-          'quantity': 2,
-          'reducible': false,
-          'primary': false
         }
       ]
     },
@@ -969,8 +945,8 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'item': getItemByNameID('ReinforcedConcreteItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -980,12 +956,6 @@ export let recipes: Recipe[] =
           'quantity': 1,
           'reducible': false,
           'primary': true
-        },
-        {
-          'item': getItemByNameID('CrushedSandstoneItem'),
-          'quantity': 2,
-          'reducible': false,
-          'primary': false
         }
       ]
     },
@@ -1009,8 +979,8 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'item': getItemByNameID('ReinforcedConcreteItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -1020,12 +990,6 @@ export let recipes: Recipe[] =
           'quantity': 1,
           'reducible': false,
           'primary': true
-        },
-        {
-          'item': getItemByNameID('CrushedShaleItem'),
-          'quantity': 2,
-          'reducible': false,
-          'primary': false
         }
       ]
     },
@@ -1189,7 +1153,7 @@ export let recipes: Recipe[] =
         },
         {
           'item': getItemByNameID('CrushedRock'),
-          'quantity': 5,
+          'quantity': 10,
           'reducible': true
         },
         {
@@ -1434,13 +1398,13 @@ export let recipes: Recipe[] =
       'nameID': 'BakedMortar',
       'skill': getSkillByNameID('MasonrySkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('BakeryOvenObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('WoodPulpItem'),
-          'quantity': 5,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -1729,8 +1693,8 @@ export let recipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('IronBarItem'),
-          'quantity': 1,
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -3934,6 +3898,12 @@ export let recipes: Recipe[] =
           'quantity': 3,
           'reducible': true
         }
+		,
+        {
+          'item': getItemByNameID('CrushedRock'),
+          'quantity': 2,
+          'reducible': true
+        }
       ],
       'outputs': [
         {
@@ -4016,21 +3986,21 @@ export let recipes: Recipe[] =
       'name': 'Charcoal',
       'nameID': 'Charcoal',
       'skill': getSkillByNameID('LoggingSkill'),
-      'level': 4,
-      'labor': 25,
+      'level': 2,
+      'labor': 100,
       'craftingTable': getCraftingTableByNameID('KilnObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 7,
+          'quantity': 6,
           'reducible': true
         }
       ],
       'outputs': [
         {
           'item': getItemByNameID('CharcoalItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false,
           'primary': true
         }
@@ -4808,7 +4778,7 @@ export let recipes: Recipe[] =
         },
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
@@ -4818,7 +4788,7 @@ export let recipes: Recipe[] =
         },
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 1,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -5242,12 +5212,17 @@ export let recipes: Recipe[] =
       'nameID': 'CopperBar',
       'skill': getSkillByNameID('SmeltingSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('CopperConcentrateItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+		{
+          'item': getItemByNameID('PlanterPotSquareItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -5255,13 +5230,13 @@ export let recipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('CopperBarItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false,
           'primary': false
         }
@@ -5334,6 +5309,10 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('CopperBarItem'),
           'quantity': 4,
           'reducible': true
+        },        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -5349,7 +5328,7 @@ export let recipes: Recipe[] =
       'name': 'Corn Ethanol',
       'nameID': 'CornEthanol',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -5564,17 +5543,17 @@ export let recipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CottonFabricItem'),
-          'quantity': 5,
+          'quantity': 10,
           'reducible': true
         },
         {
           'item': getItemByNameID('EpoxyItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -6939,7 +6918,7 @@ export let recipes: Recipe[] =
       'name': 'Dendrology Research Paper Advanced',
       'nameID': 'DendrologyResearchPaperAdvanced',
       'skill': getSkillByNameID('CarpentrySkill'),
-      'level': 0,
+      'level': 1,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -6987,7 +6966,7 @@ export let recipes: Recipe[] =
       'name': 'Dendrology Research Paper Modern',
       'nameID': 'DendrologyResearchPaperModern',
       'skill': getSkillByNameID('CarpentrySkill'),
-      'level': 0,
+      'level': 3,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -7461,7 +7440,7 @@ export let recipes: Recipe[] =
       'name': 'Engineering Research Paper Advanced',
       'nameID': 'EngineeringResearchPaperAdvanced',
       'skill': getSkillByNameID('BasicEngineeringSkill'),
-      'level': 1,
+      'level': 2,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -7490,7 +7469,7 @@ export let recipes: Recipe[] =
       'name': 'Engineering Research Paper Modern',
       'nameID': 'EngineeringResearchPaperModern',
       'skill': getSkillByNameID('MechanicsSkill'),
-      'level': 1,
+      'level': 3,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -9046,7 +9025,7 @@ export let recipes: Recipe[] =
       'name': 'Geology Research Paper Advanced',
       'nameID': 'GeologyResearchPaperAdvanced',
       'skill': getSkillByNameID('MasonrySkill'),
-      'level': 0,
+      'level': 2,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -9094,7 +9073,7 @@ export let recipes: Recipe[] =
       'name': 'Geology Research Paper Modern',
       'nameID': 'GeologyResearchPaperModern',
       'skill': getSkillByNameID('PotterySkill'),
-      'level': 0,
+      'level': 3,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -9254,12 +9233,17 @@ export let recipes: Recipe[] =
       'nameID': 'GoldBar',
       'skill': getSkillByNameID('SmeltingSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('GoldConcentrateItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+		{
+          'item': getItemByNameID('PlanterPotSquareItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -9267,13 +9251,13 @@ export let recipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('GoldBarItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false,
           'primary': false
         }
@@ -9344,6 +9328,11 @@ export let recipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('GoldBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+		{
+          'item': getItemByNameID('CottonFabricItem'),
           'quantity': 4,
           'reducible': true
         }
@@ -10282,12 +10271,17 @@ export let recipes: Recipe[] =
       'nameID': 'IronBar',
       'skill': getSkillByNameID('SmeltingSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('IronConcentrateItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+		{
+          'item': getItemByNameID('PlanterPotSquareItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -10295,13 +10289,13 @@ export let recipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false,
           'primary': false
         }
@@ -12061,7 +12055,7 @@ export let recipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('MortarItem'),
-          'quantity': 3,
+          'quantity': 1,
           'reducible': false,
           'primary': true
         }
@@ -12264,7 +12258,7 @@ export let recipes: Recipe[] =
       'name': 'Metallurgy Research Paper Advanced',
       'nameID': 'MetallurgyResearchPaperAdvanced',
       'skill': getSkillByNameID('SmeltingSkill'),
-      'level': 0,
+      'level': 2,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -12317,7 +12311,7 @@ export let recipes: Recipe[] =
       'name': 'Metallurgy Research Paper Modern',
       'nameID': 'MetallurgyResearchPaperModern',
       'skill': getSkillByNameID('AdvancedSmeltingSkill'),
-      'level': 1,
+      'level': 3,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -13370,17 +13364,17 @@ export let recipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('EpoxyItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
           'item': getItemByNameID('NylonFabricItem'),
-          'quantity': 5,
+          'quantity': 10,
           'reducible': true
         }
       ],
@@ -14110,7 +14104,7 @@ export let recipes: Recipe[] =
       'name': 'Powered Cart',
       'nameID': 'PoweredCart',
       'skill': getSkillByNameID('BasicEngineeringSkill'),
-      'level': 5,
+      'level': 1,
       'labor': 200,
       'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
       'hidden': false,
@@ -14850,7 +14844,7 @@ export let recipes: Recipe[] =
         },
         {
           'item': getItemByNameID('CrushedRock'),
-          'quantity': 5,
+          'quantity': 8,
           'reducible': true
         },
         {
@@ -16435,6 +16429,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('CopperConcentrateItem'),
           'quantity': 2,
           'reducible': true
+        },
+		{
+          'item': getItemByNameID('ClayItem'),
+          'quantity': 3,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -16465,6 +16464,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('GoldConcentrateItem'),
           'quantity': 2,
           'reducible': true
+        },
+		{
+          'item': getItemByNameID('ClayItem'),
+          'quantity': 3,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -16495,6 +16499,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('IronConcentrateItem'),
           'quantity': 2,
           'reducible': true
+        },
+		{
+          'item': getItemByNameID('ClayItem'),
+          'quantity': 3,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -17382,6 +17391,11 @@ export let recipes: Recipe[] =
         },
         {
           'item': getItemByNameID('QuicklimeItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SquarePot'),
           'quantity': 1,
           'reducible': false
         }
@@ -19850,7 +19864,7 @@ export let recipes: Recipe[] =
       'name': 'Wheat Ethanol',
       'nameID': 'WheatEthanol',
       'skill': getSkillByNameID('CuttingEdgeCookingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -19882,6 +19896,30 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('WheatItem'),
           'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MortarItem'),
+          'quantity': 3,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+	    {
+      'name': 'Boiled Grains Mortar',
+      'nameID': 'WheatMortar',
+      'skill': getSkillByNameID('MasonrySkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('BakeryOvenObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BoiledGrainsItem'),
+          'quantity': 10,
           'reducible': true
         }
       ],
@@ -20488,17 +20526,17 @@ export let recipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('EpoxyItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoolFabricItem'),
-          'quantity': 5,
+          'quantity': 10,
           'reducible': true
         }
       ],
