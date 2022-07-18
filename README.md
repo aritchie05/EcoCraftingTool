@@ -12,6 +12,10 @@ Recipes and items are stored at `src/assets/data` in various TypeScript files. W
 Translations are provided by [Google Translate API](https://cloud.google.com/translate/docs/basic/translate-text-basic) and stored
 at `src/assets/data/locale-data.ts`.
 
+## Deploying to a Server
+
+To deploy to a web server, run the Angular build command `ng build --prod`. This will build the source files to the `dist` folder in a folder called `EcoCraftingTool`. These files should then be deployed to a web server, like nginx or Apache.
+
 ## Angular Details
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
