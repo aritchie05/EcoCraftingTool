@@ -18,7 +18,8 @@ export interface LocaleData {
 }
 
 export const localeData: LocaleData[] =
-  [{
+  [
+    {
     'type': 'items',
     'entries': [{
       'id': 'AcornItem',
@@ -13209,6 +13210,18 @@ export const localeData: LocaleData[] =
       'zh': '木质标志',
       'ja': '木製の看板',
     }, {
+      'id': 'WoodShopCartItem',
+      'en': 'Wood Shop Cart',
+      'fr': 'Chariot en bois itinérant',
+      'es': 'Carro de Compras de Madera',
+      'de': 'Holzladenwagen',
+      'pl': 'Wood Shop Cart',
+      'ru': 'Передвижной деревянный магазин',
+      'uk': 'Wood Shop Cart',
+      'ko': 'Wood Shop Cart',
+      'zh': 'Wood Shop Cart',
+      'ja': 'Wood Shop Cart',
+    }, {
       'id': 'WoodenBowItem',
       'en': 'Wooden Bow',
       'fr': 'Arc en bois',
@@ -13485,7 +13498,8 @@ export const localeData: LocaleData[] =
       'zh': '分区办公室',
       'ja': 'Zoning Office',
     }]
-  }, {
+  },
+    {
     'type': 'recipes', 'entries': [{
       'id': 'AcornPowder',
       'en': 'Acorn Powder',
@@ -17699,6 +17713,18 @@ export const localeData: LocaleData[] =
       'zh': '工业化升降机',
       'ja': 'Industrial Elevator',
     }, {
+      'id': 'IndustrialRefrigerator',
+      'en': 'Industrial Refrigerator',
+      'fr': 'Réfrigérateur industriel',
+      'es': 'Nevera industrial',
+      'de': 'Industrieller Kühlschrank',
+      'pl': 'Industrial Refrigerator',
+      'ru': 'Промышленный Холодильник',
+      'uk': 'Industrial Refrigerator',
+      'ko': '산업용 냉장고',
+      'zh': '工业冷藏库',
+      'ja': 'Industrial Refrigerator',
+    }, {
       'id': 'IndustryUpgrade',
       'en': 'Industry Upgrade',
       'fr': 'Amélioration Moderne : Industrie',
@@ -19426,6 +19452,18 @@ export const localeData: LocaleData[] =
       'ko': '전동 수레',
       'zh': '动力推车',
       'ja': '動力付カート',
+    }, {
+      'id': 'PoweredStorageSilo',
+      'en': 'Powered Storage Silo',
+      'fr': 'Silo de stockage électrique',
+      'es': 'Silo de almacenamiento eléctronico',
+      'de': 'Modernes Lagersilo',
+      'pl': 'Powered Storage Silo',
+      'ru': 'Электрическая Силосная башня',
+      'uk': 'Powered Storage Silo',
+      'ko': '파워드 스토리지 사일로',
+      'zh': '已充电储料仓',
+      'ja': 'Powered Storage Silo',
     }, {
       'id': 'PreparedMeat',
       'en': 'Prepared Meat',
@@ -21659,6 +21697,18 @@ export const localeData: LocaleData[] =
       'zh': '木制顶棚灯',
       'ja': '木製の天井ライト',
     }, {
+      'id': 'WoodShopCart',
+      'en': 'Wood Shop Cart',
+      'fr': 'Chariot en bois itinérant',
+      'es': 'Carro de Compras de Madera',
+      'de': 'Holzladenwagen',
+      'pl': 'Wood Shop Cart',
+      'ru': 'Передвижной деревянный магазин',
+      'uk': 'Wood Shop Cart',
+      'ko': 'Wood Shop Cart',
+      'zh': 'Wood Shop Cart',
+      'ja': 'Wood Shop Cart',
+    }, {
       'id': 'WoodenElevator',
       'en': 'Wooden Elevator',
       'fr': 'Ascenseur en bois',
@@ -21887,7 +21937,8 @@ export const localeData: LocaleData[] =
       'zh': '酵母',
       'ja': '酵母',
     }]
-  }, {
+  },
+    {
     'type': 'skills', 'entries': [{
       'id': 'AdvancedBakingSkill',
       'en': 'Advanced Baking',
@@ -22237,7 +22288,8 @@ export const localeData: LocaleData[] =
       'zh': '裁缝',
       'ja': '裁縫',
     }]
-  }, {
+  },
+    {
     'type': 'tables', 'entries': [{
       'id': 'AdvancedCarpentryTableObject',
       'en': 'Advanced Carpentry Table',
@@ -22863,7 +22915,8 @@ export const localeData: LocaleData[] =
       'zh': '工作台',
       'ja': '作業台',
     }]
-  }, {
+  },
+    {
     'type': 'upgrades', 'entries': [{
       'id': 'AdvancedUpgrade1',
       'en': 'Advanced Upgrade 1',
@@ -23093,4 +23146,5 @@ export const localeData: LocaleData[] =
       'zh': '专业现代升级',
       'ja': 'スペシャライズドモダンアップグレード'
     }]
-  }];
+  }
+  ];
