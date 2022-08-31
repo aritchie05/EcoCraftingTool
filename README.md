@@ -3,6 +3,9 @@
 Crafting calculator for Eco Global Survival by Strange Loop Games located at https://eco-calc.com. Computes production
 costs for in-game items based on labor, materials, and crafting table upgrades.
 
+## Dev Workflow
+To edit the repository, create a feature branch like `recipe-updates-9.6` and push the changes to that feature branch. Then, open a pull request into the `develop` branch. Verify and test the changes using the develop domain at https://eco-crafting-tool.vercel.app. Once the changes are confirmed, create a GitHub release and merge `develop` into `master`.
+
 ## Editing Recipes and Items
 
 Recipes and items are stored at `src/assets/data` in various TypeScript files. When viewing these files in an IDE, it is recommended to disable inspections and highlighting for performance reasons, particularly `recipes.ts` and `items.ts`. For example, this can be done in IntelliJ IDEA by clicking the top right corner of the editor pane and selecting Highlight: None.
