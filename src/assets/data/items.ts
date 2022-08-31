@@ -3880,7 +3880,10 @@ export let items: Item[] =
     {
       'name': 'Industrial Refrigerator',
       'nameID': 'IndustrialRefrigeratorItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 8,
+      'yPos': 9
     },
     {
       'name': 'Industry Upgrade',
@@ -7837,6 +7840,14 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_Baked_0.png',
       'xPos': 38,
       'yPos': 52
+    },
+    {
+      'name': 'Wood Shop Cart',
+      'nameID': 'WoodShopCartItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 8
     },
     {
       'name': 'Wood Sign',

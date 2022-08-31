@@ -10172,6 +10172,45 @@ export let recipes: Recipe[] =
       ]
     },
     {
+      'name': 'Industrial Refrigerator',
+      'nameID': 'IndustrialRefrigerator',
+      'skill': getSkillByNameID('IndustrySkill'),
+      'level': 6,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 32,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedCircuitItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RadiatorItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IndustrialRefrigeratorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
       'name': 'Industry Upgrade',
       'nameID': 'IndustryUpgrade',
       'skill': getSkillByNameID('IndustrySkill'),
@@ -14139,6 +14178,45 @@ export let recipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('PoweredCartItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Powered Storage Silo',
+      'nameID': 'PoweredStorageSilo',
+      'skill': getSkillByNameID('IndustrySkill'),
+      'level': 3,
+      'labor': 800,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedCircuitItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RadiatorItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelPipeItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PoweredStorageSiloItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -20179,6 +20257,45 @@ export let recipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('WoodenCeilingLightItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wood Shop Cart',
+      'nameID': 'WoodShopCart',
+      'skill': getSkillByNameID('BasicEngineeringSkill'),
+      'level': 1,
+      'labor': 225,
+      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodCartItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('StoreItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodShopCartItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
