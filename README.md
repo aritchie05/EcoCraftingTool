@@ -4,7 +4,7 @@ Crafting calculator for Eco Global Survival by Strange Loop Games located at htt
 costs for in-game items based on labor, materials, and crafting table upgrades.
 
 ## Dev Workflow
-To edit the repository, create a feature branch like `recipe-updates-9.6` and push the changes to that feature branch. Then, open a pull request into the `develop` branch. Verify and test the changes using the develop domain at https://eco-crafting-tool.vercel.app. Once the changes are confirmed, create a GitHub release and merge `develop` into `master`.
+To edit the repository, create a feature branch like `recipe-updates-9.6` and push the changes to that feature branch. Then, open a pull request into the `develop` branch. Verify and test the changes using the develop domain at https://eco-crafting-tool.vercel.app. Once the changes are confirmed, create a GitHub release and merge `develop` into `master`. This will deploy the changes to https://eco-calc.com.
 
 ## Editing Recipes and Items
 
