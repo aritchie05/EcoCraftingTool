@@ -3881,9 +3881,9 @@ export let items: Item[] =
       'name': 'Industrial Refrigerator',
       'nameID': 'IndustrialRefrigeratorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
-      'xPos': 8,
-      'yPos': 9
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 10,
+      'yPos': 12
     },
     {
       'name': 'Industry Upgrade',
