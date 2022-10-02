@@ -36,3 +36,9 @@
   height: 32px;
   width: 32px;
 }
+
+.tagIcon {
+  font-size: 16px;
+  padding-left: 5px;
+  transform: translateY(3px);
+}
