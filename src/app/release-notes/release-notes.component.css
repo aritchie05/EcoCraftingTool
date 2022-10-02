@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
 .dropdown-divider {
   border-top: 2px solid #505050;
 }
@@ -28,4 +37,10 @@
 
 .release-date {
   font-size: .8rem;
+}
+
+.release-body {
+  overflow-wrap: break-word;
+  inline-size: 700px;
+  white-space: normal;
 }

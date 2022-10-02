@@ -39,7 +39,7 @@
                 'filter': getItemFilter(ingredient)}"
                class="itemSprite mr-2" src="assets/img/32px-template.png">
           <label *ngIf="ingredient.tag; else nonTagName" for="{{ingredient.nameID}}-priceInput">
-            {{ingredient.name}}*
+            {{ingredient.name}}<span class="material-icons tagIcon">sell</span>
           </label>
           <ng-template #nonTagName>
             <label for="{{ingredient.nameID}}-priceInput">
