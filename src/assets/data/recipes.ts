@@ -4566,7 +4566,7 @@ export let recipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 6,
+          'quantity': 9,
           'reducible': true
         }
       ],
