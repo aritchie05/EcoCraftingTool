@@ -12,8 +12,7 @@ Recipes and items are stored at `src/assets/data` in various TypeScript files. W
 
 ## Translations
 
-Translations are provided by [Google Translate API](https://cloud.google.com/translate/docs/basic/translate-text-basic) and stored
-at `src/assets/data/locale-data.ts`.
+Translations are provided by [Crowdin](https://crowdin.com/project/eco-by-strange-loop-games) and stored at `src/assets/data/locale-data.ts`.
 
 ## Deploying to a Server
 
