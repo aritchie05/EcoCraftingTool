@@ -11521,8 +11521,8 @@ export let recipes: Recipe[] =
     {
       'name': 'Light Bulb',
       'nameID': 'LightBulb',
-      'skill': getSkillByNameID('ElectronicsSkill'),
-      'level': 1,
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 2,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
