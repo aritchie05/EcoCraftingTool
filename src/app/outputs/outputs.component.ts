@@ -225,11 +225,16 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   }
 
   getOutputDisplaySpritePosition(outputDisplay: OutputDisplay): string {
+    if (outputDisplay.itemNameID.localeCompare('LightBulbItem') === 0) {
+      return '0px 0px'
+    }
     return `-${outputDisplay.xPos * ITEM_SPRITE_SIZE}px -${outputDisplay.yPos * ITEM_SPRITE_SIZE}px`;
   }
 
   getOutputDisplayBackgroundSize(outputDisplay: OutputDisplay): string {
-    if ('UI_Icons_Baked_0.png'.localeCompare(outputDisplay.imageFile) === 0) {
+    if (outputDisplay.itemNameID.localeCompare('LightBulbItem') === 0) {
+      return '32px'
+    } else if ('UI_Icons_Baked_0.png'.localeCompare(outputDisplay.imageFile) === 0) {
       return '2048px';
     }
     return '512px';
@@ -245,9 +250,8 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   getOutputDisplayImageUrl(outputDisplay: OutputDisplay): string {
     if (outputDisplay.itemNameID.localeCompare('LightBulbItem') === 0) {
       return this.imageBaseUrl + 'lightbulb.png';
-    } else {
-      return this.imageBaseUrl + outputDisplay.imageFile;
     }
+    return this.imageBaseUrl + outputDisplay.imageFile;
   }
 
   getItemSpritePosition(item: Item): string {
