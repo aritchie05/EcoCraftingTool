@@ -33,7 +33,7 @@
       </div>
       <div *ngFor="let ingredient of itemIngredients" class="row ingredientRow mx-auto form-group">
         <div class="col">
-          <img [alt]=ingredient.name [ngStyle]="{'background': 'url(' + imageBaseUrl + ingredient.imageFile + ') no-repeat',
+          <img [alt]=ingredient.name [ngStyle]="{'background': 'url(' + getItemImageUrl(ingredient) + ') no-repeat',
                 'background-position': getItemSpritePosition(ingredient),
                 'background-size': getItemBackgroundSize(ingredient),
                 'filter': getItemFilter(ingredient)}"
