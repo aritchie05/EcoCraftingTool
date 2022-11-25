@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Item} from '../interface/item';
 import {Locale, LocaleService} from '../service/locale.service';
@@ -20,6 +20,9 @@ export class IngredientsComponent implements OnInit {
   laborCost: number;
   profitPercent: number;
   locale: Locale;
+
+  @Input() imageBaseUrl: string;
+  @Input() imageTemplateUrl: string;
 
   @Output() ingredientPriceChangedEvent = new EventEmitter<Item>();
   @Output() laborCostChangedEvent = new EventEmitter<number>();
