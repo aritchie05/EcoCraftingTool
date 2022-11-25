@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
@@ -15,6 +15,8 @@ export class HeaderComponent implements OnInit {
   locales: Locale[];
   expensiveEndgameCostChecked: boolean;
   resourceCostMultiplier: number;
+
+  @Input() imageBaseUrl: string;
 
   @Output() updateLocaleEvent = new EventEmitter<Locale>();
   @Output() updateExpensiveEndgameCostEvent = new EventEmitter<boolean>();

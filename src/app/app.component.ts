@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, Input, ViewChild} from '@angular/core';
 import {Locale, LocaleService} from './service/locale.service';
 import {HeaderComponent} from './header/header.component';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
@@ -14,6 +14,10 @@ export const EXP_DAYS = 60;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  //Images pulled directly from GitHub repository to save bandwidth for hosted site
+  imageBaseUrl = 'https://raw.githubusercontent.com/aritchie05/EcoCraftingTool/master/src/assets/img/';
+  imageTemplateUrl = this.imageBaseUrl + '32px-template.png';
 
   locale: Locale;
   @ViewChild(HeaderComponent)

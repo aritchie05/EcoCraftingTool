@@ -1,4 +1,4 @@
-import {Component, Inject, OnInit, ViewChild} from '@angular/core';
+import {Component, Inject, Input, OnInit, ViewChild} from '@angular/core';
 import {SkillsComponent} from '../skills/skills.component';
 import {IngredientsComponent} from '../ingredients/ingredients.component';
 import {OutputsComponent} from '../outputs/outputs.component';
@@ -22,6 +22,9 @@ import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
   providers: [CraftingDataService]
 })
 export class CraftingParentComponent implements OnInit {
+
+  @Input() imageBaseUrl;
+  @Input() imageTemplateUrl;
 
   @ViewChild(SkillsComponent)
   private skillsComponent: SkillsComponent;
