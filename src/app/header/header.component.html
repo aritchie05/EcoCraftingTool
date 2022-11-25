@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark-elevated-1 border-bottom-primary text-light mb-2">
   <div class="navbar-brand dropdown">
     <img alt="Eco" class="d-inline-block align-top logo-margin" height="30"
-         src="assets/img/eco-logo-new.png">
+         [src]="imageBaseUrl + 'eco-logo-new.png'">
     {{message('navTitle')}}
     <app-release-notes></app-release-notes>
   </div>
@@ -48,6 +48,6 @@
         </a>
       </div>
     </form>
-    <span class="navbar-text text-light">{{message('version')}} 9.6.3</span>
+    <span class="navbar-text text-light">{{message('version')}} 9.7.2</span>
   </div>
 </nav>

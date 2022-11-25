@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Skill} from '../interface/skill';
 import {CraftingTable} from '../interface/crafting-table';
@@ -25,6 +25,9 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   filteredTables: CraftingTable[];
   craftingTables: CraftingTable[];
   locale: Locale;
+
+  @Input() imageBaseUrl: string;
+  @Input() imageTemplateUrl: string;
 
   @Output() skillAddedEvent = new EventEmitter<Skill>();
   @Output() skillLevelChangedEvent = new EventEmitter<Skill>();

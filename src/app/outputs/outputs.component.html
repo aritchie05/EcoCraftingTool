@@ -13,11 +13,11 @@
         <a (click)="onRecipeSelect(recipe)" *ngFor="let recipe of filteredRecipes" class="dropdown-item dark-input"
            href="#">
           <!-- Performance is pretty bad on the recipe list with images.. maybe load 50 at a time or something?
-          <img [alt]=recipe.name [ngStyle]="{'background': 'url(../../assets/img/' + recipe.primaryOutput.item.imageFile + ') no-repeat',
+          <img [alt]=recipe.name [ngStyle]="{'background': 'url(' + imageBaseUrl + recipe.primaryOutput.item.imageFile + ') no-repeat',
                 'background-position': getItemSpritePosition(recipe.primaryOutput.item),
                 'background-size': getItemBackgroundSize(recipe.primaryOutput.item),
                 'filter': getItemFilter(recipe.primaryOutput.item)}"
-               class="outputSprite mr-2" src="assets/img/32px-template.png">
+               class="outputSprite mr-2" [src]="imageTemplateUrl">
            -->
           {{recipe.name}}
         </a>
@@ -27,11 +27,11 @@
       <div *ngFor="let outputDisplay of outputDisplays">
         <div class="row recipeRow mx-auto form-group">
           <div class="col-8">
-            <img [alt]=outputDisplay.itemName [ngStyle]="{'background': 'url(../../assets/img/' + outputDisplay.imageFile + ') no-repeat',
+            <img [alt]=outputDisplay.itemName [ngStyle]="{'background': 'url(' + getOutputDisplayImageUrl(outputDisplay) + ') no-repeat',
                 'background-position': getOutputDisplaySpritePosition(outputDisplay),
                 'background-size': getOutputDisplayBackgroundSize(outputDisplay),
                 'filter': getOutputDisplayFilter(outputDisplay)}"
-                 class="outputSprite mr-2" src="assets/img/32px-template.png">
+                 class="outputSprite mr-2" [src]="imageTemplateUrl">
             <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
               <strong>{{outputDisplay.itemName}}</strong>
             </label>

@@ -431,7 +431,7 @@ export let recipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 4,
       'labor': 90,
-      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -2339,7 +2339,7 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
+          'item': getItemByNameID('HewnLog'),
           'quantity': 10,
           'reducible': true
         }
@@ -2573,6 +2573,11 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('ScrewsItem'),
           'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperPlateItem'),
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -5646,11 +5651,11 @@ export let recipes: Recipe[] =
       ]
     },
     {
-      'name': 'Cotton Thread',
-      'nameID': 'CottonThread',
+      'name': 'Cotton Lint',
+      'nameID': 'CottonLint',
       'skill': getSkillByNameID('FarmingSkill'),
       'level': 1,
-      'labor': 30,
+      'labor': 80,
       'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
       'hidden': false,
       'ingredients': [
@@ -5662,16 +5667,40 @@ export let recipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('CottonThreadItem'),
-          'quantity': 2,
+          'item': getItemByNameID('CottonLintItem'),
+          'quantity': 1,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('CottonSeedItem'),
-          'quantity': 1,
+          'quantity': 0.5,
           'reducible': false,
           'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Thread',
+      'nameID': 'CottonThread',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 30,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonLintItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CottonThreadItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
         }
       ]
     },
@@ -7380,7 +7409,7 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
+          'item': getItemByNameID('HewnLog'),
           'quantity': 10,
           'reducible': true
         }
@@ -7593,6 +7622,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('SteelPlateItem'),
           'quantity': 20,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 4,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -8603,7 +8637,7 @@ export let recipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 5,
       'labor': 120,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -8632,7 +8666,7 @@ export let recipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 5,
       'labor': 115,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -9144,7 +9178,7 @@ export let recipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 1,
       'labor': 30,
-      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -9216,6 +9250,40 @@ export let recipes: Recipe[] =
       ]
     },
     {
+      'name': 'Glassworks',
+      'nameID': 'Glassworks',
+      'skill': getSkillByNameID('PotterySkill'),
+      'level': 1,
+      'labor': 150,
+      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BrickItem'),
+          'quantity': 16,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GlassworksItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
       'name': 'Goat Mount',
       'nameID': 'GoatMount',
       'skill': getSkillByNameID('HuntingSkill'),
@@ -9230,7 +9298,7 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
+          'item': getItemByNameID('HewnLog'),
           'quantity': 10,
           'reducible': true
         },
@@ -9654,8 +9722,13 @@ export let recipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('CopperBarItem'),
+          'item': getItemByNameID('CopperPlateItem'),
           'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 6,
           'reducible': true
         }
       ],
@@ -11448,10 +11521,10 @@ export let recipes: Recipe[] =
     {
       'name': 'Light Bulb',
       'nameID': 'LightBulb',
-      'skill': getSkillByNameID('ElectronicsSkill'),
-      'level': 1,
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 2,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -14110,6 +14183,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('ScrewsItem'),
           'quantity': 18,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperPipeItem'),
+          'quantity': 6,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -14457,7 +14535,7 @@ export let recipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 6,
       'labor': 45,
-      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -15988,7 +16066,7 @@ export let recipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
+          'item': getItemByNameID('HewnLog'),
           'quantity': 10,
           'reducible': true
         }
@@ -16185,6 +16263,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('SteelPlateItem'),
           'quantity': 16,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 4,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -17021,7 +17104,7 @@ export let recipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 2,
       'labor': 120,
-      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -17214,6 +17297,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('ScrewsItem'),
           'quantity': 24,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 2,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -17370,6 +17458,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('ScrewsItem'),
           'quantity': 24,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 4,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -19347,6 +19440,11 @@ export let recipes: Recipe[] =
           'item': getItemByNameID('SteelPlateItem'),
           'quantity': 20,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 4,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -20830,6 +20928,174 @@ export let recipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('YeastItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Galaxy Vase',
+      'nameID': 'GalaxyVase',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 90,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GalaxyVaseItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Orange Vase',
+      'nameID': 'OrangeVase',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 90,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrangeVaseItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Plant Vase',
+      'nameID': 'PlantVase',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 90,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PlantVaseItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Purple Vase',
+      'nameID': 'PurpleVase',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 90,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PurpleVaseItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Red Vase',
+      'nameID': 'RedVase',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 90,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RedVaseItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Swirl Vase',
+      'nameID': 'SwirlVase',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 90,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SwirlVaseItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Copper Plate',
+      'nameID': 'CopperPlate',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('ScrewPressObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CopperBarItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CopperPlateItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true

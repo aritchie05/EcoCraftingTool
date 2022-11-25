@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Recipe} from '../interface/recipe';
 import {OutputDisplay} from '../interface/output-display';
@@ -21,6 +21,9 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   filteredRecipes: Recipe[];
   outputDisplays: OutputDisplay[];
   locale: Locale;
+
+  @Input() imageBaseUrl: string;
+  @Input() imageTemplateUrl: string;
 
   @Output() recipeAddedEvent = new EventEmitter<Recipe>();
   @Output() itemRemovedEvent = new EventEmitter<Recipe[]>();
@@ -237,6 +240,14 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       return outputDisplay.filter;
     }
     return '';
+  }
+
+  getOutputDisplayImageUrl(outputDisplay: OutputDisplay): string {
+    if (outputDisplay.itemNameID.localeCompare('LightBulbItem') === 0) {
+      return this.imageBaseUrl + 'lightbulb.png';
+    } else {
+      return this.imageBaseUrl + outputDisplay.imageFile;
+    }
   }
 
   getItemSpritePosition(item: Item): string {
