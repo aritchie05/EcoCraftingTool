@@ -3530,6 +3530,14 @@ export let items: Item[] =
       'yPos': 30
     },
     {
+      'name': 'Glassworks',
+      'nameID': 'GlassworksItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 8,
+      'yPos': 15
+    },
+    {
       'name': 'Gneiss',
       'nameID': 'GneissItem',
       'tag': false,
@@ -8034,5 +8042,69 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_02.png',
       'xPos': 2,
       'yPos': 10
+    },
+    {
+      'name': 'Galaxy Vase',
+      'nameID': 'GalaxyVaseItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 2,
+      'yPos': 15
+    },
+    {
+      'name': 'Orange Vase',
+      'nameID': 'OrangeVaseItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 3,
+      'yPos': 15
+    },
+    {
+      'name': 'Plant Vase',
+      'nameID': 'PlantVaseItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 4,
+      'yPos': 15
+    },
+    {
+      'name': 'Purple Vase',
+      'nameID': 'PurpleVaseItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 5,
+      'yPos': 15
+    },
+    {
+      'name': 'Red Vase',
+      'nameID': 'RedVaseItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 6,
+      'yPos': 15
+    },
+    {
+      'name': 'Swirl Vase',
+      'nameID': 'SwirlVaseItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 7,
+      'yPos': 15
+    },
+    {
+      'name': 'Cotton Lint',
+      'nameID': 'CottonLintItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 1,
+      'yPos': 15
+    },
+    {
+      'name': 'Copper Plate',
+      'nameID': 'CopperPlateItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 11,
+      'yPos': 0
     }
   ];

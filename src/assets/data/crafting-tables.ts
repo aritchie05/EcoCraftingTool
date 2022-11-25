@@ -228,6 +228,15 @@ export let craftingTables: CraftingTable[] =
       'yPos': 8
     },
     {
+      'name': 'Glassworks',
+      'nameID': 'GlassworksObject',
+      'upgradeModuleType': 'AdvancedUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 8,
+      'yPos': 15
+    },
+    {
       'name': 'Jaw Crusher',
       'nameID': 'JawCrusherObject',
       'upgradeModuleType': 'ModernUpgrade',

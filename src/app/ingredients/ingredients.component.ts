@@ -118,6 +118,14 @@ export class IngredientsComponent implements OnInit {
     this.itemIngredients.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
   }
 
+  getItemImageUrl(item: Item): string {
+    if (item.nameID.localeCompare('LightBulbItem') === 0) {
+      return this.imageBaseUrl + 'lightbulb.png';
+    } else {
+      return this.imageBaseUrl + item.imageFile;
+    }
+  }
+
   getItemSpritePosition(item: Item): string {
     return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
   }
