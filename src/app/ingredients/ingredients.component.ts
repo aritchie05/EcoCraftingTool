@@ -127,11 +127,16 @@ export class IngredientsComponent implements OnInit {
   }
 
   getItemSpritePosition(item: Item): string {
+    if (item.nameID.localeCompare('LightBulbItem') === 0) {
+      return '0px 0px'
+    }
     return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
   }
 
   getItemBackgroundSize(item: Item): string {
-    if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
+    if (item.nameID.localeCompare('LightBulbItem') === 0) {
+      return '32px'
+    } else if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
       return '2048px';
     }
     return '512px';
