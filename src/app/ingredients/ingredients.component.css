@@ -16,7 +16,7 @@
 }
 
 .calorieSprite {
-  background: url(../../assets/img/UI_Icons_00.png) no-repeat -416px -160px;
+  background: url(https://raw.githubusercontent.com/aritchie05/EcoCraftingTool/master/src/assets/img/UI_Icons_00.png) no-repeat -416px -160px;
   background-size: 512px;
   display: inline;
   height: 32px;
@@ -24,7 +24,7 @@
 }
 
 .profitSprite {
-  background: url(../../assets/img/UI_Icons_00.png) no-repeat -320px -384px;
+  background: url(https://raw.githubusercontent.com/aritchie05/EcoCraftingTool/master/src/assets/img/UI_Icons_00.png) no-repeat -320px -384px;
   background-size: 512px;
   display: inline;
   height: 32px;

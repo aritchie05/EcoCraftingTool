@@ -8270,7 +8270,7 @@ export let recipes: Recipe[] =
     {
       'name': 'Fiberglass',
       'nameID': 'Fiberglass',
-      'skill': getSkillByNameID('OilDrillingSkill'),
+      'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 1,
       'labor': 90,
       'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
