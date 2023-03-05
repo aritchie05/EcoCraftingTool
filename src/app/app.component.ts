@@ -17,7 +17,7 @@ export const EXP_DAYS = 60;
 export class AppComponent {
 
   //Images pulled directly from GitHub repository to save bandwidth for hosted site
-  imageBaseUrl = `https://raw.githubusercontent.com/aritchie05/EcoCraftingTool/${environment.branchName}/src/assets/img/`;
+  imageBaseUrl = environment.imageBaseUrl;
   imageTemplateUrl = this.imageBaseUrl + '32px-template.png';
 
   locale: Locale;

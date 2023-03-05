@@ -28,6 +28,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   @Input() imageBaseUrl: string;
   @Input() imageTemplateUrl: string;
+  skillsSpriteImage: string = 'skill-icons-sprite.png';
 
   @Output() skillAddedEvent = new EventEmitter<Skill>();
   @Output() skillLevelChangedEvent = new EventEmitter<Skill>();
@@ -191,6 +192,10 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   onUpdateLavish(skill: Skill, value: boolean): void {
     skill.lavishChecked = value;
     this.lavishUpdatedEvent.emit(skill);
+  }
+
+  getSkillImageUrl(skill: Skill): string {
+    return this.imageBaseUrl + this.skillsSpriteImage;
   }
 
   /**
