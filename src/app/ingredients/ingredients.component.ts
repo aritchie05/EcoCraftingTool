@@ -6,6 +6,7 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {ImageService} from '../service/image.service';
 
 export const ITEM_SPRITE_SIZE = 32;
 
@@ -21,8 +22,8 @@ export class IngredientsComponent implements OnInit {
   profitPercent: number;
   locale: Locale;
 
-  @Input() imageBaseUrl: string;
-  @Input() imageTemplateUrl: string;
+  imageBaseUrl: string;
+  imageTemplateUrl: string;
 
   @Output() ingredientPriceChangedEvent = new EventEmitter<Item>();
   @Output() laborCostChangedEvent = new EventEmitter<number>();
@@ -30,11 +31,13 @@ export class IngredientsComponent implements OnInit {
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService,
-              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
+              public imageService: ImageService, @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.itemIngredients = [];
     this.laborCost = 0;
     this.profitPercent = 0;
     this.locale = localeService.selectedLocale;
+    this.imageBaseUrl = imageService.imageBaseUrl;
+    this.imageTemplateUrl = imageService.imageTemplateUrl;
   }
 
   ngOnInit(): void {
@@ -147,14 +150,6 @@ export class IngredientsComponent implements OnInit {
       return item.filter;
     }
     return '';
-  }
-
-  getProfitSpriteImageUrl(): string {
-    return this.imageBaseUrl + 'UI_Icons_00.png';
-  }
-
-  getCalorieSpriteImageUrl(): string {
-    return this.imageBaseUrl + 'UI_Icons_00.png';
   }
 
   localize(locale: Locale) {

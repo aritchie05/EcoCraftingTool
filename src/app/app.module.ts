@@ -12,6 +12,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
 import {CookieService} from 'ngx-cookie-service';
 import {ReleaseNotesComponent} from './release-notes/release-notes.component';
+import { CustomRecipesComponent } from './custom-recipes/custom-recipes.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,18 @@ import {ReleaseNotesComponent} from './release-notes/release-notes.component';
     IngredientsComponent,
     OutputsComponent,
     CraftingParentComponent,
-    ReleaseNotesComponent
+    ReleaseNotesComponent,
+    CustomRecipesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule,
+    RouterModule.forRoot([
+      {path: 'custom-recipes', component: CustomRecipesComponent},
+      {path: 'calculator', component: CraftingParentComponent},
+      {path: '', redirectTo: '/calculator', pathMatch: 'full'},
+      {path: '**', component: PageNotFoundComponent}
+    ]),
     HttpClientModule
   ],
   providers: [

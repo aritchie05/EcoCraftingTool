@@ -46,15 +46,3 @@ input::-webkit-calendar-picker-indicator {
   height: auto;
   margin-top: .6rem;
 }
-
-.skillSprite {
-  display: inline;
-  height: 32px;
-  width: 32px;
-}
-
-.tableSprite {
-  display: inline;
-  height: 32px;
-  width: 32px;
-}

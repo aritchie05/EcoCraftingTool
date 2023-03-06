@@ -9,6 +9,7 @@ import {CookieService} from 'ngx-cookie-service';
 import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {ImageService} from '../service/image.service';
 
 export const SKILL_SPRITE_SIZE = 32;
 export const TABLE_SPRITE_SIZE = 32;
@@ -26,9 +27,8 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   craftingTables: CraftingTable[];
   locale: Locale;
 
-  @Input() imageBaseUrl: string;
-  @Input() imageTemplateUrl: string;
-  skillsSpriteImage: string = 'skill-icons-sprite.png';
+  imageBaseUrl: string;
+  imageTemplateUrl: string;
 
   @Output() skillAddedEvent = new EventEmitter<Skill>();
   @Output() skillLevelChangedEvent = new EventEmitter<Skill>();
@@ -40,10 +40,12 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService,
-              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
+              private imageService: ImageService, @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.selectedSkills = [];
     this.craftingTables = [];
     this.locale = localeService.selectedLocale;
+    this.imageBaseUrl = imageService.imageBaseUrl;
+    this.imageTemplateUrl = imageService.imageTemplateUrl;
   }
 
   ngOnInit(): void {
@@ -192,18 +194,6 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   onUpdateLavish(skill: Skill, value: boolean): void {
     skill.lavishChecked = value;
     this.lavishUpdatedEvent.emit(skill);
-  }
-
-  getSkillImageUrl(skill: Skill): string {
-    return this.imageBaseUrl + this.skillsSpriteImage;
-  }
-
-  /**
-   * Gets the sprite position of the skill icon image based on the skill provided
-   * @param skill the skill to use the xPos and yPos
-   */
-  getSpritePosition(skill: Skill): string {
-    return `-${skill.xPos * SKILL_SPRITE_SIZE}px -${skill.yPos * SKILL_SPRITE_SIZE}px`;
   }
 
   getTableSpritePosition(table: CraftingTable): string {

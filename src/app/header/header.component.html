@@ -1,12 +1,18 @@
 <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark-elevated-1 border-bottom-primary text-light mb-2">
   <div class="navbar-brand dropdown">
     <img alt="Eco" class="d-inline-block align-top logo-margin" height="30"
-         [src]="imageBaseUrl + 'eco-logo-new.png'">
+         [src]="this.imageService.imageBaseUrl + 'eco-logo-new.png'">
     {{message('navTitle')}}
     <app-release-notes></app-release-notes>
   </div>
   <div class="collapse navbar-collapse" id="navbarLinks">
     <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/calculator" routerLinkActive="active-link">Calculator</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/custom-recipes" routerLinkActive="active-link">Custom Recipes</a>
+      </li>
     </ul>
 
     <form class="form-inline dropdown mr-2">

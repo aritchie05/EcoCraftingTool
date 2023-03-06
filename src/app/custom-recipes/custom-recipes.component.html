@@ -1,0 +1,108 @@
+<div class="row fill-screen">
+  <div class="col bg-dark-elevated-2 bottom-padding">
+    <h1 class="text-center">Custom Recipes</h1>
+
+    <form>
+      <div class="form-group">
+        <div class="dropdown w-50 mx-auto pb-2">
+          <label class="sr-only" for="customRecipeSearchInput" i18n>Recipe Search</label>
+          <input #searchBox (input)="onRecipeSearchInput(searchBox.value)"
+                 [placeholder]="message('recipeSearchPlaceholder')"
+                 class="dropdown-toggle form-control dark-input" data-toggle="dropdown" id="customRecipeSearchInput"
+                 type="search">
+
+          <div aria-labelledby="customRecipeSearchInput" class="dropdown-menu dark-input">
+            <a (click)="onRecipeSelect(recipe)" *ngFor="let recipe of filteredRecipes" class="dropdown-item dark-input">
+              {{recipe.name}}
+            </a>
+          </div>
+        </div>
+
+        <div class="form-group w-75 mx-auto" id="customRecipe" *ngIf="selectedRecipe">
+          <div class="row">
+            <div class="col-5 recipe-image">
+              <img [alt]=selectedRecipe.primaryOutput.item.name
+                   [ngStyle]="this.imageService.getLargeItemImgStyle(selectedRecipe.primaryOutput.item)"
+                   [src]="this.imageService.imageTemplateUrl"
+                   class="large-sprite">
+            </div>
+            <div class="col recipe-title">
+              <h2>{{selectedRecipe.name}}</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 recipe-info-label">Crafting Table</div>
+            <div class="col-3 recipe-info vertical-padding">
+              <img [alt]="selectedRecipe.craftingTable.name"
+                   [ngStyle]="this.imageService.getTableImgStyle(selectedRecipe.craftingTable)"
+                   class="tableSprite mr-2" [src]="this.imageService.imageTemplateUrl">
+              {{selectedRecipe.craftingTable.name}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 recipe-info-label">Skill</div>
+            <div class="col-3 recipe-info vertical-padding">
+              <img [alt]="selectedRecipe.skill.name"
+                   [ngStyle]="this.imageService.getSkillImgStyle(selectedRecipe.skill)"
+                   class="skillSprite mr-2" [src]="this.imageService.imageTemplateUrl">
+              {{selectedRecipe.skill.name}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 recipe-info-label">Labor</div>
+            <div class="col-3 recipe-info">
+              <div class="recipe-element row">
+                <div class="col-8">
+                  <img [alt]="'Calories'" class="calorieSprite mr-2"
+                       [src]="this.imageService.imageTemplateUrl"
+                       [ngStyle]="this.imageService.getCalorieImgStyle()">
+                  Calories
+                </div>
+                <div class="col-4 d-flex align-items-center">
+                  <input [value]="selectedRecipe.labor" class="priceDisplay form-control darker-input read-only recipe-input"
+                         readonly type="text">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 recipe-info-label">Ingredients</div>
+            <div class="col-3 recipe-info">
+              <div class="recipe-element row" *ngFor="let ingredient of selectedRecipe.ingredients">
+                <div class="col-8">
+                  <img [alt]=ingredient.item.name
+                       [ngStyle]=this.imageService.getItemImgStyle(ingredient.item)
+                       class="itemSprite mr-2" [src]="this.imageService.imageTemplateUrl">
+                  {{ingredient.item.name}}
+                </div>
+                <div class="col-4 text-right d-flex align-items-center">
+                  <input [value]="ingredient.quantity" class="priceDisplay form-control darker-input read-only recipe-input"
+                         readonly type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 recipe-info-label"><span class="vertical-middle">Outputs</span></div>
+            <div class="col-3 recipe-info">
+              <div class="recipe-element row" *ngFor="let output of selectedRecipe.outputs">
+                <div class="col-8">
+                  <img [alt]=output.item.name [ngStyle]=this.imageService.getItemImgStyle(output.item)
+                       class="itemSprite mr-2" [src]="this.imageService.imageTemplateUrl">
+                  {{output.item.name}}
+                </div>
+                <div class="col-4 text-right d-flex align-items-center">
+                  <input [value]="output.quantity" class="priceDisplay form-control darker-input read-only recipe-input"
+                         readonly type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+</div>

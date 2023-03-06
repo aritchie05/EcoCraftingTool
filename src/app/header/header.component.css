@@ -39,3 +39,11 @@
 .dropdown-divider {
   border-top: 2px solid #505050;
 }
+
+.active-link {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.navbar-brand {
+  padding-top: 0 !important;
+}

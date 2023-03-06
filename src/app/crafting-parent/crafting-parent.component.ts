@@ -14,6 +14,7 @@ import {TableCookie} from '../cookie/table-cookie';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {OutputCookie} from '../cookie/output-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {ImageService} from '../service/image.service';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -22,9 +23,6 @@ import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
   providers: [CraftingDataService]
 })
 export class CraftingParentComponent implements OnInit {
-
-  @Input() imageBaseUrl;
-  @Input() imageTemplateUrl;
 
   @ViewChild(SkillsComponent)
   private skillsComponent: SkillsComponent;

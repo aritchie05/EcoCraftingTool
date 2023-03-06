@@ -1,13 +1,13 @@
-.top-padding {
+.top-margin {
   margin-top: 4rem;
+}
+
+.bottom-margin {
+  margin-bottom: 4rem;
 }
 
 .col-border {
   border-right: solid 3px #121212;
   border-left: solid 3px #121212;
   border-radius: 6px;
-}
-
-.fill-screen {
-  height: 86vh;
 }

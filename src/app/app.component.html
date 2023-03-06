@@ -2,13 +2,10 @@
   (updateExpensiveEndgameCostEvent)="onUpdateEndgameCost($event)"
   (updateLocaleEvent)="onUpdateLocale($event)"
   (updateResourceCostMultiplierEvent)="onUpdateResourceCostMultiplier($event)"
-  [imageBaseUrl]="imageBaseUrl"
 ></app-header>
 
-<div class="container-fluid top-padding bottom-margin">
-  <app-crafting-parent [imageBaseUrl]="imageBaseUrl"
-                       [imageTemplateUrl]="imageTemplateUrl">
-  </app-crafting-parent>
+<div class="container-fluid top-margin bottom-margin">
+  <router-outlet></router-outlet>
 </div>
 
 <app-footer></app-footer>

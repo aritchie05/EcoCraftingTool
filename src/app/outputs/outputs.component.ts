@@ -7,6 +7,7 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {Item} from '../interface/item';
+import {ImageService} from '../service/image.service';
 
 export const ITEM_SPRITE_SIZE = 32;
 
@@ -22,8 +23,8 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   outputDisplays: OutputDisplay[];
   locale: Locale;
 
-  @Input() imageBaseUrl: string;
-  @Input() imageTemplateUrl: string;
+  imageBaseUrl: string;
+  imageTemplateUrl: string;
 
   @Output() recipeAddedEvent = new EventEmitter<Recipe>();
   @Output() itemRemovedEvent = new EventEmitter<Recipe[]>();
@@ -31,10 +32,12 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService,
-              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
+              private imageService: ImageService, @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.outputRecipes = [];
     this.outputDisplays = [];
     this.locale = localeService.selectedLocale;
+    this.imageBaseUrl = imageService.imageBaseUrl;
+    this.imageTemplateUrl = imageService.imageTemplateUrl;
   }
 
   ngOnInit(): void {
@@ -222,54 +225,6 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   outputExists(itemNameID: string): boolean {
     return this.outputRecipes.some(recipe => recipe.primaryOutput.item.nameID.localeCompare(itemNameID) === 0);
-  }
-
-  getOutputDisplaySpritePosition(outputDisplay: OutputDisplay): string {
-    if (outputDisplay.itemNameID.localeCompare('LightBulbItem') === 0) {
-      return '0px 0px'
-    }
-    return `-${outputDisplay.xPos * ITEM_SPRITE_SIZE}px -${outputDisplay.yPos * ITEM_SPRITE_SIZE}px`;
-  }
-
-  getOutputDisplayBackgroundSize(outputDisplay: OutputDisplay): string {
-    if (outputDisplay.itemNameID.localeCompare('LightBulbItem') === 0) {
-      return '32px'
-    } else if ('UI_Icons_Baked_0.png'.localeCompare(outputDisplay.imageFile) === 0) {
-      return '2048px';
-    }
-    return '512px';
-  }
-
-  getOutputDisplayFilter(outputDisplay: OutputDisplay): string {
-    if (outputDisplay != undefined) {
-      return outputDisplay.filter;
-    }
-    return '';
-  }
-
-  getOutputDisplayImageUrl(outputDisplay: OutputDisplay): string {
-    if (outputDisplay.itemNameID.localeCompare('LightBulbItem') === 0) {
-      return this.imageBaseUrl + 'lightbulb.png';
-    }
-    return this.imageBaseUrl + outputDisplay.imageFile;
-  }
-
-  getItemSpritePosition(item: Item): string {
-    return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
-  }
-
-  getItemBackgroundSize(item: Item): string {
-    if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
-      return '2048px';
-    }
-    return '512px';
-  }
-
-  getItemFilter(item: Item): string {
-    if (item.filter != undefined) {
-      return item.filter;
-    }
-    return '';
   }
 
   localize(locale: Locale): void {

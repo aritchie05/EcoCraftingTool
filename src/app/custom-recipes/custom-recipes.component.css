@@ -1,0 +1,68 @@
+.dropdown-menu {
+  max-height: 500px;
+  overflow-y: auto;
+  min-width: 100%;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #121212;
+  text-decoration: none;
+  background-color: #bfbfbf;
+}
+
+.dropdown-item:active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #007bff;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.large-sprite {
+  height: 128px;
+  width: 128px;
+}
+
+.recipe-title {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.recipe-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.recipe-info-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  font-weight: bold;
+}
+
+.recipe-info {
+  vertical-align: middle;
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+.vertical-padding {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.row {
+  padding: 5px 0px;
+}
+
+.recipe-element {
+  line-height: 32px;
+}
+
+.recipe-input {
+  width: 100% !important;
+}

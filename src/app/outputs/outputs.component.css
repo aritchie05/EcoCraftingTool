@@ -3,13 +3,6 @@
   margin-bottom: 10px;
 }
 
-.priceDisplay {
-  width: 90px;
-  height: 30px;
-  border-radius: .25rem;
-  text-align: right;
-}
-
 .dropdown-menu {
   max-height: 500px;
   overflow-y: auto;
