@@ -14,6 +14,9 @@ import {TableCookie} from '../cookie/table-cookie';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {OutputCookie} from '../cookie/output-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {whiteTigerRecipes} from '../../assets/data/white-tiger/white-tiger-recipes';
+import {isNotNullOrUndefined} from 'codelyzer/util/isNotNullOrUndefined';
+import {standardRecipes} from '../../assets/data/recipes';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -313,7 +316,11 @@ export class CraftingParentComponent implements OnInit {
     //Add the skill if it is not there
     let hasSkill = this.skillsComponent.selectedSkills.some(skill => CraftingParentComponent.strMatch(recipe.skill.nameID, skill.nameID));
     if (!hasSkill) {
-      recipe.skill.level = 1;
+      if (this.skillsComponent.skillLevelIsReadOnly(recipe.skill)) {
+        recipe.skill.level = 0;
+      } else {
+        recipe.skill.level = 1;
+      }
       recipe.skill.lavishChecked = false;
       this.skillsComponent.selectedSkills.push(recipe.skill);
     }
@@ -451,6 +458,29 @@ export class CraftingParentComponent implements OnInit {
     }
 
     this.outputsComponent.refreshFilterList();
+  }
+
+  updateWhiteTigerRecipes(isEnabled: boolean): void {
+    this.dataService.setWhiteTigerRecipesEnabled(isEnabled);
+    this.outputsComponent.refreshFilteredRecipes();
+
+    if (isEnabled) {
+      whiteTigerRecipes.forEach(wtRecipe => {
+        let matchRecipe = this.outputsComponent.outputRecipes.find(recipe => recipe.nameID.localeCompare(wtRecipe.nameID) === 0);
+        if (isNotNullOrUndefined(matchRecipe)) {
+          this.outputsComponent.onRemoveItem(matchRecipe.primaryOutput.item.nameID);
+          this.outputsComponent.onRecipeSelect(wtRecipe);
+        }
+      });
+    } else {
+      standardRecipes.forEach(recipe => {
+        let matchRecipe = this.outputsComponent.outputRecipes.find(wtRecipe => wtRecipe.nameID.localeCompare(recipe.nameID) === 0);
+        if (isNotNullOrUndefined(matchRecipe)) {
+          this.outputsComponent.onRemoveItem(matchRecipe.primaryOutput.item.nameID);
+          this.outputsComponent.onRecipeSelect(recipe);
+        }
+      });
+    }
   }
 
   /**

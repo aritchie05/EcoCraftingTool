@@ -118,6 +118,51 @@ const messages: Message[] =
       ]
     },
     {
+      'id': 'whiteTigerRecipes',
+      'localizedMessages': [
+        {
+          'text': 'White Tiger Recipes',
+          'lang': 'en'
+        },
+        {
+          'text': 'Recettes du Tigre Blanc',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Recetas de Tigre Blanco',
+          'lang': 'es'
+        },
+        {
+          'text': 'Weiße Tiger-Rezepte',
+          'lang': 'de'
+        },
+        {
+          'text': 'Przepisy Białego Tygrysa',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Рецепты белого тигра',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Рецепти білого тигра',
+          'lang': 'uk'
+        },
+        {
+          'text': '화이트 타이거 레시피',
+          'lang': 'ko'
+        },
+        {
+          'text': '白虎食谱',
+          'lang': 'zh'
+        },
+        {
+          'text': 'ホワイトタイガー レシピ',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'endGameCraftOption',
       'localizedMessages': [
         {

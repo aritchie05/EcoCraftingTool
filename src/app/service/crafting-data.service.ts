@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Inject, Injectable} from '@angular/core';
 import {Skill} from '../interface/skill';
 import {UpgradeModule} from '../interface/upgrade-module';
 import {CraftingTable} from '../interface/crafting-table';
@@ -9,9 +9,12 @@ import {Locale, LocaleService} from './locale.service';
 import {craftingTables} from '../../assets/data/crafting-tables';
 import {upgradeModules} from '../../assets/data/upgrade-modules';
 import {items} from '../../assets/data/items';
-import {recipes} from '../../assets/data/recipes';
+import {standardRecipes} from '../../assets/data/recipes';
 import {skills} from '../../assets/data/skills';
 import {laborCosts} from '../../assets/data/labor-costs';
+import {whiteTigerRecipes} from '../../assets/data/white-tiger/white-tiger-recipes';
+import {isNotNullOrUndefined} from 'codelyzer/util/isNotNullOrUndefined';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 @Injectable({
   providedIn: 'root'
@@ -34,14 +37,19 @@ export class CraftingDataService {
   tables: CraftingTable[];
   upgrades: UpgradeModule[];
 
-  constructor(private localeService: LocaleService) {
+  constructor(private localeService: LocaleService, @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.locale = localeService.selectedLocale;
 
     this.skills = skills.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
-    this.recipes = recipes.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+    this.recipes = [...standardRecipes.sort((a, b) => a.name.localeCompare(b.name, this.locale.code))];
     this.items = items.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
     this.tables = craftingTables.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
     this.upgrades = upgradeModules.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
+
+    let whiteTigerRecipes = this.storageService.get('whiteTigerRecipes');
+    if (whiteTigerRecipes != null) {
+      this.setWhiteTigerRecipesEnabled(whiteTigerRecipes);
+    }
 
     this.setIngredientPricesAndPrimaryOutputs();
     this.setSkillLevelAndLavish();
@@ -173,18 +181,22 @@ export class CraftingDataService {
 
   private setIngredientPricesAndPrimaryOutputs() {
     this.recipes.forEach(recipe => {
-      for (let i = 0; i < recipe.ingredients.length; i++) {
-        if (recipe.ingredients[i].price === undefined) {
-          recipe.ingredients[i].price = 0;
-        }
-      }
-      for (let i = 0; i < recipe.outputs.length; i++) {
-        if (recipe.outputs[i].primary) {
-          recipe.primaryOutput = recipe.outputs[i];
-          break;
-        }
-      }
+      this.setIngredientPricesandPrimaryOutput(recipe);
     });
+  }
+
+  private setIngredientPricesandPrimaryOutput(recipe: Recipe): void {
+    for (let i = 0; i < recipe.ingredients.length; i++) {
+      if (recipe.ingredients[i].price === undefined) {
+        recipe.ingredients[i].price = 0;
+      }
+    }
+    for (let i = 0; i < recipe.outputs.length; i++) {
+      if (recipe.outputs[i].primary) {
+        recipe.primaryOutput = recipe.outputs[i];
+        break;
+      }
+    }
   }
 
   getUniqueItemIngredientsForRecipes(recipes: Recipe[]): Item[] {
@@ -238,7 +250,9 @@ export class CraftingDataService {
 
   private setSkillLevelAndLavish() {
     this.skills.forEach(skill => {
-      skill.level = 1;
+      if (skill.level == undefined) {
+        skill.level = 1;
+      }
       skill.lavishChecked = false;
     });
   }
@@ -271,6 +285,31 @@ export class CraftingDataService {
       this.expensiveRecipes.forEach(recipe => recipe.hidden = true);
       this.cheapRecipes.forEach(recipe => recipe.hidden = false);
     }
+  }
+
+  setWhiteTigerRecipesEnabled(isEnabled: boolean): void {
+    whiteTigerRecipes.forEach(wtRecipe => {
+      let recipeToReplace = this.recipes.find(r => r.nameID.localeCompare(wtRecipe.nameID) === 0);
+      if (isNotNullOrUndefined(recipeToReplace)) {
+        let index = this.recipes.findIndex(r => r === recipeToReplace);
+        if (isEnabled) {
+          this.setIngredientPricesandPrimaryOutput(wtRecipe);
+          this.recipes[index] = wtRecipe;
+        } else {
+          let oldRecipe = standardRecipes.find(r => r.nameID.localeCompare(wtRecipe.nameID) === 0);
+          if (isNotNullOrUndefined(oldRecipe)) {
+            this.setIngredientPricesandPrimaryOutput(oldRecipe);
+            this.recipes[index] = oldRecipe;
+          } else {
+            this.recipes.splice(index, 1);
+          }
+        }
+      } else {
+        if (isEnabled) {
+          this.recipes.push(wtRecipe);
+        }
+      }
+    });
   }
 
   private arrayContains(items: Item[], searchItem: Item) {

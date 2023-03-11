@@ -47,6 +47,10 @@ export class AppComponent {
     this.craftingParentComponent.updateEndgameCost(isExpensive);
   }
 
+  onUpdateWhiteTigerRecipes(isEnabled: boolean): void {
+    this.craftingParentComponent.updateWhiteTigerRecipes(isEnabled);
+  }
+
   onUpdateResourceCostMultiplier(newMultiplier: number): void {
     this.craftingParentComponent.updateResourceCostMultiplier(newMultiplier);
   }

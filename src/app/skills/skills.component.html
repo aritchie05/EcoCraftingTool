@@ -28,7 +28,7 @@
         <div class="col-2">
           <input (keydown)="onLevelChange(skill, $event)" [value]="skill.level"
                  class="levelInput form-control dark-input" id="{{skill.nameID}}-levelInput"
-                 type="number">
+                 [class.read-only]="skillLevelIsReadOnly(skill)" type="number" [readonly]="skillLevelIsReadOnly(skill)">
         </div>
         <div class="col-1">
           <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1">close</span>
