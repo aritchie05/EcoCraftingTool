@@ -81,6 +81,10 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   }
 
   ngAfterContentInit(): void {
+    this.refreshFilteredRecipes();
+  }
+
+  refreshFilteredRecipes(): void {
     this.filteredRecipes = this.dataService.getRecipes();
   }
 

@@ -1,7 +1,19 @@
 import {Skill} from '../../app/interface/skill';
 
-export var skills: Skill[] =
+export let skills: Skill[] =
   [
+    {
+      'name': 'No Skill',
+      'nameID': 'NoSkill',
+      'basicUpgrade': false,
+      'advancedUpgrade': false,
+      'modernUpgrade': false,
+      'lavishWorkspace': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 3,
+      'yPos': 2,
+      'level': 0
+    },
     {
       'name': 'Advanced Baking',
       'nameID': 'AdvancedBakingSkill',
