@@ -796,43 +796,43 @@ const messages: Message[] =
       'id': 'authorLink',
       'localizedMessages': [
         {
-          'text': 'By 300',
+          'text': 'By Adam',
           'lang': 'en'
         },
         {
-          'text': 'Par 300',
+          'text': 'Par Adam',
           'lang': 'fr'
         },
         {
-          'text': 'Por 300',
+          'text': 'Por Adam',
           'lang': 'es'
         },
         {
-          'text': 'Um 300',
+          'text': 'Um Adam',
           'lang': 'de'
         },
         {
-          'text': 'Do 300',
+          'text': 'Do Adam',
           'lang': 'pl'
         },
         {
-          'text': 'К 300',
+          'text': 'К Adam',
           'lang': 'ru'
         },
         {
-          'text': 'До 300',
+          'text': 'До Adam',
           'lang': 'uk'
         },
         {
-          'text': '300까지',
+          'text': 'Adam까지',
           'lang': 'ko'
         },
         {
-          'text': '乘300',
+          'text': '乘Adam',
           'lang': 'zh'
         },
         {
-          'text': '300年までに',
+          'text': 'Adam年までに',
           'lang': 'ja'
         }
       ]
