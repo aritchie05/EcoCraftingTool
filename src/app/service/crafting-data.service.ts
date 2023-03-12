@@ -292,7 +292,7 @@ export class CraftingDataService {
       let recipeToReplace = this.recipes.find(r => r.nameID.localeCompare(wtRecipe.nameID) === 0);
       if (isNotNullOrUndefined(recipeToReplace)) {
         let index = this.recipes.findIndex(r => r === recipeToReplace);
-        if (isEnabled) {
+        if (isEnabled == true) {
           this.setIngredientPricesandPrimaryOutput(wtRecipe);
           this.recipes[index] = wtRecipe;
         } else {
@@ -305,7 +305,7 @@ export class CraftingDataService {
           }
         }
       } else {
-        if (isEnabled) {
+        if (isEnabled == true) {
           this.recipes.push(wtRecipe);
         }
       }
