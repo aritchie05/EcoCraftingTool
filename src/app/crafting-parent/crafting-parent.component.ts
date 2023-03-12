@@ -106,41 +106,9 @@ export class CraftingParentComponent implements OnInit {
     //Now check new recipes
     let recipes = this.dataService.getRecipesForSkills([skill], false);
 
-    let recipesNotConfirmed = new Array<Recipe>();
+    this.outputsComponent.outputRecipes.push(...recipes);
 
-    //Initial loop through the recipes to get as many prices as possible
-    recipes.forEach(recipe => {
-      let price = this.calculatePrice(recipe);
-      if (price !== Number.MIN_VALUE) {
-        if (this.hasOtherRecipes(recipe)) {
-          recipesNotConfirmed.push(recipe);
-        } else {
-          recipe.price = price;
-          this.outputsComponent.outputRecipes.push(recipe);
-        }
-      } else {
-        recipesNotConfirmed.push(recipe);
-      }
-    });
-
-    //Now loop through the recipes not found to retry them (limit 10 loops)
-    for (let i = 0; i < 10 && recipesNotConfirmed.length > 0; i++) {
-
-      for (let i = recipesNotConfirmed.length - 1; i >= 0; i--) {
-        let recipe = recipesNotConfirmed[i];
-        let price = this.calculatePrice(recipe);
-        if (price !== Number.MIN_VALUE) {
-          recipe.price = price;
-          recipesNotConfirmed.splice(i, 1);
-          this.outputsComponent.outputRecipes.push(recipe);
-        } else if (i < 10) {
-          console.log(`Could not calculate price for recipe ${recipe.name}, will try again on next loop.`);
-        } else {
-          console.log(`Exhausted retries for price calculation for recipe ${recipe.name}`);
-        }
-      }
-
-    }
+    this.recalculateOutputPrices();
 
     //Finally sort the recipes array
     this.outputsComponent.sortRecipes();
@@ -531,13 +499,13 @@ export class CraftingParentComponent implements OnInit {
         }
       });
       if (!found) {
-        this.outputsComponent.outputRecipes.forEach(recipe => {
-          let output = recipe.primaryOutput;
-          if (ingredient.item.nameID.localeCompare(output.item.nameID) === 0) {
+        this.outputsComponent.outputRecipes.forEach(outputRecipe => {
+          let output = outputRecipe.primaryOutput;
+          if (outputRecipe.outputPriceCorrect && ingredient.item.nameID.localeCompare(output.item.nameID) === 0) {
             if (!found) {
-              ingredient.price = recipe.basePrice;
-            } else if (ingredient.price > recipe.basePrice) {
-              ingredient.price = recipe.basePrice;
+              ingredient.price = outputRecipe.basePrice;
+            } else if (ingredient.price > outputRecipe.basePrice) {
+              ingredient.price = outputRecipe.basePrice;
             }
             found = true;
           }
@@ -596,6 +564,8 @@ export class CraftingParentComponent implements OnInit {
       //Add the profit
       let profitPercent = this.ingredientsComponent.profitPercent;
       price *= 1 + (profitPercent / 100);
+
+      recipe.outputPriceCorrect = true;
     }
 
     recipe.basePrice = basePrice;
@@ -631,13 +601,28 @@ export class CraftingParentComponent implements OnInit {
    * @private
    */
   private recalculateOutputPrices(): void {
-    for (let i = 0; i < 10; i++) {
-      this.outputsComponent.outputRecipes.forEach(recipe => {
-        recipe.price = this.calculatePrice(recipe);
+    //Set outputPriceCorrect to false for all output recipes
+    this.outputsComponent.outputRecipes.forEach(recipe => recipe.outputPriceCorrect = false);
+
+    while (this.hasPricesToRecalculate(this.outputsComponent.outputRecipes)) {
+      this.outputsComponent.outputRecipes.filter(recipe => !recipe.outputPriceCorrect).forEach(recipe => {
+        if (this.calculatePrice(recipe) > Number.MIN_VALUE) {
+          recipe.outputPriceCorrect = true;
+        }
       });
     }
 
     this.outputsComponent.convertRecipesToOutputDisplays();
+  }
+
+  /**
+   * Determines whether the given recipe list contains any recipes whose price still needs to be calculated.
+   * This is true if any recipes have outputPriceCorrect set to false.
+   * @param recipes the recipes to check
+   * @private
+   */
+  private hasPricesToRecalculate(recipes: Recipe[]): boolean {
+    return recipes.find(recipe => !recipe.outputPriceCorrect) !== undefined;
   }
 
   /**
