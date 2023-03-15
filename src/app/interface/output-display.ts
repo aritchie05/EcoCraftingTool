@@ -1,7 +1,10 @@
+import { Recipe } from "./recipe";
+
 export class SubRecipe {
   recipeNameID: string;
   recipeName: string;
   recipePrice: number;
+  recipe: Recipe;
 }
 
 export class OutputDisplay {

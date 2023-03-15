@@ -17,6 +17,8 @@ import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {whiteTigerRecipes} from '../../assets/data/white-tiger/white-tiger-recipes';
 import {isNotNullOrUndefined} from 'codelyzer/util/isNotNullOrUndefined';
 import {standardRecipes} from '../../assets/data/recipes';
+import {OutputDisplay} from '../interface/output-display';
+import {RecipeModalComponent} from '../recipe-modal/recipe-modal.component';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -688,6 +690,34 @@ export class CraftingParentComponent implements OnInit {
         this.ingredientsComponent.itemIngredients.splice(i, 1);
       }
     }
+  }
+
+  onRecipeModalOpened(component: RecipeModalComponent) {
+    component.dropUp = this.shouldDropUp(component.outputDisplay, component.recipe.nameID);
+    component.showModal();
+  }
+
+  shouldDropUp(outputDisplay: OutputDisplay, recipeNameID: string): boolean {
+    let totalRecipeRows = 0;
+    this.outputsComponent.outputDisplays.forEach(outputDisplay => totalRecipeRows += outputDisplay.subRecipes.length);
+    if (totalRecipeRows < 8) {
+      return false;
+    } else {
+      let recipeRowIndex = 0;
+      for (let output of this.outputsComponent.outputDisplays) {
+        for (let sub of output.subRecipes) {
+          recipeRowIndex++;
+          if (output.itemNameID.localeCompare(outputDisplay.itemNameID) === 0) {
+            if (sub.recipeNameID.localeCompare(recipeNameID) === 0) {
+              return recipeRowIndex >= 7 && recipeRowIndex >= (totalRecipeRows - 10)  &&
+                (recipeRowIndex >= (this.ingredientsComponent.itemIngredients.length - 8));
+            }
+          }
+        }
+      }
+    }
+
+    return false;
   }
 
 

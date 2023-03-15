@@ -26,6 +26,9 @@
     <div id="recipes">
       <div *ngFor="let outputDisplay of outputDisplays">
         <div class="row recipeRow mx-auto form-group">
+          <app-recipe-modal #recipeModal [recipe]="outputDisplay.subRecipes[0].recipe" [recipeToggleButton]="recipeToggle"
+                            [outputDisplay]="outputDisplay">
+          </app-recipe-modal>
           <div class="col-8">
             <img [alt]=outputDisplay.itemName [ngStyle]="{'background': 'url(' + getOutputDisplayImageUrl(outputDisplay) + ') no-repeat',
                 'background-position': getOutputDisplaySpritePosition(outputDisplay),
@@ -35,6 +38,9 @@
             <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
               <strong>{{outputDisplay.itemName}}</strong>
             </label>
+            <span #recipeToggle [ngClass]="{'hidden': outputDisplay.subRecipes.length > 1}"
+                  class="material-icons-outlined md-light hoverable recipe-modal-toggle"
+                  (click)="toggleModal(recipeModal)">info</span>
           </div>
           <div class="col-3">
             <input [value]="outputDisplay.itemPrice
@@ -50,10 +56,15 @@
         </div>
         <ng-template [ngIf]="outputDisplay.subRecipes.length > 1">
           <div *ngFor="let subRecipe of outputDisplay.subRecipes" class="row recipeRow mx-auto form-group">
+            <app-recipe-modal #subRecipeModal [recipe]="subRecipe.recipe" [recipeToggleButton]="subRecipeToggle"
+            [outputDisplay]="outputDisplay">
+            </app-recipe-modal>
             <div class="col-8">
               <label class="pl-6" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
                 {{subRecipe.recipeName}} {{message('recipeSuffix')}}
               </label>
+              <span #subRecipeToggle class="material-icons-outlined md-light hoverable recipe-modal-toggle"
+                    (click)="toggleModal(subRecipeModal)">info</span>
             </div>
             <div class="col-3">
               <input [value]="subRecipe.recipePrice
