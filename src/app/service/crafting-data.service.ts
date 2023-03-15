@@ -48,7 +48,11 @@ export class CraftingDataService {
 
     let whiteTigerRecipes = this.storageService.get('whiteTigerRecipes');
     if (whiteTigerRecipes != null) {
-      this.setWhiteTigerRecipesEnabled(whiteTigerRecipes);
+      let wt: boolean = false;
+      if (whiteTigerRecipes.localeCompare('true') === 0) {
+        wt = true;
+      }
+      this.setWhiteTigerRecipesEnabled(wt);
     }
 
     this.setIngredientPricesAndPrimaryOutputs();
@@ -174,6 +178,11 @@ export class CraftingDataService {
     return recipes;
   }
 
+  getRecipeById(recipeNameID: string): Recipe {
+    let recipe = this.getRecipes().find(recipe => recipe.nameID.localeCompare(recipeNameID) === 0);
+    return recipe;
+  }
+
   getUniqueItemIngredientsForSkills(skills: Skill[], includeLvl5Upgrades: boolean): Item[] {
     let recipes = this.getRecipesForSkills(skills, includeLvl5Upgrades);
     return this.getUniqueItemIngredientsForRecipes(recipes);
@@ -292,7 +301,7 @@ export class CraftingDataService {
       let recipeToReplace = this.recipes.find(r => r.nameID.localeCompare(wtRecipe.nameID) === 0);
       if (isNotNullOrUndefined(recipeToReplace)) {
         let index = this.recipes.findIndex(r => r === recipeToReplace);
-        if (isEnabled == true) {
+        if (isEnabled) {
           this.setIngredientPricesandPrimaryOutput(wtRecipe);
           this.recipes[index] = wtRecipe;
         } else {
@@ -305,7 +314,7 @@ export class CraftingDataService {
           }
         }
       } else {
-        if (isEnabled == true) {
+        if (isEnabled) {
           this.recipes.push(wtRecipe);
         }
       }
