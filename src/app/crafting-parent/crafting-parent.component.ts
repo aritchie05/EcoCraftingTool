@@ -709,7 +709,7 @@ export class CraftingParentComponent implements OnInit {
           recipeRowIndex++;
           if (output.itemNameID.localeCompare(outputDisplay.itemNameID) === 0) {
             if (sub.recipeNameID.localeCompare(recipeNameID) === 0) {
-              return recipeRowIndex >= 7 && recipeRowIndex >= (totalRecipeRows - 10)  &&
+              return recipeRowIndex >= 8 && recipeRowIndex >= (totalRecipeRows - 10)  &&
                 (recipeRowIndex >= (this.ingredientsComponent.itemIngredients.length - 8));
             }
           }
