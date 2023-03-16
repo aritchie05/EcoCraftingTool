@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
 import {CookieService} from 'ngx-cookie-service';
 import {ReleaseNotesComponent} from './release-notes/release-notes.component';
+import { RecipeModalComponent } from './recipe-modal/recipe-modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ReleaseNotesComponent} from './release-notes/release-notes.component';
     IngredientsComponent,
     OutputsComponent,
     CraftingParentComponent,
-    ReleaseNotesComponent
+    ReleaseNotesComponent,
+    RecipeModalComponent
   ],
   imports: [
     BrowserModule,

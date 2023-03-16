@@ -11,8 +11,9 @@
       <div aria-labelledby="skillSelectInput" class="dropdown-menu dark-input">
         <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
            href="#">
-          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-2"
-               [src]="imageTemplateUrl">{{skill.name}}
+          <img [alt]="skill.name" [ngStyle]="{'background': 'url(' + getSkillImageUrl(skill) + ') no-repeat ' + getSpritePosition(skill) + '/256px'}"
+               class="skillSprite mr-2" [src]="imageTemplateUrl">
+          {{skill.name}}
         </a>
       </div>
     </div>
@@ -20,14 +21,14 @@
     <div class="divider form-group" id="selectedSkills">
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
         <div class="col-9">
-          <img [alt]="skill.name" [ngStyle]="{'background-position': getSpritePosition(skill)}" class="skillSprite mr-2"
-               [src]="imageTemplateUrl">
+          <img [alt]="skill.name" [ngStyle]="{'background': 'url(' + getSkillImageUrl(skill) + ') no-repeat ' + getSpritePosition(skill) + '/256px'}"
+               class="skillSprite mr-2" [src]="imageTemplateUrl">
           <label class="bump-down" for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
         <div class="col-2">
           <input (keydown)="onLevelChange(skill, $event)" [value]="skill.level"
                  class="levelInput form-control dark-input" id="{{skill.nameID}}-levelInput"
-                 type="number">
+                 [class.read-only]="skillLevelIsReadOnly(skill)" type="number" [readonly]="skillLevelIsReadOnly(skill)">
         </div>
         <div class="col-1">
           <span (click)="onRemoveSkill(skill)" class="material-icons md-light hoverable mt-1">close</span>

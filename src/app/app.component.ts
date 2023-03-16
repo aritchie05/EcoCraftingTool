@@ -4,6 +4,7 @@ import {HeaderComponent} from './header/header.component';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
 import {FooterComponent} from './footer/footer.component';
 import {MessageService} from './service/message.service';
+import {environment} from '../environments/environment';
 
 //Expiration days for local storage
 export const EXP_DAYS = 60;
@@ -16,7 +17,7 @@ export const EXP_DAYS = 60;
 export class AppComponent {
 
   //Images pulled directly from GitHub repository to save bandwidth for hosted site
-  imageBaseUrl = 'https://raw.githubusercontent.com/aritchie05/EcoCraftingTool/master/src/assets/img/';
+  imageBaseUrl = environment.imageBaseUrl;
   imageTemplateUrl = this.imageBaseUrl + '32px-template.png';
 
   locale: Locale;
@@ -44,6 +45,10 @@ export class AppComponent {
 
   onUpdateEndgameCost(isExpensive: boolean): void {
     this.craftingParentComponent.updateEndgameCost(isExpensive);
+  }
+
+  onUpdateWhiteTigerRecipes(isEnabled: boolean): void {
+    this.craftingParentComponent.updateWhiteTigerRecipes(isEnabled);
   }
 
   onUpdateResourceCostMultiplier(newMultiplier: number): void {

@@ -14,12 +14,14 @@ export class HeaderComponent implements OnInit {
   locale: Locale;
   locales: Locale[];
   expensiveEndgameCostChecked: boolean;
+  whiteTigerRecipesChecked: boolean;
   resourceCostMultiplier: number;
 
   @Input() imageBaseUrl: string;
 
   @Output() updateLocaleEvent = new EventEmitter<Locale>();
   @Output() updateExpensiveEndgameCostEvent = new EventEmitter<boolean>();
+  @Output() updateWhiteTigerRecipesEvent = new EventEmitter<boolean>();
   @Output() updateResourceCostMultiplierEvent = new EventEmitter<number>();
 
 
@@ -28,6 +30,7 @@ export class HeaderComponent implements OnInit {
     this.locale = localeService.selectedLocale;
     this.locales = localeService.supportedLocales;
     this.expensiveEndgameCostChecked = false;
+    this.whiteTigerRecipesChecked = false;
     this.resourceCostMultiplier = 1;
   }
 
@@ -42,6 +45,11 @@ export class HeaderComponent implements OnInit {
       this.storageService.set('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked);
     }
 
+    let whiteTigerRecipes = this.storageService.get('whiteTigerRecipes');
+    if (whiteTigerRecipes != null) {
+      this.whiteTigerRecipesChecked = whiteTigerRecipes === 'true';
+    }
+
     let multiplier = this.storageService.get('resourceCostMultiplier');
     if (multiplier != null) {
       this.resourceCostMultiplier = Number.parseFloat(multiplier);
@@ -54,6 +62,7 @@ export class HeaderComponent implements OnInit {
 
   saveDataToLocalStorage(): void {
     this.storageService.set('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked);
+    this.storageService.set('whiteTigerRecipes', '' + this.whiteTigerRecipesChecked);
     this.storageService.set('resourceCostMultiplier', this.resourceCostMultiplier.toFixed(2));
     this.storageService.set('locale', this.localeService.selectedLocale);
   }
@@ -74,6 +83,12 @@ export class HeaderComponent implements OnInit {
   onEndgameCostChange(input: boolean): void {
     this.expensiveEndgameCostChecked = input;
     this.updateExpensiveEndgameCostEvent.emit(input);
+    this.saveDataToLocalStorage();
+  }
+
+  onWhiteTigerRecipesChange(input: boolean): void {
+    this.whiteTigerRecipesChecked = input;
+    this.updateWhiteTigerRecipesEvent.emit(input);
     this.saveDataToLocalStorage();
   }
 

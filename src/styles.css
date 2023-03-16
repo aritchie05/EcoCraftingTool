@@ -36,6 +36,19 @@ input[type=number] {
   border-color: #505050 !important;
 }
 
+.darker-input {
+  color: #f8f9fa !important;
+  background-color: #121212 !important;
+  border-color: #505050 !important;
+}
+
+.priceDisplay {
+  width: 90px !important;
+  height: 30px !important;
+  border-radius: .25rem !important;
+  text-align: right;
+}
+
 .dropdown-item:hover {
   background-color: #3f3f3f !important;
   color: #c0c0c0 !important;
@@ -90,4 +103,40 @@ body {
 
 .pl-6 {
   padding-left: 3.5rem;
+}
+
+.fill-screen {
+  height: 86vh;
+}
+
+.skillSprite {
+  display: inline;
+  height: 32px;
+  width: 32px;
+}
+
+.tableSprite {
+  display: inline;
+  height: 32px;
+  width: 32px;
+}
+
+.itemSprite {
+  display: inline;
+  height: 32px;
+  width: 32px;
+}
+
+.calorieSprite {
+  display: inline;
+  height: 32px;
+  width: 32px;
+}
+
+.bottom-padding {
+  padding-bottom: 62px;
+}
+
+.hidden {
+  display: none;
 }

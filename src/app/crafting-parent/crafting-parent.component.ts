@@ -14,6 +14,11 @@ import {TableCookie} from '../cookie/table-cookie';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {OutputCookie} from '../cookie/output-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {whiteTigerRecipes} from '../../assets/data/white-tiger/white-tiger-recipes';
+import {isNotNullOrUndefined} from 'codelyzer/util/isNotNullOrUndefined';
+import {standardRecipes} from '../../assets/data/recipes';
+import {OutputDisplay} from '../interface/output-display';
+import {RecipeModalComponent} from '../recipe-modal/recipe-modal.component';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -103,41 +108,9 @@ export class CraftingParentComponent implements OnInit {
     //Now check new recipes
     let recipes = this.dataService.getRecipesForSkills([skill], false);
 
-    let recipesNotConfirmed = new Array<Recipe>();
+    this.outputsComponent.outputRecipes.push(...recipes);
 
-    //Initial loop through the recipes to get as many prices as possible
-    recipes.forEach(recipe => {
-      let price = this.calculatePrice(recipe);
-      if (price !== Number.MIN_VALUE) {
-        if (this.hasOtherRecipes(recipe)) {
-          recipesNotConfirmed.push(recipe);
-        } else {
-          recipe.price = price;
-          this.outputsComponent.outputRecipes.push(recipe);
-        }
-      } else {
-        recipesNotConfirmed.push(recipe);
-      }
-    });
-
-    //Now loop through the recipes not found to retry them (limit 10 loops)
-    for (let i = 0; i < 10 && recipesNotConfirmed.length > 0; i++) {
-
-      for (let i = recipesNotConfirmed.length - 1; i >= 0; i--) {
-        let recipe = recipesNotConfirmed[i];
-        let price = this.calculatePrice(recipe);
-        if (price !== Number.MIN_VALUE) {
-          recipe.price = price;
-          recipesNotConfirmed.splice(i, 1);
-          this.outputsComponent.outputRecipes.push(recipe);
-        } else if (i < 10) {
-          console.log(`Could not calculate price for recipe ${recipe.name}, will try again on next loop.`);
-        } else {
-          console.log(`Exhausted retries for price calculation for recipe ${recipe.name}`);
-        }
-      }
-
-    }
+    this.recalculateOutputPrices();
 
     //Finally sort the recipes array
     this.outputsComponent.sortRecipes();
@@ -313,7 +286,11 @@ export class CraftingParentComponent implements OnInit {
     //Add the skill if it is not there
     let hasSkill = this.skillsComponent.selectedSkills.some(skill => CraftingParentComponent.strMatch(recipe.skill.nameID, skill.nameID));
     if (!hasSkill) {
-      recipe.skill.level = 1;
+      if (this.skillsComponent.skillLevelIsReadOnly(recipe.skill)) {
+        recipe.skill.level = 0;
+      } else {
+        recipe.skill.level = 1;
+      }
       recipe.skill.lavishChecked = false;
       this.skillsComponent.selectedSkills.push(recipe.skill);
     }
@@ -453,6 +430,29 @@ export class CraftingParentComponent implements OnInit {
     this.outputsComponent.refreshFilterList();
   }
 
+  updateWhiteTigerRecipes(isEnabled: boolean): void {
+    this.dataService.setWhiteTigerRecipesEnabled(isEnabled);
+    this.outputsComponent.refreshFilteredRecipes();
+
+    if (isEnabled) {
+      whiteTigerRecipes.forEach(wtRecipe => {
+        let matchRecipe = this.outputsComponent.outputRecipes.find(recipe => recipe.nameID.localeCompare(wtRecipe.nameID) === 0);
+        if (isNotNullOrUndefined(matchRecipe)) {
+          this.outputsComponent.onRemoveItem(matchRecipe.primaryOutput.item.nameID);
+          this.outputsComponent.onRecipeSelect(wtRecipe);
+        }
+      });
+    } else {
+      standardRecipes.forEach(recipe => {
+        let matchRecipe = this.outputsComponent.outputRecipes.find(wtRecipe => wtRecipe.nameID.localeCompare(recipe.nameID) === 0);
+        if (isNotNullOrUndefined(matchRecipe)) {
+          this.outputsComponent.onRemoveItem(matchRecipe.primaryOutput.item.nameID);
+          this.outputsComponent.onRecipeSelect(recipe);
+        }
+      });
+    }
+  }
+
   /**
    * Recursively adds recipes that are downstream to the given array of recipes.
    *
@@ -501,13 +501,13 @@ export class CraftingParentComponent implements OnInit {
         }
       });
       if (!found) {
-        this.outputsComponent.outputRecipes.forEach(recipe => {
-          let output = recipe.primaryOutput;
-          if (ingredient.item.nameID.localeCompare(output.item.nameID) === 0) {
+        this.outputsComponent.outputRecipes.forEach(outputRecipe => {
+          let output = outputRecipe.primaryOutput;
+          if (outputRecipe.outputPriceCorrect && ingredient.item.nameID.localeCompare(output.item.nameID) === 0) {
             if (!found) {
-              ingredient.price = recipe.basePrice;
-            } else if (ingredient.price > recipe.basePrice) {
-              ingredient.price = recipe.basePrice;
+              ingredient.price = outputRecipe.basePrice;
+            } else if (ingredient.price > outputRecipe.basePrice) {
+              ingredient.price = outputRecipe.basePrice;
             }
             found = true;
           }
@@ -566,6 +566,8 @@ export class CraftingParentComponent implements OnInit {
       //Add the profit
       let profitPercent = this.ingredientsComponent.profitPercent;
       price *= 1 + (profitPercent / 100);
+
+      recipe.outputPriceCorrect = true;
     }
 
     recipe.basePrice = basePrice;
@@ -601,13 +603,28 @@ export class CraftingParentComponent implements OnInit {
    * @private
    */
   private recalculateOutputPrices(): void {
-    for (let i = 0; i < 10; i++) {
-      this.outputsComponent.outputRecipes.forEach(recipe => {
-        recipe.price = this.calculatePrice(recipe);
+    //Set outputPriceCorrect to false for all output recipes
+    this.outputsComponent.outputRecipes.forEach(recipe => recipe.outputPriceCorrect = false);
+
+    while (this.hasPricesToRecalculate(this.outputsComponent.outputRecipes)) {
+      this.outputsComponent.outputRecipes.filter(recipe => !recipe.outputPriceCorrect).forEach(recipe => {
+        if (this.calculatePrice(recipe) > Number.MIN_VALUE) {
+          recipe.outputPriceCorrect = true;
+        }
       });
     }
 
     this.outputsComponent.convertRecipesToOutputDisplays();
+  }
+
+  /**
+   * Determines whether the given recipe list contains any recipes whose price still needs to be calculated.
+   * This is true if any recipes have outputPriceCorrect set to false.
+   * @param recipes the recipes to check
+   * @private
+   */
+  private hasPricesToRecalculate(recipes: Recipe[]): boolean {
+    return recipes.find(recipe => !recipe.outputPriceCorrect) !== undefined;
   }
 
   /**
@@ -673,6 +690,34 @@ export class CraftingParentComponent implements OnInit {
         this.ingredientsComponent.itemIngredients.splice(i, 1);
       }
     }
+  }
+
+  onRecipeModalOpened(component: RecipeModalComponent) {
+    component.dropUp = this.shouldDropUp(component.outputDisplay, component.recipe.nameID);
+    component.showModal();
+  }
+
+  shouldDropUp(outputDisplay: OutputDisplay, recipeNameID: string): boolean {
+    let totalRecipeRows = 0;
+    this.outputsComponent.outputDisplays.forEach(outputDisplay => totalRecipeRows += outputDisplay.subRecipes.length);
+    if (totalRecipeRows < 8) {
+      return false;
+    } else {
+      let recipeRowIndex = 0;
+      for (let output of this.outputsComponent.outputDisplays) {
+        for (let sub of output.subRecipes) {
+          recipeRowIndex++;
+          if (output.itemNameID.localeCompare(outputDisplay.itemNameID) === 0) {
+            if (sub.recipeNameID.localeCompare(recipeNameID) === 0) {
+              return recipeRowIndex >= 8 && recipeRowIndex >= (totalRecipeRows - 10)  &&
+                (recipeRowIndex >= (this.ingredientsComponent.itemIngredients.length - 8));
+            }
+          }
+        }
+      }
+    }
+
+    return false;
   }
 
 

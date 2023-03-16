@@ -5,7 +5,8 @@
     <div id="ingredients">
       <div class="row mx-auto form-group">
         <div class="col">
-          <img [alt]="message('calorieCostLabel')" class="calorieSprite mr-2" [src]="imageTemplateUrl">
+          <img [alt]="message('calorieCostLabel')" class="calorieSprite mr-2" [src]="imageTemplateUrl"
+          [ngStyle]="{'background': 'url(' + getCalorieSpriteImageUrl() + ') no-repeat -416px -160px / 512px'}">
           <label for="laborInput">
             <strong>{{message('calorieCostLabel')}}</strong>
           </label>
@@ -19,7 +20,8 @@
       </div>
       <div class="row laborRow divider mx-auto form-group">
         <div class="col">
-          <img [alt]="message('profitPercentLabel')" class="profitSprite mr-2" [src]="imageTemplateUrl">
+          <img [alt]="message('profitPercentLabel')" class="profitSprite mr-2" [src]="imageTemplateUrl"
+               [ngStyle]="{'background': 'url(' + getProfitSpriteImageUrl() + ') no-repeat -320px -384px / 512px'}">
           <label for="profitInput">
             <strong>{{message('profitPercentLabel')}}</strong>
           </label>
@@ -32,7 +34,7 @@
         </div>
       </div>
       <div *ngFor="let ingredient of itemIngredients" class="row ingredientRow mx-auto form-group">
-        <div class="col">
+        <div class="col-8">
           <img [alt]=ingredient.name [ngStyle]="{'background': 'url(' + getItemImageUrl(ingredient) + ') no-repeat',
                 'background-position': getItemSpritePosition(ingredient),
                 'background-size': getItemBackgroundSize(ingredient),

@@ -28,6 +28,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   @Input() imageBaseUrl: string;
   @Input() imageTemplateUrl: string;
+  skillsSpriteImage: string = 'skill-icons-sprite.png';
 
   @Output() skillAddedEvent = new EventEmitter<Skill>();
   @Output() skillLevelChangedEvent = new EventEmitter<Skill>();
@@ -109,7 +110,11 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   onSkillSelect(skill: Skill): void {
     if (this.selectedSkills.find(s => s.nameID.localeCompare(skill.nameID) === 0) === undefined) {
-      skill.level = 1;
+      if (this.skillLevelIsReadOnly(skill)) {
+        skill.level = 0;
+      } else {
+        skill.level = 1;
+      }
       skill.lavishChecked = false;
       let newTables = this.dataService.getCraftingTablesForSkill(skill);
       newTables.forEach(table => {
@@ -191,6 +196,14 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   onUpdateLavish(skill: Skill, value: boolean): void {
     skill.lavishChecked = value;
     this.lavishUpdatedEvent.emit(skill);
+  }
+
+  getSkillImageUrl(skill: Skill): string {
+    return this.imageBaseUrl + this.skillsSpriteImage;
+  }
+
+  skillLevelIsReadOnly(skill: Skill): boolean {
+    return skill.nameID.localeCompare('NoSkill') === 0;
   }
 
   /**

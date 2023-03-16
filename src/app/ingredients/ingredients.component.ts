@@ -149,6 +149,14 @@ export class IngredientsComponent implements OnInit {
     return '';
   }
 
+  getProfitSpriteImageUrl(): string {
+    return this.imageBaseUrl + 'UI_Icons_00.png';
+  }
+
+  getCalorieSpriteImageUrl(): string {
+    return this.imageBaseUrl + 'UI_Icons_00.png';
+  }
+
   localize(locale: Locale) {
     this.locale = locale;
     this.itemIngredients.forEach(item => item.name = this.localeService.localizeItemName(item.nameID, locale.langCode()));

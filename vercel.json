@@ -1,0 +1,3 @@
+{
+  "buildCommand": "ng build --configuration=$ENVIRONMENT"
+}

@@ -22066,6 +22066,19 @@ export const localeData: LocaleData[] =
       'type': 'skills',
       'entries': [
         {
+          'id': 'NoSkill',
+          'en': 'No Skill',
+          'fr': 'Pas de compétence',
+          'es': 'Sin habilidad',
+          'de': 'Keine Geschicklichkeit',
+          'pl': 'Żadnej umiejętności',
+          'ru': 'Нет навыка',
+          'uk': 'Ніякої майстерності',
+          'ko': '노 스킬',
+          'zh': '没技巧',
+          'ja': 'スキルなし',
+        },
+        {
           'id': 'AdvancedBakingSkill',
           'en': 'Advanced Baking',
           'fr': 'Boulangerie avancée',

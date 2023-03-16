@@ -2,7 +2,7 @@ import {Recipe} from '../../app/interface/recipe';
 import {getCraftingTableByNameID, getItemByNameID, getSkillByNameID} from './util/data-utils';
 
 
-export let recipes: Recipe[] =
+export let standardRecipes: Recipe[] =
   [
     {
       'name': 'Acorn Powder',
@@ -5069,7 +5069,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('WetTailingsItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -5099,7 +5099,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('TailingsItem'),
           'quantity': 1,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -5129,7 +5129,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('TailingsItem'),
           'quantity': 1,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -5159,7 +5159,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('WetTailingsItem'),
           'quantity': 3,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -5189,7 +5189,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('WetTailingsItem'),
           'quantity': 1,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -5297,7 +5297,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('WetTailingsItem'),
           'quantity': 3,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -7574,7 +7574,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('BarrelItem'),
           'quantity': 3,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -9372,7 +9372,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('WetTailingsItem'),
           'quantity': 4,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -10444,7 +10444,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('WetTailingsItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -13466,7 +13466,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('BarrelItem'),
           'quantity': 3,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -14106,7 +14106,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('BarrelItem'),
           'quantity': 3,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -18720,7 +18720,7 @@ export let recipes: Recipe[] =
         {
           'item': getItemByNameID('BarrelItem'),
           'quantity': 3,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]

@@ -7,6 +7,7 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {Item} from '../interface/item';
+import {RecipeModalComponent} from '../recipe-modal/recipe-modal.component';
 
 export const ITEM_SPRITE_SIZE = 32;
 
@@ -28,6 +29,7 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   @Output() recipeAddedEvent = new EventEmitter<Recipe>();
   @Output() itemRemovedEvent = new EventEmitter<Recipe[]>();
   @Output() subRecipeRemovedEvent = new EventEmitter<Recipe>();
+  @Output() recipeModalOpenedEvent = new EventEmitter<RecipeModalComponent>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService,
@@ -38,13 +40,17 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   }
 
   ngOnInit(): void {
-    let outputsCookie = this.storageService.get('recipes');
-    if (outputsCookie != null) {
-      outputsCookie.forEach(cookie => {
-        let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
-        recipe.price = Number.parseFloat(cookie.pr);
-        if (cookie.hasOwnProperty('bp')) {
-          recipe.basePrice = Number.parseFloat(cookie.bp);
+
+  }
+
+  ngAfterContentInit(): void {
+    let storedRecipes = this.storageService.get('recipes');
+    if (storedRecipes != null) {
+      storedRecipes.forEach(storedRecipe => {
+        let recipe = this.dataService.getRecipeById(storedRecipe.id);
+        recipe.price = Number.parseFloat(storedRecipe.pr);
+        if (storedRecipe.hasOwnProperty('bp')) {
+          recipe.basePrice = Number.parseFloat(storedRecipe.bp);
         } else {
           let profitStored = this.storageService.get('profitPercent');
           if (profitStored != null) {
@@ -57,30 +63,14 @@ export class OutputsComponent implements OnInit, AfterContentInit {
         }
 
         this.outputRecipes.push(recipe);
-        this.convertRecipesToOutputDisplays();
-      });
-    } else if (this.cookieService.check('recipes')) {
-      let outputsCookies = JSON.parse(atob(this.cookieService.get('recipes')));
-      outputsCookies.forEach(cookie => {
-        let recipe = this.dataService.getRecipes().find(recipe => recipe.nameID.localeCompare(cookie.id) === 0);
-        recipe.price = Number.parseFloat(cookie.pr);
-        if (cookie.hasOwnProperty('bp')) {
-          recipe.basePrice = Number.parseFloat(cookie.bp);
-        } else {
-          let profitPercent = Number.parseFloat(this.cookieService.get('profitPercent')) / 100;
-          recipe.basePrice = recipe.price / (1 + profitPercent);
-        }
-
-        this.outputRecipes.push(recipe);
       });
       this.convertRecipesToOutputDisplays();
-
-      this.cookieService.delete('recipes');
-      this.storageService.set('recipes', outputsCookie);
     }
+
+    this.refreshFilteredRecipes();
   }
 
-  ngAfterContentInit(): void {
+  refreshFilteredRecipes(): void {
     this.filteredRecipes = this.dataService.getRecipes();
   }
 
@@ -103,7 +93,8 @@ export class OutputsComponent implements OnInit, AfterContentInit {
               outputDisplay.subRecipes.push({
                 recipeNameID: recipe.nameID,
                 recipeName: recipe.name,
-                recipePrice: recipe.price
+                recipePrice: recipe.price,
+                recipe: recipe
               });
               return true;
             }
@@ -120,7 +111,8 @@ export class OutputsComponent implements OnInit, AfterContentInit {
             subRecipes: [{
               recipeNameID: recipe.nameID,
               recipeName: recipe.name,
-              recipePrice: recipe.price
+              recipePrice: recipe.price,
+              recipe: recipe
             }],
             imageFile: recipe.primaryOutput.item.imageFile,
             xPos: recipe.primaryOutput.item.xPos,
@@ -270,6 +262,14 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       return item.filter;
     }
     return '';
+  }
+
+  toggleModal(recipeModal: RecipeModalComponent): void {
+    if (recipeModal.showRecipe) {
+      recipeModal.closeModal();
+    } else {
+      this.recipeModalOpenedEvent.emit(recipeModal);
+    }
   }
 
   localize(locale: Locale): void {

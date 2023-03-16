@@ -20,4 +20,7 @@ export class Recipe {
 
   //Price PER PRIMARY OUTPUT ITEM
   price?: number;
+
+  //Determines whether the price for this recipe is correct and can be used for further calculations
+  outputPriceCorrect?: boolean = false;
 }

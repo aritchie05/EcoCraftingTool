@@ -10,8 +10,12 @@ export class MessageService {
   }
 
   getMessage(id: string, locale: Locale): string {
-    return messages.find(message => message.id.localeCompare(id) === 0)
-      .localizedMessages.find(message => message.lang.localeCompare(locale.langCode()) === 0).text;
+    let message = messages.find(message => message.id.localeCompare(id) === 0);
+    if (message) {
+      return message.localizedMessages.find(message => message.lang.localeCompare(locale.langCode()) === 0).text;
+    } else {
+      return id;
+    }
   }
 }
 
@@ -113,6 +117,51 @@ const messages: Message[] =
         },
         {
           'text': 'クラフトリソース修飾子',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'whiteTigerRecipes',
+      'localizedMessages': [
+        {
+          'text': 'White Tiger Recipes',
+          'lang': 'en'
+        },
+        {
+          'text': 'Recettes du Tigre Blanc',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Recetas de Tigre Blanco',
+          'lang': 'es'
+        },
+        {
+          'text': 'Weiße Tiger-Rezepte',
+          'lang': 'de'
+        },
+        {
+          'text': 'Przepisy Białego Tygrysa',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Рецепты белого тигра',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Рецепти білого тигра',
+          'lang': 'uk'
+        },
+        {
+          'text': '화이트 타이거 레시피',
+          'lang': 'ko'
+        },
+        {
+          'text': '白虎食谱',
+          'lang': 'zh'
+        },
+        {
+          'text': 'ホワイトタイガー レシピ',
           'lang': 'ja'
         }
       ]
@@ -751,43 +800,43 @@ const messages: Message[] =
       'id': 'authorLink',
       'localizedMessages': [
         {
-          'text': 'By 300',
+          'text': 'By Adam',
           'lang': 'en'
         },
         {
-          'text': 'Par 300',
+          'text': 'Par Adam',
           'lang': 'fr'
         },
         {
-          'text': 'Por 300',
+          'text': 'Por Adam',
           'lang': 'es'
         },
         {
-          'text': 'Um 300',
+          'text': 'Um Adam',
           'lang': 'de'
         },
         {
-          'text': 'Do 300',
+          'text': 'Do Adam',
           'lang': 'pl'
         },
         {
-          'text': 'К 300',
+          'text': 'К Adam',
           'lang': 'ru'
         },
         {
-          'text': 'До 300',
+          'text': 'До Adam',
           'lang': 'uk'
         },
         {
-          'text': '300까지',
+          'text': 'Adam까지',
           'lang': 'ko'
         },
         {
-          'text': '乘300',
+          'text': '乘Adam',
           'lang': 'zh'
         },
         {
-          'text': '300年までに',
+          'text': 'Adam年までに',
           'lang': 'ja'
         }
       ]
@@ -833,6 +882,186 @@ const messages: Message[] =
         },
         {
           'text': 'k0kaへのクレジット',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'Calories',
+      'localizedMessages': [
+        {
+          'text': 'Calories',
+          'lang': 'en'
+        },
+        {
+          'text': 'Calories',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Calorías',
+          'lang': 'es'
+        },
+        {
+          'text': 'Kalorien',
+          'lang': 'de'
+        },
+        {
+          'text': 'Kalorie',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Калории',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Калорії',
+          'lang': 'uk'
+        },
+        {
+          'text': '칼로리',
+          'lang': 'ko'
+        },
+        {
+          'text': '卡路里',
+          'lang': 'zh'
+        },
+        {
+          'text': 'カロリー',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'craftingTableLabel',
+      'localizedMessages': [
+        {
+          'text': 'Crafting Table',
+          'lang': 'en'
+        },
+        {
+          'text': 'Table de Bricolage',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Mesa de Trabajo',
+          'lang': 'es'
+        },
+        {
+          'text': 'Basteltisch',
+          'lang': 'de'
+        },
+        {
+          'text': 'Stół Rzemieślniczy',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Верстак',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Стіл для крафта',
+          'lang': 'uk'
+        },
+        {
+          'text': '공예 테이블',
+          'lang': 'ko'
+        },
+        {
+          'text': '工艺台',
+          'lang': 'zh'
+        },
+        {
+          'text': '作業台',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'skillLabel',
+      'localizedMessages': [
+        {
+          'text': 'Skill',
+          'lang': 'en'
+        },
+        {
+          'text': 'Compétence',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Habilidad',
+          'lang': 'es'
+        },
+        {
+          'text': 'Fähigkeit',
+          'lang': 'de'
+        },
+        {
+          'text': 'Umiejętność',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Навык',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Майстерність',
+          'lang': 'uk'
+        },
+        {
+          'text': '숙련',
+          'lang': 'ko'
+        },
+        {
+          'text': '技能',
+          'lang': 'zh'
+        },
+        {
+          'text': '技能',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'laborLabel',
+      'localizedMessages': [
+        {
+          'text': 'Labor',
+          'lang': 'en'
+        },
+        {
+          'text': 'Travail',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Mano de obra',
+          'lang': 'es'
+        },
+        {
+          'text': 'Arbeit',
+          'lang': 'de'
+        },
+        {
+          'text': 'Praca',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Труд',
+          'lang': 'ru'
+        },
+        {
+          'text': 'праці',
+          'lang': 'uk'
+        },
+        {
+          'text': '노동',
+          'lang': 'ko'
+        },
+        {
+          'text': '劳动',
+          'lang': 'zh'
+        },
+        {
+          'text': '労働',
           'lang': 'ja'
         }
       ]

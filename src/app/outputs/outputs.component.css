@@ -1,6 +1,7 @@
 .recipeRow {
   margin-top: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .priceDisplay {
@@ -32,4 +33,10 @@
   display: inline;
   height: 32px;
   width: 32px;
+}
+
+.recipe-modal-toggle {
+  font-size: 18px;
+  margin-left: 3px;
+  vertical-align: sub;
 }
