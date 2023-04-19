@@ -8108,6 +8108,22 @@ export let items: Item[] =
       'yPos': 0
     },
     {
+      'name': 'Shipwright Basic Upgrade',
+      'nameID': 'ShipwrightBasicUpgradeItem',
+      'tag': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 4
+    },
+    {
+      'name': 'Shipwright Advanced Upgrade',
+      'nameID': 'ShipwrightAdvancedUpgradeItem',
+      'tag': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 4
+    },
+    {
       'name': 'Industrial Barge',
       'nameID': 'IndustrialBargeItem',
       'tag': false,
@@ -8362,5 +8378,13 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_05.png',
       'xPos': 13,
       'yPos': 15
+    },
+    {
+      'name': 'Glass Lens',
+      'nameID': 'GlassLensItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
     }
   ];

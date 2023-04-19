@@ -330,8 +330,8 @@ export let skills: Skill[] =
       'modernUpgrade': false,
       'lavishWorkspace': true,
       'imageFile': 'skill-icons-sprite.png',
-      'xPos': 6,
-      'yPos': 3
+      'xPos': 1,
+      'yPos': 4
     },
     {
       'name': 'Tailoring',

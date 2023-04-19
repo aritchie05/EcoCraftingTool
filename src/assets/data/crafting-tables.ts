@@ -309,7 +309,7 @@ export let craftingTables: CraftingTable[] =
       'yPos': 10
     },
     {
-      'name': 'MediumShipyard',
+      'name': 'Medium Shipyard',
       'nameID': 'MediumShipyardObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
@@ -426,7 +426,7 @@ export let craftingTables: CraftingTable[] =
       'yPos': 3
     },
     {
-      'name': 'SmallShipyard',
+      'name': 'Small Shipyard',
       'nameID': 'SmallShipyardObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
