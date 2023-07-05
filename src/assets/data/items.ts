@@ -8106,5 +8106,285 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_06.png',
       'xPos': 11,
       'yPos': 0
+    },
+    {
+      'name': 'Shipwright Basic Upgrade',
+      'nameID': 'ShipwrightBasicUpgradeItem',
+      'tag': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 4
+    },
+    {
+      'name': 'Shipwright Advanced Upgrade',
+      'nameID': 'ShipwrightAdvancedUpgradeItem',
+      'tag': false,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 4
+    },
+    {
+      'name': 'Industrial Barge',
+      'nameID': 'IndustrialBargeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 4,
+      'yPos': 13
+    },
+    {
+      'name': 'Small Canoe',
+      'nameID': 'SmallCanoeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 1,
+      'yPos': 13
+    },
+    {
+      'name': 'Large Canoe',
+      'nameID': 'LargeCanoeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 2,
+      'yPos': 13
+    },
+    {
+      'name': 'Medium Fishing Trawler',
+      'nameID': 'MediumFishingTrawlerItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 6,
+      'yPos': 13
+    },
+    {
+      'name': 'Small Wooden Boat',
+      'nameID': 'SmallWoodenBoatItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 0,
+      'yPos': 13
+    },
+    {
+      'name': 'Wooden Barge',
+      'nameID': 'WoodenBargeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 3,
+      'yPos': 13
+    },
+    {
+      'name': 'Wooden Transport Ship',
+      'nameID': 'WoodenTransportShipItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 5,
+      'yPos': 13
+    },
+    {
+      'name': 'Small Shipyard',
+      'nameID': 'SmallShipyardItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 15
+    },
+    {
+      'name': 'Medium Shipyard',
+      'nameID': 'MediumShipyardItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 10,
+      'yPos': 8
+    },
+    {
+      'name': 'Wooden Hull Planks',
+      'nameID': 'WoodenHullPlanksItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 13,
+      'yPos': 14
+    },
+    {
+      'name': 'Small Wooden Ship Frame',
+      'nameID': 'SmallWoodenShipFrameItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 12,
+      'yPos': 14
+    },
+    {
+      'name': 'Medium Wooden Ship Frame',
+      'nameID': 'MediumWoodenShipFrameItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 8,
+      'yPos': 14
+    },
+    {
+      'name': 'Wooden Moorage Post',
+      'nameID': 'WoodenMooragePostItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 10,
+      'yPos': 15
+    },
+    {
+      'name': 'Steel Moorage Post',
+      'nameID': 'SteelMooragePostItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 9,
+      'yPos': 15
+    },
+    {
+      'name': 'Outpost Netting',
+      'nameID': 'OutpostNettingItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 10,
+      'yPos': 15
+    },
+    {
+      'name': 'Decorative Life Preserver',
+      'nameID': 'DecorativeLifePreserverItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 4,
+      'yPos': 6
+    },
+    {
+      'name': 'Decorative Hanging Buoy',
+      'nameID': 'DecorativeHangingBuoyItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 9,
+      'yPos': 5
+    },
+    {
+      'name': 'Iron Hull Sheet',
+      'nameID': 'IronHullSheetItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 4,
+      'yPos': 14
+    },
+    {
+      'name': 'Metal Rudder',
+      'nameID': 'MetalRudderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 9,
+      'yPos': 14
+    },
+    {
+      'name': 'Large Wooden Ship Frame',
+      'nameID': 'LargeWoodenShipFrameItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 6,
+      'yPos': 14
+    },
+    {
+      'name': 'Large Metal Ship Frame',
+      'nameID': 'LargeMetalShipFrameItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 5,
+      'yPos': 14
+    },
+    {
+      'name': 'Medium Metal Ship Frame',
+      'nameID': 'MediumMetalShipFrameItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 7,
+      'yPos': 14
+    },
+    {
+      'name': 'Wooden Oar',
+      'nameID': 'WoodenOarItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 15,
+      'yPos': 14
+    },
+    {
+      'name': 'Wooden Rudder',
+      'nameID': 'WoodenRudderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 14,
+      'yPos': 14
+    },
+    {
+      'name': 'Wooden Keel',
+      'nameID': 'WoodenKeelItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 14,
+      'yPos': 14
+    },
+    {
+      'name': 'Metal Keel',
+      'nameID': 'MetalKeelItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 9,
+      'yPos': 14
+    },
+    {
+      'name': 'Iron Anchor',
+      'nameID': 'IronAnchorItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 3,
+      'yPos': 14
+    },
+    {
+      'name': 'Linen Yarn',
+      'nameID': 'LinenYarnItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 2,
+      'yPos': 14
+    },
+    {
+      'name': 'Hemp Mooring Rope',
+      'nameID': 'HempMooringRopeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 2,
+      'yPos': 14
+    },
+    {
+      'name': 'Nylon Mooring Rope',
+      'nameID': 'NylonMooringRopeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 14
+    },
+    {
+      'name': 'Handheld Camera',
+      'nameID': 'HandheldCameraItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 12,
+      'yPos': 15
+    },
+    {
+      'name': 'Tripod Camera',
+      'nameID': 'TripodCameraItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 13,
+      'yPos': 15
+    },
+    {
+      'name': 'Glass Lens',
+      'nameID': 'GlassLensItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
     }
   ];

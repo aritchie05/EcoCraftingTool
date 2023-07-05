@@ -309,6 +309,15 @@ export let craftingTables: CraftingTable[] =
       'yPos': 10
     },
     {
+      'name': 'Medium Shipyard',
+      'nameID': 'MediumShipyardObject',
+      'upgradeModuleType': 'AdvancedUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 15
+    },
+    {
       'name': 'Mill',
       'nameID': 'MillObject',
       'upgradeModuleType': 'AdvancedUpgrade',
@@ -415,6 +424,15 @@ export let craftingTables: CraftingTable[] =
       'imageFile': 'UI_Icons_01.png',
       'xPos': 15,
       'yPos': 3
+    },
+    {
+      'name': 'Small Shipyard',
+      'nameID': 'SmallShipyardObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 15
     },
     {
       'name': 'Spin Melter',
