@@ -3135,7 +3135,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Butchery Table',
       'nameID': 'ButcheryTable',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 300,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -5653,10 +5653,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Cotton Lint',
       'nameID': 'CottonLint',
-      'skill': getSkillByNameID('FarmingSkill'),
-      'level': 1,
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 2,
       'labor': 80,
-      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -5673,8 +5673,8 @@ export let standardRecipes: Recipe[] =
           'primary': true
         },
         {
-          'item': getItemByNameID('CottonSeedItem'),
-          'quantity': 0.5,
+          'item': getItemByNameID('PlantFibersItem'),
+          'quantity': 0.25,
           'reducible': false,
           'primary': false
         }
@@ -9773,7 +9773,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Bench',
       'nameID': 'HewnBench',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 2,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9802,7 +9802,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Chair',
       'nameID': 'HewnChair',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9836,7 +9836,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Door',
       'nameID': 'HewnDoor',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9860,7 +9860,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Dresser',
       'nameID': 'HewnDresser',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 3,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9913,7 +9913,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Nightstand',
       'nameID': 'HewnNightstand',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 4,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9942,7 +9942,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Table',
       'nameID': 'HewnTable',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 2,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -13751,14 +13751,14 @@ export let standardRecipes: Recipe[] =
       'name': 'Paper',
       'nameID': 'Paper',
       'skill': getSkillByNameID('PaperMillingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 20,
-      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('CelluloseFiberItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -17873,35 +17873,6 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Steel Road Tool',
-      'nameID': 'SteelRoadTool',
-      'skill': getSkillByNameID('BasicEngineeringSkill'),
-      'level': 3,
-      'labor': 25,
-      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 10,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('SteelRoadToolItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
       'name': 'Steel Saw Blade',
       'nameID': 'SteelSawBlade',
       'skill': getSkillByNameID('AdvancedSmeltingSkill'),
@@ -19614,7 +19585,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Wainwright Table',
       'nameID': 'WainwrightTable',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 180,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -21096,6 +21067,2772 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('CopperPlateItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Camera Film',
+      'nameID': 'CameraFilm',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 45,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CameraFilmItem'),
+          'quantity': 10,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Canvas',
+      'nameID': 'Canvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Colored Powder',
+      'nameID': 'ColoredPowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Petals'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ColoredPowderItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Compost Spoiled Food',
+      'nameID': 'CompostSpoiledFood',
+      'skill': getSkillByNameID('FertilizersSkill'),
+      'level': 3,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SpoiledFoodItem'),
+          'quantity': 6,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('DirtItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CompostFertilizerItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Copper Frame Wide',
+      'nameID': 'CopperFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CopperBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CopperFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Canvas',
+      'nameID': 'CottonCanvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Seed',
+      'nameID': 'CottonSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonBollItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CottonSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Streamer Stars',
+      'nameID': 'CottonStreamerStars',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CottonStreamerStarsItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Streamer Stripes',
+      'nameID': 'CottonStreamerStripes',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CottonStreamerStripesItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cottonseed Oil',
+      'nameID': 'CottonseedOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 4,
+      'labor': 40,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonSeedItem'),
+          'quantity': 24,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Court Chair',
+      'nameID': 'CourtChair',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 1,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CourtChairItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Creosote Bush Seed',
+      'nameID': 'CreosoteBushSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CreosoteFlowerItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CreosoteBushSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Anchor',
+      'nameID': 'DecorativeAnchor',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeAnchorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Glass Buoy Blue',
+      'nameID': 'DecorativeGlassBuoyBlue',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeGlassBuoyBlueItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Hanging Buoy',
+      'nameID': 'DecorativeHangingBuoy',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeHangingBuoyItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Life Preserver',
+      'nameID': 'DecorativeLifePreserver',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeLifePreserverItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Ship Wheel',
+      'nameID': 'DecorativeShipWheel',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeShipWheelItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Fiber Scutching Station',
+      'nameID': 'FiberScutchingStation',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 2,
+      'labor': 300,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FiberScutchingStationItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Fish Rack',
+      'nameID': 'FishRack',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FishRackItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Flax Fiber',
+      'nameID': 'FlaxFiber',
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 2,
+      'labor': 80,
+      'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxStemItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxFiberItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Flax Seed',
+      'nameID': 'FlaxSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Flax Trawler Net',
+      'nameID': 'FlaxTrawlerNet',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 30,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxTrawlerNetItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Flaxseed Oil',
+      'nameID': 'FlaxseedOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 3,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxSeedItem'),
+          'quantity': 24,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxseedOilItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Gathering Basic Upgrade',
+      'nameID': 'GatheringBasicUpgrade',
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 7,
+      'labor': 3000,
+      'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BasicUpgradeLvl4Item'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GatheringBasicUpgradeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Glass Lens',
+      'nameID': 'GlassLens',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 30,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GlassLensItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Gold Frame Wide',
+      'nameID': 'GoldFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GoldBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GoldFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Handheld Camera',
+      'nameID': 'HandheldCamera',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 250,
+      'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FiberglassItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GlassLensItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('BasicCircuitItem'),
+          'quantity': 2,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HandheldCameraItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Hemp Mooring Rope',
+      'nameID': 'HempMooringRope',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Banner Sign',
+      'nameID': 'HugeBannerSign',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 3,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Iron Banner Sign',
+      'nameID': 'HugeIronBannerSign',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 6,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 16,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeIronBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Iron Sign',
+      'nameID': 'HugeIronSign',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 3,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeIronSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Steel Banner Sign',
+      'nameID': 'HugeSteelBannerSign',
+      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'level': 6,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RollingMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 16,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 6,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeSteelBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Steel Sign',
+      'nameID': 'HugeSteelSign',
+      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'level': 3,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('RollingMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 3,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeSteelSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Wooden Banner Sign',
+      'nameID': 'HugeWoodenBannerSign',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 6,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeWoodenBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Industrial Barge',
+      'nameID': 'IndustrialBarge',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 6,
+      'labor': 2500,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronHullSheetItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('NylonMooringRopeItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalRudderItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SteelAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAnchorItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CombustionEngineItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LargeMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IndustrialBargeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Industrial Generator',
+      'nameID': 'IndustrialGenerator',
+      'skill': getSkillByNameID('IndustrySkill'),
+      'level': 4,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 48,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedCircuitItem'),
+          'quantity': 32,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelPipeItem'),
+          'quantity': 32,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 64,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedCombustionEngineItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('RadiatorItem'),
+          'quantity': 24,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SteelAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IndustrialGeneratorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Anchor',
+      'nameID': 'IronAnchor',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronAnchorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Frame Wide',
+      'nameID': 'IronFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Hull Sheet',
+      'nameID': 'IronHullSheet',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ScrewsItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronHullSheetItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Road Tool',
+      'nameID': 'IronRoadTool',
+      'skill': getSkillByNameID('BasicEngineeringSkill'),
+      'level': 3,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronRoadToolItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Canoe',
+      'nameID': 'LargeCanoe',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 2,
+      'labor': 360,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenOarItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SmallWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeCanoeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Cotton Bunting Red',
+      'nameID': 'LargeCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeCottonBuntingRedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Festive Paper Lantern',
+      'nameID': 'LargeFestivePaperLantern',
+      'skill': getSkillByNameID('PaperMillingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeFestivePaperLanternItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Metal Ship Frame',
+      'nameID': 'LargeMetalShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 5,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Nylon Bunting Green',
+      'nameID': 'LargeNylonBuntingGreen',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeNylonBuntingGreenItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Paper Lantern',
+      'nameID': 'LargePaperLantern',
+      'skill': getSkillByNameID('PaperMillingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargePaperLanternItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Wooden Ship Frame',
+      'nameID': 'LargeWoodenShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 5,
+      'labor': 200,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 24,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Linen Fabric',
+      'nameID': 'LinenFabric',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Linen Yarn',
+      'nameID': 'LinenYarn',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 30,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxFiberItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Fishing Trawler',
+      'nameID': 'MediumFishingTrawler',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 3,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronHullSheetItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalRudderItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAnchorItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('PortableSteamEngineItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('MediumMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumFishingTrawlerItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Metal Ship Frame',
+      'nameID': 'MediumMetalShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ScrewsItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Shipyard',
+      'nameID': 'MediumShipyard',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 800,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumShipyardItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Wooden Ship Frame',
+      'nameID': 'MediumWoodenShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Metal Keel',
+      'nameID': 'MetalKeel',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('ShaperObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MetalKeelItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Metal Rudder',
+      'nameID': 'MetalRudder',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ScrewsItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronGearItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MetalRudderItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Nylon Mooring Rope',
+      'nameID': 'NylonMooringRope',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonThreadItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('NylonMooringRopeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Nylon Trawler Net',
+      'nameID': 'NylonTrawlerNet',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 3,
+      'labor': 200,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonThreadItem'),
+          'quantity': 30,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('NylonTrawlerNetItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Oil Paint',
+      'nameID': 'OilPaint',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 80,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('ColoredPowderItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlaxseedOilItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilPaintItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Orchid Seed',
+      'nameID': 'OrchidSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('OrchidItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrchidSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Ornate Gold Frame Wide',
+      'nameID': 'OrnateGoldFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GoldBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrnateGoldFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Ornate Iron Frame Wide',
+      'nameID': 'OrnateIronFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrnateIronFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Ornate Wooden Frame Wide',
+      'nameID': 'OrnateWoodenFrameWide',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrnateWoodenFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Outpost Netting',
+      'nameID': 'OutpostNetting',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 180,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OutpostNettingItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Particle Boards',
+      'nameID': 'ParticleBoards',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 5,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodPulpItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BoardItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Plastic Buoy',
+      'nameID': 'PlasticBuoy',
+      'skill': getSkillByNameID('IndustrySkill'),
+      'level': 4,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PlasticBuoyItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Printing Press',
+      'nameID': 'PrintingPress',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 3,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GearboxItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PistonItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PrintingPressItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Recycle Hewn Log',
+      'nameID': 'RecycleHewnLog',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 3,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodPulpItem'),
+          'quantity': 10,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Rice Mortar',
+      'nameID': 'RiceMortar',
+      'skill': getSkillByNameID('MasonrySkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('BakeryOvenObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RiceItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MortarItem'),
+          'quantity': 3,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Advanced Upgrade',
+      'nameID': 'ShipwrightAdvancedUpgrade',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 7,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightAdvancedUpgradeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Basic Upgrade',
+      'nameID': 'ShipwrightBasicUpgrade',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 7,
+      'labor': 3000,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BasicUpgradeLvl4Item'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightBasicUpgradeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Canoe',
+      'nameID': 'SmallCanoe',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenOarItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SmallWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallCanoeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Cotton Bunting Red',
+      'nameID': 'SmallCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallCottonBuntingRedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Nylon Bunting Green',
+      'nameID': 'SmallNylonBuntingGreen',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonFabricItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallNylonBuntingGreenItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Paper Lantern',
+      'nameID': 'SmallPaperLantern',
+      'skill': getSkillByNameID('PaperMillingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallPaperLanternItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Paper Machine',
+      'nameID': 'SmallPaperMachine',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronGearItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallPaperMachineItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Shipyard',
+      'nameID': 'SmallShipyard',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 1,
+      'labor': 360,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallShipyardItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Wooden Boat',
+      'nameID': 'SmallWoodenBoat',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 3,
+      'labor': 680,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenWheelItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('GearboxItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('MediumWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallWoodenBoatItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Wooden Ship Frame',
+      'nameID': 'SmallWoodenShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Buoy',
+      'nameID': 'SteelBuoy',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 4,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelBuoyItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Moorage Post',
+      'nameID': 'SteelMooragePost',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 3,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('NylonMooringRopeItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelMooragePostItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Trillium Seed',
+      'nameID': 'TrilliumSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('TrilliumFlowerItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('TrilliumSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Tripod Camera',
+      'nameID': 'TripodCamera',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 3,
+      'labor': 250,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LeatherHideItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GlassLensItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('TripodCameraItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Cotton Canvas',
+      'nameID': 'WeaveCottonCanvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Large Cotton Bunting Red',
+      'nameID': 'WeaveLargeCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeCottonBuntingRedItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Linen Canvas',
+      'nameID': 'WeaveLinenCanvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Linen Fabric',
+      'nameID': 'WeaveLinenFabric',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 80,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Small Cotton Bunting Red',
+      'nameID': 'WeaveSmallCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallCottonBuntingRedItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Barge',
+      'nameID': 'WoodenBarge',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 800,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenWheelItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('GearboxItem'),
+          'quantity': 4,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LargeWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenBargeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Frame Wide',
+      'nameID': 'WoodenFrameWide',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Hull Planks',
+      'nameID': 'WoodenHullPlanks',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Keel',
+      'nameID': 'WoodenKeel',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Wood'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Moorage Post',
+      'nameID': 'WoodenMooragePost',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenMooragePostItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Oar',
+      'nameID': 'WoodenOar',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenOarItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Rudder',
+      'nameID': 'WoodenRudder',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 4,
+      'labor': 40,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronGearItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenRudderItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Transport Ship',
+      'nameID': 'WoodenTransportShip',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 1000,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenRudderItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('PortableSteamEngineItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LargeWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenTransportShipItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
