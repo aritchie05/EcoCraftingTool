@@ -3,8 +3,8 @@ import {Skill} from '../../app/interface/skill';
 export let skills: Skill[] =
   [
     {
-      'name': 'No Skill',
-      'nameID': 'NoSkill',
+      'name': 'Self Improvement',
+      'nameID': 'SelfImprovementSkill',
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': false,

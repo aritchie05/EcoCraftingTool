@@ -136,9 +136,9 @@ export class CraftingParentComponent implements OnInit {
           recipesNotConfirmed.splice(i, 1);
           this.outputsComponent.outputRecipes.push(recipe);
         } else if (i < 10) {
-          console.log(`Could not calculate price for recipe ${recipe.name}, will try again on next loop.`);
+          console.debug(`Could not calculate price for recipe ${recipe.name}, will try again on next loop.`);
         } else {
-          console.log(`Exhausted retries for price calculation for recipe ${recipe.name}`);
+          console.debug(`Exhausted retries for price calculation for recipe ${recipe.name}`);
         }
       }
 

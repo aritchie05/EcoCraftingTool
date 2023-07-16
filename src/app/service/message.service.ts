@@ -11,11 +11,11 @@ export class MessageService {
 
   getMessage(id: string, locale: Locale): string {
     let message = messages.find(message => message.id.localeCompare(id) === 0);
+    let result: LocalizedMessage;
     if (message) {
-      return message.localizedMessages.find(message => message.lang.localeCompare(locale.langCode()) === 0).text;
-    } else {
-      return id;
+      result = message.localizedMessages.find(message => message.lang.localeCompare(locale.langCode()) === 0);
     }
+    return result !== undefined ? result.text : message.localizedMessages.find(message => message.lang === 'en').text;
   }
 }
 
@@ -49,6 +49,18 @@ const messages: Message[] =
         {
           'text': 'Handwerksrechner',
           'lang': 'de'
+        },
+        {
+          'text': 'Calculadora de artesanato',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Calcolatrice di creazione',
+          'lang': 'it'
+        },
+        {
+          'text': 'Üretim Hesaplayıcısı',
+          'lang': 'tr'
         },
         {
           'text': 'Kalkulator rzemieślniczy',
@@ -96,6 +108,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Modificador de Recurso de Artesanato',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Modificatore di risorse artigianali',
+          'lang': 'it'
+        },
+        {
+          'text': 'Zanaat Kaynağı Değiştirici',
+          'lang': 'tr'
+        },
+        {
           'text': 'Modyfikator zasobów rzemieślniczych',
           'lang': 'pl'
         },
@@ -139,6 +163,18 @@ const messages: Message[] =
         {
           'text': 'Weiße Tiger-Rezepte',
           'lang': 'de'
+        },
+        {
+          'text': 'Receitas de Tigre Branco',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ricette della tigre bianca',
+          'lang': 'it'
+        },
+        {
+          'text': 'Beyaz Kaplan Tarifleri',
+          'lang': 'tr'
         },
         {
           'text': 'Przepisy Białego Tygrysa',
@@ -186,6 +222,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Receitas caras de final de jogo',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ricette costose per la fine del gioco',
+          'lang': 'it'
+        },
+        {
+          'text': 'Pahalı Oyun Sonu Tarifleri',
+          'lang': 'tr'
+        },
+        {
           'text': 'Drogie przepisy na koniec gry',
           'lang': 'pl'
         },
@@ -219,7 +267,7 @@ const messages: Message[] =
           'lang': 'en'
         },
         {
-          'text': 'Version éco',
+          'text': 'Version Eco',
           'lang': 'fr'
         },
         {
@@ -227,19 +275,31 @@ const messages: Message[] =
           'lang': 'es'
         },
         {
-          'text': 'Öko-Version',
+          'text': 'Eco Version',
           'lang': 'de'
+        },
+        {
+          'text': 'Versão Eco',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Versione Eco',
+          'lang': 'it'
+        },
+        {
+          'text': 'Eco Versiyon',
+          'lang': 'tr'
         },
         {
           'text': 'Wersja Eco',
           'lang': 'pl'
         },
         {
-          'text': 'Эко-версия',
+          'text': 'Eco версия',
           'lang': 'ru'
         },
         {
-          'text': 'Еко-версія',
+          'text': 'Eco версія',
           'lang': 'uk'
         },
         {
@@ -274,6 +334,18 @@ const messages: Message[] =
         {
           'text': 'Kompetenzen',
           'lang': 'de'
+        },
+        {
+          'text': 'Habilidades',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Competenze',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yetenekler',
+          'lang': 'tr'
         },
         {
           'text': 'Umiejętności',
@@ -321,6 +393,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Escolha uma habilidade...',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Scegli un\'abilità...',
+          'lang': 'it'
+        },
+        {
+          'text': 'Bir beceri seçin...',
+          'lang': 'tr'
+        },
+        {
           'text': 'Wybierz umiejętność ...',
           'lang': 'pl'
         },
@@ -358,35 +442,47 @@ const messages: Message[] =
           'lang': 'fr'
         },
         {
-          'text': 'Espacio de trabajo lujoso',
+          'text': 'Zona de trabajo lujoso',
           'lang': 'es'
         },
         {
-          'text': 'Aufwändiger Arbeitsbereich',
+          'text': 'Großzügiger Arbeitsbereich',
           'lang': 'de'
         },
         {
-          'text': 'Bogate miejsce do pracy',
+          'text': 'Área de Trabalho Exuberante',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Sontuosa Area di Lavoro',
+          'lang': 'it'
+        },
+        {
+          'text': 'Geniş Çalışma Alanı',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Luksusowy warsztat',
           'lang': 'pl'
         },
         {
-          'text': 'Роскошное рабочее место',
+          'text': 'Качественное рабочее место',
           'lang': 'ru'
         },
         {
-          'text': 'Розкішна робоча область',
+          'text': 'Розкішне робоче місце',
           'lang': 'uk'
         },
         {
-          'text': '호화로운 작업 공간',
+          'text': '화려한 작업실',
           'lang': 'ko'
         },
         {
-          'text': '奢华的工作区',
+          'text': '奢华的工作空间',
           'lang': 'zh'
         },
         {
-          'text': '豪華なワークスペース',
+          'text': '豪華な作業空間',
           'lang': 'ja'
         }
       ]
@@ -409,6 +505,18 @@ const messages: Message[] =
         {
           'text': 'Wähle einen Basteltisch...',
           'lang': 'de'
+        },
+        {
+          'text': 'Escolha uma mesa de trabalho...',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Scegli un tavolo da lavoro...',
+          'lang': 'it'
+        },
+        {
+          'text': 'Bir üretim masası seçin...',
+          'lang': 'tr'
         },
         {
           'text': 'Wybierz stół rzemieślniczy...',
@@ -456,6 +564,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Entradas',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ingressi',
+          'lang': 'it'
+        },
+        {
+          'text': 'Girişler',
+          'lang': 'tr'
+        },
+        {
           'text': 'Wejścia',
           'lang': 'pl'
         },
@@ -499,6 +619,18 @@ const messages: Message[] =
         {
           'text': 'Preis pro 1000 Kalorien',
           'lang': 'de'
+        },
+        {
+          'text': 'Preço por 1000 calorias',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Prezzo per 1000 calorie',
+          'lang': 'it'
+        },
+        {
+          'text': '1000 Kalori Başına Fiyat',
+          'lang': 'tr'
         },
         {
           'text': 'Cena za 1000 kalorii',
@@ -546,6 +678,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Porcentagem de Lucro',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Percentuale di profitto',
+          'lang': 'it'
+        },
+        {
+          'text': 'Kâr Yüzdesi',
+          'lang': 'tr'
+        },
+        {
           'text': 'Procent zysku',
           'lang': 'pl'
         },
@@ -589,6 +733,18 @@ const messages: Message[] =
         {
           'text': 'Ausgänge',
           'lang': 'de'
+        },
+        {
+          'text': 'Saídas',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Uscite',
+          'lang': 'it'
+        },
+        {
+          'text': 'Çıktılar',
+          'lang': 'tr'
         },
         {
           'text': 'Wyjścia',
@@ -636,6 +792,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Escolha uma receita...',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Scegli una ricetta...',
+          'lang': 'it'
+        },
+        {
+          'text': 'Bir tarif seçin...',
+          'lang': 'tr'
+        },
+        {
           'text': 'Wybierz przepis ...',
           'lang': 'pl'
         },
@@ -679,6 +847,18 @@ const messages: Message[] =
         {
           'text': 'Rezept',
           'lang': 'de'
+        },
+        {
+          'text': 'Receita',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ricetta',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yemek tarifi',
+          'lang': 'tr'
         },
         {
           'text': 'Przepis',
@@ -726,6 +906,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Código fonte',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Codice sorgente',
+          'lang': 'it'
+        },
+        {
+          'text': 'Kaynak kodu',
+          'lang': 'tr'
+        },
+        {
           'text': 'Kod źródłowy',
           'lang': 'pl'
         },
@@ -755,31 +947,43 @@ const messages: Message[] =
       'id': 'feedbackLink',
       'localizedMessages': [
         {
-          'text': 'Give feedback',
+          'text': 'Report an issue',
           'lang': 'en'
         },
         {
-          'text': 'Donnez votre avis',
+          'text': 'Signaler un problème',
           'lang': 'fr'
         },
         {
-          'text': 'Dar opinion',
+          'text': 'Reportar un problema',
           'lang': 'es'
         },
         {
-          'text': 'Feedback geben',
+          'text': 'Ein Problem melden',
           'lang': 'de'
         },
         {
-          'text': 'Zostaw opinię',
+          'text': 'Informar um problema',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Segnala un problema',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sorun bildir',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Zgłoś problem',
           'lang': 'pl'
         },
         {
-          'text': 'Дать обратную связь',
+          'text': 'Сообщить о проблеме',
           'lang': 'ru'
         },
         {
-          'text': 'Дайте відгук',
+          'text': 'Повідомити про проблему',
           'lang': 'uk'
         },
         {
@@ -814,6 +1018,18 @@ const messages: Message[] =
         {
           'text': 'Um Adam',
           'lang': 'de'
+        },
+        {
+          'text': 'Por Adam',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Di Adam',
+          'lang': 'it'
+        },
+        {
+          'text': 'Adam tarafından',
+          'lang': 'tr'
         },
         {
           'text': 'Do Adam',
@@ -861,6 +1077,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Crédito para k0ka',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ringraziamo k0ka',
+          'lang': 'it'
+        },
+        {
+          'text': 'k0ka\'ya kredi',
+          'lang': 'tr'
+        },
+        {
           'text': 'Kredyt dla k0ka',
           'lang': 'pl'
         },
@@ -904,6 +1132,18 @@ const messages: Message[] =
         {
           'text': 'Kalorien',
           'lang': 'de'
+        },
+        {
+          'text': 'Calorias',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Calorie',
+          'lang': 'it'
+        },
+        {
+          'text': 'Kalori',
+          'lang': 'tr'
         },
         {
           'text': 'Kalorie',
@@ -951,6 +1191,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Mesa de artesanato',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Tavolo da lavoro',
+          'lang': 'it'
+        },
+        {
+          'text': 'Üretim Tablosu',
+          'lang': 'tr'
+        },
+        {
           'text': 'Stół Rzemieślniczy',
           'lang': 'pl'
         },
@@ -996,6 +1248,18 @@ const messages: Message[] =
           'lang': 'de'
         },
         {
+          'text': 'Habilidade',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Abilità',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yetenek',
+          'lang': 'tr'
+        },
+        {
           'text': 'Umiejętność',
           'lang': 'pl'
         },
@@ -1039,6 +1303,18 @@ const messages: Message[] =
         {
           'text': 'Arbeit',
           'lang': 'de'
+        },
+        {
+          'text': 'Trabalho',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Lavoro',
+          'lang': 'it'
+        },
+        {
+          'text': 'İş gücü',
+          'lang': 'tr'
         },
         {
           'text': 'Praca',

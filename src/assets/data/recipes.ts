@@ -12042,7 +12042,7 @@ export let standardRecipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('MacaroonsItem'),
+          'item': getItemByNameID('MacaronsItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -20554,7 +20554,7 @@ export let standardRecipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('WoodenLatrineItem'),
+          'item': getItemByNameID('LatrineItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true

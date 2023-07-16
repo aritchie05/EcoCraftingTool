@@ -190,7 +190,7 @@ export let items: Item[] =
     },
     {
       'name': 'Advanced Research',
-      'nameID': 'Advanced Research',
+      'nameID': 'AdvancedResearch',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 15,
@@ -871,7 +871,7 @@ export let items: Item[] =
     },
     {
       'name': 'Basic Research',
-      'nameID': 'Basic Research',
+      'nameID': 'BasicResearch',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 0,
@@ -4725,8 +4725,8 @@ export let items: Item[] =
       'tag': false
     },
     {
-      'name': 'Macaroons',
-      'nameID': 'MacaroonsItem',
+      'name': 'Macarons',
+      'nameID': 'MacaronsItem',
       'tag': false,
       'imageFile': 'UI_Icons_05.png',
       'xPos': 9,
@@ -5005,7 +5005,7 @@ export let items: Item[] =
     },
     {
       'name': 'Modern Research',
-      'nameID': 'Modern Research',
+      'nameID': 'ModernResearch',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 14,
@@ -7888,14 +7888,6 @@ export let items: Item[] =
       'yPos': 7
     },
     {
-      'name': 'Wooden Elevator Call Post',
-      'nameID': 'WoodenElevatorCallPostItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 4,
-      'yPos': 9
-    },
-    {
       'name': 'Wooden Fabric Bed',
       'nameID': 'WoodenFabricBedItem',
       'tag': false,
@@ -7929,7 +7921,7 @@ export let items: Item[] =
     },
     {
       'name': 'Wooden Latrine',
-      'nameID': 'WoodenLatrineItem',
+      'nameID': 'LatrineItem',
       'tag': false,
       'imageFile': 'UI_Icons_01.png',
       'xPos': 4,
