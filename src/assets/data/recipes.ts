@@ -4561,30 +4561,6 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Cloth',
-      'nameID': 'Cloth',
-      'skill': getSkillByNameID('TailoringSkill'),
-      'level': 1,
-      'labor': 60,
-      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 9,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('ClothItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
       'name': 'Cloth Belt',
       'nameID': 'ClothBelt',
       'skill': getSkillByNameID('TailoringSkill'),
@@ -6636,54 +6612,6 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CrushedSlagItem'),
           'quantity': 5,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
-      'name': 'Crushed Stone Ramp',
-      'nameID': 'CrushedStoneRamp',
-      'skill': getSkillByNameID('MiningSkill'),
-      'level': 4,
-      'labor': 120,
-      'craftingTable': getCraftingTableByNameID('StampMillObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('StoneRampItem'),
-          'quantity': 2,
-          'reducible': false
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('CrushedMixedRockItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
-      'name': 'Crushed Stone Ramp Lv2',
-      'nameID': 'CrushedStoneRampLv2',
-      'skill': getSkillByNameID('MiningSkill'),
-      'level': 6,
-      'labor': 60,
-      'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('StoneRampItem'),
-          'quantity': 2,
-          'reducible': false
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('CrushedMixedRockItem'),
-          'quantity': 1,
           'reducible': false,
           'primary': true
         }
@@ -18018,35 +17946,6 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Stone Ramp',
-      'nameID': 'StoneRamp',
-      'skill': getSkillByNameID('BasicEngineeringSkill'),
-      'level': 1,
-      'labor': 60,
-      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('CrushedRock'),
-          'quantity': 3,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('MortarItem'),
-          'quantity': 6,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('StoneRampItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
       'name': 'Stone Road',
       'nameID': 'StoneRoad',
       'skill': getSkillByNameID('BasicEngineeringSkill'),
@@ -19294,40 +19193,6 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('TransmissionPoleItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
-      'name': 'Treasury',
-      'nameID': 'Treasury',
-      'skill': getSkillByNameID('SmeltingSkill'),
-      'level': 4,
-      'labor': 1500,
-      'craftingTable': getCraftingTableByNameID('AnvilObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('BrickItem'),
-          'quantity': 16,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('GoldBarItem'),
-          'quantity': 12,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 60,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('TreasuryItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
