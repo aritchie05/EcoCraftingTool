@@ -3,8 +3,8 @@ import {Skill} from '../../app/interface/skill';
 export let skills: Skill[] =
   [
     {
-      'name': 'No Skill',
-      'nameID': 'NoSkill',
+      'name': 'Self Improvement',
+      'nameID': 'SelfImprovementSkill',
       'basicUpgrade': false,
       'advancedUpgrade': false,
       'modernUpgrade': false,
@@ -321,6 +321,17 @@ export let skills: Skill[] =
       'imageFile': 'skill-icons-sprite.png',
       'xPos': 6,
       'yPos': 3
+    },
+    {
+      'name': 'Shipwright',
+      'nameID': 'ShipwrightSkill',
+      'basicUpgrade': true,
+      'advancedUpgrade': true,
+      'modernUpgrade': false,
+      'lavishWorkspace': true,
+      'imageFile': 'skill-icons-sprite.png',
+      'xPos': 1,
+      'yPos': 4
     },
     {
       'name': 'Tailoring',

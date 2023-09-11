@@ -6,13 +6,25 @@ import {Skill} from '../../../app/interface/skill';
 import {Item} from '../../../app/interface/item';
 
 export function getCraftingTableByNameID(nameID: string): CraftingTable {
-  return craftingTables.find(table => table.nameID.localeCompare(nameID) === 0);
+  let table = craftingTables.find(table => table.nameID.localeCompare(nameID) === 0);
+  if (table === undefined) {
+    console.error(`Crafting table ${nameID} not found`);
+  }
+  return table;
 }
 
 export function getSkillByNameID(nameID: string): Skill {
-  return skills.find(skill => skill.nameID.localeCompare(nameID) === 0);
+  let skill = skills.find(skill => skill.nameID.localeCompare(nameID) === 0);
+  if (skill === undefined) {
+    console.error(`Skill ${nameID} not found`);
+  }
+  return skill;
 }
 
 export function getItemByNameID(nameID: string): Item {
-  return items.find(item => item.nameID.localeCompare(nameID) === 0);
+  let item = items.find(item => item.nameID.localeCompare(nameID) === 0);
+  if (item === undefined) {
+    console.error(`Item ${nameID} not found`);
+  }
+  return item;
 }

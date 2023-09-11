@@ -210,6 +210,15 @@ export let craftingTables: CraftingTable[] =
       'yPos': 9
     },
     {
+      'name': 'Fiber Scutching Station',
+      'nameID': 'FiberScutchingStationObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 11,
+      'yPos': 7
+    },
+    {
       'name': 'Fishery',
       'nameID': 'FisheryObject',
       'upgradeModuleType': 'None',
@@ -307,6 +316,15 @@ export let craftingTables: CraftingTable[] =
       'imageFile': 'UI_Icons_00.png',
       'xPos': 8,
       'yPos': 10
+    },
+    {
+      'name': 'Medium Shipyard',
+      'nameID': 'MediumShipyardObject',
+      'upgradeModuleType': 'AdvancedUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 15
     },
     {
       'name': 'Mill',
@@ -415,6 +433,24 @@ export let craftingTables: CraftingTable[] =
       'imageFile': 'UI_Icons_01.png',
       'xPos': 15,
       'yPos': 3
+    },
+    {
+      'name': 'Small Paper Machine',
+      'nameID': 'SmallPaperMachineObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 9,
+      'yPos': 7
+    },
+    {
+      'name': 'Small Shipyard',
+      'nameID': 'SmallShipyardObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 15
     },
     {
       'name': 'Spin Melter',

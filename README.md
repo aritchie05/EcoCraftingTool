@@ -12,7 +12,9 @@ Recipes and items are stored at `src/assets/data` in various TypeScript files. W
 
 ### White Tiger Recipes
 
-Recipes for White Tiger are stored at `src/assets/data/white-tiger/white-tiger-recipes.ts`. These recipes will be added to the master recipe list if the checkbox is enabled in the settings menu. If the `nameID` on the WT recipe matches an existing recipe in `recipes.ts`, it will replace the existing recipe. Otherwise, it will be added as a separate recipe. At this point, custom items, crafting tables, and skills are not supported. When editing or adding WT recipes, make sure the `nameIDs` match the corresponding base file - `skills.ts` for `skillNameID`, `items.ts` for `itemNameID`, etc. They should also match the name IDs from the game files.
+Recipes for White Tiger are stored at `src/assets/data/white-tiger/white-tiger-recipes.ts`. These recipes will be added to the master recipe list if the checkbox is enabled in the settings menu. If the `nameID` on the WT recipe matches an existing recipe in `recipes.ts`, it will replace the existing recipe. Otherwise, it will be added as a separate recipe. 
+At this point, White Tiger custom items, crafting tables, and skills need to be added to the main data files. 
+When editing or adding WT recipes, make sure the `nameIDs` match the corresponding base file - `skills.ts` for `skillNameID`, `items.ts` for `itemNameID`, etc. They should also match the name IDs from the game files.
 
 ## Translations
 
