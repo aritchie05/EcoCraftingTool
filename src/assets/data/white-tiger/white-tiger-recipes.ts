@@ -5,7 +5,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Basic Upgrade 1',
     'nameID': 'BasicUpgradeLvl1',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 200,
     'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
@@ -44,7 +44,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Basic Upgrade 2',
     'nameID': 'BasicUpgradeLvl2',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 200,
     'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
@@ -88,7 +88,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Basic Upgrade 3',
     'nameID': 'BasicUpgradeLvl3',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 200,
     'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
@@ -127,7 +127,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Basic Upgrade 4',
     'nameID': 'BasicUpgradeLvl4',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 200,
     'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
@@ -166,7 +166,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Advanced Upgrade 1',
     'nameID': 'AdvancedUpgradeLvl1',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 400,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -200,7 +200,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Advanced Upgrade 2',
     'nameID': 'AdvancedUpgradeLvl2',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 400,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -234,7 +234,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Advanced Upgrade 3',
     'nameID': 'AdvancedUpgradeLvl3',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 400,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -273,7 +273,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Advanced Upgrade 4',
     'nameID': 'AdvancedUpgradeLvl4',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 400,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -317,7 +317,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Modern Upgrade 1',
     'nameID': 'ModernUpgradeLvl1',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 600,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -361,7 +361,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Modern Upgrade 2',
     'nameID': 'ModernUpgradeLvl2',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 600,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -395,7 +395,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Modern Upgrade 3',
     'nameID': 'ModernUpgradeLvl3',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 600,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -429,7 +429,7 @@ export let whiteTigerRecipes: Recipe[] = [
   {
     'name': 'Modern Upgrade 4',
     'nameID': 'ModernUpgradeLvl4',
-    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'skill': getSkillByNameID('NoSkill'),
     'level': 0,
     'labor': 600,
     'craftingTable': getCraftingTableByNameID('ResearchTableObject'),

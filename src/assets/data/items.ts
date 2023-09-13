@@ -190,7 +190,7 @@ export let items: Item[] =
     },
     {
       'name': 'Advanced Research',
-      'nameID': 'AdvancedResearch',
+      'nameID': 'Advanced Research',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 15,
@@ -871,7 +871,7 @@ export let items: Item[] =
     },
     {
       'name': 'Basic Research',
-      'nameID': 'BasicResearch',
+      'nameID': 'Basic Research',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 0,
@@ -2500,10 +2500,7 @@ export let items: Item[] =
     {
       'name': 'Creosote Bush Seed',
       'nameID': 'CreosoteBushSeedItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 6,
-      'yPos': 15
+      'tag': false
     },
     {
       'name': 'Crimini Mushroom Spores',
@@ -4198,8 +4195,8 @@ export let items: Item[] =
       'nameID': 'LargeFish',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
-      'xPos': 6,
-      'yPos': 6
+      'xPos': 1,
+      'yPos': 8
     },
     {
       'name': 'Large Hanging Ashlar Basalt Sign',
@@ -4725,8 +4722,8 @@ export let items: Item[] =
       'tag': false
     },
     {
-      'name': 'Macarons',
-      'nameID': 'MacaronsItem',
+      'name': 'Macaroons',
+      'nameID': 'MacaroonsItem',
       'tag': false,
       'imageFile': 'UI_Icons_05.png',
       'xPos': 9,
@@ -4846,7 +4843,7 @@ export let items: Item[] =
       'nameID': 'MediumFish',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
-      'xPos': 4,
+      'xPos': 1,
       'yPos': 8
     },
     {
@@ -5005,7 +5002,7 @@ export let items: Item[] =
     },
     {
       'name': 'Modern Research',
-      'nameID': 'ModernResearch',
+      'nameID': 'Modern Research',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 14,
@@ -5392,10 +5389,7 @@ export let items: Item[] =
     {
       'name': 'Orchid Seed',
       'nameID': 'OrchidSeedItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_01.png',
-      'xPos': 4,
-      'yPos': 1
+      'tag': false
     },
     {
       'name': 'Ore',
@@ -5665,10 +5659,7 @@ export let items: Item[] =
     {
       'name': 'Printing Press',
       'nameID': 'PrintingPressItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 6,
-      'yPos': 11
+      'tag': false
     },
     {
       'name': 'Pulp Filler',
@@ -6970,6 +6961,14 @@ export let items: Item[] =
       'yPos': 6
     },
     {
+      'name': 'Steel Road Tool',
+      'nameID': 'SteelRoadToolItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 12,
+      'yPos': 7
+    },
+    {
       'name': 'Steel Saw Blade',
       'nameID': 'SteelSawBladeItem',
       'tag': false,
@@ -7575,10 +7574,7 @@ export let items: Item[] =
     {
       'name': 'Trillium Seed',
       'nameID': 'TrilliumSeedItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_02.png',
-      'xPos': 10,
-      'yPos': 2
+      'tag': false
     },
     {
       'name': 'Trousers',
@@ -7888,6 +7884,14 @@ export let items: Item[] =
       'yPos': 7
     },
     {
+      'name': 'Wooden Elevator Call Post',
+      'nameID': 'WoodenElevatorCallPostItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 4,
+      'yPos': 9
+    },
+    {
       'name': 'Wooden Fabric Bed',
       'nameID': 'WoodenFabricBedItem',
       'tag': false,
@@ -7921,7 +7925,7 @@ export let items: Item[] =
     },
     {
       'name': 'Wooden Latrine',
-      'nameID': 'LatrineItem',
+      'nameID': 'WoodenLatrineItem',
       'tag': false,
       'imageFile': 'UI_Icons_01.png',
       'xPos': 4,
@@ -8102,861 +8106,5 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_06.png',
       'xPos': 11,
       'yPos': 0
-    },
-    {
-      'name': 'Spoiled Food',
-      'nameID': 'SpoiledFoodItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 15,
-      'yPos': 11
-    },
-    {
-      'name': 'Wooden Moorage Post',
-      'nameID': 'WoodenMooragePostItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 10,
-      'yPos': 15
-    },
-    {
-      'name': 'Steel Moorage Post',
-      'nameID': 'SteelMooragePostItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 9,
-      'yPos': 15
-    },
-    {
-      'name': 'Outpost Netting',
-      'nameID': 'OutpostNettingItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 10,
-      'yPos': 15
-    },
-    {
-      'name': 'Linen Yarn',
-      'nameID': 'LinenYarnItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 14,
-      'yPos': 7
-    },
-    {
-      'name': 'Glass Lens',
-      'nameID': 'GlassLensItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 15,
-      'yPos': 7
-    },
-    {
-      'name': 'Art Supplies',
-      'nameID': 'ArtSuppliesItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 5,
-      'yPos': 8
-    },
-    {
-      'name': 'Camera Film',
-      'nameID': 'CameraFilmItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 10,
-      'yPos': 7
-    },
-    {
-      'name': 'Canvas',
-      'nameID': 'CanvasItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 12,
-      'yPos': 7
-    },
-    {
-      'name': 'Carbide Helmet Lamp',
-      'nameID': 'CarbideHelmetLampItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 6,
-      'yPos': 1
-    },
-    {
-      'name': 'Claim Tool',
-      'nameID': 'ClaimToolItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 4,
-      'yPos': 12
-    },
-    {
-      'name': 'Colored Powder',
-      'nameID': 'ColoredPowderItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 1,
-      'yPos': 8
-    },
-    {
-      'name': 'Copper Frame Wide',
-      'nameID': 'CopperFrameWideItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 11,
-      'yPos': 4
-    },
-    {
-      'name': 'Cotton Streamer Stars',
-      'nameID': 'CottonStreamerStarsItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 9,
-      'yPos': 4
-    },
-    {
-      'name': 'Cotton Streamer Stripes',
-      'nameID': 'CottonStreamerStripesItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 2,
-      'yPos': 4
-    },
-    {
-      'name': 'Creosote Flower',
-      'nameID': 'CreosoteFlowerItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 7,
-      'yPos': 8
-    },
-    {
-      'name': 'Decorative Anchor',
-      'nameID': 'DecorativeAnchorItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 2,
-      'yPos': 6
-    },
-    {
-      'name': 'Decorative Glass Buoy Blue',
-      'nameID': 'DecorativeGlassBuoyBlueItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 13,
-      'yPos': 5
-    },
-    {
-      'name': 'Decorative Glass Buoy Green',
-      'nameID': 'DecorativeGlassBuoyGreenItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 11,
-      'yPos': 5
-    },
-    {
-      'name': 'Decorative Glass Buoy Red',
-      'nameID': 'DecorativeGlassBuoyRedItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 12,
-      'yPos': 5
-    },
-    {
-      'name': 'Decorative Glass Buoy Violet',
-      'nameID': 'DecorativeGlassBuoyVioletItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 15,
-      'yPos': 5
-    },
-    {
-      'name': 'Decorative Glass Buoy Yellow',
-      'nameID': 'DecorativeGlassBuoyYellowItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 14,
-      'yPos': 5
-    },
-    {
-      'name': 'Decorative Hanging Buoy',
-      'nameID': 'DecorativeHangingBuoyItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 6
-    },
-    {
-      'name': 'Decorative Life Preserver',
-      'nameID': 'DecorativeLifePreserverItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 4,
-      'yPos': 6
-    },
-    {
-      'name': 'Decorative Ship Wheel',
-      'nameID': 'DecorativeShipWheelItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 1,
-      'yPos': 6
-    },
-    {
-      'name': 'Fiber Scutching Station',
-      'nameID': 'FiberScutchingStationItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 11,
-      'yPos': 7
-    },
-    {
-      'name': 'Fish Rack',
-      'nameID': 'FishRackItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 3,
-      'yPos': 6
-    },
-    {
-      'name': 'Flaxseed Oil',
-      'nameID': 'FlaxseedOilItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 2,
-      'yPos': 8
-    },
-    {
-      'name': 'Gathering Basic Upgrade',
-      'nameID': 'GatheringBasicUpgradeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 11,
-      'yPos': 8
-    },
-    {
-      'name': 'Gold Frame Wide',
-      'nameID': 'GoldFrameWideItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 8,
-      'yPos': 5
-    },
-    {
-      'name': 'Handheld Camera',
-      'nameID': 'HandheldCameraItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 12,
-      'yPos': 15
-    },
-    {
-      'name': 'Hemp Mooring Rope',
-      'nameID': 'HempMooringRopeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 2,
-      'yPos': 14
-    },
-    {
-      'name': 'Industrial Barge',
-      'nameID': 'IndustrialBargeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 4,
-      'yPos': 13
-    },
-    {
-      'name': 'Industrial Generator',
-      'nameID': 'IndustrialGeneratorItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 10,
-      'yPos': 8
-    },
-    {
-      'name': 'Iron Anchor',
-      'nameID': 'IronAnchorItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 3,
-      'yPos': 14
-    },
-    {
-      'name': 'Iron Frame Wide',
-      'nameID': 'IronFrameWideItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 6,
-      'yPos': 0
-    },
-    {
-      'name': 'Iron Hull Sheet',
-      'nameID': 'IronHullSheetItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 4,
-      'yPos': 14
-    },
-    {
-      'name': 'Iron Road Tool',
-      'nameID': 'IronRoadToolItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 12,
-      'yPos': 7
-    },
-    {
-      'name': 'Large Canoe',
-      'nameID': 'LargeCanoeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 2,
-      'yPos': 13
-    },
-    {
-      'name': 'Large Cotton Bunting Red',
-      'nameID': 'LargeCottonBuntingRedItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 1,
-      'yPos': 4
-    },
-    {
-      'name': 'Large Court',
-      'nameID': 'LargeCourtItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 7
-    },
-    {
-      'name': 'Large Festive Paper Lantern',
-      'nameID': 'LargeFestivePaperLanternItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 5,
-      'yPos': 6
-    },
-    {
-      'name': 'Large Metal Ship Frame',
-      'nameID': 'LargeMetalShipFrameItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 5,
-      'yPos': 14
-    },
-    {
-      'name': 'Large Nylon Bunting Green',
-      'nameID': 'LargeNylonBuntingGreenItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 5,
-      'yPos': 4
-    },
-    {
-      'name': 'Large Paper Lantern',
-      'nameID': 'LargePaperLanternItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 6,
-      'yPos': 6
-    },
-    {
-      'name': 'Large Wooden Ship Frame',
-      'nameID': 'LargeWoodenShipFrameItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 6,
-      'yPos': 14
-    },
-    {
-      'name': 'Lumber Warehouse Shelves',
-      'nameID': 'LumberWarehouseShelvesItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Medium Fishing Trawler',
-      'nameID': 'MediumFishingTrawlerItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 6,
-      'yPos': 13
-    },
-    {
-      'name': 'Medium Metal Ship Frame',
-      'nameID': 'MediumMetalShipFrameItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 7,
-      'yPos': 14
-    },
-    {
-      'name': 'Medium Shipyard',
-      'nameID': 'MediumShipyardItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 10,
-      'yPos': 8
-    },
-    {
-      'name': 'Medium Wooden Ship Frame',
-      'nameID': 'MediumWoodenShipFrameItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 8,
-      'yPos': 14
-    },
-    {
-      'name': 'Metal Keel',
-      'nameID': 'MetalKeelItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 9,
-      'yPos': 14
-    },
-    {
-      'name': 'Metal Rudder',
-      'nameID': 'MetalRudderItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 10,
-      'yPos': 14
-    },
-    {
-      'name': 'Nylon Mooring Rope',
-      'nameID': 'NylonMooringRopeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 11,
-      'yPos': 14
-    },
-    {
-      'name': 'Nylon Trawler Net',
-      'nameID': 'NylonTrawlerNetItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 13,
-      'yPos': 8
-    },
-    {
-      'name': 'Oil Head Lamp',
-      'nameID': 'OilHeadLampItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 6,
-      'yPos': 1
-    },
-    {
-      'name': 'Oil Paint',
-      'nameID': 'OilPaintItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 8
-    },
-    {
-      'name': 'Orchid',
-      'nameID': 'OrchidItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 8,
-      'yPos': 8
-    },
-    {
-      'name': 'Ornate Gold Frame Wide',
-      'nameID': 'OrnateGoldFrameWideItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 8,
-      'yPos': 5
-    },
-    {
-      'name': 'Ornate Iron Frame Wide',
-      'nameID': 'OrnateIronFrameWideItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Ornate Wooden Frame Wide',
-      'nameID': 'OrnateWoodenFrameWideItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 3,
-      'yPos': 0
-    },
-    {
-      'name': 'Paper Streamers',
-      'nameID': 'PaperStreamersItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Plastic Buoy',
-      'nameID': 'PlasticBuoyItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 10,
-      'yPos': 5
-    },
-    {
-      'name': 'Sandals',
-      'nameID': 'SandalsItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 13,
-      'yPos': 1
-    },
-    {
-      'name': 'Shipright Overalls',
-      'nameID': 'ShiprightOverallsItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Shipwright Advanced Upgrade',
-      'nameID': 'ShipwrightAdvancedUpgradeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 2,
-      'yPos': 7
-    },
-    {
-      'name': 'Shipwright Basic Upgrade',
-      'nameID': 'ShipwrightBasicUpgradeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 1,
-      'yPos': 7
-    },
-    {
-      'name': 'Shipwright Hat',
-      'nameID': 'ShipwrightHatItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Shipwright Sandals',
-      'nameID': 'ShipwrightSandalsItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Shipwright Shirt',
-      'nameID': 'ShipwrightShirtItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Small Canoe',
-      'nameID': 'SmallCanoeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 1,
-      'yPos': 13
-    },
-    {
-      'name': 'Small Cotton Bunting Red',
-      'nameID': 'SmallCottonBuntingRedItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 13,
-      'yPos': 3
-    },
-    {
-      'name': 'Small Court',
-      'nameID': 'SmallCourtItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 15,
-      'yPos': 6
-    },
-    {
-      'name': 'Small Festive Paper Lantern',
-      'nameID': 'SmallFestivePaperLanternItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Small Nylon Bunting Green',
-      'nameID': 'SmallNylonBuntingGreenItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 6,
-      'yPos': 4
-    },
-    {
-      'name': 'Small Paper Lantern',
-      'nameID': 'SmallPaperLanternItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 7,
-      'yPos': 6
-    },
-    {
-      'name': 'Small Paper Machine',
-      'nameID': 'SmallPaperMachineItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 9,
-      'yPos': 7
-    },
-    {
-      'name': 'Small Shipyard',
-      'nameID': 'SmallShipyardItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 11,
-      'yPos': 15
-    },
-    {
-      'name': 'Small Wooden Boat',
-      'nameID': 'SmallWoodenBoatItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 0,
-      'yPos': 13
-    },
-    {
-      'name': 'Small Wooden Ship Frame',
-      'nameID': 'SmallWoodenShipFrameItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 12,
-      'yPos': 14
-    },
-    {
-      'name': 'Smith Shirt',
-      'nameID': 'SmithShirtItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Steel Buoy',
-      'nameID': 'SteelBuoyItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 9,
-      'yPos': 5
-    },
-    {
-      'name': 'Steel Liquids Tank',
-      'nameID': 'SteelLiquidsTankItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Steel Warehouse Shelves',
-      'nameID': 'SteelWarehouseShelvesItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Trillium Flower',
-      'nameID': 'TrilliumFlowerItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 9,
-      'yPos': 8
-    },
-    {
-      'name': 'Tripod Camera',
-      'nameID': 'TripodCameraItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 13,
-      'yPos': 15
-    },
-    {
-      'name': 'Wooden Barge',
-      'nameID': 'WoodenBargeItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 3,
-      'yPos': 13
-    },
-    {
-      'name': 'Wooden Frame Wide',
-      'nameID': 'WoodenFrameWideItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 9,
-      'yPos': 0
-    },
-    {
-      'name': 'Wooden Hull Planks',
-      'nameID': 'WoodenHullPlanksItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 13,
-      'yPos': 14
-    },
-    {
-      'name': 'Wooden Keel',
-      'nameID': 'WoodenKeelItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 14,
-      'yPos': 14
-    },
-    {
-      'name': 'Wooden Liquids Tank',
-      'nameID': 'WoodenLiquidsTankItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
-    },
-    {
-      'name': 'Wooden Oar',
-      'nameID': 'WoodenOarItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 15,
-      'yPos': 14
-    },
-    {
-      'name': 'Wooden Rudder',
-      'nameID': 'WoodenRudderItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 0,
-      'yPos': 15
-    },
-    {
-      'name': 'Wooden Transport Ship',
-      'nameID': 'WoodenTransportShipItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 5,
-      'yPos': 13
-    },
-    {
-      'name': 'Court Chair',
-      'nameID': 'CourtChairItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_05.png',
-      'xPos': 10,
-      'yPos': 13
-    },
-    {
-      'name': 'Flax Fiber',
-      'nameID': 'FlaxFiberItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 3,
-      'yPos': 8
-    },
-    {
-      'name': 'Flax Seed',
-      'nameID': 'FlaxSeedItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 4,
-      'yPos': 8
-    },
-    {
-      'name': 'Flax Stem',
-      'nameID': 'FlaxStemItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 14,
-      'yPos': 8
-    },
-    {
-      'name': 'Flax Trawler Net',
-      'nameID': 'FlaxTrawlerNetItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 12,
-      'yPos': 8
-    },
-    {
-      'name': 'Huge Banner Sign',
-      'nameID': 'HugeBannerSignItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 4,
-      'yPos': 15
-    },
-    {
-      'name': 'Huge Iron Banner Sign',
-      'nameID': 'HugeIronBannerSignItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 15,
-      'yPos': 14
-    },
-    {
-      'name': 'Huge Iron Sign',
-      'nameID': 'HugeIronSignItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 5,
-      'yPos': 15
-    },
-    {
-      'name': 'Huge Steel Banner Sign',
-      'nameID': 'HugeSteelBannerSignItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 0,
-      'yPos': 15
-    },
-    {
-      'name': 'Huge Steel Sign',
-      'nameID': 'HugeSteelSignItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 6,
-      'yPos': 15
-    },
-    {
-      'name': 'Huge Wooden Banner Sign',
-      'nameID': 'HugeWoodenBannerSignItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 14,
-      'yPos': 14
-    },
-    {
-      'name': 'Linen Fabric',
-      'nameID': 'LinenFabricItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 13,
-      'yPos': 7
-    },
-    {
-      'name': 'Petals',
-      'nameID': 'Petals',
-      'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
-      'xPos': 5,
-      'yPos': 8
     }
   ];
