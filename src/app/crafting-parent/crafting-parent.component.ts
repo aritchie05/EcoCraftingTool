@@ -97,6 +97,13 @@ export class CraftingParentComponent implements OnInit {
           exists = true;
         }
       });
+      this.outputsComponent.outputRecipes.forEach(recipe => {
+        if (recipe.primaryOutput.item.nameID.localeCompare(item.nameID) === 0) {
+          exists = true;
+        }
+      })
+
+      //Add the ingredient if it does not exist in the ingredients list or output recipes list
       if (!exists) {
         this.ingredientsComponent.itemIngredients.push(item);
       }

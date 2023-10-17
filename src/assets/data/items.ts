@@ -8958,5 +8958,29 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 5,
       'yPos': 8
+    },
+    {
+      'name': 'Wooden Mold',
+      'nameID': 'WoodenMoldItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 4,
+      'yPos': 9
+    },
+    {
+      'name': 'Test Object Culture',
+      'nameID': 'TestObjectCultureItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wet Brick',
+      'nameID': 'WetBrickItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 3,
+      'yPos': 9
     }
   ];
