@@ -8034,7 +8034,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Farmers Table',
       'nameID': 'FarmersTable',
-      'skill': getSkillByNameID('FarmingSkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 200,
       'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
