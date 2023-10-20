@@ -15903,7 +15903,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('SandItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         },
         {
@@ -15913,7 +15913,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('ClayItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
@@ -24041,12 +24041,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('SandItem'),
-          'quantity': 1,
+          'quantity': 3,
           'reducible': true
         },
         {
           'item': getItemByNameID('ClayItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
