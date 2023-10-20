@@ -2564,7 +2564,10 @@ export let items: Item[] =
     {
       'name': 'Crushed Coal',
       'nameID': 'CrushedCoalItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 11,
+      'yPos': 14
     },
     {
       'name': 'Crushed Copper Ore',
