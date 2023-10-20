@@ -11692,8 +11692,8 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 40,
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 20,
           'reducible': true
         },
         {
@@ -14687,8 +14687,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 40,
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 12,
           'reducible': true
         },
         {
