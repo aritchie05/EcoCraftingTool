@@ -17158,28 +17158,13 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('BoilerItem'),
-          'quantity': 6,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('IronGearItem'),
-          'quantity': 16,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('IronPlateItem'),
+          'item': getItemByNameID('IronBarItem'),
           'quantity': 24,
           'reducible': true
         },
         {
-          'item': getItemByNameID('PistonItem'),
+          'item': getItemByNameID('IronPipeItem'),
           'quantity': 12,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('ScrewsItem'),
-          'quantity': 30,
           'reducible': true
         }
       ],
