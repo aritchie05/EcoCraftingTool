@@ -3940,8 +3940,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('CrushedLimestoneItem'),
-          'quantity': 3,
+          'item': getItemByNameID('QuicklimeItem'),
+          'quantity': 2.5,
           'reducible': true
         }
       ],
