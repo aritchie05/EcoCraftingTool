@@ -4040,7 +4040,7 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('CharcoalItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false,
           'primary': true
         }
@@ -14446,7 +14446,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Quicklime',
       'nameID': 'Quicklime',
-      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'skill': getSkillByNameID('MasonrySkill'),
       'level': 1,
       'labor': 50,
       'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
@@ -17471,7 +17471,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Coal'),
-          'quantity': 2,
+          'quantity': 1,
           'reducible': false
         },
         {
