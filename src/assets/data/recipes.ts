@@ -13603,7 +13603,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('BrickItem'),
+          'item': getItemByNameID('ReinforcedConcreteItem'),
           'quantity': 12,
           'reducible': true
         },
