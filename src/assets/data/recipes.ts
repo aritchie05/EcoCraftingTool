@@ -4653,7 +4653,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('MechanicsSkill'),
       'level': 3,
       'labor': 300,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('AssemblyLineObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -4692,7 +4692,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('MechanicsSkill'),
       'level': 3,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('AssemblyLineObject'),
       'hidden': false,
       'ingredients': [
         {
