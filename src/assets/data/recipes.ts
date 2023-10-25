@@ -17470,8 +17470,48 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('Coal'),
+          'item': getItemByNameID('CrushedCoalItem'),
           'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('QuicklimeItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('SlagItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Charcoal Steel',
+      'nameID': 'SteelBar',
+      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CharcoalItem'),
+          'quantity': 2,
           'reducible': false
         },
         {
