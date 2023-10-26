@@ -17502,7 +17502,7 @@ export let standardRecipes: Recipe[] =
     },
     {
       'name': 'Charcoal Steel',
-      'nameID': 'SteelBar',
+      'nameID': 'CharcoalSteel',
       'skill': getSkillByNameID('AdvancedSmeltingSkill'),
       'level': 1,
       'labor': 60,

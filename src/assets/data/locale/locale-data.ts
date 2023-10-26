@@ -21807,6 +21807,22 @@ export const localeData: LocaleData[] =
       'type': 'recipes',
       'entries': [
         {
+          'id': 'CharcoalSteel',
+          'en': 'Charcoal Steel',
+          'fr': 'Charcoal Steel',
+          'es': 'Charcoal Steel',
+          'de': 'Charcoal Steel',
+          'pt': 'Charcoal Steel',
+          'it': 'Charcoal Steel',
+          'tr': 'Charcoal Steel',
+          'pl': 'Charcoal Steel',
+          'ru': 'Charcoal Steel',
+          'uk': 'Charcoal Steel',
+          'ko': 'Charcoal Steel',
+          'zh': 'Charcoal Steel',
+          'ja': 'Charcoal Steel'
+        },
+        {
           'id': 'WetBrick',
           'en': 'Wet Brick',
           'fr': 'Wet Brick',
