@@ -2470,7 +2470,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('HewnLog'),
+          'item': getItemByNameID('Wood'),
           'quantity': 1,
           'reducible': true
         }
