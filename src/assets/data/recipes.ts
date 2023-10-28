@@ -20135,7 +20135,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('Fabric'),
+          'item': getItemByNameID('CottonFabricItem'),
           'quantity': 16,
           'reducible': true
         },
