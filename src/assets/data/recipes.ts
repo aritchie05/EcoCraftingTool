@@ -8105,7 +8105,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('HuckleberriesItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
@@ -8257,6 +8257,11 @@ export let standardRecipes: Recipe[] =
           'item': getItemByNameID('TomatoItem'),
           'quantity': 1,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
+          'quantity': 1,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -8347,6 +8352,11 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('Fat'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -10759,6 +10769,11 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
+          'item': getItemByNameID('HeartOfPalmItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('PapayaItem'),
           'quantity': 1,
           'reducible': true
@@ -10804,6 +10819,11 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('ScrapMeatItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -12196,6 +12216,11 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('ScrapMeatItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -15255,6 +15280,11 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('ScrapMeatItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -20054,6 +20084,11 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('Vegetable'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
           'quantity': 1,
           'reducible': true
         }
