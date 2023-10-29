@@ -17419,7 +17419,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LightBulbItem'),
-          'quantity': 4,
+          'quantity': 2,
           'reducible': false
         }
       ],
