@@ -329,7 +329,7 @@ export let craftingTables: CraftingTable[] =
     {
       'name': 'Mill',
       'nameID': 'MillObject',
-      'upgradeModuleType': 'AdvancedUpgrade',
+      'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
       'imageFile': 'UI_Icons_00.png',
       'xPos': 0,

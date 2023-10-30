@@ -5377,6 +5377,14 @@ export let items: Item[] =
       'yPos': 12
     },
     {
+      'name': 'Oil',
+      'nameID': 'Oil',
+      'tag': true,
+      'imageFile': 'UI_Icons_Tags.png',
+      'xPos': 6,
+      'yPos': 8
+    },
+    {
       'name': 'Oil Drilling Upgrade',
       'nameID': 'OilDrillingUpgradeItem',
       'tag': false,
