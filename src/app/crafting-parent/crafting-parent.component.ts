@@ -316,6 +316,21 @@ export class CraftingParentComponent implements OnInit {
       }
     });
 
+    //Remove associated crafting table if it's no longer needed
+    let tableStillNeeded = false;
+    for (let outputRecipe of this.outputsComponent.outputRecipes) {
+      if (outputRecipe.craftingTable.nameID.localeCompare(recipe.craftingTable.nameID) === 0) {
+        tableStillNeeded = true;
+        break;
+      }
+    }
+    if (!tableStillNeeded) {
+      let index = this.skillsComponent.craftingTables.findIndex(table => {
+        return table.nameID.localeCompare(recipe.craftingTable.nameID) === 0;
+      });
+      this.skillsComponent.craftingTables.splice(index, 1);
+    }
+
     this.recalculateOutputPrices();
 
     this.saveDataToLocalStorage();
