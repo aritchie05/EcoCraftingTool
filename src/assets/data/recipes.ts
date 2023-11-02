@@ -24157,5 +24157,259 @@ export let standardRecipes: Recipe[] =
           'primary': true
         }
       ]
+    },
+    {
+      'name': 'Steel Abstract Fixture',
+      'nameID': 'SteelAbstractFixture',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelAbstractFixtureItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Hanging Fixture',
+      'nameID': 'SteelHangingFixture',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelHangingFixtureItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Hanging Lamp',
+      'nameID': 'SteelHangingLamp',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelHangingLampItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Kitchen Lamp',
+      'nameID': 'SteelKitchenLamp',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelKitchenLampItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Searchlight',
+      'nameID': 'SteelSearchlight',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 4,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelSearchlightItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Square Fixture',
+      'nameID': 'SteelSquareFixture',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelSquareFixtureItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
     }
   ];
