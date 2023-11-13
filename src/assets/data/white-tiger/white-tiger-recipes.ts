@@ -105,8 +105,8 @@ export let whiteTigerRecipes: Recipe[] = [
         'reducible': false
       },
       {
-        'item': getItemByNameID('CottonFabricItem'),
-        'quantity': 10,
+        'item': getItemByNameID('CottonLintItem'),
+        'quantity': 5,
         'reducible': false
       },
       {
@@ -149,6 +149,11 @@ export let whiteTigerRecipes: Recipe[] = [
         'reducible': false
       },
       {
+        'item': getItemByNameID('LinenFabricItem'),
+        'quantity': 10,
+        'reducible': false
+      },
+      {
         'item': getItemByNameID('BasicUpgradeLvl3Item'),
         'quantity': 1,
         'reducible': false
@@ -174,7 +179,7 @@ export let whiteTigerRecipes: Recipe[] = [
     'ingredients': [
       {
         'item': getItemByNameID('FurPeltItem'),
-        'quantity': 10,
+        'quantity': 8,
         'reducible': false
       },
       {
@@ -183,8 +188,18 @@ export let whiteTigerRecipes: Recipe[] = [
         'reducible': false
       },
       {
-        'item': getItemByNameID('BeanPasteItem'),
+        'item': getItemByNameID('CottonFabricItem'),
         'quantity': 10,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('BeanPasteItem'),
+        'quantity': 5,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('OilPaintItem'),
+        'quantity': 5,
         'reducible': false
       }
     ],
@@ -209,6 +224,11 @@ export let whiteTigerRecipes: Recipe[] = [
       {
         'item': getItemByNameID('BrickItem'),
         'quantity': 10,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('CanvasItem'),
+        'quantity': 2,
         'reducible': false
       },
       {
@@ -280,8 +300,8 @@ export let whiteTigerRecipes: Recipe[] = [
     'hidden': false,
     'ingredients': [
       {
-        'item': getItemByNameID('GlassItem'),
-        'quantity': 5,
+        'item': getItemByNameID('GlassLensItem'),
+        'quantity': 10,
         'reducible': false
       },
       {
@@ -469,5 +489,54 @@ export let whiteTigerRecipes: Recipe[] = [
         'primary': true
       }
     ]
-  }
+  },
+  {
+    'name': 'Agriculture Research Paper Modern',
+    'nameID': 'AgricultureResearchPaperModern',
+    'skill': getSkillByNameID('SelfImprovementSkill'),
+    'level': 0,
+    'labor': 600,
+    'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+    'hidden': false,
+    'ingredients': [
+      {
+        'item': getItemByNameID('BerryExtractFertilizerItem'),
+        'quantity': 5,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('BloodMealFertilizerItem'),
+        'quantity': 5,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('HideAshFertilizerItem'),
+        'quantity': 5,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('PeltFertilizerItem'),
+        'quantity': 5,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('PaperItem'),
+        'quantity': 5,
+        'reducible': false
+      },
+      {
+        'item': getItemByNameID('RawFood'),
+        'quantity': 200,
+        'reducible': false
+      }
+    ],
+    'outputs': [
+      {
+        'item': getItemByNameID('AgricultureResearchPaperModernItem'),
+        'quantity': 1,
+        'reducible': false,
+        'primary': true
+      }
+    ]
+  },
 ];
