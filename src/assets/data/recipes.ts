@@ -1918,7 +1918,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('GeochemistryResearchPaperBasicItem'),
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
           'quantity': 1,
           'reducible': true
         },
