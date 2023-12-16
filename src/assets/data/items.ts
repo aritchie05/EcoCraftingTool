@@ -190,7 +190,7 @@ export let items: Item[] =
     },
     {
       'name': 'Advanced Research',
-      'nameID': 'Advanced Research',
+      'nameID': 'AdvancedResearch',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 15,
@@ -871,7 +871,7 @@ export let items: Item[] =
     },
     {
       'name': 'Basic Research',
-      'nameID': 'Basic Research',
+      'nameID': 'BasicResearch',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 0,
@@ -2500,7 +2500,10 @@ export let items: Item[] =
     {
       'name': 'Creosote Bush Seed',
       'nameID': 'CreosoteBushSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 6,
+      'yPos': 15
     },
     {
       'name': 'Crimini Mushroom Spores',
@@ -4198,8 +4201,8 @@ export let items: Item[] =
       'nameID': 'LargeFish',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
-      'xPos': 1,
-      'yPos': 8
+      'xPos': 6,
+      'yPos': 6
     },
     {
       'name': 'Large Hanging Ashlar Basalt Sign',
@@ -4725,8 +4728,8 @@ export let items: Item[] =
       'tag': false
     },
     {
-      'name': 'Macaroons',
-      'nameID': 'MacaroonsItem',
+      'name': 'Macarons',
+      'nameID': 'MacaronsItem',
       'tag': false,
       'imageFile': 'UI_Icons_05.png',
       'xPos': 9,
@@ -4846,7 +4849,7 @@ export let items: Item[] =
       'nameID': 'MediumFish',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
-      'xPos': 1,
+      'xPos': 4,
       'yPos': 8
     },
     {
@@ -5005,7 +5008,7 @@ export let items: Item[] =
     },
     {
       'name': 'Modern Research',
-      'nameID': 'Modern Research',
+      'nameID': 'ModernResearch',
       'tag': true,
       'imageFile': 'UI_Icons_Tags.png',
       'xPos': 14,
@@ -5400,7 +5403,10 @@ export let items: Item[] =
     {
       'name': 'Orchid Seed',
       'nameID': 'OrchidSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 4,
+      'yPos': 1
     },
     {
       'name': 'Ore',
@@ -5670,7 +5676,10 @@ export let items: Item[] =
     {
       'name': 'Printing Press',
       'nameID': 'PrintingPressItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 6,
+      'yPos': 11
     },
     {
       'name': 'Pulp Filler',
@@ -6972,14 +6981,6 @@ export let items: Item[] =
       'yPos': 6
     },
     {
-      'name': 'Steel Road Tool',
-      'nameID': 'SteelRoadToolItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 12,
-      'yPos': 7
-    },
-    {
       'name': 'Steel Saw Blade',
       'nameID': 'SteelSawBladeItem',
       'tag': false,
@@ -7585,7 +7586,10 @@ export let items: Item[] =
     {
       'name': 'Trillium Seed',
       'nameID': 'TrilliumSeedItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 10,
+      'yPos': 2
     },
     {
       'name': 'Trousers',
@@ -7895,14 +7899,6 @@ export let items: Item[] =
       'yPos': 7
     },
     {
-      'name': 'Wooden Elevator Call Post',
-      'nameID': 'WoodenElevatorCallPostItem',
-      'tag': false,
-      'imageFile': 'UI_Icons_04.png',
-      'xPos': 4,
-      'yPos': 9
-    },
-    {
       'name': 'Wooden Fabric Bed',
       'nameID': 'WoodenFabricBedItem',
       'tag': false,
@@ -7936,7 +7932,7 @@ export let items: Item[] =
     },
     {
       'name': 'Wooden Latrine',
-      'nameID': 'WoodenLatrineItem',
+      'nameID': 'LatrineItem',
       'tag': false,
       'imageFile': 'UI_Icons_01.png',
       'xPos': 4,

@@ -1,5 +1,5 @@
 import {Inject, Injectable} from '@angular/core';
-import {localeData} from '../../assets/data/locale/locale-data';
+import {localeData, LocaleEntry} from '../../assets/data/locale/locale-data';
 import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
@@ -30,6 +30,9 @@ export class LocaleService {
       new Locale('Français', 'fr-FR'),
       new Locale('Español', 'es-ES'),
       new Locale('Deutsch', 'de-DE'),
+      new Locale('Português', 'pt-PT'),
+      new Locale('Italiano', 'it-IT'),
+      new Locale('Türkçe', 'tr-TR'),
       new Locale('Polski', 'pl-PL'),
       new Locale('Русский', 'ru-RU'),
       new Locale('Українська', 'uk-UA'),
@@ -90,32 +93,43 @@ export class LocaleService {
     let locData = localeData.find(l => l.type.localeCompare(type) === 0);
     let entry = locData.entries.find(entry => entry.id.localeCompare(nameID) === 0);
     if (entry === undefined) {
+      console.warn(`Could not find locale entry for ${nameID} in ${type}`);
       return nameID;
     } else {
       switch (lang) {
         case 'en':
           return entry.en;
         case 'fr':
-          return entry.fr;
+          return this.getOrNull(entry, entry.fr);
         case 'es':
-          return entry.es;
+          return this.getOrNull(entry, entry.es);
         case 'de':
-          return entry.de;
+          return this.getOrNull(entry, entry.de);
+        case 'pt':
+          return this.getOrNull(entry, entry.pt);
+        case 'it':
+          return this.getOrNull(entry, entry.it);
+        case 'tr':
+          return this.getOrNull(entry, entry.tr);
         case 'pl':
-          return entry.pl;
+          return this.getOrNull(entry, entry.pl);
         case 'ru':
-          return entry.ru;
+          return this.getOrNull(entry, entry.ru);
         case 'uk':
-          return entry.uk;
+          return this.getOrNull(entry, entry.uk);
         case 'ko':
-          return entry.ko;
+          return this.getOrNull(entry, entry.ko);
         case 'zh':
-          return entry.zh;
+          return this.getOrNull(entry, entry.zh);
         case 'ja':
-          return entry.ja;
+          return this.getOrNull(entry, entry.ja);
         default:
-          return entry.en;
+          return this.getOrNull(entry, entry.en);
       }
     }
+  }
+
+  private getOrNull(entry: LocaleEntry, value: string): string {
+    return value !== undefined ? value : entry.en;
   }
 }
