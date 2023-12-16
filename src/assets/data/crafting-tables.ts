@@ -221,11 +221,20 @@ export let craftingTables: CraftingTable[] =
     {
       'name': 'Fishery',
       'nameID': 'FisheryObject',
-      'upgradeModuleType': 'None',
+      'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
       'imageFile': 'UI_Icons_03.png',
       'xPos': 0,
       'yPos': 12
+    },
+    {
+      'name': 'Fish Rack',
+      'nameID': 'FishRackObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 3,
+      'yPos': 6
     },
     {
       'name': 'Froth Floatation Cell',

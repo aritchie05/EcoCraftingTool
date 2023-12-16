@@ -4012,7 +4012,7 @@ export let items: Item[] =
       'filter': 'brightness(0.5)'
     },
     {
-      'name': 'Iron Piston',
+      'name': 'Piston',
       'nameID': 'PistonItem',
       'tag': false,
       'imageFile': 'UI_Icons_00.png',
@@ -7284,7 +7284,7 @@ export let items: Item[] =
       'yPos': 3
     },
     {
-      'name': 'Sunflower Item',
+      'name': 'Sunflower',
       'nameID': 'SunflowerItem',
       'tag': false,
       'imageFile': 'UI_Icons_02.png',
@@ -8627,8 +8627,8 @@ export let items: Item[] =
       'yPos': 1
     },
     {
-      'name': 'Shipright Overalls',
-      'nameID': 'ShiprightOverallsItem',
+      'name': 'Shipwright Overalls',
+      'nameID': 'ShipwrightOverallsItem',
       'tag': false,
       'imageFile': 'UI_Icons_06.png',
       'xPos': 0,
@@ -8993,5 +8993,1141 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_06.png',
       'xPos': 3,
       'yPos': 9
+    },
+    {
+      'name': 'Bathroom',
+      'nameID': 'BathroomItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Beaver Carcass',
+      'nameID': 'BeaverCarcassItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Bedroom',
+      'nameID': 'BedroomItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Blackboard',
+      'nameID': 'BlackboardItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Bycocket',
+      'nameID': 'BycocketItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'CO2 Canister',
+      'nameID': 'CO2CanisterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Camera',
+      'nameID': 'CameraItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Canning Assembly',
+      'nameID': 'CanningAssemblyItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Cast Iron Bench',
+      'nameID': 'CastIronBenchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Cast Iron Chair',
+      'nameID': 'CastIronChairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Cast Iron Table',
+      'nameID': 'CastIronTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Composite Lumber Dresser',
+      'nameID': 'CompositeLumberDresserItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Copper Frame Landscape',
+      'nameID': 'CopperFrameLandscapeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Copper Frame Portrait',
+      'nameID': 'CopperFramePortraitItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Copper Frame Square',
+      'nameID': 'CopperFrameSquareItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Copper Frame Tall',
+      'nameID': 'CopperFrameTallItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Cornrows',
+      'nameID': 'CornrowsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Country Foundation',
+      'nameID': 'CountryFoundationItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Court Table',
+      'nameID': 'CourtTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Culture',
+      'nameID': 'CultureItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Curly',
+      'nameID': 'CurlyItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Dried Fish',
+      'nameID': 'DriedFishItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 9
+    },
+    {
+      'name': 'Dried Meat',
+      'nameID': 'DriedMeatItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 15,
+      'yPos': 9
+    },
+    {
+      'name': 'Embassy Desk',
+      'nameID': 'EmbassyDeskItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Federation Foundation',
+      'nameID': 'FederationFoundationItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Feminine Mannequin',
+      'nameID': 'FeminineMannequinItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Gold Frame Landscape',
+      'nameID': 'GoldFrameLandscapeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Gold Frame Portrait',
+      'nameID': 'GoldFramePortraitItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Gold Frame Square',
+      'nameID': 'GoldFrameSquareItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Gold Frame Tall',
+      'nameID': 'GoldFrameTallItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Board',
+      'nameID': 'HardwoodBoardItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Hewn Log',
+      'nameID': 'HardwoodHewnLogItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Lumber Bench',
+      'nameID': 'HardwoodLumberBenchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Lumber Chair',
+      'nameID': 'HardwoodLumberChairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Lumber Door',
+      'nameID': 'HardwoodLumberDoorItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Lumber Dresser',
+      'nameID': 'HardwoodLumberDresserItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Lumber',
+      'nameID': 'HardwoodLumberItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Lumber Table',
+      'nameID': 'HardwoodLumberTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Hardwood Bench',
+      'nameID': 'HewnHardwoodBenchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Hardwood Chair',
+      'nameID': 'HewnHardwoodChairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Hardwood Door',
+      'nameID': 'HewnHardwoodDoorItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Hardwood Table',
+      'nameID': 'HewnHardwoodTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Softwood Bench',
+      'nameID': 'HewnSoftwoodBenchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Softwood Chair',
+      'nameID': 'HewnSoftwoodChairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Softwood Door',
+      'nameID': 'HewnSoftwoodDoorItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hewn Softwood Table',
+      'nameID': 'HewnSoftwoodTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hunting Upgrade',
+      'nameID': 'HuntingUpgradeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Immigration Desk',
+      'nameID': 'ImmigrationDeskItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Industrial',
+      'nameID': 'IndustrialItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Iron Frame Landscape',
+      'nameID': 'IronFrameLandscapeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Iron Frame Portrait',
+      'nameID': 'IronFramePortraitItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Iron Frame Square',
+      'nameID': 'IronFrameSquareItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Iron Frame Tall',
+      'nameID': 'IronFrameTallItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Kitchenroom',
+      'nameID': 'KitchenroomItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Cotton Bunting Festive',
+      'nameID': 'LargeCottonBuntingFestiveItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Cotton Bunting Regal',
+      'nameID': 'LargeCottonBuntingRegalItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Cotton Bunting Vibrant',
+      'nameID': 'LargeCottonBuntingVibrantItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Nylon Bunting Purple',
+      'nameID': 'LargeNylonBuntingPurpleItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Nylon Bunting Yellow',
+      'nameID': 'LargeNylonBuntingYellowItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Wooden Bookshelf',
+      'nameID': 'LargeWoodenBookshelfItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Limestone Podium',
+      'nameID': 'LimestonePodiumItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Livingroom',
+      'nameID': 'LivingroomItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Marmot Carcass',
+      'nameID': 'MarmotCarcassItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Masculine Mannequin',
+      'nameID': 'MasculineMannequinItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Muffin Hat',
+      'nameID': 'MuffinHatItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Gold Frame Landscape',
+      'nameID': 'OrnateGoldFrameLandscapeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Gold Frame Portrait',
+      'nameID': 'OrnateGoldFramePortraitItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Gold Frame Square',
+      'nameID': 'OrnateGoldFrameSquareItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Gold Frame Tall',
+      'nameID': 'OrnateGoldFrameTallItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Iron Frame Landscape',
+      'nameID': 'OrnateIronFrameLandscapeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Iron Frame Portrait',
+      'nameID': 'OrnateIronFramePortraitItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Iron Frame Square',
+      'nameID': 'OrnateIronFrameSquareItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Iron Frame Tall',
+      'nameID': 'OrnateIronFrameTallItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Wooden Frame Landscape',
+      'nameID': 'OrnateWoodenFrameLandscapeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Wooden Frame Portrait',
+      'nameID': 'OrnateWoodenFramePortraitItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Wooden Frame Square',
+      'nameID': 'OrnateWoodenFrameSquareItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Wooden Frame Tall',
+      'nameID': 'OrnateWoodenFrameTallItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Outpost Table',
+      'nameID': 'OutpostTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Picture Frame',
+      'nameID': 'PictureFrameItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Bench Blue',
+      'nameID': 'PlasticBenchBlueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Bench Green',
+      'nameID': 'PlasticBenchGreenItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Bench Red',
+      'nameID': 'PlasticBenchRedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Chair Blue',
+      'nameID': 'PlasticChairBlueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Chair Green',
+      'nameID': 'PlasticChairGreenItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Chair Red',
+      'nameID': 'PlasticChairRedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Table Blue',
+      'nameID': 'PlasticTableBlueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Table Green',
+      'nameID': 'PlasticTableGreenItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Table Red',
+      'nameID': 'PlasticTableRedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ponytail',
+      'nameID': 'PonytailItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Pottery Table',
+      'nameID': 'PotteryTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Canvas Boots',
+      'nameID': 'PrimitiveCanvasBootsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Canvas Pants',
+      'nameID': 'PrimitiveCanvasPantsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Canvas Shorts',
+      'nameID': 'PrimitiveCanvasShortsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Fur Belt',
+      'nameID': 'PrimitiveFurBeltItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Leather Boots',
+      'nameID': 'PrimitiveLeatherBootsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Leather Pants',
+      'nameID': 'PrimitiveLeatherPantsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Leather Shirt',
+      'nameID': 'PrimitiveLeatherShirtItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Primitive Leather Shorts',
+      'nameID': 'PrimitiveLeatherShortsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Settlement Crafting Table',
+      'nameID': 'SettlementCraftingTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Sleek Short Hair',
+      'nameID': 'SleekShortHairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Cotton Bunting Festive',
+      'nameID': 'SmallCottonBuntingFestiveItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Cotton Bunting Regal',
+      'nameID': 'SmallCottonBuntingRegalItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Cotton Bunting Vibrant',
+      'nameID': 'SmallCottonBuntingVibrantItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Meeting Chair',
+      'nameID': 'SmallMeetingChairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Meeting Table',
+      'nameID': 'SmallMeetingTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Nylon Bunting Purple',
+      'nameID': 'SmallNylonBuntingPurpleItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Nylon Bunting Yellow',
+      'nameID': 'SmallNylonBuntingYellowItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Board',
+      'nameID': 'SoftwoodBoardItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Hewn Log',
+      'nameID': 'SoftwoodHewnLogItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Lumber Bench',
+      'nameID': 'SoftwoodLumberBenchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Lumber Chair',
+      'nameID': 'SoftwoodLumberChairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Lumber Door',
+      'nameID': 'SoftwoodLumberDoorItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Lumber Dresser',
+      'nameID': 'SoftwoodLumberDresserItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Lumber',
+      'nameID': 'SoftwoodLumberItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Lumber Table',
+      'nameID': 'SoftwoodLumberTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Spinning Jenny',
+      'nameID': 'SpinningJennyItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Steel Podium',
+      'nameID': 'SteelPodiumItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Steel Row Seating',
+      'nameID': 'SteelRowSeatingItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Stenographers Table',
+      'nameID': 'StenographersTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Students Desk T1',
+      'nameID': 'StudentsDeskT1Item',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Students Desk T2',
+      'nameID': 'StudentsDeskT2Item',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Students Desk T3',
+      'nameID': 'StudentsDeskT3Item',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Sun Butter',
+      'nameID': 'SunButterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Sweet Deer Jerky',
+      'nameID': 'SweetDeerJerkyItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 13,
+      'yPos': 9
+    },
+    {
+      'name': 'Teachers Desk T1',
+      'nameID': 'TeachersDeskT1Item',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Teachers Desk T2',
+      'nameID': 'TeachersDeskT2Item',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Teachers Desk T3',
+      'nameID': 'TeachersDeskT3Item',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'The Bob',
+      'nameID': 'TheBobItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Town Foundation',
+      'nameID': 'TownFoundationItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trailer Truck',
+      'nameID': 'TrailerTruckItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trapper Fur Hat',
+      'nameID': 'TrapperFurHatItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trapper Leather Hat',
+      'nameID': 'TrapperLeatherHatItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Tunic',
+      'nameID': 'TunicItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Villagers Cowl Lowered',
+      'nameID': 'VillagersCowlLoweredItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Villagers Cowl Raised',
+      'nameID': 'VillagersCowlRaisedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wanderers Hood Lowered',
+      'nameID': 'WanderersHoodLoweredItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wanderers Hood Raised',
+      'nameID': 'WanderersHoodRaisedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wooden Frame Landscape',
+      'nameID': 'WoodenFrameLandscapeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wooden Frame Portrait',
+      'nameID': 'WoodenFramePortraitItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wooden Frame Square',
+      'nameID': 'WoodenFrameSquareItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wooden Frame Tall',
+      'nameID': 'WoodenFrameTallItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wooden Podium',
+      'nameID': 'WoodenPodiumItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
     }
   ];
