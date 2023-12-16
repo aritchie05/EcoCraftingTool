@@ -1811,8 +1811,13 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('HewnLog'),
-          'quantity': 40,
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 3,
           'reducible': true
         }
       ],
@@ -1835,19 +1840,24 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
+          'item': getItemByNameID('DendrologyResearchPaperBasicItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperBasicItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('BasicUpgradeLvl1Item'),
           'quantity': 1,
           'reducible': false
-        },
-        {
-          'item': getItemByNameID('MortaredStone'),
-          'quantity': 20,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('MortarItem'),
-          'quantity': 20,
-          'reducible': true
         }
       ],
       'outputs': [
@@ -1869,24 +1879,24 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
+          'item': getItemByNameID('CulinaryResearchPaperBasicItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AgricultureResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('BasicUpgradeLvl2Item'),
           'quantity': 1,
           'reducible': false
-        },
-        {
-          'item': getItemByNameID('LinenFabricItem'),
-          'quantity': 16,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('WoodBoard'),
-          'quantity': 10,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('WoodenHullPlanksItem'),
-          'quantity': 4,
-          'reducible': true
         }
       ],
       'outputs': [
@@ -1908,18 +1918,23 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
+          'item': getItemByNameID('GeochemistryResearchPaperBasicItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('BasicUpgradeLvl3Item'),
           'quantity': 1,
           'reducible': false
         },
         {
-          'item': getItemByNameID('CottonFabricItem'),
-          'quantity': 20,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('WoodenWheelItem'),
-          'quantity': 20,
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 2,
           'reducible': true
         }
       ],
