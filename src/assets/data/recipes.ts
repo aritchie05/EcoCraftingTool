@@ -604,7 +604,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Agriculture Research Paper Advanced',
       'nameID': 'AgricultureResearchPaperAdvanced',
       'skill': getSkillByNameID('FarmingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 240,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -637,10 +637,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Agriculture Research Paper Modern',
       'nameID': 'AgricultureResearchPaperModern',
-      'skill': getSkillByNameID('FarmingSkill'),
-      'level': 0,
+      'skill': getSkillByNameID('FertilizersSkill'),
+      'level': 1,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -800,7 +800,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CrushedBasaltItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -840,7 +840,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CrushedGneissItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -880,7 +880,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CrushedGraniteItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -944,7 +944,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CrushedLimestoneItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -984,7 +984,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CrushedSandstoneItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -1024,7 +1024,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CrushedShaleItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -1112,8 +1112,8 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('AshlarStone'),
-          'quantity': 8,
-          'reducible': true
+          'quantity': 2,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -1627,7 +1627,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -1874,13 +1874,18 @@ export let standardRecipes: Recipe[] =
           'reducible': false
         },
         {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 80,
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 16,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 20,
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -1908,8 +1913,8 @@ export let standardRecipes: Recipe[] =
           'reducible': false
         },
         {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 120,
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 20,
           'reducible': true
         },
         {
@@ -2262,7 +2267,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('EthanolItem'),
-          'quantity': 6,
+          'quantity': 4,
           'reducible': true
         },
         {
@@ -2300,7 +2305,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -2458,14 +2463,14 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Board',
       'nameID': 'Board',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 25,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('HewnLog'),
+          'item': getItemByNameID('Wood'),
           'quantity': 1,
           'reducible': true
         }
@@ -2711,7 +2716,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('ClayItem'),
+          'item': getItemByNameID('WetBrickItem'),
           'quantity': 1,
           'reducible': true
         },
@@ -3135,7 +3140,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Butchery Table',
       'nameID': 'ButcheryTable',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 300,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -3935,8 +3940,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('CrushedLimestoneItem'),
-          'quantity': 3,
+          'item': getItemByNameID('QuicklimeItem'),
+          'quantity': 2.5,
           'reducible': true
         }
       ],
@@ -3953,7 +3958,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Cement Kiln',
       'nameID': 'CementKiln',
       'skill': getSkillByNameID('MechanicsSkill'),
-      'level': 5,
+      'level': 4,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('AssemblyLineObject'),
       'hidden': false,
@@ -4035,7 +4040,7 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('CharcoalItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false,
           'primary': true
         }
@@ -4561,30 +4566,6 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Cloth',
-      'nameID': 'Cloth',
-      'skill': getSkillByNameID('TailoringSkill'),
-      'level': 1,
-      'labor': 60,
-      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 9,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('ClothItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
       'name': 'Cloth Belt',
       'nameID': 'ClothBelt',
       'skill': getSkillByNameID('TailoringSkill'),
@@ -4672,7 +4653,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('MechanicsSkill'),
       'level': 3,
       'labor': 300,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('AssemblyLineObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -4711,7 +4692,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('MechanicsSkill'),
       'level': 3,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('AssemblyLineObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -4812,8 +4793,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
           'reducible': true
         },
         {
@@ -4906,12 +4887,12 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CompositeLumber'),
           'quantity': 2,
-          'reducible': true
+          'reducible': false
         },
         {
           'item': getItemByNameID('ScrewsItem'),
           'quantity': 4,
-          'reducible': true
+          'reducible': false
         }
       ],
       'outputs': [
@@ -5049,7 +5030,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'ConcentrateCopperLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 4,
-      'labor': 120,
+      'labor': 180,
       'craftingTable': getCraftingTableByNameID('FrothFloatationCellObject'),
       'hidden': false,
       'ingredients': [
@@ -5079,7 +5060,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'ConcentrateDryIron',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 90,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('ScreeningMachineObject'),
       'hidden': false,
       'ingredients': [
@@ -5109,7 +5090,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'ConcentrateDryIronLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 6,
-      'labor': 120,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('SensorBasedBeltSorterObject'),
       'hidden': false,
       'ingredients': [
@@ -5139,7 +5120,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'ConcentrateGoldLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 4,
-      'labor': 120,
+      'labor': 180,
       'craftingTable': getCraftingTableByNameID('FrothFloatationCellObject'),
       'hidden': false,
       'ingredients': [
@@ -5260,14 +5241,14 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('CopperBarItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
           'quantity': 1,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -5277,7 +5258,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CopperConcentrate',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 25,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('RockerBoxObject'),
       'hidden': false,
       'ingredients': [
@@ -5313,7 +5294,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CopperBarItem'),
-          'quantity': 2,
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -5521,8 +5502,8 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CorrugatedSteelItem'),
-          'quantity': 6,
-          'reducible': true
+          'quantity': 2,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -5545,8 +5526,8 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CorrugatedSteelItem'),
-          'quantity': 6,
-          'reducible': true
+          'quantity': 2,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -5569,7 +5550,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CottonFabricItem'),
-          'quantity': 5,
+          'quantity': 3,
           'reducible': true
         },
         {
@@ -5578,8 +5559,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -5631,7 +5612,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CottonFabric',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 100,
       'craftingTable': getCraftingTableByNameID('LoomObject'),
       'hidden': false,
       'ingredients': [
@@ -5653,10 +5634,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Cotton Lint',
       'nameID': 'CottonLint',
-      'skill': getSkillByNameID('FarmingSkill'),
-      'level': 1,
-      'labor': 80,
-      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 2,
+      'labor': 35,
+      'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -5673,8 +5654,8 @@ export let standardRecipes: Recipe[] =
           'primary': true
         },
         {
-          'item': getItemByNameID('CottonSeedItem'),
-          'quantity': 0.5,
+          'item': getItemByNameID('PlantFibersItem'),
+          'quantity': 0.25,
           'reducible': false,
           'primary': false
         }
@@ -5749,7 +5730,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('HewnLog'),
-          'quantity': 20,
+          'quantity': 30,
           'reducible': true
         }
       ],
@@ -5914,7 +5895,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedBasaltLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 300,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -5938,7 +5919,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedBasaltLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 180,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -5962,7 +5943,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedCopperLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 90,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -5992,7 +5973,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedCopperLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6016,7 +5997,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedCopperOre',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 70,
       'craftingTable': getCraftingTableByNameID('ArrastraObject'),
       'hidden': false,
       'ingredients': [
@@ -6046,7 +6027,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGneissLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 150,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6070,7 +6051,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGneissLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6094,7 +6075,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGoldLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 90,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6124,7 +6105,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGoldLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6148,7 +6129,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGoldOre',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 70,
       'craftingTable': getCraftingTableByNameID('ArrastraObject'),
       'hidden': false,
       'ingredients': [
@@ -6178,7 +6159,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGranite',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 70,
       'craftingTable': getCraftingTableByNameID('ArrastraObject'),
       'hidden': false,
       'ingredients': [
@@ -6202,7 +6183,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGraniteLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 90,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6226,7 +6207,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedGraniteLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6250,7 +6231,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedIronLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 70,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6280,7 +6261,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedIronLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 90,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6304,7 +6285,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedIronOre',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('ArrastraObject'),
       'hidden': false,
       'ingredients': [
@@ -6334,7 +6315,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedLimestone',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('ArrastraObject'),
       'hidden': false,
       'ingredients': [
@@ -6358,7 +6339,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedLimestoneLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 70,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6382,7 +6363,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedLimestoneLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 90,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6406,7 +6387,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedMortaredStone',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 4,
-      'labor': 120,
+      'labor': 90,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6430,7 +6411,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedMortaredStoneLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 6,
-      'labor': 60,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6454,7 +6435,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedSandstone',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 30,
       'craftingTable': getCraftingTableByNameID('ArrastraObject'),
       'hidden': false,
       'ingredients': [
@@ -6478,7 +6459,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedSandstoneLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6502,7 +6483,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedSandstoneLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 70,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6526,7 +6507,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedShale',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 30,
       'craftingTable': getCraftingTableByNameID('ArrastraObject'),
       'hidden': false,
       'ingredients': [
@@ -6550,7 +6531,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedShaleLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6574,7 +6555,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedShaleLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 70,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6622,7 +6603,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedSlagLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 30,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6642,59 +6623,11 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Crushed Stone Ramp',
-      'nameID': 'CrushedStoneRamp',
-      'skill': getSkillByNameID('MiningSkill'),
-      'level': 4,
-      'labor': 120,
-      'craftingTable': getCraftingTableByNameID('StampMillObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('StoneRampItem'),
-          'quantity': 2,
-          'reducible': false
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('CrushedMixedRockItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
-      'name': 'Crushed Stone Ramp Lv2',
-      'nameID': 'CrushedStoneRampLv2',
-      'skill': getSkillByNameID('MiningSkill'),
-      'level': 6,
-      'labor': 60,
-      'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('StoneRampItem'),
-          'quantity': 2,
-          'reducible': false
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('CrushedMixedRockItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
       'name': 'Crushed Stone Road',
       'nameID': 'CrushedStoneRoad',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 4,
-      'labor': 120,
+      'labor': 90,
       'craftingTable': getCraftingTableByNameID('StampMillObject'),
       'hidden': false,
       'ingredients': [
@@ -6718,7 +6651,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'CrushedStoneRoadLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 6,
-      'labor': 60,
+      'labor': 120,
       'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
       'hidden': false,
       'ingredients': [
@@ -6740,7 +6673,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Culinary Research Paper Advanced',
       'nameID': 'CulinaryResearchPaperAdvanced',
-      'skill': getSkillByNameID('BakingSkill'),
+      'skill': getSkillByNameID('CookingSkill'),
       'level': 1,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
@@ -6827,14 +6760,14 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Culinary Research Paper Basic Fish',
       'nameID': 'CulinaryResearchPaperBasicFish',
-      'skill': getSkillByNameID('CampfireCookingSkill'),
+      'skill': getSkillByNameID('HuntingSkill'),
       'level': 1,
       'labor': 30,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('CharredFishItem'),
+          'item': getItemByNameID('DriedFishItem'),
           'quantity': 20,
           'reducible': true
         }
@@ -6851,14 +6784,14 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Culinary Research Paper Basic Meat',
       'nameID': 'CulinaryResearchPaperBasicMeat',
-      'skill': getSkillByNameID('CampfireCookingSkill'),
+      'skill': getSkillByNameID('HuntingSkill'),
       'level': 1,
       'labor': 30,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('CharredMeatItem'),
+          'item': getItemByNameID('DriedMeatItem'),
           'quantity': 20,
           'reducible': true
         }
@@ -6878,7 +6811,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('AdvancedCookingSkill'),
       'level': 2,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -6911,13 +6844,8 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('BrickItem'),
-          'quantity': 16,
-          'reducible': true
-        },
-        {
           'item': getItemByNameID('GoldBarItem'),
-          'quantity': 12,
+          'quantity': 2,
           'reducible': true
         },
         {
@@ -6926,8 +6854,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 40,
+          'item': getItemByNameID('MortaredStone'),
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -6968,7 +6896,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Dendrology Research Paper Advanced',
       'nameID': 'DendrologyResearchPaperAdvanced',
       'skill': getSkillByNameID('CarpentrySkill'),
-      'level': 0,
+      'level': 1,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -6992,7 +6920,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Dendrology Research Paper Basic',
       'nameID': 'DendrologyResearchPaperBasic',
       'skill': getSkillByNameID('LoggingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 30,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -7016,9 +6944,9 @@ export let standardRecipes: Recipe[] =
       'name': 'Dendrology Research Paper Modern',
       'nameID': 'DendrologyResearchPaperModern',
       'skill': getSkillByNameID('CarpentrySkill'),
-      'level': 0,
+      'level': 1,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -7521,7 +7449,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('MechanicsSkill'),
       'level': 1,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -8101,7 +8029,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Farmers Table',
       'nameID': 'FarmersTable',
-      'skill': getSkillByNameID('FarmingSkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 200,
       'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
@@ -8172,7 +8100,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('HuckleberriesItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         },
         {
@@ -8324,6 +8252,11 @@ export let standardRecipes: Recipe[] =
           'item': getItemByNameID('TomatoItem'),
           'quantity': 1,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
+          'quantity': 1,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -8374,7 +8307,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -8414,6 +8347,11 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('Fat'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -8526,12 +8464,12 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('FlatSteelItem'),
           'quantity': 2,
-          'reducible': true
+          'reducible': false
         },
         {
           'item': getItemByNameID('GlassItem'),
-          'quantity': 4,
-          'reducible': true
+          'quantity': 1,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -8670,14 +8608,9 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('GlassItem'),
-          'quantity': 30,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
-          'reducible': true
+          'item': getItemByNameID('FramedGlassItem'),
+          'quantity': 2,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -8762,7 +8695,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 4,
           'reducible': true
         },
@@ -8970,7 +8903,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'GardenBoots',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 40,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
       'hidden': false,
       'ingredients': [
@@ -9022,7 +8955,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Gathering Research Paper Basic',
       'nameID': 'GatheringResearchPaperBasic',
       'skill': getSkillByNameID('GatheringSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 30,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -9080,7 +9013,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Geology Research Paper Advanced',
       'nameID': 'GeologyResearchPaperAdvanced',
       'skill': getSkillByNameID('MasonrySkill'),
-      'level': 0,
+      'level': 1,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -9104,7 +9037,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Geology Research Paper Basic',
       'nameID': 'GeologyResearchPaperBasic',
       'skill': getSkillByNameID('MiningSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 30,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -9128,9 +9061,9 @@ export let standardRecipes: Recipe[] =
       'name': 'Geology Research Paper Modern',
       'nameID': 'GeologyResearchPaperModern',
       'skill': getSkillByNameID('PotterySkill'),
-      'level': 0,
+      'level': 1,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -9207,7 +9140,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 7,
       'labor': 6000,
-      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -9231,7 +9164,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('GlassworkingSkill'),
       'level': 7,
       'labor': 6000,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -9335,14 +9268,14 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('GoldBarItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
           'quantity': 1,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -9352,7 +9285,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'GoldConcentrate',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 25,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('RockerBoxObject'),
       'hidden': false,
       'ingredients': [
@@ -9773,7 +9706,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Bench',
       'nameID': 'HewnBench',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 2,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9802,7 +9735,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Chair',
       'nameID': 'HewnChair',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9836,7 +9769,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Door',
       'nameID': 'HewnDoor',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9844,8 +9777,8 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('HewnLog'),
-          'quantity': 6,
-          'reducible': true
+          'quantity': 2,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -9860,7 +9793,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Dresser',
       'nameID': 'HewnDresser',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 3,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9913,7 +9846,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Nightstand',
       'nameID': 'HewnNightstand',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 4,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -9942,7 +9875,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Hewn Table',
       'nameID': 'HewnTable',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 2,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -10070,7 +10003,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -10180,7 +10113,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Icebox',
       'nameID': 'Icebox',
       'skill': getSkillByNameID('CarpentrySkill'),
-      'level': 5,
+      'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
       'hidden': false,
@@ -10322,7 +10255,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         }
@@ -10407,14 +10340,14 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
           'quantity': 1,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -10424,7 +10357,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'IronConcentrate',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 25,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('RockerBoxObject'),
       'hidden': false,
       'ingredients': [
@@ -10600,7 +10533,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 2,
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -10826,6 +10759,11 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
+          'item': getItemByNameID('HeartOfPalmItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('PapayaItem'),
           'quantity': 1,
           'reducible': true
@@ -10871,6 +10809,11 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('ScrapMeatItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
           'quantity': 1,
           'reducible': true
         }
@@ -10984,10 +10927,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Laboratory',
       'nameID': 'Laboratory',
-      'skill': getSkillByNameID('ElectronicsSkill'),
-      'level': 5,
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
       'labor': 120,
-      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -10996,8 +10939,13 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
+          'item': getItemByNameID('IronBarItem'),
           'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -11025,8 +10973,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('ClothItem'),
-          'quantity': 20,
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 10,
           'reducible': true
         },
         {
@@ -11055,8 +11003,8 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CorrugatedSteelItem'),
-          'quantity': 40,
-          'reducible': true
+          'quantity': 20,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -11190,13 +11138,13 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 40,
-          'reducible': true
+          'quantity': 20,
+          'reducible': false
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 60,
-          'reducible': true
+          'quantity': 30,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -11359,18 +11307,18 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('GlassItem'),
-          'quantity': 8,
-          'reducible': true
+          'quantity': 5,
+          'reducible': false
         },
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 30,
-          'reducible': true
+          'quantity': 15,
+          'reducible': false
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 60,
-          'reducible': true
+          'quantity': 20,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -11759,8 +11707,8 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 40,
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 20,
           'reducible': true
         },
         {
@@ -11783,7 +11731,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'LowTopShoes',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 40,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
       'hidden': false,
       'ingredients': [
@@ -11812,13 +11760,18 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('HewnLog'),
-          'quantity': 4,
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlaxseedOilItem'),
+          'quantity': 0.5,
           'reducible': true
         },
         {
           'item': getItemByNameID('NailItem'),
-          'quantity': 4,
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -11835,7 +11788,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Lumber Bench',
       'nameID': 'LumberBench',
       'skill': getSkillByNameID('CarpentrySkill'),
-      'level': 7,
+      'level': 3,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('SawmillObject'),
       'hidden': false,
@@ -11869,7 +11822,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Lumber Chair',
       'nameID': 'LumberChair',
       'skill': getSkillByNameID('CarpentrySkill'),
-      'level': 6,
+      'level': 2,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('SawmillObject'),
       'hidden': false,
@@ -11905,13 +11858,13 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 4,
-          'reducible': true
+          'quantity': 2,
+          'reducible': false
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 8,
-          'reducible': true
+          'quantity': 4,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -12042,7 +11995,7 @@ export let standardRecipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('MacaroonsItem'),
+          'item': getItemByNameID('MacaronsItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -12260,6 +12213,11 @@ export let standardRecipes: Recipe[] =
           'item': getItemByNameID('ScrapMeatItem'),
           'quantity': 1,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
+          'quantity': 1,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -12274,10 +12232,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Mechanical Water Pump',
       'nameID': 'MechanicalWaterPump',
-      'skill': getSkillByNameID('MechanicsSkill'),
+      'skill': getSkillByNameID('BasicEngineeringSkill'),
       'level': 1,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('AssemblyLineObject'),
+      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -12376,7 +12334,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Metallurgy Research Paper Advanced',
       'nameID': 'MetallurgyResearchPaperAdvanced',
       'skill': getSkillByNameID('SmeltingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -12405,7 +12363,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Metallurgy Research Paper Basic',
       'nameID': 'MetallurgyResearchPaperBasic',
       'skill': getSkillByNameID('MiningSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 30,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -12431,7 +12389,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('AdvancedSmeltingSkill'),
       'level': 1,
       'labor': 600,
-      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -12488,12 +12446,12 @@ export let standardRecipes: Recipe[] =
       'nameID': 'MillingUpgrade',
       'skill': getSkillByNameID('MillingSkill'),
       'level': 7,
-      'labor': 6000,
+      'labor': 3000,
       'craftingTable': getCraftingTableByNameID('MillObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
+          'item': getItemByNameID('BasicUpgradeLvl4Item'),
           'quantity': 1,
           'reducible': false
         }
@@ -12523,7 +12481,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('HeartOfPalmItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         },
         {
@@ -13322,8 +13280,8 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('MortaredStone'),
-          'quantity': 6,
-          'reducible': true
+          'quantity': 2,
+          'reducible': false
         }
       ],
       'outputs': [
@@ -13459,7 +13417,7 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('NylonItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': false,
           'primary': true
         },
@@ -13486,13 +13444,13 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
           'reducible': true
         },
         {
           'item': getItemByNameID('NylonFabricItem'),
-          'quantity': 5,
+          'quantity': 3,
           'reducible': true
         }
       ],
@@ -13618,13 +13576,13 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CerealGermItem'),
-          'quantity': 12,
+          'quantity': 8,
           'reducible': true
         }
       ],
       'outputs': [
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -13665,7 +13623,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('BrickItem'),
+          'item': getItemByNameID('ReinforcedConcreteItem'),
           'quantity': 12,
           'reducible': true
         },
@@ -13751,14 +13709,14 @@ export let standardRecipes: Recipe[] =
       'name': 'Paper',
       'nameID': 'Paper',
       'skill': getSkillByNameID('PaperMillingSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 20,
-      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('CelluloseFiberItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -13902,7 +13860,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 1,
           'reducible': true
         },
@@ -14508,7 +14466,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Quicklime',
       'nameID': 'Quicklime',
-      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'skill': getSkillByNameID('MasonrySkill'),
       'level': 1,
       'labor': 50,
       'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
@@ -14533,7 +14491,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Quicklime Glass',
       'nameID': 'QuicklimeGlass',
       'skill': getSkillByNameID('GlassworkingSkill'),
-      'level': 6,
+      'level': 4,
       'labor': 45,
       'craftingTable': getCraftingTableByNameID('GlassworksObject'),
       'hidden': false,
@@ -14749,8 +14707,8 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('PlantFibersItem'),
-          'quantity': 40,
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 12,
           'reducible': true
         },
         {
@@ -14915,7 +14873,7 @@ export let standardRecipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -14926,7 +14884,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Refrigerator',
       'nameID': 'Refrigerator',
       'skill': getSkillByNameID('IndustrySkill'),
-      'level': 2,
+      'level': 4,
       'labor': 120,
       'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
       'hidden': false,
@@ -14942,7 +14900,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
+          'item': getItemByNameID('SteelPlateItem'),
           'quantity': 16,
           'reducible': true
         }
@@ -14959,19 +14917,19 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Registrar',
       'nameID': 'Registrar',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 4,
       'labor': 150,
-      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('IronBarItem'),
+          'item': getItemByNameID('IronOreItem'),
           'quantity': 20,
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
+          'item': getItemByNameID('HewnLog'),
           'quantity': 16,
           'reducible': true
         },
@@ -15319,6 +15277,11 @@ export let standardRecipes: Recipe[] =
           'item': getItemByNameID('ScrapMeatItem'),
           'quantity': 1,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
+          'quantity': 1,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -15398,7 +15361,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('ClothItem'),
+          'item': getItemByNameID('Fabric'),
           'quantity': 20,
           'reducible': true
         },
@@ -15432,7 +15395,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('ClothItem'),
+          'item': getItemByNameID('Fabric'),
           'quantity': 10,
           'reducible': true
         },
@@ -15533,7 +15496,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'SandConcentrate',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 1,
-      'labor': 25,
+      'labor': 50,
       'craftingTable': getCraftingTableByNameID('RockerBoxObject'),
       'hidden': false,
       'ingredients': [
@@ -15557,7 +15520,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'SandConcentrateLv2',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 2,
-      'labor': 40,
+      'labor': 100,
       'craftingTable': getCraftingTableByNameID('ScreeningMachineObject'),
       'hidden': false,
       'ingredients': [
@@ -15581,7 +15544,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'SandConcentrateLv3',
       'skill': getSkillByNameID('MiningSkill'),
       'level': 6,
-      'labor': 40,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('SensorBasedBeltSorterObject'),
       'hidden': false,
       'ingredients': [
@@ -15603,14 +15566,14 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Saw Boards',
       'nameID': 'SawBoards',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 20,
       'craftingTable': getCraftingTableByNameID('SawmillObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('HewnLog'),
+          'item': getItemByNameID('Wood'),
           'quantity': 2,
           'reducible': true
         }
@@ -15901,7 +15864,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('PacificSardineItem'),
+          'item': getItemByNameID('RawFishItem'),
           'quantity': 2,
           'reducible': true
         },
@@ -15959,30 +15922,35 @@ export let standardRecipes: Recipe[] =
       'nameID': 'ShaleBrick',
       'skill': getSkillByNameID('PotterySkill'),
       'level': 1,
-      'labor': 25,
+      'labor': 200,
       'craftingTable': getCraftingTableByNameID('KilnObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('ClayItem'),
-          'quantity': 1,
+          'item': getItemByNameID('SandItem'),
+          'quantity': 6,
           'reducible': true
         },
         {
           'item': getItemByNameID('CrushedShaleItem'),
-          'quantity': 1,
+          'quantity': 4,
           'reducible': true
         },
         {
-          'item': getItemByNameID('MortarItem'),
+          'item': getItemByNameID('ClayItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenMoldItem'),
           'quantity': 8,
           'reducible': true
         }
       ],
       'outputs': [
         {
-          'item': getItemByNameID('BrickItem'),
-          'quantity': 2,
+          'item': getItemByNameID('WetBrickItem'),
+          'quantity': 8,
           'reducible': false,
           'primary': true
         }
@@ -16092,6 +16060,11 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('Lumber'),
           'quantity': 14,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 30,
           'reducible': true
         },
         {
@@ -16601,14 +16574,14 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('CopperBarItem'),
-          'quantity': 3,
+          'quantity': 6,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -16631,14 +16604,14 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('GoldBarItem'),
-          'quantity': 3,
+          'quantity': 6,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -16661,14 +16634,14 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 3,
+          'quantity': 6,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -16842,7 +16815,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -17215,28 +17188,13 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('BoilerItem'),
-          'quantity': 6,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('IronGearItem'),
-          'quantity': 16,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('IronPlateItem'),
+          'item': getItemByNameID('IronBarItem'),
           'quantity': 24,
           'reducible': true
         },
         {
-          'item': getItemByNameID('PistonItem'),
+          'item': getItemByNameID('IronPipeItem'),
           'quantity': 12,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('ScrewsItem'),
-          'quantity': 30,
           'reducible': true
         }
       ],
@@ -17461,7 +17419,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LightBulbItem'),
-          'quantity': 4,
+          'quantity': 2,
           'reducible': false
         }
       ],
@@ -17542,7 +17500,47 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('Coal'),
+          'item': getItemByNameID('CrushedCoalItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('QuicklimeItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('SlagItem'),
+          'quantity': 2,
+          'reducible': true,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Charcoal Steel',
+      'nameID': 'CharcoalSteel',
+      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CharcoalItem'),
           'quantity': 2,
           'reducible': false
         },
@@ -17567,7 +17565,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('SlagItem'),
           'quantity': 2,
-          'reducible': false,
+          'reducible': true,
           'primary': false
         }
       ]
@@ -17835,7 +17833,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 2,
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -17866,35 +17864,6 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('SteelPlateItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
-      'name': 'Steel Road Tool',
-      'nameID': 'SteelRoadTool',
-      'skill': getSkillByNameID('BasicEngineeringSkill'),
-      'level': 3,
-      'labor': 25,
-      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 10,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('SteelRoadToolItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -18047,35 +18016,6 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Stone Ramp',
-      'nameID': 'StoneRamp',
-      'skill': getSkillByNameID('BasicEngineeringSkill'),
-      'level': 1,
-      'labor': 60,
-      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('CrushedRock'),
-          'quantity': 3,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('MortarItem'),
-          'quantity': 6,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('StoneRampItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
       'name': 'Stone Road',
       'nameID': 'StoneRoad',
       'skill': getSkillByNameID('BasicEngineeringSkill'),
@@ -18195,7 +18135,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Stove',
       'nameID': 'Stove',
       'skill': getSkillByNameID('MechanicsSkill'),
-      'level': 4,
+      'level': 5,
       'labor': 900,
       'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
       'hidden': false,
@@ -18584,7 +18524,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -18624,13 +18564,13 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('SunflowerSeedItem'),
-          'quantity': 24,
+          'quantity': 16,
           'reducible': true
         }
       ],
       'outputs': [
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -18918,7 +18858,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'TallBoots',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 40,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
       'hidden': false,
       'ingredients': [
@@ -19049,7 +18989,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -19298,10 +19238,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Transmission Pole',
       'nameID': 'TransmissionPole',
-      'skill': getSkillByNameID('ElectronicsSkill'),
+      'skill': getSkillByNameID('MechanicsSkill'),
       'level': 4,
       'labor': 480,
-      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -19315,7 +19255,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
+          'item': getItemByNameID('IronBarItem'),
           'quantity': 8,
           'reducible': true
         }
@@ -19323,40 +19263,6 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('TransmissionPoleItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
-      'name': 'Treasury',
-      'nameID': 'Treasury',
-      'skill': getSkillByNameID('SmeltingSkill'),
-      'level': 4,
-      'labor': 1500,
-      'craftingTable': getCraftingTableByNameID('AnvilObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('BrickItem'),
-          'quantity': 16,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('GoldBarItem'),
-          'quantity': 12,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 60,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('TreasuryItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -19614,7 +19520,7 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Wainwright Table',
       'nameID': 'WainwrightTable',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('LoggingSkill'),
       'level': 1,
       'labor': 180,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
@@ -19829,7 +19735,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'WeaveCottonFabric',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 80,
       'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
       'hidden': false,
       'ingredients': [
@@ -19860,11 +19766,6 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('CelluloseFiberItem'),
           'quantity': 10,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('ClothItem'),
-          'quantity': 16,
           'reducible': true
         },
         {
@@ -19921,7 +19822,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'WeaveNylonFabric',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 80,
       'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
       'hidden': false,
       'ingredients': [
@@ -20003,7 +19904,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'WeaveWoolFabric',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 80,
       'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
       'hidden': false,
       'ingredients': [
@@ -20081,7 +19982,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('WheatItem'),
-          'quantity': 1,
+          'quantity': 0.5,
           'reducible': true
         }
       ],
@@ -20185,6 +20086,11 @@ export let standardRecipes: Recipe[] =
           'item': getItemByNameID('Vegetable'),
           'quantity': 1,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlourItem'),
+          'quantity': 1,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -20240,6 +20146,11 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
+          'item': getItemByNameID('ServoItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('SteelBarItem'),
           'quantity': 8,
           'reducible': true
@@ -20264,8 +20175,8 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('Fabric'),
-          'quantity': 16,
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 12,
           'reducible': true
         },
         {
@@ -20288,7 +20199,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'WoodCart',
       'skill': getSkillByNameID('BasicEngineeringSkill'),
       'level': 1,
-      'labor': 75,
+      'labor': 150,
       'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
       'hidden': false,
       'ingredients': [
@@ -20583,7 +20494,7 @@ export let standardRecipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('WoodenLatrineItem'),
+          'item': getItemByNameID('LatrineItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -20707,13 +20618,13 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoolFabricItem'),
-          'quantity': 5,
+          'quantity': 3,
           'reducible': true
         }
       ],
@@ -20765,7 +20676,7 @@ export let standardRecipes: Recipe[] =
       'nameID': 'WoolFabric',
       'skill': getSkillByNameID('TailoringSkill'),
       'level': 1,
-      'labor': 60,
+      'labor': 100,
       'craftingTable': getCraftingTableByNameID('LoomObject'),
       'hidden': false,
       'ingredients': [
@@ -20886,7 +20797,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('OilItem'),
+          'item': getItemByNameID('Oil'),
           'quantity': 2,
           'reducible': true
         },
@@ -21096,6 +21007,3747 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('CopperPlateItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Camera Film',
+      'nameID': 'CameraFilm',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 45,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CameraFilmItem'),
+          'quantity': 10,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Canvas',
+      'nameID': 'Canvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Colored Powder',
+      'nameID': 'ColoredPowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 24,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Petals'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ColoredPowderItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Compost Spoiled Food',
+      'nameID': 'CompostSpoiledFood',
+      'skill': getSkillByNameID('FertilizersSkill'),
+      'level': 3,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SpoiledFoodItem'),
+          'quantity': 6,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('DirtItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CompostFertilizerItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Copper Frame Wide',
+      'nameID': 'CopperFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CopperBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CopperFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Canvas',
+      'nameID': 'CottonCanvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Seed',
+      'nameID': 'CottonSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonBollItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CottonSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Streamer Stars',
+      'nameID': 'CottonStreamerStars',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CottonStreamerStarsItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cotton Streamer Stripes',
+      'nameID': 'CottonStreamerStripes',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CottonStreamerStripesItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cottonseed Oil',
+      'nameID': 'CottonseedOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 4,
+      'labor': 40,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonSeedItem'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('Oil'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Court Chair',
+      'nameID': 'CourtChair',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CourtChairItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Creosote Bush Seed',
+      'nameID': 'CreosoteBushSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CreosoteFlowerItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CreosoteBushSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Anchor',
+      'nameID': 'DecorativeAnchor',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeAnchorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Glass Buoy Blue',
+      'nameID': 'DecorativeGlassBuoyBlue',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeGlassBuoyBlueItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Hanging Buoy',
+      'nameID': 'DecorativeHangingBuoy',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeHangingBuoyItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Life Preserver',
+      'nameID': 'DecorativeLifePreserver',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeLifePreserverItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Decorative Ship Wheel',
+      'nameID': 'DecorativeShipWheel',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DecorativeShipWheelItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Fiber Scutching Station',
+      'nameID': 'FiberScutchingStation',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 2,
+      'labor': 300,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FiberScutchingStationItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Fish Rack',
+      'nameID': 'FishRack',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlantFibersItem'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FishRackItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Flax Fiber',
+      'nameID': 'FlaxFiber',
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 2,
+      'labor': 35,
+      'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxStemItem'),
+          'quantity': 3,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxFiberItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('PlantFibersItem'),
+          'quantity': 0.25,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Flax Seed',
+      'nameID': 'FlaxSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxStemItem'),
+          'quantity': 0.5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Flax Trawler Net',
+      'nameID': 'FlaxTrawlerNet',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 40,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxTrawlerNetItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Flaxseed Oil',
+      'nameID': 'FlaxseedOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 3,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxSeedItem'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxseedOilItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Gathering Basic Upgrade',
+      'nameID': 'GatheringBasicUpgrade',
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 7,
+      'labor': 3000,
+      'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BasicUpgradeLvl4Item'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GatheringBasicUpgradeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Glass Lens',
+      'nameID': 'GlassLens',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 30,
+      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GlassLensItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Gold Frame Wide',
+      'nameID': 'GoldFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GoldBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GoldFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Handheld Camera',
+      'nameID': 'HandheldCamera',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 250,
+      'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FiberglassItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GlassLensItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('BasicCircuitItem'),
+          'quantity': 2,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HandheldCameraItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Hemp Mooring Rope',
+      'nameID': 'HempMooringRope',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Banner Sign',
+      'nameID': 'HugeBannerSign',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 3,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Iron Banner Sign',
+      'nameID': 'HugeIronBannerSign',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 6,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 16,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeIronBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Iron Sign',
+      'nameID': 'HugeIronSign',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 3,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeIronSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Steel Banner Sign',
+      'nameID': 'HugeSteelBannerSign',
+      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'level': 6,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RollingMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 16,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 6,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeSteelBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Steel Sign',
+      'nameID': 'HugeSteelSign',
+      'skill': getSkillByNameID('AdvancedSmeltingSkill'),
+      'level': 3,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('RollingMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 3,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeSteelSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Huge Wooden Banner Sign',
+      'nameID': 'HugeWoodenBannerSign',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 6,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HugeWoodenBannerSignItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Industrial Barge',
+      'nameID': 'IndustrialBarge',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 6,
+      'labor': 2500,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronHullSheetItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('NylonMooringRopeItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalRudderItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SteelAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAnchorItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CombustionEngineItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LargeMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IndustrialBargeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Industrial Generator',
+      'nameID': 'IndustrialGenerator',
+      'skill': getSkillByNameID('IndustrySkill'),
+      'level': 4,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 48,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedCircuitItem'),
+          'quantity': 32,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelPipeItem'),
+          'quantity': 32,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 64,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedCombustionEngineItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('RadiatorItem'),
+          'quantity': 24,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SteelAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IndustrialGeneratorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Anchor',
+      'nameID': 'IronAnchor',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronAnchorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Frame Wide',
+      'nameID': 'IronFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Hull Sheet',
+      'nameID': 'IronHullSheet',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ScrewsItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronHullSheetItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Iron Road Tool',
+      'nameID': 'IronRoadTool',
+      'skill': getSkillByNameID('BasicEngineeringSkill'),
+      'level': 3,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronRoadToolItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Canoe',
+      'nameID': 'LargeCanoe',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 2,
+      'labor': 360,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenOarItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SmallWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeCanoeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Cotton Bunting Red',
+      'nameID': 'LargeCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeCottonBuntingRedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Festive Paper Lantern',
+      'nameID': 'LargeFestivePaperLantern',
+      'skill': getSkillByNameID('PaperMillingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeFestivePaperLanternItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Metal Ship Frame',
+      'nameID': 'LargeMetalShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 5,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Nylon Bunting Green',
+      'nameID': 'LargeNylonBuntingGreen',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeNylonBuntingGreenItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Paper Lantern',
+      'nameID': 'LargePaperLantern',
+      'skill': getSkillByNameID('PaperMillingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargePaperLanternItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Large Wooden Ship Frame',
+      'nameID': 'LargeWoodenShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 5,
+      'labor': 200,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 24,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Linen Fabric',
+      'nameID': 'LinenFabric',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Linen Yarn',
+      'nameID': 'LinenYarn',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 30,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxFiberItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Fishing Trawler',
+      'nameID': 'MediumFishingTrawler',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 3,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronHullSheetItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalRudderItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAnchorItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('PortableSteamEngineItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('MediumMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumFishingTrawlerItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Metal Ship Frame',
+      'nameID': 'MediumMetalShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ScrewsItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetalKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumMetalShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Shipyard',
+      'nameID': 'MediumShipyard',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 800,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumShipyardItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Medium Wooden Ship Frame',
+      'nameID': 'MediumWoodenShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MediumWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Metal Keel',
+      'nameID': 'MetalKeel',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('ShaperObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MetalKeelItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Metal Rudder',
+      'nameID': 'MetalRudder',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ScrewsItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronGearItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MetalRudderItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Nylon Mooring Rope',
+      'nameID': 'NylonMooringRope',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonThreadItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('NylonMooringRopeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Nylon Trawler Net',
+      'nameID': 'NylonTrawlerNet',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 3,
+      'labor': 200,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonThreadItem'),
+          'quantity': 40,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('NylonTrawlerNetItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Oil Paint',
+      'nameID': 'OilPaint',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 40,
+      'craftingTable': getCraftingTableByNameID('MillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('ColoredPowderItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FlaxseedOilItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilPaintItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Orchid Seed',
+      'nameID': 'OrchidSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('OrchidItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrchidSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Ornate Gold Frame Wide',
+      'nameID': 'OrnateGoldFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GoldBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrnateGoldFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Ornate Iron Frame Wide',
+      'nameID': 'OrnateIronFrameWide',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrnateIronFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Ornate Wooden Frame Wide',
+      'nameID': 'OrnateWoodenFrameWide',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OrnateWoodenFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Outpost Netting',
+      'nameID': 'OutpostNetting',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 180,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OutpostNettingItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Particle Boards',
+      'nameID': 'ParticleBoards',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 5,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodPulpItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Plastic Buoy',
+      'nameID': 'PlasticBuoy',
+      'skill': getSkillByNameID('IndustrySkill'),
+      'level': 4,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PlasticBuoyItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Printing Press',
+      'nameID': 'PrintingPress',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 3,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GearboxItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PistonItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PrintingPressItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Recycle Hewn Log',
+      'nameID': 'RecycleHewnLog',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 3,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodPulpItem'),
+          'quantity': 10,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Rice Mortar',
+      'nameID': 'RiceMortar',
+      'skill': getSkillByNameID('MasonrySkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('BakeryOvenObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RiceItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MortarItem'),
+          'quantity': 3,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Advanced Upgrade',
+      'nameID': 'ShipwrightAdvancedUpgrade',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 7,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightAdvancedUpgradeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Basic Upgrade',
+      'nameID': 'ShipwrightBasicUpgrade',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 7,
+      'labor': 3000,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BasicUpgradeLvl4Item'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightBasicUpgradeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Canoe',
+      'nameID': 'SmallCanoe',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenOarItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('SmallWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallCanoeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Cotton Bunting Red',
+      'nameID': 'SmallCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('LoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallCottonBuntingRedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Nylon Bunting Green',
+      'nameID': 'SmallNylonBuntingGreen',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NylonFabricItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallNylonBuntingGreenItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Paper Lantern',
+      'nameID': 'SmallPaperLantern',
+      'skill': getSkillByNameID('PaperMillingSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallPaperLanternItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Paper Machine',
+      'nameID': 'SmallPaperMachine',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronGearItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallPaperMachineItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Shipyard',
+      'nameID': 'SmallShipyard',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 1,
+      'labor': 360,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallShipyardItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Wooden Boat',
+      'nameID': 'SmallWoodenBoat',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 3,
+      'labor': 680,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenWheelItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('GearboxItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('MediumWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallWoodenBoatItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Small Wooden Ship Frame',
+      'nameID': 'SmallWoodenShipFrame',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Buoy',
+      'nameID': 'SteelBuoy',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 4,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelBuoyItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Moorage Post',
+      'nameID': 'SteelMooragePost',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 3,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('NylonMooringRopeItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelMooragePostItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Trillium Seed',
+      'nameID': 'TrilliumSeed',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('TrilliumFlowerItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('TrilliumSeedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Tripod Camera',
+      'nameID': 'TripodCamera',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 3,
+      'labor': 250,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperBarItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LeatherHideItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GlassLensItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('TripodCameraItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Cotton Canvas',
+      'nameID': 'WeaveCottonCanvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Large Cotton Bunting Red',
+      'nameID': 'WeaveLargeCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 240,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LargeCottonBuntingRedItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Linen Canvas',
+      'nameID': 'WeaveLinenCanvas',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Linen Fabric',
+      'nameID': 'WeaveLinenFabric',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 80,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LinenYarnItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('LinenFabricItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Weave Small Cotton Bunting Red',
+      'nameID': 'WeaveSmallCottonBuntingRed',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 2,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('AutomaticLoomObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmallCottonBuntingRedItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Barge',
+      'nameID': 'WoodenBarge',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 4,
+      'labor': 800,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenWheelItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('GearboxItem'),
+          'quantity': 4,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LargeWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenBargeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Frame Wide',
+      'nameID': 'WoodenFrameWide',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 4,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenFrameWideItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Hull Planks',
+      'nameID': 'WoodenHullPlanks',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Keel',
+      'nameID': 'WoodenKeel',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Wood'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenKeelItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Moorage Post',
+      'nameID': 'WoodenMooragePost',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenMooragePostItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Oar',
+      'nameID': 'WoodenOar',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 2,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HewnLog'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenOarItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Rudder',
+      'nameID': 'WoodenRudder',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 4,
+      'labor': 40,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronGearItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenRudderItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Transport Ship',
+      'nameID': 'WoodenTransportShip',
+      'skill': getSkillByNameID('ShipwrightSkill'),
+      'level': 1,
+      'labor': 1000,
+      'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('IronBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('HempMooringRopeItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenRudderItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('IronAxleItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('PortableSteamEngineItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('LargeWoodenShipFrameItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenTransportShipItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Carbide Helmet Lamp',
+      'nameID': 'CarbideHelmetLamp',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 5,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LeatherHideItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CarbideHelmetLampItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Crushed Coal',
+      'nameID': 'CrushedCoal',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 1,
+      'labor': 50,
+      'craftingTable': getCraftingTableByNameID('ArrastraObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CoalItem'),
+          'quantity': 12,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CrushedCoalItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('CrushedMixedRockItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Crushed Coal Lv2',
+      'nameID': 'CrushedCoalLv2',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 2,
+      'labor': 70,
+      'craftingTable': getCraftingTableByNameID('StampMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CoalItem'),
+          'quantity': 20,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CrushedCoalItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('CrushedMixedRockItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Crushed Coal Lv3',
+      'nameID': 'CrushedCoalLv3',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 4,
+      'labor': 90,
+      'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CoalItem'),
+          'quantity': 20,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CrushedCoalItem'),
+          'quantity': 5,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Oil Head Lamp',
+      'nameID': 'OilHeadLamp',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 5,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('IronPlateItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LeatherHideItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilHeadLampItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Refine Heart Of Palm',
+      'nameID': 'RefineHeartOfPalm',
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 1,
+      'labor': 30,
+      'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PalmLogItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HeartOfPalmItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('WoodPulpItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Sandals',
+      'nameID': 'Sandals',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 1,
+      'labor': 150,
+      'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LeatherHideItem'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SandalsItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Overalls',
+      'nameID': 'ShipwrightOveralls',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 5,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 40,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightOverallsItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Hat',
+      'nameID': 'ShipwrightHat',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 5,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 25,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightHatItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Sandals',
+      'nameID': 'ShipwrightSandals',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 5,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LeatherHideItem'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightSandalsItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Shirt',
+      'nameID': 'ShipwrightShirt',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 5,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 30,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightShirtItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Smith Shirt',
+      'nameID': 'SmithShirt',
+      'skill': getSkillByNameID('TailoringSkill'),
+      'level': 5,
+      'labor': 1200,
+      'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonFabricItem'),
+          'quantity': 30,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmithShirtItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wet Brick',
+      'nameID': 'WetBrick',
+      'skill': getSkillByNameID('PotterySkill'),
+      'level': 1,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SandItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ClayItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenMoldItem'),
+          'quantity': 4,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WetBrickItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Mold',
+      'nameID': 'WoodenMold',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('NailItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenMoldItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Abstract Fixture',
+      'nameID': 'SteelAbstractFixture',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelAbstractFixtureItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Hanging Fixture',
+      'nameID': 'SteelHangingFixture',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelHangingFixtureItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Hanging Lamp',
+      'nameID': 'SteelHangingLamp',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 4,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelHangingLampItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Kitchen Lamp',
+      'nameID': 'SteelKitchenLamp',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelKitchenLampItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Searchlight',
+      'nameID': 'SteelSearchlight',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelPlateItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 4,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelSearchlightItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Steel Square Fixture',
+      'nameID': 'SteelSquareFixture',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 120,
+      'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SteelBarItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('CompositeLumber'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SteelSquareFixtureItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Clean Crab',
+      'nameID': 'CleanCrab',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CrabCarcassItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Clean Large Fish',
+      'nameID': 'CleanLargeFish',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('LargeFish'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Clean Medium Fish',
+      'nameID': 'CleanMediumFish',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('MediumFish'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Clean Moon Jellyfish',
+      'nameID': 'CleanMoonJellyfish',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('MoonJellyfishItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Clean Pacific Sardine',
+      'nameID': 'CleanPacificSardine',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 20,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PacificSardineItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Clean Urchins',
+      'nameID': 'CleanUrchins',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('UrchinItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Dry Fish',
+      'nameID': 'DryFish',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 2,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FishRackObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DriedFishItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Dry Meat',
+      'nameID': 'DryMeat',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 2,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FishRackObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RawMeatItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DriedMeatItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Geology Research Paper Modern Glass',
+      'nameID': 'GeologyResearchPaperModernGlass',
+      'skill': getSkillByNameID('GlassworkingSkill'),
+      'level': 1,
+      'labor': 600,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GlassItem'),
+          'quantity': 30,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GeologyResearchPaperModernItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Hunting Upgrade',
+      'nameID': 'HuntingUpgrade',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 7,
+      'labor': 3000,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BasicUpgradeLvl4Item'),
+          'quantity': 1,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HuntingUpgradeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shred Kelp',
+      'nameID': 'ShredKelp',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 0,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('KelpItem'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PlantFibersItem'),
+          'quantity': 7,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shuck Clams',
+      'nameID': 'ShuckClams',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FisheryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('ClamItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Sweet Jerky',
+      'nameID': 'SweetJerky',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 4,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('FishRackObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RawMeatItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SugarItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Oil'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Fruit'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SweetDeerJerkyItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true

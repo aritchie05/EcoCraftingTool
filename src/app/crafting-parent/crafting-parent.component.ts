@@ -97,6 +97,13 @@ export class CraftingParentComponent implements OnInit {
           exists = true;
         }
       });
+      this.outputsComponent.outputRecipes.forEach(recipe => {
+        if (recipe.primaryOutput.item.nameID.localeCompare(item.nameID) === 0) {
+          exists = true;
+        }
+      })
+
+      //Add the ingredient if it does not exist in the ingredients list or output recipes list
       if (!exists) {
         this.ingredientsComponent.itemIngredients.push(item);
       }
@@ -308,6 +315,21 @@ export class CraftingParentComponent implements OnInit {
         this.removeItemIngredient(ingredient.item.nameID);
       }
     });
+
+    //Remove associated crafting table if it's no longer needed
+    let tableStillNeeded = false;
+    for (let outputRecipe of this.outputsComponent.outputRecipes) {
+      if (outputRecipe.craftingTable.nameID.localeCompare(recipe.craftingTable.nameID) === 0) {
+        tableStillNeeded = true;
+        break;
+      }
+    }
+    if (!tableStillNeeded) {
+      let index = this.skillsComponent.craftingTables.findIndex(table => {
+        return table.nameID.localeCompare(recipe.craftingTable.nameID) === 0;
+      });
+      this.skillsComponent.craftingTables.splice(index, 1);
+    }
 
     this.recalculateOutputPrices();
 
