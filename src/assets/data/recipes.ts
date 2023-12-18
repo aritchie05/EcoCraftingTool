@@ -20190,7 +20190,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('Fabric'),
+          'item': getItemByNameID('LinenFabricItem'),
           'quantity': 12,
           'reducible': true
         },
