@@ -1812,7 +1812,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 2,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -1841,7 +1841,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 4,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('MasonryTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -1880,7 +1880,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 5,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -1919,7 +1919,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 6,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
         {
