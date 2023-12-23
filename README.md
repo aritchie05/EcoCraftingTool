@@ -26,7 +26,7 @@ To deploy to a web server, run the Angular build command `ng build --prod`. This
 
 ## Angular Details
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+This project was built with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
 ### Development server
 
