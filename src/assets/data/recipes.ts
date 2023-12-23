@@ -399,20 +399,20 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Advanced Upgrade 1',
       'nameID': 'AdvancedUpgradeLvl1',
-      'skill': getSkillByNameID('PotterySkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 2,
       'labor': 90,
-      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('BrickItem'),
-          'quantity': 20,
+          'item': getItemByNameID('GeologyResearchPaperModernItem'),
+          'quantity': 1,
           'reducible': true
         },
         {
-          'item': getItemByNameID('ClayItem'),
-          'quantity': 12,
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -428,10 +428,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Advanced Upgrade 2',
       'nameID': 'AdvancedUpgradeLvl2',
-      'skill': getSkillByNameID('GlassworkingSkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 4,
       'labor': 90,
-      'craftingTable': getCraftingTableByNameID('GlassworksObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -440,13 +440,13 @@ export let standardRecipes: Recipe[] =
           'reducible': false
         },
         {
-          'item': getItemByNameID('GlassItem'),
-          'quantity': 12,
+          'item': getItemByNameID('AgricultureResearchPaperModernItem'),
+          'quantity': 1,
           'reducible': true
         },
         {
-          'item': getItemByNameID('SandItem'),
-          'quantity': 10,
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -462,10 +462,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Advanced Upgrade 3',
       'nameID': 'AdvancedUpgradeLvl3',
-      'skill': getSkillByNameID('SmeltingSkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 5,
       'labor': 90,
-      'craftingTable': getCraftingTableByNameID('AnvilObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -474,13 +474,18 @@ export let standardRecipes: Recipe[] =
           'reducible': false
         },
         {
-          'item': getItemByNameID('IronBarItem'),
-          'quantity': 6,
+          'item': getItemByNameID('MetallurgyResearchPaperAdvancedItem'),
+          'quantity': 1,
           'reducible': true
         },
         {
-          'item': getItemByNameID('NailItem'),
-          'quantity': 10,
+          'item': getItemByNameID('CulinaryResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -496,10 +501,10 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Advanced Upgrade 4',
       'nameID': 'AdvancedUpgradeLvl4',
-      'skill': getSkillByNameID('MechanicsSkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 6,
       'labor': 90,
-      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -508,18 +513,18 @@ export let standardRecipes: Recipe[] =
           'reducible': false
         },
         {
-          'item': getItemByNameID('IronPlateItem'),
-          'quantity': 6,
+          'item': getItemByNameID('DendrologyResearchPaperModernItem'),
+          'quantity': 1,
           'reducible': true
         },
         {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 12,
+          'item': getItemByNameID('EngineeringResearchPaperModernItem'),
+          'quantity': 1,
           'reducible': true
         },
         {
-          'item': getItemByNameID('PistonItem'),
-          'quantity': 8,
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -1804,15 +1809,20 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Basic Upgrade 1',
       'nameID': 'BasicUpgradeLvl1',
-      'skill': getSkillByNameID('LoggingSkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 2,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('HewnLog'),
-          'quantity': 40,
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 3,
           'reducible': true
         }
       ],
@@ -1828,26 +1838,31 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Basic Upgrade 2',
       'nameID': 'BasicUpgradeLvl2',
-      'skill': getSkillByNameID('MasonrySkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 4,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('MasonryTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
+        {
+          'item': getItemByNameID('DendrologyResearchPaperBasicItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperBasicItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 4,
+          'reducible': true
+        },
         {
           'item': getItemByNameID('BasicUpgradeLvl1Item'),
           'quantity': 1,
           'reducible': false
-        },
-        {
-          'item': getItemByNameID('MortaredStone'),
-          'quantity': 20,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('MortarItem'),
-          'quantity': 20,
-          'reducible': true
         }
       ],
       'outputs': [
@@ -1862,31 +1877,31 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Basic Upgrade 3',
       'nameID': 'BasicUpgradeLvl3',
-      'skill': getSkillByNameID('CarpentrySkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 5,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
+        {
+          'item': getItemByNameID('CulinaryResearchPaperBasicItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AgricultureResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
         {
           'item': getItemByNameID('BasicUpgradeLvl2Item'),
           'quantity': 1,
           'reducible': false
-        },
-        {
-          'item': getItemByNameID('LinenFabricItem'),
-          'quantity': 16,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('WoodBoard'),
-          'quantity': 10,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('WoodenHullPlanksItem'),
-          'quantity': 4,
-          'reducible': true
         }
       ],
       'outputs': [
@@ -1901,25 +1916,30 @@ export let standardRecipes: Recipe[] =
     {
       'name': 'Basic Upgrade 4',
       'nameID': 'BasicUpgradeLvl4',
-      'skill': getSkillByNameID('BasicEngineeringSkill'),
+      'skill': getSkillByNameID('SelfImprovementSkill'),
       'level': 6,
       'labor': 60,
-      'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
       'ingredients': [
+        {
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperAdvancedItem'),
+          'quantity': 1,
+          'reducible': true
+        },
         {
           'item': getItemByNameID('BasicUpgradeLvl3Item'),
           'quantity': 1,
           'reducible': false
         },
         {
-          'item': getItemByNameID('CottonFabricItem'),
-          'quantity': 20,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('WoodenWheelItem'),
-          'quantity': 20,
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 2,
           'reducible': true
         }
       ],
