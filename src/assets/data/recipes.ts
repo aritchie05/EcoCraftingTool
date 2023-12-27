@@ -24793,5 +24793,73 @@ export let standardRecipes: Recipe[] =
           'primary': true
         }
       ]
+    },
+    {
+      'name': 'Easel',
+      'nameID': 'Easel',
+      'skill': getSkillByNameID('SelfImprovementSkill'),
+      'level': 1,
+      'labor': 160,
+      'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 4,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('Wood'),
+          'quantity': 12,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('EaselItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Art Supplies',
+      'nameID': 'ArtSupplies',
+      'skill': getSkillByNameID('SelfImprovementSkill'),
+      'level': 1,
+      'labor': 40,
+      'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CanvasItem'),
+          'quantity': 4,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('OilPaintItem'),
+          'quantity': 2,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 4,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ArtSuppliesItem'),
+          'quantity': 8,
+          'reducible': false,
+          'primary': true
+        }
+      ]
     }
   ];
