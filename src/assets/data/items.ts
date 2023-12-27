@@ -2802,7 +2802,10 @@ export let items: Item[] =
     {
       'name': 'Easel',
       'nameID': 'EaselItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 1,
+      'yPos': 12
     },
     {
       'name': 'Ecko Statue',
