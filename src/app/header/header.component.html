@@ -20,7 +20,7 @@
       <div aria-labelledby="exportButton" class="dropdown-menu dark-input io-menu">
         <label class="sr-only" for="exportTextBox">Export Text Box</label>
         <textarea #exportBox id="exportTextBox" class="darker-input form-control io-input"
-                  [value]="exportConfig" readonly></textarea>
+                  [value]="exportConfig" readonly (click)="selectAllText(exportBox)"></textarea>
         <button class="btn darker-input hoverable float-right mt-1" [cdkCopyToClipboard]="exportBox.value">{{message('copyClipboardButton')}}</button>
       </div>
     </div>

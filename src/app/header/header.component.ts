@@ -120,4 +120,8 @@ export class HeaderComponent implements OnInit {
       window.alert('Incorrect format for import. Please use valid JSON exported from another configuration of eco calc.')
     }
   }
+
+  selectAllText(exportBox: HTMLTextAreaElement) {
+    exportBox.setSelectionRange(0, exportBox.value.length);
+  }
 }
