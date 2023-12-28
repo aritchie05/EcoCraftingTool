@@ -1,9 +1,29 @@
 <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark-elevated-1 border-bottom-primary text-light mb-2">
-  <div class="navbar-brand dropdown">
+  <div class="navbar-brand">
     <img alt="Eco" class="d-inline-block align-top logo-margin" height="30"
          [src]="imageBaseUrl + 'eco-logo-new.png'">
     {{message('navTitle')}}
     <app-release-notes></app-release-notes>
+    <div class="dropdown d-inline">
+      <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" id="importButton"
+              class="btn dark-input hoverable io-button" type="button">{{message('importHeader')}}</button>
+      <div aria-labelledby="importButton" class="dropdown-menu dark-input io-menu">
+        <label class="sr-only" for="importTextBox">Import Text Box</label>
+        <textarea #importBox id="importTextBox"  class="darker-input form-control io-input"></textarea>
+        <button class="btn darker-input hoverable float-right mt-1" (click)="onImportConfig(importBox.value)">{{message('importButton')}}</button>
+      </div>
+    </div>
+
+    <div class="dropdown d-inline">
+      <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" id="exportButton"
+              class="btn dark-input hoverable io-button" type="button" (click)="exportCalcConfigEvent.emit()">{{message('exportHeader')}}</button>
+      <div aria-labelledby="exportButton" class="dropdown-menu dark-input io-menu">
+        <label class="sr-only" for="exportTextBox">Export Text Box</label>
+        <textarea #exportBox id="exportTextBox" class="darker-input form-control io-input"
+                  [value]="exportConfig" readonly></textarea>
+        <button class="btn darker-input hoverable float-right mt-1" [cdkCopyToClipboard]="exportBox.value">{{message('copyClipboardButton')}}</button>
+      </div>
+    </div>
   </div>
   <div class="collapse navbar-collapse" id="navbarLinks">
     <ul class="navbar-nav mr-auto">

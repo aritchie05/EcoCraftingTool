@@ -55,17 +55,6 @@ export class SkillsComponent implements OnInit, AfterContentInit {
         skill.lavishChecked = sk.lav;
         this.selectedSkills.push(skill);
       });
-    } else if (this.cookieService.check('skills')) {
-      let skillCookies: SkillCookie[] = JSON.parse(atob(this.cookieService.get('skills')));
-      skillCookies.forEach(cookie => {
-        let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(cookie.id) === 0);
-        skill.level = cookie.lvl;
-        skill.lavishChecked = cookie.lav;
-        this.selectedSkills.push(skill);
-      });
-
-      this.cookieService.delete('skills');
-      this.storageService.set('skills', skillCookies);
     }
 
     let tables = this.storageService.get('tables');
@@ -76,17 +65,6 @@ export class SkillsComponent implements OnInit, AfterContentInit {
         table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(tb.up) === 0);
         this.craftingTables.push(table);
       });
-    } else if (this.cookieService.check('tables')) {
-      let tableCookies: TableCookie[] = JSON.parse(atob(this.cookieService.get('tables')));
-      tableCookies.forEach(cookie => {
-        let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(cookie.id) === 0);
-        table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
-        table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(cookie.up) === 0);
-        this.craftingTables.push(table);
-      });
-
-      this.cookieService.delete('tables');
-      this.storageService.set('tables', tableCookies);
     }
   }
 

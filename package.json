@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --watch=false",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "test-ci": "ng test --karma-config=karma-ci.conf.js --no-progress",
@@ -13,6 +13,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^12.0.0",
+    "@angular/cdk": "^12.2.13",
     "@angular/common": "^12.0.0",
     "@angular/compiler": "^12.0.0",
     "@angular/core": "^12.0.0",
