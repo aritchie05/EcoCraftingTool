@@ -3,7 +3,15 @@
 Crafting calculator for Eco Global Survival by Strange Loop Games located at https://eco-calc.com. Computes production
 costs for in-game items based on labor, materials, and crafting table upgrades.
 
+## Workspace Setup
+
+To run this project locally, you will want to use an IDE with support for [npm](https://www.npmjs.com/) projects. The recommended Node.js version to work with Angular 12.0.0 is [v14.21.3](https://nodejs.org/download/release/v14.21.3/). Note that this version comes bundled with npm v6.14.18.
+As a small note, I actually run this project locally on Node.js v16.20.1 with no issues, other than some Unsupported engine warnings in the Terminal. Make of that what you will.
+
+Once you have the project cloned in your IDE, run `npm install` to download all the dependencies. Then, run `npm start` to start a local server at http://localhost:4200.
+
 ## Dev Workflow
+
 To edit the repository, create a feature branch like `recipe-updates-9.6` and push the changes to that feature branch. Then, open a pull request into the `develop` branch. Verify and test the changes using the develop domain at https://eco-crafting-tool.vercel.app. Once the changes are confirmed, create a GitHub release and merge `develop` into `master`. This will deploy the changes to https://eco-calc.com.
 
 ## Editing Recipes and Items

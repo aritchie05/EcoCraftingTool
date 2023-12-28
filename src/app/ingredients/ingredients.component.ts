@@ -46,35 +46,16 @@ export class IngredientsComponent implements OnInit {
         item.price = ing.pr;
         this.itemIngredients.push(item);
       });
-    } else if (this.cookieService.check('ingredients')) {
-      let ingredientCookies: IngredientCookie[] = JSON.parse(atob(this.cookieService.get('ingredients')));
-      ingredientCookies.forEach(cookie => {
-        let item = this.dataService.getItems().find(item => item.nameID.localeCompare(cookie.id) === 0);
-        item.price = cookie.pr;
-        this.itemIngredients.push(item);
-      });
-      this.cookieService.delete('ingredients');
-      this.storageService.set('ingredients', ingredientCookies);
     }
 
     let laborCost = this.storageService.get('laborCost');
     if (laborCost != null) {
       this.laborCost = Number.parseFloat(laborCost);
-    } else if (this.cookieService.check('laborCost')) {
-      this.laborCost = Number.parseFloat(this.cookieService.get('laborCost'));
-      this.cookieService.delete('laborCost');
-      this.storageService.set('laborCost', this.laborCost.toLocaleString(this.localeService.selectedLocale.code,
-        {minimumFractionDigits: 0, maximumFractionDigits: 2}));
     }
 
     let profit = this.storageService.get('profitPercent');
     if (profit != null) {
       this.profitPercent = Number.parseFloat(profit);
-    } else if (this.cookieService.check('profitPercent')) {
-      this.profitPercent = Number.parseFloat(this.cookieService.get('profitPercent'));
-      this.cookieService.delete('profitPercent');
-      this.storageService.set('profitPercent', this.profitPercent.toLocaleString(this.localeService.selectedLocale.code,
-        {minimumFractionDigits: 0, maximumFractionDigits: 2}));
     }
   }
 

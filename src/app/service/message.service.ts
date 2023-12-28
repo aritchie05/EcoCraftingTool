@@ -89,6 +89,234 @@ const messages: Message[] =
       ]
     },
     {
+      'id': 'importHeader',
+      'localizedMessages': [
+        {
+          'text': 'Import',
+          'lang': 'en'
+        },
+        {
+          'text': 'Importer',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Importar',
+          'lang': 'es'
+        },
+        {
+          'text': 'Importieren',
+          'lang': 'de'
+        },
+        {
+          'text': 'Importar',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Importare',
+          'lang': 'it'
+        },
+        {
+          'text': 'İçe aktarmak',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Import',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Импортировать',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Імпорт',
+          'lang': 'uk'
+        },
+        {
+          'text': '수입',
+          'lang': 'ko'
+        },
+        {
+          'text': '进口',
+          'lang': 'zh'
+        },
+        {
+          'text': '輸入',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'importButton',
+      'localizedMessages': [
+        {
+          'text': 'Import To Calculator',
+          'lang': 'en'
+        },
+        {
+          'text': 'Importer vers la calculatrice',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Importar a calculadora',
+          'lang': 'es'
+        },
+        {
+          'text': 'In Rechner importieren',
+          'lang': 'de'
+        },
+        {
+          'text': 'Importar para calculadora',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Importa nella calcolatrice',
+          'lang': 'it'
+        },
+        {
+          'text': 'Hesap Makinesine Aktar',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Importuj do kalkulatora',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Импортировать в калькулятор',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Імпорт до калькулятора',
+          'lang': 'uk'
+        },
+        {
+          'text': '계산기로 가져오기',
+          'lang': 'ko'
+        },
+        {
+          'text': '导入到计算器',
+          'lang': 'zh'
+        },
+        {
+          'text': '電卓にインポート',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'exportHeader',
+      'localizedMessages': [
+        {
+          'text': 'Export',
+          'lang': 'en'
+        },
+        {
+          'text': 'Exporter',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Exportar',
+          'lang': 'es'
+        },
+        {
+          'text': 'Exportieren',
+          'lang': 'de'
+        },
+        {
+          'text': 'Exportar',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Esportare',
+          'lang': 'it'
+        },
+        {
+          'text': 'İhracat',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Eksport',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Экспорт',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Експорт',
+          'lang': 'uk'
+        },
+        {
+          'text': '내보내다',
+          'lang': 'ko'
+        },
+        {
+          'text': '出口',
+          'lang': 'zh'
+        },
+        {
+          'text': '輸出',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'copyClipboardButton',
+      'localizedMessages': [
+        {
+          'text': 'Copy to Clipboard',
+          'lang': 'en'
+        },
+        {
+          'text': 'Copier dans le presse-papier',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Copiar al portapapeles',
+          'lang': 'es'
+        },
+        {
+          'text': 'In die Zwischenablage kopieren',
+          'lang': 'de'
+        },
+        {
+          'text': 'Copiar para área de transferência',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Copia negli appunti',
+          'lang': 'it'
+        },
+        {
+          'text': 'Panoya kopyala',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Skopiuj do schowka',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Скопировать в буфер обмена',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Копіювати в буфер обміну',
+          'lang': 'uk'
+        },
+        {
+          'text': '클립 보드에 복사',
+          'lang': 'ko'
+        },
+        {
+          'text': '复制到剪贴板',
+          'lang': 'zh'
+        },
+        {
+          'text': 'クリップボードにコピー',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'resourceCostMultiplier',
       'localizedMessages': [
         {

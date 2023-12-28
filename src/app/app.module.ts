@@ -12,7 +12,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
 import {CookieService} from 'ngx-cookie-service';
 import {ReleaseNotesComponent} from './release-notes/release-notes.component';
-import { RecipeModalComponent } from './recipe-modal/recipe-modal.component';
+import {RecipeModalComponent} from './recipe-modal/recipe-modal.component';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RecipeModalComponent } from './recipe-modal/recipe-modal.component';
   imports: [
     BrowserModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ClipboardModule
   ],
   providers: [
     CookieService
