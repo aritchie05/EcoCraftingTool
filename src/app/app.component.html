@@ -3,7 +3,10 @@
   (updateLocaleEvent)="onUpdateLocale($event)"
   (updateWhiteTigerRecipesEvent)="onUpdateWhiteTigerRecipes($event)"
   (updateResourceCostMultiplierEvent)="onUpdateResourceCostMultiplier($event)"
+  (importCalcConfigEvent)="onImportCalcConfig($event)"
+  (exportCalcConfigEvent)="onExportCalcConfig()"
   [imageBaseUrl]="imageBaseUrl"
+  [exportConfig]="calcConfigJson"
 ></app-header>
 
 <div class="container-fluid top-padding bottom-margin">

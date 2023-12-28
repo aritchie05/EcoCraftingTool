@@ -3,6 +3,8 @@ import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {CalculatorConfig} from '../cookie/calculator-config';
+import {catchError} from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -18,11 +20,14 @@ export class HeaderComponent implements OnInit {
   resourceCostMultiplier: number;
 
   @Input() imageBaseUrl: string;
+  @Input() exportConfig: CalculatorConfig;
 
   @Output() updateLocaleEvent = new EventEmitter<Locale>();
   @Output() updateExpensiveEndgameCostEvent = new EventEmitter<boolean>();
   @Output() updateWhiteTigerRecipesEvent = new EventEmitter<boolean>();
   @Output() updateResourceCostMultiplierEvent = new EventEmitter<number>();
+  @Output() importCalcConfigEvent = new EventEmitter<CalculatorConfig>();
+  @Output() exportCalcConfigEvent = new EventEmitter();
 
 
   constructor(private localeService: LocaleService, private messageService: MessageService, private cookieService: CookieService,
@@ -39,10 +44,6 @@ export class HeaderComponent implements OnInit {
     let expensiveEndgame = this.storageService.get('expensiveEndgameCost');
     if (expensiveEndgame != null) {
       this.expensiveEndgameCostChecked = expensiveEndgame === 'true';
-    } else if (this.cookieService.check('expensiveEndgameCost')) {
-      this.expensiveEndgameCostChecked = this.cookieService.get('expensiveEndgameCost') === 'true';
-      this.cookieService.delete('expensiveEndgameCost');
-      this.storageService.set('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked);
     }
 
     let whiteTigerRecipes = this.storageService.get('whiteTigerRecipes');
@@ -53,10 +54,6 @@ export class HeaderComponent implements OnInit {
     let multiplier = this.storageService.get('resourceCostMultiplier');
     if (multiplier != null) {
       this.resourceCostMultiplier = Number.parseFloat(multiplier);
-    } else if (this.cookieService.check('resourceCostMultiplier')) {
-      this.resourceCostMultiplier = Number.parseFloat(this.cookieService.get('resourceCostMultiplier'));
-      this.cookieService.delete('resourceCostMultiplier');
-      this.storageService.set('resourceCostMultiplier', this.resourceCostMultiplier.toFixed(2));
     }
   }
 
@@ -113,5 +110,14 @@ export class HeaderComponent implements OnInit {
       }
     }
     return parseFloat(input);
+  }
+
+  onImportConfig(calcConfigJson: string): void {
+    try {
+      let calcConfig: CalculatorConfig = JSON.parse(calcConfigJson);
+      this.importCalcConfigEvent.emit(calcConfig);
+    } catch {
+      window.alert('Incorrect format for import. Please use valid JSON exported from another configuration of eco calc.')
+    }
   }
 }
