@@ -18,10 +18,12 @@ export class HeaderComponent implements OnInit {
   expensiveEndgameCostChecked: boolean;
   whiteTigerRecipesChecked: boolean;
   resourceCostMultiplier: number;
+  performanceModeChecked: boolean;
 
   @Input() imageBaseUrl: string;
   @Input() exportConfig: CalculatorConfig;
 
+  @Output() updatePerformanceModeEvent = new EventEmitter<boolean>();
   @Output() updateLocaleEvent = new EventEmitter<Locale>();
   @Output() updateExpensiveEndgameCostEvent = new EventEmitter<boolean>();
   @Output() updateWhiteTigerRecipesEvent = new EventEmitter<boolean>();
@@ -37,6 +39,7 @@ export class HeaderComponent implements OnInit {
     this.expensiveEndgameCostChecked = false;
     this.whiteTigerRecipesChecked = false;
     this.resourceCostMultiplier = 1;
+    this.performanceModeChecked = true;
   }
 
   ngOnInit(): void {
@@ -55,9 +58,15 @@ export class HeaderComponent implements OnInit {
     if (multiplier != null) {
       this.resourceCostMultiplier = Number.parseFloat(multiplier);
     }
+
+    let performanceMode = this.storageService.get('performanceMode');
+    if (performanceMode != null) {
+      this.performanceModeChecked = performanceMode === 'true';
+    }
   }
 
   saveDataToLocalStorage(): void {
+    this.storageService.set('performanceMode', '' + this.performanceModeChecked);
     this.storageService.set('expensiveEndgameCost', '' + this.expensiveEndgameCostChecked);
     this.storageService.set('whiteTigerRecipes', '' + this.whiteTigerRecipesChecked);
     this.storageService.set('resourceCostMultiplier', this.resourceCostMultiplier.toFixed(2));
@@ -123,5 +132,11 @@ export class HeaderComponent implements OnInit {
 
   selectAllText(exportBox: HTMLTextAreaElement) {
     exportBox.setSelectionRange(0, exportBox.value.length);
+  }
+
+  onPerformanceModeChange(checked: boolean) {
+    this.performanceModeChecked = checked;
+    this.updatePerformanceModeEvent.emit(checked);
+    this.saveDataToLocalStorage();
   }
 }

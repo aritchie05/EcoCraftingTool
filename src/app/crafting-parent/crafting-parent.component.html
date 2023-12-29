@@ -17,12 +17,14 @@
                    [imageTemplateUrl]="imageTemplateUrl"
                    class="col bg-dark-elevated-2 col-border bottom-padding">
   </app-ingredients>
-  <app-outputs (itemRemovedEvent)="onItemRemoved($event)"
+  <app-outputs (calculatePricesEvent)="recalculateOutputPrices()"
+               (itemRemovedEvent)="onItemRemoved($event)"
                (recipeAddedEvent)="onRecipeAdded($event)"
                (subRecipeRemovedEvent)="onSubRecipeRemoved($event)"
                (recipeModalOpenedEvent)="onRecipeModalOpened($event)"
                [imageBaseUrl]="imageBaseUrl"
                [imageTemplateUrl]="imageTemplateUrl"
+               [performanceModeEnabled]="performanceModeEnabled"
                class="col-5 bg-dark-elevated-2 col-border bottom-padding">
   </app-outputs>
 </div>

@@ -66,9 +66,7 @@ export class IngredientsComponent implements OnInit {
   onPriceChange(item: Item, value: string) {
     let price = this.toFloat(value);
     if (price !== item.price && !isNaN(price)) {
-      const index = this.itemIngredients.findIndex(i => i.nameID === item.nameID);
       item.price = price;
-      this.itemIngredients[index] = item;
       this.ingredientPriceChangedEvent.emit(item);
     }
   }

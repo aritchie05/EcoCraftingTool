@@ -37,6 +37,22 @@
       </button>
       <div aria-labelledby="settingsButton" class="dropdown-menu dark-input settings-menu">
         <div class="row">
+          <div class="col-9">
+            <span class="settings-label">{{message('performanceMode')}}</span>
+            <span class="material-icons-outlined md-light hoverable info-icon"
+                  (mouseenter)="performanceModeDescription.hidden = false"
+                  (mouseleave)="performanceModeDescription.hidden = true">info</span>
+            <div #performanceModeDescription class="position-relative" hidden>
+              <span class="info-icon-text">{{message('performanceModeDescription')}}</span>
+            </div>
+          </div>
+          <input #performanceModeBox (change)="onPerformanceModeChange(performanceModeBox.checked)"
+                 [checked]="performanceModeChecked"
+                 class="form-control float-right dark-input col-2 settings-checkbox"
+                 id="performanceMode" type="checkbox">
+        </div>
+        <hr class="dropdown-divider">
+        <div class="row">
           <span class="col-9 settings-label">{{message('endGameCraftOption')}}</span>
           <input #expensiveEndgameCraftBox (change)="onEndgameCostChange(expensiveEndgameCraftBox.checked)"
                  [checked]="expensiveEndgameCostChecked"
@@ -76,6 +92,6 @@
         </a>
       </div>
     </form>
-    <span class="navbar-text text-light">{{message('version')}} 10.0.1</span>
+    <span class="navbar-text text-light">{{message('version')}} 10.0.3</span>
   </div>
 </nav>

@@ -33,7 +33,7 @@
 }
 
 .settings-label {
-  margin-left: 5px;
+  margin-left: 0;
 }
 
 .dropdown-divider {
@@ -55,4 +55,14 @@
 .io-input {
   width: 40rem;
   height: 40rem;
+}
+
+.info-icon {
+  font-size: 18px;
+  margin-left: 3px;
+  vertical-align: sub;
+}
+
+.info-icon-text {
+  font-style: italic;
 }

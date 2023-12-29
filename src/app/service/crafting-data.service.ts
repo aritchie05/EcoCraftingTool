@@ -195,6 +195,12 @@ export class CraftingDataService {
   }
 
   private setIngredientPricesandPrimaryOutput(recipe: Recipe): void {
+    if (recipe.price === undefined) {
+      recipe.price = 0;
+    }
+    if (recipe.basePrice === undefined) {
+      recipe.basePrice = 0;
+    }
     for (let i = 0; i < recipe.ingredients.length; i++) {
       if (recipe.ingredients[i].price === undefined) {
         recipe.ingredients[i].price = 0;

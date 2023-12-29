@@ -28,8 +28,9 @@ import {RecipeModalComponent} from '../recipe-modal/recipe-modal.component';
 })
 export class CraftingParentComponent implements OnInit {
 
-  @Input() imageBaseUrl;
-  @Input() imageTemplateUrl;
+  @Input() imageBaseUrl: string;
+  @Input() imageTemplateUrl: string;
+  @Input() performanceModeEnabled: boolean;
 
   @ViewChild(SkillsComponent)
   private skillsComponent: SkillsComponent;
@@ -101,7 +102,7 @@ export class CraftingParentComponent implements OnInit {
         if (recipe.primaryOutput.item.nameID.localeCompare(item.nameID) === 0) {
           exists = true;
         }
-      })
+      });
 
       //Add the ingredient if it does not exist in the ingredients list or output recipes list
       if (!exists) {
@@ -117,38 +118,41 @@ export class CraftingParentComponent implements OnInit {
 
     let recipesNotConfirmed = new Array<Recipe>();
 
-    //Initial loop through the recipes to get as many prices as possible
-    recipes.forEach(recipe => {
-      let price = this.calculatePrice(recipe);
-      if (price !== Number.MIN_VALUE) {
-        if (this.hasOtherRecipes(recipe)) {
-          recipesNotConfirmed.push(recipe);
-        } else {
-          recipe.price = price;
-          this.outputsComponent.outputRecipes.push(recipe);
-        }
-      } else {
-        recipesNotConfirmed.push(recipe);
-      }
-    });
-
-    //Now loop through the recipes not found to retry them (limit 10 loops)
-    for (let i = 0; i < 10 && recipesNotConfirmed.length > 0; i++) {
-
-      for (let i = recipesNotConfirmed.length - 1; i >= 0; i--) {
-        let recipe = recipesNotConfirmed[i];
+    if (!this.performanceModeEnabled) {
+      //Initial loop through the recipes to get as many prices as possible
+      recipes.forEach(recipe => {
         let price = this.calculatePrice(recipe);
         if (price !== Number.MIN_VALUE) {
-          recipe.price = price;
-          recipesNotConfirmed.splice(i, 1);
-          this.outputsComponent.outputRecipes.push(recipe);
-        } else if (i < 10) {
-          console.debug(`Could not calculate price for recipe ${recipe.name}, will try again on next loop.`);
+          if (this.hasOtherRecipes(recipe)) {
+            recipesNotConfirmed.push(recipe);
+          } else {
+            recipe.price = price;
+            this.outputsComponent.outputRecipes.push(recipe);
+          }
         } else {
-          console.debug(`Exhausted retries for price calculation for recipe ${recipe.name}`);
+          recipesNotConfirmed.push(recipe);
+        }
+      });
+
+      //Now loop through the recipes not found to retry them (limit 10 loops)
+      for (let i = 0; i < 10 && recipesNotConfirmed.length > 0; i++) {
+
+        for (let i = recipesNotConfirmed.length - 1; i >= 0; i--) {
+          let recipe = recipesNotConfirmed[i];
+          let price = this.calculatePrice(recipe);
+          if (price !== Number.MIN_VALUE) {
+            recipe.price = price;
+            recipesNotConfirmed.splice(i, 1);
+            this.outputsComponent.outputRecipes.push(recipe);
+          } else if (i < 10) {
+            console.debug(`Could not calculate price for recipe ${recipe.name}, will try again on next loop.`);
+          } else {
+            console.debug(`Exhausted retries for price calculation for recipe ${recipe.name}`);
+          }
         }
       }
-
+    } else {
+      this.outputsComponent.outputRecipes.push(...recipes);
     }
 
     //Finally sort the recipes array
@@ -186,24 +190,23 @@ export class CraftingParentComponent implements OnInit {
     });
 
     this.ingredientsComponent.sortIngredients();
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
     this.saveDataToLocalStorage();
   }
 
   onSkillLevelChanged(skill: Skill): void {
-    this.recalculateOutputPrices();
-
+    this.recalculateOutputPricesIfPerformanceModeOff();
     this.saveDataToLocalStorage();
   }
 
   onLavishUpdated(skill: Skill): void {
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
 
   onUpgradeChanged(table: CraftingTable) {
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
@@ -253,43 +256,45 @@ export class CraftingParentComponent implements OnInit {
     this.ingredientsComponent.itemIngredients.push(...newIngredients);
     this.ingredientsComponent.sortIngredients();
 
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
 
   onLaborCostChanged(value: number): void {
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
 
   onProfitPercentChanged(profitPercent: number): void {
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
 
   onIngredientPriceChanged(item: Item): void {
-    let affectedRecipes = this.outputsComponent.outputRecipes.filter(recipe => {
-      return recipe.ingredients.some(ingredient => {
-          return ingredient.item.nameID.localeCompare(item.nameID) === 0;
-        }
-      );
-    });
-
-
-    this.addDownstreamAffectedRecipes(affectedRecipes);
-    affectedRecipes.forEach(recipe => {
-      recipe.price = this.calculatePrice(recipe);
-      this.outputsComponent.outputRecipes.forEach((recipe2, index) => {
-        if (recipe.nameID.localeCompare(recipe2.nameID) === 0) {
-          this.outputsComponent.outputRecipes[index] = recipe;
-        }
+    if (!this.performanceModeEnabled) {
+      let affectedRecipes = this.outputsComponent.outputRecipes.filter(recipe => {
+        return recipe.ingredients.some(ingredient => {
+            return ingredient.item.nameID.localeCompare(item.nameID) === 0;
+          }
+        );
       });
-    });
 
-    this.outputsComponent.convertRecipesToOutputDisplays();
+
+      this.addDownstreamAffectedRecipes(affectedRecipes);
+      affectedRecipes.forEach(recipe => {
+        recipe.price = this.calculatePrice(recipe);
+        this.outputsComponent.outputRecipes.forEach((recipe2, index) => {
+          if (recipe.nameID.localeCompare(recipe2.nameID) === 0) {
+            this.outputsComponent.outputRecipes[index] = recipe;
+          }
+        });
+      });
+
+      this.outputsComponent.convertRecipesToOutputDisplays();
+    }
 
     this.saveDataToLocalStorage();
   }
@@ -331,7 +336,7 @@ export class CraftingParentComponent implements OnInit {
       this.skillsComponent.craftingTables.splice(index, 1);
     }
 
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
@@ -378,7 +383,7 @@ export class CraftingParentComponent implements OnInit {
 
     this.ingredientsComponent.sortIngredients();
 
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
@@ -399,7 +404,7 @@ export class CraftingParentComponent implements OnInit {
     //Remove skills that are no longer relevant
     this.checkSkillsForRemoval();
 
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
@@ -407,7 +412,7 @@ export class CraftingParentComponent implements OnInit {
   updateResourceCostMultiplier(newMultiplier: number): void {
     this.resourceCostMultiplier = newMultiplier;
 
-    this.recalculateOutputPrices();
+    this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
   }
@@ -650,11 +655,19 @@ export class CraftingParentComponent implements OnInit {
     }
   }
 
+  private recalculateOutputPricesIfPerformanceModeOff(): void {
+    if (!this.performanceModeEnabled) {
+      this.recalculateOutputPrices();
+    } else {
+      this.outputsComponent.convertRecipesToOutputDisplays();
+    }
+  }
+
   /**
    * Recalculates all output recipe prices and converts for display.
    * @private
    */
-  private recalculateOutputPrices(): void {
+  public recalculateOutputPrices(): void {
     for (let i = 0; i < 10; i++) {
       this.outputsComponent.outputRecipes.forEach(recipe => {
         recipe.price = this.calculatePrice(recipe);
@@ -746,7 +759,7 @@ export class CraftingParentComponent implements OnInit {
           recipeRowIndex++;
           if (output.itemNameID.localeCompare(outputDisplay.itemNameID) === 0) {
             if (sub.recipeNameID.localeCompare(recipeNameID) === 0) {
-              return recipeRowIndex >= 8 && recipeRowIndex >= (totalRecipeRows - 10)  &&
+              return recipeRowIndex >= 8 && recipeRowIndex >= (totalRecipeRows - 10) &&
                 (recipeRowIndex >= (this.ingredientsComponent.itemIngredients.length - 8));
             }
           }
