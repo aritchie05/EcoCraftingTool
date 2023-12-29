@@ -30,6 +30,8 @@ export class AppComponent implements OnInit {
   locale: Locale;
   calcConfig: CalculatorConfig;
   calcConfigJson: string;
+  performanceModeEnabled: boolean;
+
   @ViewChild(HeaderComponent)
   private headerComponent: HeaderComponent;
   @ViewChild(CraftingParentComponent)
@@ -40,6 +42,7 @@ export class AppComponent implements OnInit {
   constructor(private localeService: LocaleService, private messageService: MessageService,
               @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.locale = localeService.selectedLocale;
+    this.performanceModeEnabled = true;
     document.getElementById('page-title').innerText = 'Eco ' + messageService.getMessage('navTitle', this.locale);
     document.head.lang = this.locale.langCode();
   }
@@ -47,6 +50,10 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.calcConfig = this.readLocalStorageToCalcConfig();
     this.calcConfigJson = JSON.stringify(this.calcConfig);
+    let performanceMode = this.storageService.get('performanceMode');
+    if (performanceMode != null) {
+      this.performanceModeEnabled = performanceMode === 'true';
+    }
   }
 
   readLocalStorageToCalcConfig(): CalculatorConfig {
@@ -128,5 +135,9 @@ export class AppComponent implements OnInit {
   onExportCalcConfig() {
     this.calcConfig = this.readLocalStorageToCalcConfig();
     this.calcConfigJson = JSON.stringify(this.calcConfig);
+  }
+
+  onUpdatePerformanceMode(performanceMode: boolean) {
+    this.craftingParentComponent.performanceModeEnabled = performanceMode;
   }
 }

@@ -25,7 +25,9 @@ export class OutputsComponent implements OnInit, AfterContentInit {
 
   @Input() imageBaseUrl: string;
   @Input() imageTemplateUrl: string;
+  @Input() performanceModeEnabled: boolean;
 
+  @Output() calculatePricesEvent = new EventEmitter();
   @Output() recipeAddedEvent = new EventEmitter<Recipe>();
   @Output() itemRemovedEvent = new EventEmitter<Recipe[]>();
   @Output() subRecipeRemovedEvent = new EventEmitter<Recipe>();
@@ -288,5 +290,9 @@ export class OutputsComponent implements OnInit, AfterContentInit {
       });
     });
     this.convertRecipesToOutputDisplays();
+  }
+
+  onCalculatePrices() {
+    this.calculatePricesEvent.emit();
   }
 }

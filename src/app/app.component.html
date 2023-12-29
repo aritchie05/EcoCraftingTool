@@ -1,4 +1,5 @@
 <app-header
+  (updatePerformanceModeEvent)="onUpdatePerformanceMode($event)"
   (updateExpensiveEndgameCostEvent)="onUpdateEndgameCost($event)"
   (updateLocaleEvent)="onUpdateLocale($event)"
   (updateWhiteTigerRecipesEvent)="onUpdateWhiteTigerRecipes($event)"
@@ -11,7 +12,8 @@
 
 <div class="container-fluid top-padding bottom-margin">
   <app-crafting-parent [imageBaseUrl]="imageBaseUrl"
-                       [imageTemplateUrl]="imageTemplateUrl">
+                       [imageTemplateUrl]="imageTemplateUrl"
+                       [performanceModeEnabled]="performanceModeEnabled">
   </app-crafting-parent>
 </div>
 

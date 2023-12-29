@@ -488,6 +488,120 @@ const messages: Message[] =
       ]
     },
     {
+      'id': 'performanceMode',
+      'localizedMessages': [
+        {
+          'text': 'Performance Mode',
+          'lang': 'en'
+        },
+        {
+          'text': 'Mode Performance',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Modo de desempeño',
+          'lang': 'es'
+        },
+        {
+          'text': 'Leistungsmodus',
+          'lang': 'de'
+        },
+        {
+          'text': 'Modo de desempenho',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Modalità performante',
+          'lang': 'it'
+        },
+        {
+          'text': 'Performans modu',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Tryb wydajności',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Режим производительности',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Режим продуктивності',
+          'lang': 'uk'
+        },
+        {
+          'text': '성능 모드',
+          'lang': 'ko'
+        },
+        {
+          'text': '表演模式',
+          'lang': 'zh'
+        },
+        {
+          'text': 'パフォーマンスモード',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'performanceModeDescription',
+      'localizedMessages': [
+        {
+          'text': 'When enabled, the app will not recalculate prices until the "Calculate" button is clicked.',
+          'lang': 'en'
+        },
+        {
+          'text': 'Lorsqu\'il est activé, l\'application ne recalculera pas les prix tant que le bouton "Calculer" n\'est cliqué.',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Cuando está habilitado, la aplicación no recalculará los precios hasta que se haga clic en el botón "Calcular".',
+          'lang': 'es'
+        },
+        {
+          'text': 'Wenn die App aktiviert ist, berechnen die App die Preise erst neu, bis die Schaltfläche "Berechnen" klickt.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Quando ativado, o aplicativo não recalcula os preços até que o botão "calcular" seja clicado.',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Se abilitata, l\'app non ricalcolerà i prezzi fino a quando non viene cliccato il pulsante "Calcola".',
+          'lang': 'it'
+        },
+        {
+          'text': 'Etkinleştirildiğinde, "Hesapla" düğmesi tıklanana kadar uygulama fiyatları yeniden hesaplamaz.',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Po włączeniu aplikacja nie przeliczy cen, dopóki przycisk „Oblicz” nie zostanie kliknięty.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Якщо ввімкнено, додаток не буде перерахувати ціни до натискання кнопки "Обчислення".',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Якщо ввімкнено, додаток не буде перерахувати ціни до натискання кнопки "Обчислення".',
+          'lang': 'uk'
+        },
+        {
+          'text': '활성화되면 앱은 "계산"버튼을 클릭 할 때까지 가격을 다시 계산하지 않습니다.',
+          'lang': 'ko'
+        },
+        {
+          'text': '启用后，该应用不会重新计算价格，直到单击“计算”按钮。',
+          'lang': 'zh'
+        },
+        {
+          'text': '有効になった場合、「計算」ボタンがクリックされるまで、アプリは価格を再計算しません。',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'version',
       'localizedMessages': [
         {
@@ -1053,6 +1167,63 @@ const messages: Message[] =
         },
         {
           'text': 'レシピを選択してください...',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'calculatePrices',
+      'localizedMessages': [
+        {
+          'text': 'Calculate Prices',
+          'lang': 'en'
+        },
+        {
+          'text': 'Calculer les prix',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Calcular precios',
+          'lang': 'es'
+        },
+        {
+          'text': 'Preise berechnen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Calcular preços',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Calcola i prezzi',
+          'lang': 'it'
+        },
+        {
+          'text': 'Fiyatları hesapla',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Oblicz ceny',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Рассчитать цены',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Обчисліть ціни',
+          'lang': 'uk'
+        },
+        {
+          'text': '가격을 계산하십시오',
+          'lang': 'ko'
+        },
+        {
+          'text': '计算价格',
+          'lang': 'zh'
+        },
+        {
+          'text': '価格を計算します',
           'lang': 'ja'
         }
       ]
