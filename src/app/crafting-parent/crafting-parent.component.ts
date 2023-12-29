@@ -677,6 +677,11 @@ export class CraftingParentComponent implements OnInit {
     this.outputsComponent.convertRecipesToOutputDisplays();
   }
 
+  public onCalculatePrices(): void {
+    this.recalculateOutputPrices();
+    this.saveDataToLocalStorage();
+  }
+
   /**
    * Removes skills that no longer have any valid recipes in the outputs component.
    * @private

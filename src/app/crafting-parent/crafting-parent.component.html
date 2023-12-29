@@ -17,7 +17,7 @@
                    [imageTemplateUrl]="imageTemplateUrl"
                    class="col bg-dark-elevated-2 col-border bottom-padding">
   </app-ingredients>
-  <app-outputs (calculatePricesEvent)="recalculateOutputPrices()"
+  <app-outputs (calculatePricesEvent)="onCalculatePrices()"
                (itemRemovedEvent)="onItemRemoved($event)"
                (recipeAddedEvent)="onRecipeAdded($event)"
                (subRecipeRemovedEvent)="onSubRecipeRemoved($event)"
