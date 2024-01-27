@@ -5,8 +5,7 @@ costs for in-game items based on labor, materials, and crafting table upgrades.
 
 ## Workspace Setup
 
-To run this project locally, you will want to use an IDE with support for [npm](https://www.npmjs.com/) projects. The recommended Node.js version to work with Angular 12.0.0 is [v14.21.3](https://nodejs.org/download/release/v14.21.3/). Note that this version comes bundled with npm v6.14.18.
-As a small note, I actually run this project locally on Node.js v16.20.1 with no issues, other than some Unsupported engine warnings in the Terminal. Make of that what you will.
+To run this project locally, you will want to use an IDE with support for [npm](https://www.npmjs.com/) projects. The recommended Node.js version to work with Angular 17.0.0 is [v20.9.0](https://nodejs.org/download/release/v20.9.0/).
 
 Once you have the project cloned in your IDE, run `npm install` to download all the dependencies. Then, run `npm start` to start a local server at http://localhost:4200.
 
@@ -48,7 +47,7 @@ use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ### Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ### Running unit tests
 
@@ -56,7 +55,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ### Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ### Further help
 
