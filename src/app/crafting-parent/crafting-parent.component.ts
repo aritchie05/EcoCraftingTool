@@ -404,6 +404,20 @@ export class CraftingParentComponent implements OnInit {
     //Remove skills that are no longer relevant
     this.checkSkillsForRemoval();
 
+    //Add new item ingredients that may have been covered by recipes from the removed skill
+    let newIngredients = this.dataService.getUniqueItemIngredientsForRecipes(this.outputsComponent.outputRecipes);
+
+    //Filter array to only ingredients that are not already present
+    for (let i = newIngredients.length - 1; i >= 0; i--) {
+      let ingredient = newIngredients[i];
+      if (this.ingredientsComponent.itemIngredients.some(item => item.nameID.localeCompare(ingredient.nameID) === 0)) {
+        newIngredients.splice(i, 1);
+      }
+    }
+
+    this.ingredientsComponent.itemIngredients.push(...newIngredients);
+    this.ingredientsComponent.sortIngredients();
+
     this.recalculateOutputPricesIfPerformanceModeOff();
 
     this.saveDataToLocalStorage();
@@ -675,6 +689,11 @@ export class CraftingParentComponent implements OnInit {
     }
 
     this.outputsComponent.convertRecipesToOutputDisplays();
+  }
+
+  public onCalculatePrices(): void {
+    this.recalculateOutputPrices();
+    this.saveDataToLocalStorage();
   }
 
   /**

@@ -11781,7 +11781,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 5,
+          'quantity': 10,
           'reducible': true
         },
         {
@@ -11791,14 +11791,14 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('NailItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': true
         }
       ],
       'outputs': [
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false,
           'primary': true
         }
