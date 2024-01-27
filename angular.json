@@ -44,7 +44,10 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "allowedCommonJsDependencies": [
+              "codelyzer/util/isNotNullOrUndefined"
+            ]
           },
           "configurations": {
             "preview": {
