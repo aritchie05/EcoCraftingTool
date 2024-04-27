@@ -68,14 +68,6 @@ export class CraftingDataService {
     if (!this.locale.langCode().match('en')) {
       this.localize(this.locale);
     }
-
-    /*
-    this.http.get<CraftingData>(environment.craftingDataApi)
-      .subscribe(resp => {
-        craftingData = resp;
-        this.subjectData.next(resp);
-      });
-    */
   }
 
   filterTableList(searchQuery: string) {

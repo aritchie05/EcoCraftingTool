@@ -10132,5 +10132,149 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_06.png',
       'xPos': 0,
       'yPos': 0
+    },
+    {
+      'name': 'Blacksmith Advanced Upgrade',
+      'nameID': 'BlacksmithAdvancedUpgradeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 2,
+      'yPos': 11
+    },
+    {
+      'name': 'Blacksmith Table',
+      'nameID': 'BlacksmithTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 9,
+      'yPos': 10
+    },
+    {
+      'name': 'Blacksmith Upgrade',
+      'nameID': 'BlacksmithUpgradeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 1,
+      'yPos': 11
+    },
+    {
+      'name': 'Ceramic Mold',
+      'nameID': 'CeramicMoldItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 11,
+      'yPos': 10
+    },
+    {
+      'name': 'Clay Mold',
+      'nameID': 'ClayMoldItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 10,
+      'yPos': 10
+    },
+    {
+      'name': 'Digital Work Station',
+      'nameID': 'DigitalWorkStationItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Extruder',
+      'nameID': 'ExtruderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Fletching Table',
+      'nameID': 'FletchingTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 5,
+      'yPos': 11
+    },
+    {
+      'name': 'Gathering Advanced Upgrade',
+      'nameID': 'GatheringAdvancedUpgradeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 10
+    },
+    {
+      'name': 'Grindstone',
+      'nameID': 'GrindstoneItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 7,
+      'yPos': 10
+    },
+    {
+      'name': 'Ink',
+      'nameID': 'InkItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Lighthouse Lamp',
+      'nameID': 'LighthouseLampItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Paint Bucket',
+      'nameID': 'PaintBucketItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 12,
+      'yPos': 10
+    },
+    {
+      'name': 'Power Hammer',
+      'nameID': 'PowerHammerItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 6,
+      'yPos': 10
+    },
+    {
+      'name': 'Printing Supplies',
+      'nameID': 'PrintingSuppliesItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 11
+    },
+    {
+      'name': 'Smelting Basic Upgrade',
+      'nameID': 'SmeltingBasicUpgradeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 15,
+      'yPos': 10
+    },
+    {
+      'name': 'Tailoring Basic Upgrade',
+      'nameID': 'TailoringUpgradeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 6,
+      'yPos': 13
+    },
+    {
+      'name': 'Town Bell',
+      'nameID': 'TownBellItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 8,
+      'yPos': 10
     }
   ];

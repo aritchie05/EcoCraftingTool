@@ -81,6 +81,17 @@ export let skills: Skill[] =
       'yPos': 0
     },
     {
+      'name': 'Blacksmith',
+      'nameID': 'BlacksmithSkill',
+      'basicUpgrade': true,
+      'advancedUpgrade': true,
+      'modernUpgrade': false,
+      'lavishWorkspace': true,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 4,
+      'yPos': 11
+    },
+    {
       'name': 'Butchery',
       'nameID': 'ButcherySkill',
       'basicUpgrade': true,

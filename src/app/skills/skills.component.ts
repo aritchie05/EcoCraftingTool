@@ -9,6 +9,7 @@ import {CookieService} from 'ngx-cookie-service';
 import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {ImageService} from '../service/image.service';
 
 export const SKILL_SPRITE_SIZE = 32;
 export const TABLE_SPRITE_SIZE = 32;
@@ -39,7 +40,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   @Output() lavishUpdatedEvent = new EventEmitter<Skill>();
 
   constructor(private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService,
+              private messageService: MessageService, public imageService: ImageService,
               @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.selectedSkills = [];
     this.craftingTables = [];
@@ -174,10 +175,6 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   onUpdateLavish(skill: Skill, value: boolean): void {
     skill.lavishChecked = value;
     this.lavishUpdatedEvent.emit(skill);
-  }
-
-  getSkillImageUrl(skill: Skill): string {
-    return this.imageBaseUrl + this.skillsSpriteImage;
   }
 
   skillLevelIsReadOnly(skill: Skill): boolean {

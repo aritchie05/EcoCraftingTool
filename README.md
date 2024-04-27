@@ -3,6 +3,8 @@
 Crafting calculator for Eco Global Survival by Strange Loop Games located at https://eco-calc.com. Computes production
 costs for in-game items based on labor, materials, and crafting table upgrades.
 
+**Are you here to see if the app has been updated for the last Eco game version? You may be able to help if you are a developer. See [Editing Recipes and Items](#editing-recipes-and-items) and use this project to generate the new entries: [EcoDataReader](https://github.com/aritchie05/EcoDataReader).**
+
 ## Workspace Setup
 
 To run this project locally, you will want to use an IDE with support for [npm](https://www.npmjs.com/) projects. The recommended Node.js version to work with Angular 17.0.0 is [v20.9.0](https://nodejs.org/download/release/v20.9.0/).
