@@ -75,6 +75,15 @@ export let craftingTables: CraftingTable[] =
       'yPos': 12
     },
     {
+      'name': 'Blacksmith Table',
+      'nameID': 'BlacksmithTableObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 9,
+      'yPos': 10
+    },
+    {
       'name': 'Blast Furnace',
       'nameID': 'BlastFurnaceObject',
       'upgradeModuleType': 'AdvancedUpgrade',
@@ -237,6 +246,15 @@ export let craftingTables: CraftingTable[] =
       'yPos': 6
     },
     {
+      'name': 'Fletching Table',
+      'nameID': 'FletchingTableObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 5,
+      'yPos': 11
+    },
+    {
       'name': 'Froth Floatation Cell',
       'nameID': 'FrothFloatationCellObject',
       'upgradeModuleType': 'ModernUpgrade',
@@ -253,6 +271,15 @@ export let craftingTables: CraftingTable[] =
       'imageFile': 'UI_Icons_05.png',
       'xPos': 8,
       'yPos': 15
+    },
+    {
+      'name': 'Grindstone',
+      'nameID': 'GrindstoneObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 7,
+      'yPos': 10
     },
     {
       'name': 'Jaw Crusher',
@@ -351,6 +378,24 @@ export let craftingTables: CraftingTable[] =
       'hidden': false,
       'imageFile': 'UI_Icons_00.png',
       'xPos': 10,
+      'yPos': 10
+    },
+    {
+      'name': 'Pottery Table',
+      'nameID': 'PotteryTableObject',
+      'upgradeModuleType': 'AdvancedUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 6,
+      'yPos': 7
+    },
+    {
+      'name': 'Power Hammer',
+      'nameID': 'PowerHammerObject',
+      'upgradeModuleType': 'AdvancedUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 6,
       'yPos': 10
     },
     {

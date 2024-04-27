@@ -11,7 +11,7 @@
       <div aria-labelledby="skillSelectInput" class="dropdown-menu dark-input">
         <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
            href="#">
-          <img [alt]="skill.name" [ngStyle]="{'background': 'url(' + getSkillImageUrl(skill) + ') no-repeat ' + getSpritePosition(skill) + '/256px'}"
+          <img [alt]="skill.name" [ngStyle]="imageService.getSkillImgStyle(skill)"
                class="skillSprite mr-2" [src]="imageTemplateUrl">
           {{skill.name}}
         </a>
@@ -21,7 +21,7 @@
     <div class="divider form-group" id="selectedSkills">
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
         <div class="col-9">
-          <img [alt]="skill.name" [ngStyle]="{'background': 'url(' + getSkillImageUrl(skill) + ') no-repeat ' + getSpritePosition(skill) + '/256px'}"
+          <img [alt]="skill.name" [ngStyle]="imageService.getSkillImgStyle(skill)"
                class="skillSprite mr-2" [src]="imageTemplateUrl">
           <label class="bump-down" for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
