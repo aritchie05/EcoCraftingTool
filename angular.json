@@ -29,8 +29,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/robots.txt"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css",
@@ -46,6 +45,9 @@
           },
           "configurations": {
             "preview": {
+              "assets": [
+                "src/robots/robots.txt"
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -66,14 +68,13 @@
               ]
             },
             "production": {
+              "assets": [
+                "src/robots/prod/robots.txt"
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
-                },
-                {
-                  "replace": "src/robots.txt",
-                  "with": "src/robots-prod.txt"
                 }
               ],
               "budgets": [
