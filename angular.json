@@ -27,11 +27,6 @@
             "browser": "src/main.ts",
             "polyfills": ["src/polyfills.ts"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/robots.txt"
-            ],
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -46,6 +41,15 @@
           },
           "configurations": {
             "preview": {
+              "assets": [
+                "src/favicon.ico",
+                "src/assets",
+                {
+                  "glob": "robots.txt",
+                  "input": "src/robots/",
+                  "output": "./"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -66,6 +70,16 @@
               ]
             },
             "production": {
+              "assets": [
+                "src/favicon.ico",
+                "src/assets",
+                {
+                  "glob": "robots.txt",
+                  "input": "src/robots/prod/",
+                  "output": "./"
+                }
+
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
