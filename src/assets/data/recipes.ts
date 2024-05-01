@@ -17686,20 +17686,20 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('CeramicMoldItem'),
-          'quantity': 2,
+          'quantity': 1,
           'reducible': true
         }
       ],
       'outputs': [
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true,
           'primary': false
         }
@@ -17731,20 +17731,20 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('CeramicMoldItem'),
-          'quantity': 2,
+          'quantity': 1,
           'reducible': true
         }
       ],
       'outputs': [
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         },
         {
           'item': getItemByNameID('SlagItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true,
           'primary': false
         }
