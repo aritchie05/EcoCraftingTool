@@ -1,4 +1,4 @@
-import {Component, Inject, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, Inject, OnInit, ViewChild} from '@angular/core';
 import {Locale, LocaleService} from './service/locale.service';
 import {HeaderComponent} from './header/header.component';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
@@ -7,11 +7,7 @@ import {MessageService} from './service/message.service';
 import {environment} from '../environments/environment';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {CalculatorConfig} from './cookie/calculator-config';
-import {CraftingDataService} from './service/crafting-data.service';
-import {SkillCookie} from './cookie/skill-cookie';
-import {TableCookie} from './cookie/table-cookie';
-import {IngredientCookie} from './cookie/ingredient-cookie';
-import {OutputCookie} from './cookie/output-cookie';
+import {Meta, Title} from '@angular/platform-browser';
 
 //Expiration days for local storage
 export const EXP_DAYS = 60;
@@ -40,10 +36,11 @@ export class AppComponent implements OnInit {
   private footerComponent: FooterComponent;
 
   constructor(private localeService: LocaleService, private messageService: MessageService,
+              private titleService: Title, private metaService: Meta,
               @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.locale = localeService.selectedLocale;
     this.performanceModeEnabled = true;
-    document.getElementById('page-title').innerText = 'Eco ' + messageService.getMessage('navTitle', this.locale);
+    this.titleService.setTitle(`Eco ${messageService.getMessage('navTitle', this.locale)}`);
     document.head.lang = this.locale.langCode();
   }
 
