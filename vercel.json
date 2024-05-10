@@ -1,3 +1,14 @@
 {
-  "buildCommand": "ng build --configuration=$ENVIRONMENT"
+  "buildCommand": "ng build --configuration=$ENVIRONMENT",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "$ROBOTS_TAG_VALUE"
+        }
+      ]
+    }
+  ]
 }
