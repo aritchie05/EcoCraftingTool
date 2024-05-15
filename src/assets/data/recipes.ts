@@ -8622,6 +8622,11 @@ export let standardRecipes: Recipe[] =
           'item': getItemByNameID('SteelBarItem'),
           'quantity': 2,
           'reducible': true
+        },
+        {
+          'item': getItemByNameID('EpoxyItem'),
+          'quantity': 1,
+          'reducible': true
         }
       ],
       'outputs': [
