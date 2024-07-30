@@ -101,6 +101,15 @@
               "outputHashing": "all"
             },
             "development": {
+              "assets": [
+                "src/favicon.ico",
+                "src/assets",
+                {
+                  "glob": "robots.txt",
+                  "input": "src/robots/",
+                  "output": "./"
+                }
+              ],
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
