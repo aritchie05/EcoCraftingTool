@@ -10043,9 +10043,9 @@ export let items: Item[] =
       'name': 'Town Foundation',
       'nameID': 'TownFoundationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 8,
+      'yPos': 13
     },
     {
       'name': 'Trailer Truck',

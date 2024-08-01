@@ -90,8 +90,7 @@ export class AppComponent implements OnInit {
 
   onUpdateLocale(locale: Locale): void {
     this.locale = locale;
-    document.getElementById('page-title').innerText = 'Eco ' +
-      this.messageService.getMessage('navTitle', this.locale);
+    this.titleService.setTitle(`Eco ${this.messageService.getMessage('navTitle', this.locale)}`);
     document.head.lang = this.locale.langCode();
     this.localeService.selectedLocale = locale;
     this.craftingParentComponent.updateLocale(locale);
