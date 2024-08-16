@@ -6,6 +6,7 @@ import {MessageService} from '../service/message.service';
 import {CookieService} from 'ngx-cookie-service';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {ImageService} from '../service/image.service';
 
 export const ITEM_SPRITE_SIZE = 32;
 
@@ -28,7 +29,7 @@ export class IngredientsComponent implements OnInit {
   @Output() laborCostChangedEvent = new EventEmitter<number>();
   @Output() profitPercentChangedEvent = new EventEmitter<number>();
 
-  constructor(private dataService: CraftingDataService, private localeService: LocaleService,
+  constructor(public imageService: ImageService, private dataService: CraftingDataService, private localeService: LocaleService,
               private messageService: MessageService, private cookieService: CookieService,
               @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.itemIngredients = [];
@@ -95,45 +96,6 @@ export class IngredientsComponent implements OnInit {
 
   sortIngredients() {
     this.itemIngredients.sort((a, b) => a.name.localeCompare(b.name, this.locale.code));
-  }
-
-  getItemImageUrl(item: Item): string {
-    if (item.nameID.localeCompare('LightBulbItem') === 0) {
-      return this.imageBaseUrl + 'lightbulb.png';
-    } else {
-      return this.imageBaseUrl + item.imageFile;
-    }
-  }
-
-  getItemSpritePosition(item: Item): string {
-    if (item.nameID.localeCompare('LightBulbItem') === 0) {
-      return '0px 0px'
-    }
-    return `-${item.xPos * ITEM_SPRITE_SIZE}px -${item.yPos * ITEM_SPRITE_SIZE}px`;
-  }
-
-  getItemBackgroundSize(item: Item): string {
-    if (item.nameID.localeCompare('LightBulbItem') === 0) {
-      return '32px'
-    } else if ('UI_Icons_Baked_0.png'.localeCompare(item.imageFile) === 0) {
-      return '2048px';
-    }
-    return '512px';
-  }
-
-  getItemFilter(item: Item): string {
-    if (item.filter != undefined) {
-      return item.filter;
-    }
-    return '';
-  }
-
-  getProfitSpriteImageUrl(): string {
-    return this.imageBaseUrl + 'UI_Icons_00.png';
-  }
-
-  getCalorieSpriteImageUrl(): string {
-    return this.imageBaseUrl + 'UI_Icons_00.png';
   }
 
   localize(locale: Locale) {

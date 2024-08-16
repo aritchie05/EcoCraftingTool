@@ -39,17 +39,19 @@ export class ImageService {
     return this.imageBaseUrl + 'UI_Icons_00.png';
   }
 
-  getSpritePosition(itemNameID: string, xPos: number, yPos: number, size: number): string {
-    if (itemNameID.localeCompare('LightBulbItem') === 0) {
-      return '0px 0px'
+  getSpritePosition(itemNameID: string, xPos: number, yPos: number, size: number, imageFile: string): string {
+    if ('LightBulbItem'.localeCompare(itemNameID) === 0) {
+      return '0px 0px';
+    } else if ('UI_Icons_Baked_1.png'.localeCompare(imageFile) === 0) {
+      return `-${xPos * size + xPos * .5}px -${yPos * size + yPos * .5}px`;
     }
     return `-${xPos * size}px -${yPos * size}px`;
   }
 
   getSpriteBackgroundSize(itemNameID: string, imageFile: string): string {
     if (itemNameID.localeCompare('LightBulbItem') === 0) {
-      return '32px'
-    } else if ('UI_Icons_Baked_0.png'.localeCompare(imageFile) === 0) {
+      return '32px';
+    } else if ('UI_Icons_Baked_0.png'.localeCompare(imageFile) === 0 || 'UI_Icons_Baked_1.png'.localeCompare(imageFile) === 0) {
       return '2048px';
     } else if ('skill-icons-sprite.png'.localeCompare(imageFile) === 0) {
       return '256px';
@@ -67,7 +69,7 @@ export class ImageService {
 
   getImgStyle(nameID: string, imageFile: string, xPos: number, yPos: number, size: number, filter: string): any {
     return {
-      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(nameID, xPos, yPos, size)} /
+      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(nameID, xPos, yPos, size, imageFile)} /
       ${this.getSpriteBackgroundSize(nameID, imageFile)} no-repeat`,
       'filter': `${this.getSpriteCssFilter(filter)}`
     }
@@ -75,7 +77,7 @@ export class ImageService {
 
   getLargeImgStyle(nameID: string, imageFile: string, xPos: number, yPos: number, size: number, filter: string): any {
     return {
-      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(nameID, xPos, yPos, size)} /
+      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(nameID, xPos, yPos, size, imageFile)} /
       ${this.getLargeSpriteBackgroundSize(nameID, imageFile)} no-repeat`,
       'filter': `${this.getSpriteCssFilter(filter)}`
     }

@@ -301,6 +301,17 @@ export let skills: Skill[] =
       'yPos': 1
     },
     {
+      'name': 'Painting',
+      'nameID': 'PaintingSkill',
+      'basicUpgrade': true,
+      'advancedUpgrade': false,
+      'modernUpgrade': false,
+      'lavishWorkspace': true,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 11,
+      'yPos': 15
+    },
+    {
       'name': 'Paper Milling',
       'nameID': 'PaperMillingSkill',
       'basicUpgrade': true,

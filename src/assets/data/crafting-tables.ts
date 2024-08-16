@@ -119,7 +119,7 @@ export let craftingTables: CraftingTable[] =
       'xPos': 3,
       'yPos': 11
     },
-    /*{
+    {
       'name': 'Campsite',
       'nameID': 'CampsiteObject',
       'upgradeModuleType': 'None',
@@ -128,15 +128,6 @@ export let craftingTables: CraftingTable[] =
       'xPos': 11,
       'yPos': 1
     },
-    {
-      'name': 'Capitol',
-      'nameID': 'CapitolObject',
-      'upgradeModuleType': 'None',
-      'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
-      'xPos': 0,
-      'yPos': 10
-    },*/
     {
       'name': 'Carpentry Table',
       'nameID': 'CarpentryTableObject',
@@ -282,6 +273,15 @@ export let craftingTables: CraftingTable[] =
       'yPos': 10
     },
     {
+      'name': 'Injection Mold Machine',
+      'nameID': 'InjectionMoldMachineObject',
+      'upgradeModuleType': 'ModernUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
       'name': 'Jaw Crusher',
       'nameID': 'JawCrusherObject',
       'upgradeModuleType': 'ModernUpgrade',
@@ -381,6 +381,15 @@ export let craftingTables: CraftingTable[] =
       'yPos': 10
     },
     {
+      'name': 'Paint Mixing Workbench',
+      'nameID': 'PaintMixingWorkbenchObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 2,
+      'yPos': 14
+    },
+    {
       'name': 'Pottery Table',
       'nameID': 'PotteryTableObject',
       'upgradeModuleType': 'AdvancedUpgrade',
@@ -397,6 +406,15 @@ export let craftingTables: CraftingTable[] =
       'imageFile': 'UI_Icons_06.png',
       'xPos': 6,
       'yPos': 10
+    },
+    {
+      'name': 'Printing Press',
+      'nameID': 'PrintingPressObject',
+      'upgradeModuleType': 'AdvancedUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_04.png',
+      'xPos': 6,
+      'yPos': 11
     },
     {
       'name': 'Pump Jack',
@@ -469,6 +487,15 @@ export let craftingTables: CraftingTable[] =
       'imageFile': 'UI_Icons_01.png',
       'xPos': 12,
       'yPos': 5
+    },
+    {
+      'name': 'Settlement Crafting Table',
+      'nameID': 'SettlementCraftingTableObject',
+      'upgradeModuleType': 'None',
+      'hidden': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 11,
+      'yPos': 9
     },
     {
       'name': 'Sensor Based Belt Sorter',

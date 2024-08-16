@@ -421,7 +421,10 @@ export let items: Item[] =
     {
       'name': 'Ashlar Granite',
       'nameID': 'AshlarGraniteItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 2,
+      'yPos': 49
     },
     {
       'name': 'Ashlar Granite Bench',
@@ -489,7 +492,10 @@ export let items: Item[] =
     {
       'name': 'Ashlar Limestone',
       'nameID': 'AshlarLimestoneItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_02.png',
+      'xPos': 13,
+      'yPos': 7
     },
     {
       'name': 'Ashlar Limestone Bench',
@@ -2982,7 +2988,10 @@ export let items: Item[] =
     {
       'name': 'Executive Office',
       'nameID': 'ExecutiveOfficeItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 13,
+      'yPos': 13
     },
     {
       'name': 'Explorer Belt',
@@ -4780,8 +4789,8 @@ export let items: Item[] =
       'nameID': 'MasonryTableItem',
       'tag': false,
       'imageFile': 'UI_Icons_00.png',
-      'xPos': 14,
-      'yPos': 0
+      'xPos': 8,
+      'yPos': 10
     },
     {
       'name': 'Meat Pie',
@@ -6619,7 +6628,10 @@ export let items: Item[] =
     {
       'name': 'Small Stockpile',
       'nameID': 'SmallStockpileItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 12,
+      'yPos': 13
     },
     {
       'name': 'Small Table',
@@ -7478,7 +7490,10 @@ export let items: Item[] =
     {
       'name': 'Tiny Stockpile',
       'nameID': 'TinyStockpileItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 12,
+      'yPos': 13
     },
     {
       'name': 'Toilet',
@@ -7883,7 +7898,10 @@ export let items: Item[] =
     {
       'name': 'Wooden Bow',
       'nameID': 'WoodenBowItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 1,
+      'yPos': 0
     },
     {
       'name': 'Wooden Ceiling Light',
@@ -8201,7 +8219,7 @@ export let items: Item[] =
       'name': 'Claim Tool',
       'nameID': 'ClaimToolItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_05.png',
       'xPos': 4,
       'yPos': 12
     },
@@ -9137,17 +9155,17 @@ export let items: Item[] =
       'name': 'Country Foundation',
       'nameID': 'CountryFoundationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_02.png',
       'xPos': 0,
-      'yPos': 0
+      'yPos': 10
     },
     {
       'name': 'Court Table',
       'nameID': 'CourtTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 11,
+      'yPos': 13
     },
     {
       'name': 'Culture',
@@ -9185,17 +9203,17 @@ export let items: Item[] =
       'name': 'Embassy Desk',
       'nameID': 'EmbassyDeskItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 15,
+      'yPos': 13
     },
     {
       'name': 'Federation Foundation',
       'nameID': 'FederationFoundationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 9,
+      'yPos': 13
     },
     {
       'name': 'Feminine Mannequin',
@@ -9377,9 +9395,9 @@ export let items: Item[] =
       'name': 'Immigration Desk',
       'nameID': 'ImmigrationDeskItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 14,
+      'yPos': 13
     },
     {
       'name': 'Industrial',
@@ -9617,9 +9635,9 @@ export let items: Item[] =
       'name': 'Outpost Table',
       'nameID': 'OutpostTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_05.png',
       'xPos': 0,
-      'yPos': 0
+      'yPos': 14
     },
     {
       'name': 'Picture Frame',
@@ -9786,8 +9804,8 @@ export let items: Item[] =
       'nameID': 'SettlementCraftingTableItem',
       'tag': false,
       'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'xPos': 11,
+      'yPos': 9
     },
     {
       'name': 'Sleek Short Hair',
@@ -9945,9 +9963,9 @@ export let items: Item[] =
       'name': 'Stenographers Table',
       'nameID': 'StenographersTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 12,
+      'yPos': 13
     },
     {
       'name': 'Students Desk T1',
@@ -10025,9 +10043,9 @@ export let items: Item[] =
       'name': 'Town Foundation',
       'nameID': 'TownFoundationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 8,
+      'yPos': 13
     },
     {
       'name': 'Trailer Truck',
@@ -10218,16 +10236,16 @@ export let items: Item[] =
       'nameID': 'InkItem',
       'tag': false,
       'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'xPos': 13,
+      'yPos': 10
     },
     {
       'name': 'Lighthouse Lamp',
       'nameID': 'LighthouseLampItem',
       'tag': false,
       'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'xPos': 3,
+      'yPos': 11
     },
     {
       'name': 'Paint Bucket',
@@ -10276,5 +10294,725 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_06.png',
       'xPos': 8,
       'yPos': 10
+    },
+    {
+      'name': 'Adobe Door',
+      'nameID': 'AdobeDoorItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 2,
+      'yPos': 13
+    },
+    {
+      'name': 'Adobe',
+      'nameID': 'AdobeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 13,
+      'yPos': 12
+    },
+    {
+      'name': 'Baker Sign',
+      'nameID': 'BakerSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 9,
+      'yPos': 0
+    },
+    {
+      'name': 'Base Paint',
+      'nameID': 'BasePaintItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 12,
+      'yPos': 10
+    },
+    {
+      'name': 'Bison Pelt',
+      'nameID': 'BisonPeltItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Blue Powder',
+      'nameID': 'BluePowderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 61,
+      'yPos': 36
+    },
+    {
+      'name': 'Bonsai',
+      'nameID': 'BonsaiItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Carpenter Sign',
+      'nameID': 'CarpenterSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 10,
+      'yPos': 0
+    },
+    {
+      'name': 'Cart Blueprint Poster',
+      'nameID': 'CartBlueprintPosterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 8,
+      'yPos': 0
+    },
+    {
+      'name': 'Cast Iron Plaque',
+      'nameID': 'CastIronPlaqueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 0,
+      'yPos': 2
+    },
+    {
+      'name': 'Chandelier',
+      'nameID': 'ChandelierItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 3,
+      'yPos': 13
+    },
+    {
+      'name': 'Charcoal Powder',
+      'nameID': 'CharcoalPowderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 0,
+      'yPos': 35
+    },
+    {
+      'name': 'Coarse Stone',
+      'nameID': 'CoarseStoneItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 5,
+      'yPos': 14
+    },
+    {
+      'name': 'Cooking Utensils',
+      'nameID': 'CookingUtensilsItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 6,
+      'yPos': 14
+    },
+    {
+      'name': 'Copper Hydroxide',
+      'nameID': 'CopperHydroxideItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 2,
+      'yPos': 35
+    },
+    {
+      'name': 'Cyan Powder',
+      'nameID': 'CyanPowderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 4,
+      'yPos': 35
+    },
+    {
+      'name': 'Deer Pelt',
+      'nameID': 'DeerPeltItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 1,
+      'yPos': 0
+    },
+    {
+      'name': 'Dowel',
+      'nameID': 'DowelItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 7,
+      'yPos': 14
+    },
+    {
+      'name': 'Egyptian Canoe',
+      'nameID': 'EgyptianCanoeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 3,
+      'yPos': 14
+    },
+    {
+      'name': 'Election Poster',
+      'nameID': 'ElectionPosterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 5,
+      'yPos': 0
+    },
+    {
+      'name': 'Engineer Sign',
+      'nameID': 'EngineerSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 11,
+      'yPos': 0
+    },
+    {
+      'name': 'Fancy Hewn Door',
+      'nameID': 'FancyHewnDoorItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 4,
+      'yPos': 13
+    },
+    {
+      'name': 'Far East Lumber',
+      'nameID': 'FarEastLumberItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_03.png',
+      'xPos': 9,
+      'yPos': 0
+    },
+    {
+      'name': 'Farmer Sign',
+      'nameID': 'FarmerSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 12,
+      'yPos': 0
+    },
+    {
+      'name': 'FishKite',
+      'nameID': 'FishKitesItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 15,
+      'yPos': 15
+    },
+    {
+      'name': 'Food Sign',
+      'nameID': 'FoodSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 13,
+      'yPos': 0
+    },
+    {
+      'name': 'Fox Pelt',
+      'nameID': 'FoxPeltItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 2,
+      'yPos': 0
+    },
+    {
+      'name': 'Friendly Scarecrow',
+      'nameID': 'FriendlyScarecrowItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 4,
+      'yPos': 1
+    },
+    {
+      'name': 'Fuse',
+      'nameID': 'FuseItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 8,
+      'yPos': 14
+    },
+    {
+      'name': 'Garden Gravel',
+      'nameID': 'GardenGravelItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 6,
+      'yPos': 15
+    },
+    {
+      'name': 'Garden Pond',
+      'nameID': 'GardenPondItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 9,
+      'yPos': 1
+    },
+    {
+      'name': 'Granite Spiral Fountain',
+      'nameID': 'GraniteSpiralFountainItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 5,
+      'yPos': 13
+    },
+    {
+      'name': 'Granite Terrace Fountain',
+      'nameID': 'GraniteTerraceFountainItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 6,
+      'yPos': 13
+    },
+    {
+      'name': 'Hanging Electric Wall Lamp',
+      'nameID': 'HangingElectricWallLampItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 7,
+      'yPos': 13
+    },
+    {
+      'name': 'Hare Pelt',
+      'nameID': 'HarePeltItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 3,
+      'yPos': 0
+    },
+    {
+      'name': 'Industrial Mill',
+      'nameID': 'IndustrialMillItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 10,
+      'yPos': 1
+    },
+    {
+      'name': 'Iron Oxide',
+      'nameID': 'IronOxideItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 6,
+      'yPos': 42
+    },
+    {
+      'name': 'Iron Paint Sprayer',
+      'nameID': 'IronPaintSprayerItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 6,
+      'yPos': 11
+    },
+    {
+      'name': 'Kite',
+      'nameID': 'KiteItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 15
+    },
+    {
+      'name': 'Koi Pond',
+      'nameID': 'KoiPondItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 6,
+      'yPos': 1
+    },
+    {
+      'name': 'Lubricant',
+      'nameID': 'LubricantItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 9,
+      'yPos': 14
+    },
+    {
+      'name': 'Magenta Powder',
+      'nameID': 'MagentaPowderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 8,
+      'yPos': 35
+    },
+    {
+      'name': 'Mason Sign',
+      'nameID': 'MasonSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 0
+    },
+    {
+      'name': 'Mill Stone',
+      'nameID': 'MillStoneItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 10,
+      'yPos': 14
+    },
+    {
+      'name': 'Modern Paint Sprayer',
+      'nameID': 'ModernPaintSprayerItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 12
+    },
+    {
+      'name': 'Norse Canoe',
+      'nameID': 'NorseCanoeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 4,
+      'yPos': 14
+    },
+    {
+      'name': 'Ornate Cast Iron Plaque',
+      'nameID': 'OrnateCastIronPlaqueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Stone Plaque',
+      'nameID': 'OrnateStonePlaqueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ornate Wood Plaque',
+      'nameID': 'OrnateWoodPlaqueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Paint Mixing Workbench',
+      'nameID': 'PaintMixingWorkbenchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 2,
+      'yPos': 14
+    },
+    {
+      'name': 'Painting Upgrade',
+      'nameID': 'PaintingUpgradeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 11,
+      'yPos': 15
+    },
+    {
+      'name': 'Periodic Table Poster',
+      'nameID': 'PeriodicTablePosterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 7,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Outdoor Bench',
+      'nameID': 'PlasticOutdoorBenchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Outdoor Chair',
+      'nameID': 'PlasticOutdoorChairItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Outdoor Table',
+      'nameID': 'PlasticOutdoorTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Plastic Window Planter',
+      'nameID': 'PlasticWindowPlanterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Polishing Paste',
+      'nameID': 'PolishingPasteItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 15,
+      'yPos': 14
+    },
+    {
+      'name': 'Redwoods Poster',
+      'nameID': 'RedwoodsPosterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 6,
+      'yPos': 0
+    },
+    {
+      'name': 'Rustic Window Planter',
+      'nameID': 'RusticWindowPlanterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 10,
+      'yPos': 13
+    },
+    {
+      'name': 'Scarecrow',
+      'nameID': 'ScarecrowItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 5,
+      'yPos': 1
+    },
+    {
+      'name': 'Sharpening Steel',
+      'nameID': 'SharpeningSteelItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 1,
+      'yPos': 15
+    },
+    {
+      'name': 'Shipwright Sign',
+      'nameID': 'ShipwrightSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 15,
+      'yPos': 0
+    },
+    {
+      'name': 'Steam Tractor Scoop',
+      'nameID': 'SteamTractorScoopItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 11,
+      'yPos': 1
+    },
+    {
+      'name': 'Steel Spring',
+      'nameID': 'SteelSpringItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 2,
+      'yPos': 15
+    },
+    {
+      'name': 'Stone Plaque',
+      'nameID': 'StonePlaqueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 1,
+      'yPos': 2
+    },
+    {
+      'name': 'Store Sign',
+      'nameID': 'StoreSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 1
+    },
+    {
+      'name': 'Tailor Sign',
+      'nameID': 'TailorSignItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 1,
+      'yPos': 1
+    },
+    {
+      'name': 'Tapestry Fish',
+      'nameID': 'TapestryFishItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 2,
+      'yPos': 1
+    },
+    {
+      'name': 'Tapestry',
+      'nameID': 'TapestryItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 13,
+      'yPos': 15
+    },
+    {
+      'name': 'Tapestry Sunset',
+      'nameID': 'TapestrySunsetItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 3,
+      'yPos': 1
+    },
+    {
+      'name': 'Tiki Torch',
+      'nameID': 'TikiTorchItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 12,
+      'yPos': 13
+    },
+    {
+      'name': 'Wall Mounted Chest',
+      'nameID': 'WallMountedChestItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 7,
+      'yPos': 1
+    },
+    {
+      'name': 'Wall Mounted Trunk',
+      'nameID': 'WallMountedTrunkItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 8,
+      'yPos': 1
+    },
+    {
+      'name': 'Whetstone',
+      'nameID': 'WhetstoneItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 3,
+      'yPos': 15
+    },
+    {
+      'name': 'White Powder',
+      'nameID': 'WhitePowderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 10,
+      'yPos': 35
+    },
+    {
+      'name': 'Window Shutters Center',
+      'nameID': 'WindowShuttersCenterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 13,
+      'yPos': 13
+    },
+    {
+      'name': 'Window Shutters Left',
+      'nameID': 'WindowShuttersLeftItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 15,
+      'yPos': 13
+    },
+    {
+      'name': 'Window Shutters Right',
+      'nameID': 'WindowShuttersRightItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 13
+    },
+    {
+      'name': 'Wolf Pelt',
+      'nameID': 'WolfPeltItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 4,
+      'yPos': 0
+    },
+    {
+      'name': 'Wood Plaque',
+      'nameID': 'WoodPlaqueItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 15,
+      'yPos': 1
+    },
+    {
+      'name': 'Wood Window Planter',
+      'nameID': 'WoodWindowPlanterItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 11,
+      'yPos': 13
+    },
+    {
+      'name': 'Wooden Gear',
+      'nameID': 'WoodenGearItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 4,
+      'yPos': 15
+    },
+    {
+      'name': 'Wooden Paint Sprayer',
+      'nameID': 'WoodenPaintSprayerItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 7,
+      'yPos': 11
+    },
+    {
+      'name': 'Wooden Wall Torch Stand',
+      'nameID': 'WoodenWallTorchStandItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 14
+    },
+    {
+      'name': 'Yellow Powder',
+      'nameID': 'YellowPowderItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_Baked_1.png',
+      'xPos': 12,
+      'yPos': 35
+    },
+    {
+      'name': 'Zataku Table',
+      'nameID': 'ZatakuTableItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 1,
+      'yPos': 14
+    },
+    {
+      'name': 'Zen Garden',
+      'nameID': 'ZenGardenItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 5,
+      'yPos': 15
+    },
+    {
+      'name': 'Fishing Pole',
+      'nameID': 'FishingPoleItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_01.png',
+      'xPos': 13,
+      'yPos': 11
+    },
+    {
+      'name': 'Homestead Claim Stake',
+      'nameID': 'HomesteadClaimStakeItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 5,
+      'yPos': 12
+    },
+    {
+      'name': 'Garbage',
+      'nameID': 'GarbageItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 11,
+      'yPos': 13
     }
   ];

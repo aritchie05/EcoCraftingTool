@@ -32,10 +32,7 @@
                             [outputDisplay]="outputDisplay">
           </app-recipe-modal>
           <div class="col-8">
-            <img [alt]=outputDisplay.itemName [ngStyle]="{'background': 'url(' + getOutputDisplayImageUrl(outputDisplay) + ') no-repeat',
-                'background-position': getOutputDisplaySpritePosition(outputDisplay),
-                'background-size': getOutputDisplayBackgroundSize(outputDisplay),
-                'filter': getOutputDisplayFilter(outputDisplay)}"
+            <img [alt]=outputDisplay.itemName [ngStyle]="imageService.getOutputImgStyle(outputDisplay)"
                  class="outputSprite mr-2" [src]="imageTemplateUrl">
             <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
               <strong>{{outputDisplay.itemName}}</strong>
