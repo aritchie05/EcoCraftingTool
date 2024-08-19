@@ -10688,8 +10688,8 @@ export let items: Item[] =
       'yPos': 0
     },
     {
-      'name': 'Paint Mixing Workbench',
-      'nameID': 'PaintMixingWorkbenchItem',
+      'name': 'Paint Mixer',
+      'nameID': 'PaintMixerItem',
       'tag': false,
       'imageFile': 'UI_Icons_06.png',
       'xPos': 2,

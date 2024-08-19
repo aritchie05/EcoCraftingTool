@@ -381,8 +381,8 @@ export let craftingTables: CraftingTable[] =
       'yPos': 10
     },
     {
-      'name': 'Paint Mixing Workbench',
-      'nameID': 'PaintMixingWorkbenchObject',
+      'name': 'Paint Mixer',
+      'nameID': 'PaintMixerObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
       'imageFile': 'UI_Icons_06.png',
