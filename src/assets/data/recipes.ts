@@ -26471,7 +26471,7 @@ export let standardRecipes: Recipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('PaintMixingWorkbenchItem'),
+          'item': getItemByNameID('PaintMixerItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
