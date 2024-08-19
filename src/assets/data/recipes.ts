@@ -4054,17 +4054,17 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('SyntheticRubberItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         }
       ],
@@ -4762,12 +4762,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         },
         {
@@ -5495,14 +5495,14 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 1.5,
+          'quantity': 3,
           'reducible': true
         }
       ],
       'outputs': [
         {
           'item': getItemByNameID('CorrugatedSteelItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': false,
           'primary': true
         }
@@ -7312,13 +7312,23 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('RivetItem'),
-          'quantity': 20,
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 25,
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
-          'quantity': 30,
+          'item': getItemByNameID('CorrugatedSteelItem'),
+          'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RivetItem'),
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -9495,6 +9505,11 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
+          'item': getItemByNameID('LubricantItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
           'item': getItemByNameID('WoodBoard'),
           'quantity': 5,
           'reducible': true
@@ -10320,17 +10335,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -10467,17 +10482,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -10501,17 +10516,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -10535,17 +10550,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -10569,17 +10584,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -10651,17 +10666,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -10709,17 +10724,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -10743,17 +10758,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -12819,12 +12834,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 15,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -12892,12 +12907,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 15,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -12926,12 +12941,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 15,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -12960,12 +12975,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 15,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -12994,12 +13009,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 15,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -13033,17 +13048,17 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelGearItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true
         },
         {
           'item': getItemByNameID('SyntheticRubberItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -13067,12 +13082,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 15,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -13101,12 +13116,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 15,
+          'quantity': 25,
           'reducible': true
         },
         {
@@ -14903,17 +14918,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('LinenYarnItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         },
         {
@@ -17563,12 +17578,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -17852,12 +17867,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -17886,12 +17901,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -17920,12 +17935,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -17954,12 +17969,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -18060,12 +18075,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -18094,12 +18109,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -18215,12 +18230,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -21915,7 +21930,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
@@ -22372,17 +22387,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         },
         {
           'item': getItemByNameID('Lumber'),
-          'quantity': 10,
+          'quantity': 16,
           'reducible': true
         }
       ],
@@ -22944,7 +22959,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('PaintingSkill'),
       'level': 1,
       'labor': 40,
-      'craftingTable': getCraftingTableByNameID('PaintMixingWorkbenchObject'),
+      'craftingTable': getCraftingTableByNameID('PaintMixerObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -24987,7 +25002,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('PaintingSkill'),
       'level': 1,
       'labor': 40,
-      'craftingTable': getCraftingTableByNameID('PaintMixingWorkbenchObject'),
+      'craftingTable': getCraftingTableByNameID('PaintMixerObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -25431,7 +25446,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('PaintingSkill'),
       'level': 4,
       'labor': 180,
-      'craftingTable': getCraftingTableByNameID('PaintMixingWorkbenchObject'),
+      'craftingTable': getCraftingTableByNameID('PaintMixerObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -25699,12 +25714,12 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('PaintingSkill'),
       'level': 1,
       'labor': 40,
-      'craftingTable': getCraftingTableByNameID('PaintMixingWorkbenchObject'),
+      'craftingTable': getCraftingTableByNameID('PaintMixerObject'),
       'hidden': false,
       'ingredients': [
         {
           'item': getItemByNameID('WhitePowderItem'),
-          'quantity': 1,
+          'quantity': 4,
           'reducible': true
         },
         {
@@ -25721,7 +25736,7 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('BasePaintItem'),
-          'quantity': 5,
+          'quantity': 10,
           'reducible': false,
           'primary': true
         }
@@ -25922,7 +25937,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('PaintingSkill'),
       'level': 3,
       'labor': 24,
-      'craftingTable': getCraftingTableByNameID('PaintMixingWorkbenchObject'),
+      'craftingTable': getCraftingTableByNameID('PaintMixerObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -26289,12 +26304,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('IronBarItem'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('IronPlateItem'),
-          'quantity': 4,
+          'quantity': 10,
           'reducible': true
         },
         {
@@ -26401,12 +26416,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('FiberglassItem'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         },
         {
           'item': getItemByNameID('SyntheticRubberItem'),
-          'quantity': 4,
+          'quantity': 12,
           'reducible': true
         },
         {
@@ -26416,7 +26431,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 2,
+          'quantity': 6,
           'reducible': true
         }
       ],
@@ -26430,8 +26445,8 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Paint Mixing Workbench',
-      'nameID': 'PaintMixingWorkbench',
+      'name': 'Paint Mixer',
+      'nameID': 'PaintMixer',
       'skill': getSkillByNameID('LoggingSkill'),
       'level': 3,
       'labor': 180,
@@ -26469,7 +26484,7 @@ export let standardRecipes: Recipe[] =
       'skill': getSkillByNameID('PaintingSkill'),
       'level': 7,
       'labor': 3000,
-      'craftingTable': getCraftingTableByNameID('PaintMixingWorkbenchObject'),
+      'craftingTable': getCraftingTableByNameID('PaintMixerObject'),
       'hidden': false,
       'ingredients': [
         {
@@ -26787,7 +26802,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('SteelBarItem'),
-          'quantity': 5,
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -26946,7 +26961,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 5,
+          'quantity': 3,
           'reducible': true
         }
       ],
@@ -27066,17 +27081,17 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('LeatherHideItem'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('WoodBoard'),
-          'quantity': 6,
+          'quantity': 12,
           'reducible': true
         }
       ],
@@ -27495,7 +27510,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 3,
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -28294,12 +28309,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -28323,12 +28338,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -28352,12 +28367,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -28381,12 +28396,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -28439,12 +28454,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         },
         {
           'item': getItemByNameID('Rock'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -28763,7 +28778,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 16,
+          'quantity': 24,
           'reducible': true
         }
       ],
@@ -28787,7 +28802,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         }
       ],
@@ -28811,7 +28826,7 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('Wood'),
-          'quantity': 10,
+          'quantity': 20,
           'reducible': true
         }
       ],
