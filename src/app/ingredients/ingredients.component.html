@@ -5,8 +5,9 @@
     <div id="ingredients">
       <div class="row mx-auto form-group">
         <div class="col">
-          <img [alt]="message('calorieCostLabel')" class="calorieSprite mr-2" [src]="imageTemplateUrl"
-          [ngStyle]="{'background': 'url(' + imageService.getCalorieSpriteImageUrl() + ') no-repeat -416px -160px / 512px'}">
+          <img [alt]="message('calorieCostLabel')" class="calorieSprite mr-2" [ngSrc]="imageTemplateUrl"
+          [ngStyle]="{'background': 'url(' + imageService.getCalorieSpriteImageUrl() + ') no-repeat -416px -160px / 512px'}"
+          width="32" height="32">
           <label for="laborInput">
             <strong>{{message('calorieCostLabel')}}</strong>
           </label>
@@ -20,8 +21,9 @@
       </div>
       <div class="row laborRow divider mx-auto form-group">
         <div class="col">
-          <img [alt]="message('profitPercentLabel')" class="profitSprite mr-2" [src]="imageTemplateUrl"
-               [ngStyle]="{'background': 'url(' + imageService.getProfitSpriteImageUrl() + ') no-repeat -320px -384px / 512px'}">
+          <img [alt]="message('profitPercentLabel')" class="profitSprite mr-2" [ngSrc]="imageTemplateUrl"
+               [ngStyle]="{'background': 'url(' + imageService.getProfitSpriteImageUrl() + ') no-repeat -320px -384px / 512px'}"
+               width="32" height="32">
           <label for="profitInput">
             <strong>{{message('profitPercentLabel')}}</strong>
           </label>
@@ -36,7 +38,8 @@
       <div *ngFor="let ingredient of itemIngredients" class="row ingredientRow mx-auto form-group">
         <div class="col-8">
           <img [alt]=ingredient.name [ngStyle]="imageService.getItemImgStyle(ingredient)"
-               class="itemSprite mr-2" [src]="imageTemplateUrl">
+               class="itemSprite mr-2" [ngSrc]="imageTemplateUrl"
+               width="32" height="32">
           <label *ngIf="ingredient.tag; else nonTagName" for="{{ingredient.nameID}}-priceInput">
             {{ingredient.name}}<span class="material-icons tagIcon">sell</span>
           </label>

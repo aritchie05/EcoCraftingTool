@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark-elevated-1 border-bottom-primary text-light mb-2">
   <div class="navbar-brand">
     <img alt="Eco" class="d-inline-block align-top logo-margin" width="91" height="30"
-         [src]="imageBaseUrl + 'eco-logo-new.png'">
+         [ngSrc]="imageBaseUrl + 'eco-logo-new.png'">
     {{message('navTitle')}}
     <app-release-notes></app-release-notes>
     <div class="dropdown d-inline">
@@ -92,6 +92,6 @@
         </a>
       </div>
     </form>
-    <span class="navbar-text text-light">{{message('version')}} 11.0.0</span>
+    <span class="navbar-text text-light">{{message('version')}} 11.0.2</span>
   </div>
 </nav>

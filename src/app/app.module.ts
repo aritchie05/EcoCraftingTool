@@ -14,6 +14,7 @@ import {CookieService} from 'ngx-cookie-service';
 import {ReleaseNotesComponent} from './release-notes/release-notes.component';
 import {RecipeModalComponent} from './recipe-modal/recipe-modal.component';
 import {ClipboardModule} from '@angular/cdk/clipboard';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     BrowserModule,
     RouterModule,
     HttpClientModule,
-    ClipboardModule
+    ClipboardModule,
+    NgOptimizedImage
   ],
   providers: [
     CookieService

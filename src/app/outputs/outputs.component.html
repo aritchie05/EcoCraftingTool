@@ -16,7 +16,8 @@
                 'background-position': getItemSpritePosition(recipe.primaryOutput.item),
                 'background-size': getItemBackgroundSize(recipe.primaryOutput.item),
                 'filter': getItemFilter(recipe.primaryOutput.item)}"
-               class="outputSprite mr-2" [src]="imageTemplateUrl">
+               class="outputSprite mr-2" [ngSrc]="imageTemplateUrl"
+               width="32" height="32">
            -->
           {{recipe.name}}
         </a>
@@ -33,7 +34,8 @@
           </app-recipe-modal>
           <div class="col-8">
             <img [alt]=outputDisplay.itemName [ngStyle]="imageService.getOutputImgStyle(outputDisplay)"
-                 class="outputSprite mr-2" [src]="imageTemplateUrl">
+                 class="outputSprite mr-2" [ngSrc]="imageTemplateUrl"
+                 width="32" height="32">
             <label for="{{outputDisplay.itemNameID}}-itemPriceDisplay">
               <strong>{{outputDisplay.itemName}}</strong>
             </label>

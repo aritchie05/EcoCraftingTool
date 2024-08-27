@@ -12,7 +12,8 @@
         <a (click)="onSkillSelect(skill)" *ngFor="let skill of filteredSkills" class="dropdown-item dark-input"
            href="#">
           <img [alt]="skill.name" [ngStyle]="imageService.getSkillImgStyle(skill)"
-               class="skillSprite mr-2" [src]="imageTemplateUrl">
+               class="skillSprite mr-2" [ngSrc]="imageTemplateUrl"
+               width="32" height="32">
           {{skill.name}}
         </a>
       </div>
@@ -22,11 +23,13 @@
       <div *ngFor="let skill of selectedSkills" class="row skillRow mx-auto form-group">
         <div class="col-9">
           <img [alt]="skill.name" [ngStyle]="imageService.getSkillImgStyle(skill)"
-               class="skillSprite mr-2" [src]="imageTemplateUrl">
+               class="skillSprite mr-2" [ngSrc]="imageTemplateUrl"
+               width="32" height="32">
           <label class="bump-down" for="{{skill.nameID}}-levelInput">{{skill.name}}</label>
         </div>
         <div class="col-2">
-          <input (keydown)="onLevelChange(skill, $event)" [value]="skill.level"
+          <input #levelInput (keydown)="onLevelChange(skill, $event)" [value]="skill.level"
+                 (click)="levelInput.select()"
                  class="levelInput form-control dark-input" id="{{skill.nameID}}-levelInput"
                  [class.read-only]="skillLevelIsReadOnly(skill)" type="number" [readonly]="skillLevelIsReadOnly(skill)">
         </div>
@@ -64,7 +67,8 @@
                 'background-position': getTableSpritePosition(table),
                 'background-size': '512px'}"
                class="tableSprite mr-2"
-               [src]="imageTemplateUrl">{{table.name}}
+               [ngSrc]="imageTemplateUrl"
+               width="32" height="32">{{table.name}}
         </a>
       </div>
     </div>
@@ -79,7 +83,8 @@
                 'background-position': getTableSpritePosition(table),
                 'background-size': '512px'}"
                  class="tableSprite mr-2"
-                 [src]="imageTemplateUrl">
+                 [ngSrc]="imageTemplateUrl"
+                 width="32" height="32">
             <label class="bump-down" for="{{table.nameID}}-upgradeButton">{{table.name}}</label>
           </div>
           <div class="col-3 dropdown">

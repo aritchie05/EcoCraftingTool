@@ -12,7 +12,8 @@
         <div class="col recipe-info vertical-padding">
           <img [alt]="recipe.craftingTable.name"
                [ngStyle]="imageService.getTableImgStyle(recipe.craftingTable)"
-               class="tableSprite mr-2" [src]="imageService.imageTemplateUrl">
+               class="tableSprite mr-2" [ngSrc]="imageService.imageTemplateUrl"
+               width="32" height="32">
           {{recipe.craftingTable.name}}
         </div>
       </div>
@@ -23,7 +24,8 @@
             <div class="col-8">
               <img [alt]="recipe.skill.name"
                    [ngStyle]="imageService.getSkillImgStyle(recipe.skill)"
-                   class="skillSprite mr-2" [src]="imageService.imageTemplateUrl">
+                   class="skillSprite mr-2" [ngSrc]="imageService.imageTemplateUrl"
+                   width="32" height="32">
               {{recipe.skill.name}}
             </div>
             <div class="col-4 d-flex align-items-center">
@@ -39,7 +41,8 @@
           <div class="recipe-element row">
             <div class="col-8">
               <img [alt]="message('Calories')" class="calorieSprite mr-2"
-                   [src]="imageService.imageTemplateUrl"
+                   [ngSrc]="imageService.imageTemplateUrl"
+                   width="32" height="32"
                    [ngStyle]="imageService.getCalorieImgStyle()">
               {{message('Calories')}}
             </div>
@@ -58,7 +61,8 @@
               <img [alt]=ingredient.item.name
                    [ngStyle]=imageService.getItemImgStyle(ingredient.item)
                    [ngClass]="ingredient.reducible ? 'reducible-item' : 'static-item'"
-                   class="itemSprite modal-sprite mr-2" [src]="imageService.imageTemplateUrl">
+                   class="itemSprite modal-sprite mr-2" [ngSrc]="imageService.imageTemplateUrl"
+                   width="32" height="32">
               {{ingredient.item.name}}
             </div>
             <div class="col-4 text-right d-flex align-items-center">
@@ -76,7 +80,8 @@
             <div class="col-8" [ngClass]="{'primary-output': output.primary}">
               <img [alt]=output.item.name [ngStyle]=imageService.getItemImgStyle(output.item)
                    [ngClass]="{'reducible-item': output.reducible}"
-                   class="itemSprite modal-sprite mr-2" [src]="imageService.imageTemplateUrl">
+                   class="itemSprite modal-sprite mr-2" [ngSrc]="imageService.imageTemplateUrl"
+                   width="32" height="32">
               {{output.item.name}}
             </div>
             <div class="col-4 text-right d-flex align-items-center">
