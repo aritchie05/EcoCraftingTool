@@ -69,32 +69,32 @@ export class LocaleService {
     return lang;
   }
 
-  localizeItemName(itemNameID: string, lang: string): string {
-    return this.localizeString('items', itemNameID, lang);
+  localizeItemName(itemName: string, itemNameID: string, lang: string): string {
+    return this.localizeString('items', itemName, itemNameID, lang);
   }
 
-  localizeRecipeName(recipeNameID: string, lang: string): string {
-    return this.localizeString('recipes', recipeNameID, lang);
+  localizeRecipeName(recipeName: string, recipeNameID: string, lang: string): string {
+    return this.localizeString('recipes', recipeName, recipeNameID, lang);
   }
 
-  localizeSkillName(skillNameID: string, lang: string): string {
-    return this.localizeString('skills', skillNameID, lang);
+  localizeSkillName(skillName: string, skillNameID: string, lang: string): string {
+    return this.localizeString('skills', skillName, skillNameID, lang);
   }
 
-  localizeCraftingTableName(tableNameID: string, lang: string): string {
-    return this.localizeString('tables', tableNameID, lang);
+  localizeCraftingTableName(tableName: string, tableNameID: string, lang: string): string {
+    return this.localizeString('tables', tableName, tableNameID, lang);
   }
 
-  localizeUpgradeName(upgradeNameID: string, lang: string): string {
-    return this.localizeString('upgrades', upgradeNameID, lang);
+  localizeUpgradeName(upgradeName: string, upgradeNameID: string, lang: string): string {
+    return this.localizeString('upgrades', upgradeName, upgradeNameID, lang);
   }
 
-  private localizeString(type: string, nameID: string, lang: string): string {
+  private localizeString(type: string, enName: string, nameID: string, lang: string): string {
     let locData = localeData.find(l => l.type.localeCompare(type) === 0);
     let entry = locData.entries.find(entry => entry.id.localeCompare(nameID) === 0);
     if (entry === undefined) {
       console.warn(`Could not find locale entry for ${nameID} in ${type}`);
-      return nameID;
+      return enName;
     } else {
       switch (lang) {
         case 'en':

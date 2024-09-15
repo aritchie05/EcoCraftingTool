@@ -230,16 +230,16 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   localize(locale: Locale): void {
     this.locale = locale;
     this.outputRecipes.forEach(recipe => {
-      recipe.name = this.localeService.localizeRecipeName(recipe.nameID, locale.langCode());
-      recipe.primaryOutput.item.name = this.localeService.localizeItemName(recipe.primaryOutput.item.nameID, locale.langCode());
+      recipe.name = this.localeService.localizeRecipeName(recipe.name, recipe.nameID, locale.langCode());
+      recipe.primaryOutput.item.name = this.localeService.localizeItemName(recipe.primaryOutput.item.name, recipe.primaryOutput.item.nameID, locale.langCode());
     });
     this.filteredRecipes.forEach(recipe => {
-      recipe.name = this.localeService.localizeRecipeName(recipe.nameID, locale.langCode());
+      recipe.name = this.localeService.localizeRecipeName(recipe.name, recipe.nameID, locale.langCode());
       recipe.ingredients.forEach(ingredient => {
-        ingredient.item.name = this.localeService.localizeItemName(ingredient.item.nameID, locale.langCode());
+        ingredient.item.name = this.localeService.localizeItemName(ingredient.item.name, ingredient.item.nameID, locale.langCode());
       });
       recipe.outputs.forEach(output => {
-        output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode());
+        output.item.name = this.localeService.localizeItemName(output.item.name, output.item.nameID, locale.langCode());
       });
     });
     this.convertRecipesToOutputDisplays();

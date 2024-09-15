@@ -3930,7 +3930,10 @@ export let items: Item[] =
     {
       'name': 'Injection Mold Machine',
       'nameID': 'InjectionMoldMachineItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 12
     },
     {
       'name': 'Iron Axe',
@@ -10589,7 +10592,7 @@ export let items: Item[] =
       'tag': false,
       'imageFile': 'UI_Icons_Baked_1.png',
       'xPos': 6,
-      'yPos': 42
+      'yPos': 35
     },
     {
       'name': 'Iron Paint Sprayer',
@@ -11014,5 +11017,15 @@ export let items: Item[] =
       'imageFile': 'UI_Icons_00.png',
       'xPos': 11,
       'yPos': 13
+    },
+    {
+      'name': 'Decorative Bowl',
+      'nameID': 'DecorativeBowlItem',
+      'tag': false
+    },
+    {
+      'name': 'Fish Kites',
+      'nameID': 'FishKitesItem',
+      'tag': false
     }
   ];

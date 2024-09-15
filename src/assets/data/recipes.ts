@@ -400,7 +400,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Advanced Upgrade 1',
       'nameID': 'AdvancedUpgradeLvl1',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 90,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -429,7 +429,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Advanced Upgrade 2',
       'nameID': 'AdvancedUpgradeLvl2',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 90,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -463,7 +463,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Advanced Upgrade 3',
       'nameID': 'AdvancedUpgradeLvl3',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 90,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -502,7 +502,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Advanced Upgrade 4',
       'nameID': 'AdvancedUpgradeLvl4',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 90,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -1830,7 +1830,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Basic Upgrade 1',
       'nameID': 'BasicUpgradeLvl1',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -1859,7 +1859,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Basic Upgrade 2',
       'nameID': 'BasicUpgradeLvl2',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -1898,7 +1898,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Basic Upgrade 3',
       'nameID': 'BasicUpgradeLvl3',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -1937,7 +1937,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Basic Upgrade 4',
       'nameID': 'BasicUpgradeLvl4',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 60,
       'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
       'hidden': false,
@@ -13182,7 +13182,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Modern Upgrade 1',
       'nameID': 'ModernUpgradeLvl1',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -13216,7 +13216,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Modern Upgrade 2',
       'nameID': 'ModernUpgradeLvl2',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -13255,7 +13255,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Modern Upgrade 3',
       'nameID': 'ModernUpgradeLvl3',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -13299,7 +13299,7 @@ export let standardRecipes: Recipe[] =
       'name': 'Modern Upgrade 4',
       'nameID': 'ModernUpgradeLvl4',
       'skill': getSkillByNameID('SelfImprovementSkill'),
-      'level': 0,
+      'level': 1,
       'labor': 600,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
       'hidden': false,
@@ -25796,40 +25796,6 @@ export let standardRecipes: Recipe[] =
       ]
     },
     {
-      'name': 'Bonsai',
-      'nameID': 'Bonsai',
-      'skill': getSkillByNameID('FarmingSkill'),
-      'level': 3,
-      'labor': 90,
-      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
-      'hidden': false,
-      'ingredients': [
-        {
-          'item': getItemByNameID('AcornItem'),
-          'quantity': 4,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('DirtItem'),
-          'quantity': 6,
-          'reducible': true
-        },
-        {
-          'item': getItemByNameID('Lumber'),
-          'quantity': 4,
-          'reducible': true
-        }
-      ],
-      'outputs': [
-        {
-          'item': getItemByNameID('BonsaiItem'),
-          'quantity': 1,
-          'reducible': false,
-          'primary': true
-        }
-      ]
-    },
-    {
       'name': 'Charcoal Powder',
       'nameID': 'CharcoalPowder',
       'skill': getSkillByNameID('MillingSkill'),
@@ -26153,7 +26119,7 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
-          'item': getItemByNameID('HareCarcassItem'),
+          'item': getItemByNameID('MediumCarcass'),
           'quantity': 1,
           'reducible': false
         }
@@ -27511,7 +27477,7 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('Rock'),
           'quantity': 1,
-          'reducible': true
+          'reducible': false
         }
       ],
       'outputs': [
@@ -28915,6 +28881,657 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('ZoningOfficeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Acorn Powder',
+      'nameID': 'ProcessedAcornPowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 5,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('AcornItem'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('AcornPowderItem'),
+          'quantity': 6,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Bean Paste',
+      'nameID': 'ProcessedBeanPaste',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 3,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BeansItem'),
+          'quantity': 18,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BeanPasteItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Beet Sugar',
+      'nameID': 'ProcessedBeetSugar',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 3,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BeetItem'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SugarItem'),
+          'quantity': 12,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Blue Powder',
+      'nameID': 'ProcessedBluePowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HuckleberriesItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BluePowderItem'),
+          'quantity': 12,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Camas Paste',
+      'nameID': 'ProcessedCamasPaste',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CamasBulbItem'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CamasPasteItem'),
+          'quantity': 6,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Charcoal Powder',
+      'nameID': 'ProcessedCharcoalPowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CharcoalItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CharcoalPowderItem'),
+          'quantity': 12,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Colored Powder',
+      'nameID': 'ProcessedColoredPowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 55,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Petals'),
+          'quantity': 8,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ColoredPowderItem'),
+          'quantity': 3,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Copper Hydroxide',
+      'nameID': 'ProcessedCopperHydroxide',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CrushedCopperOreItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CopperHydroxideItem'),
+          'quantity': 26,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Cornmeal',
+      'nameID': 'ProcessedCornmeal',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 1,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CornItem'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CornmealItem'),
+          'quantity': 6,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('CerealGermItem'),
+          'quantity': 12,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Processed Cottonseed Oil',
+      'nameID': 'ProcessedCottonseedOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 4,
+      'labor': 75,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CottonSeedItem'),
+          'quantity': 13,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Creosote',
+      'nameID': 'ProcessedCreosote',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CreosoteFlowerItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('YellowPowderItem'),
+          'quantity': 14,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Fish Oil',
+      'nameID': 'ProcessedFishOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 4,
+      'labor': 75,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RawFishItem'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Flour',
+      'nameID': 'ProcessedFlour',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 1,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('WheatItem'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlourItem'),
+          'quantity': 6,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Huckleberry Extract',
+      'nameID': 'ProcessedHuckleberryExtract',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HuckleberriesItem'),
+          'quantity': 50,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('HuckleberryExtractItem'),
+          'quantity': 3,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Iron Oxide',
+      'nameID': 'ProcessedIronOxide',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CrushedIronOreItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IronOxideItem'),
+          'quantity': 20,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Magenta Powder',
+      'nameID': 'ProcessedMagentaPowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('UrchinItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MagentaPowderItem'),
+          'quantity': 14,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Oil',
+      'nameID': 'ProcessedOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 1,
+      'labor': 75,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CerealGermItem'),
+          'quantity': 25,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Rice Flour',
+      'nameID': 'ProcessedRiceFlour',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 1,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RiceItem'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RiceFlourItem'),
+          'quantity': 6,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('CerealGermItem'),
+          'quantity': 5,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Processed Simple Syrup',
+      'nameID': 'ProcessedSimpleSyrup',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 5,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SugarItem'),
+          'quantity': 25,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SimpleSyrupItem'),
+          'quantity': 3,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Sugar',
+      'nameID': 'ProcessedSugar',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 1,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('HuckleberriesItem'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SugarItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Sun Cheese',
+      'nameID': 'ProcessedSunCheese',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 3,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SunflowerSeedItem'),
+          'quantity': 18,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('YeastItem'),
+          'quantity': 6,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('RiceItem'),
+          'quantity': 12,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('Oil'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SunCheeseItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Sunflower Oil',
+      'nameID': 'ProcessedSunflowerOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 4,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SunflowerSeedItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed White Powder',
+      'nameID': 'ProcessedWhitePowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('TrilliumFlowerItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WhitePowderItem'),
+          'quantity': 14,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Yeast',
+      'nameID': 'ProcessedYeast',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 4,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SugarItem'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('YeastItem'),
+          'quantity': 6,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processed Yellow Powder',
+      'nameID': 'ProcessedYellowPowder',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 2,
+      'labor': 65,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SunflowerItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('YellowPowderItem'),
+          'quantity': 14,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Processsed Flaxseed Oil',
+      'nameID': 'ProcesssedFlaxseedOil',
+      'skill': getSkillByNameID('MillingSkill'),
+      'level': 3,
+      'labor': 100,
+      'craftingTable': getCraftingTableByNameID('IndustrialMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FlaxSeedItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FlaxseedOilItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
