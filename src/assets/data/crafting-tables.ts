@@ -32,7 +32,7 @@ export let craftingTables: CraftingTable[] =
     {
       'name': 'Anvil',
       'nameID': 'AnvilObject',
-      'upgradeModuleType': 'AdvancedUpgrade',
+      'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
       'imageFile': 'UI_Icons_00.png',
       'xPos': 5,
@@ -95,7 +95,7 @@ export let craftingTables: CraftingTable[] =
     {
       'name': 'Bloomery',
       'nameID': 'BloomeryObject',
-      'upgradeModuleType': 'AdvancedUpgrade',
+      'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
       'imageFile': 'UI_Icons_00.png',
       'xPos': 12,
@@ -273,13 +273,22 @@ export let craftingTables: CraftingTable[] =
       'yPos': 10
     },
     {
+      'name': 'Industrial Mill',
+      'nameID': 'IndustrialMillObject',
+      'upgradeModuleType': 'BasicUpgrade',
+      'hidden': false,
+      'imageFile': 'UI_Icons_07.png',
+      'xPos': 10,
+      'yPos': 1
+    },
+    {
       'name': 'Injection Mold Machine',
       'nameID': 'InjectionMoldMachineObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_07.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 14,
+      'yPos': 12
     },
     {
       'name': 'Jaw Crusher',

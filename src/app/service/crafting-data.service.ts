@@ -271,17 +271,17 @@ export class CraftingDataService {
   }
 
   localize(locale: Locale): void {
-    this.tables.forEach(table => table.name = this.localeService.localizeCraftingTableName(table.nameID, locale.langCode()));
-    this.upgrades.forEach(upgrade => upgrade.name = this.localeService.localizeUpgradeName(upgrade.nameID, locale.langCode()));
-    this.items.forEach(item => item.name = this.localeService.localizeItemName(item.nameID, locale.langCode()));
+    this.tables.forEach(table => table.name = this.localeService.localizeCraftingTableName(table.name, table.nameID, locale.langCode()));
+    this.upgrades.forEach(upgrade => upgrade.name = this.localeService.localizeUpgradeName(upgrade.name, upgrade.nameID, locale.langCode()));
+    this.items.forEach(item => item.name = this.localeService.localizeItemName(item.name, item.nameID, locale.langCode()));
     this.recipes.forEach(recipe => {
-      recipe.name = this.localeService.localizeRecipeName(recipe.nameID, locale.langCode());
-      recipe.ingredients.forEach(input => input.item.name = this.localeService.localizeItemName(input.item.nameID, locale.langCode()));
-      recipe.outputs.forEach(output => output.item.name = this.localeService.localizeItemName(output.item.nameID, locale.langCode()));
-      recipe.craftingTable.name = this.localeService.localizeCraftingTableName(recipe.craftingTable.nameID, locale.langCode());
-      recipe.skill.name = this.localeService.localizeSkillName(recipe.skill.nameID, locale.langCode());
+      recipe.name = this.localeService.localizeRecipeName(recipe.name, recipe.nameID, locale.langCode());
+      recipe.ingredients.forEach(input => input.item.name = this.localeService.localizeItemName(input.item.name, input.item.nameID, locale.langCode()));
+      recipe.outputs.forEach(output => output.item.name = this.localeService.localizeItemName(output.item.name, output.item.nameID, locale.langCode()));
+      recipe.craftingTable.name = this.localeService.localizeCraftingTableName(recipe.craftingTable.name, recipe.craftingTable.nameID, locale.langCode());
+      recipe.skill.name = this.localeService.localizeSkillName(recipe.skill.name, recipe.skill.nameID, locale.langCode());
     });
-    this.skills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.nameID, locale.langCode()));
+    this.skills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.name, skill.nameID, locale.langCode()));
   }
 
   setExpensiveEndgameCost(isExpensive: boolean): void {

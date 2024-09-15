@@ -100,7 +100,7 @@ export class IngredientsComponent implements OnInit {
 
   localize(locale: Locale) {
     this.locale = locale;
-    this.itemIngredients.forEach(item => item.name = this.localeService.localizeItemName(item.nameID, locale.langCode()));
+    this.itemIngredients.forEach(item => item.name = this.localeService.localizeItemName(item.name, item.nameID, locale.langCode()));
     this.sortIngredients();
   }
 

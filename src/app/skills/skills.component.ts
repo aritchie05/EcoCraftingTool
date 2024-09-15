@@ -195,12 +195,12 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
   localize(locale: Locale): void {
     this.locale = locale;
-    this.selectedSkills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.nameID, locale.langCode()));
-    this.filteredSkills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.nameID, locale.langCode()));
+    this.selectedSkills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.name, skill.nameID, locale.langCode()));
+    this.filteredSkills.forEach(skill => skill.name = this.localeService.localizeSkillName(skill.name, skill.nameID, locale.langCode()));
     this.craftingTables.forEach(table => {
-      table.name = this.localeService.localizeCraftingTableName(table.nameID, locale.langCode());
-      table.availableUpgrades.forEach(upgrade => upgrade.name = this.localeService.localizeUpgradeName(upgrade.nameID, locale.langCode()));
-      table.selectedUpgrade.name = this.localeService.localizeUpgradeName(table.selectedUpgrade.nameID, locale.langCode());
+      table.name = this.localeService.localizeCraftingTableName(table.name, table.nameID, locale.langCode());
+      table.availableUpgrades.forEach(upgrade => upgrade.name = this.localeService.localizeUpgradeName(upgrade.name, upgrade.nameID, locale.langCode()));
+      table.selectedUpgrade.name = this.localeService.localizeUpgradeName(table.selectedUpgrade.name, table.selectedUpgrade.nameID, locale.langCode());
     });
   }
 }
