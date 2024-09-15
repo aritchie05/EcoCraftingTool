@@ -60,10 +60,16 @@ export class SkillsComponent implements OnInit, AfterContentInit {
 
     let tables = this.storageService.get('tables');
     if (tables != null) {
-      tables.forEach(tb => {
+      tables.forEach((tb: TableCookie) => {
         let table = this.dataService.getCraftingTables().find(table => table.nameID.localeCompare(tb.id) === 0);
         table.availableUpgrades = this.dataService.getUpgradeModulesForTable(table);
         table.selectedUpgrade = table.availableUpgrades.find(upgrade => upgrade.nameID.localeCompare(tb.up) === 0);
+
+        //Special case where the upgrade type gets updated later (e.g. Bloomery goes from Advanced to Basic)
+        if (table.selectedUpgrade === undefined) {
+          table.selectedUpgrade = this.mapOldUpgradeType(table.availableUpgrades, tb.up);
+        }
+
         this.craftingTables.push(table);
       });
     }
@@ -77,6 +83,13 @@ export class SkillsComponent implements OnInit, AfterContentInit {
       this.filteredSkills = resp.skills;
     });
     */
+  }
+
+  mapOldUpgradeType(availableUpgrades: UpgradeModule[], oldUpgradeId: string): UpgradeModule {
+    const upgradeModules = this.dataService.getUpgradeModules();
+    const oldUpgrade = upgradeModules.find(upgrade => upgrade.nameID.localeCompare(oldUpgradeId) === 0);
+    let foundUpgrade = availableUpgrades.find(upgrade => upgrade.modifier === oldUpgrade.modifier);
+    return foundUpgrade !== undefined ? foundUpgrade : availableUpgrades[0];
   }
 
   message(id: string): string {
