@@ -5,11 +5,10 @@ import {CraftingTable} from '../interface/crafting-table';
 import {UpgradeModule} from '../interface/upgrade-module';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
-import {CookieService} from 'ngx-cookie-service';
-import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {ImageService} from '../service/image.service';
+import {SkillCookie} from '../cookie/skill-cookie';
 
 export const SKILL_SPRITE_SIZE = 32;
 export const TABLE_SPRITE_SIZE = 32;
@@ -50,7 +49,7 @@ export class SkillsComponent implements OnInit, AfterContentInit {
   ngOnInit(): void {
     let skills = this.storageService.get('skills');
     if (skills != null) {
-      skills.forEach(sk => {
+      skills.forEach((sk: SkillCookie) => {
         let skill = this.dataService.getSkills().find(skill => skill.nameID.localeCompare(sk.id) === 0);
         skill.level = sk.lvl;
         skill.lavishChecked = sk.lav;

@@ -1,7 +1,6 @@
-import {Component, HostListener, Input, OnInit, ElementRef} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Recipe} from '../interface/recipe';
 import {ImageService} from '../service/image.service';
-import {OutputDisplay, SubRecipe} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
 
@@ -13,48 +12,20 @@ import {MessageService} from '../service/message.service';
 export class RecipeModalComponent implements OnInit {
 
   @Input() recipe: Recipe;
-  @Input() outputDisplay: OutputDisplay;
-  @Input() recipeToggleButton: HTMLElement;
-  @Input() dropUp: boolean;
-  showRecipe: boolean;
-  locale: Locale;
+  visible: boolean = false;
 
   constructor(public imageService: ImageService, private localeService: LocaleService,
-              private messageService: MessageService, private elementRef: ElementRef) {
-    this.showRecipe = false;
-    this.locale = localeService.selectedLocale;
-  }
-
-  @HostListener('document:click', ['$event'])
-  clickout(event) {
-    //Only handle outside click if this modal is being shown
-    if (this.showRecipe) {
-      //Check if the click event target is outside the modal
-      if (!this.elementRef.nativeElement.contains(event.target)) {
-        //Check if the click is on the toggle button for this component
-        if (this.recipeToggleButton != event.target) {
-          this.closeModal();
-        }
-      }
-    }
+              private messageService: MessageService) {
   }
 
   ngOnInit(): void {
   }
 
-  toggleShowRecipe() {
-    this.showRecipe = !this.showRecipe;
-  }
-
-  closeModal() {
-    this.showRecipe = false;
-  }
-
-  showModal() {
-    this.showRecipe = true;
-  }
-
   message(id: string): string {
-    return this.messageService.getMessage(id, this.locale);
+    return this.messageService.getMessage(id, this.localeService.selectedLocale);
+  }
+
+  show(): void {
+    this.visible = true;
   }
 }

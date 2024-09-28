@@ -1,12 +1,10 @@
-import {AfterContentInit, Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Inject, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {CraftingDataService} from '../service/crafting-data.service';
 import {Recipe} from '../interface/recipe';
 import {OutputDisplay} from '../interface/output-display';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
-import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
-import {Item} from '../interface/item';
 import {RecipeModalComponent} from '../recipe-modal/recipe-modal.component';
 import {ImageService} from '../service/image.service';
 
@@ -23,6 +21,10 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   filteredRecipes: Recipe[];
   outputDisplays: OutputDisplay[];
   locale: Locale;
+  detailRecipe: Recipe;
+
+  @ViewChild(RecipeModalComponent)
+  private recipeModalComponent: RecipeModalComponent;
 
   @Input() imageBaseUrl: string;
   @Input() imageTemplateUrl: string;
@@ -35,8 +37,7 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   @Output() recipeModalOpenedEvent = new EventEmitter<RecipeModalComponent>();
 
   constructor(public imageService: ImageService, private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService,
-              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
+              private messageService: MessageService, @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.outputRecipes = [];
     this.outputDisplays = [];
     this.locale = localeService.selectedLocale;
@@ -58,9 +59,6 @@ export class OutputsComponent implements OnInit, AfterContentInit {
           let profitStored = this.storageService.get('profitPercent');
           if (profitStored != null) {
             let profitPercent = Number.parseFloat(profitStored) / 100;
-            recipe.basePrice = recipe.price / (1 + profitPercent);
-          } else {
-            let profitPercent = Number.parseFloat(this.cookieService.get('profitPercent')) / 100;
             recipe.basePrice = recipe.price / (1 + profitPercent);
           }
         }
@@ -219,12 +217,9 @@ export class OutputsComponent implements OnInit, AfterContentInit {
     return this.outputRecipes.some(recipe => recipe.primaryOutput.item.nameID.localeCompare(itemNameID) === 0);
   }
 
-  toggleModal(recipeModal: RecipeModalComponent): void {
-    if (recipeModal.showRecipe) {
-      recipeModal.closeModal();
-    } else {
-      this.recipeModalOpenedEvent.emit(recipeModal);
-    }
+  showRecipeDetailsDialog(recipe: Recipe) {
+    this.detailRecipe = recipe;
+    this.recipeModalComponent.show();
   }
 
   localize(locale: Locale): void {
@@ -248,4 +243,6 @@ export class OutputsComponent implements OnInit, AfterContentInit {
   onCalculatePrices() {
     this.calculatePricesEvent.emit();
   }
+
+
 }

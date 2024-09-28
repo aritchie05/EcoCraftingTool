@@ -142,3 +142,23 @@ body {
 .hidden {
   display: none;
 }
+
+.p-dialog {
+  width: 60rem;
+}
+
+.p-dialog-header {
+  background-color: #212121;
+  justify-content: center;
+}
+
+.p-dialog-header-icons {
+  position: absolute;
+  right: 10px;
+}
+
+
+.p-dialog-content {
+  background-color: #212121;
+}
+
