@@ -3,8 +3,6 @@ import {CraftingDataService} from '../service/crafting-data.service';
 import {Item} from '../interface/item';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
-import {CookieService} from 'ngx-cookie-service';
-import {IngredientCookie} from '../cookie/ingredient-cookie';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {ImageService} from '../service/image.service';
 
@@ -30,8 +28,7 @@ export class IngredientsComponent implements OnInit {
   @Output() profitPercentChangedEvent = new EventEmitter<number>();
 
   constructor(public imageService: ImageService, private dataService: CraftingDataService, private localeService: LocaleService,
-              private messageService: MessageService, private cookieService: CookieService,
-              @Inject(LOCAL_STORAGE) private storageService: StorageService) {
+              private messageService: MessageService, @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.itemIngredients = [];
     this.laborCost = 0;
     this.profitPercent = 0;

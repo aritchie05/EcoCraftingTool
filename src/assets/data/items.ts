@@ -9735,8 +9735,8 @@ export let items: Item[] =
       'nameID': 'PotteryTableItem',
       'tag': false,
       'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'xPos': 12,
+      'yPos': 15
     },
     {
       'name': 'Primitive Canvas Boots',
@@ -10822,7 +10822,7 @@ export let items: Item[] =
       'name': 'Store Sign',
       'nameID': 'StoreSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_07.png',
       'xPos': 0,
       'yPos': 1
     },

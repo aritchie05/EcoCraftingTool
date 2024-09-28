@@ -15,6 +15,7 @@
         <div class="col">
           <input #laborBox (focusout)="onLaborCostChange(laborBox.value)"
                  [value]="laborCost.toLocaleString(locale.code)"
+                 (click)="laborBox.select()"
                  class="priceInput form-control float-right dark-input" id="laborInput"
                  pattern="[0-9]*[.,]?[0-9]+" type="text">
         </div>
@@ -30,6 +31,7 @@
         </div>
         <div class="col">
           <input #profitBox (focusout)="onProfitPercentChange(profitBox.value)"
+                 (click)="profitBox.select()"
                  [value]="profitPercent.toLocaleString(locale.code)"
                  class="priceInput form-control float-right dark-input" id="profitInput"
                  pattern="[0-9]*[.,]?[0-9]+" type="text">

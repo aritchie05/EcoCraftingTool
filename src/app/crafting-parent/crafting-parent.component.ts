@@ -8,7 +8,6 @@ import {Item} from '../interface/item';
 import {Recipe} from '../interface/recipe';
 import {CraftingTable} from '../interface/crafting-table';
 import {Locale, LocaleService} from '../service/locale.service';
-import {CookieService} from 'ngx-cookie-service';
 import {SkillCookie} from '../cookie/skill-cookie';
 import {TableCookie} from '../cookie/table-cookie';
 import {IngredientCookie} from '../cookie/ingredient-cookie';
@@ -17,8 +16,6 @@ import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {whiteTigerRecipes} from '../../assets/data/white-tiger/white-tiger-recipes';
 import {isNotNullOrUndefined} from 'codelyzer/util/isNotNullOrUndefined';
 import {standardRecipes} from '../../assets/data/recipes';
-import {OutputDisplay} from '../interface/output-display';
-import {RecipeModalComponent} from '../recipe-modal/recipe-modal.component';
 
 @Component({
   selector: 'app-crafting-parent',
@@ -43,7 +40,7 @@ export class CraftingParentComponent implements OnInit {
 
   private resourceCostMultiplier: number;
 
-  constructor(private dataService: CraftingDataService, private localeService: LocaleService, private cookieService: CookieService,
+  constructor(private dataService: CraftingDataService, private localeService: LocaleService,
               @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.resourceCostMultiplier = 1;
   }
@@ -201,13 +198,11 @@ export class CraftingParentComponent implements OnInit {
 
   onLavishUpdated(skill: Skill): void {
     this.recalculateOutputPricesIfPerformanceModeOff();
-
     this.saveDataToLocalStorage();
   }
 
   onUpgradeChanged(table: CraftingTable) {
     this.recalculateOutputPricesIfPerformanceModeOff();
-
     this.saveDataToLocalStorage();
   }
 
@@ -760,34 +755,5 @@ export class CraftingParentComponent implements OnInit {
       }
     }
   }
-
-  onRecipeModalOpened(component: RecipeModalComponent) {
-    component.dropUp = this.shouldDropUp(component.outputDisplay, component.recipe.nameID);
-    component.showModal();
-  }
-
-  shouldDropUp(outputDisplay: OutputDisplay, recipeNameID: string): boolean {
-    let totalRecipeRows = 0;
-    this.outputsComponent.outputDisplays.forEach(outputDisplay => totalRecipeRows += outputDisplay.subRecipes.length);
-    if (totalRecipeRows < 8) {
-      return false;
-    } else {
-      let recipeRowIndex = 0;
-      for (let output of this.outputsComponent.outputDisplays) {
-        for (let sub of output.subRecipes) {
-          recipeRowIndex++;
-          if (output.itemNameID.localeCompare(outputDisplay.itemNameID) === 0) {
-            if (sub.recipeNameID.localeCompare(recipeNameID) === 0) {
-              return recipeRowIndex >= 8 && recipeRowIndex >= (totalRecipeRows - 10) &&
-                (recipeRowIndex >= (this.ingredientsComponent.itemIngredients.length - 8));
-            }
-          }
-        }
-      }
-    }
-
-    return false;
-  }
-
 
 }

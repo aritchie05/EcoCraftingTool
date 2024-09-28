@@ -10,11 +10,12 @@ import {IngredientsComponent} from './ingredients/ingredients.component';
 import {OutputsComponent} from './outputs/outputs.component';
 import {HttpClientModule} from '@angular/common/http';
 import {CraftingParentComponent} from './crafting-parent/crafting-parent.component';
-import {CookieService} from 'ngx-cookie-service';
 import {ReleaseNotesComponent} from './release-notes/release-notes.component';
 import {RecipeModalComponent} from './recipe-modal/recipe-modal.component';
 import {ClipboardModule} from '@angular/cdk/clipboard';
-import { NgOptimizedImage } from '@angular/common';
+import {NgOptimizedImage} from '@angular/common';
+import {DialogModule} from 'primeng/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,14 +31,14 @@ import { NgOptimizedImage } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule,
     HttpClientModule,
     ClipboardModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    DialogModule
   ],
-  providers: [
-    CookieService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

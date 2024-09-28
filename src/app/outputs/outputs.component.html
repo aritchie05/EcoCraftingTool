@@ -1,5 +1,5 @@
 <h1 class="text-center">{{message('outputsHeader')}}</h1>
-
+<app-recipe-modal [recipe]="detailRecipe"></app-recipe-modal>
 <form>
   <div class="form-group">
     <div class="dropdown w-75 mx-auto pb-2">
@@ -11,14 +11,6 @@
       <div aria-labelledby="recipeSearchInput" class="dropdown-menu dark-input">
         <a (click)="onRecipeSelect(recipe)" *ngFor="let recipe of filteredRecipes" class="dropdown-item dark-input"
            href="#">
-          <!-- Performance is pretty bad on the recipe list with images.. maybe load 50 at a time or something?
-          <img [alt]=recipe.name [ngStyle]="{'background': 'url(' + imageBaseUrl + recipe.primaryOutput.item.imageFile + ') no-repeat',
-                'background-position': getItemSpritePosition(recipe.primaryOutput.item),
-                'background-size': getItemBackgroundSize(recipe.primaryOutput.item),
-                'filter': getItemFilter(recipe.primaryOutput.item)}"
-               class="outputSprite mr-2" [ngSrc]="imageTemplateUrl"
-               width="32" height="32">
-           -->
           {{recipe.name}}
         </a>
       </div>
@@ -29,9 +21,6 @@
     <div id="recipes">
       <div *ngFor="let outputDisplay of outputDisplays">
         <div class="row recipeRow mx-auto form-group">
-          <app-recipe-modal #recipeModal [recipe]="outputDisplay.subRecipes[0].recipe" [recipeToggleButton]="recipeToggle"
-                            [outputDisplay]="outputDisplay">
-          </app-recipe-modal>
           <div class="col-8">
             <img [alt]=outputDisplay.itemName [ngStyle]="imageService.getOutputImgStyle(outputDisplay)"
                  class="outputSprite mr-2" [ngSrc]="imageTemplateUrl"
@@ -41,7 +30,7 @@
             </label>
             <span #recipeToggle [ngClass]="{'hidden': outputDisplay.subRecipes.length > 1}"
                   class="material-icons-outlined md-light hoverable recipe-modal-toggle"
-                  (click)="toggleModal(recipeModal)">info</span>
+                  (click)="showRecipeDetailsDialog(outputDisplay.subRecipes[0].recipe)">info</span>
           </div>
           <div class="col-3">
             <input [value]="outputDisplay.itemPrice
@@ -57,15 +46,12 @@
         </div>
         <ng-template [ngIf]="outputDisplay.subRecipes.length > 1">
           <div *ngFor="let subRecipe of outputDisplay.subRecipes" class="row recipeRow mx-auto form-group">
-            <app-recipe-modal #subRecipeModal [recipe]="subRecipe.recipe" [recipeToggleButton]="subRecipeToggle"
-            [outputDisplay]="outputDisplay">
-            </app-recipe-modal>
             <div class="col-8">
               <label class="pl-6" for="{{subRecipe.recipeNameID}}-itemPriceDisplay">
                 {{subRecipe.recipeName}} {{message('recipeSuffix')}}
               </label>
               <span #subRecipeToggle class="material-icons-outlined md-light hoverable recipe-modal-toggle"
-                    (click)="toggleModal(subRecipeModal)">info</span>
+                    (click)="showRecipeDetailsDialog(subRecipe.recipe)">info</span>
             </div>
             <div class="col-3">
               <input [value]="subRecipe.recipePrice

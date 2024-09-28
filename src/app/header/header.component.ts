@@ -1,10 +1,8 @@
 import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 import {Locale, LocaleService} from '../service/locale.service';
 import {MessageService} from '../service/message.service';
-import {CookieService} from 'ngx-cookie-service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {CalculatorConfig} from '../cookie/calculator-config';
-import {catchError} from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -32,7 +30,7 @@ export class HeaderComponent implements OnInit {
   @Output() exportCalcConfigEvent = new EventEmitter();
 
 
-  constructor(private localeService: LocaleService, private messageService: MessageService, private cookieService: CookieService,
+  constructor(private localeService: LocaleService, private messageService: MessageService,
               @Inject(LOCAL_STORAGE) private storageService: StorageService) {
     this.locale = localeService.selectedLocale;
     this.locales = localeService.supportedLocales;
