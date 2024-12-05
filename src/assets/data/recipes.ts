@@ -19864,12 +19864,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LubricantItem'),
-          'quantity': 1,
-          'reducible': false
+          'quantity': 4,
+          'reducible': true
         },
         {
-          'item': getItemByNameID('WoodBoard'),
-          'quantity': 5,
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -20367,8 +20367,8 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LubricantItem'),
-          'quantity': 1,
-          'reducible': false
+          'quantity': 4,
+          'reducible': true
         }
       ],
       'outputs': [
