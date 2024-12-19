@@ -40,7 +40,7 @@ export class ImageService {
   }
 
   getSpritePosition(xPos: number, yPos: number, size: number, imageFile: string): string {
-    if (imageFile?.includes('UI_Icons_Baked')) {
+    if (imageFile?.includes('UI_Icons_Baked_1')) {
       return `-${xPos * size + xPos * .5}px -${yPos * size + yPos * .5}px`;
     } else if (imageFile?.includes('UI_Icons')) {
       return `-${xPos * size}px -${yPos * size}px`;
