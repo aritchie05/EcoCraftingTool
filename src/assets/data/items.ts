@@ -11027,5 +11027,122 @@ export let items: Item[] =
       'name': 'Fish Kites',
       'nameID': 'FishKitesItem',
       'tag': false
+    },
+    {
+      'name': 'Black Powder',
+      'nameID': 'BlackPowderItem',
+      'tag': false,
+      'imageFile': 'BlackPowder.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Blasting Cap',
+      'nameID': 'BlastingCapItem',
+      'tag': false,
+      'imageFile': 'BlastingCap.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Crushed Sulfur',
+      'nameID': 'CrushedSulfurItem',
+      'tag': false,
+      'imageFile': 'CrushedSulfur_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Dynamite',
+      'nameID': 'DynamiteItem',
+      'tag': false,
+      'imageFile': 'DynamiteObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Mining Charge',
+      'nameID': 'MiningChargeItem',
+      'tag': false,
+      'imageFile': 'MiningChargeObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Nitric Acid',
+      'nameID': 'NitricAcidItem',
+      'tag': false,
+      'imageFile': 'NitricAcid.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Peat',
+      'nameID': 'PeatItem',
+      'tag': false,
+      'imageFile': 'Peat_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Remote Detonator',
+      'nameID': 'RemoteDetonatorItem',
+      'tag': false,
+      'imageFile': 'ModernDetonator_FPV_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Shoji Door',
+      'nameID': 'ShojiDoorItem',
+      'tag': false
+    },
+    {
+      'name': 'Stump Bed',
+      'nameID': 'StumpBedItem',
+      'tag': false,
+      'imageFile': 'StumpBedObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Stump Chair',
+      'nameID': 'StumpChairItem',
+      'tag': false,
+      'imageFile': 'StumpChairObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Stump Latrine',
+      'nameID': 'StumpLatrineItem',
+      'tag': false,
+      'imageFile': 'StumpLatrineObject_Icon',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Stump Table',
+      'nameID': 'StumpTableItem',
+      'tag': false,
+      'imageFile': 'StumpTableObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Sulfur',
+      'nameID': 'SulfurItem',
+      'tag': false,
+      'imageFile': 'Sulfur_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wooden Sliding Door',
+      'nameID': 'WoodenSlidingDoorItem',
+      'tag': false,
+      'imageFile': 'WoodenSlidingDoorObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
     }
   ];

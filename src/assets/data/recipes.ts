@@ -4737,6 +4737,11 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
+          'item': getItemByNameID('LubricantItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('PistonItem'),
           'quantity': 4,
           'reducible': true
@@ -7591,6 +7596,12 @@ export let standardRecipes: Recipe[] =
           'quantity': 3,
           'reducible': true,
           'primary': false
+        },
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 1,
+          'reducible': true,
+          'primary': false
         }
       ]
     },
@@ -9026,6 +9037,12 @@ export let standardRecipes: Recipe[] =
           'quantity': 1,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 1,
+          'reducible': true,
+          'primary': true
         }
       ]
     },
@@ -9075,6 +9092,11 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('IronGearItem'),
           'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LubricantItem'),
+          'quantity': 1,
           'reducible': true
         }
       ],
@@ -13573,6 +13595,12 @@ export let standardRecipes: Recipe[] =
           'quantity': 3,
           'reducible': true,
           'primary': false
+        },
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 1,
+          'reducible': true,
+          'primary': false
         }
       ]
     },
@@ -14052,7 +14080,12 @@ export let standardRecipes: Recipe[] =
       'ingredients': [
         {
           'item': getItemByNameID('CrushedLimestoneItem'),
-          'quantity': 3,
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 2,
           'reducible': true
         },
         {
@@ -14218,7 +14251,13 @@ export let standardRecipes: Recipe[] =
           'quantity': 3,
           'reducible': true,
           'primary': false
-        }
+        },
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 1,
+          'reducible': true,
+          'primary': false
+        },
       ]
     },
     {
@@ -15424,6 +15463,11 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('SyntheticRubberItem'),
           'quantity': 8,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 2,
           'reducible': true
         }
       ],
@@ -16998,6 +17042,11 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
+          'item': getItemByNameID('BoilerItem'),
+          'quantity': 1,
+          'reducible': false
+        },
+        {
           'item': getItemByNameID('ServoItem'),
           'quantity': 8,
           'reducible': true
@@ -17314,8 +17363,8 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LubricantItem'),
-          'quantity': 1,
-          'reducible': false
+          'quantity': 4,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -18825,6 +18874,11 @@ export let standardRecipes: Recipe[] =
       'hidden': false,
       'ingredients': [
         {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
           'item': getItemByNameID('PetroleumItem'),
           'quantity': 4,
           'reducible': true
@@ -19864,12 +19918,12 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LubricantItem'),
-          'quantity': 1,
-          'reducible': false
+          'quantity': 4,
+          'reducible': true
         },
         {
-          'item': getItemByNameID('WoodBoard'),
-          'quantity': 5,
+          'item': getItemByNameID('WoodenHullPlanksItem'),
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -20322,7 +20376,12 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('GearboxItem'),
+          'item': getItemByNameID('LubricantItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SteelGearboxItem'),
           'quantity': 4,
           'reducible': true
         },
@@ -20332,7 +20391,7 @@ export let standardRecipes: Recipe[] =
           'reducible': true
         },
         {
-          'item': getItemByNameID('SteelBarItem'),
+          'item': getItemByNameID('SteelPlateItem'),
           'quantity': 8,
           'reducible': true
         }
@@ -20367,8 +20426,8 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LubricantItem'),
-          'quantity': 1,
-          'reducible': false
+          'quantity': 4,
+          'reducible': true
         }
       ],
       'outputs': [
@@ -20479,7 +20538,7 @@ export let standardRecipes: Recipe[] =
         },
         {
           'item': getItemByNameID('LubricantItem'),
-          'quantity': 1,
+          'quantity': 2,
           'reducible': false
         },
         {
@@ -26002,7 +26061,7 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('GardenGravelItem'),
-          'quantity': 3,
+          'quantity': 2,
           'reducible': false,
           'primary': true
         }
@@ -26318,6 +26377,12 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('BarrelItem'),
           'quantity': 3,
+          'reducible': true,
+          'primary': false
+        },
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 1,
           'reducible': true,
           'primary': false
         }
@@ -29532,6 +29597,453 @@ export let standardRecipes: Recipe[] =
       'outputs': [
         {
           'item': getItemByNameID('FlaxseedOilItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Black Powder',
+      'nameID': 'BlackPowder',
+      'skill': getSkillByNameID('FertilizersSkill'),
+      'level': 3,
+      'labor': 35,
+      'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CharcoalPowderItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CompostItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BlackPowderItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Blasting Cap',
+      'nameID': 'BlastingCap',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 2,
+      'labor': 50,
+      'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CopperPlateItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CopperWiringItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EthanolItem'),
+          'quantity': 1,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('NitricAcidItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BlastingCapItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Crushed Sulfur',
+      'nameID': 'CrushedSulfur',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 1,
+      'labor': 70,
+      'craftingTable': getCraftingTableByNameID('ArrastraObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 12,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 2,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('CrushedMixedRockItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Crushed Sulfur Lv2',
+      'nameID': 'CrushedSulfurLv2',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 1,
+      'labor': 50,
+      'craftingTable': getCraftingTableByNameID('StampMillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 20,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        },
+        {
+          'item': getItemByNameID('CrushedMixedRockItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': false
+        }
+      ]
+    },
+    {
+      'name': 'Crushed Sulfur Lv3',
+      'nameID': 'CrushedSulfurLv3',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 2,
+      'labor': 70,
+      'craftingTable': getCraftingTableByNameID('JawCrusherObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('SulfurItem'),
+          'quantity': 20,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 5,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Dynamite',
+      'nameID': 'Dynamite',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 3,
+      'labor': 300,
+      'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('BlackPowderItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PaperItem'),
+          'quantity': 12,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('DynamiteItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Mining Charge',
+      'nameID': 'MiningCharge',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 5,
+      'labor': 300,
+      'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('DynamiteItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BlastingCapItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicCircuitItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MiningChargeItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Nitric Acid',
+      'nameID': 'NitricAcid',
+      'skill': getSkillByNameID('OilDrillingSkill'),
+      'level': 1,
+      'labor': 50,
+      'craftingTable': getCraftingTableByNameID('OilRefineryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CompostItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CrushedCopperOreItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('NitricAcidItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Peat Charcoal',
+      'nameID': 'PeatCharcoal',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 5,
+      'labor': 50,
+      'craftingTable': getCraftingTableByNameID('KilnObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PeatItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CharcoalItem'),
+          'quantity': 4,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Remote Detonator',
+      'nameID': 'RemoteDetonator',
+      'skill': getSkillByNameID('ElectronicsSkill'),
+      'level': 3,
+      'labor': 250,
+      'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('FiberglassItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('PlasticItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('LightBulbItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedCircuitItem'),
+          'quantity': 4,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('FuseItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('RemoteDetonatorItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Stump Bed',
+      'nameID': 'StumpBed',
+      'skill': getSkillByNameID('SelfImprovementSkill'),
+      'level': 0,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('PlantFibersItem'),
+          'quantity': 40,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('StumpBedItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Stump Chair',
+      'nameID': 'StumpChair',
+      'skill': getSkillByNameID('SelfImprovementSkill'),
+      'level': 0,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Wood'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('StumpChairItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Stump Latrine',
+      'nameID': 'StumpLatrine',
+      'skill': getSkillByNameID('SelfImprovementSkill'),
+      'level': 0,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Wood'),
+          'quantity': 6,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('StumpLatrineItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Stump Table',
+      'nameID': 'StumpTable',
+      'skill': getSkillByNameID('SelfImprovementSkill'),
+      'level': 0,
+      'labor': 60,
+      'craftingTable': getCraftingTableByNameID('WorkbenchObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Wood'),
+          'quantity': 16,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('StumpTableItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Wooden Sliding Door',
+      'nameID': 'WoodenSlidingDoor',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 5,
+      'labor': 80,
+      'craftingTable': getCraftingTableByNameID('SawmillObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('Lumber'),
+          'quantity': 8,
+          'reducible': false
+        },
+        {
+          'item': getItemByNameID('WoodBoard'),
+          'quantity': 8,
+          'reducible': false
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('WoodenSlidingDoorItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
