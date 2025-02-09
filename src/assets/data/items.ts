@@ -11117,7 +11117,7 @@ export let items: Item[] =
       'name': 'Stump Latrine',
       'nameID': 'StumpLatrineItem',
       'tag': false,
-      'imageFile': 'StumpLatrineObject_Icon',
+      'imageFile': 'StumpLatrineObject_Icon.png',
       'xPos': 0,
       'yPos': 0
     },
