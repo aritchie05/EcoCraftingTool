@@ -14257,7 +14257,7 @@ export let standardRecipes: Recipe[] =
           'quantity': 1,
           'reducible': true,
           'primary': false
-        },
+        }
       ]
     },
     {
@@ -30045,6 +30045,40 @@ export let standardRecipes: Recipe[] =
         {
           'item': getItemByNameID('WoodenSlidingDoorItem'),
           'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Sulfurcrete',
+      'nameID': 'Sulfurcrete',
+      'skill': getSkillByNameID('MasonrySkill'),
+      'level': 4,
+      'labor': 25,
+      'craftingTable': getCraftingTableByNameID('CementKilnObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('RebarItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('SandItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CrushedSulfurItem'),
+          'quantity': 2,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ReinforcedConcreteItem'),
+          'quantity': 5,
           'reducible': false,
           'primary': true
         }
