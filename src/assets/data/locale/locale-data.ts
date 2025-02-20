@@ -40173,6 +40173,22 @@ export const localeData: LocaleData[] =
           "ko": "Base paint",
           "zh": "Base paint",
           "ja": "Base paint"
+        },
+        {
+          "id": "Sulfurcrete",
+          "en": "Sulfurcrete",
+          "fr": "Sulfurcrete",
+          "es": "Sulfurcrete",
+          "de": "Sulfurcrete",
+          "pt": "Sulfurcrete",
+          "it": "Sulfurcrete",
+          "tr": "Sulfurcrete",
+          "pl": "Sulfurcrete",
+          "ru": "Sulfurcrete",
+          "uk": "Sulfurcrete",
+          "ko": "Sulfurcrete",
+          "zh": "Sulfurcrete",
+          "ja": "Sulfurcrete"
         }
       ]
     },
