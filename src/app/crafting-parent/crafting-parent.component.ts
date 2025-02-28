@@ -605,11 +605,17 @@ export class CraftingParentComponent implements OnInit {
         }
       });
 
-      //Special case for oil drilling where barrels are secondary output, reducing cost of epoxy, plastic, rubber, & nylon
+      // Special case for oil drilling where barrels are secondary output, reducing cost of epoxy, plastic, rubber, & nylon
+      // Once rewrite is complete, this case will be handled automatically because we will remove the cost of all byproducts, not just barrels
+      // But barrels are the most dramatic example of byproducts reducing the price of an output item
       if (recipe.primaryOutput.item.nameID.localeCompare('BarrelItem') !== 0 &&
         recipe.outputs.some(output => output.item.nameID.localeCompare('BarrelItem') === 0) &&
-        this.outputsComponent.outputRecipes.some(recipe => recipe.nameID.localeCompare('Barrel') === 0)) {
-        let barrelPrice = this.outputsComponent.outputRecipes.find(recipe => recipe.nameID.localeCompare('Barrel') === 0).basePrice;
+        (this.outputsComponent.outputRecipes.some(recipe => recipe.nameID.localeCompare('Barrel') === 0) ||
+        this.ingredientsComponent.itemIngredients.some(item => item.nameID.localeCompare('BarrelItem') === 0))) {
+        let barrelPrice = this.ingredientsComponent.itemIngredients.find(item => item.nameID.localeCompare('BarrelItem') === 0)?.price;
+        if (barrelPrice === undefined) {
+          barrelPrice = this.outputsComponent.outputRecipes.find(recipe => recipe.nameID.localeCompare('Barrel') === 0).basePrice;
+        }
         let barrelQuantity = recipe.outputs.find(output => output.item.nameID.localeCompare('BarrelItem') === 0).quantity;
         let barrelSavings = barrelPrice * barrelQuantity * table.selectedUpgrade.modifier;
         if (skill.lavishWorkspace && skill.lavishChecked) {
