@@ -31,20 +31,35 @@ export class InputsComponent {
   }
 
   onCalorieCostChange(value: string) {
-    const number = Number.parseFloat(value);
+    let number = Number.parseFloat(value);
+    if (isNaN(number)) {
+      number = 0;
+    }
 
     this.craftingService.updatePricePerThousandCals(number);
   }
 
   onProfitPercentChange(value: string) {
-    const number = Number.parseFloat(value);
+    let number = Number.parseFloat(value);
+    if (isNaN(number)) {
+      number = 0;
+    }
 
     this.craftingService.updateDefaultProfitPercent(number);
   }
 
-  onPriceChange(index: number, value: string) {
-    const number = Number.parseFloat(value);
+  onInputPriceChange(index: number, value: string) {
+    let number = Number.parseFloat(value);
+    if (isNaN(number)) {
+      number = 0;
+    }
 
     this.craftingService.updateInputPrice(index, number);
+  }
+
+  onByproductPriceChange(index: number, value: string) {
+    const number = Number.parseFloat(value);
+
+    this.craftingService.updateByproductPrice(index, number);
   }
 }

@@ -68,24 +68,24 @@ export class SkillsComponent implements OnInit {
     }, 100);
   }
 
-  onSkillLevelChange(skill: Skill, value: string) {
+  onSkillLevelChange(index: number, value: string) {
     let number = Number.parseInt(value);
-    number = Math.min(7, Math.max(0, number));
+    if (isNaN(number)) {
+      number = 0;
+    } else {
+      number = Math.min(7, Math.max(0, number));
+    }
 
-    setTimeout(() => {
-      this.craftingService.updateSkillLevel(number, skill);
-    });
+    this.craftingService.updateSkillLevel(number, index);
   }
 
-  onLavishChange(skill: Skill, value: boolean) {
-    setTimeout(() => {
-      this.craftingService.updateLavish(value, skill);
-    });
+  onLavishChange(index: number, value: boolean) {
+    this.craftingService.updateLavish(value, index);
   }
 
   onRemoveSkill(index: number) {
     setTimeout(() => {
-      this.craftingService.removeSkill(index);
+      this.craftingService.removeSkillByIndex(index);
     });
   }
 
@@ -102,24 +102,18 @@ export class SkillsComponent implements OnInit {
     option.deselect(false);
     input.value = '';
     const table: CraftingTable = option.value;
-    setTimeout(() => {
-      this.craftingService.selectTable(table);
-    });
+    this.craftingService.selectTable(table);
 
     setTimeout(() => {
       this.filteredTables = this.allTables;
     }, 100);
   }
 
-  onTableUpgradeChange(table: CraftingTable, value: UpgradeModule) {
-    setTimeout(() => {
-      this.craftingService.updateSelectedUpgrade(value, table);
-    });
+  onTableUpgradeChange(index: number, value: UpgradeModule) {
+    this.craftingService.updateSelectedUpgrade(index, value);
   }
 
   onRemoveTable(index: number) {
-    setTimeout(() => {
-      this.craftingService.removeTableByIndex(index);
-    });
+    this.craftingService.removeTableByIndex(index);
   }
 }

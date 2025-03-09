@@ -6,6 +6,10 @@ import {UpgradeModule} from '../model/upgrade-module';
 import {recipes} from '../../assets/data/recipes';
 import {Recipe} from '../model/recipe';
 import {Item} from '../model/item';
+import {OutputDisplay, SubRecipe} from '../model/output-display';
+import {LaborCost} from '../model/labor-cost';
+import {laborCosts} from '../../assets/data/labor-costs';
+import {Ingredient} from '../model/ingredient';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +32,7 @@ export class CraftingService {
 
   //outputs
   selectedRecipes: WritableSignal<Recipe[]>;
+  outputDisplays: Signal<OutputDisplay[]>;
   primaryOutputIds: Signal<Set<string>>;
 
   constructor(storageService: WebStorageService) {
@@ -81,6 +86,118 @@ export class CraftingService {
 
       byproducts.sort((a, b) => a.name().localeCompare(b.name()));
       return byproducts;
+    });
+
+    this.outputDisplays = computed(() => {
+      const outputDisplays: OutputDisplay[] = [];
+      this.selectedRecipes().forEach(recipe => {
+        if (!recipe.hidden) {
+          let existingOutputDisplay = outputDisplays.find(outputDisplay =>
+            outputDisplay.containsRecipeToProduceItem(recipe.primaryOutput.item.nameID)
+          );
+
+          if (existingOutputDisplay) {
+            existingOutputDisplay.subRecipes.push(new SubRecipe(recipe));
+          } else {
+            outputDisplays.push(new OutputDisplay(recipe));
+          }
+        }
+      });
+
+      return outputDisplays;
+    });
+
+    //Effect to compute the prices for each selected recipe
+    effect(() => {
+      const recipes = this.selectedRecipes();
+
+      //Reset all recipes to consider their price not computed
+      recipes.forEach(recipe => recipe.isPriceComputed = false);
+
+      let numLoops = 0;
+
+      //Loop to continue attempting to compute prices until all recipes are done
+      while (recipes.some(recipe => !recipe.isPriceComputed) && numLoops < 20) {
+
+        //Loop through each recipe and compute the price, if all the inputs have known prices
+        for (let i = 0; i < recipes.length; i++) {
+          const recipe = recipes[i];
+          if (recipe.isPriceComputed) {
+            continue;
+          }
+
+          let canComputeInputPrices = false;
+          let cost = 0;
+
+          for (let i = 0; i < recipe.ingredients.length; i++) {
+            const ing = recipe.ingredients[i];
+            const quantity = this.computeAdjustedQuantity(recipe, ing);
+            let input = this.selectedInputs().find(item => item.nameID === ing.item.nameID);
+            if (input) {
+              cost += input.price() * quantity;
+            } else {
+              let byproduct = this.selectedByproducts().find(item => item.nameID === ing.item.nameID);
+              if (byproduct) {
+                cost += byproduct.price() * quantity;
+              } else {
+                let otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === ing.item.nameID);
+                if (otherRecipe && otherRecipe.isPriceComputed) {
+                  cost += otherRecipe.basePrice() * quantity;
+                } else {
+                  //We cannot compute the price of this recipe yet. Move on to the next recipe
+                  break;
+                }
+              }
+            }
+            canComputeInputPrices = true;
+          }
+
+          if (canComputeInputPrices) {
+            let canComputeOutputPrices = true;
+            for (let i = 0; i < recipe.outputs.length; i++) {
+              const output = recipe.outputs[i];
+              if (output.primary) {
+                continue;
+              }
+              let input = this.selectedInputs().find(item => item.nameID === output.item.nameID);
+              if (input) {
+                cost -= input.price() * output.quantity;
+              } else {
+                let byproduct = this.selectedByproducts().find(item => item.nameID === output.item.nameID);
+                if (byproduct) {
+                  cost -= byproduct.price() * output.quantity;
+                } else {
+                  let otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === output.item.nameID);
+                  if (otherRecipe && otherRecipe.isPriceComputed) {
+                    cost -= otherRecipe.basePrice() * output.quantity;
+                  } else {
+                    canComputeOutputPrices = false;
+                    break;
+                  }
+                }
+              }
+
+              canComputeOutputPrices = true;
+            }
+
+            if (canComputeOutputPrices) {
+              cost /= recipe.primaryOutput.quantity;
+              cost += this.computeAdjustedLabor(recipe) * this.pricePerThousandCals();
+
+
+              recipe.basePrice.set(cost);
+              recipe.price.set(cost * (1 + this.defaultProfitPercent() / 100));
+              recipe.isPriceComputed = true;
+            }
+          }
+        }
+
+        numLoops++;
+      }
+
+      if (numLoops === 20) {
+        console.warn("Could not compute prices for all recipes after 20 loops");
+      }
     });
 
     effect(() => {
@@ -160,37 +277,51 @@ export class CraftingService {
     this.selectedRecipes.update(recipes => [...recipes, ...recipesToAdd]);
   }
 
-  updateSkillLevel(level: number, skill: Skill) {
-    skill.level.set(level);
+  updateSkillLevel(level: number, index: number) {
+    this.selectedSkills.update(skills => {
+      skills[index].level.set(level);
+      return skills;
+    });
   }
 
-  removeSkill(index: number) {
+  removeSkillByIndex(index: number) {
     const skill = this.selectedSkills()[index];
+
+    // Remove the skill from the array
     this.selectedSkills.update(skills => {
       skills.splice(index, 1);
       return [...skills];
     });
 
+    // Remove any selected recipes with that skill
     this.selectedRecipes.update(recipes => {
       return recipes.filter(recipe => recipe.skill?.nameID !== skill.nameID);
     });
 
+    // Remove any tables that no longer have any matching recipes
     this.selectedTables.update(tables => {
-      //Remove any tables that no longer have any matching recipes
       return tables.filter(table => this.selectedRecipes().some(r => r.craftingTable.nameID === table.nameID));
     });
   }
 
-  updateLavish(value: boolean, skill: Skill) {
-    skill.lavishChecked.set(value);
+  removeSkill(skill: Skill) {
+    this.removeSkillByIndex(this.selectedSkills().indexOf(skill));
   }
 
-  //Table methods
+  updateLavish(value: boolean, index: number) {
+    this.selectedSkills.update(skills => {
+      skills[index].lavishChecked.set(value);
+      return skills;
+    });
+  }
+
+  // Table methods
   selectTable(table: CraftingTable) {
     if (this.selectedTables().some(t => t.nameID === table.nameID)) {
       return;
     }
 
+    // Add the table to the selected tables
     this.selectedTables.update(tables => {
       return [...tables, table];
     });
@@ -208,21 +339,30 @@ export class CraftingService {
     }
   }
 
-  updateSelectedUpgrade(upgradeModule: UpgradeModule, table: CraftingTable) {
-    table.selectedUpgrade.set(upgradeModule);
+  updateSelectedUpgrade(index: number, value: UpgradeModule) {
+    this.selectedTables.update(tables => {
+      tables[index].selectedUpgrade.set(value);
+      return tables;
+    });
   }
 
   removeTableByIndex(index: number) {
+    const table = this.selectedTables()[index];
+
+    // Remove the table from the array
     this.selectedTables.update(tables => {
       tables.splice(index, 1);
       return [...tables];
     });
-  }
 
-  removeTable(table: CraftingTable) {
-    this.selectedTables.update(tables => {
-      tables.splice(tables.indexOf(table), 1);
-      return [...tables];
+    // Remove all selected recipes on that table
+    this.selectedRecipes.update(recipes => {
+      return recipes.filter(recipe => recipe.craftingTable.nameID !== table.nameID);
+    });
+
+    // Remove any skills that no longer have any selected recipes
+    this.selectedSkills.update(skills => {
+      return skills.filter(skill => this.selectedRecipes().some(r => r.skill?.nameID === skill.nameID));
     });
   }
 
@@ -238,14 +378,127 @@ export class CraftingService {
   updateInputPrice(index: number, value: number) {
     this.selectedInputs.update((items: Item[]) => {
       items[index].price.set(value);
-      return items;
+      return [...items];
     });
   }
 
   updateByproductPrice(index: number, value: number) {
     this.selectedByproducts.update((items: Item[]) => {
       items[index].price.set(value);
-      return items;
+      return [...items];
     });
+  }
+
+  selectRecipe(recipe: Recipe) {
+    if (this.selectedRecipes().some(r => r.nameID === recipe.nameID)) {
+      return;
+    }
+
+    this.selectedRecipes.update(recipes => [...recipes, recipe]);
+
+    //Find out which skills and recipes to add based on the selected skill
+    if (!this.selectedSkills().some(s => s.nameID === recipe.skill.nameID)) {
+      this.selectedSkills.update(skills => [...skills, recipe.skill]);
+    }
+
+    if (!this.selectedTables().some(t => t.nameID === recipe.craftingTable.nameID)) {
+      this.selectedTables.update(tables => [...tables, recipe.craftingTable]);
+    }
+  }
+
+  removeOutput(outputIndex: number) {
+    const outputDisplay = this.outputDisplays()[outputIndex];
+    const subRecipeNameIds = outputDisplay.subRecipes.map(subRecipe => subRecipe.recipeNameID);
+    const recipesToRemove = subRecipeNameIds.map(nameID => recipes.get(nameID) as Recipe);
+
+    const skillsToRemove = new Set<string>(recipesToRemove.map(recipe => recipe.skill.nameID));
+    const tablesToRemove = new Set<string>(recipesToRemove.map(recipe => recipe.craftingTable.nameID));
+
+    this.selectedRecipes.update(recipes => {
+      for (let i = recipes.length - 1; i >= 0; i--) {
+        const recipe = recipes[i];
+        if (subRecipeNameIds.includes(recipe.nameID)) {
+          recipes.splice(i, 1);
+        } else {
+          if (skillsToRemove.has(recipe.skill.nameID)) {
+            skillsToRemove.delete(recipe.skill.nameID);
+          }
+          if (tablesToRemove.has(recipe.craftingTable.nameID)) {
+            tablesToRemove.delete(recipe.craftingTable.nameID);
+          }
+        }
+      }
+      return [...recipes];
+    });
+
+    this.selectedSkills.update(skills => {
+      return skills.filter(skill => !skillsToRemove.has(skill.nameID));
+    });
+
+    this.selectedTables.update(tables => {
+      return tables.filter(table => !tablesToRemove.has(table.nameID));
+    });
+  }
+
+  removeSubRecipe(outputIndex: number, subRecipeIndex: number) {
+    const subRecipeToRemoveArray = this.outputDisplays()[outputIndex].subRecipes.splice(subRecipeIndex, 1);
+    const recipeToRemove = recipes.get(subRecipeToRemoveArray[0].recipeNameID) as Recipe;
+
+    //We need to remove the recipe's skill and table as well, if it's the only one that uses them
+    const skillToRemove = recipeToRemove.skill.nameID;
+    const tableToRemove = recipeToRemove.craftingTable.nameID;
+
+    //Keep track of whether we can remove the skill and table (based on other selected recipes being present)
+    let shouldRemoveSkill = true;
+    let shouldRemoveTable = true;
+
+    //Update the selected recipes to remove the selected subrecipe, and determine whether to remove that recipe's skill/table
+    this.selectedRecipes.update(recipes => {
+      for (let i = recipes.length - 1; i >= 0; i--) {
+        const recipe = recipes[i];
+        if (recipe.nameID === recipeToRemove.nameID) {
+          recipes.splice(i, 1);
+        } else {
+          if (shouldRemoveSkill && recipe.skill.nameID === skillToRemove) {
+            shouldRemoveSkill = false;
+          }
+          if (shouldRemoveTable && recipe.craftingTable.nameID === tableToRemove) {
+            shouldRemoveTable = false;
+          }
+        }
+      }
+      return [...recipes];
+    });
+
+    if (shouldRemoveSkill) {
+      this.selectedSkills.update(skills => {
+        return skills.filter(skill => skill.nameID !== skillToRemove);
+      });
+    }
+
+    if (shouldRemoveTable) {
+      this.selectedTables.update(tables => {
+        return tables.filter(table => table.nameID !== tableToRemove);
+      });
+    }
+  }
+
+  computeAdjustedLabor(recipe: Recipe): number {
+    let laborCalories = recipe.labor;
+    const laborCost = laborCosts.find(laborCost => laborCost.level === recipe.skill.level()) as LaborCost;
+    return laborCalories * laborCost.modifier;
+  }
+
+  computeAdjustedQuantity(recipe: Recipe, input: Ingredient): number {
+    let quantity = input.quantity * this.craftResourceModifier();
+    if (!input.reducible) {
+      return input.quantity;
+    }
+    const modifier = recipe.craftingTable.selectedUpgrade().modifier;
+    quantity *= modifier;
+    if (recipe.skill.lavishChecked()) {
+      quantity *= .95;
+    }
+    return quantity;
   }
 }

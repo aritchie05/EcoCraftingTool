@@ -64,6 +64,10 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 0;
 }
 
+.mat-mdc-dialog-content {
+  max-height: 90vh !important;
+}
+
 mat-dialog-content {
   --mat-form-field-container-vertical-padding: 1rem;
 
@@ -122,5 +126,6 @@ textarea {
 app-crafting {
   mat-form-field {
     background-color: var(--mat-sys-surface-container-lowest);
+    border-radius: 4px;
   }
 }

@@ -34,8 +34,9 @@ export class Recipe {
   craftingTable: CraftingTable;
   ingredients: Ingredient[];
   outputs: Output[];
-  primaryOutput?: Output;
+  primaryOutput: Output;
   hidden: boolean;
+  isPriceComputed: boolean = false;
 
 
   constructor(recipe: IRecipe) {
@@ -49,7 +50,11 @@ export class Recipe {
     this.craftingTable = recipe.craftingTable as CraftingTable;
     this.ingredients = recipe.ingredients;
     this.outputs = recipe.outputs;
-    this.primaryOutput = recipe.outputs.find(o => o.primary);
+    let primaryOutput = recipe.outputs.find(o => o.primary);
+    if (!primaryOutput) {
+      primaryOutput = recipe.outputs[0];
+    }
+    this.primaryOutput = primaryOutput;
     this.hidden = recipe.hidden;
   }
 }

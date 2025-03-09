@@ -1,6 +1,6 @@
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center mx-8">
   <h1 class="text-4xl my-1">Skills</h1>
-  <mat-form-field appearance="outline" floatLabel="always" class="w-11/12 my-1">
+  <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>Choose a skill</mat-label>
     <input #skillInput matInput type="text" (input)="onSkillInput(skillInput.value)"
            [matAutocomplete]="skillsAutocomplete">
@@ -16,19 +16,19 @@
     }
   </mat-autocomplete>
 
-  <div class="flex flex-col w-full selected-skills-container text-sm">
+  <div class="flex flex-col w-full selected-skills-container text-sm my-1">
     @for (skill of selectedSkills(); track skill.nameID) {
-      <div class="flex flex-row flex-wrap items-center w-full m-2">
+      <div class="flex flex-row flex-wrap items-center w-full my-1 mr-2">
         <img [src]="imageService.imageTemplateUrl" [style]="imageService.getSkillImgStyle(skill)"
-             width="32" height="32" [alt]="skill.name() + ' Icon'" class="mx-2">
-        <span>{{ skill.name() }}</span>
+             width="32" height="32" [alt]="skill.name() + ' Icon'" class="mr-2">
+        <label [for]="levelInput.id">{{ skill.name() }}</label>
         <div class="ml-auto flex items-center">
-          <mat-form-field appearance="outline" class="w-16" (click)="levelInput.select()">
+          <mat-form-field appearance="outline" class="w-16 mr-4" (click)="levelInput.select()">
             <input #levelInput matInput type="number" step="1" min="0" max="7" [value]="skill.level()"
                    [innerText]="skill.level()"
-                   (input)="onSkillLevelChange(skill, levelInput.value)">
+                   (focusout)="onSkillLevelChange($index, levelInput.value)">
           </mat-form-field>
-          <button class="material-icons ml-4 mr-6 cursor-pointer hover:opacity-80" (click)="onRemoveSkill($index)">
+          <button class="material-icons cursor-pointer hover:opacity-80" (click)="onRemoveSkill($index)">
             close
           </button>
         </div>
@@ -36,16 +36,16 @@
       @if (skill.lavishWorkspace && skill.level() > 5) {
         <div class="flex items-center ml-10 mb-2">
           <input #lavishBox [id]="skill.nameID + lavishBox" type="checkbox"
-                 (change)="onLavishChange(skill, lavishBox.checked)">
+                 (change)="onLavishChange($index, lavishBox.checked)">
           <label [for]="skill.nameID + lavishBox" class="text-xs pl-2">Lavish Workspace</label>
         </div>
       }
     }
   </div>
 
-  <hr class="w-11/12 text-gray opacity-70 my-6 border-t-2 rounded">
+  <hr class="w-full text-gray opacity-70 my-5 border-t-2 rounded">
 
-  <mat-form-field appearance="outline" floatLabel="always" class="w-11/12 my-1">
+  <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>Choose a table</mat-label>
     <input #tableInput matInput type="text" (input)="onTableInput(tableInput.value)"
            [matAutocomplete]="tablesAutocomplete">
@@ -61,15 +61,16 @@
     }
   </mat-autocomplete>
 
-  <div class="flex flex-col w-full selected-tables-container my-3 text-sm">
+  <div class="flex flex-col w-full selected-tables-container my-1 text-sm">
     @for (table of selectedTables(); track table.nameID) {
-      <div class="flex flex-row flex-wrap items-center w-full m-2">
+      <div class="flex flex-row flex-wrap items-center w-full my-1 mr-2">
         <img [src]="imageService.imageTemplateUrl" [style]="imageService.getTableImgStyle(table)"
-             width="32" height="32" [alt]="table.name() + ' Icon'" class="mx-2">
-        <span>{{ table.name() }}</span>
+             width="32" height="32" [alt]="table.name() + ' Icon'" class="mr-2">
+        <label [for]="upgradeSelect.id">{{ table.name() }}</label>
         <div class="ml-auto flex items-center">
-          <mat-form-field appearance="outline">
-            <mat-select [value]="table.selectedUpgrade()" (selectionChange)="onTableUpgradeChange(table, $event.value)"
+          <mat-form-field appearance="outline" class="mr-4">
+            <mat-select #upgradeSelect [value]="table.selectedUpgrade()"
+                        (selectionChange)="onTableUpgradeChange($index,$event.value)"
                         class="text-sm" panelClass="upgrade-select">
               @for (upgrade of table.availableUpgrades; track upgrade.nameID) {
                 <mat-option [value]="upgrade">
@@ -78,7 +79,7 @@
               }
             </mat-select>
           </mat-form-field>
-          <button class="material-icons ml-4 mr-6 cursor-pointer hover:opacity-80" (click)="onRemoveTable($index)">
+          <button class="material-icons cursor-pointer hover:opacity-80" (click)="onRemoveTable($index)">
             close
           </button>
         </div>

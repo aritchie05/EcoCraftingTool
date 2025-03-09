@@ -3,6 +3,7 @@ import {environment} from '../../environments/environment';
 import {Skill} from '../model/skill';
 import {CraftingTable} from '../model/crafting-table';
 import {Item} from '../model/item';
+import {OutputDisplay} from '../model/output-display';
 
 @Injectable({
   providedIn: 'root'
@@ -78,14 +79,6 @@ export class ImageService {
     }
   }
 
-  getLargeImgStyle(nameID: string, imageFile: string, xPos: number, yPos: number, size: number, filter: string): any {
-    return {
-      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(xPos, yPos, size, imageFile)} /
-      ${this.getLargeSpriteBackgroundSize(nameID, imageFile)} no-repeat`,
-      'filter': `${this.getSpriteCssFilter(filter)}`
-    }
-  }
-
   getProfitImgStyle(): any {
     return {
       'background': `url(${this.getProfitSpriteImageUrl()}) -320px -384px / 512px no-repeat`
@@ -117,5 +110,12 @@ export class ImageService {
       return null;
     }
     return this.getImgStyle(item.nameID, item.imageFile, item.xPos, item.yPos, this.ITEM_SPRITE_SIZE, item.filter);
+  }
+
+  getOutputImgStyle(output: OutputDisplay) {
+    if (output.imageFile == null || output.xPos == null || output.yPos == null) {
+      return null;
+    }
+    return this.getImgStyle(output.itemNameID, output.imageFile, output.xPos, output.yPos, this.ITEM_SPRITE_SIZE, output.filter);
   }
 }
