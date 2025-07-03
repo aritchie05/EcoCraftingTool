@@ -4576,9 +4576,9 @@ export let items: Item[] =
       'name': 'Light Bulb',
       'nameID': 'LightBulbItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
-      'xPos': 9,
-      'yPos': 1
+      'imageFile': 'lightbulb.png',
+      'xPos': 0,
+      'yPos': 0
     },
     {
       'name': 'Limestone',
@@ -8167,8 +8167,8 @@ export let items: Item[] =
       'nameID': 'OutpostNettingItem',
       'tag': false,
       'imageFile': 'UI_Icons_05.png',
-      'xPos': 10,
-      'yPos': 15
+      'xPos': 1,
+      'yPos': 14
     },
     {
       'name': 'Linen Yarn',
