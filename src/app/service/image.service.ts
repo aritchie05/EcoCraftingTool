@@ -24,11 +24,7 @@ export class ImageService {
   }
 
   getSpriteImageUrl(nameID: string, imageFile: string): string {
-    if (nameID.localeCompare('LightBulbItem') === 0) {
-      return this.imageBaseUrl + 'lightbulb.png';
-    } else {
-      return this.imageBaseUrl + imageFile;
-    }
+    return this.imageBaseUrl + imageFile;
   }
 
   getProfitSpriteImageUrl(): string {
