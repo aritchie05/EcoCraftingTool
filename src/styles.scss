@@ -36,7 +36,6 @@ body {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
   -webkit-appearance: none; /* Safari and Chrome */
   appearance: none; /* Default conformance */
 }
