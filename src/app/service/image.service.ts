@@ -22,12 +22,8 @@ export class ImageService {
     this.imageTemplateUrl = this.imageBaseUrl + '32px-template.png';
   }
 
-  getSpriteImageUrl(nameID: string, imageFile: string): string {
-    if (nameID.localeCompare('LightBulbItem') === 0) {
-      return this.imageBaseUrl + 'lightbulb.png';
-    } else {
-      return this.imageBaseUrl + imageFile;
-    }
+  getSpriteImageUrl(imageFile: string): string {
+    return this.imageBaseUrl + imageFile;
   }
 
   getProfitSpriteImageUrl(): string {
@@ -74,7 +70,7 @@ export class ImageService {
 
   getImgStyle(nameID: string, imageFile: string, xPos: number, yPos: number, size: number, filter?: string): any {
     return {
-      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(xPos, yPos, size, imageFile)} / ${this.getSpriteBackgroundSize(nameID, imageFile)} no-repeat !important`,
+      'background': `url(${this.getSpriteImageUrl(imageFile)}) ${this.getSpritePosition(xPos, yPos, size, imageFile)} / ${this.getSpriteBackgroundSize(nameID, imageFile)} no-repeat !important`,
       'filter': `${this.getSpriteCssFilter(filter)} !important`
     }
   }

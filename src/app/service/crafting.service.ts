@@ -182,11 +182,15 @@ export class CraftingService {
 
             if (canComputeOutputPrices) {
               cost /= recipe.primaryOutput.quantity;
-              cost += this.computeAdjustedLabor(recipe) * this.pricePerThousandCals();
+              cost += this.computeAdjustedLabor(recipe) * this.pricePerThousandCals() / 1000;
 
+              let profitMultiplier = 1 + this.defaultProfitPercent() / 100;
+              if (recipe.profitOverride() >= 0) {
+                profitMultiplier = 1 + recipe.profitOverride() / 100;
+              }
 
               recipe.basePrice.set(cost);
-              recipe.price.set(cost * (1 + this.defaultProfitPercent() / 100));
+              recipe.price.set(cost * profitMultiplier);
               recipe.isPriceComputed = true;
             }
           }
@@ -481,6 +485,18 @@ export class CraftingService {
         return tables.filter(table => table.nameID !== tableToRemove);
       });
     }
+  }
+
+  updateProfitPercent(value: number, outputDisplay: OutputDisplay) {
+    this.selectedRecipes.update(recipes => {
+      const recipeIds = new Set(outputDisplay.subRecipes.map(sr => sr.recipeNameID));
+      recipes.forEach(recipe => {
+        if (recipeIds.has(recipe.nameID)) {
+          recipe.profitOverride.set(value);
+        }
+      });
+      return recipes;
+    });
   }
 
   computeAdjustedLabor(recipe: Recipe): number {

@@ -15,6 +15,7 @@ export interface IRecipe {
   outputs: Output[];
   hidden: boolean;
   primaryOutput?: Output;
+  profitOverride?: number;
 
   //Price per primary output without profit
   basePrice?: number;
@@ -27,6 +28,7 @@ export class Recipe {
   name: WritableSignal<string>;
   basePrice: WritableSignal<number>;
   price: WritableSignal<number>;
+  profitOverride: WritableSignal<number>;
   nameID: string;
   skill: Skill;
   level: number;
@@ -43,6 +45,7 @@ export class Recipe {
     this.name = signal(recipe.name);
     this.basePrice = signal(recipe.basePrice ?? 0);
     this.price = signal(recipe.price ?? 0);
+    this.profitOverride = signal(recipe.profitOverride ?? -1);
     this.nameID = recipe.nameID;
     this.skill = recipe.skill as Skill;
     this.level = recipe.level;

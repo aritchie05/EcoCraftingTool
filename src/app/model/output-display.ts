@@ -5,6 +5,7 @@ export class SubRecipe {
   recipeNameID: string;
   recipeName: Signal<string>;
   recipePrice: Signal<number>;
+  basePrice: Signal<number>;
   recipe: Recipe;
 
 
@@ -12,6 +13,7 @@ export class SubRecipe {
     this.recipeNameID = recipe.nameID;
     this.recipeName = recipe.name;
     this.recipePrice = recipe.price;
+    this.basePrice = recipe.basePrice;
     this.recipe = recipe;
   }
 }
@@ -20,6 +22,7 @@ export class OutputDisplay {
   itemNameID: string;
   itemName: Signal<string>;
 
+  basePrice: Signal<number>;
   //Price PER OUTPUT ITEM
   itemPrice: Signal<number>;
   subRecipes: SubRecipe[];
@@ -38,10 +41,16 @@ export class OutputDisplay {
       recipeNameID: recipe.nameID,
       recipeName: recipe.name.asReadonly(),
       recipePrice: recipe.price.asReadonly(),
+      basePrice: recipe.basePrice.asReadonly(),
       recipe: recipe,
     }];
     this.itemPrice = computed(() => {
       const prices = this.subRecipes.map(subRecipe => subRecipe.recipePrice());
+
+      return Math.min(...prices);
+    });
+    this.basePrice = computed(() => {
+      const prices = this.subRecipes.map(subRecipe => subRecipe.basePrice());
 
       return Math.min(...prices);
     });

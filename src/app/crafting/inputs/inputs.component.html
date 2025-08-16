@@ -25,6 +25,7 @@
         <mat-form-field appearance="outline" class="w-24">
           <input #profitInput matInput type="number" step="1" [value]="defaultProfitPercent()"
                  (focusout)="onProfitPercentChange(profitInput.value)">
+          <span matSuffix>%</span>
         </mat-form-field>
       </div>
     </div>

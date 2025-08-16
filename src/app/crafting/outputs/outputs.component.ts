@@ -37,6 +37,7 @@ export class OutputsComponent {
   dialog = inject(MatDialog);
 
   outputDisplays: Signal<OutputDisplay[]>;
+  defaultProfitPercent: Signal<number>;
   groupedOutputDisplays: Signal<Map<Skill, OutputDisplay[]>>;
   groupedDisplayKeys: Signal<Skill[]>;
 
@@ -45,6 +46,7 @@ export class OutputsComponent {
     this.allRecipes = Array.from(recipes.values());
     this.filteredRecipes = this.allRecipes;
     this.outputDisplays = craftingService.outputDisplays;
+    this.defaultProfitPercent = craftingService.defaultProfitPercent;
     this.groupedOutputDisplays = computed(() => {
       const map = new Map<Skill, OutputDisplay[]>();
       this.outputDisplays().forEach(outputDisplay => {
@@ -110,5 +112,14 @@ export class OutputsComponent {
 
   onRemoveSkill(skill: Skill) {
     this.craftingService.removeSkill(skill);
+  }
+
+  onProfitOverrideChange(value: string, outputDisplay: OutputDisplay) {
+    let number = Number.parseFloat(value);
+    if (isNaN(number)) {
+      number = -1;
+    }
+
+    this.craftingService.updateProfitPercent(number, outputDisplay);
   }
 }

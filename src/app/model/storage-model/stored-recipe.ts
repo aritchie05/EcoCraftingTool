@@ -13,9 +13,17 @@ export class StoredRecipe {
    */
   pr: string;
 
+  /**
+   * Profit override
+   */
+  po?: string;
+
   constructor(recipe: Recipe) {
     this.id = recipe.nameID;
     this.bp = recipe.basePrice ? recipe.basePrice().toFixed(2) : '0';
     this.pr = recipe.price ? recipe.price().toFixed(2) : '0';
+    if (recipe.profitOverride()) {
+      this.po = recipe.profitOverride().toFixed(2);
+    }
   }
 }

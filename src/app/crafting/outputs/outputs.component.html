@@ -25,9 +25,9 @@
             <div class="flex flex-row items-center w-full">
               <img [src]="imageService.imageTemplateUrl" [style]="imageService.getOutputImgStyle(outputDisplay)"
                    width="32" height="32" [alt]="outputDisplay.itemName() + ' icon'" class="mr-2">
-              <label [for]="outputCost.id" class="font-medium">
+              <span class="font-medium">
                 {{ outputDisplay.itemName() }}
-              </label>
+              </span>
               @if (outputDisplay.subRecipes.length === 1) {
                 <button class="material-icons cursor-pointer hover:opacity-80 ml-1"
                         (click)="onRecipeInfoClick(outputDisplay.subRecipes[0])">info_outline
@@ -35,6 +35,21 @@
               }
               <div class="ml-auto flex items-center">
                 <mat-form-field appearance="outline" class="w-24 mr-4">
+                  <mat-label>Base Cost</mat-label>
+                  <input #basePrice matInput type="text" readonly class="cursor-not-allowed"
+                         [value]="outputDisplay.basePrice().toLocaleString(localeService.selectedLocale().code,
+                   {maximumFractionDigits: 2, minimumFractionDigits: 0})">
+                </mat-form-field>
+                <mat-form-field appearance="outline" floatLabel="always" class="w-24 mr-4">
+                  <mat-label>Profit</mat-label>
+                  <input #profitOverride matInput type="number" min="0" step="1" class="profit-input"
+                         [value]="outputDisplay.subRecipes[0].recipe.profitOverride() >= 0 ? outputDisplay.subRecipes[0].recipe.profitOverride() : defaultProfitPercent()"
+                         (focusout)="onProfitOverrideChange(profitOverride.value, outputDisplay)"
+                  >
+                  <span matSuffix>%</span>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-24 mr-4">
+                  <mat-label>Sale Price</mat-label>
                   <input #outputCost matInput type="text" readonly class="cursor-not-allowed"
                          [value]="outputDisplay.itemPrice().toLocaleString(localeService.selectedLocale().code,
                    {maximumFractionDigits: 2, minimumFractionDigits: 0})">
@@ -47,18 +62,19 @@
             </div>
             @if (outputDisplay.subRecipes.length > 1) {
               @for (subRecipe of outputDisplay.subRecipes; track subRecipe.recipeNameID; let subIndex = $index) {
-                <div class="flex flex-row items-center w-full pl-8 mt-1">
-                  <label class="pl-6" [for]="subRecipePrice.id">
+                <div class="flex flex-row items-center w-full pl-8 mt-3">
+                  <span class="pl-6">
                     {{ subRecipe.recipeName() }} Recipe
-                  </label>
+                  </span>
                   <button class="material-icons cursor-pointer hover:opacity-80 ml-1"
                           (click)="onRecipeInfoClick(subRecipe)">
                     info_outline
                   </button>
                   <div class="ml-auto flex items-center">
                     <mat-form-field appearance="outline" class="w-24 mr-4">
-                      <input #subRecipePrice matInput type="text" readonly class="cursor-not-allowed"
-                             [value]="subRecipe.recipePrice().toLocaleString(localeService.selectedLocale().code,
+                      <mat-label>Cost</mat-label>
+                      <input #subRecipeBasePrice matInput type="text" readonly class="cursor-not-allowed"
+                             [value]="subRecipe.basePrice().toLocaleString(localeService.selectedLocale().code,
                      {maximumFractionDigits: 2, minimumFractionDigits: 0})">
                     </mat-form-field>
                     <button class="material-icons cursor-pointer hover:opacity-80 mr-2"
