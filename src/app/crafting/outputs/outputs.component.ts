@@ -14,6 +14,7 @@ import {RecipeDialogComponent} from '../recipe-dialog/recipe-dialog.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIcon} from '@angular/material/icon';
 import {Skill} from '../../model/skill';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-outputs',
@@ -42,7 +43,7 @@ export class OutputsComponent {
   groupedDisplayKeys: Signal<Skill[]>;
 
   constructor(private craftingService: CraftingService, protected imageService: ImageService,
-              protected localeService: LocaleService) {
+              protected localeService: LocaleService, private messageService: MessageService) {
     this.allRecipes = Array.from(recipes.values());
     this.filteredRecipes = this.allRecipes;
     this.outputDisplays = craftingService.outputDisplays;
@@ -63,6 +64,10 @@ export class OutputsComponent {
     this.groupedDisplayKeys = computed(() => {
       return Array.from(this.groupedOutputDisplays().keys());
     });
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 
   onRecipeInput(value: string) {

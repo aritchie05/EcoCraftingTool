@@ -6,6 +6,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {CraftingService} from '../../service/crafting.service';
 import {MatTooltip} from '@angular/material/tooltip';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-recipe-dialog',
@@ -24,8 +25,13 @@ export class RecipeDialogComponent {
   recipe: Recipe;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: { recipe: Recipe },
-              protected imageService: ImageService, protected craftingService: CraftingService) {
+              protected imageService: ImageService, protected craftingService: CraftingService,
+              private messageService: MessageService) {
     this.recipe = data.recipe;
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 
   close() {

@@ -1,27 +1,27 @@
 <h2 mat-dialog-title class="flex justify-between items-center mt-3">
-  <span class="block">{{ recipe.name() }} Recipe</span>
+  <span class="block">{{ recipe.name() }} {{ message('recipeSuffix') }}</span>
   <span class="material-icons cursor-pointer hover:opacity-80" (click)="close()">close</span>
 </h2>
 <mat-dialog-content class="grid grid-cols-5 gap-4 min-w-[40vw]">
   <div class="col-start-2 col-span-1 font-medium text-center">
-    Name
+    {{ message('nameLabel') }}
   </div>
   <div class="col-start-4 col-span-1 flex items-center justify-center font-medium">
-    Adjusted
+    {{ message('adjustedLabel') }}
     <button class="material-icons cursor-help hover:opacity-80 text-[22px] translate-y-[-1px] pl-1"
             matTooltip="Computed amounts for the recipe, taking into account the skill level, upgrade module, and other factors.">
       help_outline
     </button>
   </div>
   <div class="col-span-1 flex items-center justify-center font-medium">
-    Base
+    {{ message('baseLabel') }}
     <button class="material-icons cursor-help hover:opacity-80 text-[22px] translate-y-[-1px] pl-1"
             matTooltip="Base amounts for the recipe.">
       help_outline
     </button>
   </div>
   <div class="col-span-1 flex items-center ml-auto">
-    <span class="font-medium">Crafting Table</span>
+    <span class="font-medium">{{ message('craftingTableLabel') }}</span>
   </div>
   <div class="col-span-4 flex items-center rounded p-2 recipe-detail-container">
     <img [src]="imageService.imageTemplateUrl" width="32" height="32"
@@ -30,7 +30,7 @@
     <span>{{ recipe.craftingTable.name() }}</span>
   </div>
   <div class="col-span-1 flex items-center ml-auto">
-    <span class="font-medium">Skill</span>
+    <span class="font-medium">{{ message('skillLabel') }}</span>
   </div>
   <div class="col-span-4 grid grid-cols-4 gap-4 rounded p-2 recipe-detail-container">
     <div class="col-span-2 flex items-center">
@@ -46,13 +46,13 @@
     </div>
   </div>
   <div class="col-span-1 flex items-center ml-auto">
-    <span class="font-medium">Labor</span>
+    <span class="font-medium">{{ message('laborLabel') }}</span>
   </div>
   <div class="col-span-4 grid grid-cols-4 gap-4 rounded p-2 recipe-detail-container">
     <div class="col-span-2 flex items-center">
       <img [src]="imageService.imageTemplateUrl" width="32" height="32"
            [style]="imageService.getCalorieImgStyle()" alt="Labor Icon" class="mr-2">
-      <span>Calories</span>
+      <span>{{ message('Calories') }}</span>
     </div>
     <div class="col-start-3 col-span-1 flex items-center justify-center">
       <mat-form-field appearance="outline" class="w-24">
@@ -66,7 +66,7 @@
     </div>
   </div>
   <div class="col-span-1 flex items-center ml-auto">
-    <span class="font-medium">Inputs</span>
+    <span class="font-medium">{{ message('ingredientsHeader') }}</span>
   </div>
   <div class="col-span-4 grid grid-cols-4 gap-4 rounded p-2 recipe-detail-container">
     @for (input of recipe.ingredients; track input.item.nameID) {
@@ -90,7 +90,7 @@
     }
   </div>
   <div class="col-span-1 flex items-center ml-auto">
-    <span class="font-medium">Outputs</span>
+    <span class="font-medium">{{ message('outputsHeader') }}</span>
   </div>
   <div class="col-span-4 grid grid-cols-4 gap-4 rounded p-2 recipe-detail-container">
     @for (output of recipe.outputs; track output.item.nameID) {
@@ -100,7 +100,7 @@
              [class]="output.reducible ? 'reducible-item' : ''">
         <span class="ml-2">{{ output.item.name() }}</span>
         @if (output.primary) {
-          <span class="text-xs pl-1">(Primary)</span>
+          <span class="text-xs pl-1">{{ message('primaryLabel') }}</span>
         }
       </div>
       <div class="col-start-3 col-span-1 flex items-center justify-center">

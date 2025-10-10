@@ -11,6 +11,7 @@ import {UpgradeModule} from '../../model/upgrade-module';
 import {CraftingService} from '../../service/crafting.service';
 import {skills} from '../../../assets/data/skills';
 import {tables} from '../../../assets/data/crafting-tables';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-skills',
@@ -30,7 +31,8 @@ export class SkillsComponent implements OnInit {
   selectedSkills: Signal<Skill[]>;
   selectedTables: Signal<CraftingTable[]>;
 
-  constructor(private craftingService: CraftingService, protected imageService: ImageService) {
+  constructor(private craftingService: CraftingService, protected imageService: ImageService,
+              private messageService: MessageService) {
     this.allSkills = Array.from(skills.values());
     this.filteredSkills = this.allSkills;
 
@@ -39,6 +41,10 @@ export class SkillsComponent implements OnInit {
 
     this.selectedSkills = this.craftingService.selectedSkills;
     this.selectedTables = this.craftingService.selectedTables;
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 
   ngOnInit() {

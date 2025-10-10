@@ -3,6 +3,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 import {CalculatorConfig} from '../../model/storage-model/calculator-config';
 import {WebStorageService} from '../../service/storage.service';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-import',
@@ -18,7 +19,8 @@ export class ImportDialogComponent {
   dialogRef = inject(MatDialogRef<ImportDialogComponent>);
 
 
-  constructor(private storageService: WebStorageService) {
+  constructor(private storageService: WebStorageService,
+              private messageService: MessageService) {
   }
 
   onImportConfig(value: string) {
@@ -33,5 +35,9 @@ export class ImportDialogComponent {
 
   close() {
     this.dialogRef.close();
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 }

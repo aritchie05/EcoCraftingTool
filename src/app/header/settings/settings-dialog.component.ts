@@ -4,6 +4,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {CraftingService} from '../../service/crafting.service';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-settings',
@@ -23,7 +24,7 @@ export class SettingsDialogComponent {
   expensiveEndgameRecipes: Signal<boolean>;
 
 
-  constructor(private craftingService: CraftingService) {
+  constructor(private craftingService: CraftingService, private messageService: MessageService) {
     this.craftResourceModifier = craftingService.craftResourceModifier;
     this.expensiveEndgameRecipes = craftingService.expensiveEndgameRecipes;
   }
@@ -43,5 +44,9 @@ export class SettingsDialogComponent {
 
   toggleExpensiveEndgameRecipes() {
     this.craftingService.toggleExpensiveEndgameRecipes();
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 }

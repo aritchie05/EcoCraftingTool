@@ -1,6 +1,6 @@
 <div class="w-[70vw]">
   <h2 mat-dialog-title class="flex items-center mt-3">
-    Export Config
+    {{ message('exportHeader') }}
     <span class="ml-auto material-icons cursor-pointer hover:opacity-80" (click)="close()">close</span>
   </h2>
   <mat-dialog-content>
@@ -9,6 +9,8 @@
               [value]="exportJson()" (click)="selectAllText(exportBox)"></textarea>
   </mat-dialog-content>
   <mat-dialog-actions>
-    <button mat-stroked-button [cdkCopyToClipboard]="exportBox.value" (click)="onCopy()">Copy To Clipboard</button>
+    <button mat-stroked-button [cdkCopyToClipboard]="exportBox.value"
+            (click)="onCopy()">{{ message('copyClipboardButton') }}
+    </button>
   </mat-dialog-actions>
 </div>

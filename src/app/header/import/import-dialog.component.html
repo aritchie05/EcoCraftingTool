@@ -1,6 +1,6 @@
 <div class="w-[70vw]">
   <h2 mat-dialog-title class="flex items-center mt-3">
-    Import Config
+    {{ message('importHeader') }}
     <span class="ml-auto material-icons cursor-pointer hover:opacity-80" (click)="close()">close</span>
   </h2>
   <mat-dialog-content>
@@ -8,6 +8,6 @@
     <textarea #importBox id="importTextBox" class="mt-2 w-full h-[50vh]"></textarea>
   </mat-dialog-content>
   <mat-dialog-actions>
-    <button mat-stroked-button (click)="onImportConfig(importBox.value)">Import To Calculator</button>
+    <button mat-stroked-button (click)="onImportConfig(importBox.value)">{{ message('importButton') }}</button>
   </mat-dialog-actions>
 </div>

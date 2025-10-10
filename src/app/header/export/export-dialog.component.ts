@@ -3,6 +3,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 import {CdkCopyToClipboard} from '@angular/cdk/clipboard';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-export',
@@ -16,6 +17,9 @@ export class ExportDialogComponent {
   private snackBar = inject(MatSnackBar);
   exportJson = inject<Signal<string>>(MAT_DIALOG_DATA);
 
+  constructor(private messageService: MessageService) {
+  }
+
   close() {
     this.dialogRef.close();
   }
@@ -27,5 +31,9 @@ export class ExportDialogComponent {
   onCopy() {
     this.snackBar.open('Copied to clipboard', 'OK', {duration: 2000});
     this.dialogRef.close();
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 }

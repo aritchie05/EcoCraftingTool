@@ -5,6 +5,7 @@ import {ImageService} from '../../service/image.service';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatTooltip} from '@angular/material/tooltip';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-inputs',
@@ -20,7 +21,8 @@ export class InputsComponent {
   selectedItems: Signal<Item[]>;
   selectedByproducts: Signal<Item[]>;
 
-  constructor(private craftingService: CraftingService, protected imageService: ImageService) {
+  constructor(private craftingService: CraftingService, protected imageService: ImageService,
+              private messageService: MessageService) {
     this.pricePerThousandCals = craftingService.pricePerThousandCals;
     this.defaultProfitPercent = craftingService.defaultProfitPercent;
 
@@ -28,6 +30,10 @@ export class InputsComponent {
     this.selectedByproducts = craftingService.selectedByproducts;
 
 
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 
   onCalorieCostChange(value: string) {

@@ -14,6 +14,7 @@ import {ExportDialogComponent} from './export/export-dialog.component';
 import {MatSelectModule} from '@angular/material/select';
 import {Locale, LocaleService} from '../service/locale.service';
 import {SettingsDialogComponent} from './settings/settings-dialog.component';
+import {MessageService} from '../service/message.service';
 
 @Component({
   selector: 'app-header',
@@ -33,7 +34,8 @@ export class HeaderComponent {
   dialog = inject(MatDialog);
 
   constructor(releaseNotesService: ReleaseNotesService, imageService: ImageService,
-              private storageService: WebStorageService, private localeService: LocaleService) {
+              private storageService: WebStorageService, private localeService: LocaleService,
+              private messageService: MessageService) {
     this.releases = releaseNotesService.releases;
     this.calcConfig = signal(storageService.getCalcConfig());
     this.exportJson = computed(() => JSON.stringify(this.calcConfig()));
@@ -67,5 +69,9 @@ export class HeaderComponent {
 
   onLocaleChange(localeCode: string) {
     this.localeService.changeLocale(localeCode);
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 }
