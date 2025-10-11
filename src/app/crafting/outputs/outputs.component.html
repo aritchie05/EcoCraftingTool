@@ -72,7 +72,7 @@
                   </button>
                   <div class="ml-auto flex items-center">
                     <mat-form-field appearance="outline" class="w-24 mr-4">
-                      <mat-label>{{ message('costLabel') }}</mat-label>
+                      <mat-label>{{ message('baseCostLabel') }}</mat-label>
                       <input #subRecipeBasePrice matInput type="text" readonly class="cursor-not-allowed"
                              [value]="subRecipe.basePrice().toLocaleString(localeService.selectedLocale().code,
                      {maximumFractionDigits: 2, minimumFractionDigits: 0})">

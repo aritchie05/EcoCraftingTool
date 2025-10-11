@@ -17,8 +17,7 @@
            [style]="imageService.getProfitImgStyle()">
       <label [for]="profitInput.id" class="font-medium">{{ message('defaultProfitLabel') }}</label>
       <button class="material-icons ml-2 text-2xl cursor-help hover:opacity-80"
-              matTooltip="Default profit percentage applied to each recipe. Can be overriden for each individual recipe.
-              Percentages do not stack for recipe production chains, they are only applied at the final step.">
+              [matTooltip]="message('defaultProfitTooltip')">
         help_outline
       </button>
       <div class="ml-auto flex items-center">
@@ -55,10 +54,7 @@
     <hr class="w-full text-gray opacity-70 my-5 border-t-2 rounded">
     <h2 class="text-2xl flex items-center">{{ message('byproductsHeader') }}
       <button class="material-icons ml-1 cursor-help hover:opacity-80"
-              matTooltip="Outputs of selected recipes that are not direct inputs or primary outputs of other selected recipes.
-              The value should be set to sale price of the item.
-              It will be used to compute a more accurate output cost for the corresponding recipes.
-              You can use negative values for byproducts you want to charge for, like Tailings."
+              [matTooltip]="message('byproductsTooltip')"
               aria-label="Icon that displays a tooltip when focused or hovered over"
               matTooltipClass="text-justify">
         help_outline

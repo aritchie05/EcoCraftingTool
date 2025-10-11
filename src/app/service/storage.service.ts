@@ -35,6 +35,7 @@ export class WebStorageService {
       resourceCostMultiplier: multiplier != null ? Number.parseFloat(multiplier) : 1,
       laborCost: laborCost != null ? Number.parseFloat(laborCost) : 0,
       profitPercent: profit != null ? Number.parseFloat(profit) : 0,
+      locale: this.localeService.selectedLocale(),
       skills: this.storageService.get('skills'),
       tables: this.storageService.get('tables'),
       ingredients: this.storageService.get('ingredients'),
@@ -50,6 +51,7 @@ export class WebStorageService {
       this.localeService.selectedLocale().code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
     this.storageService.set('profitPercent', calcConfig.profitPercent.toLocaleString(
       this.localeService.selectedLocale().code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
+    this.storageService.set('locale', calcConfig.locale);
 
     this.storageService.set('skills', calcConfig.skills);
     this.storageService.set('tables', calcConfig.tables);
@@ -81,6 +83,7 @@ export class WebStorageService {
       return storedSkills.map((storedSkill: StoredSkill) => {
         let skill = skills.get(storedSkill.id);
         skill?.level.set(storedSkill.lvl);
+        skill?.lavishChecked.set(storedSkill.lav);
         return skill;
       });
     }
@@ -97,9 +100,7 @@ export class WebStorageService {
       return storedTables.map((storedTable: StoredTable) => {
         let table = tables.get(storedTable.id);
         let upgrade = upgradeModules.get(storedTable.up);
-        if (upgrade) {
-          table?.selectedUpgrade.set(upgrade);
-        }
+        table?.selectedUpgrade.set(upgrade!);
         return table;
       });
     }

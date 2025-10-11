@@ -121,7 +121,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('BakeryOvenObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -272,7 +272,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('KitchenObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -325,7 +325,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 9000,
       'craftingTable': getCraftingTableByNameID('AdvancedMasonryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -349,7 +349,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -1585,7 +1585,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('BakeryOvenObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -1808,7 +1808,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('WainwrightTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -3217,7 +3217,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('ButcheryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -3523,7 +3523,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('CampfireObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -3754,7 +3754,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('SawmillObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -3778,7 +3778,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -4980,7 +4980,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 9000,
       'craftingTable': getCraftingTableByNameID('AdvancedCarpentryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -5246,7 +5246,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('CastIronStoveObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -6911,7 +6911,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 9000,
       'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -7352,7 +7352,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 9000,
       'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -8150,7 +8150,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -8232,7 +8232,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('FarmersTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -9250,7 +9250,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('GlassworksObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -9274,7 +9274,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('ElectronicsAssemblyObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -10299,7 +10299,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 9000,
       'craftingTable': getCraftingTableByNameID('RoboticAssemblyLineObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -11763,7 +11763,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -11787,7 +11787,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('CarpentryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -12160,7 +12160,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('CementKilnObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -12184,7 +12184,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('MasonryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -12358,7 +12358,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('MachinistTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -12382,7 +12382,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('ElectricMachinistTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -12556,7 +12556,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('MillObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -12619,7 +12619,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('ScreeningMachineObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -12643,7 +12643,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('RockerBoxObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -12667,7 +12667,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 9000,
       'craftingTable': getCraftingTableByNameID('FrothFloatationCellObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -13770,7 +13770,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('OilRefineryObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -13915,7 +13915,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('SmallPaperMachineObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -14354,7 +14354,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('PotteryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -16811,7 +16811,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('BlastFurnaceObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -19016,7 +19016,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('TailoringTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -19040,7 +19040,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 9000,
       'craftingTable': getCraftingTableByNameID('AdvancedTailoringTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('ModernUpgradeLvl4Item'),
@@ -21912,7 +21912,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('FiberScutchingStationObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -23312,7 +23312,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('MediumShipyardObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -23336,7 +23336,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('SmallShipyardObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -24916,7 +24916,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('FisheryObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -25119,7 +25119,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('BlacksmithTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -25177,7 +25177,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('BlacksmithTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -25447,7 +25447,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 6000,
       'craftingTable': getCraftingTableByNameID('PotteryTableObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('AdvancedUpgradeLvl4Item'),
@@ -25680,7 +25680,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('BloomeryObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),
@@ -26515,7 +26515,7 @@ export const recipesArray: IRecipe[] =
       'level': 7,
       'labor': 3000,
       'craftingTable': getCraftingTableByNameID('PaintMixerObject'),
-      'hidden': false,
+      'hidden': true,
       'ingredients': [
         {
           'item': getItemByNameID('BasicUpgradeLvl4Item'),

@@ -36,7 +36,7 @@
       @if (skill.lavishWorkspace && skill.level() > 5) {
         <div class="flex items-center ml-10 mb-2">
           <input #lavishBox [id]="skill.nameID + lavishBox" type="checkbox"
-                 (change)="onLavishChange($index, lavishBox.checked)">
+                 (change)="onLavishChange($index, lavishBox.checked)" [checked]="skill.lavishChecked()">
           <label [for]="skill.nameID + lavishBox" class="text-xs pl-2">{{ message('lavishWorkspace') }}</label>
         </div>
       }

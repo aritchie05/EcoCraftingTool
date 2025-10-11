@@ -9,14 +9,14 @@
   <div class="col-start-4 col-span-1 flex items-center justify-center font-medium">
     {{ message('adjustedLabel') }}
     <button class="material-icons cursor-help hover:opacity-80 text-[22px] translate-y-[-1px] pl-1"
-            matTooltip="Computed amounts for the recipe, taking into account the skill level, upgrade module, and other factors.">
+            [matTooltip]="message('adjustedTooltip')">
       help_outline
     </button>
   </div>
   <div class="col-span-1 flex items-center justify-center font-medium">
     {{ message('baseLabel') }}
     <button class="material-icons cursor-help hover:opacity-80 text-[22px] translate-y-[-1px] pl-1"
-            matTooltip="Base amounts for the recipe.">
+            [matTooltip]="message('baseTooltip')">
       help_outline
     </button>
   </div>

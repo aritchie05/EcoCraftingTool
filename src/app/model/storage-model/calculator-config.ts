@@ -2,6 +2,7 @@ import {StoredSkill} from './stored-skill';
 import {StoredTable} from './stored-table';
 import {StoredItem} from './stored-item';
 import {StoredRecipe} from './stored-recipe';
+import {Locale} from '../../service/locale.service';
 
 export interface CalculatorConfig {
   skills: StoredSkill[];
@@ -13,4 +14,5 @@ export interface CalculatorConfig {
   expensiveEndgameCost: boolean;
   laborCost: number;
   profitPercent: number;
+  locale: Locale;
 }
