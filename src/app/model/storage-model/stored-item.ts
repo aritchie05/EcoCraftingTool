@@ -6,10 +6,10 @@ export class StoredItem {
   /**
    * Price of the ingredient
    */
-  pr: number;
+  pr: string;
 
   constructor(item: Item) {
     this.id = item.nameID;
-    this.pr = item.price();
+    this.pr = item.price ? item.price().toFixed(2) : '0';
   }
 }

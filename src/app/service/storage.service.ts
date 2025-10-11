@@ -14,6 +14,7 @@ import {StoredRecipe} from '../model/storage-model/stored-recipe';
 import {Item} from '../model/item';
 import {StoredItem} from '../model/storage-model/stored-item';
 import {items} from '../../assets/data/items';
+import {upgradeModules} from '../../assets/data/upgrade-modules';
 
 @Injectable({
   providedIn: 'root'
@@ -38,6 +39,7 @@ export class WebStorageService {
       tables: this.storageService.get('tables'),
       ingredients: this.storageService.get('ingredients'),
       outputs: this.storageService.get('recipes'),
+      byproducts: this.storageService.get('byproducts')
     };
   }
 
@@ -53,6 +55,7 @@ export class WebStorageService {
     this.storageService.set('tables', calcConfig.tables);
     this.storageService.set('ingredients', calcConfig.ingredients);
     this.storageService.set('recipes', calcConfig.outputs);
+    this.storageService.set('byproducts', calcConfig.byproducts);
   }
 
   getCraftResourceModifier(): number {
@@ -75,7 +78,11 @@ export class WebStorageService {
   getSelectedSkills(): Skill[] {
     const storedSkills = this.storageService.get('skills');
     if (storedSkills) {
-      return storedSkills.map((skill: StoredSkill) => skills.get(skill.id));
+      return storedSkills.map((storedSkill: StoredSkill) => {
+        let skill = skills.get(storedSkill.id);
+        skill?.level.set(storedSkill.lvl);
+        return skill;
+      });
     }
     return [];
   }
@@ -87,7 +94,14 @@ export class WebStorageService {
   getSelectedTables(): CraftingTable[] {
     const storedTables = this.storageService.get('tables');
     if (storedTables) {
-      return storedTables.map((table: StoredTable) => tables.get(table.id));
+      return storedTables.map((storedTable: StoredTable) => {
+        let table = tables.get(storedTable.id);
+        let upgrade = upgradeModules.get(storedTable.up);
+        if (upgrade) {
+          table?.selectedUpgrade.set(upgrade);
+        }
+        return table;
+      });
     }
     return [];
   }
@@ -99,7 +113,15 @@ export class WebStorageService {
   getSelectedRecipes(): Recipe[] {
     const storedRecipes = this.storageService.get('recipes');
     if (storedRecipes) {
-      return storedRecipes.map((recipe: StoredRecipe) => recipes.get(recipe.id));
+      return storedRecipes.map((storedRecipe: StoredRecipe) => {
+        let recipe = recipes.get(storedRecipe.id);
+        recipe?.basePrice.set(Number.parseFloat(storedRecipe.bp));
+        recipe?.price.set(Number.parseFloat(storedRecipe.pr));
+        if (storedRecipe.po) {
+          recipe?.profitOverride.set(Number.parseFloat(storedRecipe.po));
+        }
+        return recipe;
+      });
     }
     return [];
   }
@@ -111,7 +133,11 @@ export class WebStorageService {
   getSelectedItems(): Item[] {
     const storedItems = this.storageService.get('ingredients');
     if (storedItems) {
-      return storedItems.map((item: StoredItem) => items.get(item.id));
+      return storedItems.map((storedItem: StoredItem) => {
+        let item = items.get(storedItem.id);
+        item?.price.set(Number.parseFloat(storedItem.pr));
+        return item;
+      });
     }
     return [];
   }
@@ -123,7 +149,11 @@ export class WebStorageService {
   getSelectedByproducts(): Item[] {
     const storedItems = this.storageService.get('byproducts');
     if (storedItems) {
-      return storedItems.map((item: StoredItem) => items.get(item.id));
+      return storedItems.map((storedItem: StoredItem) => {
+        let item = items.get(storedItem.id);
+        item?.price.set(Number.parseFloat(storedItem.pr));
+        return item;
+      });
     }
     return [];
   }

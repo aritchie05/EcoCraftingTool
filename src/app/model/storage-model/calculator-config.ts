@@ -8,6 +8,7 @@ export interface CalculatorConfig {
   tables: StoredTable[];
   ingredients: StoredItem[];
   outputs: StoredRecipe[];
+  byproducts: StoredItem[];
   resourceCostMultiplier: number;
   expensiveEndgameCost: boolean;
   laborCost: number;

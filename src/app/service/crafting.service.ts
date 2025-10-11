@@ -35,7 +35,7 @@ export class CraftingService {
   outputDisplays: Signal<OutputDisplay[]>;
   primaryOutputIds: Signal<Set<string>>;
 
-  constructor(storageService: WebStorageService) {
+  constructor(private storageService: WebStorageService) {
     this.craftResourceModifier = signal(storageService.getCraftResourceModifier());
     this.expensiveEndgameRecipes = signal(storageService.getExpensiveEndgameRecipes());
 
@@ -106,6 +106,8 @@ export class CraftingService {
 
       return outputDisplays;
     });
+
+    this.restoreSavedPrices();
 
     //Effect to compute the prices for each selected recipe
     effect(() => {
@@ -238,6 +240,36 @@ export class CraftingService {
 
     effect(() => {
       storageService.saveSelectedRecipes(this.selectedRecipes());
+    });
+  }
+
+
+  private restoreSavedPrices(): void {
+    const savedItems = this.storageService.getSelectedItems();
+    const savedByproducts = this.storageService.getSelectedByproducts();
+
+    if (savedItems.length === 0 && savedByproducts.length === 0) {
+      return;
+    }
+
+    // Create maps for efficient lookup
+    const savedItemPrices = new Map(savedItems.map(item => [item.nameID, item.price()]));
+    const savedByproductPrices = new Map(savedByproducts.map(item => [item.nameID, item.price()]));
+
+    // Restore input prices
+    this.selectedInputs().forEach(item => {
+      const savedPrice = savedItemPrices.get(item.nameID);
+      if (savedPrice !== undefined) {
+        item.price.set(savedPrice);
+      }
+    });
+
+    // Restore byproduct prices
+    this.selectedByproducts().forEach(item => {
+      const savedPrice = savedByproductPrices.get(item.nameID);
+      if (savedPrice !== undefined) {
+        item.price.set(savedPrice);
+      }
     });
   }
 
