@@ -104,10 +104,27 @@ export class CraftingService {
         }
       });
 
+      outputDisplays.sort((a, b) => a.itemName().localeCompare(b.itemName()));
       return outputDisplays;
     });
 
     this.restoreSavedPrices();
+
+
+    //Sort skills and tables whenever they change
+    effect(() => {
+      this.selectedSkills.update(skills => {
+        skills.sort((a, b) => a.name().localeCompare(b.name()));
+        return skills;
+      });
+    });
+
+    effect(() => {
+      this.selectedTables.update(tables => {
+        tables.sort((a, b) => a.name().localeCompare(b.name()));
+        return tables;
+      });
+    });
 
     //Effect to compute the prices for each selected recipe
     effect(() => {
