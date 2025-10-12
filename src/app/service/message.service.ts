@@ -2370,7 +2370,7 @@ const messages: Message[] =
       ]
     },
     {
-      'id': 'profitTooltip',
+      'id': 'defaultProfitTooltip',
       'localizedMessages': [
         {
           'text': 'Standardmäßiger Gewinnprozentsatz, der auf jedes Rezept angewendet wird. Kann für einzelne Rezepte überschrieben werden. Prozentsätze sind für Rezeptproduktionsketten nicht kumulativ, sie werden erst im letzten Schritt angewendet.',
