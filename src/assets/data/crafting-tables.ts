@@ -1,6 +1,6 @@
-import {CraftingTable} from '../../app/interface/crafting-table';
+import {CraftingTable, ICraftingTable} from '../../app/model/crafting-table';
 
-export let craftingTables: CraftingTable[] =
+export const tablesArray: ICraftingTable[] =
   [
     {
       'name': 'Advanced Carpentry Table',
@@ -606,3 +606,7 @@ export let craftingTables: CraftingTable[] =
       'yPos': 12
     }
   ];
+
+export const tables: Map<string, CraftingTable> = new Map(tablesArray.map(
+  table => [table.nameID, new CraftingTable(table)]
+));

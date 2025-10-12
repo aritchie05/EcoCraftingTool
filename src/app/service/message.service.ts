@@ -1,21 +1,22 @@
-import {Injectable} from '@angular/core';
-import {Locale} from './locale.service';
+import {inject, Injectable} from '@angular/core';
+import {LocaleService} from './locale.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessageService {
+  private readonly localeService = inject(LocaleService);
 
-  constructor() {
-  }
-
-  getMessage(id: string, locale: Locale): string {
+  getMessage(id: string): string {
+    const locale = this.localeService.selectedLocale();
     let message = messages.find(message => message.id.localeCompare(id) === 0);
-    let result: LocalizedMessage;
+    let result: LocalizedMessage | undefined;
     if (message) {
-      result = message.localizedMessages.find(message => message.lang.localeCompare(locale.langCode()) === 0);
+      result = message.localizedMessages.find(message => message.lang.localeCompare(locale.langCode) === 0);
+      return result !== undefined ? result.text : message.localizedMessages.find(message => message.lang === 'en')!.text;
     }
-    return result !== undefined ? result.text : message.localizedMessages.find(message => message.lang === 'en').text;
+
+    return `INVALID MESSAGE CONFIGURED FOR ID: ${id}`;
   }
 }
 
@@ -84,6 +85,63 @@ const messages: Message[] =
         },
         {
           'text': '電卓の作成',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'releaseNotesHeader',
+      'localizedMessages': [
+        {
+          'text': 'Release History',
+          'lang': 'en'
+        },
+        {
+          'text': 'Historique des versions',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Historial de versiones',
+          'lang': 'es'
+        },
+        {
+          'text': 'Veröffentlichungsverlauf',
+          'lang': 'de'
+        },
+        {
+          'text': 'Histórico de lançamentos',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Cronologia delle versioni',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yayın Geçmişi',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Historia wydań',
+          'lang': 'pl'
+        },
+        {
+          'text': 'История релизов',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Історія випусків',
+          'lang': 'uk'
+        },
+        {
+          'text': '출시 내역',
+          'lang': 'ko'
+        },
+        {
+          'text': '发布历史',
+          'lang': 'zh'
+        },
+        {
+          'text': 'リリース履歴',
           'lang': 'ja'
         }
       ]
@@ -1740,5 +1798,861 @@ const messages: Message[] =
           'lang': 'ja'
         }
       ]
+    },
+    {
+      'id': 'defaultProfitLabel',
+      'localizedMessages': [
+        {
+          'text': 'Default Profit Percentage',
+          'lang': 'en'
+        },
+        {
+          'text': 'Pourcentage de profit par défaut',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Porcentaje de beneficio predeterminado',
+          'lang': 'es'
+        },
+        {
+          'text': 'Standard-Gewinnprozentsatz',
+          'lang': 'de'
+        },
+        {
+          'text': 'Percentagem de lucro padrão',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Percentuale di profitto predefinita',
+          'lang': 'it'
+        },
+        {
+          'text': 'Varsayılan Kar Yüzdesi',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Domyślny procent zysku',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Процент прибыли по умолчанию',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Відсоток прибутку за замовчуванням',
+          'lang': 'uk'
+        },
+        {
+          'text': '기본 이익 비율',
+          'lang': 'ko'
+        },
+        {
+          'text': '默认利润百分比',
+          'lang': 'zh'
+        },
+        {
+          'text': 'デフォルトの利益率',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'byproductsHeader',
+      'localizedMessages': [
+        {
+          'text': 'Nebenprodukte',
+          'lang': 'de'
+        },
+        {
+          'text': 'Побочные продукты',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Subprodutos',
+          'lang': 'pt'
+        },
+        {
+          'text': '부산물',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Byproducts',
+          'lang': 'en'
+        },
+        {
+          'text': 'Sottoprodotti',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sous-produits',
+          'lang': 'fr'
+        },
+        {
+          'text': '副产品',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Subproductos',
+          'lang': 'es'
+        },
+        {
+          'text': 'Побічні продукти',
+          'lang': 'uk'
+        },
+        {
+          'text': '副産物',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Produkty uboczne',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Yan ürünler',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'baseCostLabel',
+      'localizedMessages': [
+        {
+          'text': 'Kosten',
+          'lang': 'de'
+        },
+        {
+          'text': 'Расходы',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Custo',
+          'lang': 'pt'
+        },
+        {
+          'text': '비용',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Cost',
+          'lang': 'en'
+        },
+        {
+          'text': 'Costo',
+          'lang': 'it'
+        },
+        {
+          'text': 'Coût',
+          'lang': 'fr'
+        },
+        {
+          'text': '成本',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Costo',
+          'lang': 'es'
+        },
+        {
+          'text': 'Вартість',
+          'lang': 'uk'
+        },
+        {
+          'text': '料金',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Koszt',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Maliyet',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'profitLabel',
+      'localizedMessages': [
+        {
+          'text': 'Profitieren',
+          'lang': 'de'
+        },
+        {
+          'text': 'Выгода',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Lucro',
+          'lang': 'pt'
+        },
+        {
+          'text': '이익',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Profit',
+          'lang': 'en'
+        },
+        {
+          'text': 'Profit',
+          'lang': 'it'
+        },
+        {
+          'text': 'Profit',
+          'lang': 'fr'
+        },
+        {
+          'text': '利润',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Ganancia',
+          'lang': 'es'
+        },
+        {
+          'text': 'Прибуток',
+          'lang': 'uk'
+        },
+        {
+          'text': '利益',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Zysk',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Kâr',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'salePriceLabel',
+      'localizedMessages': [
+        {
+          'text': 'Verkaufen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Продавать',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Vender',
+          'lang': 'pt'
+        },
+        {
+          'text': '팔다',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Sell',
+          'lang': 'en'
+        },
+        {
+          'text': 'Vendere',
+          'lang': 'it'
+        },
+        {
+          'text': 'Vendre',
+          'lang': 'fr'
+        },
+        {
+          'text': '卖',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Vender',
+          'lang': 'es'
+        },
+        {
+          'text': 'Продати',
+          'lang': 'uk'
+        },
+        {
+          'text': '売る',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Sprzedać',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Satmak',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'primaryLabel',
+      'localizedMessages': [
+        {
+          'text': '(Primär)',
+          'lang': 'de'
+        },
+        {
+          'text': '(Начальный)',
+          'lang': 'ru'
+        },
+        {
+          'text': '(Primário)',
+          'lang': 'pt'
+        },
+        {
+          'text': '(주요한)',
+          'lang': 'ko'
+        },
+        {
+          'text': '(Primary)',
+          'lang': 'en'
+        },
+        {
+          'text': '(Primario)',
+          'lang': 'it'
+        },
+        {
+          'text': '(Primaire)',
+          'lang': 'fr'
+        },
+        {
+          'text': '（基本的）',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': '(Primario)',
+          'lang': 'es'
+        },
+        {
+          'text': '(Основний)',
+          'lang': 'uk'
+        },
+        {
+          'text': '（主要な）',
+          'lang': 'ja'
+        },
+        {
+          'text': '(Podstawowy)',
+          'lang': 'pl'
+        },
+        {
+          'text': '(Öncelik)',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'nameLabel',
+      'localizedMessages': [
+        {
+          'text': 'Name',
+          'lang': 'de'
+        },
+        {
+          'text': 'Имя',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Nome',
+          'lang': 'pt'
+        },
+        {
+          'text': '이름',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Name',
+          'lang': 'en'
+        },
+        {
+          'text': 'Nome',
+          'lang': 'it'
+        },
+        {
+          'text': 'Nom',
+          'lang': 'fr'
+        },
+        {
+          'text': '姓名',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Nombre',
+          'lang': 'es'
+        },
+        {
+          'text': 'Ім\'я',
+          'lang': 'uk'
+        },
+        {
+          'text': '名前',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Nazwa',
+          'lang': 'pl'
+        },
+        {
+          'text': 'İsim',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'adjustedLabel',
+      'localizedMessages': [
+        {
+          'text': 'Angepasst',
+          'lang': 'de'
+        },
+        {
+          'text': 'Скорректированный',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Ajustado',
+          'lang': 'pt'
+        },
+        {
+          'text': '조정됨',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Adjusted',
+          'lang': 'en'
+        },
+        {
+          'text': 'Regolato',
+          'lang': 'it'
+        },
+        {
+          'text': 'Ajusté',
+          'lang': 'fr'
+        },
+        {
+          'text': '调整后',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Equilibrado',
+          'lang': 'es'
+        },
+        {
+          'text': 'Скориговано',
+          'lang': 'uk'
+        },
+        {
+          'text': '調整済み',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Dostosowany',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Ayarlanmış',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'baseLabel',
+      'localizedMessages': [
+        {
+          'text': 'Base',
+          'lang': 'de'
+        },
+        {
+          'text': 'База',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Base',
+          'lang': 'pt'
+        },
+        {
+          'text': '베이스',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Base',
+          'lang': 'en'
+        },
+        {
+          'text': 'Base',
+          'lang': 'it'
+        },
+        {
+          'text': 'Base',
+          'lang': 'fr'
+        },
+        {
+          'text': '根据',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Base',
+          'lang': 'es'
+        },
+        {
+          'text': 'База',
+          'lang': 'uk'
+        },
+        {
+          'text': 'ベース',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Opierać',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Temel',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'farmingTrackerLink',
+      'localizedMessages': [
+        {
+          'text': 'Öko-Landwirtschafts-Tracker',
+          'lang': 'de'
+        },
+        {
+          'text': 'Экологический трекер для фермерства',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Rastreador de Agricultura Ecológica',
+          'lang': 'pt'
+        },
+        {
+          'text': '생태 농업 추적기',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Eco Farming Tracker',
+          'lang': 'en'
+        },
+        {
+          'text': 'Eco Farming Tracker',
+          'lang': 'it'
+        },
+        {
+          'text': 'Suivi de l\'agriculture Eco',
+          'lang': 'fr'
+        },
+        {
+          'text': '生态农业追踪器',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Rastreador de agricultura ecológica',
+          'lang': 'es'
+        },
+        {
+          'text': 'Трекер еко-фермерства',
+          'lang': 'uk'
+        },
+        {
+          'text': 'エコファーミングトラッカー',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Śledzenie rolnictwa ekologicznego',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Eko Tarım Takipçisi',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'profitTooltip',
+      'localizedMessages': [
+        {
+          'text': 'Standardmäßiger Gewinnprozentsatz, der auf jedes Rezept angewendet wird. Kann für einzelne Rezepte überschrieben werden. Prozentsätze sind für Rezeptproduktionsketten nicht kumulativ, sie werden erst im letzten Schritt angewendet.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Процент прибыли по умолчанию применяется к каждому рецепту. Может быть переопределен для отдельных рецептов. Проценты не суммируются в цепочках производства рецептов, они применяются только на последнем этапе.',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Porcentagem de lucro padrão aplicada a cada receita. Pode ser substituída para receitas individuais. As porcentagens não se acumulam para as cadeias de produção de receitas, sendo aplicadas apenas na etapa final.',
+          'lang': 'pt'
+        },
+        {
+          'text': '각 레시피에 기본 수익률이 적용됩니다. 개별 레시피에 덮어쓸 수 있습니다. 레시피 생산 체인에서는 수익률이 누적되지 않으며, 최종 단계에만 적용됩니다.',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Default profit percentage applied to each recipe. Can be overwritten for individual recipes. Percentages do not stack for recipe production chains, they are only applied at the final step.',
+          'lang': 'en'
+        },
+        {
+          'text': 'Percentuale di profitto predefinita applicata a ciascuna ricetta. Può essere sovrascritta per singole ricette. Le percentuali non si sommano alle catene di produzione delle ricette, ma vengono applicate solo nella fase finale.',
+          'lang': 'it'
+        },
+        {
+          'text': 'Le pourcentage de profit par défaut est appliqué à chaque recette. Il peut être modifié individuellement. Les pourcentages ne se cumulent pas pour les chaînes de production de recettes ; ils ne sont appliqués qu\'à l\'étape finale.',
+          'lang': 'fr'
+        },
+        {
+          'text': '适用于每个配方的默认利润百分比。可针对单个配方进行覆盖。百分比在配方生产链中不叠加，仅在最后一步应用。',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Porcentaje de beneficio predeterminado aplicado a cada receta. Se puede sobrescribir para recetas individuales. Los porcentajes no se acumulan en las cadenas de producción de recetas; solo se aplican en el paso final.',
+          'lang': 'es'
+        },
+        {
+          'text': 'Відсоток прибутку за замовчуванням застосовується до кожного рецепту. Можна перезаписати для окремих рецептів. Відсотки не сумуються для виробничих ланцюжків рецептів, вони застосовуються лише на останньому кроці.',
+          'lang': 'uk'
+        },
+        {
+          'text': '各レシピに適用されるデフォルトの利益率。個々のレシピごとに上書きできます。利益率はレシピ生産チェーン全体では重複せず、最終ステップでのみ適用されます。',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Domyślny procent zysku stosowany do każdej receptury. Można go nadpisać dla poszczególnych receptur. Procenty nie kumulują się w łańcuchach produkcyjnych receptur, są stosowane dopiero na ostatnim etapie.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Her tarife varsayılan kâr yüzdesi uygulanır. Tek tek tarifler için üzerine yazılabilir. Yüzdeler, tarif üretim zincirleri için bir araya getirilmez, yalnızca son adımda uygulanır.',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'byproductsTooltip',
+      'localizedMessages': [
+        {
+          'text': 'Ausgaben ausgewählter Rezepte, die keine direkten Eingaben oder primären Ausgaben anderer ausgewählter Rezepte sind. Der Wert sollte auf den Verkaufspreis des Artikels eingestellt werden. Er wird verwendet, um die Ausgabekosten für die entsprechenden Rezepte genauer zu berechnen. Sie können negative Werte für Nebenprodukte verwenden, für die Sie Gebühren erheben möchten, z. B. Rückstände.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Выходы выбранных рецептов, которые не являются прямыми входами или основными выходами других выбранных рецептов. Значение должно быть установлено равным продажной цене товара. Оно будет использовано для более точного расчета себестоимости продукта для соответствующих рецептов. Вы можете использовать отрицательные значения для побочных продуктов, за которые вы хотите взимать плату, например, для хвостов.',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Saídas de receitas selecionadas que não são entradas diretas ou saídas primárias de outras receitas selecionadas. O valor deve ser definido como o preço de venda do item. Ele será usado para calcular um custo de saída mais preciso para as receitas correspondentes. Você pode usar valores negativos para subprodutos pelos quais deseja cobrar, como Rejeitos.',
+          'lang': 'pt'
+        },
+        {
+          'text': '선택한 레시피의 출력값으로, 다른 선택한 레시피의 직접 입력값이나 기본 출력값이 아닙니다. 값은 해당 품목의 판매 가격으로 설정해야 합니다. 이 값은 해당 레시피의 더 정확한 출력 비용을 계산하는 데 사용됩니다. 테일링과 같이 비용을 청구하려는 부산물에는 음수 값을 사용할 수 있습니다.',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Outputs of selected recipes that are not direct inputs or primary outputs of other selected recipes. The value should be set to the sale price of the item. It will be used to compute a more accurate output cost for the corresponding recipes. You can use negative values for byproducts you want to charge for, like Tailings.',
+          'lang': 'en'
+        },
+        {
+          'text': 'Output delle ricette selezionate che non sono input diretti o output primari di altre ricette selezionate. Il valore deve essere impostato sul prezzo di vendita dell\'articolo. Verrà utilizzato per calcolare un costo di output più accurato per le ricette corrispondenti. È possibile utilizzare valori negativi per i sottoprodotti che si desidera fatturare, come gli scarti di lavorazione.',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sorties des recettes sélectionnées qui ne sont ni des intrants directs ni des sorties principales d\'autres recettes sélectionnées. La valeur doit correspondre au prix de vente de l\'article. Elle permettra de calculer un coût de sortie plus précis pour les recettes correspondantes. Vous pouvez utiliser des valeurs négatives pour les sous-produits que vous souhaitez facturer, comme les résidus.',
+          'lang': 'fr'
+        },
+        {
+          'text': '所选配方的输出，并非其他所选配方的直接输入或主要输出。该值应设置为该物品的售价。它将用于计算相应配方更准确的输出成本。对于您想要收费的副产品，例如尾矿，可以使用负值。',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Salidas de recetas seleccionadas que no son insumos directos ni salidas principales de otras recetas seleccionadas. El valor debe establecerse al precio de venta del artículo. Se utilizará para calcular un costo de salida más preciso para las recetas correspondientes. Puede usar valores negativos para los subproductos que desee facturar, como los relaves.',
+          'lang': 'es'
+        },
+        {
+          'text': 'Вихідні дані вибраних рецептів, які не є прямими вхідними даними або первинними виходами інших вибраних рецептів. Значення має бути встановлене на рівні ціни продажу товару. Воно буде використано для розрахунку точнішої собівартості продукції для відповідних рецептів. Ви можете використовувати від\'ємні значення для побічних продуктів, за які ви хочете нарахувати плату, таких як хвости.',
+          'lang': 'uk'
+        },
+        {
+          'text': '選択したレシピの出力のうち、他の選択したレシピの直接入力または主要出力ではないもの。値はアイテムの販売価格に設定する必要があります。この値は、対応するレシピの出力コストをより正確に計算するために使用されます。尾鉱など、課金したい副産物には負の値を使用できます。',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Produkty z wybranych receptur, które nie są bezpośrednimi nakładami ani produktami podstawowymi z innych wybranych receptur. Wartość powinna być ustawiona na cenę sprzedaży towaru. Zostanie ona wykorzystana do obliczenia dokładniejszego kosztu produkcji dla odpowiednich receptur. Możesz użyć wartości ujemnych dla produktów ubocznych, za które chcesz naliczyć opłatę, takich jak odpady poflotacyjne.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Seçili tariflerin çıktıları, diğer seçili tariflerin doğrudan girdileri veya birincil çıktıları değildir. Değer, ürünün satış fiyatına ayarlanmalıdır. İlgili tarifler için daha doğru bir çıktı maliyeti hesaplamak için kullanılacaktır. Atık gibi ücretlendirmek istediğiniz yan ürünler için negatif değerler kullanabilirsiniz.',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'adjustedTooltip',
+      'localizedMessages': [
+        {
+          'text': 'Berechnete Mengen für das Rezept unter Berücksichtigung der Fertigkeitsstufe, des Upgrade-Moduls und anderer Faktoren.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Расчет количества для рецепта с учетом уровня мастерства, модуля улучшения и других факторов.',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Quantidades calculadas para a receita, levando em conta o nível de habilidade, módulo de atualização e outros fatores.',
+          'lang': 'pt'
+        },
+        {
+          'text': '기술 수준, 업그레이드 모듈 및 기타 요소를 고려하여 레시피에 대한 계산된 금액입니다.',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Computed amounts for the recipe, taking into account the skill level, upgrade module, and other factors.',
+          'lang': 'en'
+        },
+        {
+          'text': 'Importi calcolati per la ricetta, tenendo conto del livello di abilità, del modulo di aggiornamento e di altri fattori.',
+          'lang': 'it'
+        },
+        {
+          'text': 'Montants calculés pour la recette, en tenant compte du niveau de compétence, du module de mise à niveau et d\'autres facteurs.',
+          'lang': 'fr'
+        },
+        {
+          'text': '计算配方的数量，同时考虑技能水平、升级模块和其他因素。',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Cantidades calculadas para la receta, teniendo en cuenta el nivel de habilidad, el módulo de mejora y otros factores.',
+          'lang': 'es'
+        },
+        {
+          'text': 'Розраховані кількості для рецепту з урахуванням рівня майстерності, модуля покращення та інших факторів.',
+          'lang': 'uk'
+        },
+        {
+          'text': 'スキルレベル、アップグレードモジュール、その他の要素を考慮して、レシピの量を計算しました。',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Obliczone wartości dla przepisu uwzględniają poziom umiejętności, moduł ulepszeń i inne czynniki.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Tarif için beceri seviyesi, yükseltme modülü ve diğer faktörler göz önünde bulundurularak hesaplanan miktarlar.',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'baseTooltip',
+      'localizedMessages': [
+        {
+          'text': 'Grundmengen für das Rezept, ohne jegliche Modifikatoren.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Базовые количества для рецепта, без каких-либо модификаторов.',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Quantidades base para a receita, sem nenhum modificador.',
+          'lang': 'pt'
+        },
+        {
+          'text': '수정 사항 없이 레시피에 적용된 기본 양입니다.',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Base amounts for the recipe, without any modifiers.',
+          'lang': 'en'
+        },
+        {
+          'text': 'Quantità base per la ricetta, senza modificatori.',
+          'lang': 'it'
+        },
+        {
+          'text': 'Montants de base pour la recette, sans aucun modificateur.',
+          'lang': 'fr'
+        },
+        {
+          'text': '配方的基本量，不含任何修饰剂。',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Cantidades base para la receta, sin ningún modificador.',
+          'lang': 'es'
+        },
+        {
+          'text': 'Базові кількості для рецепту, без будь-яких модифікацій.',
+          'lang': 'uk'
+        },
+        {
+          'text': 'レシピの基本量（変更なし）。',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Ilości bazowe przepisu, bez żadnych modyfikatorów.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Tarifin taban miktarları, hiçbir değiştirici olmadan.',
+          'lang': 'tr'
+        }
+      ]
+    },
+    {
+      'id': 'settingsHeader',
+      'localizedMessages': [
+        {
+          'text': 'Einstellungen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Настройки',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Configurações',
+          'lang': 'pt'
+        },
+        {
+          'text': '설정',
+          'lang': 'ko'
+        },
+        {
+          'text': 'Settings',
+          'lang': 'en'
+        },
+        {
+          'text': 'Impostazioni',
+          'lang': 'it'
+        },
+        {
+          'text': 'Paramètres',
+          'lang': 'fr'
+        },
+        {
+          'text': '设置',
+          'lang': 'zh-CN'
+        },
+        {
+          'text': 'Ajustes',
+          'lang': 'es'
+        },
+        {
+          'text': 'Налаштування',
+          'lang': 'uk'
+        },
+        {
+          'text': '設定',
+          'lang': 'ja'
+        },
+        {
+          'text': 'Ustawienia',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Ayarlar',
+          'lang': 'tr'
+        }
+      ]
     }
-  ];
+  ]
+;

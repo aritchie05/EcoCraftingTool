@@ -1,0 +1,12 @@
+.selected-outputs-container {
+  --mat-form-field-container-vertical-padding: 0.25rem;
+}
+
+.output-container {
+  background-color: var(--mat-sys-surface-container-high);
+  box-shadow: var(--mat-sys-level2);
+}
+
+.profit-input::placeholder {
+  opacity: 0.6;
+}

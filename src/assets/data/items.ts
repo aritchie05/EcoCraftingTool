@@ -1,6 +1,6 @@
-import {Item} from '../../app/interface/item';
+import {IItem, Item} from '../../app/model/item';
 
-export let items: Item[] =
+export const itemsArray: IItem[] =
   [
     {
       'name': 'Acorn',
@@ -857,7 +857,10 @@ export let items: Item[] =
     {
       'name': 'Basic Backpack',
       'nameID': 'BasicBackpackItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 8,
+      'yPos': 3
     },
     {
       'name': 'Basic Circuit',
@@ -11144,5 +11147,745 @@ export let items: Item[] =
       'imageFile': 'WoodenSlidingDoorObject_Icon.png',
       'xPos': 0,
       'yPos': 0
+    },
+    {
+      'name': 'Anatomy Book',
+      'nameID': 'AnatomyBookItem',
+      'tag': false,
+      'imageFile': 'AnatomyBookObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Atlas Book',
+      'nameID': 'AtlasBookItem',
+      'tag': false,
+      'imageFile': 'AtlasBookObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Banana Rug',
+      'nameID': 'BananaRugItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Banana Shirt',
+      'nameID': 'BananaShirtItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Botanical Book',
+      'nameID': 'BotanicalBookItem',
+      'tag': false,
+      'imageFile': 'BotanicalBookObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ceramic Tea Cup',
+      'nameID': 'CeramicTeaCupItem',
+      'tag': false,
+      'imageFile': 'CeramicTeaCupObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ceramic Tea Pot',
+      'nameID': 'CeramicTeaPotItem',
+      'tag': false,
+      'imageFile': 'CeramicTeapotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Ceramic Tray',
+      'nameID': 'CeramicTrayItem',
+      'tag': false,
+      'imageFile': 'CeramicTrayObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Coffee Table',
+      'nameID': 'CoffeeTableItem',
+      'tag': false,
+      'imageFile': 'CoffeeTableObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Daisy',
+      'nameID': 'DaisyItem',
+      'tag': false,
+      'imageFile': 'DaisyItem_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Daisy Seed',
+      'nameID': 'DaisySeedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Eco Book',
+      'nameID': 'EcoBookItem',
+      'tag': false,
+      'imageFile': 'EcoBookObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Elk Gong',
+      'nameID': 'ElkGongItem',
+      'tag': false,
+      'imageFile': 'ElkGongObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Elk Statuette',
+      'nameID': 'ElkStatuetteItem',
+      'tag': false,
+      'imageFile': 'ElkStatuetteObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Fancy Medium Lumber Store Window',
+      'nameID': 'FancyMediumLumberStoreWindowItem',
+      'tag': false,
+      'imageFile': 'FancyMediumLumberStoreWindowObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Flax Flower',
+      'nameID': 'FlaxFlowerItem',
+      'tag': false,
+      'imageFile': 'FlaxFlowerItem_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Gold Trim Book',
+      'nameID': 'GoldTrimBookItem',
+      'tag': false,
+      'imageFile': 'GoldTrimBookObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hanging Basket',
+      'nameID': 'HangingBasketItem',
+      'tag': false,
+      'imageFile': 'HangingBasketObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Double Shelf',
+      'nameID': 'HardwoodDoubleShelfItem',
+      'tag': false,
+      'imageFile': 'HardwoodDoubleShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hardwood Lumber Hallway Table',
+      'nameID': 'HardwoodLumberHallwayTableItem',
+      'tag': false,
+      'imageFile': 'HardwoodLumberHallwayTableObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Heated Display Cabinet',
+      'nameID': 'HeatedDisplayCabinetItem',
+      'tag': false,
+      'imageFile': 'HeatedDisplayCabinetObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Hourglass',
+      'nameID': 'HourglassItem',
+      'tag': false,
+      'imageFile': 'HourglassObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Glass Store Window',
+      'nameID': 'LargeGlassStoreWindowItem',
+      'tag': false,
+      'imageFile': 'LargeGlassStoreWindowObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Large Lumber Store Window',
+      'nameID': 'LargeLumberStoreWindowItem',
+      'tag': false,
+      'imageFile': 'LargeLumberStoreWindowObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Basic Hardwood Shelf',
+      'nameID': 'LongBasicHardwoodShelfItem',
+      'tag': false,
+      'imageFile': 'LongBasicHardwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Basic Softwood Shelf',
+      'nameID': 'LongBasicSoftwoodShelfItem',
+      'tag': false,
+      'imageFile': 'LongBasicSoftwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Basic Wood Shelf',
+      'nameID': 'LongBasicWoodShelfItem',
+      'tag': false,
+      'imageFile': 'LongBasicWoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Floating Hardwood Shelf',
+      'nameID': 'LongFloatingHardwoodShelfItem',
+      'tag': false,
+      'imageFile': 'LongFloatingHardwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Floating Softwood Shelf',
+      'nameID': 'LongFloatingSoftwoodShelfItem',
+      'tag': false,
+      'imageFile': 'LongFloatingSoftwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Floating Wood Shelf',
+      'nameID': 'LongFloatingWoodShelfItem',
+      'tag': false,
+      'imageFile': 'LongFloatingWoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Hardwood Lumber Shelf',
+      'nameID': 'LongHardwoodLumberShelfItem',
+      'tag': false,
+      'imageFile': 'LongHardwoodLumberShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Hardwood Veneer Shelf',
+      'nameID': 'LongHardwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'LongHardwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Lumber Shelf',
+      'nameID': 'LongLumberShelfItem',
+      'tag': false,
+      'imageFile': 'LongLumberShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Softwood Lumber Shelf',
+      'nameID': 'LongSoftwoodLumberShelfItem',
+      'tag': false,
+      'imageFile': 'LongSoftwoodLumberShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Softwood Veneer Shelf',
+      'nameID': 'LongSoftwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'LongSoftwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Steel Shelf',
+      'nameID': 'LongSteelShelfItem',
+      'tag': false,
+      'imageFile': 'LongSteelShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Thin Hardwood Veneer Shelf',
+      'nameID': 'LongThinHardwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'LongThinHardwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Thin Softwood Veneer Shelf',
+      'nameID': 'LongThinSoftwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'LongThinSoftwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Thin Wood Veneer Shelf',
+      'nameID': 'LongThinWoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'LongThinWoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Long Wood Veneer Shelf',
+      'nameID': 'LongWoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'LongWoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Lumber Hallway Table',
+      'nameID': 'LumberHallwayTableItem',
+      'tag': false,
+      'imageFile': 'LumberHallwayTableObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Lupine',
+      'nameID': 'LupineItem',
+      'tag': false,
+      'imageFile': 'LupineItem_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Medium Lumber Store Window',
+      'nameID': 'MediumLumberStoreWindowItem',
+      'tag': false,
+      'imageFile': 'MediumLumberStoreWindowObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Norse Axe',
+      'nameID': 'NorseAxeItem',
+      'tag': false,
+      'imageFile': 'NorseAxe_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Orrery',
+      'nameID': 'OrreryItem',
+      'tag': false,
+      'imageFile': 'OrreryObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Participation Trophy',
+      'nameID': 'ParticipationTrophyItem',
+      'tag': false,
+      'imageFile': 'ParticipationTrophyObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Refrigerated Display Cabinet',
+      'nameID': 'RefrigeratedDisplayCabinetItem',
+      'tag': false,
+      'imageFile': 'RefrigeratedDisplayCabinetObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Rose',
+      'nameID': 'RoseItem',
+      'tag': false,
+      'imageFile': 'RoseItem_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Rose Seed',
+      'nameID': 'RoseSeedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Rotating Cube',
+      'nameID': 'RotatingCubeItem',
+      'tag': false,
+      'imageFile': 'RotatingCubeObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Saved The World Achievement Trophy',
+      'nameID': 'SavedTheWorldAchievementTrophyItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Basic Hardwood Shelf',
+      'nameID': 'ShortBasicHardwoodShelfItem',
+      'tag': false,
+      'imageFile': 'ShortBasicHardwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Basic Softwood Shelf',
+      'nameID': 'ShortBasicSoftwoodShelfItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Basic Wood Shelf',
+      'nameID': 'ShortBasicWoodShelfItem',
+      'tag': false,
+      'imageFile': 'ShortBasicSoftwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Curved Hardwood Veneer Shelf',
+      'nameID': 'ShortCurvedHardwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortCurvedHardwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Curved Softwood Veneer Shelf',
+      'nameID': 'ShortCurvedSoftwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortCurvedSoftwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Curved Wood Veneer Shelf',
+      'nameID': 'ShortCurvedWoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortCurvedWoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Floating Hardwood Shelf',
+      'nameID': 'ShortFloatingHardwoodShelfItem',
+      'tag': false,
+      'imageFile': 'ShortFloatingHardwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Floating Softwood Shelf',
+      'nameID': 'ShortFloatingSoftwoodShelfItem',
+      'tag': false,
+      'imageFile': 'ShortFloatingSoftwoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Floating Wood Shelf',
+      'nameID': 'ShortFloatingWoodShelfItem',
+      'tag': false,
+      'imageFile': 'ShortFloatingWoodShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Hardwood Veneer Shelf',
+      'nameID': 'ShortHardwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortHardwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Softwood Veneer Shelf',
+      'nameID': 'ShortSoftwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortSoftwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Steel Shelf',
+      'nameID': 'ShortSteelShelfItem',
+      'tag': false,
+      'imageFile': 'ShortSteelShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Thin Hardwood Veneer Shelf',
+      'nameID': 'ShortThinHardwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortThinHardwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Thin Softwood Veneer Shelf',
+      'nameID': 'ShortThinSoftwoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortThinSoftwoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Thin Wood Veneer Shelf',
+      'nameID': 'ShortThinWoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortThinWoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Short Wood Veneer Shelf',
+      'nameID': 'ShortWoodVeneerShelfItem',
+      'tag': false,
+      'imageFile': 'ShortWoodVeneerShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Clay Pot',
+      'nameID': 'SmallClayPotItem',
+      'tag': false,
+      'imageFile': 'SmallClayPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Faceted Steel Pot',
+      'nameID': 'SmallFacetedSteelPotItem',
+      'tag': false,
+      'imageFile': 'SmallFacetedSteelPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Lumber Store Window',
+      'nameID': 'SmallLumberStoreWindowItem',
+      'tag': false,
+      'imageFile': 'SmallLumberStoreWindowObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Rough Basalt Pot',
+      'nameID': 'SmallRoughBasaltPotItem',
+      'tag': false,
+      'imageFile': 'SmallRoughBasaltPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Rough Limestone Pot',
+      'nameID': 'SmallRoughLimestonePotItem',
+      'tag': false,
+      'imageFile': 'SmallRoughLimestonePotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Round Limestone Pot',
+      'nameID': 'SmallRoundLimestonePotItem',
+      'tag': false,
+      'imageFile': 'SmallRoundLimestonePotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Square Basalt Pot',
+      'nameID': 'SmallSquareBasaltPotItem',
+      'tag': false,
+      'imageFile': 'SmallSquareBasaltPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Square Clay Pot',
+      'nameID': 'SmallSquareClayPotItem',
+      'tag': false,
+      'imageFile': 'SmallSquareClayPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Square Limestone Pot',
+      'nameID': 'SmallSquareLimestonePotItem',
+      'tag': false,
+      'imageFile': 'SmallSquareLimestonePotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Steel Pot',
+      'nameID': 'SmallSteelPotItem',
+      'tag': false,
+      'imageFile': 'SmallSteelPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Small Stump Store Window',
+      'nameID': 'SmallStumpStoreWindowItem',
+      'tag': false,
+      'imageFile': 'SmallStumpStoreWindowObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Double Shelf',
+      'nameID': 'SoftwoodDoubleShelfItem',
+      'tag': false,
+      'imageFile': 'SoftwoodDoubleShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Softwood Lumber Hallway Table',
+      'nameID': 'SoftwoodLumberHallwayTableItem',
+      'tag': false,
+      'imageFile': 'SoftwoodLumberHallwayTableObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Square Lumber Pot',
+      'nameID': 'SquareLumberPotItem',
+      'tag': false,
+      'imageFile': 'SquareLumberPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Standing Basalt Pot',
+      'nameID': 'StandingBasaltPotItem',
+      'tag': false,
+      'imageFile': 'StandingBasaltPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Standing Clay Pot',
+      'nameID': 'StandingClayPotItem',
+      'tag': false,
+      'imageFile': 'StandingClayPotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Tall Limestone Pot',
+      'nameID': 'TallLimestonePotItem',
+      'tag': false,
+      'imageFile': 'TallLimestonePotObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trophy Artist',
+      'nameID': 'TrophyArtistItem',
+      'tag': false,
+      'imageFile': 'TrophyArtistObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trophy Baker',
+      'nameID': 'TrophyBakerItem',
+      'tag': false,
+      'imageFile': 'TrophyBakerObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trophy Farmer',
+      'nameID': 'TrophyFarmerItem',
+      'tag': false,
+      'imageFile': 'TrophyFarmerObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trophy Logger',
+      'nameID': 'TrophyLoggerItem',
+      'tag': false,
+      'imageFile': 'TrophyLoggerObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Trophy Miner',
+      'nameID': 'TrophyMinerItem',
+      'tag': false,
+      'imageFile': 'TrophyMinerObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Tulip',
+      'nameID': 'TulipItem',
+      'tag': false,
+      'imageFile': 'TulipItem_Icon.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Tulip Seed',
+      'nameID': 'TulipSeedItem',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Wood Double Shelf',
+      'nameID': 'WoodDoubleShelfItem',
+      'tag': false,
+      'imageFile': 'WoodDoubleShelfObject_Icon.png',
+      'xPos': 0,
+      'yPos': 0
     }
   ];
+
+export const items: Map<string, Item> = new Map(itemsArray.map(
+  item => [item.nameID, new Item(item)]
+));

@@ -1,20 +1,8 @@
-<app-header
-  (updatePerformanceModeEvent)="onUpdatePerformanceMode($event)"
-  (updateExpensiveEndgameCostEvent)="onUpdateEndgameCost($event)"
-  (updateLocaleEvent)="onUpdateLocale($event)"
-  (updateWhiteTigerRecipesEvent)="onUpdateWhiteTigerRecipes($event)"
-  (updateResourceCostMultiplierEvent)="onUpdateResourceCostMultiplier($event)"
-  (importCalcConfigEvent)="onImportCalcConfig($event)"
-  (exportCalcConfigEvent)="onExportCalcConfig()"
-  [imageBaseUrl]="imageBaseUrl"
-  [exportConfig]="calcConfigJson"
-></app-header>
-
-<div class="container-fluid top-padding bottom-margin">
-  <app-crafting-parent [imageBaseUrl]="imageBaseUrl"
-                       [imageTemplateUrl]="imageTemplateUrl"
-                       [performanceModeEnabled]="performanceModeEnabled">
-  </app-crafting-parent>
+<div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
+  <app-header></app-header>
+  <main class="flex-1">
+    <app-crafting></app-crafting>
+  </main>
+  <app-footer></app-footer>
 </div>
 
-<app-footer></app-footer>

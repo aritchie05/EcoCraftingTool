@@ -1,18 +1,24 @@
-import {Inject, Injectable} from '@angular/core';
+import {effect, Inject, Injectable, signal, WritableSignal} from '@angular/core';
 import {localeData, LocaleEntry} from '../../assets/data/locale/locale-data';
+import {skills} from '../../assets/data/skills';
+import {items} from '../../assets/data/items';
+import {recipes} from '../../assets/data/recipes';
+import {upgradeModules} from '../../assets/data/upgrade-modules';
+import {tables} from '../../assets/data/crafting-tables';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 
 export class Locale {
   name: string;
   code: string;
+  langCode: string;
+  regionCode: string;
 
   constructor(name: string, code: string) {
     this.name = name;
     this.code = code;
-  }
 
-  langCode(): string {
-    return this.code.substr(0, 2);
+    this.langCode = this.code.substring(0, 2).toLowerCase();
+    this.regionCode = this.code.substring(3, 5).toLowerCase();
   }
 }
 
@@ -20,37 +26,63 @@ export class Locale {
   providedIn: 'root'
 })
 export class LocaleService {
-  selectedLocale: Locale;
-  supportedLocales: Locale[];
+  readonly supportedLocales: Map<string, Locale>;
+  readonly defaultLocale: Locale;
+
+  selectedLocale: WritableSignal<Locale>;
 
   constructor(@Inject(LOCAL_STORAGE) private storageService: StorageService) {
-    this.supportedLocales = [
-      new Locale('English', 'en-US'),
-      new Locale('Français', 'fr-FR'),
-      new Locale('Español', 'es-ES'),
-      new Locale('Deutsch', 'de-DE'),
-      new Locale('Português', 'pt-PT'),
-      new Locale('Italiano', 'it-IT'),
-      new Locale('Türkçe', 'tr-TR'),
-      new Locale('Polski', 'pl-PL'),
-      new Locale('Русский', 'ru-RU'),
-      new Locale('Українська', 'uk-UA'),
-      new Locale('한국어', 'ko-KR'),
-      new Locale('汉语', 'zh-CN'),
-      new Locale('日本語', 'ja-JP')
-    ];
+    this.defaultLocale = new Locale('English', 'en-US');
+    this.supportedLocales = new Map([
+      ['en', this.defaultLocale],
+      ['fr', new Locale('Français', 'fr-FR')],
+      ['es', new Locale('Español', 'es-ES')],
+      ['de', new Locale('Deutsch', 'de-DE')],
+      ['pt', new Locale('Português', 'pt-PT')],
+      ['it', new Locale('Italiano', 'it-IT')],
+      ['tr', new Locale('Türkçe', 'tr-TR')],
+      ['pl', new Locale('Polski', 'pl-PL')],
+      ['ru', new Locale('Русский', 'ru-RU')],
+      ['uk', new Locale('Українська', 'uk-UA')],
+      ['ko', new Locale('한국어', 'ko-KR')],
+      ['zh', new Locale('汉语', 'zh-CN')],
+      ['ja', new Locale('日本語', 'ja-JP')]
+    ]);
 
-    let locale = this.storageService.get('locale');
-    if (locale != null) {
-      this.selectedLocale = new Locale(locale.name, locale.code);
-    } else {
-      let userLang = this.getUsersLocale('en-US').substr(0, 2);
-      this.selectedLocale = this.supportedLocales.find(locale => locale.code.match(userLang));
+    let storageLocale: Locale | undefined = this.getSelectedLocale();
+
+    if (storageLocale === undefined) {
+      let userLang = this.getUsersLocale('en-US').substring(0, 2);
+      storageLocale = this.supportedLocales.get(userLang);
     }
 
-    if (this.selectedLocale === undefined) {
-      this.selectedLocale = this.supportedLocales.find(locale => locale.code.match('en-US'));
-    }
+    this.selectedLocale = signal(storageLocale !== undefined ? storageLocale : this.defaultLocale);
+
+    effect(() => {
+      skills.forEach(skill => {
+        skill.name.update((oldName) => this.localizeSkillName(oldName, skill.nameID, this.selectedLocale().langCode));
+      });
+
+      items.forEach(item => {
+        item.name.update((oldName) => this.localizeItemName(oldName, item.nameID, this.selectedLocale().langCode));
+      });
+
+      recipes.forEach(recipe => {
+        recipe.name.update((oldName) => this.localizeRecipeName(oldName, recipe.nameID, this.selectedLocale().langCode));
+      });
+
+      upgradeModules.forEach(upgrade => {
+        upgrade.name.update((oldName) => this.localizeUpgradeName(oldName, upgrade.nameID, this.selectedLocale().langCode));
+      });
+
+      tables.forEach(table => {
+        table.name.update((oldName) => this.localizeCraftingTableName(oldName, table.nameID, this.selectedLocale().langCode));
+      });
+    });
+
+    effect(() => {
+      this.saveSelectedLocale(this.selectedLocale());
+    });
   }
 
   getUsersLocale(defaultValue: string): string {
@@ -61,6 +93,13 @@ export class LocaleService {
     let lang = wn.languages ? wn.languages[0] : defaultValue;
     lang = lang || wn.language || wn.browserLanguage || wn.userLanguage;
     return lang;
+  }
+
+  changeLocale(localeCode: string) {
+    const newLocale = this.supportedLocales.get(localeCode.substring(0, 2));
+    if (newLocale !== undefined) {
+      this.selectedLocale.set(newLocale);
+    }
   }
 
   localizeItemName(itemName: string, itemNameID: string, lang: string): string {
@@ -85,6 +124,10 @@ export class LocaleService {
 
   private localizeString(type: string, enName: string, nameID: string, lang: string): string {
     let locData = localeData.find(l => l.type.localeCompare(type) === 0);
+    if (locData === undefined) {
+      console.warn(`Could not find locale data for ${type}`);
+      return enName;
+    }
     let entry = locData.entries.find(entry => entry.id.localeCompare(nameID) === 0);
     if (entry === undefined) {
       console.warn(`Could not find locale entry for ${nameID} in ${type}`);
@@ -125,5 +168,20 @@ export class LocaleService {
 
   private getOrNull(entry: LocaleEntry, value: string): string {
     return value !== undefined ? value : entry.en;
+  }
+
+  getSelectedLocale(): Locale {
+    const locale = this.storageService.get('locale');
+    if (locale) {
+      return new Locale(locale.name, locale.code);
+    }
+    return this.defaultLocale;
+  }
+
+  saveSelectedLocale(locale: Locale) {
+    this.storageService.set('locale', {
+      name: locale.name,
+      code: locale.code
+    })
   }
 }

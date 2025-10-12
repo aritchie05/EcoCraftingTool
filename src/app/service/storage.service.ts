@@ -1,0 +1,183 @@
+import {Inject, Injectable} from '@angular/core';
+import {CalculatorConfig} from '../model/storage-model/calculator-config';
+import {LocaleService} from './locale.service';
+import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {StoredSkill} from '../model/storage-model/stored-skill';
+import {Skill} from '../model/skill';
+import {StoredTable} from '../model/storage-model/stored-table';
+import {CraftingTable} from '../model/crafting-table';
+import {skills} from '../../assets/data/skills';
+import {tables} from '../../assets/data/crafting-tables';
+import {Recipe} from '../model/recipe';
+import {recipes} from '../../assets/data/recipes';
+import {StoredRecipe} from '../model/storage-model/stored-recipe';
+import {Item} from '../model/item';
+import {StoredItem} from '../model/storage-model/stored-item';
+import {items} from '../../assets/data/items';
+import {upgradeModules} from '../../assets/data/upgrade-modules';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class WebStorageService {
+
+  constructor(@Inject(LOCAL_STORAGE) private storageService: StorageService, private localeService: LocaleService) {
+  }
+
+  getCalcConfig(): CalculatorConfig {
+    let expensiveEndgame = this.storageService.get('expensiveEndgameCost');
+    let multiplier = this.storageService.get('resourceCostMultiplier');
+    let laborCost = this.storageService.get('laborCost');
+    let profit = this.storageService.get('profitPercent');
+
+    return {
+      expensiveEndgameCost: expensiveEndgame === 'true',
+      resourceCostMultiplier: multiplier != null ? Number.parseFloat(multiplier) : 1,
+      laborCost: laborCost != null ? Number.parseFloat(laborCost) : 0,
+      profitPercent: profit != null ? Number.parseFloat(profit) : 0,
+      locale: this.localeService.selectedLocale(),
+      skills: this.storageService.get('skills'),
+      tables: this.storageService.get('tables'),
+      ingredients: this.storageService.get('ingredients'),
+      outputs: this.storageService.get('recipes'),
+      byproducts: this.storageService.get('byproducts')
+    };
+  }
+
+  saveCalcConfig(calcConfig: CalculatorConfig) {
+    this.storageService.set('expensiveEndgameCost', '' + calcConfig.expensiveEndgameCost);
+    this.storageService.set('resourceCostMultiplier', calcConfig.resourceCostMultiplier);
+    this.storageService.set('laborCost', calcConfig.laborCost.toLocaleString(
+      this.localeService.selectedLocale().code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
+    this.storageService.set('profitPercent', calcConfig.profitPercent.toLocaleString(
+      this.localeService.selectedLocale().code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
+    this.storageService.set('locale', calcConfig.locale);
+
+    this.storageService.set('skills', calcConfig.skills);
+    this.storageService.set('tables', calcConfig.tables);
+    this.storageService.set('ingredients', calcConfig.ingredients);
+    this.storageService.set('recipes', calcConfig.outputs);
+    this.storageService.set('byproducts', calcConfig.byproducts);
+  }
+
+  getCraftResourceModifier(): number {
+    const multiplier = this.storageService.get('resourceCostMultiplier');
+    return multiplier != null ? Number.parseFloat(multiplier) : 1;
+  }
+
+  saveCraftResourceModifier(modifier: number) {
+    this.storageService.set('resourceCostMultiplier', '' + modifier);
+  }
+
+  getExpensiveEndgameRecipes(): boolean {
+    return this.storageService.get('expensiveEndgameCost') === 'true';
+  }
+
+  saveExpensiveEndgameRecipes(expensiveEndgame: boolean) {
+    this.storageService.set('expensiveEndgameCost', '' + expensiveEndgame);
+  }
+
+  getSelectedSkills(): Skill[] {
+    const storedSkills = this.storageService.get('skills');
+    if (storedSkills) {
+      return storedSkills.map((storedSkill: StoredSkill) => {
+        let skill = skills.get(storedSkill.id);
+        skill?.level.set(storedSkill.lvl);
+        skill?.lavishChecked.set(storedSkill.lav);
+        return skill;
+      });
+    }
+    return [];
+  }
+
+  saveSelectedSkills(skills: Skill[]) {
+    this.storageService.set('skills', skills.map(skill => new StoredSkill(skill)));
+  }
+
+  getSelectedTables(): CraftingTable[] {
+    const storedTables = this.storageService.get('tables');
+    if (storedTables) {
+      return storedTables.map((storedTable: StoredTable) => {
+        let table = tables.get(storedTable.id);
+        let upgrade = upgradeModules.get(storedTable.up);
+        table?.selectedUpgrade.set(upgrade!);
+        return table;
+      });
+    }
+    return [];
+  }
+
+  saveSelectedTables(tables: CraftingTable[]) {
+    this.storageService.set('tables', tables.map(table => new StoredTable(table)));
+  }
+
+  getSelectedRecipes(): Recipe[] {
+    const storedRecipes = this.storageService.get('recipes');
+    if (storedRecipes) {
+      return storedRecipes.map((storedRecipe: StoredRecipe) => {
+        let recipe = recipes.get(storedRecipe.id);
+        recipe?.basePrice.set(Number.parseFloat(storedRecipe.bp));
+        recipe?.price.set(Number.parseFloat(storedRecipe.pr));
+        if (storedRecipe.po) {
+          recipe?.profitOverride.set(Number.parseFloat(storedRecipe.po));
+        }
+        return recipe;
+      });
+    }
+    return [];
+  }
+
+  saveSelectedRecipes(recipes: Recipe[]) {
+    this.storageService.set('recipes', recipes.map(recipe => new StoredRecipe(recipe)));
+  }
+
+  getSelectedItems(): Item[] {
+    const storedItems = this.storageService.get('ingredients');
+    if (storedItems) {
+      return storedItems.map((storedItem: StoredItem) => {
+        let item = items.get(storedItem.id);
+        item?.price.set(Number.parseFloat(storedItem.pr));
+        return item;
+      });
+    }
+    return [];
+  }
+
+  saveSelectedItems(items: Item[]) {
+    this.storageService.set('ingredients', items.map(item => new StoredItem(item)));
+  }
+
+  getSelectedByproducts(): Item[] {
+    const storedItems = this.storageService.get('byproducts');
+    if (storedItems) {
+      return storedItems.map((storedItem: StoredItem) => {
+        let item = items.get(storedItem.id);
+        item?.price.set(Number.parseFloat(storedItem.pr));
+        return item;
+      });
+    }
+    return [];
+  }
+
+  saveSelectedByproducts(items: Item[]) {
+    this.storageService.set('byproducts', items.map(item => new StoredItem(item)));
+  }
+
+  getPricePerThousandCals(): number {
+    const laborCost = this.storageService.get('laborCost');
+    return laborCost != null ? Number.parseFloat(laborCost) : 0;
+  }
+
+  savePricePerThousandCals(amount: number) {
+    this.storageService.set('laborCost', '' + amount);
+  }
+
+  getProfitPercent(): number {
+    const profitPercent = this.storageService.get('profitPercent');
+    return profitPercent != null ? Number.parseFloat(profitPercent) : 0;
+  }
+
+  saveProfitPercent(amount: number) {
+    this.storageService.set('profitPercent', '' + amount);
+  }
+}

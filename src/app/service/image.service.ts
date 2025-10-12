@@ -1,20 +1,19 @@
-import { Injectable } from '@angular/core';
-import {Item} from '../interface/item';
-import {ITEM_SPRITE_SIZE} from '../ingredients/ingredients.component';
-import {OutputDisplay} from '../interface/output-display';
-import {CraftingTable} from '../interface/crafting-table';
-import {SKILL_SPRITE_SIZE, TABLE_SPRITE_SIZE} from '../skills/skills.component';
-import {Skill} from '../interface/skill';
+import {Injectable} from '@angular/core';
 import {environment} from '../../environments/environment';
-
-export const LARGE_ITEM_SPRITE_SIZE = 128;
+import {Skill} from '../model/skill';
+import {CraftingTable} from '../model/crafting-table';
+import {Item} from '../model/item';
+import {OutputDisplay} from '../model/output-display';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ImageService {
 
-  //Images pulled directly from GitHub repository to save bandwidth for hosted site
+  readonly SKILL_SPRITE_SIZE = 32;
+  readonly TABLE_SPRITE_SIZE = 32;
+  readonly ITEM_SPRITE_SIZE = 32;
+
   public imageBaseUrl: string;
   public imageTemplateUrl: string;
 
@@ -23,7 +22,7 @@ export class ImageService {
     this.imageTemplateUrl = this.imageBaseUrl + '32px-template.png';
   }
 
-  getSpriteImageUrl(nameID: string, imageFile: string): string {
+  getSpriteImageUrl(imageFile: string): string {
     return this.imageBaseUrl + imageFile;
   }
 
@@ -52,7 +51,7 @@ export class ImageService {
       return '32px';
     } else if ('UI_Icons_Baked_0.png'.localeCompare(imageFile) === 0 || 'UI_Icons_Baked_1.png'.localeCompare(imageFile) === 0) {
       return '2048px';
-    } else if (imageFile?.includes('UI_Icons')){
+    } else if (imageFile?.includes('UI_Icons')) {
       return '512px';
     } else if ('skill-icons-sprite.png'.localeCompare(imageFile) === 0) {
       return '256px';
@@ -65,23 +64,14 @@ export class ImageService {
     return `${parseInt(this.getSpriteBackgroundSize(itemNameID, imageFile)) * 4}px`
   }
 
-  getSpriteCssFilter(filter: string): string {
+  getSpriteCssFilter(filter?: string): string {
     return (filter != undefined ? filter : '');
   }
 
-  getImgStyle(nameID: string, imageFile: string, xPos: number, yPos: number, size: number, filter: string): any {
+  getImgStyle(nameID: string, imageFile: string, xPos: number, yPos: number, size: number, filter?: string): any {
     return {
-      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(xPos, yPos, size, imageFile)} /
-      ${this.getSpriteBackgroundSize(nameID, imageFile)} no-repeat`,
-      'filter': `${this.getSpriteCssFilter(filter)}`
-    }
-  }
-
-  getLargeImgStyle(nameID: string, imageFile: string, xPos: number, yPos: number, size: number, filter: string): any {
-    return {
-      'background': `url(${this.getSpriteImageUrl(nameID, imageFile)}) ${this.getSpritePosition(xPos, yPos, size, imageFile)} /
-      ${this.getLargeSpriteBackgroundSize(nameID, imageFile)} no-repeat`,
-      'filter': `${this.getSpriteCssFilter(filter)}`
+      'background': `url(${this.getSpriteImageUrl(imageFile)}) ${this.getSpritePosition(xPos, yPos, size, imageFile)} / ${this.getSpriteBackgroundSize(nameID, imageFile)} no-repeat !important`,
+      'filter': `${this.getSpriteCssFilter(filter)} !important`
     }
   }
 
@@ -97,23 +87,31 @@ export class ImageService {
     }
   }
 
-  getItemImgStyle(item: Item): any {
-    return this.getImgStyle(item.nameID, item.imageFile, item.xPos, item.yPos, ITEM_SPRITE_SIZE, item.filter);
-  }
-
-  getOutputImgStyle(output: OutputDisplay): any {
-    return this.getImgStyle(output.itemNameID, output.imageFile, output.xPos, output.yPos, ITEM_SPRITE_SIZE, output.filter);
-  }
-
   getTableImgStyle(table: CraftingTable): any {
-    return this.getImgStyle(table.nameID, table.imageFile, table.xPos, table.yPos, TABLE_SPRITE_SIZE, null);
+    if (table.imageFile == null || table.xPos == null || table.yPos == null) {
+      return null;
+    }
+    return this.getImgStyle(table.nameID, table.imageFile, table.xPos, table.yPos, this.TABLE_SPRITE_SIZE, '');
   }
 
   getSkillImgStyle(skill: Skill): any {
-    return this.getImgStyle(skill.nameID, skill.imageFile, skill.xPos, skill.yPos, SKILL_SPRITE_SIZE, null);
+    if (skill.imageFile == null || skill.xPos == null || skill.yPos == null) {
+      return null;
+    }
+    return this.getImgStyle(skill.nameID, skill.imageFile, skill.xPos, skill.yPos, this.SKILL_SPRITE_SIZE, '');
   }
 
-  getLargeItemImgStyle(item: Item): any {
-    return this.getLargeImgStyle(item.nameID, item.imageFile, item.xPos, item.yPos, LARGE_ITEM_SPRITE_SIZE, item.filter);
+  getItemImgStyle(item: Item) {
+    if (item.imageFile == null || item.xPos == null || item.yPos == null) {
+      return null;
+    }
+    return this.getImgStyle(item.nameID, item.imageFile, item.xPos, item.yPos, this.ITEM_SPRITE_SIZE, item.filter);
+  }
+
+  getOutputImgStyle(output: OutputDisplay) {
+    if (output.imageFile == null || output.xPos == null || output.yPos == null) {
+      return null;
+    }
+    return this.getImgStyle(output.itemNameID, output.imageFile, output.xPos, output.yPos, this.ITEM_SPRITE_SIZE, output.filter);
   }
 }
