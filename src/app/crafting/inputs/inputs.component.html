@@ -1,0 +1,82 @@
+<div class="flex flex-col items-center mx-8">
+  <h1 class="text-4xl my-1">{{ message('ingredientsHeader') }}</h1>
+  <div class="flex flex-col w-full basic-inputs-container text-sm">
+    <div class="flex flex-row flex-wrap items-center w-full my-1 mr-2">
+      <img [src]="imageService.imageTemplateUrl" width="32" height="32" class="mr-2" alt="Calorie cost image"
+           [style]="imageService.getCalorieImgStyle()">
+      <label [for]="caloriesInput.id" class="font-medium">{{ message('calorieCostLabel') }}</label>
+      <div class="ml-auto flex items-center">
+        <mat-form-field appearance="outline" class="w-24">
+          <input #caloriesInput matInput type="number" step="0.1" [value]="pricePerThousandCals()"
+                 (focusout)="onCalorieCostChange(caloriesInput.value)">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center w-full my-1 mr-2">
+      <img [src]="imageService.imageTemplateUrl" width="32" height="32" class="mr-2" alt="Profit percentage image"
+           [style]="imageService.getProfitImgStyle()">
+      <label [for]="profitInput.id" class="font-medium">{{ message('defaultProfitLabel') }}</label>
+      <button class="material-icons ml-2 text-2xl cursor-help hover:opacity-80"
+              [matTooltip]="message('defaultProfitTooltip')">
+        help_outline
+      </button>
+      <div class="ml-auto flex items-center">
+        <mat-form-field appearance="outline" class="w-24">
+          <input #profitInput matInput type="number" step="1" [value]="defaultProfitPercent()"
+                 (focusout)="onProfitPercentChange(profitInput.value)">
+          <span matSuffix>%</span>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <hr class="w-full text-gray opacity-70 my-5 border-t-2 rounded">
+  <div class="flex flex-col w-full selected-items-container text-sm">
+    @for (item of selectedItems(); track item.nameID) {
+      <div class="flex flex-row flex-wrap items-center w-full my-1 mr-2">
+        <img [src]="imageService.imageTemplateUrl" [style]="imageService.getItemImgStyle(item)"
+             width="32" height="32" [alt]="item.name() + ' Icon'" class="mr-2">
+        <label [for]="priceInput.id">
+          {{ item.name() }}
+          @if (item.tag) {
+            <span class="material-icons pl-1 text-sm translate-y-[2px]">sell</span>
+          }
+        </label>
+        <div class="ml-auto flex items-center">
+          <mat-form-field appearance="outline" class="w-24">
+            <input #priceInput matInput type="number" step="0.1" min="0" [value]="item.price()"
+                   (focusout)="onInputPriceChange($index, priceInput.value)">
+          </mat-form-field>
+        </div>
+      </div>
+    }
+  </div>
+  @if (selectedByproducts().length > 0) {
+    <hr class="w-full text-gray opacity-70 my-5 border-t-2 rounded">
+    <h2 class="text-2xl flex items-center">{{ message('byproductsHeader') }}
+      <button class="material-icons ml-1 cursor-help hover:opacity-80"
+              [matTooltip]="message('byproductsTooltip')"
+              aria-label="Icon that displays a tooltip when focused or hovered over"
+              matTooltipClass="text-justify">
+        help_outline
+      </button>
+    </h2>
+    @for (byproduct of selectedByproducts(); track byproduct.nameID) {
+      <div class="flex flex-row flex-wrap items-center w-full my-1">
+        <img [src]="imageService.imageTemplateUrl" [style]="imageService.getItemImgStyle(byproduct)"
+             width="32" height="32" [alt]="byproduct.name() + ' Icon'" class="mr-2">
+        <label [for]="byproductInput.id">
+          {{ byproduct.name() }}
+          @if (byproduct.tag) {
+            <span class="material-icons pl-1 text-sm translate-y-[2px]">sell</span>
+          }
+        </label>
+        <div class="ml-auto flex items-center">
+          <mat-form-field appearance="outline" class="w-24">
+            <input #byproductInput matInput type="number" step="0.1" min="0" [value]="byproduct.price()"
+                   (focusout)="onByproductPriceChange($index, byproductInput.value)">
+          </mat-form-field>
+        </div>
+      </div>
+    }
+  }
+</div>

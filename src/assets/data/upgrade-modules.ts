@@ -1,7 +1,19 @@
-import {UpgradeModule} from '../../app/interface/upgrade-module';
+import {IUpgradeModule, UpgradeModule} from '../../app/model/upgrade-module';
 
-export let upgradeModules: UpgradeModule[] =
+export const upgradeModulesArray: IUpgradeModule[] =
   [
+    {
+      'name': 'No Upgrade',
+      'nameID': 'NoUpgradeNone',
+      'typeNameID': 'None',
+      'modifier': 1.0
+    },
+    {
+      'name': 'No Upgrade',
+      'nameID': 'NoUpgradeAdvanced',
+      'typeNameID': 'AdvancedUpgrade',
+      'modifier': 1.0
+    },
     {
       'name': 'Advanced Upgrade 1',
       'nameID': 'AdvancedUpgrade1',
@@ -25,6 +37,12 @@ export let upgradeModules: UpgradeModule[] =
       'nameID': 'AdvancedUpgrade4',
       'typeNameID': 'AdvancedUpgrade',
       'modifier': 0.55
+    },
+    {
+      'name': 'No Upgrade',
+      'nameID': 'NoUpgradeBasic',
+      'typeNameID': 'BasicUpgrade',
+      'modifier': 1.0
     },
     {
       'name': 'Basic Upgrade 1',
@@ -51,6 +69,12 @@ export let upgradeModules: UpgradeModule[] =
       'modifier': 0.55
     },
     {
+      'name': 'No Upgrade',
+      'nameID': 'NoUpgradeModern',
+      'typeNameID': 'ModernUpgrade',
+      'modifier': 1.0
+    },
+    {
       'name': 'Modern Upgrade 1',
       'nameID': 'ModernUpgrade1',
       'typeNameID': 'ModernUpgrade',
@@ -75,45 +99,25 @@ export let upgradeModules: UpgradeModule[] =
       'modifier': 0.55
     },
     {
-      'name': 'No Upgrade',
-      'nameID': 'NoUpgradeBasic',
-      'typeNameID': 'BasicUpgrade',
-      'modifier': 1.0
-    },
-    {
-      'name': 'No Upgrade',
-      'nameID': 'NoUpgradeAdvanced',
-      'typeNameID': 'AdvancedUpgrade',
-      'modifier': 1.0
-    },
-    {
-      'name': 'No Upgrade',
-      'nameID': 'NoUpgradeModern',
-      'typeNameID': 'ModernUpgrade',
-      'modifier': 1.0
-    },
-    {
-      'name': 'No Upgrade',
-      'nameID': 'NoUpgradeNone',
-      'typeNameID': 'None',
-      'modifier': 1.0
-    },
-    {
-      'name': 'Specialized Advanced Upgrade',
+      'name': 'Advanced Upgrade 5',
       'nameID': 'SpecializedAdvancedUpgrade',
       'typeNameID': 'AdvancedUpgrade',
       'modifier': 0.5
     },
     {
-      'name': 'Specialized Basic Upgrade',
+      'name': 'Basic Upgrade 5',
       'nameID': 'SpecializedBasicUpgrade',
       'typeNameID': 'BasicUpgrade',
       'modifier': 0.5
     },
     {
-      'name': 'Specialized Modern Upgrade',
+      'name': 'Modern Upgrade 5',
       'nameID': 'SpecializedModernUpgrade',
       'typeNameID': 'ModernUpgrade',
       'modifier': 0.5
     }
   ];
+
+export const upgradeModules: Map<string, UpgradeModule> = new Map(upgradeModulesArray.map(
+  module => [module.nameID, new UpgradeModule(module)]
+));

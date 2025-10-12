@@ -1,0 +1,20 @@
+mat-dialog-content {
+  --mat-form-field-container-vertical-padding: 0.25rem;
+}
+
+.recipe-detail-container {
+  background-color: var(--mat-sys-surface-container-high);
+}
+
+mat-form-field {
+  background-color: var(--mat-sys-surface-container-lowest);
+  border-radius: 4px;
+}
+
+.reducible-item {
+  border: 1px solid #00ff00;
+}
+
+.static-item {
+  border: 1px solid yellow;
+}

@@ -1,6 +1,6 @@
-import {LaborCost} from '../../app/interface/labor-cost';
+import {LaborCost} from '../../app/model/labor-cost';
 
-export let laborCosts: LaborCost[] =
+export const laborCosts: LaborCost[] =
   [
     {
       'level': 0,

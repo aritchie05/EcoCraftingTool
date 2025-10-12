@@ -1,6 +1,6 @@
-import {Skill} from '../../app/interface/skill';
+import {ISkill, Skill} from '../../app/model/skill';
 
-export let skills: Skill[] =
+export const skillsArray: ISkill[] =
   [
     {
       'name': 'Self Improvement',
@@ -11,8 +11,7 @@ export let skills: Skill[] =
       'lavishWorkspace': false,
       'imageFile': 'skill-icons-sprite.png',
       'xPos': 3,
-      'yPos': 2,
-      'level': 0
+      'yPos': 2
     },
     {
       'name': 'Advanced Baking',
@@ -367,3 +366,7 @@ export let skills: Skill[] =
       'yPos': 2
     }
   ];
+
+export const skills: Map<string, Skill> = new Map(skillsArray.map(
+  skill => [skill.nameID, new Skill(skill)]
+));

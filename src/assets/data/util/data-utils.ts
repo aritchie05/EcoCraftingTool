@@ -1,30 +1,30 @@
-import {craftingTables} from '../crafting-tables';
+import {CraftingTable} from '../../../app/model/crafting-table';
+import {tables} from '../crafting-tables';
+import {Skill} from '../../../app/model/skill';
 import {skills} from '../skills';
+import {Item} from '../../../app/model/item';
 import {items} from '../items';
-import {CraftingTable} from '../../../app/interface/crafting-table';
-import {Skill} from '../../../app/interface/skill';
-import {Item} from '../../../app/interface/item';
 
 export function getCraftingTableByNameID(nameID: string): CraftingTable {
-  let table = craftingTables.find(table => table.nameID.localeCompare(nameID) === 0);
+  const table = tables.get(nameID);
   if (table === undefined) {
     console.error(`Crafting table ${nameID} not found`);
   }
-  return table;
+  return table as CraftingTable;
 }
 
 export function getSkillByNameID(nameID: string): Skill {
-  let skill = skills.find(skill => skill.nameID.localeCompare(nameID) === 0);
+  const skill = skills.get(nameID);
   if (skill === undefined) {
     console.error(`Skill ${nameID} not found`);
   }
-  return skill;
+  return skill as Skill;
 }
 
 export function getItemByNameID(nameID: string): Item {
-  let item = items.find(item => item.nameID.localeCompare(nameID) === 0);
+  const item = items.get(nameID);
   if (item === undefined) {
     console.error(`Item ${nameID} not found`);
   }
-  return item;
+  return item as Item;
 }
