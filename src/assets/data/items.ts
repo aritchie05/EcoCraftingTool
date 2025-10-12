@@ -857,7 +857,10 @@ export const itemsArray: IItem[] =
     {
       'name': 'Basic Backpack',
       'nameID': 'BasicBackpackItem',
-      'tag': false
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 8,
+      'yPos': 3
     },
     {
       'name': 'Basic Circuit',
