@@ -122,7 +122,7 @@ export class WebStorageService {
           recipe?.profitOverride.set(Number.parseFloat(storedRecipe.po));
         }
         return recipe;
-      });
+      }).filter((recipe: Recipe) => recipe && !recipe.hidden) as Recipe[];
     }
     return [];
   }

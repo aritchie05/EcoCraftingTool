@@ -49,6 +49,7 @@ export class CraftingService {
 
     this.primaryOutputIds = computed(() => new Set(
       this.selectedRecipes()
+        .filter((recipe) => !recipe.hidden)
         .flatMap((recipe) => recipe.primaryOutput?.item.nameID)
         .filter((nameID): nameID is string => nameID !== undefined))
     );
@@ -56,11 +57,13 @@ export class CraftingService {
     this.selectedInputs = linkedSignal(() => {
       let items: Item[] = [];
       this.selectedRecipes().forEach(recipe => {
-        recipe.ingredients.forEach(ing => {
-          if (!items.some(item => item.nameID === ing.item.nameID)) {
-            items.push(ing.item);
-          }
-        });
+        if (!recipe.hidden) {
+          recipe.ingredients.forEach(ing => {
+            if (!items.some(item => item.nameID === ing.item.nameID)) {
+              items.push(ing.item);
+            }
+          });
+        }
       });
 
       //Filter out all the ingredients that are primary outputs of other selected recipes
@@ -73,12 +76,14 @@ export class CraftingService {
     this.selectedByproducts = linkedSignal(() => {
       let byproducts: Item[] = [];
       this.selectedRecipes().forEach(recipe => {
-        recipe.outputs.forEach(output => {
-          if (!output.primary && !byproducts.some(item => item.nameID === output.item?.nameID) &&
-            !this.selectedInputs().some(item => item.nameID === output.item?.nameID)) {
-            byproducts.push(output.item);
-          }
-        });
+        if (!recipe.hidden) {
+          recipe.outputs.forEach(output => {
+            if (!output.primary && !byproducts.some(item => item.nameID === output.item?.nameID) &&
+              !this.selectedInputs().some(item => item.nameID === output.item?.nameID)) {
+              byproducts.push(output.item);
+            }
+          });
+        }
       });
 
       //Filter out byproducts that are primary outputs of another recipe
@@ -134,9 +139,10 @@ export class CraftingService {
       recipes.forEach(recipe => recipe.isPriceComputed = false);
 
       let numLoops = 0;
+      const maxLoops = 20;
 
       //Loop to continue attempting to compute prices until all recipes are done
-      while (recipes.some(recipe => !recipe.isPriceComputed) && numLoops < 20) {
+      while (recipes.some(recipe => !recipe.isPriceComputed) && numLoops < maxLoops) {
 
         //Loop through each recipe and compute the price, if all the inputs have known prices
         for (let i = 0; i < recipes.length; i++) {
@@ -151,6 +157,7 @@ export class CraftingService {
           for (let i = 0; i < recipe.ingredients.length; i++) {
             const ing = recipe.ingredients[i];
             const quantity = this.computeAdjustedQuantity(recipe, ing);
+            console.debug(`Attempting to compute price for ${ing.item.name()} input for ${recipe.name()}`);
             let input = this.selectedInputs().find(item => item.nameID === ing.item.nameID);
             if (input) {
               cost += input.price() * quantity;
@@ -164,6 +171,7 @@ export class CraftingService {
                   cost += otherRecipe.basePrice() * quantity;
                 } else {
                   //We cannot compute the price of this recipe yet. Move on to the next recipe
+                  console.debug(`Could not compute price for ${ing.item.name()}`);
                   break;
                 }
               }
@@ -172,11 +180,15 @@ export class CraftingService {
           }
 
           if (canComputeInputPrices) {
-            let canComputeOutputPrices = true;
+            console.debug(`Computed input prices for ${recipe.name()}, attempting output prices.`);
+            let canComputeOutputPrices = false;
             for (let i = 0; i < recipe.outputs.length; i++) {
               const output = recipe.outputs[i];
-              if (output.primary) {
+              if (output.primary && recipe.outputs.length > 1) {
                 continue;
+              } else if (output.primary && recipe.outputs.length === 1) {
+                canComputeOutputPrices = true;
+                break;
               }
               let input = this.selectedInputs().find(item => item.nameID === output.item.nameID);
               if (input) {
@@ -190,7 +202,7 @@ export class CraftingService {
                   if (otherRecipe && otherRecipe.isPriceComputed) {
                     cost -= otherRecipe.basePrice() * output.quantity;
                   } else {
-                    canComputeOutputPrices = false;
+                    console.debug(`Could not compute output price for ${output.item.name()} output for ${recipe.name()}`);
                     break;
                   }
                 }
@@ -200,6 +212,7 @@ export class CraftingService {
             }
 
             if (canComputeOutputPrices) {
+              console.debug(`Computed output prices for ${recipe.name()}`);
               cost /= recipe.primaryOutput.quantity;
               cost += this.computeAdjustedLabor(recipe) * this.pricePerThousandCals() / 1000;
 
@@ -211,6 +224,7 @@ export class CraftingService {
               recipe.basePrice.set(cost);
               recipe.price.set(cost * profitMultiplier);
               recipe.isPriceComputed = true;
+              console.debug(`Computed price for ${recipe.name()}: ${recipe.price()}`);
             }
           }
         }
@@ -218,9 +232,11 @@ export class CraftingService {
         numLoops++;
       }
 
-      if (numLoops === 20) {
-        console.warn("Could not compute prices for all recipes after 20 loops");
+      if (numLoops === maxLoops) {
+        console.warn(`Could not compute prices for all recipes after ${maxLoops} loops`);
       }
+
+      console.debug(`Computed all prices in ${numLoops} loops`);
     });
 
     effect(() => {
@@ -313,7 +329,7 @@ export class CraftingService {
 
     //Find out which tables and recipes to add based on the selected skill
     for (const recipe of recipes.values()) {
-      if (skill.nameID === recipe.skill?.nameID) {
+      if (!recipe.hidden && skill.nameID === recipe.skill?.nameID) {
         if (!this.selectedRecipes().some(r => r.nameID === recipe.nameID)) {
           recipesToAdd.push(recipe);
         }
@@ -381,7 +397,7 @@ export class CraftingService {
 
     //Add all recipes and skills for that table
     for (const recipe of recipes.values()) {
-      if (recipe.craftingTable.nameID === table.nameID) {
+      if (!recipe.hidden && recipe.craftingTable.nameID === table.nameID) {
         if (!this.selectedRecipes().some(r => r.nameID === recipe.nameID)) {
           this.selectedRecipes.update(recipes => [...recipes, recipe]);
           if (!this.selectedSkills().some(s => s.nameID === recipe.skill?.nameID)) {

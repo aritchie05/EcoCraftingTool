@@ -26213,7 +26213,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('HewnLogItem'),
+          'item': getItemByNameID('HewnLog'),
           'quantity': 1,
           'reducible': false,
           'primary': true
