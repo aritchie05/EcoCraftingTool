@@ -62,7 +62,8 @@ export class OutputsComponent {
     });
 
     this.groupedDisplayKeys = computed(() => {
-      return Array.from(this.groupedOutputDisplays().keys());
+      return Array.from(this.groupedOutputDisplays().keys())
+        .sort((a, b) => a.name().localeCompare(b.name()));
     });
   }
 

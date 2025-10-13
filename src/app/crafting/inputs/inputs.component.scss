@@ -1,3 +1,12 @@
 div {
   --mat-form-field-container-vertical-padding: 0.25rem;
 }
+
+.highlight-zero-input {
+  ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__leading,
+  ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__notch,
+  ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__trailing {
+    border-color: rgb(245 158 11) !important; // Tailwind amber-500
+    border-width: 2px !important;
+  }
+}

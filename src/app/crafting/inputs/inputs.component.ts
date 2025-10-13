@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Signal, signal, WritableSignal} from '@angular/core';
 import {Item} from '../../model/item';
 import {CraftingService} from '../../service/crafting.service';
 import {ImageService} from '../../service/image.service';
@@ -21,6 +21,10 @@ export class InputsComponent {
   selectedItems: Signal<Item[]>;
   selectedByproducts: Signal<Item[]>;
 
+  // Signals to track touched state for each input type
+  itemPricesTouched: WritableSignal<Set<number>> = signal(new Set());
+  byproductPricesTouched: WritableSignal<Set<number>> = signal(new Set());
+
   constructor(private craftingService: CraftingService, protected imageService: ImageService,
               private messageService: MessageService) {
     this.pricePerThousandCals = craftingService.pricePerThousandCals;
@@ -28,12 +32,33 @@ export class InputsComponent {
 
     this.selectedItems = craftingService.selectedInputs;
     this.selectedByproducts = craftingService.selectedByproducts;
-
-
   }
 
   message(id: string): string {
     return this.messageService.getMessage(id);
+  }
+
+  /**
+   * Check if an input should be highlighted (untouched and value is 0)
+   */
+  shouldHighlightItemPrice(index: number, item: Item): boolean {
+    return !this.itemPricesTouched().has(index) && item.price() === 0;
+  }
+
+  shouldHighlightByproductPrice(index: number, byproduct: Item): boolean {
+    return !this.byproductPricesTouched().has(index) && byproduct.price() === 0;
+  }
+
+  onItemPriceInputFocus(index: number): void {
+    const touched = new Set(this.itemPricesTouched());
+    touched.add(index);
+    this.itemPricesTouched.set(touched);
+  }
+
+  onByproductPriceInputFocus(index: number): void {
+    const touched = new Set(this.byproductPricesTouched());
+    touched.add(index);
+    this.byproductPricesTouched.set(touched);
   }
 
   onCalorieCostChange(value: string) {
