@@ -8657,8 +8657,8 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Overalls',
       'nameID': 'ShipwrightOverallsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 15,
       'yPos': 0
     },
     {
@@ -8681,25 +8681,25 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Hat',
       'nameID': 'ShipwrightHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 1,
+      'yPos': 1
     },
     {
       'name': 'Shipwright Sandals',
       'nameID': 'ShipwrightSandalsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 9,
       'yPos': 0
     },
     {
       'name': 'Shipwright Shirt',
       'nameID': 'ShipwrightShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_05.png',
       'xPos': 0,
-      'yPos': 0
+      'yPos': 1
     },
     {
       'name': 'Small Canoe',
@@ -8785,8 +8785,8 @@ export const itemsArray: IItem[] =
       'name': 'Smith Shirt',
       'nameID': 'SmithShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 2,
       'yPos': 0
     },
     {
@@ -9089,25 +9089,25 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Bench',
       'nameID': 'CastIronBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 5,
+      'yPos': 6
     },
     {
       'name': 'Cast Iron Chair',
       'nameID': 'CastIronChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 3,
+      'yPos': 6
     },
     {
       'name': 'Cast Iron Table',
       'nameID': 'CastIronTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 4,
+      'yPos': 6
     },
     {
       'name': 'Composite Lumber Dresser',
@@ -10721,33 +10721,33 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Outdoor Bench',
       'nameID': 'PlasticOutdoorBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_05.png',
       'xPos': 0,
-      'yPos': 0
+      'yPos': 6
     },
     {
       'name': 'Plastic Outdoor Chair',
       'nameID': 'PlasticOutdoorChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 1,
+      'yPos': 6
     },
     {
       'name': 'Plastic Outdoor Table',
       'nameID': 'PlasticOutdoorTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_05.png',
+      'xPos': 15,
+      'yPos': 5
     },
     {
       'name': 'Plastic Window Planter',
       'nameID': 'PlasticWindowPlanterItem',
       'tag': false,
       'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'xPos': 9,
+      'yPos': 13
     },
     {
       'name': 'Polishing Paste',
@@ -11232,9 +11232,9 @@ export const itemsArray: IItem[] =
       'name': 'Daisy Seed',
       'nameID': 'DaisySeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 6,
+      'yPos': 15
     },
     {
       'name': 'Eco Book',
@@ -11872,9 +11872,9 @@ export const itemsArray: IItem[] =
       'name': 'Tulip Seed',
       'nameID': 'TulipSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'imageFile': 'UI_Icons_00.png',
+      'xPos': 6,
+      'yPos': 15
     },
     {
       'name': 'Wood Double Shelf',
