@@ -51,6 +51,7 @@ export class HeaderComponent {
     this.supportedLocales = [...localeService.supportedLocales.values()]
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
     this.selectedServer = serverService.getSelectedServerSignal();
+    this.selectedServer = serverService.getSelectedServerSignal();
   }
 
   retrieveReleaseNotes() {

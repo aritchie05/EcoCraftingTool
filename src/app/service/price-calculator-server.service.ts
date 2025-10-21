@@ -1,17 +1,15 @@
 import {Injectable, signal, WritableSignal} from '@angular/core';
 import {PREDEFINED_SERVERS, ServerConfig} from '../model/server-config';
 import {HttpClient} from '@angular/common/http';
-import {ServerApiItem, ServerItemsResponse} from '../model/server-api/server-api-item';
+import {ServerItemsResponse} from '../model/server-api/server-api-item';
 import {Observable} from 'rxjs';
-import {ServerRecipe, ServerRecipesResponse} from '../model/server-api/server-api-recipe';
-import {items} from '../../assets/data/items';
-import {recipesArray} from '../../assets/data/recipes';
+import {ServerRecipesResponse} from '../model/server-api/server-api-recipe';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PriceCalculatorServerService {
-  private readonly selectedServer: WritableSignal<ServerConfig> = signal(PREDEFINED_SERVERS[0]);
+  private readonly selectedServer: WritableSignal<ServerConfig> = signal(PREDEFINED_SERVERS[1]);
 
   private readonly baseUrlPath = '/api/v1/plugins/EcoPriceCalculator';
   private readonly itemsPath = '/allItems';
