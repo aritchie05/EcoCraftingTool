@@ -1,6 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ImportDialogComponent} from './import-dialog.component';
+import {provideDialogTestingDependencies} from '../../test-utils.spec';
 
 describe('ImportComponent', () => {
   let component: ImportDialogComponent;
@@ -8,7 +9,8 @@ describe('ImportComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImportDialogComponent]
+      imports: [ImportDialogComponent],
+      providers: provideDialogTestingDependencies()
     })
       .compileComponents();
 

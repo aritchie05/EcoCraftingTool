@@ -33,6 +33,63 @@ export interface LocalizedMessage {
 const messages: Message[] =
   [
     {
+      'id': 'serverLabel',
+      'localizedMessages': [
+        {
+          'text': 'Server',
+          'lang': 'en'
+        },
+        {
+          'text': 'Serveur',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Servidor',
+          'lang': 'es'
+        },
+        {
+          'text': 'Server',
+          'lang': 'de'
+        },
+        {
+          'text': 'Servidor',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Server',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sunucu',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Serwer',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Сервер',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Сервер',
+          'lang': 'uk'
+        },
+        {
+          'text': '서버',
+          'lang': 'ko'
+        },
+        {
+          'text': '服务器',
+          'lang': 'zh'
+        },
+        {
+          'text': 'サーバー',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
       'id': 'navTitle',
       'localizedMessages': [
         {
