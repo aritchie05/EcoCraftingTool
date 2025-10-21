@@ -1,6 +1,8 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ReleaseNotesDialogComponent} from './release-notes-dialog.component';
+import {provideHttpClient} from '@angular/common/http';
+import {provideDialogTestingDependencies} from '../../test-utils.spec';
 
 describe('ReleaseNotesComponent', () => {
   let component: ReleaseNotesDialogComponent;
@@ -8,7 +10,8 @@ describe('ReleaseNotesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ReleaseNotesDialogComponent]
+      imports: [ReleaseNotesDialogComponent],
+      providers: [provideHttpClient(), provideDialogTestingDependencies()]
     })
       .compileComponents();
 
