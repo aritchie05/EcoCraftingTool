@@ -43,9 +43,9 @@
         </label>
         <div class="ml-auto flex items-center">
           <mat-form-field appearance="outline" class="w-24"
-                          [class.highlight-zero-input]="shouldHighlightItemPrice(index, item)">
+                          [class.highlight-zero-input]="shouldHighlightItemPrice(item)">
             <input #priceInput matInput type="number" step="0.1" min="0" [value]="item.price()"
-                   (focus)="onItemPriceInputFocus(index)"
+                   (focus)="onItemPriceInputFocus(item)"
                    (focusout)="onInputPriceChange(index, priceInput.value)">
           </mat-form-field>
         </div>
@@ -74,9 +74,9 @@
         </label>
         <div class="ml-auto flex items-center">
           <mat-form-field appearance="outline" class="w-24"
-                          [class.highlight-zero-input]="shouldHighlightByproductPrice(index, byproduct)">
+                          [class.highlight-zero-input]="shouldHighlightByproductPrice(byproduct)">
             <input #byproductInput matInput type="number" step="0.1" min="0" [value]="byproduct.price()"
-                   (focus)="onByproductPriceInputFocus(index)"
+                   (focus)="onByproductPriceInputFocus(byproduct)"
                    (focusout)="onByproductPriceChange(index, byproductInput.value)">
           </mat-form-field>
         </div>

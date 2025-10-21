@@ -306,6 +306,17 @@ export class CraftingService {
     });
   }
 
+  private resetTouchedForRemovedItems(removedRecipes: Recipe[]): void {
+    removedRecipes.forEach(recipe => {
+      recipe.ingredients.forEach(ing => ing.item.touched.set(false));
+      recipe.outputs.forEach(output => {
+        if (!output.primary) {
+          output.item.touched.set(false);
+        }
+      });
+    });
+  }
+
 
   //Settings methods
   setCraftResourceModifier(value: number) {
@@ -362,10 +373,18 @@ export class CraftingService {
       return [...skills];
     });
 
+    // Get recipes to be removed
+    const recipesToRemove = this.selectedRecipes().filter(
+      recipe => recipe.skill?.nameID === skill.nameID
+    );
+
     // Remove any selected recipes with that skill
     this.selectedRecipes.update(recipes => {
       return recipes.filter(recipe => recipe.skill?.nameID !== skill.nameID);
     });
+
+    // Reset touched flag for removed ingredients
+    this.resetTouchedForRemovedItems(recipesToRemove);
 
     // Remove any tables that no longer have any matching recipes
     this.selectedTables.update(tables => {
@@ -424,10 +443,18 @@ export class CraftingService {
       return [...tables];
     });
 
+    // Get recipes to be removed
+    const recipesToRemove = this.selectedRecipes().filter(
+      recipe => recipe.craftingTable.nameID === table.nameID
+    );
+
     // Remove all selected recipes on that table
     this.selectedRecipes.update(recipes => {
       return recipes.filter(recipe => recipe.craftingTable.nameID !== table.nameID);
     });
+
+    // Reset touched flag for removed ingredients
+    this.resetTouchedForRemovedItems(recipesToRemove);
 
     // Remove any skills that no longer have any selected recipes
     this.selectedSkills.update(skills => {
@@ -499,6 +526,8 @@ export class CraftingService {
       }
       return [...recipes];
     });
+
+    this.resetTouchedForRemovedItems(recipesToRemove);
 
     this.selectedSkills.update(skills => {
       return skills.filter(skill => !skillsToRemove.has(skill.nameID));

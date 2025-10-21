@@ -8,8 +8,17 @@ export class StoredItem {
    */
   pr: string;
 
+  /**
+   * Touched flag
+   */
+  t?: boolean;
+
   constructor(item: Item) {
     this.id = item.nameID;
     this.pr = item.price ? item.price().toFixed(2) : '0';
+
+    if (item.touched()) {
+      this.t = item.touched();
+    }
   }
 }
