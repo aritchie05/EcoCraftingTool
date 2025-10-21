@@ -1,6 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ExportDialogComponent} from './export-dialog.component';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 describe('ExportComponent', () => {
   let component: ExportDialogComponent;
@@ -8,7 +9,19 @@ describe('ExportComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ExportDialogComponent]
+      imports: [ExportDialogComponent],
+      providers: [
+        {
+          provide: MatDialogRef,
+          useValue: {
+            close: jasmine.createSpy('close')
+          }
+        },
+        {
+          provide: MAT_DIALOG_DATA,
+          useValue: () => 'mock export data'
+        }
+      ]
     })
       .compileComponents();
 

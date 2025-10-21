@@ -15,6 +15,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {Locale, LocaleService} from '../service/locale.service';
 import {SettingsDialogComponent} from './settings/settings-dialog.component';
 import {MessageService} from '../service/message.service';
+import {PREDEFINED_SERVERS, ServerConfig} from '../model/server-config';
+import {PriceCalculatorServerService} from '../service/price-calculator-server.service';
 
 @Component({
   selector: 'app-header',
@@ -35,15 +37,20 @@ export class HeaderComponent {
   release = '5.0.4-BETA'
   retrievingReleaseNotes = false;
 
+  // Server selection
+  selectedServer: Signal<ServerConfig>;
+  predefinedServers: ServerConfig[] = PREDEFINED_SERVERS;
+
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
               private storageService: WebStorageService, private localeService: LocaleService,
-              private messageService: MessageService) {
+              private messageService: MessageService, private serverService: PriceCalculatorServerService) {
     this.releases = signal([]);
     this.calcConfig = signal(storageService.getCalcConfig());
     this.exportJson = computed(() => JSON.stringify(this.calcConfig()));
     this.selectedLocale = localeService.selectedLocale;
     this.supportedLocales = [...localeService.supportedLocales.values()]
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
+    this.selectedServer = serverService.getSelectedServerSignal();
   }
 
   retrieveReleaseNotes() {
@@ -84,5 +91,12 @@ export class HeaderComponent {
 
   message(id: string): string {
     return this.messageService.getMessage(id);
+  }
+
+  onServerChange(serverId: string): void {
+    const server = this.predefinedServers.find(s => s.id === serverId);
+    if (server) {
+      this.serverService.setSelectedServer(server);
+    }
   }
 }
