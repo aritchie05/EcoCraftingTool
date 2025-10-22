@@ -1,5 +1,5 @@
 export interface ServerItemsResponse {
-  allItems: ServerItemResponse;
+  AllItems: ServerItemResponse;
 }
 
 export interface ServerItemResponse {
