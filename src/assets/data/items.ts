@@ -11883,6 +11883,222 @@ export const itemsArray: IItem[] =
       'imageFile': 'WoodDoubleShelfObject_Icon.png',
       'xPos': 0,
       'yPos': 0
+    },
+    {
+      'name': 'Advanced Baking Skill Book',
+      'nameID': 'AdvancedBakingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Advanced Cooking Skill Book',
+      'nameID': 'AdvancedCookingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Advanced Masonry Skill Book',
+      'nameID': 'AdvancedMasonrySkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Advanced Smelting Skill Book',
+      'nameID': 'AdvancedSmeltingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Baking Skill Book',
+      'nameID': 'BakingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Basic Engineering Skill Book',
+      'nameID': 'BasicEngineeringSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Blacksmith Skill Book',
+      'nameID': 'BlacksmithSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Butchery Skill Book',
+      'nameID': 'ButcherySkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Carpentry Skill Book',
+      'nameID': 'CarpentrySkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Composites Skill Book',
+      'nameID': 'CompositesSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Cooking Skill Book',
+      'nameID': 'CookingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Cutting Edge Cooking Skill Book',
+      'nameID': 'CuttingEdgeCookingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Electronics Skill Book',
+      'nameID': 'ElectronicsSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Farming Skill Book',
+      'nameID': 'FarmingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Fertilizers Skill Book',
+      'nameID': 'FertilizersSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Glassworking Skill Book',
+      'nameID': 'GlassworkingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Industry Skill Book',
+      'nameID': 'IndustrySkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Masonry Skill Book',
+      'nameID': 'MasonrySkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Mechanics Skill Book',
+      'nameID': 'MechanicsSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Milling Skill Book',
+      'nameID': 'MillingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Oil Drilling Skill Book',
+      'nameID': 'OilDrillingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Painting Skill Book',
+      'nameID': 'PaintingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Paper Milling Skill Book',
+      'nameID': 'PaperMillingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Pottery Skill Book',
+      'nameID': 'PotterySkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Shipwright Skill Book',
+      'nameID': 'ShipwrightSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Smelting Skill Book',
+      'nameID': 'SmeltingSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
+    },
+    {
+      'name': 'Tailoring Skill Book',
+      'nameID': 'TailoringSkillBook',
+      'tag': false,
+      'imageFile': 'UI_Icons_06.png',
+      'xPos': 0,
+      'yPos': 0
     }
   ];
 

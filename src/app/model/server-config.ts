@@ -8,7 +8,7 @@ export interface ServerConfig {
 export const PREDEFINED_SERVERS: ServerConfig[] = [
   {
     id: 'default',
-    name: 'Default (Static Data)',
+    name: 'Default (Vanilla)',
     hostname: '',
     isCustom: false
   },
