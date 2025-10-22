@@ -151,80 +151,98 @@ export class CraftingService {
             continue;
           }
 
-          let canComputeInputPrices = false;
+          let canComputeInputPrices = true;
           let cost = 0;
+
+          console.debug(`======== Starting price computation for ${recipe.name()} Recipe ========`)
 
           for (let i = 0; i < recipe.ingredients.length; i++) {
             const ing = recipe.ingredients[i];
             const quantity = this.computeAdjustedQuantity(recipe, ing);
-            console.debug(`Attempting to compute price for ${ing.item.name()} input for ${recipe.name()}`);
-            let input = this.selectedInputs().find(item => item.nameID === ing.item.nameID);
+            console.debug(`=== Attempting to compute price for ${quantity} ${ing.item.name()} input for ${recipe.name()} ===`);
+
+            const input = this.selectedInputs().find(item => item.nameID === ing.item.nameID);
             if (input) {
+              console.debug(`Found price of ${input.price()} in inputs list, increased cost by ${input.price() * quantity}`);
               cost += input.price() * quantity;
-            } else {
-              let byproduct = this.selectedByproducts().find(item => item.nameID === ing.item.nameID);
-              if (byproduct) {
-                cost += byproduct.price() * quantity;
-              } else {
-                let otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === ing.item.nameID);
-                if (otherRecipe && otherRecipe.isPriceComputed) {
-                  cost += otherRecipe.basePrice() * quantity;
-                } else {
-                  //We cannot compute the price of this recipe yet. Move on to the next recipe
-                  console.debug(`Could not compute price for ${ing.item.name()}`);
-                  break;
-                }
-              }
+              continue;
             }
-            canComputeInputPrices = true;
+
+            const byproduct = this.selectedByproducts().find(item => item.nameID === ing.item.nameID);
+            if (byproduct) {
+              console.debug(`Found price of ${byproduct.price()} in byproducts list, increased cost by ${byproduct.price() * quantity}`);
+              cost += byproduct.price() * quantity;
+              continue;
+            }
+
+            const otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === ing.item.nameID);
+            if (otherRecipe && otherRecipe.isPriceComputed) {
+              console.debug(`Found price of ${otherRecipe.price()} in output recipes list, increased cost by ${otherRecipe.price() * quantity}`);
+              cost += otherRecipe.basePrice() * quantity;
+              continue;
+            }
+
+            //We cannot compute the price of this recipe yet. Move on to the next recipe
+            console.debug(`Could not compute price for ${ing.item.name()}`);
+            canComputeInputPrices = false;
+            break;
           }
 
           if (canComputeInputPrices) {
             console.debug(`Computed input prices for ${recipe.name()}, attempting output prices.`);
-            let canComputeOutputPrices = false;
+            let canComputeOutputPrices = true;
             for (let i = 0; i < recipe.outputs.length; i++) {
               const output = recipe.outputs[i];
               if (output.primary && recipe.outputs.length > 1) {
                 continue;
               } else if (output.primary && recipe.outputs.length === 1) {
-                canComputeOutputPrices = true;
                 break;
               }
-              let input = this.selectedInputs().find(item => item.nameID === output.item.nameID);
+
+              console.debug(`Attempting to compute non-primary output price for ${output.item.name()} for ${recipe.name()}`);
+              const input = this.selectedInputs().find(item => item.nameID === output.item.nameID);
               if (input) {
+                console.debug(`Found price of ${input.price()} in inputs list, reduced cost by ${input.price() * output.quantity}`);
                 cost -= input.price() * output.quantity;
-              } else {
-                let byproduct = this.selectedByproducts().find(item => item.nameID === output.item.nameID);
-                if (byproduct) {
-                  cost -= byproduct.price() * output.quantity;
-                } else {
-                  let otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === output.item.nameID);
-                  if (otherRecipe && otherRecipe.isPriceComputed) {
-                    cost -= otherRecipe.basePrice() * output.quantity;
-                  } else {
-                    console.debug(`Could not compute output price for ${output.item.name()} output for ${recipe.name()}`);
-                    break;
-                  }
-                }
+                continue;
               }
 
-              canComputeOutputPrices = true;
+              const byproduct = this.selectedByproducts().find(item => item.nameID === output.item.nameID);
+              if (byproduct) {
+                console.debug(`Found price of ${byproduct.price()} in byproducts list, reduced cost by ${byproduct.price() * output.quantity}`);
+                cost -= byproduct.price() * output.quantity;
+                continue;
+              }
+
+              const otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === output.item.nameID);
+              if (otherRecipe && otherRecipe.isPriceComputed) {
+                console.debug(`Found price of ${otherRecipe.price()} in output recipes list, reduced cost by ${otherRecipe.price() * output.quantity}`);
+                cost -= otherRecipe.basePrice() * output.quantity;
+                continue;
+              }
+
+              console.debug(`Could not compute output price for ${output.item.name()} output for ${recipe.name()}`);
+              canComputeOutputPrices = false;
+              break;
             }
 
             if (canComputeOutputPrices) {
-              console.debug(`Computed output prices for ${recipe.name()}`);
+              console.debug(`Computed output prices for ${recipe.name()}, base cost value: ${cost}`);
               cost += this.computeAdjustedLabor(recipe) * this.pricePerThousandCals() / 1000;
+              console.debug(`After labor cost addition, cost value: ${cost}`);
               cost /= recipe.primaryOutput.quantity;
+              console.debug(`After primary output quantity division, cost value: ${cost}`);
 
               let profitMultiplier = 1 + this.defaultProfitPercent() / 100;
               if (recipe.profitOverride() >= 0) {
                 profitMultiplier = 1 + recipe.profitOverride() / 100;
               }
 
+              console.debug(`After profit multiplier of ${profitMultiplier}, final cost value for ${recipe.name()}: ${cost * profitMultiplier}`);
+
               recipe.basePrice.set(cost);
               recipe.price.set(cost * profitMultiplier);
               recipe.isPriceComputed = true;
-              console.debug(`Computed price for ${recipe.name()}: ${recipe.price()}`);
             }
           }
         }
