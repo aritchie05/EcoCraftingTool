@@ -137,6 +137,7 @@ export class WebStorageService {
       return storedItems.map((storedItem: StoredItem) => {
         let item = items.get(storedItem.id);
         item?.price.set(Number.parseFloat(storedItem.pr));
+        item?.touched.set(storedItem.t ?? false);
         return item;
       });
     }

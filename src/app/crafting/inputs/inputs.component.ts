@@ -28,12 +28,29 @@ export class InputsComponent {
 
     this.selectedItems = craftingService.selectedInputs;
     this.selectedByproducts = craftingService.selectedByproducts;
-
-
   }
 
   message(id: string): string {
     return this.messageService.getMessage(id);
+  }
+
+  /**
+   * Check if an input should be highlighted (untouched and value is 0)
+   */
+  shouldHighlightItemPrice(item: Item): boolean {
+    return !item.touched() && item.price() === 0;
+  }
+
+  shouldHighlightByproductPrice(byproduct: Item): boolean {
+    return !byproduct.touched() && byproduct.price() === 0;
+  }
+
+  onItemPriceInputFocus(item: Item): void {
+    item.touched.set(true);
+  }
+
+  onByproductPriceInputFocus(item: Item): void {
+    item.touched.set(true);
   }
 
   onCalorieCostChange(value: string) {

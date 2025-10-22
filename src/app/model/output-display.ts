@@ -42,7 +42,7 @@ export class OutputDisplay {
       recipeName: recipe.name.asReadonly(),
       recipePrice: recipe.price.asReadonly(),
       basePrice: recipe.basePrice.asReadonly(),
-      recipe: recipe,
+      recipe: recipe
     }];
     this.itemPrice = computed(() => {
       const prices = this.subRecipes.map(subRecipe => subRecipe.recipePrice());
