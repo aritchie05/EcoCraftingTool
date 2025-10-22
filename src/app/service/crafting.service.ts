@@ -213,8 +213,8 @@ export class CraftingService {
 
             if (canComputeOutputPrices) {
               console.debug(`Computed output prices for ${recipe.name()}`);
-              cost /= recipe.primaryOutput.quantity;
               cost += this.computeAdjustedLabor(recipe) * this.pricePerThousandCals() / 1000;
+              cost /= recipe.primaryOutput.quantity;
 
               let profitMultiplier = 1 + this.defaultProfitPercent() / 100;
               if (recipe.profitOverride() >= 0) {
