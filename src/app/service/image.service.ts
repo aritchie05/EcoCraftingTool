@@ -27,11 +27,11 @@ export class ImageService {
   }
 
   getProfitSpriteImageUrl(): string {
-    return this.imageBaseUrl + 'UI_Icons_00.png';
+    return this.imageBaseUrl + 'UI_Icons_00.webp';
   }
 
   getCalorieSpriteImageUrl(): string {
-    return this.imageBaseUrl + 'UI_Icons_00.png';
+    return this.imageBaseUrl + 'UI_Icons_00.webp';
   }
 
   getSpritePosition(xPos: number, yPos: number, size: number, imageFile: string): string {
@@ -49,11 +49,11 @@ export class ImageService {
   getSpriteBackgroundSize(itemNameID: string, imageFile: string): string {
     if (itemNameID.localeCompare('LightBulbItem') === 0) {
       return '32px';
-    } else if ('UI_Icons_Baked_0.png'.localeCompare(imageFile) === 0 || 'UI_Icons_Baked_1.png'.localeCompare(imageFile) === 0) {
+    } else if ('UI_Icons_Baked_0.webp'.localeCompare(imageFile) === 0 || 'UI_Icons_Baked_1.webp'.localeCompare(imageFile) === 0) {
       return '2048px';
     } else if (imageFile?.includes('UI_Icons')) {
       return '512px';
-    } else if ('skill-icons-sprite.png'.localeCompare(imageFile) === 0) {
+    } else if ('skill-icons-sprite.webp'.localeCompare(imageFile) === 0) {
       return '256px';
     }
 
