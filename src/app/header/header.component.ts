@@ -41,7 +41,7 @@ export class HeaderComponent {
     this.exportJson = computed(() => JSON.stringify(this.calcConfig()));
     this.selectedLocale = localeService.selectedLocale;
     this.supportedLocales = [...localeService.supportedLocales.values()]
-    this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.png';
+    this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
   }
 
 
