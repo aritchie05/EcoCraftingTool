@@ -54,7 +54,9 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
+    setTimeout(() => {
+      this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
+    }, 1000);
   }
 
   openReleaseNotes() {
