@@ -8,14 +8,10 @@ import {environment} from '../../environments/environment';
 })
 export class ReleaseNotesService {
 
-  readonly releases: WritableSignal<Release[]> = signal([]);
-
   constructor(private http: HttpClient) {
-    afterNextRender(() => this.loadReleases());
   }
 
-  private loadReleases(): void  {
-    this.http.get<Release[]>(environment.releasesUrl).subscribe(releases => this.releases.set(releases));
+  getReleases() {
+    return this.http.get<Release[]>(environment.releasesUrl);
   }
-
 }
