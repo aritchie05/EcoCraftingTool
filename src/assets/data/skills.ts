@@ -86,7 +86,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 11
     },
@@ -306,7 +306,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 15
     },

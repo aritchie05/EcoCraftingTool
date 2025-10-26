@@ -79,7 +79,7 @@ export class HeaderComponent {
   }
 
   onLocaleChange(localeCode: string) {
-    this.localeService.changeLocale(localeCode);
+    setTimeout(() => this.localeService.changeLocale(localeCode));
   }
 
   message(id: string): string {

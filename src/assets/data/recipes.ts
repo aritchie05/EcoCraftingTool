@@ -13756,7 +13756,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('Oil'),
+          'item': getItemByNameID('OilItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -15001,7 +15001,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('Oil'),
+          'item': getItemByNameID('OilItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
