@@ -7,10 +7,6 @@
       <button class="pt-0.5 cursor-pointer hover:opacity-80"
               (click)="openReleaseNotes()">{{ releases()[0].tag_name.substring(1) }}
       </button>
-    } @else {
-      <button class="pt-0.5 cursor-pointer hover:opacity-80">
-        {{ version }}
-      </button>
     }
   </div>
   <div class="mr-auto my-2">

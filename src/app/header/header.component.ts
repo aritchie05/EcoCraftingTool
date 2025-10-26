@@ -41,7 +41,6 @@ export class HeaderComponent implements OnInit {
   supportedLocales: Locale[];
   ecoLogoUrl: string;
   dialog = inject(MatDialog);
-  version = '5.0.4-SNAPSHOT';
 
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
               private storageService: WebStorageService, private localeService: LocaleService,
@@ -55,13 +54,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(() => {
-        this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
-      });
-    } else {
-        this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
-    }
+    this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
   }
 
   openReleaseNotes() {
