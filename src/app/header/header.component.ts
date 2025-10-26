@@ -1,9 +1,9 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   computed,
   inject,
+  OnInit,
   Signal,
   signal,
   WritableSignal
@@ -32,7 +32,7 @@ import {MessageService} from '../service/message.service';
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeaderComponent implements AfterViewInit {
+export class HeaderComponent implements OnInit {
 
   releases: WritableSignal<Release[]>;
   calcConfig: WritableSignal<CalculatorConfig>;
@@ -54,10 +54,14 @@ export class HeaderComponent implements AfterViewInit {
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
   }
 
-  ngAfterViewInit(): void {
-    setTimeout(() => {
-      this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
-    });
+  ngOnInit(): void {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
+      });
+    } else {
+        this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
+    }
   }
 
   openReleaseNotes() {
