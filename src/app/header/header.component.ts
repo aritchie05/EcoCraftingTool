@@ -1,9 +1,9 @@
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   computed,
   inject,
-  OnInit,
   Signal,
   signal,
   WritableSignal
@@ -32,7 +32,7 @@ import {MessageService} from '../service/message.service';
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements AfterViewInit {
 
   releases: WritableSignal<Release[]>;
   calcConfig: WritableSignal<CalculatorConfig>;
@@ -41,6 +41,7 @@ export class HeaderComponent implements OnInit {
   supportedLocales: Locale[];
   ecoLogoUrl: string;
   dialog = inject(MatDialog);
+  version = '5.0.4-SNAPSHOT';
 
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
               private storageService: WebStorageService, private localeService: LocaleService,
@@ -53,10 +54,10 @@ export class HeaderComponent implements OnInit {
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     setTimeout(() => {
       this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
-    }, 300);
+    });
   }
 
   openReleaseNotes() {

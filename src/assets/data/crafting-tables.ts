@@ -7,7 +7,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'AdvancedCarpentryTableObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 11,
       'yPos': 12
     },
@@ -16,7 +16,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'AdvancedMasonryTableObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 12
     },
@@ -25,7 +25,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'AdvancedTailoringTableObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 13
     },
@@ -34,7 +34,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'AnvilObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -43,7 +43,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ArrastraObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 8
     },
@@ -52,7 +52,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'AssemblyLineObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 6
     },
@@ -61,7 +61,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'AutomaticLoomObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 13
     },
@@ -70,7 +70,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'BakeryOvenObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 12
     },
@@ -79,7 +79,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'BlacksmithTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 10
     },
@@ -88,7 +88,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'BlastFurnaceObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 10
     },
@@ -97,7 +97,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'BloomeryObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 10
     },
@@ -106,7 +106,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ButcheryTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 13,
       'yPos': 10
     },
@@ -115,7 +115,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'CampfireObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 11
     },
@@ -124,7 +124,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'CampsiteObject',
       'upgradeModuleType': 'None',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 1
     },
@@ -133,7 +133,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'CarpentryTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 10
     },
@@ -142,7 +142,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'CastIronStoveObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 10
     },
@@ -151,7 +151,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'CementKilnObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 10
     },
@@ -160,7 +160,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ElectricLatheObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 1
     },
@@ -169,7 +169,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ElectricMachinistTableObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 2
     },
@@ -178,7 +178,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ElectricPlanerObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 1
     },
@@ -187,7 +187,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ElectricStampingPressObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 1
     },
@@ -196,7 +196,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ElectronicsAssemblyObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 6
     },
@@ -205,7 +205,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'FarmersTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 9
     },
@@ -214,7 +214,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'FiberScutchingStationObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 7
     },
@@ -223,7 +223,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'FisheryObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 12
     },
@@ -232,7 +232,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'FishRackObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 6
     },
@@ -241,7 +241,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'FletchingTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -250,7 +250,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'FrothFloatationCellObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 8
     },
@@ -259,7 +259,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'GlassworksObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 15
     },
@@ -268,7 +268,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'GrindstoneObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 7,
       'yPos': 10
     },
@@ -277,7 +277,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'IndustrialMillObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 10,
       'yPos': 1
     },
@@ -286,7 +286,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'InjectionMoldMachineObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 12
     },
@@ -295,7 +295,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'JawCrusherObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 8
     },
@@ -304,7 +304,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'KilnObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 4,
       'yPos': 10
     },
@@ -313,7 +313,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'KitchenObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 9
     },
@@ -322,7 +322,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'LaboratoryObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 10
     },
@@ -331,7 +331,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'LatheObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 3
     },
@@ -340,7 +340,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'LoomObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 15,
       'yPos': 11
     },
@@ -349,7 +349,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'MachinistTableObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 9
     },
@@ -358,7 +358,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'MasonryTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 10
     },
@@ -367,7 +367,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'MediumShipyardObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 15
     },
@@ -376,7 +376,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'MillObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 12
     },
@@ -385,7 +385,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'OilRefineryObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 10
     },
@@ -394,7 +394,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'PaintMixerObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 14
     },
@@ -403,7 +403,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'PotteryTableObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 7
     },
@@ -412,7 +412,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'PowerHammerObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 10
     },
@@ -421,7 +421,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'PrintingPressObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 11
     },
@@ -430,7 +430,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'PumpJackObject',
       'upgradeModuleType': 'None',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 1
     },
@@ -439,7 +439,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ResearchTableObject',
       'upgradeModuleType': 'None',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 4,
       'yPos': 12
     },
@@ -448,7 +448,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'RoboticAssemblyLineObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 6
     },
@@ -457,7 +457,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'RockerBoxObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 8
     },
@@ -466,7 +466,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'RollingMillObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 7
     },
@@ -475,7 +475,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'SawmillObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 12
     },
@@ -484,7 +484,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ScreeningMachineObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 9,
       'yPos': 8
     },
@@ -493,7 +493,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ScrewPressObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 5
     },
@@ -502,7 +502,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'SettlementCraftingTableObject',
       'upgradeModuleType': 'None',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 9
     },
@@ -511,7 +511,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'SensorBasedBeltSorterObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 11,
       'yPos': 8
     },
@@ -520,7 +520,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ShaperObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 3
     },
@@ -529,7 +529,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'SmallPaperMachineObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 7
     },
@@ -538,7 +538,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'SmallShipyardObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 15
     },
@@ -547,7 +547,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'SpinMelterObject',
       'upgradeModuleType': 'ModernUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 3,
       'yPos': 13
     },
@@ -556,7 +556,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'StampMillObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 8
     },
@@ -565,7 +565,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'StoveObject',
       'upgradeModuleType': 'AdvancedUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 12
     },
@@ -574,7 +574,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'TailoringTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 13
     },
@@ -583,7 +583,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'ToolBenchObject',
       'upgradeModuleType': 'None',
       'hidden': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 9
     },
@@ -592,7 +592,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'WainwrightTableObject',
       'upgradeModuleType': 'BasicUpgrade',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 10
     },
@@ -601,7 +601,7 @@ export const tablesArray: ICraftingTable[] =
       'nameID': 'WorkbenchObject',
       'upgradeModuleType': 'None',
       'hidden': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 12
     }
