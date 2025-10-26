@@ -1,13 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  inject,
-  OnInit,
-  Signal,
-  signal,
-  WritableSignal
-} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, inject, Signal, signal, WritableSignal} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 import {ReleaseNotesDialogComponent} from './release-notes/release-notes-dialog.component';
 import {ImageService} from '../service/image.service';
@@ -32,7 +23,7 @@ import {MessageService} from '../service/message.service';
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
   releases: WritableSignal<Release[]>;
   calcConfig: WritableSignal<CalculatorConfig>;
@@ -41,6 +32,8 @@ export class HeaderComponent implements OnInit {
   supportedLocales: Locale[];
   ecoLogoUrl: string;
   dialog = inject(MatDialog);
+  release = '5.0.4-BETA'
+  retrievingReleaseNotes = false;
 
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
               private storageService: WebStorageService, private localeService: LocaleService,
@@ -53,13 +46,19 @@ export class HeaderComponent implements OnInit {
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
   }
 
-  ngOnInit(): void {
-    this.releaseNotesService.getReleases().subscribe(releases => this.releases.set(releases));
+  retrieveReleaseNotes() {
+    if (!this.retrievingReleaseNotes && this.releases().length === 0) {
+      this.retrievingReleaseNotes = true;
+      this.releaseNotesService.getReleases().subscribe(releases => {
+        this.releases.set(releases);
+        this.retrievingReleaseNotes = false;
+      });
+    }
   }
 
   openReleaseNotes() {
     this.dialog.open(ReleaseNotesDialogComponent, {
-      data: this.releases()
+      data: this.releases
     });
   }
 

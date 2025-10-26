@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject, Signal} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 import {Release} from '../../model/release';
 import {MessageService} from '../../service/message.service';
@@ -12,7 +12,7 @@ import {MessageService} from '../../service/message.service';
 })
 export class ReleaseNotesDialogComponent {
   dialogRef = inject(MatDialogRef<ReleaseNotesDialogComponent>);
-  releases = inject<Release[]>(MAT_DIALOG_DATA);
+  releases = inject<Signal<Release[]>>(MAT_DIALOG_DATA);
 
   constructor(private messageService: MessageService) {
   }
