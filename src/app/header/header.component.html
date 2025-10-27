@@ -21,10 +21,14 @@
                   (selectionChange)="onServerChange($event.value)"
                   panelClass="server-select"
                   aria-label="Select server">
-        @for (server of predefinedServers; track server.id) {
-          <mat-option [value]="server.id">
-            {{ server.name }}
-          </mat-option>
+        @for (serverGroup of serverGroups(); track serverGroup.id) {
+          <mat-optgroup [label]="serverGroup.name">
+            @for (server of serverGroup.servers(); track server.id) {
+              <mat-option [value]="server.id">
+                {{ server.name }}
+              </mat-option>
+            }
+          </mat-optgroup>
         }
       </mat-select>
     </mat-form-field>

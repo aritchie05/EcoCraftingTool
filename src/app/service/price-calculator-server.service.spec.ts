@@ -45,7 +45,7 @@ describe('PriceCalculatorServerService', () => {
 
   it('gets mock items', (done: DoneFn) => {
     const mockResponse = {
-      allItems: {
+      AllItems: {
         "DummyItem": {
           "PropertyInfos": {
             "Name": {
@@ -61,9 +61,9 @@ describe('PriceCalculatorServerService', () => {
 
     service.getAllItems().subscribe(result => {
       expect(result).toBeTruthy();
-      expect(result.allItems['DummyItem']).toBeTruthy();
-      expect(result.allItems['DummyItem'].PropertyInfos.DisplayName.LocString).toEqual('Dummy Item');
-      expect(result.allItems['DummyItem'].PropertyInfos.Name.String).toEqual('DummyItem');
+      expect(result.AllItems['DummyItem']).toBeTruthy();
+      expect(result.AllItems['DummyItem'].PropertyInfos.DisplayName.LocString).toEqual('Dummy Item');
+      expect(result.AllItems['DummyItem'].PropertyInfos.Name.String).toEqual('DummyItem');
       done();
     });
 

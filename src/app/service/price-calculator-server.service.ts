@@ -1,23 +1,25 @@
 import {Injectable, signal, WritableSignal} from '@angular/core';
-import {PREDEFINED_SERVERS, ServerConfig} from '../model/server-config';
+import {PREDEFINED_SERVERS, ServerConfig, serverGroups} from '../model/server-api/server-config';
 import {HttpClient} from '@angular/common/http';
-import {ServerApiItem, ServerItemsResponse} from '../model/server-api/server-api-item';
+import {ServerItem, ServerItemsResponse} from '../model/server-api/server-item';
 import {Observable} from 'rxjs';
-import {ServerRecipe, ServerRecipesResponse} from '../model/server-api/server-api-recipe';
+import {ServerRecipe, ServerRecipesResponse} from '../model/server-api/server-recipe';
 import {items} from '../../assets/data/items';
 import {recipesArray} from '../../assets/data/recipes';
+import {environment} from '../../environments/environment';
+import {CraftingDataService} from './crafting-data.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PriceCalculatorServerService {
-  private readonly selectedServer: WritableSignal<ServerConfig> = signal(PREDEFINED_SERVERS[0]);
+  private readonly selectedServer: WritableSignal<ServerConfig> = signal(PREDEFINED_SERVERS.servers()[0]);
 
-  private readonly baseUrlPath = '/api/v1/plugins/EcoPriceCalculator';
-  private readonly itemsPath = '/allItems';
-  private readonly recipesPath = '/recipes';
+  private readonly baseUrlPath = environment.serverBasePath;
+  private readonly itemsPath = environment.serverItemsPath;
+  private readonly recipesPath = environment.serverRecipesPath;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private craftingDataService: CraftingDataService) {
 
   }
 
@@ -26,13 +28,18 @@ export class PriceCalculatorServerService {
   }
 
   setSelectedServer(server: ServerConfig): void {
+    if (server.id === 'white-tiger' && environment.whiteTigerHostName) {
+      server.hostname = environment.whiteTigerHostName;
+    }
     this.selectedServer.set(server);
     this.getAllItems().subscribe(response => {
-      this.parseNewItems(response);
+      const newServerItems = this.parseNewItems(response);
+      this.craftingDataService.processNewItems(newServerItems);
     });
 
     this.getAllRecipes().subscribe(response => {
       const newRecipes = this.parseNewRecipes(response);
+      this.craftingDataService.processNewRecipes(newRecipes);
 
       console.debug(`New recipes found: ${newRecipes.flatMap(recipe => recipe.Key)}`);
     });
@@ -43,17 +50,17 @@ export class PriceCalculatorServerService {
   }
 
   getAllItems(): Observable<ServerItemsResponse> {
-    const url = this.getSelectedServer().hostname + this.baseUrlPath + this.itemsPath;
+    const url = 'https://' + this.getSelectedServer().hostname + this.baseUrlPath + this.itemsPath;
     return this.http.get<ServerItemsResponse>(url);
   }
 
   getAllRecipes(): Observable<ServerRecipesResponse> {
-    const url = this.getSelectedServer().hostname + this.baseUrlPath + this.recipesPath;
+    const url = 'https://' + this.getSelectedServer().hostname + this.baseUrlPath + this.recipesPath;
     return this.http.get<ServerRecipesResponse>(url);
   }
 
-  parseNewItems(response: ServerItemsResponse): ServerApiItem[] {
-    const newItems: ServerApiItem[] = [];
+  parseNewItems(response: ServerItemsResponse): ServerItem[] {
+    const newItems: ServerItem[] = [];
 
     Object.values(response.AllItems).forEach((item) => {
       const id = item.PropertyInfos.Name.String;
@@ -70,5 +77,16 @@ export class PriceCalculatorServerService {
     return response.Recipes.filter(recipe =>
       !recipesArray.some(r => r.name === recipe.Key)
     );
+  }
+
+  getServerById(serverId: string): ServerConfig | undefined {
+    let server: ServerConfig | undefined;
+    for (let group of serverGroups()) {
+      server = group.servers().find(server => server.id === serverId);
+      if (server) {
+        break;
+      }
+    }
+    return server;
   }
 }

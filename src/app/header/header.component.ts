@@ -15,8 +15,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {Locale, LocaleService} from '../service/locale.service';
 import {SettingsDialogComponent} from './settings/settings-dialog.component';
 import {MessageService} from '../service/message.service';
-import {PREDEFINED_SERVERS, ServerConfig} from '../model/server-config';
+import {ServerConfig, serverGroups} from '../model/server-api/server-config';
 import {PriceCalculatorServerService} from '../service/price-calculator-server.service';
+import {ServerDialogComponent} from './server/server-dialog.component';
 
 @Component({
   selector: 'app-header',
@@ -39,7 +40,7 @@ export class HeaderComponent {
 
   // Server selection
   selectedServer: Signal<ServerConfig>;
-  predefinedServers: ServerConfig[] = PREDEFINED_SERVERS;
+  serverGroups = serverGroups;
 
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
               private storageService: WebStorageService, private localeService: LocaleService,
@@ -82,6 +83,12 @@ export class HeaderComponent {
     });
   }
 
+  openNewServerDialog(server: ServerConfig | undefined) {
+    this.dialog.open(ServerDialogComponent, {
+      data: server
+    });
+  }
+
   openSettingsDialog() {
     this.dialog.open(SettingsDialogComponent);
   }
@@ -95,9 +102,11 @@ export class HeaderComponent {
   }
 
   onServerChange(serverId: string): void {
-    const server = this.predefinedServers.find(s => s.id === serverId);
-    if (server) {
+    const server = this.serverService.getServerById(serverId);
+    if (server?.connectionEstablished) {
       this.serverService.setSelectedServer(server);
+    } else {
+      this.openNewServerDialog(server);
     }
   }
 }

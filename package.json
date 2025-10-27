@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-offline": "ng serve --configuration offline",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

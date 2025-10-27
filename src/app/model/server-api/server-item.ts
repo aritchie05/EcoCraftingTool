@@ -3,10 +3,10 @@ export interface ServerItemsResponse {
 }
 
 export interface ServerItemResponse {
-  [key: string]: ServerApiItem;
+  [key: string]: ServerItem;
 }
 
-export interface ServerApiItem {
+export interface ServerItem {
   PropertyInfos: ServerItemPropertyInfos;
 }
 
