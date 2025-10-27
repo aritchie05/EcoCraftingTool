@@ -84,7 +84,7 @@ export interface ServerItemsResponse {
 }
 ```
 
-#### Create `src/app/model/server-api/server-api-recipe.ts`
+#### Create `src/app/model/server-api/server-recipe.ts`
 
 **Purpose**: Models for server API recipe responses (different structure from IRecipe)
 
@@ -481,7 +481,7 @@ The mapper must transform `ServerApiRecipe` → `IRecipe`:
 ### Phase 1: Foundation (Models & Services)
 
 1. Create `server-config.ts` model with `ServerConfig` and predefined servers
-2. Create `server-api-item.ts` and `server-api-recipe.ts` with actual API response interfaces
+2. Create `server-api-item.ts` and `server-recipe.ts` with actual API response interfaces
 3. Create `server-data-mapper.service.ts` with mapping logic
 4. Create `server.service.ts` with basic structure
 5. Add server storage methods to `WebStorageService`
