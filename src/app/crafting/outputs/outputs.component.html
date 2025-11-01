@@ -7,7 +7,7 @@
   </mat-form-field>
   <mat-autocomplete #recipesAutocomplete="matAutocomplete" class="max-h-[70vh]"
                     (optionSelected)="onRecipeSelected($event.option, recipeInput)">
-    @for (recipe of filteredRecipes; track recipe.nameID) {
+    @for (recipe of filteredRecipes(); track recipe.nameID) {
       <mat-option [value]="recipe">
         {{ recipe.name() }}
       </mat-option>

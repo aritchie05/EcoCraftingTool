@@ -3,12 +3,17 @@
   <span class="ml-auto material-icons cursor-pointer hover:opacity-80" (click)="close()">close</span>
 </h2>
 <mat-dialog-content>
-  @for (release of releases(); track release.tag_name) {
-    <div class="mb-6 ml-6">
-      <a [href]="release.html_url" target="_blank"
-         class="text-xl mr-4 text-cyan hover:opacity-80">{{ release.name }}</a>
-      <span>{{ release.published_at.substring(0, 10) }}</span>
-      <p class="mt-1">{{ release.body }}</p>
-    </div>
+  @if (releases().length === 0) {
+    <mat-spinner></mat-spinner>
+  } @else {
+    @for (release of releases(); track release.tag_name) {
+      <div class="mb-6 ml-6">
+        <a [href]="release.html_url" target="_blank"
+           class="text-xl mr-4 text-cyan hover:opacity-80">{{ release.name }}</a>
+        <span>{{ release.published_at.substring(0, 10) }}</span>
+        <markdown [data]="release.body"></markdown>
+      </div>
+    }
   }
+
 </mat-dialog-content>

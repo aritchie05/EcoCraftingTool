@@ -65,9 +65,7 @@ export class SkillsComponent implements OnInit {
     input.value = '';
     document.body.focus();
     const skill: Skill = option.value;
-    setTimeout(() => {
-      this.craftingService.selectSkill(skill);
-    });
+    void this.craftingService.selectSkill(skill);
 
     setTimeout(() => {
       this.filteredSkills = this.allSkills;
@@ -90,9 +88,7 @@ export class SkillsComponent implements OnInit {
   }
 
   onRemoveSkill(index: number) {
-    setTimeout(() => {
-      this.craftingService.removeSkillByIndex(index);
-    });
+    void this.craftingService.removeSkillByIndex(index);
   }
 
   onTableInput(value: string) {
@@ -108,7 +104,7 @@ export class SkillsComponent implements OnInit {
     option.deselect(false);
     input.value = '';
     const table: CraftingTable = option.value;
-    this.craftingService.selectTable(table);
+    void this.craftingService.selectTable(table);
 
     setTimeout(() => {
       this.filteredTables = this.allTables;
@@ -120,6 +116,6 @@ export class SkillsComponent implements OnInit {
   }
 
   onRemoveTable(index: number) {
-    this.craftingService.removeTableByIndex(index);
+    void this.craftingService.removeTableByIndex(index);
   }
 }

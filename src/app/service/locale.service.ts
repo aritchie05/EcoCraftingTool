@@ -1,4 +1,4 @@
-import {effect, Inject, Injectable, signal, WritableSignal} from '@angular/core';
+import {effect, Inject, Injectable, signal, untracked, WritableSignal} from '@angular/core';
 import {localeData, LocaleEntry} from '../../assets/data/locale/locale-data';
 import {skills} from '../../assets/data/skills';
 import {items} from '../../assets/data/items';
@@ -58,25 +58,33 @@ export class LocaleService {
 
     this.selectedLocale = signal(storageLocale !== undefined ? storageLocale : this.defaultLocale);
 
-    effect(() => {
+    effect(async () => {
+      const langCode = this.selectedLocale().langCode;
+
       skills.forEach(skill => {
-        skill.name.update((oldName) => this.localizeSkillName(oldName, skill.nameID, this.selectedLocale().langCode));
+        skill.name.update((oldName) => this.localizeSkillName(oldName, skill.nameID, langCode));
       });
+
+      await new Promise(resolve => setTimeout(resolve));
 
       items.forEach(item => {
-        item.name.update((oldName) => this.localizeItemName(oldName, item.nameID, this.selectedLocale().langCode));
+        item.name.update((oldName) => this.localizeItemName(oldName, item.nameID, langCode));
       });
+
+      await new Promise(resolve => setTimeout(resolve));
 
       recipes.forEach(recipe => {
-        recipe.name.update((oldName) => this.localizeRecipeName(oldName, recipe.nameID, this.selectedLocale().langCode));
+        recipe.name.update((oldName) => this.localizeRecipeName(oldName, recipe.nameID, langCode));
       });
 
+      await new Promise(resolve => setTimeout(resolve));
+
       upgradeModules.forEach(upgrade => {
-        upgrade.name.update((oldName) => this.localizeUpgradeName(oldName, upgrade.nameID, this.selectedLocale().langCode));
+        upgrade.name.update((oldName) => this.localizeUpgradeName(oldName, upgrade.nameID, langCode));
       });
 
       tables.forEach(table => {
-        table.name.update((oldName) => this.localizeCraftingTableName(oldName, table.nameID, this.selectedLocale().langCode));
+        table.name.update((oldName) => this.localizeCraftingTableName(oldName, table.nameID, langCode));
       });
     });
 
