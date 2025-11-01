@@ -1,4 +1,14 @@
-import {ChangeDetectionStrategy, Component, computed, inject, Signal} from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  DestroyRef,
+  inject,
+  OnInit,
+  signal,
+  Signal,
+  WritableSignal
+} from '@angular/core';
 import {Recipe} from '../../model/recipe';
 import {CraftingService} from '../../service/crafting.service';
 import {OutputDisplay, SubRecipe} from '../../model/output-display';
@@ -15,6 +25,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIcon} from '@angular/material/icon';
 import {Skill} from '../../model/skill';
 import {MessageService} from '../../service/message.service';
+import {debounceTime, distinctUntilChanged, Subject} from 'rxjs';
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-outputs',
@@ -33,9 +45,10 @@ import {MessageService} from '../../service/message.service';
 export class OutputsComponent {
 
   allRecipes: Recipe[];
-  filteredRecipes: Recipe[];
+  filteredRecipes: WritableSignal<Recipe[]>;
 
   dialog = inject(MatDialog);
+  private searchSubject = new Subject<string>();
 
   outputDisplays: Signal<OutputDisplay[]>;
   defaultProfitPercent: Signal<number>;
@@ -45,7 +58,7 @@ export class OutputsComponent {
   constructor(private craftingService: CraftingService, protected imageService: ImageService,
               protected localeService: LocaleService, private messageService: MessageService) {
     this.allRecipes = Array.from(recipes.values());
-    this.filteredRecipes = this.allRecipes;
+    this.filteredRecipes = signal(this.allRecipes);
     this.outputDisplays = craftingService.outputDisplays;
     this.defaultProfitPercent = craftingService.defaultProfitPercent;
     this.groupedOutputDisplays = computed(() => {
@@ -65,6 +78,14 @@ export class OutputsComponent {
       return Array.from(this.groupedOutputDisplays().keys())
         .sort((a, b) => a.name().localeCompare(b.name()));
     });
+
+    this.searchSubject.pipe(
+      debounceTime(200),
+      distinctUntilChanged(),
+      takeUntilDestroyed()
+    ).subscribe(searchTerm => {
+      this.filterRecipes(searchTerm);
+    });
   }
 
   message(id: string): string {
@@ -72,11 +93,17 @@ export class OutputsComponent {
   }
 
   onRecipeInput(value: string) {
-    value = value.toLowerCase();
-    if (value.length > 0) {
-      this.filteredRecipes = this.allRecipes.filter(recipe => recipe.name().toLowerCase().includes(value));
+    this.searchSubject.next(value);
+  }
+
+  private filterRecipes(value: string) {
+    const searchTerm = value.toLowerCase();
+    if (searchTerm.length > 0) {
+      this.filteredRecipes.set(this.allRecipes.filter(recipe =>
+        recipe.name().toLowerCase().includes(searchTerm)
+      ));
     } else {
-      this.filteredRecipes = this.allRecipes;
+      this.filteredRecipes.set(this.allRecipes);
     }
   }
 
@@ -86,25 +113,19 @@ export class OutputsComponent {
     input.value = '';
     document.body.focus();
     const recipe: Recipe = option.value;
-    setTimeout(() => {
-      this.craftingService.selectRecipe(recipe);
-    });
+    void this.craftingService.selectRecipe(recipe);
 
     setTimeout(() => {
-      this.filteredRecipes = this.allRecipes;
+      this.filteredRecipes.set(this.allRecipes);
     }, 100);
   }
 
   onRemoveOutput(outputIndex: number) {
-    setTimeout(() => {
-      this.craftingService.removeOutput(outputIndex);
-    });
+    void this.craftingService.removeOutput(outputIndex);
   }
 
   onRemoveSubRecipe(outputIndex: number, subIndex: number) {
-    setTimeout(() => {
-      this.craftingService.removeSubRecipe(outputIndex, subIndex);
-    });
+    void this.craftingService.removeSubRecipe(outputIndex, subIndex);
   }
 
   onRecipeInfoClick(subRecipe: SubRecipe) {
@@ -117,7 +138,7 @@ export class OutputsComponent {
   }
 
   onRemoveSkill(skill: Skill) {
-    this.craftingService.removeSkill(skill);
+    void this.craftingService.removeSkill(skill);
   }
 
   onProfitOverrideChange(value: string, outputDisplay: OutputDisplay) {
