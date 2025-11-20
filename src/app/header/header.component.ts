@@ -32,7 +32,7 @@ export class HeaderComponent {
   supportedLocales: Locale[];
   ecoLogoUrl: string;
   dialog = inject(MatDialog);
-  release = '5.0.4-BETA'
+  release = '5.0.4'
   retrievingReleaseNotes = false;
 
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
