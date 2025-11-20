@@ -1,17 +1,18 @@
-import {signal, Signal} from '@angular/core';
+import {signal, Signal, WritableSignal} from '@angular/core';
 
 export interface ServerConfig {
-  id: string;                     // Unique identifier (e.g., 'default', 'white-tiger')
-  name: string;
-  hostname: string;               // Base URL (e.g., 'white-tiger.play.eco')
-  isCustom: boolean;              // Flag for custom servers
-  connectionEstablished: boolean; // Flag for whether we know the server is valid in this session
+  id: string;
+  name: WritableSignal<string>;
+  hostname: WritableSignal<string>;  // Base URL (e.g., 'white-tiger.play.eco')
+  isCustom: boolean;
+  useInsecureHttp: WritableSignal<boolean>;
+  connectionEstablished: WritableSignal<boolean>;
 }
 
 export interface ServerGroup {
   id: string;
   name: string;
-  servers: Signal<ServerConfig[]>;
+  servers: WritableSignal<ServerConfig[]>;
 }
 
 export const PREDEFINED_SERVERS: ServerGroup = {
@@ -20,31 +21,34 @@ export const PREDEFINED_SERVERS: ServerGroup = {
   servers: signal([
     {
       id: 'default',
-      name: 'Default (Vanilla)',
-      hostname: '',
+      name: signal('Default (Vanilla)'),
+      hostname: signal(''),
       isCustom: false,
-      connectionEstablished: true
+      useInsecureHttp: signal(false),
+      connectionEstablished: signal(true)
     },
     {
       id: 'white-tiger',
-      name: 'White Tiger',
-      hostname: 'white-tiger.play.eco',
+      name: signal('White Tiger'),
+      hostname: signal('white-tiger.play.eco'),
       isCustom: false,
-      connectionEstablished: false
+      useInsecureHttp: signal(false),
+      connectionEstablished: signal(false)
     }
   ])
 };
 
-const CUSTOM_SERVERS: ServerGroup = {
+export const CUSTOM_SERVERS: ServerGroup = {
   id: 'custom-servers',
   name: 'Custom Servers',
   servers: signal([
     {
       id: 'add-new',
-      name: 'Add New...',
-      hostname: '',
+      name: signal('Add New...'),
+      hostname: signal(''),
       isCustom: true,
-      connectionEstablished: false
+      useInsecureHttp: signal(false),
+      connectionEstablished: signal(false)
     }
   ])
 };

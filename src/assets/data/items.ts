@@ -11887,218 +11887,332 @@ export const itemsArray: IItem[] =
     {
       'name': 'Advanced Baking Skill Book',
       'nameID': 'AdvancedBakingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Advanced Cooking Skill Book',
       'nameID': 'AdvancedCookingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Advanced Masonry Skill Book',
       'nameID': 'AdvancedMasonrySkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Advanced Smelting Skill Book',
       'nameID': 'AdvancedSmeltingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Baking Skill Book',
       'nameID': 'BakingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Basic Engineering Skill Book',
       'nameID': 'BasicEngineeringSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Blacksmith Skill Book',
       'nameID': 'BlacksmithSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Butchery Skill Book',
       'nameID': 'ButcherySkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Carpentry Skill Book',
       'nameID': 'CarpentrySkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Composites Skill Book',
       'nameID': 'CompositesSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Cooking Skill Book',
       'nameID': 'CookingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Cutting Edge Cooking Skill Book',
       'nameID': 'CuttingEdgeCookingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Electronics Skill Book',
       'nameID': 'ElectronicsSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Farming Skill Book',
       'nameID': 'FarmingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Fertilizers Skill Book',
       'nameID': 'FertilizersSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Glassworking Skill Book',
       'nameID': 'GlassworkingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Industry Skill Book',
       'nameID': 'IndustrySkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Masonry Skill Book',
       'nameID': 'MasonrySkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Mechanics Skill Book',
       'nameID': 'MechanicsSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Milling Skill Book',
       'nameID': 'MillingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Oil Drilling Skill Book',
       'nameID': 'OilDrillingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Painting Skill Book',
       'nameID': 'PaintingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Paper Milling Skill Book',
       'nameID': 'PaperMillingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Pottery Skill Book',
       'nameID': 'PotterySkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Shipwright Skill Book',
       'nameID': 'ShipwrightSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Smelting Skill Book',
       'nameID': 'SmeltingSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
     },
     {
       'name': 'Tailoring Skill Book',
       'nameID': 'TailoringSkillBook',
-      'tag': false,
-      'imageFile': 'UI_Icons_06.png',
-      'xPos': 0,
-      'yPos': 0
+      'tag': false
+    },
+    {
+      'name': 'Advanced Baking Skill Scroll',
+      'nameID': 'AdvancedBakingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Advanced Cooking Skill Scroll',
+      'nameID': 'AdvancedCookingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Advanced Masonry Skill Scroll',
+      'nameID': 'AdvancedMasonrySkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Advanced Smelting Skill Scroll',
+      'nameID': 'AdvancedSmeltingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Baking Skill Scroll',
+      'nameID': 'BakingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Basic Engineering Skill Scroll',
+      'nameID': 'BasicEngineeringSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Blacksmith Skill Scroll',
+      'nameID': 'BlacksmithSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Butchery Skill Scroll',
+      'nameID': 'ButcherySkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Carpentry Skill Scroll',
+      'nameID': 'CarpentrySkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Composites Skill Scroll',
+      'nameID': 'CompositesSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Cooking Skill Scroll',
+      'nameID': 'CookingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Cutting Edge Cooking Skill Scroll',
+      'nameID': 'CuttingEdgeCookingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Electronics Skill Scroll',
+      'nameID': 'ElectronicsSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Farming Skill Scroll',
+      'nameID': 'FarmingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Fertilizers Skill Scroll',
+      'nameID': 'FertilizersSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Glassworking Skill Scroll',
+      'nameID': 'GlassworkingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Industry Skill Scroll',
+      'nameID': 'IndustrySkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Masonry Skill Scroll',
+      'nameID': 'MasonrySkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Mechanics Skill Scroll',
+      'nameID': 'MechanicsSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Milling Skill Scroll',
+      'nameID': 'MillingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Oil Drilling Skill Scroll',
+      'nameID': 'OilDrillingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Painting Skill Scroll',
+      'nameID': 'PaintingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Paper Milling Skill Scroll',
+      'nameID': 'PaperMillingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Pottery Skill Scroll',
+      'nameID': 'PotterySkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Shipwright Skill Scroll',
+      'nameID': 'ShipwrightSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Smelting Skill Scroll',
+      'nameID': 'SmeltingSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Tailoring Skill Scroll',
+      'nameID': 'TailoringSkillScroll',
+      'tag': false
+    },
+    {
+      'name': 'Claim Paper Item',
+      'nameID': 'ClaimPaperItem',
+      'tag': false
+    },
+    {
+      'name': 'Homestead Support Claim Paper',
+      'nameID': 'HomesteadSupportClaimPaperItem',
+      'tag': false
+    },
+    {
+      'name': 'Picture Item',
+      'nameID': 'PictureItem',
+      'tag': false
+    },
+    {
+      'name': 'Hands',
+      'nameID': 'HandsItem',
+      'tag': false
+    },
+    {
+      'name': 'Country Claim Stake',
+      'nameID': 'CountryClaimStakeItem',
+      'tag': false
+    },
+    {
+      'name': 'Federation Claim Stake',
+      'nameID': 'FederationClaimStakeItem',
+      'tag': false
+    },
+    {
+      'name': 'Outpost Claim Stake Item',
+      'nameID': 'OutpostClaimStakeItem',
+      'tag': false
+    },
+    {
+      'name': 'School Supply Station Item',
+      'nameID': 'SchoolSupplyStationItem',
+      'tag': false
+    },
+    {
+      'name': 'Starter Camp',
+      'nameID': 'StarterCampItem',
+      'tag': false
+    },
+    {
+      'name': 'Students Desk Item',
+      'nameID': 'StudentsDeskItem',
+      'tag': false
+    },
+    {
+      'name': 'Teachers Desk Item',
+      'nameID': 'TeachersDeskItem',
+      'tag': false
+    },
+    {
+      'name': 'Town Claim Stake',
+      'nameID': 'TownClaimStakeItem',
+      'tag': false
     }
   ];
 

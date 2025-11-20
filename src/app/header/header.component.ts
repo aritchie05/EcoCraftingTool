@@ -15,9 +15,10 @@ import {MatSelectModule} from '@angular/material/select';
 import {Locale, LocaleService} from '../service/locale.service';
 import {SettingsDialogComponent} from './settings/settings-dialog.component';
 import {MessageService} from '../service/message.service';
-import {ServerConfig, serverGroups} from '../model/server-api/server-config';
+import {CUSTOM_SERVERS, ServerConfig, ServerGroup, serverGroups} from '../model/server-api/server-config';
 import {PriceCalculatorServerService} from '../service/price-calculator-server.service';
 import {ServerDialogComponent} from './server/server-dialog.component';
+import {ServerDialogResult} from '../model/server-dialog/server-dialog-result';
 
 @Component({
   selector: 'app-header',
@@ -52,7 +53,6 @@ export class HeaderComponent {
     this.supportedLocales = [...localeService.supportedLocales.values()]
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
     this.selectedServer = serverService.getSelectedServerSignal();
-    this.selectedServer = serverService.getSelectedServerSignal();
   }
 
   retrieveReleaseNotes() {
@@ -83,9 +83,52 @@ export class HeaderComponent {
     });
   }
 
-  openNewServerDialog(server: ServerConfig | undefined) {
-    this.dialog.open(ServerDialogComponent, {
-      data: server
+  openNewServerDialog(server: ServerConfig) {
+    let serverConfig = server;
+    const addingNew = server?.id === 'add-new';
+    const previousServer = this.selectedServer();
+    let newServer: ServerConfig;
+
+    if (server?.id === 'add-new') {
+      const id = `Custom-Server-${CUSTOM_SERVERS.servers().length}`;
+      newServer = {
+        id: id,
+        name: signal(id.replaceAll('-', ' ')),
+        hostname: signal(''),
+        isCustom: true,
+        useInsecureHttp: signal(false),
+        connectionEstablished: signal(false)
+      };
+
+      serverConfig = newServer;
+
+      //Insert new server, leaving add-new at the end
+      CUSTOM_SERVERS.servers.update((servers) => [
+        ...servers.slice(0, servers.length - 1),
+        newServer,
+        servers[servers.length - 1]
+      ]);
+    }
+
+    this.serverService.setSelectedServer(serverConfig);
+    const dialogRef = this.dialog.open(ServerDialogComponent, {
+      data: serverConfig,
+      minHeight: '90vh'
+    });
+
+    dialogRef.afterClosed().subscribe((result: ServerDialogResult) => {
+      if (addingNew) {
+        const completed = result === 'saved';
+
+        if (!completed) {
+          // User canceled / closed dialog without saving:
+          // remove the temporary server and restore the previous selection
+          CUSTOM_SERVERS.servers.update((servers) =>
+            servers.filter((s) => s.id !== newServer.id)
+          );
+          this.serverService.setSelectedServer(previousServer);
+        }
+      }
     });
   }
 
@@ -103,9 +146,7 @@ export class HeaderComponent {
 
   onServerChange(serverId: string): void {
     const server = this.serverService.getServerById(serverId);
-    if (server?.connectionEstablished) {
-      this.serverService.setSelectedServer(server);
-    } else {
+    if (server) {
       this.openNewServerDialog(server);
     }
   }

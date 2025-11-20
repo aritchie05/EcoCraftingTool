@@ -2,13 +2,15 @@ import {computed, Injectable, Signal, signal, WritableSignal} from '@angular/cor
 import {items} from '../../assets/data/items';
 import {IItem, Item} from '../model/item';
 import {ServerItem} from '../model/server-api/server-item';
-import {ServerRecipe} from '../model/server-api/server-recipe';
+import {ServerIngredient, ServerOutput, ServerRecipe} from '../model/server-api/server-recipe';
 import {IRecipe, Recipe} from '../model/recipe';
 import {recipes} from '../../assets/data/recipes';
-import {Skill} from '../model/skill';
+import {ISkill, Skill} from '../model/skill';
 import {skills} from '../../assets/data/skills';
 import {CraftingTable, ICraftingTable} from '../model/crafting-table';
 import {tables} from '../../assets/data/crafting-tables';
+import {Ingredient} from '../model/ingredient';
+import {Output} from '../model/output';
 
 @Injectable({
   providedIn: 'root'
@@ -53,55 +55,88 @@ export class CraftingDataService {
   processNewRecipes(newRecipes: ServerRecipe[]) {
     newRecipes.forEach(newRecipe => {
 
-      const serverRecipeNameID = newRecipe.Key.replaceAll(' ', '');
-      const serverTableName = newRecipe.CraftingTable;
-
-      const serverTableNameID = this.convertNameToObjectNameID(serverTableName);
       let table: CraftingTable | undefined;
-      if (this.tables().has(serverTableNameID)) {
-        table = this.tables().get(serverTableNameID);
+      if (this.tables().has(newRecipe.CraftingTable)) {
+        table = this.tables().get(newRecipe.CraftingTable);
       }
 
       if (!table) {
         const iTable: ICraftingTable = {
-          name: serverTableName,
-          nameID: serverTableNameID,
+          name: newRecipe.CraftingTable,
+          nameID: newRecipe.CraftingTableNameID!,
           hidden: false,
           upgradeModuleType: newRecipe.CraftingTableCanUseModules ? 'BasicUpgrade' : 'None'
         };
         table = new CraftingTable(iTable);
-        this.tables.update(tables => tables.set(serverTableNameID, table!));
+        this.tables.update(tables => tables.set(newRecipe.CraftingTableNameID!, table!));
       }
 
-      const serverSkills = newRecipe.SkillNeeds;
-      let skill: Skill | undefined = undefined;
-      let level = 1;
-      if (serverSkills.length > 0) {
-        const serverSkill = serverSkills[0];
-        level = serverSkill.Level;
-        const skillNameID = this.convertNameToObjectNameID(serverSkill.Skill);
-        skill = this.skills().get(skillNameID);
+
+      let skill = this.skills().get(newRecipe.SkillNameID!);
+      if (!skill) {
+        const iSkill: ISkill = {
+          name: newRecipe.SkillNeeds[0].Skill,
+          nameID: newRecipe.SkillNameID!,
+          basicUpgrade: true,
+          advancedUpgrade: false,
+          modernUpgrade: false,
+          lavishWorkspace: true
+        };
+        skill = new Skill(iSkill);
+        this.skills.update(skills => skills.set(skill?.nameID!, skill!));
       }
 
       const iRecipe: IRecipe = {
         name: newRecipe.Key,
-        nameID: serverRecipeNameID,
+        nameID: newRecipe.NameID!,
         craftingTable: table,
         skill: skill,
         hidden: false,
         labor: newRecipe.BaseLaborCost,
-        level: level,
-        ingredients: [],
-        outputs: []
+        level: newRecipe.SkillLevel!,
+        ingredients: this.createIngredients(newRecipe.Ingredients),
+        outputs: this.createOutputs(newRecipe.Outputs)
       };
 
       this.recipes.update(recipes => recipes.set(iRecipe.nameID, new Recipe(iRecipe)));
     });
   }
 
-  private convertNameToObjectNameID(name: string): string {
-    // This is a bit of a hack, the server names are not the IDs. Since our tables/skills potentially have localized
-    // names, we need to remove spaces and append Object to the end (e.g. Blast Furnace vs BlastFurnaceObject)
-    return name.replaceAll(' ', '') + 'Object';
+  private createIngredients(ingredients: ServerIngredient[] | undefined): Ingredient[] {
+    const result: Ingredient[] = [];
+    if (!ingredients) {
+      return result;
+    }
+
+    for (let ing of ingredients) {
+      const iIngredient: Ingredient = {
+        quantity: ing.Ammount,
+        reducible: !ing.IsStatic,
+        item: this.items().get(ing.NameID!)!
+      };
+      result.push(iIngredient);
+    }
+
+    return result;
+  }
+
+  private createOutputs(outputs: ServerOutput[] | undefined): Output[] {
+    const result: Output[] = [];
+    if (!outputs) {
+      return result;
+    }
+
+    for (let i = 0; i < outputs.length; i++) {
+      const out = outputs[i];
+      const iOutput: Output = {
+        quantity: out.Ammount,
+        reducible: !out.IsStatic,
+        item: this.items().get(out.NameID!)!,
+        primary: i === 0
+      };
+      result.push(iOutput);
+    }
+
+    return result;
   }
 }

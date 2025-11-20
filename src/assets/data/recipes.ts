@@ -811,7 +811,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarStone'),
+          'item': getItemByNameID('AshlarBasaltItem'),
           'quantity': 2,
           'reducible': false,
           'primary': true
@@ -851,7 +851,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarStone'),
+          'item': getItemByNameID('AshlarGneissItem'),
           'quantity': 2,
           'reducible': false,
           'primary': true
@@ -891,7 +891,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarStone'),
+          'item': getItemByNameID('AshlarGraniteItem'),
           'quantity': 2,
           'reducible': false,
           'primary': true
@@ -955,7 +955,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarStone'),
+          'item': getItemByNameID('AshlarLimestoneItem'),
           'quantity': 2,
           'reducible': false,
           'primary': true
@@ -995,7 +995,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarStone'),
+          'item': getItemByNameID('AshlarSandstoneItem'),
           'quantity': 2,
           'reducible': false,
           'primary': true
@@ -1035,7 +1035,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('AshlarStone'),
+          'item': getItemByNameID('AshlarShaleItem'),
           'quantity': 2,
           'reducible': false,
           'primary': true
@@ -2521,7 +2521,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('WoodBoard'),
+          'item': getItemByNameID('BoardItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -4850,7 +4850,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('CompositeLumber'),
+          'item': getItemByNameID('CompositeLumberItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -5279,7 +5279,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('ClayMoldItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -5289,6 +5289,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 4,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('ClayMoldItem'),
+          'quantity': 2,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -9375,7 +9381,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('ClayMoldItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -9385,6 +9391,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 4,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('ClayMoldItem'),
+          'quantity': 2,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -10419,7 +10431,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('ClayMoldItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -10429,6 +10441,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 4,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('ClayMoldItem'),
+          'quantity': 2,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -11889,7 +11907,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('Lumber'),
+          'item': getItemByNameID('LumberItem'),
           'quantity': 2,
           'reducible': false,
           'primary': true
@@ -15713,7 +15731,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('WoodBoard'),
+          'item': getItemByNameID('BoardItem'),
           'quantity': 3,
           'reducible': false,
           'primary': true
@@ -16076,7 +16094,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('WoodenMoldItem'),
-          'quantity': 4,
+          'quantity': 8,
           'reducible': true
         }
       ],
@@ -16086,6 +16104,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 8,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('WoodenMoldItem'),
+          'quantity': 4,
+          'reducible': true,
+          'primary': false
         }
       ]
     },
@@ -16715,7 +16739,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('ClayMoldItem'),
-          'quantity': 3,
+          'quantity': 6,
           'reducible': true
         }
       ],
@@ -16725,6 +16749,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 6,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('ClayMoldItem'),
+          'quantity': 3,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -16750,7 +16780,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('ClayMoldItem'),
-          'quantity': 3,
+          'quantity': 6,
           'reducible': true
         }
       ],
@@ -16760,6 +16790,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 6,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('ClayMoldItem'),
+          'quantity': 3,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -16785,7 +16821,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('ClayMoldItem'),
-          'quantity': 3,
+          'quantity': 6,
           'reducible': true
         }
       ],
@@ -16795,6 +16831,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 6,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('ClayMoldItem'),
+          'quantity': 3,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -17699,7 +17741,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('CeramicMoldItem'),
-          'quantity': 1,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -17709,6 +17751,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 4,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('CeramicMoldItem'),
+          'quantity': 3,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -17744,7 +17792,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('CeramicMoldItem'),
-          'quantity': 1,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -17754,6 +17802,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 4,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('CeramicMoldItem'),
+          'quantity': 3,
+          'reducible': true,
+          'primary': false
         },
         {
           'item': getItemByNameID('SlagItem'),
@@ -18798,7 +18852,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('Oil'),
+          'item': getItemByNameID('OilItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -21560,7 +21614,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('Oil'),
+          'item': getItemByNameID('OilItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -23182,7 +23236,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('WoodBoard'),
+          'item': getItemByNameID('BoardItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -24475,7 +24529,7 @@ export const recipesArray: IRecipe[] =
         },
         {
           'item': getItemByNameID('WoodenMoldItem'),
-          'quantity': 2,
+          'quantity': 4,
           'reducible': true
         }
       ],
@@ -24485,6 +24539,12 @@ export const recipesArray: IRecipe[] =
           'quantity': 4,
           'reducible': false,
           'primary': true
+        },
+        {
+          'item': getItemByNameID('WoodenMoldItem'),
+          'quantity': 2,
+          'reducible': true,
+          'primary': false
         }
       ]
     },
@@ -26213,7 +26273,7 @@ export const recipesArray: IRecipe[] =
       ],
       'outputs': [
         {
-          'item': getItemByNameID('HewnLog'),
+          'item': getItemByNameID('HewnLogItem'),
           'quantity': 1,
           'reducible': false,
           'primary': true
@@ -31518,6 +31578,1054 @@ export const recipesArray: IRecipe[] =
       'outputs': [
         {
           'item': getItemByNameID('WoodDoubleShelfItem'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Advanced Baking Skill Book',
+      'nameID': 'AdvancedBaking',
+      'skill': getSkillByNameID('BakingSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CulinaryResearchPaperAdvancedItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ModernResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('AdvancedBakingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Advanced Cooking Skill Book',
+      'nameID': 'AdvancedCooking',
+      'skill': getSkillByNameID('CookingSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CulinaryResearchPaperAdvancedItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ModernResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('AdvancedCookingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Advanced Masonry Skill Book',
+      'nameID': 'AdvancedMasonry',
+      'skill': getSkillByNameID('PotterySkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('AdvancedMasonrySkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Advanced Smelting Skill Book',
+      'nameID': 'AdvancedSmelting',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperBasicItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperAdvancedItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('AdvancedSmeltingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Baking Skill Book',
+      'nameID': 'Baking',
+      'skill': getSkillByNameID('CampfireCookingSkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CulinaryResearchPaperBasicItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BakingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Basic Engineering Skill Book',
+      'nameID': 'BasicEngineering',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 1,
+      'labor': 600,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('DendrologyResearchPaperAdvancedItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BasicEngineeringSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Blacksmith Skill Book',
+      'nameID': 'Blacksmith',
+      'skill': getSkillByNameID('SmeltingSkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperBasicItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('BlacksmithSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Butchery Skill Book',
+      'nameID': 'Butchery',
+      'skill': getSkillByNameID('HuntingSkill'),
+      'level': 1,
+      'labor': 600,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CulinaryResearchPaperBasicItem'),
+          'quantity': 3,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ButcherySkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Carpentry Skill Book',
+      'nameID': 'Carpentry',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 1,
+      'labor': 300,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('DendrologyResearchPaperBasicItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 3,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CarpentrySkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Composites Skill Book',
+      'nameID': 'Composites',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('DendrologyResearchPaperAdvancedItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CompositesSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cooking Skill Book',
+      'nameID': 'Cooking',
+      'skill': getSkillByNameID('CampfireCookingSkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CulinaryResearchPaperBasicItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CookingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Cutting Edge Cooking Skill Book',
+      'nameID': 'CuttingEdgeCooking',
+      'skill': getSkillByNameID('AdvancedCookingSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('CulinaryResearchPaperAdvancedItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CulinaryResearchPaperModernItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AgricultureResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('CuttingEdgeCookingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Electronics Skill Book',
+      'nameID': 'Electronics',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperAdvancedItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperModernItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ModernResearch'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ElectronicsSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Farming Skill Book',
+      'nameID': 'Farming',
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 1,
+      'labor': 300,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 2,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 1,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FarmingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Fertilizers Skill Book',
+      'nameID': 'Fertilizers',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 600,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('AgricultureResearchPaperAdvancedItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('FertilizersSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Glassworking Skill Book',
+      'nameID': 'Glassworking',
+      'skill': getSkillByNameID('MasonrySkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('GlassworkingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Industry Skill Book',
+      'nameID': 'Industry',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('EngineeringResearchPaperAdvancedItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperModernItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperModernItem'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('ModernResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('IndustrySkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Masonry Skill Book',
+      'nameID': 'Masonry',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 1,
+      'labor': 300,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 3,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 3,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MasonrySkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Mechanics Skill Book',
+      'nameID': 'Mechanics',
+      'skill': getSkillByNameID('BasicEngineeringSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('EngineeringResearchPaperAdvancedItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperAdvancedItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 20,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MechanicsSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Milling Skill Book',
+      'nameID': 'Milling',
+      'skill': getSkillByNameID('FarmingSkill'),
+      'level': 1,
+      'labor': 3000,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('DendrologyResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('CulinaryResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 15,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('MillingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Oil Drilling Skill Book',
+      'nameID': 'OilDrilling',
+      'skill': getSkillByNameID('MechanicsSkill'),
+      'level': 1,
+      'labor': 6000,
+      'craftingTable': getCraftingTableByNameID('LaboratoryObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('AgricultureResearchPaperAdvancedItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperModernItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 30,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AdvancedResearch'),
+          'quantity': 20,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('OilDrillingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Painting Skill Book',
+      'nameID': 'Painting',
+      'skill': getSkillByNameID('BasicEngineeringSkill'),
+      'level': 1,
+      'labor': 600,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('EngineeringResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 15,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PaintingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Paper Milling Skill Book',
+      'nameID': 'PaperMilling',
+      'skill': getSkillByNameID('CarpentrySkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('DendrologyResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PaperMillingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Pottery Skill Book',
+      'nameID': 'Pottery',
+      'skill': getSkillByNameID('MasonrySkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GeologyResearchPaperBasicItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('EngineeringResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('PotterySkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Shipwright Skill Book',
+      'nameID': 'Shipwright',
+      'skill': getSkillByNameID('LoggingSkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('DendrologyResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 10,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('ShipwrightSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Smelting Skill Book',
+      'nameID': 'Smelting',
+      'skill': getSkillByNameID('MiningSkill'),
+      'level': 1,
+      'labor': 2400,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('MetallurgyResearchPaperBasicItem'),
+          'quantity': 10,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('DendrologyResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('GeologyResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('SmeltingSkillBook'),
+          'quantity': 1,
+          'reducible': false,
+          'primary': true
+        }
+      ]
+    },
+    {
+      'name': 'Tailoring Skill Book',
+      'nameID': 'Tailoring',
+      'skill': getSkillByNameID('GatheringSkill'),
+      'level': 1,
+      'labor': 600,
+      'craftingTable': getCraftingTableByNameID('ResearchTableObject'),
+      'hidden': false,
+      'ingredients': [
+        {
+          'item': getItemByNameID('GatheringResearchPaperBasicItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('AgricultureResearchPaperAdvancedItem'),
+          'quantity': 5,
+          'reducible': true
+        },
+        {
+          'item': getItemByNameID('BasicResearch'),
+          'quantity': 5,
+          'reducible': true
+        }
+      ],
+      'outputs': [
+        {
+          'item': getItemByNameID('TailoringSkillBook'),
           'quantity': 1,
           'reducible': false,
           'primary': true
