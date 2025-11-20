@@ -8,9 +8,11 @@ export interface ServerItemResponse {
 
 export interface ServerItem {
   PropertyInfos: ServerItemPropertyInfos;
+  Tags: string[];
 }
 
 export interface ServerItemPropertyInfos {
+  Category: StringType;
   DisplayName: LocStringType;
   Name: StringType;
 }

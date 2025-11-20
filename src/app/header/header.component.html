@@ -25,7 +25,7 @@
           <mat-optgroup [label]="serverGroup.name">
             @for (server of serverGroup.servers(); track server.id) {
               <mat-option [value]="server.id">
-                {{ server.name }}
+                {{ server.name() }}
               </mat-option>
             }
           </mat-optgroup>
