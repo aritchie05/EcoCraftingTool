@@ -10,6 +10,7 @@ import {OutputDisplay, SubRecipe} from '../model/output-display';
 import {LaborCost} from '../model/labor-cost';
 import {laborCosts} from '../../assets/data/labor-costs';
 import {Ingredient} from '../model/ingredient';
+import {Output} from '../model/output';
 
 @Injectable({
   providedIn: 'root'
@@ -158,7 +159,7 @@ export class CraftingService {
 
           for (let i = 0; i < recipe.ingredients.length; i++) {
             const ing = recipe.ingredients[i];
-            const quantity = this.computeAdjustedQuantity(recipe, ing);
+            const quantity = this.computeAdjustedInputQuantity(recipe, ing);
             console.debug(`=== Attempting to compute price for ${quantity} ${ing.item.name()} input for ${recipe.name()} ===`);
 
             const input = this.selectedInputs().find(item => item.nameID === ing.item.nameID);
@@ -177,7 +178,7 @@ export class CraftingService {
 
             const otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === ing.item.nameID);
             if (otherRecipe && otherRecipe.isPriceComputed) {
-              console.debug(`Found price of ${otherRecipe.price()} in output recipes list, increased cost by ${otherRecipe.price() * quantity}`);
+              console.debug(`Found base price of ${otherRecipe.basePrice()} in output recipes list, increased cost by ${otherRecipe.basePrice() * quantity}`);
               cost += otherRecipe.basePrice() * quantity;
               continue;
             }
@@ -198,26 +199,27 @@ export class CraftingService {
               } else if (output.primary && recipe.outputs.length === 1) {
                 break;
               }
+              const quantity = this.computeAdjustedOutputQuantity(recipe, output);
 
-              console.debug(`Attempting to compute non-primary output price for ${output.item.name()} for ${recipe.name()}`);
+              console.debug(`===Attempting to compute non-primary output price for ${quantity} ${output.item.name()} for ${recipe.name()}===`);
               const input = this.selectedInputs().find(item => item.nameID === output.item.nameID);
               if (input) {
-                console.debug(`Found price of ${input.price()} in inputs list, reduced cost by ${input.price() * output.quantity}`);
-                cost -= input.price() * output.quantity;
+                console.debug(`Found price of ${input.price()} in inputs list, reduced cost by ${input.price() * quantity}`);
+                cost -= input.price() * quantity;
                 continue;
               }
 
               const byproduct = this.selectedByproducts().find(item => item.nameID === output.item.nameID);
               if (byproduct) {
-                console.debug(`Found price of ${byproduct.price()} in byproducts list, reduced cost by ${byproduct.price() * output.quantity}`);
-                cost -= byproduct.price() * output.quantity;
+                console.debug(`Found price of ${byproduct.price()} in byproducts list, reduced cost by ${byproduct.price() * quantity}`);
+                cost -= byproduct.price() * quantity;
                 continue;
               }
 
               const otherRecipe = this.selectedRecipes().find(r => r.primaryOutput.item.nameID === output.item.nameID);
               if (otherRecipe && otherRecipe.isPriceComputed) {
-                console.debug(`Found price of ${otherRecipe.price()} in output recipes list, reduced cost by ${otherRecipe.price() * output.quantity}`);
-                cost -= otherRecipe.basePrice() * output.quantity;
+                console.debug(`Found base price of ${otherRecipe.basePrice()} in output recipes list, reduced cost by ${otherRecipe.basePrice() * quantity}`);
+                cost -= otherRecipe.basePrice() * quantity;
                 continue;
               }
 
@@ -617,10 +619,23 @@ export class CraftingService {
     return laborCalories * laborCost.modifier;
   }
 
-  computeAdjustedQuantity(recipe: Recipe, input: Ingredient): number {
+  computeAdjustedInputQuantity(recipe: Recipe, input: Ingredient): number {
     let quantity = input.quantity * this.craftResourceModifier();
     if (!input.reducible) {
-      return input.quantity;
+      return quantity;
+    }
+    const modifier = recipe.craftingTable.selectedUpgrade().modifier;
+    quantity *= modifier;
+    if (recipe.skill.lavishChecked()) {
+      quantity *= .95;
+    }
+    return quantity;
+  }
+
+  computeAdjustedOutputQuantity(recipe: Recipe, output: Output): number {
+    let quantity = output.quantity;
+    if (!output.reducible) {
+      return quantity;
     }
     const modifier = recipe.craftingTable.selectedUpgrade().modifier;
     quantity *= modifier;
