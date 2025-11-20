@@ -80,7 +80,7 @@
       <div class="col-start-3 col-span-1 flex items-center justify-center">
         <mat-form-field appearance="outline" class="w-24">
           <input matInput readonly class="cursor-not-allowed"
-                 [value]="formatNumber(craftingService.computeAdjustedQuantity(recipe, input))">
+                 [value]="formatNumber(craftingService.computeAdjustedInputQuantity(recipe, input))">
         </mat-form-field>
       </div>
       <div class="col-start-4 col-span-1 flex items-center justify-center">
@@ -107,7 +107,7 @@
       <div class="col-start-3 col-span-1 flex items-center justify-center">
         <mat-form-field appearance="outline" class="w-24">
           <input matInput readonly class="cursor-not-allowed"
-                 [value]="formatNumber(craftingService.computeAdjustedQuantity(recipe, output))">
+                 [value]="formatNumber(craftingService.computeAdjustedOutputQuantity(recipe, output))">
         </mat-form-field>
       </div>
       <div class="col-start-4 col-span-1 flex items-center justify-center">

@@ -6,7 +6,7 @@ export const itemsArray: IItem[] =
       'name': 'Acorn',
       'nameID': 'AcornItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 12
     },
@@ -14,7 +14,7 @@ export const itemsArray: IItem[] =
       'name': 'Acorn Powder',
       'nameID': 'AcornPowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 2,
       'yPos': 57
     },
@@ -112,7 +112,7 @@ export const itemsArray: IItem[] =
       'name': 'Adorned Ashlar Stone Bench',
       'nameID': 'AdornedAshlarStoneBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 14,
       'yPos': 15
     },
@@ -120,7 +120,7 @@ export const itemsArray: IItem[] =
       'name': 'Adorned Ashlar Stone Chair',
       'nameID': 'AdornedAshlarStoneChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -128,7 +128,7 @@ export const itemsArray: IItem[] =
       'name': 'Adorned Ashlar Stone Table',
       'nameID': 'AdornedAshlarStoneTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 15
     },
@@ -136,7 +136,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Baking Upgrade',
       'nameID': 'AdvancedBakingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 28,
       'yPos': 31
     },
@@ -144,7 +144,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Carpentry Table',
       'nameID': 'AdvancedCarpentryTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 11,
       'yPos': 12
     },
@@ -152,7 +152,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Circuit',
       'nameID': 'AdvancedCircuitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 14
     },
@@ -160,7 +160,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Combustion Engine',
       'nameID': 'AdvancedCombustionEngineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 1,
       'yPos': 11
     },
@@ -168,7 +168,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Cooking Upgrade',
       'nameID': 'AdvancedCookingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 30,
       'yPos': 31
     },
@@ -176,7 +176,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Masonry Table',
       'nameID': 'AdvancedMasonryTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 12
     },
@@ -184,7 +184,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Masonry Upgrade',
       'nameID': 'AdvancedMasonryUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 32,
       'yPos': 31
     },
@@ -192,7 +192,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Research',
       'nameID': 'AdvancedResearch',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 15,
       'yPos': 6
     },
@@ -200,7 +200,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Smelting Upgrade',
       'nameID': 'AdvancedSmeltingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 34,
       'yPos': 31
     },
@@ -208,7 +208,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Tailoring Table',
       'nameID': 'AdvancedTailoringTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 13
     },
@@ -216,7 +216,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Upgrade 1',
       'nameID': 'AdvancedUpgradeLvl1Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 0
     },
@@ -224,7 +224,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Upgrade 2',
       'nameID': 'AdvancedUpgradeLvl2Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 0
     },
@@ -232,7 +232,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Upgrade 3',
       'nameID': 'AdvancedUpgradeLvl3Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 0
     },
@@ -240,7 +240,7 @@ export const itemsArray: IItem[] =
       'name': 'Advanced Upgrade 4',
       'nameID': 'AdvancedUpgradeLvl4Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 7,
       'yPos': 0
     },
@@ -248,7 +248,7 @@ export const itemsArray: IItem[] =
       'name': 'Agave Leaves',
       'nameID': 'AgaveLeavesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 2
     },
@@ -256,7 +256,7 @@ export const itemsArray: IItem[] =
       'name': 'Agave Seed',
       'nameID': 'AgaveSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 1
     },
@@ -264,7 +264,7 @@ export const itemsArray: IItem[] =
       'name': 'Agouti Carcass',
       'nameID': 'AgoutiCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 5
     },
@@ -272,7 +272,7 @@ export const itemsArray: IItem[] =
       'name': 'Agouti Enchiladas',
       'nameID': 'AgoutiEnchiladasItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 2
     },
@@ -280,7 +280,7 @@ export const itemsArray: IItem[] =
       'name': 'Agriculture Research Paper Advanced',
       'nameID': 'AgricultureResearchPaperAdvancedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 4
     },
@@ -288,7 +288,7 @@ export const itemsArray: IItem[] =
       'name': 'Agriculture Research Paper Modern',
       'nameID': 'AgricultureResearchPaperModernItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 4
     },
@@ -296,7 +296,7 @@ export const itemsArray: IItem[] =
       'name': 'Alligator Carcass',
       'nameID': 'AlligatorCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 5
     },
@@ -304,7 +304,7 @@ export const itemsArray: IItem[] =
       'name': 'Amanita Mushroom Spores',
       'nameID': 'AmanitaMushroomSporesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 53,
       'yPos': 55
     },
@@ -312,7 +312,7 @@ export const itemsArray: IItem[] =
       'name': 'Amanita Mushrooms',
       'nameID': 'AmanitaMushroomsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 8
     },
@@ -320,7 +320,7 @@ export const itemsArray: IItem[] =
       'name': 'Amendments',
       'nameID': 'AmendmentsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 0,
       'yPos': 11
     },
@@ -333,7 +333,7 @@ export const itemsArray: IItem[] =
       'name': 'Anvil',
       'nameID': 'AnvilItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -346,7 +346,7 @@ export const itemsArray: IItem[] =
       'name': 'Arrastra',
       'nameID': 'ArrastraItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 8
     },
@@ -354,7 +354,7 @@ export const itemsArray: IItem[] =
       'name': 'Arrow',
       'nameID': 'ArrowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 14
     },
@@ -422,7 +422,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Granite',
       'nameID': 'AshlarGraniteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 2,
       'yPos': 49
     },
@@ -485,7 +485,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Large Stone Fountain',
       'nameID': 'AshlarLargeStoneFountainItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 11,
       'yPos': 15
     },
@@ -493,7 +493,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Limestone',
       'nameID': 'AshlarLimestoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 13,
       'yPos': 7
     },
@@ -616,7 +616,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Small Stone Fountain',
       'nameID': 'AshlarSmallStoneFountainItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 12,
       'yPos': 15
     },
@@ -624,7 +624,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Stone',
       'nameID': 'AshlarStone',
       'tag': true,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 13,
       'yPos': 7
     },
@@ -632,7 +632,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Stone Bench',
       'nameID': 'AshlarStoneBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 14,
       'yPos': 15
     },
@@ -640,7 +640,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Stone Chair',
       'nameID': 'AshlarStoneChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -648,7 +648,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Stone Door',
       'nameID': 'AshlarStoneDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -656,7 +656,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Stone Fireplace',
       'nameID': 'AshlarStoneFireplaceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 15
     },
@@ -664,7 +664,7 @@ export const itemsArray: IItem[] =
       'name': 'Ashlar Stone Table',
       'nameID': 'AshlarStoneTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 15
     },
@@ -672,7 +672,7 @@ export const itemsArray: IItem[] =
       'name': 'Asphalt Concrete',
       'nameID': 'AsphaltConcreteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 6
     },
@@ -680,7 +680,7 @@ export const itemsArray: IItem[] =
       'name': 'Assembly Line',
       'nameID': 'AssemblyLineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 6
     },
@@ -688,7 +688,7 @@ export const itemsArray: IItem[] =
       'name': 'Automatic Loom',
       'nameID': 'AutomaticLoomItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 13
     },
@@ -696,7 +696,7 @@ export const itemsArray: IItem[] =
       'name': 'Autumn Stew',
       'nameID': 'AutumnStewItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 4
     },
@@ -709,7 +709,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Agave',
       'nameID': 'BakedAgaveItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 3
     },
@@ -717,7 +717,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Beet',
       'nameID': 'BakedBeetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 1
     },
@@ -725,7 +725,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Corn',
       'nameID': 'BakedCornItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 2
     },
@@ -733,7 +733,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Heart Of Palm',
       'nameID': 'BakedHeartOfPalmItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 14,
       'yPos': 2
     },
@@ -741,7 +741,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Meat',
       'nameID': 'BakedMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 9
     },
@@ -749,7 +749,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Roast',
       'nameID': 'BakedRoastItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 14
     },
@@ -757,7 +757,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Taro',
       'nameID': 'BakedTaroItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 1
     },
@@ -765,7 +765,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Tomato',
       'nameID': 'BakedTomatoItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 11,
       'yPos': 1
     },
@@ -773,7 +773,7 @@ export const itemsArray: IItem[] =
       'name': 'Baked Vegetable',
       'nameID': 'BakedVegetable',
       'tag': true,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 6,
       'yPos': 2
     },
@@ -781,7 +781,7 @@ export const itemsArray: IItem[] =
       'name': 'Bakery Oven',
       'nameID': 'BakeryOvenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 12
     },
@@ -789,7 +789,7 @@ export const itemsArray: IItem[] =
       'name': 'Baking Upgrade',
       'nameID': 'BakingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 44,
       'yPos': 31
     },
@@ -797,7 +797,7 @@ export const itemsArray: IItem[] =
       'name': 'Ballot Box',
       'nameID': 'BallotBoxItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 11
     },
@@ -805,7 +805,7 @@ export const itemsArray: IItem[] =
       'name': 'Bandana',
       'nameID': 'BandanaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 1,
       'yPos': 4
     },
@@ -813,7 +813,7 @@ export const itemsArray: IItem[] =
       'name': 'Banh Xeo',
       'nameID': 'BanhXeoItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 2
     },
@@ -821,7 +821,7 @@ export const itemsArray: IItem[] =
       'name': 'Bank',
       'nameID': 'BankItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 2
     },
@@ -829,7 +829,7 @@ export const itemsArray: IItem[] =
       'name': 'Bannock',
       'nameID': 'BannockItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 4
     },
@@ -837,7 +837,7 @@ export const itemsArray: IItem[] =
       'name': 'Barrel',
       'nameID': 'BarrelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 13
     },
@@ -850,7 +850,7 @@ export const itemsArray: IItem[] =
       'name': 'Basalt',
       'nameID': 'BasaltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 6
     },
@@ -858,7 +858,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Backpack',
       'nameID': 'BasicBackpackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 8,
       'yPos': 3
     },
@@ -866,7 +866,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Circuit',
       'nameID': 'BasicCircuitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 11
     },
@@ -874,7 +874,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Engineering Upgrade',
       'nameID': 'BasicEngineeringUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 46,
       'yPos': 31
     },
@@ -882,7 +882,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Research',
       'nameID': 'BasicResearch',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 0,
       'yPos': 7
     },
@@ -890,7 +890,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Salad',
       'nameID': 'BasicSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 9
     },
@@ -898,7 +898,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Upgrade 1',
       'nameID': 'BasicUpgradeLvl1Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -906,7 +906,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Upgrade 2',
       'nameID': 'BasicUpgradeLvl2Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 1,
       'yPos': 0
     },
@@ -914,7 +914,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Upgrade 3',
       'nameID': 'BasicUpgradeLvl3Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 2,
       'yPos': 0
     },
@@ -922,7 +922,7 @@ export const itemsArray: IItem[] =
       'name': 'Basic Upgrade 4',
       'nameID': 'BasicUpgradeLvl4Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 3,
       'yPos': 0
     },
@@ -935,7 +935,7 @@ export const itemsArray: IItem[] =
       'name': 'Bathtub',
       'nameID': 'BathtubItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 2,
       'yPos': 14
     },
@@ -943,7 +943,7 @@ export const itemsArray: IItem[] =
       'name': 'Bean Paste',
       'nameID': 'BeanPasteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 9,
       'yPos': 57
     },
@@ -951,7 +951,7 @@ export const itemsArray: IItem[] =
       'name': 'Bean Sprout',
       'nameID': 'BeanSproutItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 2
     },
@@ -959,7 +959,7 @@ export const itemsArray: IItem[] =
       'name': 'Beans',
       'nameID': 'BeansItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 4
     },
@@ -967,7 +967,7 @@ export const itemsArray: IItem[] =
       'name': 'Bear S U P R E M E',
       'nameID': 'BearSUPREMEItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 9,
       'yPos': 9
     },
@@ -975,7 +975,7 @@ export const itemsArray: IItem[] =
       'name': 'Bearclaw',
       'nameID': 'BearclawItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 8
     },
@@ -983,7 +983,7 @@ export const itemsArray: IItem[] =
       'name': 'Bearpack',
       'nameID': 'BearpackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 7
     },
@@ -991,7 +991,7 @@ export const itemsArray: IItem[] =
       'name': 'Beet',
       'nameID': 'BeetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 4
     },
@@ -999,7 +999,7 @@ export const itemsArray: IItem[] =
       'name': 'Beet Campfire Salad',
       'nameID': 'BeetCampfireSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 2
     },
@@ -1007,7 +1007,7 @@ export const itemsArray: IItem[] =
       'name': 'Beet Greens',
       'nameID': 'BeetGreensItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 1,
       'yPos': 1
     },
@@ -1015,7 +1015,7 @@ export const itemsArray: IItem[] =
       'name': 'Beet Seed',
       'nameID': 'BeetSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 15,
       'yPos': 57
     },
@@ -1023,7 +1023,7 @@ export const itemsArray: IItem[] =
       'name': 'Berry Extract Fertilizer',
       'nameID': 'BerryExtractFertilizerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 0,
       'yPos': 53
     },
@@ -1031,7 +1031,7 @@ export const itemsArray: IItem[] =
       'name': 'Big Backpack',
       'nameID': 'BigBackpackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 7
     },
@@ -1044,7 +1044,7 @@ export const itemsArray: IItem[] =
       'name': 'Bighorn Carcass',
       'nameID': 'BighornCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 0,
       'yPos': 8
     },
@@ -1052,7 +1052,7 @@ export const itemsArray: IItem[] =
       'name': 'Biodiesel',
       'nameID': 'BiodieselItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 11
     },
@@ -1060,7 +1060,7 @@ export const itemsArray: IItem[] =
       'name': 'Birch Log',
       'nameID': 'BirchLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 11
     },
@@ -1073,7 +1073,7 @@ export const itemsArray: IItem[] =
       'name': 'Bison Carcass',
       'nameID': 'BisonCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 8
     },
@@ -1081,7 +1081,7 @@ export const itemsArray: IItem[] =
       'name': 'Bison Chow Fun',
       'nameID': 'BisonChowFunItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 2
     },
@@ -1089,7 +1089,7 @@ export const itemsArray: IItem[] =
       'name': 'Bison Mount',
       'nameID': 'BisonMountItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 14
     },
@@ -1097,7 +1097,7 @@ export const itemsArray: IItem[] =
       'name': 'Blast Furnace',
       'nameID': 'BlastFurnaceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 10
     },
@@ -1110,7 +1110,7 @@ export const itemsArray: IItem[] =
       'name': 'Blood Meal Fertilizer',
       'nameID': 'BloodMealFertilizerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 6,
       'yPos': 53
     },
@@ -1118,7 +1118,7 @@ export const itemsArray: IItem[] =
       'name': 'Bloomery',
       'nameID': 'BloomeryItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 10
     },
@@ -1126,7 +1126,7 @@ export const itemsArray: IItem[] =
       'name': 'Blue Shark',
       'nameID': 'BlueSharkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 3,
       'yPos': 7
     },
@@ -1134,7 +1134,7 @@ export const itemsArray: IItem[] =
       'name': 'Board',
       'nameID': 'BoardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 10,
       'yPos': 13
     },
@@ -1142,7 +1142,7 @@ export const itemsArray: IItem[] =
       'name': 'Board',
       'nameID': 'WoodBoard',
       'tag': true,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 10,
       'yPos': 13
     },
@@ -1150,7 +1150,7 @@ export const itemsArray: IItem[] =
       'name': 'Board Of Elections',
       'nameID': 'BoardOfElectionsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 10
     },
@@ -1158,7 +1158,7 @@ export const itemsArray: IItem[] =
       'name': 'Boiled Grains',
       'nameID': 'BoiledGrainsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 9
     },
@@ -1166,7 +1166,7 @@ export const itemsArray: IItem[] =
       'name': 'Boiled Rice',
       'nameID': 'BoiledRiceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 9
     },
@@ -1174,7 +1174,7 @@ export const itemsArray: IItem[] =
       'name': 'Boiled Sausage',
       'nameID': 'BoiledSausageItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 12
     },
@@ -1182,7 +1182,7 @@ export const itemsArray: IItem[] =
       'name': 'Boiler',
       'nameID': 'BoilerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 6
     },
@@ -1190,7 +1190,7 @@ export const itemsArray: IItem[] =
       'name': 'Bolete Mushroom Spores',
       'nameID': 'BoleteMushroomSporesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 10,
       'yPos': 55
     },
@@ -1198,7 +1198,7 @@ export const itemsArray: IItem[] =
       'name': 'Bolete Mushrooms',
       'nameID': 'BoleteMushroomsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 8
     },
@@ -1206,7 +1206,7 @@ export const itemsArray: IItem[] =
       'name': 'Bookshelf',
       'nameID': 'BookshelfItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 11,
       'yPos': 1
     },
@@ -1219,7 +1219,7 @@ export const itemsArray: IItem[] =
       'name': 'Brazier',
       'nameID': 'BrazierItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 13,
       'yPos': 3
     },
@@ -1227,7 +1227,7 @@ export const itemsArray: IItem[] =
       'name': 'Bread',
       'nameID': 'BreadItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 15
     },
@@ -1235,7 +1235,7 @@ export const itemsArray: IItem[] =
       'name': 'Bread',
       'nameID': 'Bread',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 11,
       'yPos': 3
     },
@@ -1243,7 +1243,7 @@ export const itemsArray: IItem[] =
       'name': 'Brick',
       'nameID': 'BrickItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 11
     },
@@ -1251,7 +1251,7 @@ export const itemsArray: IItem[] =
       'name': 'Brick Fireplace',
       'nameID': 'BrickFireplaceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 15
     },
@@ -1259,7 +1259,7 @@ export const itemsArray: IItem[] =
       'name': 'Builder Boots',
       'nameID': 'BuilderBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 1
     },
@@ -1267,7 +1267,7 @@ export const itemsArray: IItem[] =
       'name': 'Builder Gloves',
       'nameID': 'BuilderGlovesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 1
     },
@@ -1275,7 +1275,7 @@ export const itemsArray: IItem[] =
       'name': 'Builder Helmet',
       'nameID': 'BuilderHelmetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 1
     },
@@ -1283,7 +1283,7 @@ export const itemsArray: IItem[] =
       'name': 'Builder Overalls',
       'nameID': 'BuilderOverallsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 0
     },
@@ -1291,7 +1291,7 @@ export const itemsArray: IItem[] =
       'name': 'Builder Shirt',
       'nameID': 'BuilderShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 1
     },
@@ -1309,7 +1309,7 @@ export const itemsArray: IItem[] =
       'name': 'Butchery Table',
       'nameID': 'ButcheryTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 13,
       'yPos': 10
     },
@@ -1317,7 +1317,7 @@ export const itemsArray: IItem[] =
       'name': 'Butchery Upgrade',
       'nameID': 'ButcheryUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 56,
       'yPos': 31
     },
@@ -1325,7 +1325,7 @@ export const itemsArray: IItem[] =
       'name': 'C O2 Canister',
       'nameID': 'CO2CanisterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 13
     },
@@ -1333,7 +1333,7 @@ export const itemsArray: IItem[] =
       'name': 'Camas Ash Fertilizer',
       'nameID': 'CamasAshFertilizerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 10,
       'yPos': 53
     },
@@ -1341,7 +1341,7 @@ export const itemsArray: IItem[] =
       'name': 'Camas Bread',
       'nameID': 'CamasBreadItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 9
     },
@@ -1349,7 +1349,7 @@ export const itemsArray: IItem[] =
       'name': 'Camas Bulb',
       'nameID': 'CamasBulbItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 15
     },
@@ -1357,7 +1357,7 @@ export const itemsArray: IItem[] =
       'name': 'Camas Bulb Bake',
       'nameID': 'CamasBulbBakeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 10
     },
@@ -1365,7 +1365,7 @@ export const itemsArray: IItem[] =
       'name': 'Camas Paste',
       'nameID': 'CamasPasteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 25,
       'yPos': 57
     },
@@ -1373,7 +1373,7 @@ export const itemsArray: IItem[] =
       'name': 'Camo Pants',
       'nameID': 'CamoPantsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 0,
       'yPos': 1,
       'filter': 'invert(15%) sepia(99%) saturate(150%) hue-rotate(83deg) brightness(80%) contrast(180%)'
@@ -1382,7 +1382,7 @@ export const itemsArray: IItem[] =
       'name': 'Camo Shirt',
       'nameID': 'CamoShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 0,
       'yPos': 0,
       'filter': 'invert(15%) sepia(99%) saturate(150%) hue-rotate(83deg) brightness(70%) contrast(180%)'
@@ -1391,7 +1391,7 @@ export const itemsArray: IItem[] =
       'name': 'Campfire',
       'nameID': 'CampfireItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 11
     },
@@ -1399,7 +1399,7 @@ export const itemsArray: IItem[] =
       'name': 'Campfire Cooking Upgrade',
       'nameID': 'CampfireCookingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 58,
       'yPos': 31
     },
@@ -1407,7 +1407,7 @@ export const itemsArray: IItem[] =
       'name': 'Campfire Roast',
       'nameID': 'CampfireRoastItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 24,
       'yPos': 54
     },
@@ -1420,7 +1420,7 @@ export const itemsArray: IItem[] =
       'name': 'Campfire Salad',
       'nameID': 'CampfireSalad',
       'tag': true,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 2,
       'filter': 'grayscale(1)'
@@ -1434,7 +1434,7 @@ export const itemsArray: IItem[] =
       'name': 'Campsite',
       'nameID': 'CampsiteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 1
     },
@@ -1442,7 +1442,7 @@ export const itemsArray: IItem[] =
       'name': 'Candle Stand',
       'nameID': 'CandleStandItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 1
     },
@@ -1450,7 +1450,7 @@ export const itemsArray: IItem[] =
       'name': 'Capitol',
       'nameID': 'CapitolItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 0,
       'yPos': 10
     },
@@ -1458,7 +1458,7 @@ export const itemsArray: IItem[] =
       'name': 'Capris',
       'nameID': 'CaprisItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 1,
       'yPos': 1
     },
@@ -1466,7 +1466,7 @@ export const itemsArray: IItem[] =
       'name': 'Carpentry Advanced Upgrade',
       'nameID': 'CarpentryAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 60,
       'yPos': 31
     },
@@ -1474,7 +1474,7 @@ export const itemsArray: IItem[] =
       'name': 'Carpentry Basic Upgrade',
       'nameID': 'CarpentryBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 62,
       'yPos': 31
     },
@@ -1482,7 +1482,7 @@ export const itemsArray: IItem[] =
       'name': 'Carpentry Table',
       'nameID': 'CarpentryTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 10
     },
@@ -1490,7 +1490,7 @@ export const itemsArray: IItem[] =
       'name': 'Carved Pumpkin',
       'nameID': 'CarvedPumpkinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 9,
       'yPos': 1
     },
@@ -1498,7 +1498,7 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Bed',
       'nameID': 'CastIronBedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 6
     },
@@ -1506,7 +1506,7 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Royal Bed',
       'nameID': 'CastIronRoyalBedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 6
     },
@@ -1514,7 +1514,7 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Stove',
       'nameID': 'CastIronStoveItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 10
     },
@@ -1522,7 +1522,7 @@ export const itemsArray: IItem[] =
       'name': 'Cedar Log',
       'nameID': 'CedarLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 15
     },
@@ -1535,7 +1535,7 @@ export const itemsArray: IItem[] =
       'name': 'Ceiba Log',
       'nameID': 'CeibaLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 12
     },
@@ -1548,7 +1548,7 @@ export const itemsArray: IItem[] =
       'name': 'Ceiling Candle',
       'nameID': 'CeilingCandleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 3
     },
@@ -1556,7 +1556,7 @@ export const itemsArray: IItem[] =
       'name': 'Cellulose Fiber',
       'nameID': 'CelluloseFiberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 12,
       'yPos': 53
     },
@@ -1564,7 +1564,7 @@ export const itemsArray: IItem[] =
       'name': 'Cement',
       'nameID': 'CementItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -1572,7 +1572,7 @@ export const itemsArray: IItem[] =
       'name': 'Cement Kiln',
       'nameID': 'CementKilnItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 10
     },
@@ -1580,7 +1580,7 @@ export const itemsArray: IItem[] =
       'name': 'Census Bureau',
       'nameID': 'CensusBureauItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 1,
       'yPos': 10
     },
@@ -1588,7 +1588,7 @@ export const itemsArray: IItem[] =
       'name': 'Cereal Germ',
       'nameID': 'CerealGermItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 12
     },
@@ -1596,7 +1596,7 @@ export const itemsArray: IItem[] =
       'name': 'Chainsaw',
       'nameID': 'ChainsawItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 3
     },
@@ -1604,7 +1604,7 @@ export const itemsArray: IItem[] =
       'name': 'Chair',
       'nameID': 'ChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -1612,7 +1612,7 @@ export const itemsArray: IItem[] =
       'name': 'Charcoal',
       'nameID': 'CharcoalItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 11
     },
@@ -1620,7 +1620,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Agave',
       'nameID': 'CharredAgaveItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 3
     },
@@ -1628,7 +1628,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Beans',
       'nameID': 'CharredBeansItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 3
     },
@@ -1636,7 +1636,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Beet',
       'nameID': 'CharredBeetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 9
     },
@@ -1644,7 +1644,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Cactus Fruit',
       'nameID': 'CharredCactusFruitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 2,
       'yPos': 1
     },
@@ -1652,7 +1652,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Camas Bulb',
       'nameID': 'CharredCamasBulbItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 9
     },
@@ -1660,7 +1660,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Corn',
       'nameID': 'CharredCornItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 10
     },
@@ -1668,7 +1668,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Fireweed Shoots',
       'nameID': 'CharredFireweedShootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 1
     },
@@ -1676,7 +1676,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Fish',
       'nameID': 'CharredFishItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 10
     },
@@ -1684,7 +1684,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Heart Of Palm',
       'nameID': 'CharredHeartOfPalmItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 1,
       'yPos': 3
     },
@@ -1692,7 +1692,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Meat',
       'nameID': 'CharredMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 10
     },
@@ -1700,7 +1700,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Mushrooms',
       'nameID': 'CharredMushroomsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 3,
       'yPos': 1
     },
@@ -1708,7 +1708,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Papaya',
       'nameID': 'CharredPapayaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 1,
       'yPos': 2
     },
@@ -1716,7 +1716,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Pineapple',
       'nameID': 'CharredPineappleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 10
     },
@@ -1724,7 +1724,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Sausage',
       'nameID': 'CharredSausageItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 10
     },
@@ -1732,7 +1732,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Taro',
       'nameID': 'CharredTaroItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 2
     },
@@ -1740,7 +1740,7 @@ export const itemsArray: IItem[] =
       'name': 'Charred Tomato',
       'nameID': 'CharredTomatoItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 10
     },
@@ -1748,7 +1748,7 @@ export const itemsArray: IItem[] =
       'name': 'Chef Hat',
       'nameID': 'ChefHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 1
     },
@@ -1756,7 +1756,7 @@ export const itemsArray: IItem[] =
       'name': 'Chef Pants',
       'nameID': 'ChefPantsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 1
     },
@@ -1764,7 +1764,7 @@ export const itemsArray: IItem[] =
       'name': 'Chef Shirt',
       'nameID': 'ChefShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 1
     },
@@ -1772,7 +1772,7 @@ export const itemsArray: IItem[] =
       'name': 'Chef Shoes',
       'nameID': 'ChefShoesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 1
     },
@@ -1780,7 +1780,7 @@ export const itemsArray: IItem[] =
       'name': 'Clam',
       'nameID': 'ClamItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 12
     },
@@ -1788,7 +1788,7 @@ export const itemsArray: IItem[] =
       'name': 'Clam Chowder',
       'nameID': 'ClamChowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 3
     },
@@ -1796,7 +1796,7 @@ export const itemsArray: IItem[] =
       'name': 'Clay',
       'nameID': 'ClayItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 1
     },
@@ -1804,7 +1804,7 @@ export const itemsArray: IItem[] =
       'name': 'Cloth',
       'nameID': 'ClothItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 4
     },
@@ -1812,7 +1812,7 @@ export const itemsArray: IItem[] =
       'name': 'Cloth Belt',
       'nameID': 'ClothBeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 3,
       'yPos': 7
     },
@@ -1820,7 +1820,7 @@ export const itemsArray: IItem[] =
       'name': 'Cloth Cape',
       'nameID': 'ClothCapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 2,
       'yPos': 7
     },
@@ -1833,7 +1833,7 @@ export const itemsArray: IItem[] =
       'name': 'Coal',
       'nameID': 'CoalItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 7
     },
@@ -1841,7 +1841,7 @@ export const itemsArray: IItem[] =
       'name': 'Coal',
       'nameID': 'Coal',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 11,
       'yPos': 4
     },
@@ -1854,7 +1854,7 @@ export const itemsArray: IItem[] =
       'name': 'Combustion Engine',
       'nameID': 'CombustionEngineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 7
     },
@@ -1862,7 +1862,7 @@ export const itemsArray: IItem[] =
       'name': 'Combustion Generator',
       'nameID': 'CombustionGeneratorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 3
     },
@@ -1895,7 +1895,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Bow',
       'nameID': 'CompositeBowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 0,
       'yPos': 14
     },
@@ -1953,7 +1953,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Filler',
       'nameID': 'CompositeFillerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 19,
       'yPos': 53
     },
@@ -2031,7 +2031,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Lumber',
       'nameID': 'CompositeLumberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 14
     },
@@ -2039,7 +2039,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Lumber Bench',
       'nameID': 'CompositeLumberBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 14,
       'yPos': 15
     },
@@ -2047,7 +2047,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Lumber Chair',
       'nameID': 'CompositeLumberChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -2055,7 +2055,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Lumber Door',
       'nameID': 'CompositeLumberDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -2063,7 +2063,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Lumber Table',
       'nameID': 'CompositeLumberTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 15
     },
@@ -2216,7 +2216,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Lumber',
       'nameID': 'CompositeLumber',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 5,
       'yPos': 2
     },
@@ -2224,7 +2224,7 @@ export const itemsArray: IItem[] =
       'name': 'Composites Upgrade',
       'nameID': 'CompositesUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 0,
       'yPos': 30
     },
@@ -2232,7 +2232,7 @@ export const itemsArray: IItem[] =
       'name': 'Compost',
       'nameID': 'CompostItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 5
     },
@@ -2240,7 +2240,7 @@ export const itemsArray: IItem[] =
       'name': 'Compost Fertilizer',
       'nameID': 'CompostFertilizerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 22,
       'yPos': 53
     },
@@ -2248,7 +2248,7 @@ export const itemsArray: IItem[] =
       'name': 'Computer Lab',
       'nameID': 'ComputerLabItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 3
     },
@@ -2256,7 +2256,7 @@ export const itemsArray: IItem[] =
       'name': 'Concrete',
       'nameID': 'Concrete',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 11,
       'yPos': 2
     },
@@ -2264,7 +2264,7 @@ export const itemsArray: IItem[] =
       'name': 'Construction Post',
       'nameID': 'ConstructionPostItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 12
     },
@@ -2272,7 +2272,7 @@ export const itemsArray: IItem[] =
       'name': 'Contract Board',
       'nameID': 'ContractBoardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 9
     },
@@ -2280,7 +2280,7 @@ export const itemsArray: IItem[] =
       'name': 'Cookeina Mushroom Spores',
       'nameID': 'CookeinaMushroomSporesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 17,
       'yPos': 55
     },
@@ -2288,7 +2288,7 @@ export const itemsArray: IItem[] =
       'name': 'Cookeina Mushrooms',
       'nameID': 'CookeinaMushroomsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -2296,7 +2296,7 @@ export const itemsArray: IItem[] =
       'name': 'Cooking Upgrade',
       'nameID': 'CookingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 2,
       'yPos': 30
     },
@@ -2304,7 +2304,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Bar',
       'nameID': 'CopperBarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 7
     },
@@ -2312,7 +2312,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Concentrate',
       'nameID': 'CopperConcentrateItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 9
     },
@@ -2320,7 +2320,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Ore',
       'nameID': 'CopperOreItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 11,
       'yPos': 0
     },
@@ -2328,7 +2328,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Pipe',
       'nameID': 'CopperPipeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 4,
       'filter': 'invert(33%) sepia(40%) saturate(275%) hue-rotate(344deg) brightness(80%) contrast(250%)'
@@ -2337,7 +2337,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Wiring',
       'nameID': 'CopperWiringItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 6
     },
@@ -2345,7 +2345,7 @@ export const itemsArray: IItem[] =
       'name': 'Corn',
       'nameID': 'CornItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 4
     },
@@ -2353,7 +2353,7 @@ export const itemsArray: IItem[] =
       'name': 'Corn Fritters',
       'nameID': 'CornFrittersItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 9
     },
@@ -2361,7 +2361,7 @@ export const itemsArray: IItem[] =
       'name': 'Corn Seed',
       'nameID': 'CornSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 42,
       'yPos': 57
     },
@@ -2369,7 +2369,7 @@ export const itemsArray: IItem[] =
       'name': 'Corn Starch',
       'nameID': 'CornStarchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 12
     },
@@ -2377,7 +2377,7 @@ export const itemsArray: IItem[] =
       'name': 'Cornmeal',
       'nameID': 'CornmealItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 40,
       'yPos': 57
     },
@@ -2385,7 +2385,7 @@ export const itemsArray: IItem[] =
       'name': 'Corrugated Steel',
       'nameID': 'CorrugatedSteelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 10
     },
@@ -2393,7 +2393,7 @@ export const itemsArray: IItem[] =
       'name': 'Corrugated Steel Door',
       'nameID': 'CorrugatedSteelDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -2401,7 +2401,7 @@ export const itemsArray: IItem[] =
       'name': 'Corrugated Steel Fence Door',
       'nameID': 'CorrugatedSteelFenceDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -2409,7 +2409,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Boll',
       'nameID': 'CottonBollItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 3,
       'yPos': 12
     },
@@ -2417,7 +2417,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Carpet',
       'nameID': 'CottonCarpetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -2425,7 +2425,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Curtains',
       'nameID': 'CottonCurtainsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 1,
       'yPos': 14
     },
@@ -2433,7 +2433,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Fabric',
       'nameID': 'CottonFabricItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 12
     },
@@ -2441,7 +2441,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Seed',
       'nameID': 'CottonSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 1,
       'yPos': 13
     },
@@ -2449,7 +2449,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Thread',
       'nameID': 'CottonThreadItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 8,
       'yPos': 13
     },
@@ -2457,7 +2457,7 @@ export const itemsArray: IItem[] =
       'name': 'Couch',
       'nameID': 'CouchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 9
     },
@@ -2465,7 +2465,7 @@ export const itemsArray: IItem[] =
       'name': 'Court',
       'nameID': 'CourtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 3,
       'yPos': 10
     },
@@ -2473,7 +2473,7 @@ export const itemsArray: IItem[] =
       'name': 'Coyote Carcass',
       'nameID': 'CoyoteCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 3
     },
@@ -2481,7 +2481,7 @@ export const itemsArray: IItem[] =
       'name': 'Crab Carcass',
       'nameID': 'CrabCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 4,
       'yPos': 3
     },
@@ -2489,7 +2489,7 @@ export const itemsArray: IItem[] =
       'name': 'Crab Pot',
       'nameID': 'CrabPotItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 8,
       'yPos': 9
     },
@@ -2502,7 +2502,7 @@ export const itemsArray: IItem[] =
       'name': 'Crane',
       'nameID': 'CraneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 5
     },
@@ -2510,7 +2510,7 @@ export const itemsArray: IItem[] =
       'name': 'Creosote Bush Seed',
       'nameID': 'CreosoteBushSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -2518,7 +2518,7 @@ export const itemsArray: IItem[] =
       'name': 'Crimini Mushroom Spores',
       'nameID': 'CriminiMushroomSporesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 48,
       'yPos': 57
     },
@@ -2526,7 +2526,7 @@ export const itemsArray: IItem[] =
       'name': 'Crimini Mushrooms',
       'nameID': 'CriminiMushroomsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 8
     },
@@ -2534,7 +2534,7 @@ export const itemsArray: IItem[] =
       'name': 'Crimson Salad',
       'nameID': 'CrimsonSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 9
     },
@@ -2542,7 +2542,7 @@ export const itemsArray: IItem[] =
       'name': 'Crispy Bacon',
       'nameID': 'CrispyBaconItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 51,
       'yPos': 57
     },
@@ -2550,7 +2550,7 @@ export const itemsArray: IItem[] =
       'name': 'Crop',
       'nameID': 'Crop',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 15,
       'yPos': 2
     },
@@ -2558,7 +2558,7 @@ export const itemsArray: IItem[] =
       'name': 'Crop Seed',
       'nameID': 'CropSeed',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -2566,7 +2566,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Basalt',
       'nameID': 'CrushedBasaltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 15,
       'yPos': 9
     },
@@ -2574,7 +2574,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Coal',
       'nameID': 'CrushedCoalItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 11,
       'yPos': 14
     },
@@ -2582,7 +2582,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Copper Ore',
       'nameID': 'CrushedCopperOreItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 13,
       'yPos': 9
     },
@@ -2590,7 +2590,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Gneiss',
       'nameID': 'CrushedGneissItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 9
     },
@@ -2598,7 +2598,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Gold Ore',
       'nameID': 'CrushedGoldOreItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 9
     },
@@ -2606,7 +2606,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Granite',
       'nameID': 'CrushedGraniteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 4,
       'yPos': 9
     },
@@ -2614,7 +2614,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Iron Ore',
       'nameID': 'CrushedIronOreItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 9
     },
@@ -2622,7 +2622,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Limestone',
       'nameID': 'CrushedLimestoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 9
     },
@@ -2630,7 +2630,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Mixed Rock',
       'nameID': 'CrushedMixedRockItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 12,
       'yPos': 10
     },
@@ -2643,7 +2643,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Rock',
       'nameID': 'CrushedRock',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 1,
       'yPos': 2
     },
@@ -2651,7 +2651,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Sandstone',
       'nameID': 'CrushedSandstoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 9
     },
@@ -2659,7 +2659,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Shale',
       'nameID': 'CrushedShaleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 9
     },
@@ -2667,7 +2667,7 @@ export const itemsArray: IItem[] =
       'name': 'Crushed Slag',
       'nameID': 'CrushedSlagItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 4
     },
@@ -2680,7 +2680,7 @@ export const itemsArray: IItem[] =
       'name': 'Culinary Research Paper Advanced',
       'nameID': 'CulinaryResearchPaperAdvancedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 5
     },
@@ -2688,7 +2688,7 @@ export const itemsArray: IItem[] =
       'name': 'Culinary Research Paper Basic',
       'nameID': 'CulinaryResearchPaperBasicItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 13
     },
@@ -2696,7 +2696,7 @@ export const itemsArray: IItem[] =
       'name': 'Culinary Research Paper Modern',
       'nameID': 'CulinaryResearchPaperModernItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 5
     },
@@ -2704,7 +2704,7 @@ export const itemsArray: IItem[] =
       'name': 'Currency Exchange',
       'nameID': 'CurrencyExchangeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 21,
       'yPos': 47
     },
@@ -2712,7 +2712,7 @@ export const itemsArray: IItem[] =
       'name': 'Cutting Edge Cooking Upgrade',
       'nameID': 'CuttingEdgeCookingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 4,
       'yPos': 30
     },
@@ -2720,7 +2720,7 @@ export const itemsArray: IItem[] =
       'name': 'Deer Carcass',
       'nameID': 'DeerCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 2,
       'yPos': 8
     },
@@ -2728,7 +2728,7 @@ export const itemsArray: IItem[] =
       'name': 'Dendrology Research Paper Advanced',
       'nameID': 'DendrologyResearchPaperAdvancedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 5
     },
@@ -2736,7 +2736,7 @@ export const itemsArray: IItem[] =
       'name': 'Dendrology Research Paper Basic',
       'nameID': 'DendrologyResearchPaperBasicItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 13
     },
@@ -2744,7 +2744,7 @@ export const itemsArray: IItem[] =
       'name': 'Dendrology Research Paper Modern',
       'nameID': 'DendrologyResearchPaperModernItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 5
     },
@@ -2752,7 +2752,7 @@ export const itemsArray: IItem[] =
       'name': 'Derpy Hat',
       'nameID': 'DerpyHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 0,
       'yPos': 4
     },
@@ -2760,7 +2760,7 @@ export const itemsArray: IItem[] =
       'name': 'Dirt',
       'nameID': 'DirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 14
     },
@@ -2768,7 +2768,7 @@ export const itemsArray: IItem[] =
       'name': 'Dirt Ramp',
       'nameID': 'DirtRampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 7
     },
@@ -2776,7 +2776,7 @@ export const itemsArray: IItem[] =
       'name': 'Distribution Station',
       'nameID': 'DistributionStationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 1
     },
@@ -2784,7 +2784,7 @@ export const itemsArray: IItem[] =
       'name': 'Door',
       'nameID': 'DoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -2812,7 +2812,7 @@ export const itemsArray: IItem[] =
       'name': 'Easel',
       'nameID': 'EaselItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 1,
       'yPos': 12
     },
@@ -2835,7 +2835,7 @@ export const itemsArray: IItem[] =
       'name': 'Electric Lathe',
       'nameID': 'ElectricLatheItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 1
     },
@@ -2843,7 +2843,7 @@ export const itemsArray: IItem[] =
       'name': 'Electric Machinist Table',
       'nameID': 'ElectricMachinistTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 2
     },
@@ -2851,7 +2851,7 @@ export const itemsArray: IItem[] =
       'name': 'Electric Motor',
       'nameID': 'ElectricMotorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 7
     },
@@ -2859,7 +2859,7 @@ export const itemsArray: IItem[] =
       'name': 'Electric Planer',
       'nameID': 'ElectricPlanerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 1
     },
@@ -2867,7 +2867,7 @@ export const itemsArray: IItem[] =
       'name': 'Electric Stamping Press',
       'nameID': 'ElectricStampingPressItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 1
     },
@@ -2875,7 +2875,7 @@ export const itemsArray: IItem[] =
       'name': 'Electric Wall Lamp',
       'nameID': 'ElectricWallLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 1
     },
@@ -2883,7 +2883,7 @@ export const itemsArray: IItem[] =
       'name': 'Electric Water Pump',
       'nameID': 'ElectricWaterPumpItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 4
     },
@@ -2891,7 +2891,7 @@ export const itemsArray: IItem[] =
       'name': 'Electronics Assembly',
       'nameID': 'ElectronicsAssemblyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 6
     },
@@ -2899,7 +2899,7 @@ export const itemsArray: IItem[] =
       'name': 'Electronics Upgrade',
       'nameID': 'ElectronicsUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 6,
       'yPos': 30
     },
@@ -2907,7 +2907,7 @@ export const itemsArray: IItem[] =
       'name': 'Elevator Call Post',
       'nameID': 'ElevatorCallPostItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 9
     },
@@ -2915,7 +2915,7 @@ export const itemsArray: IItem[] =
       'name': 'Elk Carcass',
       'nameID': 'ElkCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 8
     },
@@ -2923,7 +2923,7 @@ export const itemsArray: IItem[] =
       'name': 'Elk Mount',
       'nameID': 'ElkMountItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 14
     },
@@ -2936,7 +2936,7 @@ export const itemsArray: IItem[] =
       'name': 'Elk Taco',
       'nameID': 'ElkTacoItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 9
     },
@@ -2944,7 +2944,7 @@ export const itemsArray: IItem[] =
       'name': 'Elk Wellington',
       'nameID': 'ElkWellingtonItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 10
     },
@@ -2952,7 +2952,7 @@ export const itemsArray: IItem[] =
       'name': 'Engineering Research Paper Advanced',
       'nameID': 'EngineeringResearchPaperAdvancedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 5
     },
@@ -2960,7 +2960,7 @@ export const itemsArray: IItem[] =
       'name': 'Engineering Research Paper Modern',
       'nameID': 'EngineeringResearchPaperModernItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 5
     },
@@ -2968,7 +2968,7 @@ export const itemsArray: IItem[] =
       'name': 'Epoxy',
       'nameID': 'EpoxyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 6
     },
@@ -2976,7 +2976,7 @@ export const itemsArray: IItem[] =
       'name': 'Ethanol',
       'nameID': 'EthanolItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 11
     },
@@ -2984,7 +2984,7 @@ export const itemsArray: IItem[] =
       'name': 'Excavator',
       'nameID': 'ExcavatorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 2,
       'yPos': 9
     },
@@ -2992,7 +2992,7 @@ export const itemsArray: IItem[] =
       'name': 'Executive Office',
       'nameID': 'ExecutiveOfficeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 13
     },
@@ -3000,7 +3000,7 @@ export const itemsArray: IItem[] =
       'name': 'Explorer Belt',
       'nameID': 'ExplorerBeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 1
     },
@@ -3008,7 +3008,7 @@ export const itemsArray: IItem[] =
       'name': 'Explorer Boots',
       'nameID': 'ExplorerBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 1
     },
@@ -3016,7 +3016,7 @@ export const itemsArray: IItem[] =
       'name': 'Explorer Gloves',
       'nameID': 'ExplorerGlovesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 1
     },
@@ -3024,7 +3024,7 @@ export const itemsArray: IItem[] =
       'name': 'Explorer Hat',
       'nameID': 'ExplorerHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -3032,7 +3032,7 @@ export const itemsArray: IItem[] =
       'name': 'Explorer Pants',
       'nameID': 'ExplorerPantsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 1
     },
@@ -3040,7 +3040,7 @@ export const itemsArray: IItem[] =
       'name': 'Explorer Shirt',
       'nameID': 'ExplorerShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 1
     },
@@ -3048,7 +3048,7 @@ export const itemsArray: IItem[] =
       'name': 'Fabric',
       'nameID': 'Fabric',
       'tag': true,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 12
     },
@@ -3056,7 +3056,7 @@ export const itemsArray: IItem[] =
       'name': 'Fantastic Forest Pizza',
       'nameID': 'FantasticForestPizzaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 3
     },
@@ -3064,7 +3064,7 @@ export const itemsArray: IItem[] =
       'name': 'Farmer Boots',
       'nameID': 'FarmerBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 0
     },
@@ -3072,7 +3072,7 @@ export const itemsArray: IItem[] =
       'name': 'Farmer Gloves',
       'nameID': 'FarmerGlovesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 0
     },
@@ -3080,7 +3080,7 @@ export const itemsArray: IItem[] =
       'name': 'Farmer Hat',
       'nameID': 'FarmerHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 0
     },
@@ -3088,7 +3088,7 @@ export const itemsArray: IItem[] =
       'name': 'Farmer Overalls',
       'nameID': 'FarmerOverallsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 0
     },
@@ -3096,7 +3096,7 @@ export const itemsArray: IItem[] =
       'name': 'Farmer Shirt',
       'nameID': 'FarmerShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 0
     },
@@ -3104,7 +3104,7 @@ export const itemsArray: IItem[] =
       'name': 'Farmers Table',
       'nameID': 'FarmersTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 9
     },
@@ -3112,7 +3112,7 @@ export const itemsArray: IItem[] =
       'name': 'Farming Upgrade',
       'nameID': 'FarmingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 8,
       'yPos': 30
     },
@@ -3120,7 +3120,7 @@ export const itemsArray: IItem[] =
       'name': 'Fat',
       'nameID': 'Fat',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 0,
       'yPos': 4
     },
@@ -3128,7 +3128,7 @@ export const itemsArray: IItem[] =
       'name': 'Fern Campfire Salad',
       'nameID': 'FernCampfireSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 5,
       'yPos': 54
     },
@@ -3136,7 +3136,7 @@ export const itemsArray: IItem[] =
       'name': 'Fern Spore',
       'nameID': 'FernSporeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 4,
       'yPos': 6
     },
@@ -3144,7 +3144,7 @@ export const itemsArray: IItem[] =
       'name': 'Fertilizer',
       'nameID': 'Fertilizer',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 15,
       'yPos': 7
     },
@@ -3152,7 +3152,7 @@ export const itemsArray: IItem[] =
       'name': 'Fertilizer Filler',
       'nameID': 'FertilizerFiller',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 2,
       'yPos': 8
     },
@@ -3160,7 +3160,7 @@ export const itemsArray: IItem[] =
       'name': 'Fertilizers Upgrade',
       'nameID': 'FertilizersUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 10,
       'yPos': 30
     },
@@ -3168,7 +3168,7 @@ export const itemsArray: IItem[] =
       'name': 'Fiber Filler',
       'nameID': 'FiberFillerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 32,
       'yPos': 53
     },
@@ -3176,7 +3176,7 @@ export const itemsArray: IItem[] =
       'name': 'Fiberglass',
       'nameID': 'FiberglassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 3,
       'yPos': 10
     },
@@ -3184,7 +3184,7 @@ export const itemsArray: IItem[] =
       'name': 'Fiddleheads',
       'nameID': 'FiddleheadsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 8
     },
@@ -3192,7 +3192,7 @@ export const itemsArray: IItem[] =
       'name': 'Field Campfire Stew',
       'nameID': 'FieldCampfireStewItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 1
     },
@@ -3205,7 +3205,7 @@ export const itemsArray: IItem[] =
       'name': 'Fir Log',
       'nameID': 'FirLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 13
     },
@@ -3218,7 +3218,7 @@ export const itemsArray: IItem[] =
       'name': 'Fireweed Seed',
       'nameID': 'FireweedSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 58,
       'yPos': 57
     },
@@ -3226,7 +3226,7 @@ export const itemsArray: IItem[] =
       'name': 'Fireweed Shoots',
       'nameID': 'FireweedShootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 60,
       'yPos': 57
     },
@@ -3234,7 +3234,7 @@ export const itemsArray: IItem[] =
       'name': 'Fish',
       'nameID': 'Fish',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 6
     },
@@ -3242,7 +3242,7 @@ export const itemsArray: IItem[] =
       'name': 'Fish N Chips',
       'nameID': 'FishNChipsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 4
     },
@@ -3250,7 +3250,7 @@ export const itemsArray: IItem[] =
       'name': 'Fish Trap',
       'nameID': 'FishTrapItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 12
     },
@@ -3258,7 +3258,7 @@ export const itemsArray: IItem[] =
       'name': 'Fishery',
       'nameID': 'FisheryItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 12
     },
@@ -3266,7 +3266,7 @@ export const itemsArray: IItem[] =
       'name': 'Flat Steel',
       'nameID': 'FlatSteelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 10
     },
@@ -3274,7 +3274,7 @@ export const itemsArray: IItem[] =
       'name': 'Flat Steel Door',
       'nameID': 'FlatSteelDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -3282,7 +3282,7 @@ export const itemsArray: IItem[] =
       'name': 'Flatbread',
       'nameID': 'FlatbreadItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 10
     },
@@ -3290,7 +3290,7 @@ export const itemsArray: IItem[] =
       'name': 'Flour',
       'nameID': 'FlourItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 4,
       'yPos': 15
     },
@@ -3298,7 +3298,7 @@ export const itemsArray: IItem[] =
       'name': 'Food',
       'nameID': 'Food',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 8,
       'yPos': 0
     },
@@ -3306,7 +3306,7 @@ export const itemsArray: IItem[] =
       'name': 'Fox Carcass',
       'nameID': 'FoxCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 4,
       'yPos': 8
     },
@@ -3314,7 +3314,7 @@ export const itemsArray: IItem[] =
       'name': 'Framed Glass',
       'nameID': 'FramedGlassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 7,
       'yPos': 10
     },
@@ -3322,7 +3322,7 @@ export const itemsArray: IItem[] =
       'name': 'Framed Glass Door',
       'nameID': 'FramedGlassDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -3330,7 +3330,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Camas',
       'nameID': 'FriedCamasItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 1
     },
@@ -3338,7 +3338,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Fiddleheads',
       'nameID': 'FriedFiddleheadsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 1
     },
@@ -3346,7 +3346,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Hare Haunches',
       'nameID': 'FriedHareHaunchesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 8
     },
@@ -3354,7 +3354,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Hearts Of Palm',
       'nameID': 'FriedHeartsOfPalmItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 2
     },
@@ -3362,7 +3362,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Taro',
       'nameID': 'FriedTaroItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 3,
       'yPos': 3
     },
@@ -3370,7 +3370,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Tomatoes',
       'nameID': 'FriedTomatoesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -3378,7 +3378,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Vegetable',
       'nameID': 'FriedVegetable',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 5,
       'yPos': 7
     },
@@ -3386,7 +3386,7 @@ export const itemsArray: IItem[] =
       'name': 'Fried Vegetables',
       'nameID': 'FriedVegetablesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 1
     },
@@ -3394,7 +3394,7 @@ export const itemsArray: IItem[] =
       'name': 'Froth Floatation Cell',
       'nameID': 'FrothFloatationCellItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 8
     },
@@ -3402,7 +3402,7 @@ export const itemsArray: IItem[] =
       'name': 'Fruit',
       'nameID': 'Fruit',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 14,
       'yPos': 3
     },
@@ -3410,7 +3410,7 @@ export const itemsArray: IItem[] =
       'name': 'Fruit Muffin',
       'nameID': 'FruitMuffinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 2
     },
@@ -3418,7 +3418,7 @@ export const itemsArray: IItem[] =
       'name': 'Fruit Salad',
       'nameID': 'FruitSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 14,
       'yPos': 8
     },
@@ -3426,7 +3426,7 @@ export const itemsArray: IItem[] =
       'name': 'Fruit Tart',
       'nameID': 'FruitTartItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 2
     },
@@ -3434,7 +3434,7 @@ export const itemsArray: IItem[] =
       'name': 'Fuel',
       'nameID': 'Fuel',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 7,
       'yPos': 1
     },
@@ -3442,7 +3442,7 @@ export const itemsArray: IItem[] =
       'name': 'Fungus',
       'nameID': 'Fungus',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 0,
       'yPos': 3
     },
@@ -3450,7 +3450,7 @@ export const itemsArray: IItem[] =
       'name': 'Fur Pelt',
       'nameID': 'FurPeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 1
     },
@@ -3458,7 +3458,7 @@ export const itemsArray: IItem[] =
       'name': 'Garden Boots',
       'nameID': 'GardenBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 5
     },
@@ -3466,7 +3466,7 @@ export const itemsArray: IItem[] =
       'name': 'Gasoline',
       'nameID': 'GasolineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 13
     },
@@ -3474,7 +3474,7 @@ export const itemsArray: IItem[] =
       'name': 'Gathering Research Paper Basic',
       'nameID': 'GatheringResearchPaperBasicItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 13
     },
@@ -3482,7 +3482,7 @@ export const itemsArray: IItem[] =
       'name': 'Gearbox',
       'nameID': 'GearboxItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 7
     },
@@ -3490,7 +3490,7 @@ export const itemsArray: IItem[] =
       'name': 'Geology Research Paper Advanced',
       'nameID': 'GeologyResearchPaperAdvancedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 4
     },
@@ -3498,7 +3498,7 @@ export const itemsArray: IItem[] =
       'name': 'Geology Research Paper Basic',
       'nameID': 'GeologyResearchPaperBasicItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -3506,7 +3506,7 @@ export const itemsArray: IItem[] =
       'name': 'Geology Research Paper Modern',
       'nameID': 'GeologyResearchPaperModernItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 5
     },
@@ -3514,7 +3514,7 @@ export const itemsArray: IItem[] =
       'name': 'Giant Cactus Fruit',
       'nameID': 'GiantCactusFruitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 11,
       'yPos': 7
     },
@@ -3522,7 +3522,7 @@ export const itemsArray: IItem[] =
       'name': 'Gigot Sleeve Shirt',
       'nameID': 'GigotSleeveShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 3,
       'yPos': 0
     },
@@ -3530,7 +3530,7 @@ export const itemsArray: IItem[] =
       'name': 'Glass',
       'nameID': 'GlassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 11
     },
@@ -3538,7 +3538,7 @@ export const itemsArray: IItem[] =
       'name': 'Glassworking Advanced Upgrade',
       'nameID': 'GlassworkingAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 12,
       'yPos': 30
     },
@@ -3546,7 +3546,7 @@ export const itemsArray: IItem[] =
       'name': 'Glassworking Modern Upgrade',
       'nameID': 'GlassworkingModernUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 14,
       'yPos': 30
     },
@@ -3554,7 +3554,7 @@ export const itemsArray: IItem[] =
       'name': 'Glassworks',
       'nameID': 'GlassworksItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 15
     },
@@ -3562,7 +3562,7 @@ export const itemsArray: IItem[] =
       'name': 'Gneiss',
       'nameID': 'GneissItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 9,
       'yPos': 6
     },
@@ -3570,7 +3570,7 @@ export const itemsArray: IItem[] =
       'name': 'Goat Mount',
       'nameID': 'GoatMountItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 14
     },
@@ -3578,7 +3578,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Bar',
       'nameID': 'GoldBarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 7
     },
@@ -3586,7 +3586,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Concentrate',
       'nameID': 'GoldConcentrateItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 9,
       'yPos': 9
     },
@@ -3594,7 +3594,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Flakes',
       'nameID': 'GoldFlakesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 13,
       'yPos': 6
     },
@@ -3602,7 +3602,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Ore',
       'nameID': 'GoldOreItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 0
     },
@@ -3610,7 +3610,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Wiring',
       'nameID': 'GoldWiringItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 15
     },
@@ -3618,7 +3618,7 @@ export const itemsArray: IItem[] =
       'name': 'Government Office',
       'nameID': 'GovernmentOfficeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 10
     },
@@ -3626,7 +3626,7 @@ export const itemsArray: IItem[] =
       'name': 'Grain',
       'nameID': 'Grain',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 1,
       'yPos': 4
     },
@@ -3634,7 +3634,7 @@ export const itemsArray: IItem[] =
       'name': 'Granite',
       'nameID': 'GraniteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 0
     },
@@ -3647,7 +3647,7 @@ export const itemsArray: IItem[] =
       'name': 'Greens',
       'nameID': 'Greens',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 9,
       'yPos': 3
     },
@@ -3655,7 +3655,7 @@ export const itemsArray: IItem[] =
       'name': 'Hand Plow',
       'nameID': 'HandPlowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 3
     },
@@ -3663,7 +3663,7 @@ export const itemsArray: IItem[] =
       'name': 'Hanging Long Steel Sign',
       'nameID': 'HangingLongSteelSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 14,
       'yPos': 11
     },
@@ -3671,7 +3671,7 @@ export const itemsArray: IItem[] =
       'name': 'Hanging Steel Framed Sign',
       'nameID': 'HangingSteelFramedSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 12,
       'yPos': 11
     },
@@ -3679,7 +3679,7 @@ export const itemsArray: IItem[] =
       'name': 'Hanging Steel Mine Sign',
       'nameID': 'HangingSteelMineSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 9,
       'yPos': 11
     },
@@ -3687,7 +3687,7 @@ export const itemsArray: IItem[] =
       'name': 'Hanging Steel Plain Sign',
       'nameID': 'HangingSteelPlainSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 8,
       'yPos': 11
     },
@@ -3695,7 +3695,7 @@ export const itemsArray: IItem[] =
       'name': 'Hanging Steel Shop Sign',
       'nameID': 'HangingSteelShopSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 10,
       'yPos': 11
     },
@@ -3703,7 +3703,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood',
       'nameID': 'Hardwood',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 9,
       'yPos': 1
     },
@@ -3716,7 +3716,7 @@ export const itemsArray: IItem[] =
       'name': 'Hare Carcass',
       'nameID': 'HareCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 8
     },
@@ -3724,7 +3724,7 @@ export const itemsArray: IItem[] =
       'name': 'Heart Of Palm',
       'nameID': 'HeartOfPalmItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 13,
       'yPos': 2
     },
@@ -3732,7 +3732,7 @@ export const itemsArray: IItem[] =
       'name': 'Hearty Hometown Pizza',
       'nameID': 'HeartyHometownPizzaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 3
     },
@@ -3740,7 +3740,7 @@ export const itemsArray: IItem[] =
       'name': 'Heat Sink',
       'nameID': 'HeatSinkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 42,
       'yPos': 53
     },
@@ -3753,7 +3753,7 @@ export const itemsArray: IItem[] =
       'name': 'Henley',
       'nameID': 'HenleyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 2,
       'yPos': 0
     },
@@ -3761,7 +3761,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Bench',
       'nameID': 'HewnBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 11
     },
@@ -3769,7 +3769,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Chair',
       'nameID': 'HewnChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 11
     },
@@ -3777,7 +3777,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Door',
       'nameID': 'HewnDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -3785,7 +3785,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Dresser',
       'nameID': 'HewnDresserItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 5
     },
@@ -3793,7 +3793,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Log',
       'nameID': 'HewnLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 12,
       'yPos': 0
     },
@@ -3801,7 +3801,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Log',
       'nameID': 'HewnLog',
       'tag': true,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 12,
       'yPos': 0
     },
@@ -3809,7 +3809,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Nightstand',
       'nameID': 'HewnNightstandItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 5
     },
@@ -3817,7 +3817,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Table',
       'nameID': 'HewnTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 11
     },
@@ -3825,7 +3825,7 @@ export const itemsArray: IItem[] =
       'name': 'Hide Ash Fertilizer',
       'nameID': 'HideAshFertilizerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 44,
       'yPos': 53
     },
@@ -3833,7 +3833,7 @@ export const itemsArray: IItem[] =
       'name': 'Hosomaki',
       'nameID': 'HosomakiItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 3
     },
@@ -3846,7 +3846,7 @@ export const itemsArray: IItem[] =
       'name': 'Huckleberries',
       'nameID': 'HuckleberriesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 15
     },
@@ -3854,7 +3854,7 @@ export const itemsArray: IItem[] =
       'name': 'Huckleberry Extract',
       'nameID': 'HuckleberryExtractItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 8,
       'yPos': 56
     },
@@ -3862,7 +3862,7 @@ export const itemsArray: IItem[] =
       'name': 'Huckleberry Fritter',
       'nameID': 'HuckleberryFritterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 3
     },
@@ -3870,7 +3870,7 @@ export const itemsArray: IItem[] =
       'name': 'Huckleberry Pie',
       'nameID': 'HuckleberryPieItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 13,
       'yPos': 5
     },
@@ -3878,7 +3878,7 @@ export const itemsArray: IItem[] =
       'name': 'Huckleberry Seed',
       'nameID': 'HuckleberrySeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 11,
       'yPos': 56
     },
@@ -3886,7 +3886,7 @@ export const itemsArray: IItem[] =
       'name': 'Hydrocolloids',
       'nameID': 'HydrocolloidsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 13,
       'yPos': 56
     },
@@ -3894,7 +3894,7 @@ export const itemsArray: IItem[] =
       'name': 'Icebox',
       'nameID': 'IceboxItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 9
     },
@@ -3902,7 +3902,7 @@ export const itemsArray: IItem[] =
       'name': 'Industrial Elevator',
       'nameID': 'IndustrialElevatorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 13,
       'yPos': 10
     },
@@ -3910,7 +3910,7 @@ export const itemsArray: IItem[] =
       'name': 'Industrial Refrigerator',
       'nameID': 'IndustrialRefrigeratorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 10,
       'yPos': 12
     },
@@ -3918,7 +3918,7 @@ export const itemsArray: IItem[] =
       'name': 'Industry Upgrade',
       'nameID': 'IndustryUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 16,
       'yPos': 30
     },
@@ -3926,7 +3926,7 @@ export const itemsArray: IItem[] =
       'name': 'Infused Oil',
       'nameID': 'InfusedOilItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 15,
       'yPos': 56
     },
@@ -3934,7 +3934,7 @@ export const itemsArray: IItem[] =
       'name': 'Injection Mold Machine',
       'nameID': 'InjectionMoldMachineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 12
     },
@@ -3942,7 +3942,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Axe',
       'nameID': 'IronAxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 9,
       'yPos': 10
     },
@@ -3950,7 +3950,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Axle',
       'nameID': 'IronAxleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 6,
       'filter': 'brightness(0.5)'
@@ -3959,7 +3959,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Bar',
       'nameID': 'IronBarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 7
     },
@@ -3967,7 +3967,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Concentrate',
       'nameID': 'IronConcentrateItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 8
     },
@@ -3975,7 +3975,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Gear',
       'nameID': 'IronGearItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 7,
       'filter': 'brightness(0.5)'
@@ -3984,7 +3984,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Hammer',
       'nameID': 'IronHammerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 10
     },
@@ -3992,7 +3992,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Hoe',
       'nameID': 'IronHoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 11,
       'yPos': 10
     },
@@ -4000,7 +4000,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Machete',
       'nameID': 'IronMacheteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 3,
       'yPos': 11
     },
@@ -4008,7 +4008,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Ore',
       'nameID': 'IronOreItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 0
     },
@@ -4016,7 +4016,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Pickaxe',
       'nameID': 'IronPickaxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 10
     },
@@ -4024,7 +4024,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Pipe',
       'nameID': 'IronPipeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 4,
       'filter': 'brightness(0.5)'
@@ -4033,7 +4033,7 @@ export const itemsArray: IItem[] =
       'name': 'Piston',
       'nameID': 'PistonItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 11,
       'yPos': 7
     },
@@ -4041,7 +4041,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Plate',
       'nameID': 'IronPlateItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 6,
       'filter': 'brightness(0.5)'
@@ -4050,7 +4050,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Rock Drill',
       'nameID': 'IronRockDrillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 11,
       'yPos': 6
     },
@@ -4058,7 +4058,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Saw Blade',
       'nameID': 'IronSawBladeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 4,
       'yPos': 14
     },
@@ -4066,7 +4066,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Shovel',
       'nameID': 'IronShovelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 10
     },
@@ -4074,7 +4074,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Sickle',
       'nameID': 'IronSickleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 10
     },
@@ -4082,7 +4082,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Wheel',
       'nameID': 'IronWheelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 7,
       'filter': 'brightness(0.5)'
@@ -4091,7 +4091,7 @@ export const itemsArray: IItem[] =
       'name': 'Jaguar Carcass',
       'nameID': 'JaguarCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 5
     },
@@ -4099,7 +4099,7 @@ export const itemsArray: IItem[] =
       'name': 'Jaw Crusher',
       'nameID': 'JawCrusherItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 8
     },
@@ -4112,7 +4112,7 @@ export const itemsArray: IItem[] =
       'name': 'Joshua Log',
       'nameID': 'JoshuaLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -4125,7 +4125,7 @@ export const itemsArray: IItem[] =
       'name': 'Jungle Campfire Salad',
       'nameID': 'JungleCampfireSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -4133,7 +4133,7 @@ export const itemsArray: IItem[] =
       'name': 'Jungle Campfire Stew',
       'nameID': 'JungleCampfireStewItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 7
     },
@@ -4141,7 +4141,7 @@ export const itemsArray: IItem[] =
       'name': 'Kelp',
       'nameID': 'KelpItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 12
     },
@@ -4149,7 +4149,7 @@ export const itemsArray: IItem[] =
       'name': 'Kelp Seed',
       'nameID': 'KelpSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 17,
       'yPos': 56
     },
@@ -4157,7 +4157,7 @@ export const itemsArray: IItem[] =
       'name': 'Kelpy Crab Roll',
       'nameID': 'KelpyCrabRollItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 3
     },
@@ -4165,7 +4165,7 @@ export const itemsArray: IItem[] =
       'name': 'Kiln',
       'nameID': 'KilnItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 4,
       'yPos': 10
     },
@@ -4178,7 +4178,7 @@ export const itemsArray: IItem[] =
       'name': 'Kitchen',
       'nameID': 'KitchenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 9
     },
@@ -4186,7 +4186,7 @@ export const itemsArray: IItem[] =
       'name': 'Laboratory',
       'nameID': 'LaboratoryItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 10
     },
@@ -4194,7 +4194,7 @@ export const itemsArray: IItem[] =
       'name': 'Land Claim Stake',
       'nameID': 'LandClaimStakeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 5,
       'yPos': 6
     },
@@ -4202,7 +4202,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Bath Mat',
       'nameID': 'LargeBathMatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 8
     },
@@ -4210,7 +4210,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Corrugated Steel Door',
       'nameID': 'LargeCorrugatedSteelDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -4218,7 +4218,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Fish',
       'nameID': 'LargeFish',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 6
     },
@@ -4256,7 +4256,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Hanging Ashlar Stone Sign',
       'nameID': 'LargeHangingAshlarStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -4294,7 +4294,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Hanging Lumber Sign',
       'nameID': 'LargeHangingLumberSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -4317,7 +4317,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Hanging Mortared Stone Sign',
       'nameID': 'LargeHangingMortaredStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -4360,7 +4360,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Hanging Wood Sign',
       'nameID': 'LargeHangingWoodSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 5
     },
@@ -4368,7 +4368,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Lumber Door',
       'nameID': 'LargeLumberDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 5,
       'yPos': 4
     },
@@ -4376,7 +4376,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Lumber Stockpile',
       'nameID': 'LargeLumberStockpileItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 14
     },
@@ -4414,7 +4414,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Standing Ashlar Stone Sign',
       'nameID': 'LargeStandingAshlarStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 15
     },
@@ -4452,7 +4452,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Standing Lumber Sign',
       'nameID': 'LargeStandingLumberSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 15
     },
@@ -4475,7 +4475,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Standing Mortared Stone Sign',
       'nameID': 'LargeStandingMortaredStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 15
     },
@@ -4518,7 +4518,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Standing Wood Sign',
       'nameID': 'LargeStandingWoodSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 5
     },
@@ -4526,7 +4526,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Windowed Lumber Door',
       'nameID': 'LargeWindowedLumberDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 4
     },
@@ -4534,7 +4534,7 @@ export const itemsArray: IItem[] =
       'name': 'Laser',
       'nameID': 'LaserItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 11
     },
@@ -4542,7 +4542,7 @@ export const itemsArray: IItem[] =
       'name': 'Lathe',
       'nameID': 'LatheItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 3
     },
@@ -4555,7 +4555,7 @@ export const itemsArray: IItem[] =
       'name': 'Leather Hide',
       'nameID': 'LeatherHideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 1
     },
@@ -4563,7 +4563,7 @@ export const itemsArray: IItem[] =
       'name': 'Leavened Dough',
       'nameID': 'LeavenedDoughItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 1
     },
@@ -4571,7 +4571,7 @@ export const itemsArray: IItem[] =
       'name': 'Light Backpack',
       'nameID': 'LightBackpackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 7
     },
@@ -4587,7 +4587,7 @@ export const itemsArray: IItem[] =
       'name': 'Limestone',
       'nameID': 'LimestoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 0
     },
@@ -4595,7 +4595,7 @@ export const itemsArray: IItem[] =
       'name': 'Limestone Bison Statue',
       'nameID': 'LimestoneBisonStatueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 13
     },
@@ -4603,7 +4603,7 @@ export const itemsArray: IItem[] =
       'name': 'Limestone Otter Statue',
       'nameID': 'LimestoneOtterStatueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 13
     },
@@ -4611,7 +4611,7 @@ export const itemsArray: IItem[] =
       'name': 'Limestone Owl Statue',
       'nameID': 'LimestoneOwlStatueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 13
     },
@@ -4619,7 +4619,7 @@ export const itemsArray: IItem[] =
       'name': 'Limestone Wolf Statue',
       'nameID': 'LimestoneWolfStatueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 6,
       'yPos': 13
     },
@@ -4627,7 +4627,7 @@ export const itemsArray: IItem[] =
       'name': 'Liquid Nitrogen',
       'nameID': 'LiquidNitrogenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 19,
       'yPos': 56
     },
@@ -4635,7 +4635,7 @@ export const itemsArray: IItem[] =
       'name': 'Loaded Taro Fries',
       'nameID': 'LoadedTaroFriesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 3
     },
@@ -4648,7 +4648,7 @@ export const itemsArray: IItem[] =
       'name': 'Logging Advanced Upgrade',
       'nameID': 'LoggingAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 20,
       'yPos': 30
     },
@@ -4656,7 +4656,7 @@ export const itemsArray: IItem[] =
       'name': 'Logging Basic Upgrade',
       'nameID': 'LoggingBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 18,
       'yPos': 30
     },
@@ -4664,7 +4664,7 @@ export const itemsArray: IItem[] =
       'name': 'Loom',
       'nameID': 'LoomItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 15,
       'yPos': 11
     },
@@ -4672,7 +4672,7 @@ export const itemsArray: IItem[] =
       'name': 'Low Top Shoes',
       'nameID': 'LowTopShoesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 2,
       'yPos': 5
     },
@@ -4680,7 +4680,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber',
       'nameID': 'LumberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -4688,7 +4688,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber',
       'nameID': 'Lumber',
       'tag': true,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -4696,7 +4696,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber Bench',
       'nameID': 'LumberBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 12
     },
@@ -4704,7 +4704,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber Chair',
       'nameID': 'LumberChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 12
     },
@@ -4712,7 +4712,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber Door',
       'nameID': 'LumberDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -4720,7 +4720,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber Dresser',
       'nameID': 'LumberDresserItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 8
     },
@@ -4728,7 +4728,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber Stockpile',
       'nameID': 'LumberStockpileItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 14,
       'yPos': 14
     },
@@ -4736,7 +4736,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber Table',
       'nameID': 'LumberTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 12
     },
@@ -4749,7 +4749,7 @@ export const itemsArray: IItem[] =
       'name': 'Macarons',
       'nameID': 'MacaronsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 10
     },
@@ -4757,7 +4757,7 @@ export const itemsArray: IItem[] =
       'name': 'Machinist Table',
       'nameID': 'MachinistTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 9
     },
@@ -4770,7 +4770,7 @@ export const itemsArray: IItem[] =
       'name': 'Maltodextrin',
       'nameID': 'MaltodextrinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 22,
       'yPos': 56
     },
@@ -4778,7 +4778,7 @@ export const itemsArray: IItem[] =
       'name': 'Masonry Advanced Upgrade',
       'nameID': 'MasonryAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 22,
       'yPos': 30
     },
@@ -4786,7 +4786,7 @@ export const itemsArray: IItem[] =
       'name': 'Masonry Basic Upgrade',
       'nameID': 'MasonryBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 24,
       'yPos': 30
     },
@@ -4794,7 +4794,7 @@ export const itemsArray: IItem[] =
       'name': 'Masonry Table',
       'nameID': 'MasonryTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 10
     },
@@ -4802,7 +4802,7 @@ export const itemsArray: IItem[] =
       'name': 'Meat Pie',
       'nameID': 'MeatPieItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 5
     },
@@ -4810,7 +4810,7 @@ export const itemsArray: IItem[] =
       'name': 'Meat Stock',
       'nameID': 'MeatStockItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 8
     },
@@ -4818,7 +4818,7 @@ export const itemsArray: IItem[] =
       'name': 'Meaty Stew',
       'nameID': 'MeatyStewItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 2,
       'yPos': 2
     },
@@ -4826,7 +4826,7 @@ export const itemsArray: IItem[] =
       'name': 'Mechanical Water Pump',
       'nameID': 'MechanicalWaterPumpItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 4
     },
@@ -4834,7 +4834,7 @@ export const itemsArray: IItem[] =
       'name': 'Mechanics Advanced Upgrade',
       'nameID': 'MechanicsAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 26,
       'yPos': 30
     },
@@ -4842,7 +4842,7 @@ export const itemsArray: IItem[] =
       'name': 'Mechanics Modern Upgrade',
       'nameID': 'MechanicsModernUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 28,
       'yPos': 30
     },
@@ -4850,7 +4850,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Carcass',
       'nameID': 'MediumCarcass',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -4858,7 +4858,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Leather Carcass',
       'nameID': 'MediumLeatherCarcass',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -4866,7 +4866,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Fish',
       'nameID': 'MediumFish',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 4,
       'yPos': 8
     },
@@ -4874,7 +4874,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Wooly Carcass',
       'nameID': 'MediumWoolyCarcass',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -4887,7 +4887,7 @@ export const itemsArray: IItem[] =
       'name': 'Metallurgy Research Paper Advanced',
       'nameID': 'MetallurgyResearchPaperAdvancedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 4
     },
@@ -4895,7 +4895,7 @@ export const itemsArray: IItem[] =
       'name': 'Metallurgy Research Paper Basic',
       'nameID': 'MetallurgyResearchPaperBasicItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 13
     },
@@ -4903,7 +4903,7 @@ export const itemsArray: IItem[] =
       'name': 'Metallurgy Research Paper Modern',
       'nameID': 'MetallurgyResearchPaperModernItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 4
     },
@@ -4916,7 +4916,7 @@ export const itemsArray: IItem[] =
       'name': 'Mill',
       'nameID': 'MillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 12
     },
@@ -4924,7 +4924,7 @@ export const itemsArray: IItem[] =
       'name': 'Milling Upgrade',
       'nameID': 'MillingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 30,
       'yPos': 30
     },
@@ -4932,7 +4932,7 @@ export const itemsArray: IItem[] =
       'name': 'Millionaires Salad',
       'nameID': 'MillionairesSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 4
     },
@@ -4940,7 +4940,7 @@ export const itemsArray: IItem[] =
       'name': 'Mining Advanced Upgrade',
       'nameID': 'MiningAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 32,
       'yPos': 30
     },
@@ -4948,7 +4948,7 @@ export const itemsArray: IItem[] =
       'name': 'Mining Basic Upgrade',
       'nameID': 'MiningBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 34,
       'yPos': 30
     },
@@ -4956,7 +4956,7 @@ export const itemsArray: IItem[] =
       'name': 'Mining Modern Upgrade',
       'nameID': 'MiningModernUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 36,
       'yPos': 30
     },
@@ -4964,7 +4964,7 @@ export const itemsArray: IItem[] =
       'name': 'Mint',
       'nameID': 'MintItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 40,
       'yPos': 47
     },
@@ -4972,7 +4972,7 @@ export const itemsArray: IItem[] =
       'name': 'Mochi',
       'nameID': 'MochiItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 2
     },
@@ -4980,7 +4980,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Axe',
       'nameID': 'ModernAxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 0,
       'yPos': 13
     },
@@ -4988,7 +4988,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Double Street Light',
       'nameID': 'ModernDoubleStreetLightItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 15
     },
@@ -4996,7 +4996,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Hammer',
       'nameID': 'ModernHammerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 13
     },
@@ -5004,7 +5004,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Hoe',
       'nameID': 'ModernHoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 3,
       'yPos': 13
     },
@@ -5012,7 +5012,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Machete',
       'nameID': 'ModernMacheteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 11,
       'yPos': 12
     },
@@ -5020,7 +5020,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Pickaxe',
       'nameID': 'ModernPickaxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 1,
       'yPos': 13
     },
@@ -5028,7 +5028,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Research',
       'nameID': 'ModernResearch',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 14,
       'yPos': 7
     },
@@ -5036,7 +5036,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Rock Drill',
       'nameID': 'ModernRockDrillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 6
     },
@@ -5044,7 +5044,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Scythe',
       'nameID': 'ModernScytheItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 11,
       'yPos': 11
     },
@@ -5052,7 +5052,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Shovel',
       'nameID': 'ModernShovelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 4,
       'yPos': 13
     },
@@ -5060,7 +5060,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Street Light',
       'nameID': 'ModernStreetLightItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 3,
       'yPos': 15
     },
@@ -5068,7 +5068,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Upgrade 1',
       'nameID': 'ModernUpgradeLvl1Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 8,
       'yPos': 0
     },
@@ -5076,7 +5076,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Upgrade 2',
       'nameID': 'ModernUpgradeLvl2Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -5084,7 +5084,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Upgrade 3',
       'nameID': 'ModernUpgradeLvl3Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 10,
       'yPos': 0
     },
@@ -5092,7 +5092,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Upgrade 4',
       'nameID': 'ModernUpgradeLvl4Item',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 11,
       'yPos': 0
     },
@@ -5100,7 +5100,7 @@ export const itemsArray: IItem[] =
       'name': 'Moon Jellyfish',
       'nameID': 'MoonJellyfishItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 7
     },
@@ -5108,7 +5108,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortar',
       'nameID': 'MortarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 3
     },
@@ -5221,7 +5221,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortared Stone',
       'nameID': 'MortaredStoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 13
     },
@@ -5229,7 +5229,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortared Stone',
       'nameID': 'MortaredStone',
       'tag': true,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 9,
       'yPos': 13
     },
@@ -5237,7 +5237,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortared Stone Bench',
       'nameID': 'MortaredStoneBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 14,
       'yPos': 15
     },
@@ -5245,7 +5245,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortared Stone Chair',
       'nameID': 'MortaredStoneChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -5253,7 +5253,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortared Stone Door',
       'nameID': 'MortaredStoneDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -5261,7 +5261,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortared Stone Fireplace',
       'nameID': 'MortaredStoneFireplaceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 15
     },
@@ -5269,7 +5269,7 @@ export const itemsArray: IItem[] =
       'name': 'Mortared Stone Table',
       'nameID': 'MortaredStoneTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 15
     },
@@ -5277,7 +5277,7 @@ export const itemsArray: IItem[] =
       'name': 'Mountain Goat Carcass',
       'nameID': 'MountainGoatCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 1,
       'yPos': 8
     },
@@ -5285,7 +5285,7 @@ export const itemsArray: IItem[] =
       'name': 'Nail',
       'nameID': 'NailItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 14
     },
@@ -5293,7 +5293,7 @@ export const itemsArray: IItem[] =
       'name': 'Natural Fiber',
       'nameID': 'NaturalFiber',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 15,
       'yPos': 5
     },
@@ -5311,7 +5311,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon',
       'nameID': 'NylonItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 0,
       'yPos': 13
     },
@@ -5319,7 +5319,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Carpet',
       'nameID': 'NylonCarpetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 13,
       'yPos': 13
     },
@@ -5332,7 +5332,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Curtains',
       'nameID': 'NylonCurtainsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 0,
       'yPos': 14
     },
@@ -5340,7 +5340,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Fabric',
       'nameID': 'NylonFabricItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 11,
       'yPos': 14
     },
@@ -5348,7 +5348,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Futon Bed',
       'nameID': 'NylonFutonBedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 8
     },
@@ -5356,7 +5356,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Futon Couch',
       'nameID': 'NylonFutonCouchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 8
     },
@@ -5364,7 +5364,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Thread',
       'nameID': 'NylonThreadItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 7,
       'yPos': 13
     },
@@ -5372,7 +5372,7 @@ export const itemsArray: IItem[] =
       'name': 'Oak Log',
       'nameID': 'OakLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 11
     },
@@ -5390,7 +5390,7 @@ export const itemsArray: IItem[] =
       'name': 'Oil',
       'nameID': 'OilItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 12
     },
@@ -5398,7 +5398,7 @@ export const itemsArray: IItem[] =
       'name': 'Oil',
       'nameID': 'Oil',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 8
     },
@@ -5406,7 +5406,7 @@ export const itemsArray: IItem[] =
       'name': 'Oil Drilling Upgrade',
       'nameID': 'OilDrillingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 46,
       'yPos': 30
     },
@@ -5414,7 +5414,7 @@ export const itemsArray: IItem[] =
       'name': 'Oil Refinery',
       'nameID': 'OilRefineryItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 10
     },
@@ -5422,7 +5422,7 @@ export const itemsArray: IItem[] =
       'name': 'Orchid Seed',
       'nameID': 'OrchidSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 1
     },
@@ -5430,7 +5430,7 @@ export const itemsArray: IItem[] =
       'name': 'Ore',
       'nameID': 'Ore',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 0,
       'yPos': 2
     },
@@ -5438,7 +5438,7 @@ export const itemsArray: IItem[] =
       'name': 'Otter Carcass',
       'nameID': 'OtterCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 12
     },
@@ -5446,7 +5446,7 @@ export const itemsArray: IItem[] =
       'name': 'Pacific Sardine',
       'nameID': 'PacificSardineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 6
     },
@@ -5454,7 +5454,7 @@ export const itemsArray: IItem[] =
       'name': 'Padded Chair',
       'nameID': 'PaddedChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 9
     },
@@ -5462,7 +5462,7 @@ export const itemsArray: IItem[] =
       'name': 'Palm Log',
       'nameID': 'PalmLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 12
     },
@@ -5475,7 +5475,7 @@ export const itemsArray: IItem[] =
       'name': 'Papaya',
       'nameID': 'PapayaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 0,
       'yPos': 2
     },
@@ -5483,7 +5483,7 @@ export const itemsArray: IItem[] =
       'name': 'Papaya Seed',
       'nameID': 'PapayaSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 1
     },
@@ -5491,7 +5491,7 @@ export const itemsArray: IItem[] =
       'name': 'Paper',
       'nameID': 'PaperItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 7
     },
@@ -5504,7 +5504,7 @@ export const itemsArray: IItem[] =
       'name': 'Paper Milling Upgrade',
       'nameID': 'PaperMillingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 48,
       'yPos': 30
     },
@@ -5512,7 +5512,7 @@ export const itemsArray: IItem[] =
       'name': 'Pastry Dough',
       'nameID': 'PastryDoughItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 8,
       'yPos': 1
     },
@@ -5525,7 +5525,7 @@ export const itemsArray: IItem[] =
       'name': 'Pelt Fertilizer',
       'nameID': 'PeltFertilizerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 61,
       'yPos': 53
     },
@@ -5533,7 +5533,7 @@ export const itemsArray: IItem[] =
       'name': 'Petroleum',
       'nameID': 'PetroleumItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 11
     },
@@ -5541,7 +5541,7 @@ export const itemsArray: IItem[] =
       'name': 'Phad Thai',
       'nameID': 'PhadThaiItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 2
     },
@@ -5549,7 +5549,7 @@ export const itemsArray: IItem[] =
       'name': 'Phosphate Fertilizer',
       'nameID': 'PhosphateFertilizerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 63,
       'yPos': 53
     },
@@ -5562,7 +5562,7 @@ export const itemsArray: IItem[] =
       'name': 'Pineapple',
       'nameID': 'PineappleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 2
     },
@@ -5570,7 +5570,7 @@ export const itemsArray: IItem[] =
       'name': 'Pineapple Friend Rice',
       'nameID': 'PineappleFriendRiceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 9
     },
@@ -5578,7 +5578,7 @@ export const itemsArray: IItem[] =
       'name': 'Pineapple Seed',
       'nameID': 'PineappleSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 13,
       'yPos': 1
     },
@@ -5586,7 +5586,7 @@ export const itemsArray: IItem[] =
       'name': 'Pirozhok',
       'nameID': 'PirozhokItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 3,
       'yPos': 2
     },
@@ -5594,7 +5594,7 @@ export const itemsArray: IItem[] =
       'name': 'Plant Fibers',
       'nameID': 'PlantFibersItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 4
     },
@@ -5602,7 +5602,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic',
       'nameID': 'PlasticItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 2,
       'yPos': 10
     },
@@ -5610,7 +5610,7 @@ export const itemsArray: IItem[] =
       'name': 'Poke Bowl',
       'nameID': 'PokeBowlItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 4
     },
@@ -5618,7 +5618,7 @@ export const itemsArray: IItem[] =
       'name': 'Portable Steam Engine',
       'nameID': 'PortableSteamEngineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 11
     },
@@ -5626,7 +5626,7 @@ export const itemsArray: IItem[] =
       'name': 'Pottery Upgrade',
       'nameID': 'PotteryUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 50,
       'yPos': 30
     },
@@ -5639,7 +5639,7 @@ export const itemsArray: IItem[] =
       'name': 'Powered Cart',
       'nameID': 'PoweredCartItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 3
     },
@@ -5647,7 +5647,7 @@ export const itemsArray: IItem[] =
       'name': 'Powered Storage Silo',
       'nameID': 'PoweredStorageSiloItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 15,
       'yPos': 10
     },
@@ -5655,7 +5655,7 @@ export const itemsArray: IItem[] =
       'name': 'Prairie Dog Carcass',
       'nameID': 'PrairieDogCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 3,
       'yPos': 5
     },
@@ -5663,7 +5663,7 @@ export const itemsArray: IItem[] =
       'name': 'Prepared Meat',
       'nameID': 'PreparedMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 15
     },
@@ -5671,7 +5671,7 @@ export const itemsArray: IItem[] =
       'name': 'Prickly Pear Fruit',
       'nameID': 'PricklyPearFruitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 11,
       'yPos': 4
     },
@@ -5679,7 +5679,7 @@ export const itemsArray: IItem[] =
       'name': 'Prickly Pear Seed',
       'nameID': 'PricklyPearSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 31,
       'yPos': 56
     },
@@ -5687,7 +5687,7 @@ export const itemsArray: IItem[] =
       'name': 'Prime Cut',
       'nameID': 'PrimeCutItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 14
     },
@@ -5695,7 +5695,7 @@ export const itemsArray: IItem[] =
       'name': 'Printing Press',
       'nameID': 'PrintingPressItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 11
     },
@@ -5703,7 +5703,7 @@ export const itemsArray: IItem[] =
       'name': 'Pulp Filler',
       'nameID': 'PulpFillerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 9,
       'yPos': 52
     },
@@ -5711,7 +5711,7 @@ export const itemsArray: IItem[] =
       'name': 'Pump Jack',
       'nameID': 'PumpJackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 1
     },
@@ -5719,7 +5719,7 @@ export const itemsArray: IItem[] =
       'name': 'Pumpkin',
       'nameID': 'PumpkinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 9,
       'yPos': 1
     },
@@ -5727,7 +5727,7 @@ export const itemsArray: IItem[] =
       'name': 'Pumpkin Seed',
       'nameID': 'PumpkinSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 3,
       'yPos': 2
     },
@@ -5735,7 +5735,7 @@ export const itemsArray: IItem[] =
       'name': 'Pupusas',
       'nameID': 'PupusasItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 2
     },
@@ -5743,7 +5743,7 @@ export const itemsArray: IItem[] =
       'name': 'Quicklime',
       'nameID': 'QuicklimeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 4,
       'yPos': 0
     },
@@ -5751,7 +5751,7 @@ export const itemsArray: IItem[] =
       'name': 'Radiator',
       'nameID': 'RadiatorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 13,
       'yPos': 10
     },
@@ -5759,7 +5759,7 @@ export const itemsArray: IItem[] =
       'name': 'Raw Bacon',
       'nameID': 'RawBaconItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 13
     },
@@ -5767,7 +5767,7 @@ export const itemsArray: IItem[] =
       'name': 'Raw Fish',
       'nameID': 'RawFishItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 11
     },
@@ -5775,7 +5775,7 @@ export const itemsArray: IItem[] =
       'name': 'Raw Food',
       'nameID': 'RawFood',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 14,
       'yPos': 2
     },
@@ -5783,7 +5783,7 @@ export const itemsArray: IItem[] =
       'name': 'Raw Meat',
       'nameID': 'RawMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 15
     },
@@ -5791,7 +5791,7 @@ export const itemsArray: IItem[] =
       'name': 'Raw Roast',
       'nameID': 'RawRoastItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 14
     },
@@ -5799,7 +5799,7 @@ export const itemsArray: IItem[] =
       'name': 'Raw Sausage',
       'nameID': 'RawSausageItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 12
     },
@@ -5807,7 +5807,7 @@ export const itemsArray: IItem[] =
       'name': 'Real Estate Desk',
       'nameID': 'RealEstateDeskItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 2
     },
@@ -5815,7 +5815,7 @@ export const itemsArray: IItem[] =
       'name': 'Rebar',
       'nameID': 'RebarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 11
     },
@@ -5823,7 +5823,7 @@ export const itemsArray: IItem[] =
       'name': 'Recurve Bow',
       'nameID': 'RecurveBowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 1,
       'yPos': 14
     },
@@ -5831,7 +5831,7 @@ export const itemsArray: IItem[] =
       'name': 'Redwood Log',
       'nameID': 'RedwoodLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 10
     },
@@ -5844,7 +5844,7 @@ export const itemsArray: IItem[] =
       'name': 'Refrigerator',
       'nameID': 'RefrigeratorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 9
     },
@@ -5852,7 +5852,7 @@ export const itemsArray: IItem[] =
       'name': 'Registrar',
       'nameID': 'RegistrarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 3
     },
@@ -5860,7 +5860,7 @@ export const itemsArray: IItem[] =
       'name': 'Reinforced Concrete',
       'nameID': 'ReinforcedConcreteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 13,
       'yPos': 11
     },
@@ -5873,7 +5873,7 @@ export const itemsArray: IItem[] =
       'name': 'Research Table',
       'nameID': 'ResearchTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 4,
       'yPos': 12
     },
@@ -5881,7 +5881,7 @@ export const itemsArray: IItem[] =
       'name': 'Rice',
       'nameID': 'RiceItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 11
     },
@@ -5889,7 +5889,7 @@ export const itemsArray: IItem[] =
       'name': 'Rice Flour',
       'nameID': 'RiceFlourItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 2
     },
@@ -5897,7 +5897,7 @@ export const itemsArray: IItem[] =
       'name': 'Rice Noodles',
       'nameID': 'RiceNoodlesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 2
     },
@@ -5905,7 +5905,7 @@ export const itemsArray: IItem[] =
       'name': 'Rivet',
       'nameID': 'RivetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 11,
       'yPos': 10
     },
@@ -5913,7 +5913,7 @@ export const itemsArray: IItem[] =
       'name': 'Roast Pumpkin',
       'nameID': 'RoastPumpkinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -5921,7 +5921,7 @@ export const itemsArray: IItem[] =
       'name': 'Robotic Assembly Line',
       'nameID': 'RoboticAssemblyLineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 6
     },
@@ -5929,7 +5929,7 @@ export const itemsArray: IItem[] =
       'name': 'Rock',
       'nameID': 'Rock',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -5937,7 +5937,7 @@ export const itemsArray: IItem[] =
       'name': 'Rocker Box',
       'nameID': 'RockerBoxItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 8
     },
@@ -5945,7 +5945,7 @@ export const itemsArray: IItem[] =
       'name': 'Rolling Mill',
       'nameID': 'RollingMillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 7
     },
@@ -5953,7 +5953,7 @@ export const itemsArray: IItem[] =
       'name': 'Root Campfire Salad',
       'nameID': 'RootCampfireSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 2
     },
@@ -5961,7 +5961,7 @@ export const itemsArray: IItem[] =
       'name': 'Root Campfire Stew',
       'nameID': 'RootCampfireStewItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 7
     },
@@ -5969,7 +5969,7 @@ export const itemsArray: IItem[] =
       'name': 'Round Pot',
       'nameID': 'PlanterPotRoundItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 10
     },
@@ -5977,7 +5977,7 @@ export const itemsArray: IItem[] =
       'name': 'Rubber Wheel',
       'nameID': 'RubberWheelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 10
     },
@@ -5985,7 +5985,7 @@ export const itemsArray: IItem[] =
       'name': 'Rug Large',
       'nameID': 'RugLargeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 11
     },
@@ -5993,7 +5993,7 @@ export const itemsArray: IItem[] =
       'name': 'Rug Medium',
       'nameID': 'RugMediumItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 10
     },
@@ -6001,7 +6001,7 @@ export const itemsArray: IItem[] =
       'name': 'Rug Small',
       'nameID': 'RugSmallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 10
     },
@@ -6009,7 +6009,7 @@ export const itemsArray: IItem[] =
       'name': 'Running Shoes',
       'nameID': 'RunningShoesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 7
     },
@@ -6017,7 +6017,7 @@ export const itemsArray: IItem[] =
       'name': 'Saguaro Rib',
       'nameID': 'SaguaroRibItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 14
     },
@@ -6030,7 +6030,7 @@ export const itemsArray: IItem[] =
       'name': 'Salad',
       'nameID': 'Salad',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 4,
       'yPos': 3
     },
@@ -6043,7 +6043,7 @@ export const itemsArray: IItem[] =
       'name': 'Salt Basket',
       'nameID': 'SaltBasketItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 5,
       'yPos': 10
     },
@@ -6051,7 +6051,7 @@ export const itemsArray: IItem[] =
       'name': 'Sand',
       'nameID': 'SandItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 9
     },
@@ -6059,7 +6059,7 @@ export const itemsArray: IItem[] =
       'name': 'Sandstone',
       'nameID': 'SandstoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 0
     },
@@ -6067,7 +6067,7 @@ export const itemsArray: IItem[] =
       'name': 'Sawmill',
       'nameID': 'SawmillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 12
     },
@@ -6080,7 +6080,7 @@ export const itemsArray: IItem[] =
       'name': 'Scrap Meat',
       'nameID': 'ScrapMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 40,
       'yPos': 56
     },
@@ -6088,7 +6088,7 @@ export const itemsArray: IItem[] =
       'name': 'Screening Machine',
       'nameID': 'ScreeningMachineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 9,
       'yPos': 8
     },
@@ -6096,7 +6096,7 @@ export const itemsArray: IItem[] =
       'name': 'Screw Press',
       'nameID': 'ScrewPressItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 5
     },
@@ -6104,7 +6104,7 @@ export const itemsArray: IItem[] =
       'name': 'Screws',
       'nameID': 'ScrewsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 12,
       'yPos': 14
     },
@@ -6122,7 +6122,7 @@ export const itemsArray: IItem[] =
       'name': 'Seared Meat',
       'nameID': 'SearedMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 14
     },
@@ -6130,7 +6130,7 @@ export const itemsArray: IItem[] =
       'name': 'Seeded Camas Roll',
       'nameID': 'SeededCamasRollItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 3
     },
@@ -6138,7 +6138,7 @@ export const itemsArray: IItem[] =
       'name': 'Seeds',
       'nameID': 'Seeds',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -6146,7 +6146,7 @@ export const itemsArray: IItem[] =
       'name': 'Sensor Based Belt Sorter',
       'nameID': 'SensorBasedBeltSorterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 11,
       'yPos': 8
     },
@@ -6154,7 +6154,7 @@ export const itemsArray: IItem[] =
       'name': 'Sensuous Sea Pizza',
       'nameID': 'SensuousSeaPizzaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 3
     },
@@ -6162,7 +6162,7 @@ export const itemsArray: IItem[] =
       'name': 'Servo',
       'nameID': 'ServoItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 10
     },
@@ -6170,7 +6170,7 @@ export const itemsArray: IItem[] =
       'name': 'Shale',
       'nameID': 'ShaleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 1,
       'yPos': 5
     },
@@ -6178,7 +6178,7 @@ export const itemsArray: IItem[] =
       'name': 'Shaper',
       'nameID': 'ShaperItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 3
     },
@@ -6186,7 +6186,7 @@ export const itemsArray: IItem[] =
       'name': 'Shark Fillet Soup',
       'nameID': 'SharkFilletSoupItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 3
     },
@@ -6194,7 +6194,7 @@ export const itemsArray: IItem[] =
       'name': 'Sheep Mount',
       'nameID': 'SheepMountItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 6,
       'yPos': 14
     },
@@ -6202,7 +6202,7 @@ export const itemsArray: IItem[] =
       'name': 'Shelf Cabinet',
       'nameID': 'ShelfCabinetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 1
     },
@@ -6210,7 +6210,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipping Container Blue',
       'nameID': 'ShippingContainerBlueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 3,
       'yPos': 11
     },
@@ -6218,7 +6218,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipping Container Green',
       'nameID': 'ShippingContainerGreenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 11
     },
@@ -6226,7 +6226,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipping Container Red',
       'nameID': 'ShippingContainerRedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -6234,7 +6234,7 @@ export const itemsArray: IItem[] =
       'name': 'Shorn Wool',
       'nameID': 'ShornWoolItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 12
     },
@@ -6247,7 +6247,7 @@ export const itemsArray: IItem[] =
       'name': 'Shorts',
       'nameID': 'ShortsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 2,
       'yPos': 1
     },
@@ -6260,7 +6260,7 @@ export const itemsArray: IItem[] =
       'name': 'Silica',
       'nameID': 'Silica',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 10,
       'yPos': 7
     },
@@ -6268,7 +6268,7 @@ export const itemsArray: IItem[] =
       'name': 'Simmered Meat',
       'nameID': 'SimmeredMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 9
     },
@@ -6276,7 +6276,7 @@ export const itemsArray: IItem[] =
       'name': 'Simple Syrup',
       'nameID': 'SimpleSyrupItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 13
     },
@@ -6284,7 +6284,7 @@ export const itemsArray: IItem[] =
       'name': 'Sink',
       'nameID': 'SinkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 1,
       'yPos': 4
     },
@@ -6292,7 +6292,7 @@ export const itemsArray: IItem[] =
       'name': 'Skid Steer',
       'nameID': 'SkidSteerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 3
     },
@@ -6300,7 +6300,7 @@ export const itemsArray: IItem[] =
       'name': 'Skill Scrolls',
       'nameID': 'Skill Scrolls',
       'tag': true,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 13
     },
@@ -6308,7 +6308,7 @@ export const itemsArray: IItem[] =
       'name': 'Slag',
       'nameID': 'SlagItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 4
     },
@@ -6316,7 +6316,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Bath Mat',
       'nameID': 'SmallBathMatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 8
     },
@@ -6324,7 +6324,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Carcass',
       'nameID': 'SmallCarcass',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -6332,7 +6332,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Fish',
       'nameID': 'SmallFish',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 3,
       'yPos': 8
     },
@@ -6370,7 +6370,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Hanging Ashlar Stone Sign',
       'nameID': 'SmallHangingAshlarStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 15
     },
@@ -6408,7 +6408,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Hanging Lumber Sign',
       'nameID': 'SmallHangingLumberSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 15
     },
@@ -6431,7 +6431,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Hanging Mortared Stone Sign',
       'nameID': 'SmallHangingMortaredStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 15
     },
@@ -6469,7 +6469,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Hanging Stone Sign',
       'nameID': 'SmallHangingStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 15
     },
@@ -6477,7 +6477,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Hanging Wood Sign',
       'nameID': 'SmallHangingWoodSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 5
     },
@@ -6485,7 +6485,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Sink',
       'nameID': 'SmallSinkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 1,
       'yPos': 14
     },
@@ -6523,7 +6523,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Standing Ashlar Stone Sign',
       'nameID': 'SmallStandingAshlarStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 15
     },
@@ -6561,7 +6561,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Standing Lumber Sign',
       'nameID': 'SmallStandingLumberSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 15
     },
@@ -6584,7 +6584,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Standing Mortared Stone Sign',
       'nameID': 'SmallStandingMortaredStoneSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 15
     },
@@ -6627,7 +6627,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Standing Wood Sign',
       'nameID': 'SmallStandingWoodSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 5
     },
@@ -6635,7 +6635,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Stockpile',
       'nameID': 'SmallStockpileItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -6648,7 +6648,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Wood Cart',
       'nameID': 'SmallWoodCartItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 47,
       'yPos': 46
     },
@@ -6656,7 +6656,7 @@ export const itemsArray: IItem[] =
       'name': 'Smelting Upgrade',
       'nameID': 'SmeltingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 52,
       'yPos': 30
     },
@@ -6664,7 +6664,7 @@ export const itemsArray: IItem[] =
       'name': 'Smith Apron',
       'nameID': 'SmithApronItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -6672,7 +6672,7 @@ export const itemsArray: IItem[] =
       'name': 'Smith Bandana',
       'nameID': 'SmithBandanaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 0
     },
@@ -6680,7 +6680,7 @@ export const itemsArray: IItem[] =
       'name': 'Smith Boots',
       'nameID': 'SmithBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 0
     },
@@ -6688,7 +6688,7 @@ export const itemsArray: IItem[] =
       'name': 'Smith Gloves',
       'nameID': 'SmithGlovesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 0
     },
@@ -6696,7 +6696,7 @@ export const itemsArray: IItem[] =
       'name': 'Smith Pants',
       'nameID': 'SmithPantsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 0
     },
@@ -6704,7 +6704,7 @@ export const itemsArray: IItem[] =
       'name': 'Smooth Gut Noodle Roll',
       'nameID': 'SmoothGutNoodleRollItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 2
     },
@@ -6712,7 +6712,7 @@ export const itemsArray: IItem[] =
       'name': 'Snapping Turtle Carcass',
       'nameID': 'SnappingTurtleCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 1,
       'yPos': 9
     },
@@ -6720,7 +6720,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood',
       'nameID': 'Softwood',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 11,
       'yPos': 1
     },
@@ -6728,7 +6728,7 @@ export const itemsArray: IItem[] =
       'name': 'Soil Sampler',
       'nameID': 'SoilSamplerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 7
     },
@@ -6736,7 +6736,7 @@ export const itemsArray: IItem[] =
       'name': 'Solar Generator',
       'nameID': 'SolarGeneratorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 9
     },
@@ -6744,7 +6744,7 @@ export const itemsArray: IItem[] =
       'name': 'Spiky Roll',
       'nameID': 'SpikyRollItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 3
     },
@@ -6752,7 +6752,7 @@ export const itemsArray: IItem[] =
       'name': 'Spin Melter',
       'nameID': 'SpinMelterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 3,
       'yPos': 13
     },
@@ -6760,7 +6760,7 @@ export const itemsArray: IItem[] =
       'name': 'Spruce Log',
       'nameID': 'SpruceLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 14
     },
@@ -6773,7 +6773,7 @@ export const itemsArray: IItem[] =
       'name': 'Square Belt',
       'nameID': 'SquareBeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 1,
       'yPos': 3
     },
@@ -6781,7 +6781,7 @@ export const itemsArray: IItem[] =
       'name': 'Square Pot',
       'nameID': 'PlanterPotSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 10
     },
@@ -6789,7 +6789,7 @@ export const itemsArray: IItem[] =
       'name': 'Stamp Mill',
       'nameID': 'StampMillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 8
     },
@@ -6797,7 +6797,7 @@ export const itemsArray: IItem[] =
       'name': 'Standing Glass Sign',
       'nameID': 'StandingGlassSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 11,
       'yPos': 11
     },
@@ -6805,7 +6805,7 @@ export const itemsArray: IItem[] =
       'name': 'Standing Long Steel Sign',
       'nameID': 'StandingLongSteelSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 13,
       'yPos': 11
     },
@@ -6813,7 +6813,7 @@ export const itemsArray: IItem[] =
       'name': 'Standing Steel Brick Sign',
       'nameID': 'StandingSteelBrickSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 7,
       'yPos': 11
     },
@@ -6821,7 +6821,7 @@ export const itemsArray: IItem[] =
       'name': 'Steam Engine',
       'nameID': 'SteamEngineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 7,
       'yPos': 7
     },
@@ -6829,7 +6829,7 @@ export const itemsArray: IItem[] =
       'name': 'Steam Tractor',
       'nameID': 'SteamTractorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 6,
       'yPos': 7
     },
@@ -6837,7 +6837,7 @@ export const itemsArray: IItem[] =
       'name': 'Steam Tractor Harvester',
       'nameID': 'SteamTractorHarvesterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 2
     },
@@ -6845,7 +6845,7 @@ export const itemsArray: IItem[] =
       'name': 'Steam Tractor Plow',
       'nameID': 'SteamTractorPlowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 2
     },
@@ -6853,7 +6853,7 @@ export const itemsArray: IItem[] =
       'name': 'Steam Tractor Sower',
       'nameID': 'SteamTractorSowerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 2
     },
@@ -6861,7 +6861,7 @@ export const itemsArray: IItem[] =
       'name': 'Steam Truck',
       'nameID': 'SteamTruckItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 7
     },
@@ -6869,7 +6869,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Abstract Fixture',
       'nameID': 'SteelAbstractFixtureItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 14,
       'yPos': 15
     },
@@ -6877,7 +6877,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Axe',
       'nameID': 'SteelAxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -6885,7 +6885,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Axle',
       'nameID': 'SteelAxleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 6
     },
@@ -6893,7 +6893,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Bar',
       'nameID': 'SteelBarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 1,
       'yPos': 9
     },
@@ -6901,7 +6901,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Ceiling Light',
       'nameID': 'SteelCeilingLightItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 15,
       'yPos': 5
     },
@@ -6909,7 +6909,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Floor Lamp',
       'nameID': 'SteelFloorLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 5
     },
@@ -6917,7 +6917,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Gear',
       'nameID': 'SteelGearItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 7
     },
@@ -6925,7 +6925,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Gearbox',
       'nameID': 'SteelGearboxItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 14
     },
@@ -6933,7 +6933,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Hammer',
       'nameID': 'SteelHammerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 0
     },
@@ -6941,7 +6941,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Hanging Fixture',
       'nameID': 'SteelHangingFixtureItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 15,
       'yPos': 15
     },
@@ -6949,7 +6949,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Hanging Lamp',
       'nameID': 'SteelHangingLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 1
     },
@@ -6957,7 +6957,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Hoe',
       'nameID': 'SteelHoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 0
     },
@@ -6965,7 +6965,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Kitchen Lamp',
       'nameID': 'SteelKitchenLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 12,
       'yPos': 15
     },
@@ -6973,7 +6973,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Machete',
       'nameID': 'SteelMacheteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 4,
       'yPos': 11
     },
@@ -6981,7 +6981,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Pickaxe',
       'nameID': 'SteelPickaxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 5,
       'yPos': 0
     },
@@ -6989,7 +6989,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Pipe',
       'nameID': 'SteelPipeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 4
     },
@@ -6997,7 +6997,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Plate',
       'nameID': 'SteelPlateItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 6
     },
@@ -7005,7 +7005,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Saw Blade',
       'nameID': 'SteelSawBladeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 3,
       'yPos': 14
     },
@@ -7013,7 +7013,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Searchlight',
       'nameID': 'SteelSearchlightItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 6
     },
@@ -7021,7 +7021,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Shovel',
       'nameID': 'SteelShovelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 0
     },
@@ -7029,7 +7029,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Sickle',
       'nameID': 'SteelSickleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 0
     },
@@ -7037,7 +7037,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Square Fixture',
       'nameID': 'SteelSquareFixtureItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 10
     },
@@ -7045,7 +7045,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Table Lamp',
       'nameID': 'SteelTableLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 5
     },
@@ -7053,7 +7053,7 @@ export const itemsArray: IItem[] =
       'name': 'Stockpile',
       'nameID': 'StockpileItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -7061,7 +7061,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone',
       'nameID': 'StoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 14
     },
@@ -7069,7 +7069,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Axe',
       'nameID': 'StoneAxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 4
     },
@@ -7077,7 +7077,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Brazier',
       'nameID': 'StoneBrazierItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 3
     },
@@ -7085,7 +7085,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Door',
       'nameID': 'StoneDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -7093,7 +7093,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Hammer',
       'nameID': 'StoneHammerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 11,
       'yPos': 4
     },
@@ -7101,7 +7101,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Machete',
       'nameID': 'StoneMacheteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 11
     },
@@ -7109,7 +7109,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Pickaxe',
       'nameID': 'StonePickaxeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 3
     },
@@ -7117,7 +7117,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Ramp',
       'nameID': 'StoneRampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 8
     },
@@ -7125,7 +7125,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Road',
       'nameID': 'StoneRoadItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 15,
       'yPos': 8
     },
@@ -7133,7 +7133,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Road Tool',
       'nameID': 'StoneRoadToolItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 13,
       'yPos': 4
     },
@@ -7141,7 +7141,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Sickle',
       'nameID': 'StoneSickleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 4
     },
@@ -7154,7 +7154,7 @@ export const itemsArray: IItem[] =
       'name': 'Stop Sign',
       'nameID': 'StopSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -7162,7 +7162,7 @@ export const itemsArray: IItem[] =
       'name': 'Storage Chest',
       'nameID': 'StorageChestItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 0,
       'yPos': 13
     },
@@ -7170,7 +7170,7 @@ export const itemsArray: IItem[] =
       'name': 'Storage Silo',
       'nameID': 'StorageSiloItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 14,
       'yPos': 10
     },
@@ -7178,7 +7178,7 @@ export const itemsArray: IItem[] =
       'name': 'Store',
       'nameID': 'StoreItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 13
     },
@@ -7186,7 +7186,7 @@ export const itemsArray: IItem[] =
       'name': 'Stove',
       'nameID': 'StoveItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 12
     },
@@ -7199,7 +7199,7 @@ export const itemsArray: IItem[] =
       'name': 'Street Sign',
       'nameID': 'StreetSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 1
     },
@@ -7207,7 +7207,7 @@ export const itemsArray: IItem[] =
       'name': 'Streetlamp',
       'nameID': 'StreetlampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 10
     },
@@ -7215,7 +7215,7 @@ export const itemsArray: IItem[] =
       'name': 'Stuffed Alligator',
       'nameID': 'StuffedAlligatorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 3,
       'yPos': 13
     },
@@ -7223,7 +7223,7 @@ export const itemsArray: IItem[] =
       'name': 'Stuffed Bison',
       'nameID': 'StuffedBisonItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 2,
       'yPos': 13
     },
@@ -7231,7 +7231,7 @@ export const itemsArray: IItem[] =
       'name': 'Stuffed Elk',
       'nameID': 'StuffedElkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 1,
       'yPos': 13
     },
@@ -7239,7 +7239,7 @@ export const itemsArray: IItem[] =
       'name': 'Stuffed Goat',
       'nameID': 'StuffedGoatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 15,
       'yPos': 12
     },
@@ -7247,7 +7247,7 @@ export const itemsArray: IItem[] =
       'name': 'Stuffed Jaguar',
       'nameID': 'StuffedJaguarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 13
     },
@@ -7255,7 +7255,7 @@ export const itemsArray: IItem[] =
       'name': 'Stuffed Turkey',
       'nameID': 'StuffedTurkeyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 10
     },
@@ -7263,7 +7263,7 @@ export const itemsArray: IItem[] =
       'name': 'Stuffed Wolf',
       'nameID': 'StuffedWolfItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 14,
       'yPos': 12
     },
@@ -7271,7 +7271,7 @@ export const itemsArray: IItem[] =
       'name': 'Substrate',
       'nameID': 'SubstrateItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 0
     },
@@ -7279,7 +7279,7 @@ export const itemsArray: IItem[] =
       'name': 'Sugar',
       'nameID': 'SugarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 47,
       'yPos': 56
     },
@@ -7292,7 +7292,7 @@ export const itemsArray: IItem[] =
       'name': 'Sun Cheese',
       'nameID': 'SunCheeseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 2
     },
@@ -7300,7 +7300,7 @@ export const itemsArray: IItem[] =
       'name': 'Sunflower Seed',
       'nameID': 'SunflowerSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 3
     },
@@ -7308,7 +7308,7 @@ export const itemsArray: IItem[] =
       'name': 'Sunflower',
       'nameID': 'SunflowerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -7316,7 +7316,7 @@ export const itemsArray: IItem[] =
       'name': 'Sweet Salad',
       'nameID': 'SweetSaladItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 9
     },
@@ -7324,7 +7324,7 @@ export const itemsArray: IItem[] =
       'name': 'Synthetic Rubber',
       'nameID': 'SyntheticRubberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 10
     },
@@ -7337,7 +7337,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailings',
       'nameID': 'TailingsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 13,
       'yPos': 8
     },
@@ -7345,7 +7345,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailor Bowler Hat',
       'nameID': 'TailorBowlerHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 0
     },
@@ -7353,7 +7353,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailor Pants',
       'nameID': 'TailorPantsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 0
     },
@@ -7361,7 +7361,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailor Shirt',
       'nameID': 'TailorShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 0
     },
@@ -7369,7 +7369,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailor Shoes',
       'nameID': 'TailorShoesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -7377,7 +7377,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailoring Basic Upgrade',
       'nameID': 'TailoringBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 54,
       'yPos': 30
     },
@@ -7385,7 +7385,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailoring Modern Upgrade',
       'nameID': 'TailoringModernUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 56,
       'yPos': 30
     },
@@ -7393,7 +7393,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailoring Table',
       'nameID': 'TailoringTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 13
     },
@@ -7401,7 +7401,7 @@ export const itemsArray: IItem[] =
       'name': 'Tall Boots',
       'nameID': 'TallBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 0,
       'yPos': 5
     },
@@ -7409,7 +7409,7 @@ export const itemsArray: IItem[] =
       'name': 'Tallow',
       'nameID': 'TallowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 6
     },
@@ -7417,7 +7417,7 @@ export const itemsArray: IItem[] =
       'name': 'Tallow Candle',
       'nameID': 'TallowCandleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 15,
       'yPos': 8
     },
@@ -7425,7 +7425,7 @@ export const itemsArray: IItem[] =
       'name': 'Tallow Lamp',
       'nameID': 'TallowLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -7433,7 +7433,7 @@ export const itemsArray: IItem[] =
       'name': 'Tallow Wall Lamp',
       'nameID': 'TallowWallLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 1
     },
@@ -7441,7 +7441,7 @@ export const itemsArray: IItem[] =
       'name': 'Taro Fries',
       'nameID': 'TaroFriesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 3
     },
@@ -7449,7 +7449,7 @@ export const itemsArray: IItem[] =
       'name': 'Taro Root',
       'nameID': 'TaroRootItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 2
     },
@@ -7457,7 +7457,7 @@ export const itemsArray: IItem[] =
       'name': 'Taro Seed',
       'nameID': 'TaroSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 5,
       'yPos': 2
     },
@@ -7465,7 +7465,7 @@ export const itemsArray: IItem[] =
       'name': 'Tasty Tropical Pizza',
       'nameID': 'TastyTropicalPizzaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 3
     },
@@ -7473,7 +7473,7 @@ export const itemsArray: IItem[] =
       'name': 'Tiny Carcass',
       'nameID': 'TinyCarcass',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -7481,7 +7481,7 @@ export const itemsArray: IItem[] =
       'name': 'Tiny Fur Carcass',
       'nameID': 'TinyFurCarcass',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -7489,7 +7489,7 @@ export const itemsArray: IItem[] =
       'name': 'Tiny Leather Carcass',
       'nameID': 'TinyLeatherCarcass',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -7497,7 +7497,7 @@ export const itemsArray: IItem[] =
       'name': 'Tiny Stockpile',
       'nameID': 'TinyStockpileItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -7505,7 +7505,7 @@ export const itemsArray: IItem[] =
       'name': 'Toilet',
       'nameID': 'ToiletItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 0,
       'yPos': 14
     },
@@ -7513,7 +7513,7 @@ export const itemsArray: IItem[] =
       'name': 'Tomato',
       'nameID': 'TomatoItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -7521,7 +7521,7 @@ export const itemsArray: IItem[] =
       'name': 'Tomato Seed',
       'nameID': 'TomatoSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 52,
       'yPos': 56
     },
@@ -7534,7 +7534,7 @@ export const itemsArray: IItem[] =
       'name': 'Tool Bench',
       'nameID': 'ToolBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 14,
       'yPos': 9
     },
@@ -7542,7 +7542,7 @@ export const itemsArray: IItem[] =
       'name': 'Topped Porridge',
       'nameID': 'ToppedPorridgeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 2
     },
@@ -7550,7 +7550,7 @@ export const itemsArray: IItem[] =
       'name': 'Torch',
       'nameID': 'TorchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 12
     },
@@ -7558,7 +7558,7 @@ export const itemsArray: IItem[] =
       'name': 'Torch Stand',
       'nameID': 'TorchStandItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 12,
       'yPos': 9
     },
@@ -7566,7 +7566,7 @@ export const itemsArray: IItem[] =
       'name': 'Tortilla',
       'nameID': 'TortillaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 9
     },
@@ -7574,7 +7574,7 @@ export const itemsArray: IItem[] =
       'name': 'Towel Rack',
       'nameID': 'TowelRackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 8
     },
@@ -7582,7 +7582,7 @@ export const itemsArray: IItem[] =
       'name': 'Transglutaminase',
       'nameID': 'TransglutaminaseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 55,
       'yPos': 56
     },
@@ -7590,7 +7590,7 @@ export const itemsArray: IItem[] =
       'name': 'Transmission Pole',
       'nameID': 'TransmissionPoleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 3
     },
@@ -7598,7 +7598,7 @@ export const itemsArray: IItem[] =
       'name': 'Treasury',
       'nameID': 'TreasuryItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 3,
       'yPos': 12
     },
@@ -7611,7 +7611,7 @@ export const itemsArray: IItem[] =
       'name': 'Trillium Seed',
       'nameID': 'TrilliumSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 10,
       'yPos': 2
     },
@@ -7619,7 +7619,7 @@ export const itemsArray: IItem[] =
       'name': 'Trousers',
       'nameID': 'TrousersItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 0,
       'yPos': 1
     },
@@ -7632,7 +7632,7 @@ export const itemsArray: IItem[] =
       'name': 'Truck',
       'nameID': 'TruckItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 7
     },
@@ -7640,7 +7640,7 @@ export const itemsArray: IItem[] =
       'name': 'Tuna',
       'nameID': 'TunaItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 11,
       'yPos': 12
     },
@@ -7648,7 +7648,7 @@ export const itemsArray: IItem[] =
       'name': 'Turkey Carcass',
       'nameID': 'TurkeyCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 3,
       'yPos': 8
     },
@@ -7661,7 +7661,7 @@ export const itemsArray: IItem[] =
       'name': 'Upholstered Chair',
       'nameID': 'UpholsteredChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 8
     },
@@ -7669,7 +7669,7 @@ export const itemsArray: IItem[] =
       'name': 'Upholstered Couch',
       'nameID': 'UpholsteredCouchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 8
     },
@@ -7677,7 +7677,7 @@ export const itemsArray: IItem[] =
       'name': 'Urchin',
       'nameID': 'UrchinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 9,
       'yPos': 11
     },
@@ -7685,7 +7685,7 @@ export const itemsArray: IItem[] =
       'name': 'Valve',
       'nameID': 'ValveItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 11,
       'yPos': 7
     },
@@ -7693,7 +7693,7 @@ export const itemsArray: IItem[] =
       'name': 'Vegetable',
       'nameID': 'Vegetable',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 6,
       'yPos': 3
     },
@@ -7701,7 +7701,7 @@ export const itemsArray: IItem[] =
       'name': 'Vegetable Medley',
       'nameID': 'VegetableMedleyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 57,
       'yPos': 56
     },
@@ -7709,7 +7709,7 @@ export const itemsArray: IItem[] =
       'name': 'Vegetable Soup',
       'nameID': 'VegetableSoupItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 9
     },
@@ -7717,7 +7717,7 @@ export const itemsArray: IItem[] =
       'name': 'Vegetable Stock',
       'nameID': 'VegetableStockItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 8,
       'yPos': 8
     },
@@ -7730,7 +7730,7 @@ export const itemsArray: IItem[] =
       'name': 'Wainwright Table',
       'nameID': 'WainwrightTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 3,
       'yPos': 10
     },
@@ -7738,7 +7738,7 @@ export const itemsArray: IItem[] =
       'name': 'Wall Candle',
       'nameID': 'WallCandleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 14,
       'yPos': 1
     },
@@ -7746,7 +7746,7 @@ export const itemsArray: IItem[] =
       'name': 'Washboard',
       'nameID': 'WashboardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 10
     },
@@ -7754,7 +7754,7 @@ export const itemsArray: IItem[] =
       'name': 'Washing Machine',
       'nameID': 'WashingMachineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 9
     },
@@ -7762,7 +7762,7 @@ export const itemsArray: IItem[] =
       'name': 'Waste Filter',
       'nameID': 'WasteFilterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 0,
       'yPos': 4
     },
@@ -7775,7 +7775,7 @@ export const itemsArray: IItem[] =
       'name': 'Waterwheel',
       'nameID': 'WaterwheelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 8,
       'yPos': 13
     },
@@ -7783,7 +7783,7 @@ export const itemsArray: IItem[] =
       'name': 'Wet Tailings',
       'nameID': 'WetTailingsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 12,
       'yPos': 8
     },
@@ -7791,7 +7791,7 @@ export const itemsArray: IItem[] =
       'name': 'Wheat',
       'nameID': 'WheatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -7799,7 +7799,7 @@ export const itemsArray: IItem[] =
       'name': 'Wheat Seed',
       'nameID': 'WheatSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 62,
       'yPos': 56
     },
@@ -7807,7 +7807,7 @@ export const itemsArray: IItem[] =
       'name': 'Wheelbarrow',
       'nameID': 'WheelbarrowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 3
     },
@@ -7820,7 +7820,7 @@ export const itemsArray: IItem[] =
       'name': 'Wild Mix',
       'nameID': 'WildMixItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 9
     },
@@ -7828,7 +7828,7 @@ export const itemsArray: IItem[] =
       'name': 'Wild Stew',
       'nameID': 'WildStewItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 6
     },
@@ -7836,7 +7836,7 @@ export const itemsArray: IItem[] =
       'name': 'Wilted Fiddleheads',
       'nameID': 'WiltedFiddleheadsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 10
     },
@@ -7844,7 +7844,7 @@ export const itemsArray: IItem[] =
       'name': 'Wind Turbine',
       'nameID': 'WindTurbineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 8
     },
@@ -7852,7 +7852,7 @@ export const itemsArray: IItem[] =
       'name': 'Windmill',
       'nameID': 'WindmillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 7,
       'yPos': 13
     },
@@ -7860,7 +7860,7 @@ export const itemsArray: IItem[] =
       'name': 'Wolf Carcass',
       'nameID': 'WolfCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 2,
       'yPos': 8
     },
@@ -7868,7 +7868,7 @@ export const itemsArray: IItem[] =
       'name': 'Wood',
       'nameID': 'Wood',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 8,
       'yPos': 1
     },
@@ -7876,7 +7876,7 @@ export const itemsArray: IItem[] =
       'name': 'Wood Cart',
       'nameID': 'WoodCartItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 11,
       'yPos': 3
     },
@@ -7884,7 +7884,7 @@ export const itemsArray: IItem[] =
       'name': 'Wood Pulp',
       'nameID': 'WoodPulpItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_0.png',
+      'imageFile': 'UI_Icons_Baked_0.webp',
       'xPos': 38,
       'yPos': 52
     },
@@ -7892,7 +7892,7 @@ export const itemsArray: IItem[] =
       'name': 'Wood Shop Cart',
       'nameID': 'WoodShopCartItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 8
     },
@@ -7905,7 +7905,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Bow',
       'nameID': 'WoodenBowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 1,
       'yPos': 0
     },
@@ -7913,7 +7913,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Ceiling Light',
       'nameID': 'WoodenCeilingLightItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 7,
       'yPos': 12
     },
@@ -7921,7 +7921,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Elevator',
       'nameID': 'WoodenElevatorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 5,
       'yPos': 7
     },
@@ -7929,7 +7929,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Fabric Bed',
       'nameID': 'WoodenFabricBedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 1,
       'yPos': 12
     },
@@ -7937,7 +7937,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Floor Lamp',
       'nameID': 'WoodenFloorLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 5,
       'yPos': 12
     },
@@ -7945,7 +7945,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Hoe',
       'nameID': 'WoodenHoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 8,
       'yPos': 4
     },
@@ -7953,7 +7953,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Kitchen Lamp',
       'nameID': 'WoodenKitchenLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -7961,7 +7961,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Latrine',
       'nameID': 'LatrineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 4,
       'yPos': 10
     },
@@ -7969,7 +7969,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Shovel',
       'nameID': 'WoodenShovelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 7,
       'yPos': 4
     },
@@ -7977,7 +7977,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Straw Bed',
       'nameID': 'WoodenStrawBedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 2,
       'yPos': 12
     },
@@ -7985,7 +7985,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Table Lamp',
       'nameID': 'WoodenTableLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 12
     },
@@ -7993,7 +7993,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Wheel',
       'nameID': 'WoodenWheelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 10,
       'yPos': 7
     },
@@ -8001,7 +8001,7 @@ export const itemsArray: IItem[] =
       'name': 'Wool Carpet',
       'nameID': 'WoolCarpetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 14,
       'yPos': 13
     },
@@ -8009,7 +8009,7 @@ export const itemsArray: IItem[] =
       'name': 'Wool Curtains',
       'nameID': 'WoolCurtainsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 15,
       'yPos': 13
     },
@@ -8017,7 +8017,7 @@ export const itemsArray: IItem[] =
       'name': 'Wool Fabric',
       'nameID': 'WoolFabricItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 7,
       'yPos': 12
     },
@@ -8025,7 +8025,7 @@ export const itemsArray: IItem[] =
       'name': 'Wool Yarn',
       'nameID': 'WoolYarnItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 9,
       'yPos': 13
     },
@@ -8033,7 +8033,7 @@ export const itemsArray: IItem[] =
       'name': 'Work Backpack',
       'nameID': 'WorkBackpackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 4,
       'yPos': 7
     },
@@ -8041,7 +8041,7 @@ export const itemsArray: IItem[] =
       'name': 'Work Boots',
       'nameID': 'WorkBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 7
     },
@@ -8049,7 +8049,7 @@ export const itemsArray: IItem[] =
       'name': 'Workbench',
       'nameID': 'WorkbenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 12
     },
@@ -8057,7 +8057,7 @@ export const itemsArray: IItem[] =
       'name': 'Worldly Donut',
       'nameID': 'WorldlyDonutItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 4
     },
@@ -8065,7 +8065,7 @@ export const itemsArray: IItem[] =
       'name': 'Yeast',
       'nameID': 'YeastItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 14,
       'yPos': 2
     },
@@ -8073,7 +8073,7 @@ export const itemsArray: IItem[] =
       'name': 'Zoning Office',
       'nameID': 'ZoningOfficeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 2,
       'yPos': 10
     },
@@ -8081,7 +8081,7 @@ export const itemsArray: IItem[] =
       'name': 'Galaxy Vase',
       'nameID': 'GalaxyVaseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 15
     },
@@ -8089,7 +8089,7 @@ export const itemsArray: IItem[] =
       'name': 'Orange Vase',
       'nameID': 'OrangeVaseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 15
     },
@@ -8097,7 +8097,7 @@ export const itemsArray: IItem[] =
       'name': 'Plant Vase',
       'nameID': 'PlantVaseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 15
     },
@@ -8105,7 +8105,7 @@ export const itemsArray: IItem[] =
       'name': 'Purple Vase',
       'nameID': 'PurpleVaseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 15
     },
@@ -8113,7 +8113,7 @@ export const itemsArray: IItem[] =
       'name': 'Red Vase',
       'nameID': 'RedVaseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -8121,7 +8121,7 @@ export const itemsArray: IItem[] =
       'name': 'Swirl Vase',
       'nameID': 'SwirlVaseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 15
     },
@@ -8129,7 +8129,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Lint',
       'nameID': 'CottonLintItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 15
     },
@@ -8137,7 +8137,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Plate',
       'nameID': 'CopperPlateItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 0
     },
@@ -8145,7 +8145,7 @@ export const itemsArray: IItem[] =
       'name': 'Spoiled Food',
       'nameID': 'SpoiledFoodItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 11
     },
@@ -8153,7 +8153,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Moorage Post',
       'nameID': 'WoodenMooragePostItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 15
     },
@@ -8161,7 +8161,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Moorage Post',
       'nameID': 'SteelMooragePostItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 15
     },
@@ -8169,7 +8169,7 @@ export const itemsArray: IItem[] =
       'name': 'Outpost Netting',
       'nameID': 'OutpostNettingItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 14
     },
@@ -8177,7 +8177,7 @@ export const itemsArray: IItem[] =
       'name': 'Linen Yarn',
       'nameID': 'LinenYarnItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 7
     },
@@ -8185,7 +8185,7 @@ export const itemsArray: IItem[] =
       'name': 'Glass Lens',
       'nameID': 'GlassLensItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 7
     },
@@ -8193,7 +8193,7 @@ export const itemsArray: IItem[] =
       'name': 'Art Supplies',
       'nameID': 'ArtSuppliesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 8
     },
@@ -8201,7 +8201,7 @@ export const itemsArray: IItem[] =
       'name': 'Camera Film',
       'nameID': 'CameraFilmItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 10,
       'yPos': 7
     },
@@ -8209,7 +8209,7 @@ export const itemsArray: IItem[] =
       'name': 'Canvas',
       'nameID': 'CanvasItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 12,
       'yPos': 7
     },
@@ -8217,7 +8217,7 @@ export const itemsArray: IItem[] =
       'name': 'Carbide Helmet Lamp',
       'nameID': 'CarbideHelmetLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -8225,7 +8225,7 @@ export const itemsArray: IItem[] =
       'name': 'Claim Tool',
       'nameID': 'ClaimToolItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 12
     },
@@ -8233,7 +8233,7 @@ export const itemsArray: IItem[] =
       'name': 'Colored Powder',
       'nameID': 'ColoredPowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 8
     },
@@ -8241,7 +8241,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Frame Wide',
       'nameID': 'CopperFrameWideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 4
     },
@@ -8249,7 +8249,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Streamer Stars',
       'nameID': 'CottonStreamerStarsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 4
     },
@@ -8257,7 +8257,7 @@ export const itemsArray: IItem[] =
       'name': 'Cotton Streamer Stripes',
       'nameID': 'CottonStreamerStripesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 4
     },
@@ -8265,7 +8265,7 @@ export const itemsArray: IItem[] =
       'name': 'Creosote Flower',
       'nameID': 'CreosoteFlowerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 7,
       'yPos': 8
     },
@@ -8273,7 +8273,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Anchor',
       'nameID': 'DecorativeAnchorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 6
     },
@@ -8281,7 +8281,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Glass Buoy Blue',
       'nameID': 'DecorativeGlassBuoyBlueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 5
     },
@@ -8289,7 +8289,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Glass Buoy Green',
       'nameID': 'DecorativeGlassBuoyGreenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 5
     },
@@ -8297,7 +8297,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Glass Buoy Red',
       'nameID': 'DecorativeGlassBuoyRedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 12,
       'yPos': 5
     },
@@ -8305,7 +8305,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Glass Buoy Violet',
       'nameID': 'DecorativeGlassBuoyVioletItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 5
     },
@@ -8313,7 +8313,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Glass Buoy Yellow',
       'nameID': 'DecorativeGlassBuoyYellowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 5
     },
@@ -8321,7 +8321,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Hanging Buoy',
       'nameID': 'DecorativeHangingBuoyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 6
     },
@@ -8329,7 +8329,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Life Preserver',
       'nameID': 'DecorativeLifePreserverItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 6
     },
@@ -8337,7 +8337,7 @@ export const itemsArray: IItem[] =
       'name': 'Decorative Ship Wheel',
       'nameID': 'DecorativeShipWheelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 6
     },
@@ -8345,7 +8345,7 @@ export const itemsArray: IItem[] =
       'name': 'Fiber Scutching Station',
       'nameID': 'FiberScutchingStationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 7
     },
@@ -8353,7 +8353,7 @@ export const itemsArray: IItem[] =
       'name': 'Fish Rack',
       'nameID': 'FishRackItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 6
     },
@@ -8361,7 +8361,7 @@ export const itemsArray: IItem[] =
       'name': 'Flaxseed Oil',
       'nameID': 'FlaxseedOilItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 8
     },
@@ -8369,7 +8369,7 @@ export const itemsArray: IItem[] =
       'name': 'Gathering Basic Upgrade',
       'nameID': 'GatheringBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 8
     },
@@ -8377,7 +8377,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Frame Wide',
       'nameID': 'GoldFrameWideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 8,
       'yPos': 5
     },
@@ -8385,7 +8385,7 @@ export const itemsArray: IItem[] =
       'name': 'Handheld Camera',
       'nameID': 'HandheldCameraItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 15
     },
@@ -8393,7 +8393,7 @@ export const itemsArray: IItem[] =
       'name': 'Hemp Mooring Rope',
       'nameID': 'HempMooringRopeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 14
     },
@@ -8401,7 +8401,7 @@ export const itemsArray: IItem[] =
       'name': 'Industrial Barge',
       'nameID': 'IndustrialBargeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 13
     },
@@ -8409,7 +8409,7 @@ export const itemsArray: IItem[] =
       'name': 'Industrial Generator',
       'nameID': 'IndustrialGeneratorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 10,
       'yPos': 8
     },
@@ -8417,7 +8417,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Anchor',
       'nameID': 'IronAnchorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 14
     },
@@ -8425,7 +8425,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Frame Wide',
       'nameID': 'IronFrameWideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 0
     },
@@ -8433,7 +8433,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Hull Sheet',
       'nameID': 'IronHullSheetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 14
     },
@@ -8441,7 +8441,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Road Tool',
       'nameID': 'IronRoadToolItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 12,
       'yPos': 7
     },
@@ -8449,7 +8449,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Canoe',
       'nameID': 'LargeCanoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 13
     },
@@ -8457,7 +8457,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Cotton Bunting Red',
       'nameID': 'LargeCottonBuntingRedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 4
     },
@@ -8465,7 +8465,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Court',
       'nameID': 'LargeCourtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 7
     },
@@ -8473,7 +8473,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Festive Paper Lantern',
       'nameID': 'LargeFestivePaperLanternItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 6
     },
@@ -8481,7 +8481,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Metal Ship Frame',
       'nameID': 'LargeMetalShipFrameItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 14
     },
@@ -8489,7 +8489,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Nylon Bunting Green',
       'nameID': 'LargeNylonBuntingGreenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 4
     },
@@ -8497,7 +8497,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Paper Lantern',
       'nameID': 'LargePaperLanternItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 6
     },
@@ -8505,7 +8505,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Wooden Ship Frame',
       'nameID': 'LargeWoodenShipFrameItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 14
     },
@@ -8513,7 +8513,7 @@ export const itemsArray: IItem[] =
       'name': 'Lumber Warehouse Shelves',
       'nameID': 'LumberWarehouseShelvesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -8521,7 +8521,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Fishing Trawler',
       'nameID': 'MediumFishingTrawlerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 6,
       'yPos': 13
     },
@@ -8529,7 +8529,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Metal Ship Frame',
       'nameID': 'MediumMetalShipFrameItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 7,
       'yPos': 14
     },
@@ -8537,7 +8537,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Shipyard',
       'nameID': 'MediumShipyardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 8
     },
@@ -8545,7 +8545,7 @@ export const itemsArray: IItem[] =
       'name': 'Medium Wooden Ship Frame',
       'nameID': 'MediumWoodenShipFrameItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 14
     },
@@ -8553,7 +8553,7 @@ export const itemsArray: IItem[] =
       'name': 'Metal Keel',
       'nameID': 'MetalKeelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 14
     },
@@ -8561,7 +8561,7 @@ export const itemsArray: IItem[] =
       'name': 'Metal Rudder',
       'nameID': 'MetalRudderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 14
     },
@@ -8569,7 +8569,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Mooring Rope',
       'nameID': 'NylonMooringRopeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 14
     },
@@ -8577,7 +8577,7 @@ export const itemsArray: IItem[] =
       'name': 'Nylon Trawler Net',
       'nameID': 'NylonTrawlerNetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 8
     },
@@ -8585,7 +8585,7 @@ export const itemsArray: IItem[] =
       'name': 'Oil Head Lamp',
       'nameID': 'OilHeadLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -8593,7 +8593,7 @@ export const itemsArray: IItem[] =
       'name': 'Oil Paint',
       'nameID': 'OilPaintItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 8
     },
@@ -8601,7 +8601,7 @@ export const itemsArray: IItem[] =
       'name': 'Orchid',
       'nameID': 'OrchidItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 8,
       'yPos': 8
     },
@@ -8609,7 +8609,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Gold Frame Wide',
       'nameID': 'OrnateGoldFrameWideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 8,
       'yPos': 5
     },
@@ -8617,7 +8617,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Iron Frame Wide',
       'nameID': 'OrnateIronFrameWideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -8625,7 +8625,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Wooden Frame Wide',
       'nameID': 'OrnateWoodenFrameWideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 0
     },
@@ -8633,7 +8633,7 @@ export const itemsArray: IItem[] =
       'name': 'Paper Streamers',
       'nameID': 'PaperStreamersItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -8641,7 +8641,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Buoy',
       'nameID': 'PlasticBuoyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 10,
       'yPos': 5
     },
@@ -8649,7 +8649,7 @@ export const itemsArray: IItem[] =
       'name': 'Sandals',
       'nameID': 'SandalsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 1
     },
@@ -8657,7 +8657,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Overalls',
       'nameID': 'ShipwrightOverallsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 0
     },
@@ -8665,7 +8665,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Advanced Upgrade',
       'nameID': 'ShipwrightAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 7
     },
@@ -8673,7 +8673,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Basic Upgrade',
       'nameID': 'ShipwrightBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 7
     },
@@ -8681,7 +8681,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Hat',
       'nameID': 'ShipwrightHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 1
     },
@@ -8689,7 +8689,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Sandals',
       'nameID': 'ShipwrightSandalsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -8697,7 +8697,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Shirt',
       'nameID': 'ShipwrightShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 1
     },
@@ -8705,7 +8705,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Canoe',
       'nameID': 'SmallCanoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 13
     },
@@ -8713,7 +8713,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Cotton Bunting Red',
       'nameID': 'SmallCottonBuntingRedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 3
     },
@@ -8721,7 +8721,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Court',
       'nameID': 'SmallCourtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 6
     },
@@ -8729,7 +8729,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Festive Paper Lantern',
       'nameID': 'SmallFestivePaperLanternItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -8737,7 +8737,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Nylon Bunting Green',
       'nameID': 'SmallNylonBuntingGreenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 4
     },
@@ -8745,7 +8745,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Paper Lantern',
       'nameID': 'SmallPaperLanternItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 7,
       'yPos': 6
     },
@@ -8753,7 +8753,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Paper Machine',
       'nameID': 'SmallPaperMachineItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 7
     },
@@ -8761,7 +8761,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Shipyard',
       'nameID': 'SmallShipyardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 15
     },
@@ -8769,7 +8769,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Wooden Boat',
       'nameID': 'SmallWoodenBoatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 13
     },
@@ -8777,7 +8777,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Wooden Ship Frame',
       'nameID': 'SmallWoodenShipFrameItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 14
     },
@@ -8785,7 +8785,7 @@ export const itemsArray: IItem[] =
       'name': 'Smith Shirt',
       'nameID': 'SmithShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 2,
       'yPos': 0
     },
@@ -8793,7 +8793,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Buoy',
       'nameID': 'SteelBuoyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 5
     },
@@ -8801,7 +8801,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Liquids Tank',
       'nameID': 'SteelLiquidsTankItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -8809,7 +8809,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Warehouse Shelves',
       'nameID': 'SteelWarehouseShelvesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -8817,7 +8817,7 @@ export const itemsArray: IItem[] =
       'name': 'Trillium Flower',
       'nameID': 'TrilliumFlowerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 8
     },
@@ -8825,7 +8825,7 @@ export const itemsArray: IItem[] =
       'name': 'Tripod Camera',
       'nameID': 'TripodCameraItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -8833,7 +8833,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Barge',
       'nameID': 'WoodenBargeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 13
     },
@@ -8841,7 +8841,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Frame Wide',
       'nameID': 'WoodenFrameWideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -8849,7 +8849,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Hull Planks',
       'nameID': 'WoodenHullPlanksItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 13,
       'yPos': 14
     },
@@ -8857,7 +8857,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Keel',
       'nameID': 'WoodenKeelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 14
     },
@@ -8865,7 +8865,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Liquids Tank',
       'nameID': 'WoodenLiquidsTankItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -8873,7 +8873,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Oar',
       'nameID': 'WoodenOarItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 14
     },
@@ -8881,7 +8881,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Rudder',
       'nameID': 'WoodenRudderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 15
     },
@@ -8889,7 +8889,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Transport Ship',
       'nameID': 'WoodenTransportShipItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 13
     },
@@ -8897,7 +8897,7 @@ export const itemsArray: IItem[] =
       'name': 'Court Chair',
       'nameID': 'CourtChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 10,
       'yPos': 13
     },
@@ -8905,7 +8905,7 @@ export const itemsArray: IItem[] =
       'name': 'Flax Fiber',
       'nameID': 'FlaxFiberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 8
     },
@@ -8913,7 +8913,7 @@ export const itemsArray: IItem[] =
       'name': 'Flax Seed',
       'nameID': 'FlaxSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 8
     },
@@ -8921,7 +8921,7 @@ export const itemsArray: IItem[] =
       'name': 'Flax Stem',
       'nameID': 'FlaxStemItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 8
     },
@@ -8929,7 +8929,7 @@ export const itemsArray: IItem[] =
       'name': 'Flax Trawler Net',
       'nameID': 'FlaxTrawlerNetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 12,
       'yPos': 8
     },
@@ -8937,7 +8937,7 @@ export const itemsArray: IItem[] =
       'name': 'Huge Banner Sign',
       'nameID': 'HugeBannerSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 4,
       'yPos': 15
     },
@@ -8945,7 +8945,7 @@ export const itemsArray: IItem[] =
       'name': 'Huge Iron Banner Sign',
       'nameID': 'HugeIronBannerSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 15,
       'yPos': 14
     },
@@ -8953,7 +8953,7 @@ export const itemsArray: IItem[] =
       'name': 'Huge Iron Sign',
       'nameID': 'HugeIronSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 5,
       'yPos': 15
     },
@@ -8961,7 +8961,7 @@ export const itemsArray: IItem[] =
       'name': 'Huge Steel Banner Sign',
       'nameID': 'HugeSteelBannerSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 0,
       'yPos': 15
     },
@@ -8969,7 +8969,7 @@ export const itemsArray: IItem[] =
       'name': 'Huge Steel Sign',
       'nameID': 'HugeSteelSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -8977,7 +8977,7 @@ export const itemsArray: IItem[] =
       'name': 'Huge Wooden Banner Sign',
       'nameID': 'HugeWoodenBannerSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 14,
       'yPos': 14
     },
@@ -8985,7 +8985,7 @@ export const itemsArray: IItem[] =
       'name': 'Linen Fabric',
       'nameID': 'LinenFabricItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 7
     },
@@ -8993,7 +8993,7 @@ export const itemsArray: IItem[] =
       'name': 'Petals',
       'nameID': 'Petals',
       'tag': true,
-      'imageFile': 'UI_Icons_Tags.png',
+      'imageFile': 'UI_Icons_Tags.webp',
       'xPos': 5,
       'yPos': 8
     },
@@ -9001,7 +9001,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Mold',
       'nameID': 'WoodenMoldItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 9
     },
@@ -9009,7 +9009,7 @@ export const itemsArray: IItem[] =
       'name': 'Test Object Culture',
       'nameID': 'TestObjectCultureItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9017,7 +9017,7 @@ export const itemsArray: IItem[] =
       'name': 'Wet Brick',
       'nameID': 'WetBrickItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 9
     },
@@ -9025,7 +9025,7 @@ export const itemsArray: IItem[] =
       'name': 'Bathroom',
       'nameID': 'BathroomItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9033,7 +9033,7 @@ export const itemsArray: IItem[] =
       'name': 'Beaver Carcass',
       'nameID': 'BeaverCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9041,7 +9041,7 @@ export const itemsArray: IItem[] =
       'name': 'Bedroom',
       'nameID': 'BedroomItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9049,7 +9049,7 @@ export const itemsArray: IItem[] =
       'name': 'Blackboard',
       'nameID': 'BlackboardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9057,7 +9057,7 @@ export const itemsArray: IItem[] =
       'name': 'Bycocket',
       'nameID': 'BycocketItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9065,7 +9065,7 @@ export const itemsArray: IItem[] =
       'name': 'CO2 Canister',
       'nameID': 'CO2CanisterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9073,7 +9073,7 @@ export const itemsArray: IItem[] =
       'name': 'Camera',
       'nameID': 'CameraItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9081,7 +9081,7 @@ export const itemsArray: IItem[] =
       'name': 'Canning Assembly',
       'nameID': 'CanningAssemblyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9089,7 +9089,7 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Bench',
       'nameID': 'CastIronBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 6
     },
@@ -9097,7 +9097,7 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Chair',
       'nameID': 'CastIronChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 3,
       'yPos': 6
     },
@@ -9105,7 +9105,7 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Table',
       'nameID': 'CastIronTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 4,
       'yPos': 6
     },
@@ -9113,7 +9113,7 @@ export const itemsArray: IItem[] =
       'name': 'Composite Lumber Dresser',
       'nameID': 'CompositeLumberDresserItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9121,7 +9121,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Frame Landscape',
       'nameID': 'CopperFrameLandscapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9129,7 +9129,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Frame Portrait',
       'nameID': 'CopperFramePortraitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9137,7 +9137,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Frame Square',
       'nameID': 'CopperFrameSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9145,7 +9145,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Frame Tall',
       'nameID': 'CopperFrameTallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9153,7 +9153,7 @@ export const itemsArray: IItem[] =
       'name': 'Cornrows',
       'nameID': 'CornrowsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9161,7 +9161,7 @@ export const itemsArray: IItem[] =
       'name': 'Country Foundation',
       'nameID': 'CountryFoundationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_02.png',
+      'imageFile': 'UI_Icons_02.webp',
       'xPos': 0,
       'yPos': 10
     },
@@ -9169,7 +9169,7 @@ export const itemsArray: IItem[] =
       'name': 'Court Table',
       'nameID': 'CourtTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 11,
       'yPos': 13
     },
@@ -9177,7 +9177,7 @@ export const itemsArray: IItem[] =
       'name': 'Culture',
       'nameID': 'CultureItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9185,7 +9185,7 @@ export const itemsArray: IItem[] =
       'name': 'Curly',
       'nameID': 'CurlyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9193,7 +9193,7 @@ export const itemsArray: IItem[] =
       'name': 'Dried Fish',
       'nameID': 'DriedFishItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 9
     },
@@ -9201,7 +9201,7 @@ export const itemsArray: IItem[] =
       'name': 'Dried Meat',
       'nameID': 'DriedMeatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 9
     },
@@ -9209,7 +9209,7 @@ export const itemsArray: IItem[] =
       'name': 'Embassy Desk',
       'nameID': 'EmbassyDeskItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 13
     },
@@ -9217,7 +9217,7 @@ export const itemsArray: IItem[] =
       'name': 'Federation Foundation',
       'nameID': 'FederationFoundationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 9,
       'yPos': 13
     },
@@ -9225,7 +9225,7 @@ export const itemsArray: IItem[] =
       'name': 'Feminine Mannequin',
       'nameID': 'FeminineMannequinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9233,7 +9233,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Frame Landscape',
       'nameID': 'GoldFrameLandscapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9241,7 +9241,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Frame Portrait',
       'nameID': 'GoldFramePortraitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9249,7 +9249,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Frame Square',
       'nameID': 'GoldFrameSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9257,7 +9257,7 @@ export const itemsArray: IItem[] =
       'name': 'Gold Frame Tall',
       'nameID': 'GoldFrameTallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9265,7 +9265,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Board',
       'nameID': 'HardwoodBoardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9273,7 +9273,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Hewn Log',
       'nameID': 'HardwoodHewnLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9281,7 +9281,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Lumber Bench',
       'nameID': 'HardwoodLumberBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9289,7 +9289,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Lumber Chair',
       'nameID': 'HardwoodLumberChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9297,7 +9297,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Lumber Door',
       'nameID': 'HardwoodLumberDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9305,7 +9305,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Lumber Dresser',
       'nameID': 'HardwoodLumberDresserItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9313,7 +9313,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Lumber',
       'nameID': 'HardwoodLumberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9321,7 +9321,7 @@ export const itemsArray: IItem[] =
       'name': 'Hardwood Lumber Table',
       'nameID': 'HardwoodLumberTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9329,7 +9329,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Hardwood Bench',
       'nameID': 'HewnHardwoodBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9337,7 +9337,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Hardwood Chair',
       'nameID': 'HewnHardwoodChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9345,7 +9345,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Hardwood Door',
       'nameID': 'HewnHardwoodDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9353,7 +9353,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Hardwood Table',
       'nameID': 'HewnHardwoodTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9361,7 +9361,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Softwood Bench',
       'nameID': 'HewnSoftwoodBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9369,7 +9369,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Softwood Chair',
       'nameID': 'HewnSoftwoodChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9377,7 +9377,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Softwood Door',
       'nameID': 'HewnSoftwoodDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9385,7 +9385,7 @@ export const itemsArray: IItem[] =
       'name': 'Hewn Softwood Table',
       'nameID': 'HewnSoftwoodTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9393,7 +9393,7 @@ export const itemsArray: IItem[] =
       'name': 'Hunting Upgrade',
       'nameID': 'HuntingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9401,7 +9401,7 @@ export const itemsArray: IItem[] =
       'name': 'Immigration Desk',
       'nameID': 'ImmigrationDeskItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 14,
       'yPos': 13
     },
@@ -9409,7 +9409,7 @@ export const itemsArray: IItem[] =
       'name': 'Industrial',
       'nameID': 'IndustrialItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9417,7 +9417,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Frame Landscape',
       'nameID': 'IronFrameLandscapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9425,7 +9425,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Frame Portrait',
       'nameID': 'IronFramePortraitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9433,7 +9433,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Frame Square',
       'nameID': 'IronFrameSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9441,7 +9441,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Frame Tall',
       'nameID': 'IronFrameTallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9449,7 +9449,7 @@ export const itemsArray: IItem[] =
       'name': 'Kitchenroom',
       'nameID': 'KitchenroomItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9457,7 +9457,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Cotton Bunting Festive',
       'nameID': 'LargeCottonBuntingFestiveItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9465,7 +9465,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Cotton Bunting Regal',
       'nameID': 'LargeCottonBuntingRegalItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9473,7 +9473,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Cotton Bunting Vibrant',
       'nameID': 'LargeCottonBuntingVibrantItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9481,7 +9481,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Nylon Bunting Purple',
       'nameID': 'LargeNylonBuntingPurpleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9489,7 +9489,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Nylon Bunting Yellow',
       'nameID': 'LargeNylonBuntingYellowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9497,7 +9497,7 @@ export const itemsArray: IItem[] =
       'name': 'Large Wooden Bookshelf',
       'nameID': 'LargeWoodenBookshelfItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9505,7 +9505,7 @@ export const itemsArray: IItem[] =
       'name': 'Limestone Podium',
       'nameID': 'LimestonePodiumItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9513,7 +9513,7 @@ export const itemsArray: IItem[] =
       'name': 'Livingroom',
       'nameID': 'LivingroomItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9521,7 +9521,7 @@ export const itemsArray: IItem[] =
       'name': 'Marmot Carcass',
       'nameID': 'MarmotCarcassItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9529,7 +9529,7 @@ export const itemsArray: IItem[] =
       'name': 'Masculine Mannequin',
       'nameID': 'MasculineMannequinItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9537,7 +9537,7 @@ export const itemsArray: IItem[] =
       'name': 'Muffin Hat',
       'nameID': 'MuffinHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9545,7 +9545,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Gold Frame Landscape',
       'nameID': 'OrnateGoldFrameLandscapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9553,7 +9553,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Gold Frame Portrait',
       'nameID': 'OrnateGoldFramePortraitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9561,7 +9561,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Gold Frame Square',
       'nameID': 'OrnateGoldFrameSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9569,7 +9569,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Gold Frame Tall',
       'nameID': 'OrnateGoldFrameTallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9577,7 +9577,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Iron Frame Landscape',
       'nameID': 'OrnateIronFrameLandscapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9585,7 +9585,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Iron Frame Portrait',
       'nameID': 'OrnateIronFramePortraitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9593,7 +9593,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Iron Frame Square',
       'nameID': 'OrnateIronFrameSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9601,7 +9601,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Iron Frame Tall',
       'nameID': 'OrnateIronFrameTallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9609,7 +9609,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Wooden Frame Landscape',
       'nameID': 'OrnateWoodenFrameLandscapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9617,7 +9617,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Wooden Frame Portrait',
       'nameID': 'OrnateWoodenFramePortraitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9625,7 +9625,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Wooden Frame Square',
       'nameID': 'OrnateWoodenFrameSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9633,7 +9633,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Wooden Frame Tall',
       'nameID': 'OrnateWoodenFrameTallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9641,7 +9641,7 @@ export const itemsArray: IItem[] =
       'name': 'Outpost Table',
       'nameID': 'OutpostTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 14
     },
@@ -9649,7 +9649,7 @@ export const itemsArray: IItem[] =
       'name': 'Picture Frame',
       'nameID': 'PictureFrameItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9657,7 +9657,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Bench Blue',
       'nameID': 'PlasticBenchBlueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9665,7 +9665,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Bench Green',
       'nameID': 'PlasticBenchGreenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9673,7 +9673,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Bench Red',
       'nameID': 'PlasticBenchRedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9681,7 +9681,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Chair Blue',
       'nameID': 'PlasticChairBlueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9689,7 +9689,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Chair Green',
       'nameID': 'PlasticChairGreenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9697,7 +9697,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Chair Red',
       'nameID': 'PlasticChairRedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9705,7 +9705,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Table Blue',
       'nameID': 'PlasticTableBlueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9713,7 +9713,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Table Green',
       'nameID': 'PlasticTableGreenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9721,7 +9721,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Table Red',
       'nameID': 'PlasticTableRedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9729,7 +9729,7 @@ export const itemsArray: IItem[] =
       'name': 'Ponytail',
       'nameID': 'PonytailItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9737,7 +9737,7 @@ export const itemsArray: IItem[] =
       'name': 'Pottery Table',
       'nameID': 'PotteryTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 12,
       'yPos': 15
     },
@@ -9745,7 +9745,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Canvas Boots',
       'nameID': 'PrimitiveCanvasBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9753,7 +9753,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Canvas Pants',
       'nameID': 'PrimitiveCanvasPantsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9761,7 +9761,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Canvas Shorts',
       'nameID': 'PrimitiveCanvasShortsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9769,7 +9769,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Fur Belt',
       'nameID': 'PrimitiveFurBeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9777,7 +9777,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Leather Boots',
       'nameID': 'PrimitiveLeatherBootsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9785,7 +9785,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Leather Pants',
       'nameID': 'PrimitiveLeatherPantsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9793,7 +9793,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Leather Shirt',
       'nameID': 'PrimitiveLeatherShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9801,7 +9801,7 @@ export const itemsArray: IItem[] =
       'name': 'Primitive Leather Shorts',
       'nameID': 'PrimitiveLeatherShortsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9809,7 +9809,7 @@ export const itemsArray: IItem[] =
       'name': 'Settlement Crafting Table',
       'nameID': 'SettlementCraftingTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 9
     },
@@ -9817,7 +9817,7 @@ export const itemsArray: IItem[] =
       'name': 'Sleek Short Hair',
       'nameID': 'SleekShortHairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9825,7 +9825,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Cotton Bunting Festive',
       'nameID': 'SmallCottonBuntingFestiveItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9833,7 +9833,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Cotton Bunting Regal',
       'nameID': 'SmallCottonBuntingRegalItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9841,7 +9841,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Cotton Bunting Vibrant',
       'nameID': 'SmallCottonBuntingVibrantItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9849,7 +9849,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Meeting Chair',
       'nameID': 'SmallMeetingChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9857,7 +9857,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Meeting Table',
       'nameID': 'SmallMeetingTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9865,7 +9865,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Nylon Bunting Purple',
       'nameID': 'SmallNylonBuntingPurpleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9873,7 +9873,7 @@ export const itemsArray: IItem[] =
       'name': 'Small Nylon Bunting Yellow',
       'nameID': 'SmallNylonBuntingYellowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9881,7 +9881,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Board',
       'nameID': 'SoftwoodBoardItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9889,7 +9889,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Hewn Log',
       'nameID': 'SoftwoodHewnLogItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9897,7 +9897,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Lumber Bench',
       'nameID': 'SoftwoodLumberBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9905,7 +9905,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Lumber Chair',
       'nameID': 'SoftwoodLumberChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9913,7 +9913,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Lumber Door',
       'nameID': 'SoftwoodLumberDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9921,7 +9921,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Lumber Dresser',
       'nameID': 'SoftwoodLumberDresserItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9929,7 +9929,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Lumber',
       'nameID': 'SoftwoodLumberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9937,7 +9937,7 @@ export const itemsArray: IItem[] =
       'name': 'Softwood Lumber Table',
       'nameID': 'SoftwoodLumberTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9945,7 +9945,7 @@ export const itemsArray: IItem[] =
       'name': 'Spinning Jenny',
       'nameID': 'SpinningJennyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9953,7 +9953,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Podium',
       'nameID': 'SteelPodiumItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9961,7 +9961,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Row Seating',
       'nameID': 'SteelRowSeatingItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9969,7 +9969,7 @@ export const itemsArray: IItem[] =
       'name': 'Stenographers Table',
       'nameID': 'StenographersTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -9977,7 +9977,7 @@ export const itemsArray: IItem[] =
       'name': 'Students Desk T1',
       'nameID': 'StudentsDeskT1Item',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9985,7 +9985,7 @@ export const itemsArray: IItem[] =
       'name': 'Students Desk T2',
       'nameID': 'StudentsDeskT2Item',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -9993,7 +9993,7 @@ export const itemsArray: IItem[] =
       'name': 'Students Desk T3',
       'nameID': 'StudentsDeskT3Item',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10001,7 +10001,7 @@ export const itemsArray: IItem[] =
       'name': 'Sun Butter',
       'nameID': 'SunButterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10009,7 +10009,7 @@ export const itemsArray: IItem[] =
       'name': 'Sweet Deer Jerky',
       'nameID': 'SweetDeerJerkyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 9
     },
@@ -10017,7 +10017,7 @@ export const itemsArray: IItem[] =
       'name': 'Teachers Desk T1',
       'nameID': 'TeachersDeskT1Item',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10025,7 +10025,7 @@ export const itemsArray: IItem[] =
       'name': 'Teachers Desk T2',
       'nameID': 'TeachersDeskT2Item',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10033,7 +10033,7 @@ export const itemsArray: IItem[] =
       'name': 'Teachers Desk T3',
       'nameID': 'TeachersDeskT3Item',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10041,7 +10041,7 @@ export const itemsArray: IItem[] =
       'name': 'The Bob',
       'nameID': 'TheBobItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10049,7 +10049,7 @@ export const itemsArray: IItem[] =
       'name': 'Town Foundation',
       'nameID': 'TownFoundationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 8,
       'yPos': 13
     },
@@ -10057,7 +10057,7 @@ export const itemsArray: IItem[] =
       'name': 'Trailer Truck',
       'nameID': 'TrailerTruckItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10065,7 +10065,7 @@ export const itemsArray: IItem[] =
       'name': 'Trapper Fur Hat',
       'nameID': 'TrapperFurHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10073,7 +10073,7 @@ export const itemsArray: IItem[] =
       'name': 'Trapper Leather Hat',
       'nameID': 'TrapperLeatherHatItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10081,7 +10081,7 @@ export const itemsArray: IItem[] =
       'name': 'Tunic',
       'nameID': 'TunicItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10089,7 +10089,7 @@ export const itemsArray: IItem[] =
       'name': 'Villagers Cowl Lowered',
       'nameID': 'VillagersCowlLoweredItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10097,7 +10097,7 @@ export const itemsArray: IItem[] =
       'name': 'Villagers Cowl Raised',
       'nameID': 'VillagersCowlRaisedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10105,7 +10105,7 @@ export const itemsArray: IItem[] =
       'name': 'Wanderers Hood Lowered',
       'nameID': 'WanderersHoodLoweredItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10113,7 +10113,7 @@ export const itemsArray: IItem[] =
       'name': 'Wanderers Hood Raised',
       'nameID': 'WanderersHoodRaisedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10121,7 +10121,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Frame Landscape',
       'nameID': 'WoodenFrameLandscapeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10129,7 +10129,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Frame Portrait',
       'nameID': 'WoodenFramePortraitItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10137,7 +10137,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Frame Square',
       'nameID': 'WoodenFrameSquareItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10145,7 +10145,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Frame Tall',
       'nameID': 'WoodenFrameTallItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10153,7 +10153,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Podium',
       'nameID': 'WoodenPodiumItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10161,7 +10161,7 @@ export const itemsArray: IItem[] =
       'name': 'Blacksmith Advanced Upgrade',
       'nameID': 'BlacksmithAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 11
     },
@@ -10169,7 +10169,7 @@ export const itemsArray: IItem[] =
       'name': 'Blacksmith Table',
       'nameID': 'BlacksmithTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 10
     },
@@ -10177,7 +10177,7 @@ export const itemsArray: IItem[] =
       'name': 'Blacksmith Upgrade',
       'nameID': 'BlacksmithUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 11
     },
@@ -10185,7 +10185,7 @@ export const itemsArray: IItem[] =
       'name': 'Ceramic Mold',
       'nameID': 'CeramicMoldItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 10
     },
@@ -10193,7 +10193,7 @@ export const itemsArray: IItem[] =
       'name': 'Clay Mold',
       'nameID': 'ClayMoldItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 10,
       'yPos': 10
     },
@@ -10201,7 +10201,7 @@ export const itemsArray: IItem[] =
       'name': 'Digital Work Station',
       'nameID': 'DigitalWorkStationItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10209,7 +10209,7 @@ export const itemsArray: IItem[] =
       'name': 'Extruder',
       'nameID': 'ExtruderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10217,7 +10217,7 @@ export const itemsArray: IItem[] =
       'name': 'Fletching Table',
       'nameID': 'FletchingTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 11
     },
@@ -10225,7 +10225,7 @@ export const itemsArray: IItem[] =
       'name': 'Gathering Advanced Upgrade',
       'nameID': 'GatheringAdvancedUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 10
     },
@@ -10233,7 +10233,7 @@ export const itemsArray: IItem[] =
       'name': 'Grindstone',
       'nameID': 'GrindstoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 7,
       'yPos': 10
     },
@@ -10241,7 +10241,7 @@ export const itemsArray: IItem[] =
       'name': 'Ink',
       'nameID': 'InkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 10
     },
@@ -10249,7 +10249,7 @@ export const itemsArray: IItem[] =
       'name': 'Lighthouse Lamp',
       'nameID': 'LighthouseLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 11
     },
@@ -10257,7 +10257,7 @@ export const itemsArray: IItem[] =
       'name': 'Paint Bucket',
       'nameID': 'PaintBucketItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 12,
       'yPos': 10
     },
@@ -10265,7 +10265,7 @@ export const itemsArray: IItem[] =
       'name': 'Power Hammer',
       'nameID': 'PowerHammerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 10
     },
@@ -10273,7 +10273,7 @@ export const itemsArray: IItem[] =
       'name': 'Printing Supplies',
       'nameID': 'PrintingSuppliesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 11
     },
@@ -10281,7 +10281,7 @@ export const itemsArray: IItem[] =
       'name': 'Smelting Basic Upgrade',
       'nameID': 'SmeltingBasicUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 10
     },
@@ -10289,7 +10289,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailoring Basic Upgrade',
       'nameID': 'TailoringUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_04.png',
+      'imageFile': 'UI_Icons_04.webp',
       'xPos': 6,
       'yPos': 13
     },
@@ -10297,7 +10297,7 @@ export const itemsArray: IItem[] =
       'name': 'Town Bell',
       'nameID': 'TownBellItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 8,
       'yPos': 10
     },
@@ -10305,7 +10305,7 @@ export const itemsArray: IItem[] =
       'name': 'Adobe Door',
       'nameID': 'AdobeDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 13
     },
@@ -10313,7 +10313,7 @@ export const itemsArray: IItem[] =
       'name': 'Adobe',
       'nameID': 'AdobeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 12
     },
@@ -10321,7 +10321,7 @@ export const itemsArray: IItem[] =
       'name': 'Baker Sign',
       'nameID': 'BakerSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -10329,7 +10329,7 @@ export const itemsArray: IItem[] =
       'name': 'Base Paint',
       'nameID': 'BasePaintItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 12,
       'yPos': 10
     },
@@ -10337,7 +10337,7 @@ export const itemsArray: IItem[] =
       'name': 'Bison Pelt',
       'nameID': 'BisonPeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10345,7 +10345,7 @@ export const itemsArray: IItem[] =
       'name': 'Blue Powder',
       'nameID': 'BluePowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 61,
       'yPos': 36
     },
@@ -10353,7 +10353,7 @@ export const itemsArray: IItem[] =
       'name': 'Bonsai',
       'nameID': 'BonsaiItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10361,7 +10361,7 @@ export const itemsArray: IItem[] =
       'name': 'Carpenter Sign',
       'nameID': 'CarpenterSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 10,
       'yPos': 0
     },
@@ -10369,7 +10369,7 @@ export const itemsArray: IItem[] =
       'name': 'Cart Blueprint Poster',
       'nameID': 'CartBlueprintPosterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 8,
       'yPos': 0
     },
@@ -10377,7 +10377,7 @@ export const itemsArray: IItem[] =
       'name': 'Cast Iron Plaque',
       'nameID': 'CastIronPlaqueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 0,
       'yPos': 2
     },
@@ -10385,7 +10385,7 @@ export const itemsArray: IItem[] =
       'name': 'Chandelier',
       'nameID': 'ChandelierItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 13
     },
@@ -10393,7 +10393,7 @@ export const itemsArray: IItem[] =
       'name': 'Charcoal Powder',
       'nameID': 'CharcoalPowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 0,
       'yPos': 35
     },
@@ -10401,7 +10401,7 @@ export const itemsArray: IItem[] =
       'name': 'Coarse Stone',
       'nameID': 'CoarseStoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 14
     },
@@ -10409,7 +10409,7 @@ export const itemsArray: IItem[] =
       'name': 'Cooking Utensils',
       'nameID': 'CookingUtensilsItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 14
     },
@@ -10417,7 +10417,7 @@ export const itemsArray: IItem[] =
       'name': 'Copper Hydroxide',
       'nameID': 'CopperHydroxideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 2,
       'yPos': 35
     },
@@ -10425,7 +10425,7 @@ export const itemsArray: IItem[] =
       'name': 'Cyan Powder',
       'nameID': 'CyanPowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 4,
       'yPos': 35
     },
@@ -10433,7 +10433,7 @@ export const itemsArray: IItem[] =
       'name': 'Deer Pelt',
       'nameID': 'DeerPeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 1,
       'yPos': 0
     },
@@ -10441,7 +10441,7 @@ export const itemsArray: IItem[] =
       'name': 'Dowel',
       'nameID': 'DowelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 7,
       'yPos': 14
     },
@@ -10449,7 +10449,7 @@ export const itemsArray: IItem[] =
       'name': 'Egyptian Canoe',
       'nameID': 'EgyptianCanoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 14
     },
@@ -10457,7 +10457,7 @@ export const itemsArray: IItem[] =
       'name': 'Election Poster',
       'nameID': 'ElectionPosterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 5,
       'yPos': 0
     },
@@ -10465,7 +10465,7 @@ export const itemsArray: IItem[] =
       'name': 'Engineer Sign',
       'nameID': 'EngineerSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 11,
       'yPos': 0
     },
@@ -10473,7 +10473,7 @@ export const itemsArray: IItem[] =
       'name': 'Fancy Hewn Door',
       'nameID': 'FancyHewnDoorItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 13
     },
@@ -10481,7 +10481,7 @@ export const itemsArray: IItem[] =
       'name': 'Far East Lumber',
       'nameID': 'FarEastLumberItem',
       'tag': false,
-      'imageFile': 'UI_Icons_03.png',
+      'imageFile': 'UI_Icons_03.webp',
       'xPos': 9,
       'yPos': 0
     },
@@ -10489,7 +10489,7 @@ export const itemsArray: IItem[] =
       'name': 'Farmer Sign',
       'nameID': 'FarmerSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 12,
       'yPos': 0
     },
@@ -10497,7 +10497,7 @@ export const itemsArray: IItem[] =
       'name': 'FishKite',
       'nameID': 'FishKitesItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 15
     },
@@ -10505,7 +10505,7 @@ export const itemsArray: IItem[] =
       'name': 'Food Sign',
       'nameID': 'FoodSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 13,
       'yPos': 0
     },
@@ -10513,7 +10513,7 @@ export const itemsArray: IItem[] =
       'name': 'Fox Pelt',
       'nameID': 'FoxPeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 0
     },
@@ -10521,7 +10521,7 @@ export const itemsArray: IItem[] =
       'name': 'Friendly Scarecrow',
       'nameID': 'FriendlyScarecrowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 4,
       'yPos': 1
     },
@@ -10529,7 +10529,7 @@ export const itemsArray: IItem[] =
       'name': 'Fuse',
       'nameID': 'FuseItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 8,
       'yPos': 14
     },
@@ -10537,7 +10537,7 @@ export const itemsArray: IItem[] =
       'name': 'Garden Gravel',
       'nameID': 'GardenGravelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -10545,7 +10545,7 @@ export const itemsArray: IItem[] =
       'name': 'Garden Pond',
       'nameID': 'GardenPondItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 9,
       'yPos': 1
     },
@@ -10553,7 +10553,7 @@ export const itemsArray: IItem[] =
       'name': 'Granite Spiral Fountain',
       'nameID': 'GraniteSpiralFountainItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 13
     },
@@ -10561,7 +10561,7 @@ export const itemsArray: IItem[] =
       'name': 'Granite Terrace Fountain',
       'nameID': 'GraniteTerraceFountainItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 13
     },
@@ -10569,7 +10569,7 @@ export const itemsArray: IItem[] =
       'name': 'Hanging Electric Wall Lamp',
       'nameID': 'HangingElectricWallLampItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 7,
       'yPos': 13
     },
@@ -10577,7 +10577,7 @@ export const itemsArray: IItem[] =
       'name': 'Hare Pelt',
       'nameID': 'HarePeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 0
     },
@@ -10585,7 +10585,7 @@ export const itemsArray: IItem[] =
       'name': 'Industrial Mill',
       'nameID': 'IndustrialMillItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 10,
       'yPos': 1
     },
@@ -10593,7 +10593,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Oxide',
       'nameID': 'IronOxideItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 6,
       'yPos': 35
     },
@@ -10601,7 +10601,7 @@ export const itemsArray: IItem[] =
       'name': 'Iron Paint Sprayer',
       'nameID': 'IronPaintSprayerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 6,
       'yPos': 11
     },
@@ -10609,7 +10609,7 @@ export const itemsArray: IItem[] =
       'name': 'Kite',
       'nameID': 'KiteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 15
     },
@@ -10617,7 +10617,7 @@ export const itemsArray: IItem[] =
       'name': 'Koi Pond',
       'nameID': 'KoiPondItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -10625,7 +10625,7 @@ export const itemsArray: IItem[] =
       'name': 'Lubricant',
       'nameID': 'LubricantItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 14
     },
@@ -10633,7 +10633,7 @@ export const itemsArray: IItem[] =
       'name': 'Magenta Powder',
       'nameID': 'MagentaPowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 8,
       'yPos': 35
     },
@@ -10641,7 +10641,7 @@ export const itemsArray: IItem[] =
       'name': 'Mason Sign',
       'nameID': 'MasonSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 0
     },
@@ -10649,7 +10649,7 @@ export const itemsArray: IItem[] =
       'name': 'Mill Stone',
       'nameID': 'MillStoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 10,
       'yPos': 14
     },
@@ -10657,7 +10657,7 @@ export const itemsArray: IItem[] =
       'name': 'Modern Paint Sprayer',
       'nameID': 'ModernPaintSprayerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 12
     },
@@ -10665,7 +10665,7 @@ export const itemsArray: IItem[] =
       'name': 'Norse Canoe',
       'nameID': 'NorseCanoeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 14
     },
@@ -10673,7 +10673,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Cast Iron Plaque',
       'nameID': 'OrnateCastIronPlaqueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10681,7 +10681,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Stone Plaque',
       'nameID': 'OrnateStonePlaqueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10689,7 +10689,7 @@ export const itemsArray: IItem[] =
       'name': 'Ornate Wood Plaque',
       'nameID': 'OrnateWoodPlaqueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -10697,7 +10697,7 @@ export const itemsArray: IItem[] =
       'name': 'Paint Mixer',
       'nameID': 'PaintMixerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 14
     },
@@ -10705,7 +10705,7 @@ export const itemsArray: IItem[] =
       'name': 'Painting Upgrade',
       'nameID': 'PaintingUpgradeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 15
     },
@@ -10713,7 +10713,7 @@ export const itemsArray: IItem[] =
       'name': 'Periodic Table Poster',
       'nameID': 'PeriodicTablePosterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 7,
       'yPos': 0
     },
@@ -10721,7 +10721,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Outdoor Bench',
       'nameID': 'PlasticOutdoorBenchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 0,
       'yPos': 6
     },
@@ -10729,7 +10729,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Outdoor Chair',
       'nameID': 'PlasticOutdoorChairItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 1,
       'yPos': 6
     },
@@ -10737,7 +10737,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Outdoor Table',
       'nameID': 'PlasticOutdoorTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 15,
       'yPos': 5
     },
@@ -10745,7 +10745,7 @@ export const itemsArray: IItem[] =
       'name': 'Plastic Window Planter',
       'nameID': 'PlasticWindowPlanterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 9,
       'yPos': 13
     },
@@ -10753,7 +10753,7 @@ export const itemsArray: IItem[] =
       'name': 'Polishing Paste',
       'nameID': 'PolishingPasteItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 14
     },
@@ -10761,7 +10761,7 @@ export const itemsArray: IItem[] =
       'name': 'Redwoods Poster',
       'nameID': 'RedwoodsPosterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 6,
       'yPos': 0
     },
@@ -10769,7 +10769,7 @@ export const itemsArray: IItem[] =
       'name': 'Rustic Window Planter',
       'nameID': 'RusticWindowPlanterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 10,
       'yPos': 13
     },
@@ -10777,7 +10777,7 @@ export const itemsArray: IItem[] =
       'name': 'Scarecrow',
       'nameID': 'ScarecrowItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 5,
       'yPos': 1
     },
@@ -10785,7 +10785,7 @@ export const itemsArray: IItem[] =
       'name': 'Sharpening Steel',
       'nameID': 'SharpeningSteelItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 15
     },
@@ -10793,7 +10793,7 @@ export const itemsArray: IItem[] =
       'name': 'Shipwright Sign',
       'nameID': 'ShipwrightSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 0
     },
@@ -10801,7 +10801,7 @@ export const itemsArray: IItem[] =
       'name': 'Steam Tractor Scoop',
       'nameID': 'SteamTractorScoopItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 11,
       'yPos': 1
     },
@@ -10809,7 +10809,7 @@ export const itemsArray: IItem[] =
       'name': 'Steel Spring',
       'nameID': 'SteelSpringItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 2,
       'yPos': 15
     },
@@ -10817,7 +10817,7 @@ export const itemsArray: IItem[] =
       'name': 'Stone Plaque',
       'nameID': 'StonePlaqueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 1,
       'yPos': 2
     },
@@ -10825,7 +10825,7 @@ export const itemsArray: IItem[] =
       'name': 'Store Sign',
       'nameID': 'StoreSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 0,
       'yPos': 1
     },
@@ -10833,7 +10833,7 @@ export const itemsArray: IItem[] =
       'name': 'Tailor Sign',
       'nameID': 'TailorSignItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 1
     },
@@ -10841,7 +10841,7 @@ export const itemsArray: IItem[] =
       'name': 'Tapestry Fish',
       'nameID': 'TapestryFishItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 2,
       'yPos': 1
     },
@@ -10849,7 +10849,7 @@ export const itemsArray: IItem[] =
       'name': 'Tapestry',
       'nameID': 'TapestryItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 15
     },
@@ -10857,7 +10857,7 @@ export const itemsArray: IItem[] =
       'name': 'Tapestry Sunset',
       'nameID': 'TapestrySunsetItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 1
     },
@@ -10865,7 +10865,7 @@ export const itemsArray: IItem[] =
       'name': 'Tiki Torch',
       'nameID': 'TikiTorchItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 12,
       'yPos': 13
     },
@@ -10873,7 +10873,7 @@ export const itemsArray: IItem[] =
       'name': 'Wall Mounted Chest',
       'nameID': 'WallMountedChestItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 7,
       'yPos': 1
     },
@@ -10881,7 +10881,7 @@ export const itemsArray: IItem[] =
       'name': 'Wall Mounted Trunk',
       'nameID': 'WallMountedTrunkItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 8,
       'yPos': 1
     },
@@ -10889,7 +10889,7 @@ export const itemsArray: IItem[] =
       'name': 'Whetstone',
       'nameID': 'WhetstoneItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 3,
       'yPos': 15
     },
@@ -10897,7 +10897,7 @@ export const itemsArray: IItem[] =
       'name': 'White Powder',
       'nameID': 'WhitePowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 10,
       'yPos': 35
     },
@@ -10905,7 +10905,7 @@ export const itemsArray: IItem[] =
       'name': 'Window Shutters Center',
       'nameID': 'WindowShuttersCenterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 13,
       'yPos': 13
     },
@@ -10913,7 +10913,7 @@ export const itemsArray: IItem[] =
       'name': 'Window Shutters Left',
       'nameID': 'WindowShuttersLeftItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 15,
       'yPos': 13
     },
@@ -10921,7 +10921,7 @@ export const itemsArray: IItem[] =
       'name': 'Window Shutters Right',
       'nameID': 'WindowShuttersRightItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 14,
       'yPos': 13
     },
@@ -10929,7 +10929,7 @@ export const itemsArray: IItem[] =
       'name': 'Wolf Pelt',
       'nameID': 'WolfPeltItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 0
     },
@@ -10937,7 +10937,7 @@ export const itemsArray: IItem[] =
       'name': 'Wood Plaque',
       'nameID': 'WoodPlaqueItem',
       'tag': false,
-      'imageFile': 'UI_Icons_07.png',
+      'imageFile': 'UI_Icons_07.webp',
       'xPos': 15,
       'yPos': 1
     },
@@ -10945,7 +10945,7 @@ export const itemsArray: IItem[] =
       'name': 'Wood Window Planter',
       'nameID': 'WoodWindowPlanterItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 13
     },
@@ -10953,7 +10953,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Gear',
       'nameID': 'WoodenGearItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 15
     },
@@ -10961,7 +10961,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Paint Sprayer',
       'nameID': 'WoodenPaintSprayerItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 7,
       'yPos': 11
     },
@@ -10969,7 +10969,7 @@ export const itemsArray: IItem[] =
       'name': 'Wooden Wall Torch Stand',
       'nameID': 'WoodenWallTorchStandItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 14
     },
@@ -10977,7 +10977,7 @@ export const itemsArray: IItem[] =
       'name': 'Yellow Powder',
       'nameID': 'YellowPowderItem',
       'tag': false,
-      'imageFile': 'UI_Icons_Baked_1.png',
+      'imageFile': 'UI_Icons_Baked_1.webp',
       'xPos': 12,
       'yPos': 35
     },
@@ -10985,7 +10985,7 @@ export const itemsArray: IItem[] =
       'name': 'Zataku Table',
       'nameID': 'ZatakuTableItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 1,
       'yPos': 14
     },
@@ -10993,7 +10993,7 @@ export const itemsArray: IItem[] =
       'name': 'Zen Garden',
       'nameID': 'ZenGardenItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 5,
       'yPos': 15
     },
@@ -11001,7 +11001,7 @@ export const itemsArray: IItem[] =
       'name': 'Fishing Pole',
       'nameID': 'FishingPoleItem',
       'tag': false,
-      'imageFile': 'UI_Icons_01.png',
+      'imageFile': 'UI_Icons_01.webp',
       'xPos': 13,
       'yPos': 11
     },
@@ -11009,7 +11009,7 @@ export const itemsArray: IItem[] =
       'name': 'Homestead Claim Stake',
       'nameID': 'HomesteadClaimStakeItem',
       'tag': false,
-      'imageFile': 'UI_Icons_05.png',
+      'imageFile': 'UI_Icons_05.webp',
       'xPos': 5,
       'yPos': 12
     },
@@ -11017,7 +11017,7 @@ export const itemsArray: IItem[] =
       'name': 'Garbage',
       'nameID': 'GarbageItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 11,
       'yPos': 13
     },
@@ -11168,7 +11168,7 @@ export const itemsArray: IItem[] =
       'name': 'Banana Rug',
       'nameID': 'BananaRugItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -11176,7 +11176,7 @@ export const itemsArray: IItem[] =
       'name': 'Banana Shirt',
       'nameID': 'BananaShirtItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -11232,7 +11232,7 @@ export const itemsArray: IItem[] =
       'name': 'Daisy Seed',
       'nameID': 'DaisySeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 15
     },
@@ -11536,7 +11536,7 @@ export const itemsArray: IItem[] =
       'name': 'Rose Seed',
       'nameID': 'RoseSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -11552,7 +11552,7 @@ export const itemsArray: IItem[] =
       'name': 'Saved The World Achievement Trophy',
       'nameID': 'SavedTheWorldAchievementTrophyItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -11568,7 +11568,7 @@ export const itemsArray: IItem[] =
       'name': 'Short Basic Softwood Shelf',
       'nameID': 'ShortBasicSoftwoodShelfItem',
       'tag': false,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -11872,7 +11872,7 @@ export const itemsArray: IItem[] =
       'name': 'Tulip Seed',
       'nameID': 'TulipSeedItem',
       'tag': false,
-      'imageFile': 'UI_Icons_00.png',
+      'imageFile': 'UI_Icons_00.webp',
       'xPos': 6,
       'yPos': 15
     },

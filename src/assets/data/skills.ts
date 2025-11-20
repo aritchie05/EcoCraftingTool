@@ -9,7 +9,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': false,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 3,
       'yPos': 2
     },
@@ -20,7 +20,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 2,
       'yPos': 0
     },
@@ -31,7 +31,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 3,
       'yPos': 0
     },
@@ -42,7 +42,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 1,
       'yPos': 2
     },
@@ -53,7 +53,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 2,
       'yPos': 2
     },
@@ -64,7 +64,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 6,
       'yPos': 2
     },
@@ -75,7 +75,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 6,
       'yPos': 0
     },
@@ -86,7 +86,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 4,
       'yPos': 11
     },
@@ -97,7 +97,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 7,
       'yPos': 2
     },
@@ -108,7 +108,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 4,
       'yPos': 0
     },
@@ -119,7 +119,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 0,
       'yPos': 4
     },
@@ -130,7 +130,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 0,
       'yPos': 0
     },
@@ -141,7 +141,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 0,
       'yPos': 3
     },
@@ -152,7 +152,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 5,
       'yPos': 0
     },
@@ -163,7 +163,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 1,
       'yPos': 3
     },
@@ -174,7 +174,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 2,
       'yPos': 3
     },
@@ -185,7 +185,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 5,
       'yPos': 1
     },
@@ -196,7 +196,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': false,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 3,
       'yPos': 1
     },
@@ -207,7 +207,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 6,
       'yPos': 1
     },
@@ -218,7 +218,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': false,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 3,
       'yPos': 3
     },
@@ -229,7 +229,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 7,
       'yPos': 0
     },
@@ -240,7 +240,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': false,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 4,
       'yPos': 3
     },
@@ -251,7 +251,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 0,
       'yPos': 2
     },
@@ -262,7 +262,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 0,
       'yPos': 1
     },
@@ -273,7 +273,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 4,
       'yPos': 1
     },
@@ -284,7 +284,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': true,
       'lavishWorkspace': false,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 5,
       'yPos': 3
     },
@@ -295,7 +295,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 1,
       'yPos': 1
     },
@@ -306,7 +306,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'UI_Icons_06.png',
+      'imageFile': 'UI_Icons_06.webp',
       'xPos': 11,
       'yPos': 15
     },
@@ -317,7 +317,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 1,
       'yPos': 0
     },
@@ -328,7 +328,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 7,
       'yPos': 1
     },
@@ -339,7 +339,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 6,
       'yPos': 3
     },
@@ -350,7 +350,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': true,
       'modernUpgrade': false,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 1,
       'yPos': 4
     },
@@ -361,7 +361,7 @@ export const skillsArray: ISkill[] =
       'advancedUpgrade': false,
       'modernUpgrade': true,
       'lavishWorkspace': true,
-      'imageFile': 'skill-icons-sprite.png',
+      'imageFile': 'skill-icons-sprite.webp',
       'xPos': 4,
       'yPos': 2
     }

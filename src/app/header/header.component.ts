@@ -32,22 +32,33 @@ export class HeaderComponent {
   supportedLocales: Locale[];
   ecoLogoUrl: string;
   dialog = inject(MatDialog);
+  release = '5.0.4-BETA'
+  retrievingReleaseNotes = false;
 
-  constructor(releaseNotesService: ReleaseNotesService, imageService: ImageService,
+  constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
               private storageService: WebStorageService, private localeService: LocaleService,
               private messageService: MessageService) {
-    this.releases = releaseNotesService.releases;
+    this.releases = signal([]);
     this.calcConfig = signal(storageService.getCalcConfig());
     this.exportJson = computed(() => JSON.stringify(this.calcConfig()));
     this.selectedLocale = localeService.selectedLocale;
     this.supportedLocales = [...localeService.supportedLocales.values()]
-    this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.png';
+    this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
   }
 
+  retrieveReleaseNotes() {
+    if (!this.retrievingReleaseNotes && this.releases().length === 0) {
+      this.retrievingReleaseNotes = true;
+      this.releaseNotesService.getReleases().subscribe(releases => {
+        this.releases.set(releases);
+        this.retrievingReleaseNotes = false;
+      });
+    }
+  }
 
   openReleaseNotes() {
     this.dialog.open(ReleaseNotesDialogComponent, {
-      data: this.releases()
+      data: this.releases
     });
   }
 
@@ -68,7 +79,7 @@ export class HeaderComponent {
   }
 
   onLocaleChange(localeCode: string) {
-    this.localeService.changeLocale(localeCode);
+    setTimeout(() => this.localeService.changeLocale(localeCode));
   }
 
   message(id: string): string {
