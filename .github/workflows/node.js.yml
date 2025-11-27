@@ -53,5 +53,5 @@ jobs:
         if: steps.lockcheck.outputs.has_lock == 'false'
         run: npm install
 
-      - run: npm run build --if-present
-      - run: npm run test
+      - run: npm run build
+      - run: npm run test-ci
