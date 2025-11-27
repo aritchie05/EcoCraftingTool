@@ -32,7 +32,7 @@ describe('PriceCalculatorServerService', () => {
       ]
     };
 
-    service.getAllRecipes().subscribe(result => {
+    service.getAllRecipes(true).subscribe(result => {
       expect(result).toBeTruthy();
       expect(result.Recipes.length).toBeGreaterThan(0);
       done();
@@ -59,7 +59,7 @@ describe('PriceCalculatorServerService', () => {
       }
     };
 
-    service.getAllItems().subscribe(result => {
+    service.getAllItems(true).subscribe(result => {
       expect(result).toBeTruthy();
       expect(result.AllItems['DummyItem']).toBeTruthy();
       expect(result.AllItems['DummyItem'].PropertyInfos.DisplayName.LocString).toEqual('Dummy Item');

@@ -5,6 +5,7 @@ import {provideHttpClient} from '@angular/common/http';
 import {provideDialogTestingDependencies} from '../../test-utils.spec';
 import {Release} from '../../model/release';
 import {signal, Signal} from '@angular/core';
+import {provideMarkdown} from 'ngx-markdown';
 
 describe('ReleaseNotesComponent', () => {
   let component: ReleaseNotesDialogComponent;
@@ -23,7 +24,7 @@ describe('ReleaseNotesComponent', () => {
 
     await TestBed.configureTestingModule({
       imports: [ReleaseNotesDialogComponent],
-      providers: [provideHttpClient(), provideDialogTestingDependencies(releasesMock)]
+      providers: [provideHttpClient(), provideDialogTestingDependencies(releasesMock), provideMarkdown()]
     })
       .compileComponents();
 
