@@ -48,17 +48,6 @@
                 }
               ]
             },
-            "offline": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.offline.ts"
-                }
-              ]
-            },
             "production": {
               "budgets": [
                 {
@@ -96,9 +85,6 @@
             },
             "development": {
               "buildTarget": "eco-crafting-tool:build:development"
-            },
-            "offline": {
-              "buildTarget": "eco-crafting-tool:build:offline"
             }
           },
           "defaultConfiguration": "development"
