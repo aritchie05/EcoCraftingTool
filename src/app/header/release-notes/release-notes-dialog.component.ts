@@ -3,7 +3,7 @@ import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/
 import {Release} from '../../model/release';
 import {MessageService} from '../../service/message.service';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MarkdownComponent, MarkdownModule} from 'ngx-markdown';
+import {MarkdownModule} from 'ngx-markdown';
 
 @Component({
   selector: 'app-release-notes',

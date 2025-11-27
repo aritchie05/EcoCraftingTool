@@ -86,7 +86,6 @@ export class HeaderComponent {
   openNewServerDialog(server: ServerConfig) {
     let serverConfig = server;
     const addingNew = server?.id === 'add-new';
-    const previousServer = this.selectedServer();
     let newServer: ServerConfig;
 
     if (server?.id === 'add-new') {

@@ -202,7 +202,7 @@ export class CraftingService {
         let canComputeInputPrices = true;
         let cost = 0;
 
-        console.debug(`======== Starting price computation for ${recipe.name()} Recipe ========`)
+        console.debug(`======== Starting price computation for ${recipe.name()} Recipe ========`);
 
         for (let i = 0; i < recipe.ingredients.length; i++) {
           const ing = recipe.ingredients[i];

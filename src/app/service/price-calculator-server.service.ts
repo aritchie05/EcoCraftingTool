@@ -193,7 +193,7 @@ export class PriceCalculatorServerService {
     let result = true;
 
     for (let serverIngredient of serverIngredients) {
-      const match = existingIngredients.find(existingIngredient => serverIngredient.NameID === existingIngredient.item.nameID)
+      const match = existingIngredients.find(existingIngredient => serverIngredient.NameID === existingIngredient.item.nameID);
       if (!match) {
         serverIngredient.NewItem = true;
         result = false;
@@ -222,7 +222,7 @@ export class PriceCalculatorServerService {
     let result = true;
 
     for (let serverOutput of serverOutputs) {
-      const match = existingOutputs.find(existingOutput => serverOutput.NameID === existingOutput.item.nameID)
+      const match = existingOutputs.find(existingOutput => serverOutput.NameID === existingOutput.item.nameID);
       if (!match) {
         console.debug(`Output not found: ${serverOutput.NameID}`);
         serverOutput.NewItem = true;
@@ -302,7 +302,7 @@ export class PriceCalculatorServerService {
         NameID: recipe.CraftingTableNameID!,
         Name: recipe.CraftingTable,
         CanUseModules: recipe.CraftingTableCanUseModules
-      }
+      };
       this.tempNewTables.update(tables => [...tables, newTable]);
     }
 
