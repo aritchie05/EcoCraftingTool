@@ -1,4 +1,4 @@
-import {signal, Signal, WritableSignal} from '@angular/core';
+import {signal, WritableSignal} from '@angular/core';
 
 export interface ServerConfig {
   id: string;
@@ -21,7 +21,7 @@ export const PREDEFINED_SERVERS: ServerGroup = {
   servers: signal([
     {
       id: 'default',
-      name: signal('Default (Vanilla)'),
+      name: signal('Vanilla'),
       hostname: signal(''),
       isCustom: false,
       useInsecureHttp: signal(false),
@@ -34,7 +34,39 @@ export const PREDEFINED_SERVERS: ServerGroup = {
       isCustom: false,
       useInsecureHttp: signal(false),
       connectionEstablished: signal(false)
-    }
+    },
+    {
+      id: 'greenleaf',
+      name: signal('Greenleaf'),
+      hostname: signal('148.251.154.60:3021'),
+      isCustom: false,
+      useInsecureHttp: signal(true),
+      connectionEstablished: signal(false)
+    },
+    {
+      id: 'silvermoon',
+      name: signal('Silvermoon'),
+      hostname: signal('79.137.98.112:3001'),
+      isCustom: false,
+      useInsecureHttp: signal(true),
+      connectionEstablished: signal(false)
+    },
+    {
+      id: 'eco-antics',
+      name: signal('Eco Antics'),
+      hostname: signal('98.142.1.172:3001'),
+      isCustom: false,
+      useInsecureHttp: signal(true),
+      connectionEstablished: signal(false)
+    },
+    {
+      id: 'be-eco',
+      name: signal('BeEco'),
+      hostname: signal('51.255.77.221:3001'),
+      isCustom: false,
+      useInsecureHttp: signal(true),
+      connectionEstablished: signal(false)
+    },
   ])
 };
 
@@ -47,10 +79,10 @@ export const CUSTOM_SERVERS: ServerGroup = {
       name: signal('Add New...'),
       hostname: signal(''),
       isCustom: true,
-      useInsecureHttp: signal(false),
+      useInsecureHttp: signal(true),
       connectionEstablished: signal(false)
     }
   ])
 };
 
-export const serverGroups: Signal<ServerGroup[]> = signal([PREDEFINED_SERVERS, CUSTOM_SERVERS]);
+export const serverGroups: ServerGroup[] = [PREDEFINED_SERVERS, CUSTOM_SERVERS];

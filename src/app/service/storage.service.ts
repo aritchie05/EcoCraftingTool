@@ -1,27 +1,31 @@
-import {Inject, Injectable} from '@angular/core';
+import {Inject, Injectable, signal} from '@angular/core';
 import {CalculatorConfig} from '../model/storage-model/calculator-config';
-import {LocaleService} from './locale.service';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import {StoredSkill} from '../model/storage-model/stored-skill';
 import {Skill} from '../model/skill';
 import {StoredTable} from '../model/storage-model/stored-table';
 import {CraftingTable} from '../model/crafting-table';
-import {skills} from '../../assets/data/skills';
-import {tables} from '../../assets/data/crafting-tables';
 import {Recipe} from '../model/recipe';
-import {recipes} from '../../assets/data/recipes';
 import {StoredRecipe} from '../model/storage-model/stored-recipe';
 import {Item} from '../model/item';
 import {StoredItem} from '../model/storage-model/stored-item';
-import {items} from '../../assets/data/items';
-import {upgradeModules} from '../../assets/data/upgrade-modules';
+import {
+  ServerIngredient,
+  ServerOutput,
+  ServerRecipe,
+  ServerSkill,
+  ServerTable
+} from '../model/server-api/server-recipe';
+import {ServerItem} from '../model/server-api/server-item';
+import {CUSTOM_SERVERS, PREDEFINED_SERVERS, ServerConfig} from '../model/server-api/server-config';
+import {StoredServerConfig} from '../model/storage-model/stored-server-config';
 
 @Injectable({
   providedIn: 'root'
 })
-export class WebStorageService {
+class WebStorageService {
 
-  constructor(@Inject(LOCAL_STORAGE) private storageService: StorageService, private localeService: LocaleService) {
+  constructor(@Inject(LOCAL_STORAGE) private storageService: StorageService) {
   }
 
   getCalcConfig(): CalculatorConfig {
@@ -35,12 +39,16 @@ export class WebStorageService {
       resourceCostMultiplier: multiplier != null ? Number.parseFloat(multiplier) : 1,
       laborCost: laborCost != null ? Number.parseFloat(laborCost) : 0,
       profitPercent: profit != null ? Number.parseFloat(profit) : 0,
-      locale: this.localeService.selectedLocale(),
+      locale: this.storageService.get('locale'),
       skills: this.storageService.get('skills'),
       tables: this.storageService.get('tables'),
       ingredients: this.storageService.get('ingredients'),
       outputs: this.storageService.get('recipes'),
-      byproducts: this.storageService.get('byproducts')
+      byproducts: this.storageService.get('byproducts'),
+      customSkills: this.storageService.get('customSkills'),
+      customTables: this.storageService.get('customTables'),
+      customItems: this.storageService.get('customItems'),
+      customRecipes: this.storageService.get('customRecipes')
     };
   }
 
@@ -48,9 +56,9 @@ export class WebStorageService {
     this.storageService.set('expensiveEndgameCost', '' + calcConfig.expensiveEndgameCost);
     this.storageService.set('resourceCostMultiplier', calcConfig.resourceCostMultiplier);
     this.storageService.set('laborCost', calcConfig.laborCost.toLocaleString(
-      this.localeService.selectedLocale().code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
+      'en-US', {minimumFractionDigits: 0, maximumFractionDigits: 2}));
     this.storageService.set('profitPercent', calcConfig.profitPercent.toLocaleString(
-      this.localeService.selectedLocale().code, {minimumFractionDigits: 0, maximumFractionDigits: 2}));
+      'en-US', {minimumFractionDigits: 0, maximumFractionDigits: 2}));
     this.storageService.set('locale', calcConfig.locale);
 
     this.storageService.set('skills', calcConfig.skills);
@@ -58,6 +66,11 @@ export class WebStorageService {
     this.storageService.set('ingredients', calcConfig.ingredients);
     this.storageService.set('recipes', calcConfig.outputs);
     this.storageService.set('byproducts', calcConfig.byproducts);
+
+    this.storageService.set('customSkills', calcConfig.customSkills);
+    this.storageService.set('customTables', calcConfig.customTables);
+    this.storageService.set('customItems', calcConfig.customItems);
+    this.storageService.set('customRecipes', calcConfig.customRecipes);
   }
 
   getCraftResourceModifier(): number {
@@ -77,87 +90,40 @@ export class WebStorageService {
     this.storageService.set('expensiveEndgameCost', '' + expensiveEndgame);
   }
 
-  getSelectedSkills(): Skill[] {
-    const storedSkills = this.storageService.get('skills');
-    if (storedSkills) {
-      return storedSkills.map((storedSkill: StoredSkill) => {
-        let skill = skills.get(storedSkill.id);
-        skill?.level.set(storedSkill.lvl);
-        skill?.lavishChecked.set(storedSkill.lav);
-        return skill;
-      });
-    }
-    return [];
+  getSelectedSkills(): StoredSkill[] {
+    return this.storageService.get('skills') ?? [];
   }
 
   saveSelectedSkills(skills: Skill[]) {
     this.storageService.set('skills', skills.map(skill => new StoredSkill(skill)));
   }
 
-  getSelectedTables(): CraftingTable[] {
-    const storedTables = this.storageService.get('tables');
-    if (storedTables) {
-      return storedTables.map((storedTable: StoredTable) => {
-        let table = tables.get(storedTable.id);
-        let upgrade = upgradeModules.get(storedTable.up);
-        table?.selectedUpgrade.set(upgrade!);
-        return table;
-      });
-    }
-    return [];
+  getSelectedTables(): StoredTable[] {
+    return this.storageService.get('tables') ?? [];
   }
 
   saveSelectedTables(tables: CraftingTable[]) {
     this.storageService.set('tables', tables.map(table => new StoredTable(table)));
   }
 
-  getSelectedRecipes(): Recipe[] {
-    const storedRecipes = this.storageService.get('recipes');
-    if (storedRecipes) {
-      return storedRecipes.map((storedRecipe: StoredRecipe) => {
-        let recipe = recipes.get(storedRecipe.id);
-        recipe?.basePrice.set(Number.parseFloat(storedRecipe.bp));
-        recipe?.price.set(Number.parseFloat(storedRecipe.pr));
-        if (storedRecipe.po) {
-          recipe?.profitOverride.set(Number.parseFloat(storedRecipe.po));
-        }
-        return recipe;
-      }).filter((recipe: Recipe) => recipe && !recipe.hidden) as Recipe[];
-    }
-    return [];
+  getSelectedRecipes(): StoredRecipe[] {
+    return this.storageService.get('recipes') ?? [];
   }
 
   saveSelectedRecipes(recipes: Recipe[]) {
     this.storageService.set('recipes', recipes.map(recipe => new StoredRecipe(recipe)));
   }
 
-  getSelectedItems(): Item[] {
-    const storedItems = this.storageService.get('ingredients');
-    if (storedItems) {
-      return storedItems.map((storedItem: StoredItem) => {
-        let item = items.get(storedItem.id);
-        item?.price.set(Number.parseFloat(storedItem.pr));
-        item?.touched.set(storedItem.t ?? false);
-        return item;
-      });
-    }
-    return [];
+  getSelectedItems(): StoredItem[] {
+    return this.storageService.get('ingredients') ?? [];
   }
 
   saveSelectedItems(items: Item[]) {
     this.storageService.set('ingredients', items.map(item => new StoredItem(item)));
   }
 
-  getSelectedByproducts(): Item[] {
-    const storedItems = this.storageService.get('byproducts');
-    if (storedItems) {
-      return storedItems.map((storedItem: StoredItem) => {
-        let item = items.get(storedItem.id);
-        item?.price.set(Number.parseFloat(storedItem.pr));
-        return item;
-      });
-    }
-    return [];
+  getSelectedByproducts(): StoredItem[] {
+    return this.storageService.get('byproducts') ?? [];
   }
 
   saveSelectedByproducts(items: Item[]) {
@@ -181,4 +147,112 @@ export class WebStorageService {
   saveProfitPercent(amount: number) {
     this.storageService.set('profitPercent', '' + amount);
   }
+
+  getCustomSkills(): ServerSkill[] {
+    return this.storageService.get('customSkills') ?? [];
+  }
+
+  saveCustomSkills(serverSkills: ServerSkill[]) {
+    this.storageService.set('customSkills', serverSkills.map(skill => {
+      return {
+        Skill: skill.Skill,
+        NameID: skill.NameID,
+        Level: skill.Level,
+      } as ServerSkill;
+    }));
+  }
+
+  getCustomTables(): ServerTable[] {
+    return this.storageService.get('customTables') ?? [];
+  }
+
+  saveCustomTables(serverTables: ServerTable[]) {
+    this.storageService.set('customTables', serverTables);
+  }
+
+  getCustomItems(): ServerItem[] {
+    return this.storageService.get('customItems') ?? [];
+  }
+
+  saveCustomItems(serverItems: ServerItem[]) {
+    this.storageService.set('customItems', serverItems.map(item => {
+      return {
+        PropertyInfos: {
+          Name: item.PropertyInfos.Name,
+          DisplayName: item.PropertyInfos.DisplayName,
+          Category: item.PropertyInfos.Category
+        },
+        Tags: item.Tags
+      } as ServerItem;
+    }));
+  }
+
+  getCustomRecipes(): ServerRecipe[] {
+    return this.storageService.get('customRecipes') ?? [];
+  }
+
+  saveCustomRecipes(serverRecipes: ServerRecipe[]) {
+    this.storageService.set('customRecipes', serverRecipes.map(recipe => {
+      return {
+        Key: recipe.Key,
+        NameID: recipe.NameID,
+        BaseLaborCost: recipe.BaseLaborCost,
+        SkillLevel: recipe.SkillLevel,
+        CraftingTable: recipe.CraftingTable,
+        CraftingTableNameID: recipe.CraftingTableNameID,
+        SkillNameID: recipe.SkillNameID,
+        Ingredients: recipe.Ingredients!.map(ingredient => {
+          return {
+            NameID: ingredient.NameID,
+            Ammount: ingredient.Ammount,
+            IsStatic: ingredient.IsStatic
+          } as ServerIngredient;
+        }),
+        Outputs: recipe.Outputs!.map(output => {
+          return {
+            NameID: output.NameID,
+            Ammount: output.Ammount,
+            IsStatic: output.IsStatic
+          } as ServerOutput;
+        })
+      } as ServerRecipe;
+    }));
+  }
+
+  saveSelectedServer(server: ServerConfig) {
+    this.storageService.set('selectedServer', new StoredServerConfig(server));
+  }
+
+  saveCustomServers(customServers: ServerConfig[]) {
+    this.storageService.set('customServers', customServers.map(server => new StoredServerConfig(server)));
+  }
+
+  getSelectedServer(): ServerConfig {
+    const storedServer = this.storageService.get('selectedServer') as StoredServerConfig;
+    if (storedServer) {
+      return this.convertStoredServerConfigToServerConfig(storedServer);
+    }
+    return PREDEFINED_SERVERS.servers()[0];
+  }
+
+  getCustomServers(): ServerConfig[] {
+    const storedServers = this.storageService.get('customServers') as StoredServerConfig[];
+    if (storedServers) {
+      return storedServers.map(storedServer => this.convertStoredServerConfigToServerConfig(storedServer));
+    }
+    return CUSTOM_SERVERS.servers();
+  }
+
+  private convertStoredServerConfigToServerConfig(storedServer: StoredServerConfig): ServerConfig {
+    return {
+      id: storedServer.id,
+      name: signal(storedServer.name),
+      hostname: signal(storedServer.hostname),
+      isCustom: storedServer.isCustom,
+      useInsecureHttp: signal(storedServer.useInsecureHttp),
+      connectionEstablished: signal(storedServer.connectionEstablished)
+    }
+  }
 }
+
+export default WebStorageService

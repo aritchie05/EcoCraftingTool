@@ -5,13 +5,14 @@ import {upgradeModules} from '../../assets/data/upgrade-modules';
 export interface ICraftingTable {
   name: string;
   nameID: string;
-  upgradeModuleType: string;
+  upgradeModuleType: UpgradeModuleType;
   hidden: boolean;
   imageFile?: string;
   xPos?: number;
   yPos?: number;
 }
 
+export type UpgradeModuleType = 'BasicUpgrade' | 'AdvancedUpgrade' | 'ModernUpgrade' | 'None';
 
 export class CraftingTable {
   name: WritableSignal<string>;

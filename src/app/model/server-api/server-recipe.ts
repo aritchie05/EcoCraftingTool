@@ -33,6 +33,7 @@ export interface ServerRecipe {
 export interface ServerTable {
   Name: string;
   NameID: string;
+  CanUseModules: boolean;
 }
 
 export interface ServerSkill {

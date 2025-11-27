@@ -7,7 +7,7 @@
   </mat-form-field>
   <mat-autocomplete #skillsAutocomplete="matAutocomplete" class="max-h-[70vh]"
                     (optionSelected)="onSkillSelected($event.option, skillInput)">
-    @for (skill of filteredSkills; track skill.nameID) {
+    @for (skill of filteredSkills(); track skill.nameID) {
       <mat-option [value]="skill">
         <img [src]="imageService.imageTemplateUrl" [style]="imageService.getSkillImgStyle(skill)"
              width="32" height="32" [alt]="skill.name() + ' Icon'" class="mr-2">
@@ -52,7 +52,7 @@
   </mat-form-field>
   <mat-autocomplete #tablesAutocomplete="matAutocomplete" class="max-h-[50vh]"
                     (optionSelected)="onTableSelected($event.option, tableInput)">
-    @for (table of filteredTables; track table.nameID) {
+    @for (table of filteredTables(); track table.nameID) {
       <mat-option [value]="table">
         <img [src]="imageService.imageTemplateUrl" [style]="imageService.getTableImgStyle(table)"
              width="32" height="32" [alt]="table.name() + ' Icon'" class="mr-2">

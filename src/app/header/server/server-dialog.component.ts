@@ -36,6 +36,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 export class ServerDialogComponent {
   dialogRef = inject(MatDialogRef<ServerDialogComponent>);
   serverConfig = inject<ServerConfig>(MAT_DIALOG_DATA);
+  isVanillaServer: boolean;
 
   connecting: WritableSignal<boolean> = signal(false);
   connectionFailed: WritableSignal<boolean> = signal(false);
@@ -50,13 +51,14 @@ export class ServerDialogComponent {
   modifiedRecipes: Signal<ServerRecipe[]>;
 
   constructor(private serverService: PriceCalculatorServerService) {
+    this.isVanillaServer = this.serverConfig.id === 'default';
     this.newTables = serverService.tempNewTables;
     this.newSkills = serverService.tempNewSkills;
     this.newItems = serverService.tempNewItems;
     this.newAndModifiedRecipes = serverService.tempNewRecipes;
 
-    this.newRecipes = computed(() => this.newAndModifiedRecipes().filter(recipe => recipe.IsNew));
-    this.modifiedRecipes = computed(() => this.newAndModifiedRecipes().filter(recipe => !recipe.IsNew));
+    this.newRecipes = computed(() => this.newAndModifiedRecipes().filter(recipe => recipe.IsNew).sort((a, b) => a.Key.localeCompare(b.Key)));
+    this.modifiedRecipes = computed(() => this.newAndModifiedRecipes().filter(recipe => !recipe.IsNew).sort((a, b) => a.Key.localeCompare(b.Key)));
   }
 
   close(result?: ServerDialogResult) {

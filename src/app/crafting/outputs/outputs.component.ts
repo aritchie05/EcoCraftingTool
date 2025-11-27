@@ -1,14 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  DestroyRef,
-  inject,
-  OnInit,
-  signal,
-  Signal,
-  WritableSignal
-} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, inject, signal, Signal, WritableSignal} from '@angular/core';
 import {Recipe} from '../../model/recipe';
 import {CraftingService} from '../../service/crafting.service';
 import {OutputDisplay, SubRecipe} from '../../model/output-display';
@@ -18,7 +8,6 @@ import {ImageService} from '../../service/image.service';
 import {LocaleService} from '../../service/locale.service';
 import {MatOption, MatOptionModule} from '@angular/material/core';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import {recipes} from '../../../assets/data/recipes';
 import {MatDialog} from '@angular/material/dialog';
 import {RecipeDialogComponent} from '../recipe-dialog/recipe-dialog.component';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -27,6 +16,7 @@ import {Skill} from '../../model/skill';
 import {MessageService} from '../../service/message.service';
 import {debounceTime, distinctUntilChanged, Subject} from 'rxjs';
 import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
+import {CraftingDataService} from '../../service/crafting-data.service';
 
 @Component({
   selector: 'app-outputs',
@@ -44,8 +34,10 @@ import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 })
 export class OutputsComponent {
 
-  allRecipes: Recipe[];
-  filteredRecipes: WritableSignal<Recipe[]>;
+  allRecipes: Signal<Recipe[]>;
+  searchTerm: WritableSignal<string>;
+  filteredRecipes: Signal<Recipe[]>;
+
 
   dialog = inject(MatDialog);
   private searchSubject = new Subject<string>();
@@ -55,10 +47,19 @@ export class OutputsComponent {
   groupedOutputDisplays: Signal<Map<Skill, OutputDisplay[]>>;
   groupedDisplayKeys: Signal<Skill[]>;
 
-  constructor(private craftingService: CraftingService, protected imageService: ImageService,
-              protected localeService: LocaleService, private messageService: MessageService) {
-    this.allRecipes = Array.from(recipes.values());
-    this.filteredRecipes = signal(this.allRecipes);
+  constructor(private craftingService: CraftingService, private craftingDataService: CraftingDataService,
+              protected imageService: ImageService, protected localeService: LocaleService,
+              private messageService: MessageService) {
+    this.allRecipes = this.craftingDataService.recipesArray;
+    this.searchTerm = signal('');
+    this.filteredRecipes = computed(() => {
+      const term = this.searchTerm().toLowerCase();
+      const recipes = this.allRecipes();
+      if (term.trim().length > 0) {
+        return recipes.filter(recipe => recipe.name().toLowerCase().includes(term));
+      }
+      return recipes;
+    })
     this.outputDisplays = craftingService.outputDisplays;
     this.defaultProfitPercent = craftingService.defaultProfitPercent;
     this.groupedOutputDisplays = computed(() => {
@@ -84,7 +85,7 @@ export class OutputsComponent {
       distinctUntilChanged(),
       takeUntilDestroyed()
     ).subscribe(searchTerm => {
-      this.filterRecipes(searchTerm);
+      this.searchTerm.set(searchTerm);
     });
   }
 
@@ -96,18 +97,6 @@ export class OutputsComponent {
     this.searchSubject.next(value);
   }
 
-  private filterRecipes(value: string) {
-    const searchTerm = value.toLowerCase();
-    if (searchTerm.length > 0) {
-      this.filteredRecipes.set(this.allRecipes.filter(recipe =>
-        recipe.name().toLowerCase().includes(searchTerm)
-      ));
-    } else {
-      this.filteredRecipes.set(this.allRecipes);
-    }
-  }
-
-
   onRecipeSelected(option: MatOption, input: HTMLInputElement) {
     option.deselect(false);
     input.value = '';
@@ -116,8 +105,17 @@ export class OutputsComponent {
     void this.craftingService.selectRecipe(recipe);
 
     setTimeout(() => {
-      this.filteredRecipes.set(this.allRecipes);
+      this.searchTerm.set('');
     }, 100);
+  }
+
+  onRecipeInfoClick(subRecipe: SubRecipe) {
+    const recipe = this.craftingDataService.recipes().get(subRecipe.recipeNameID) as Recipe;
+    this.dialog.open(RecipeDialogComponent, {
+      data: {
+        recipe: recipe
+      }
+    });
   }
 
   onRemoveOutput(outputIndex: number) {
@@ -128,13 +126,15 @@ export class OutputsComponent {
     void this.craftingService.removeSubRecipe(outputIndex, subIndex);
   }
 
-  onRecipeInfoClick(subRecipe: SubRecipe) {
-    const recipe = recipes.get(subRecipe.recipeNameID) as Recipe;
-    this.dialog.open(RecipeDialogComponent, {
-      data: {
-        recipe: recipe
-      }
-    });
+  private filterRecipes(value: string) {
+    const searchTerm = value.toLowerCase();
+    if (searchTerm.length > 0) {
+      this.filteredRecipes = computed(() => this.allRecipes().filter(recipe =>
+        recipe.name().toLowerCase().includes(searchTerm))
+      );
+    } else {
+      this.filteredRecipes = this.allRecipes;
+    }
   }
 
   onRemoveSkill(skill: Skill) {

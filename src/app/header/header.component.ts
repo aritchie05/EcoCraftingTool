@@ -8,14 +8,14 @@ import {MatDialog} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {CalculatorConfig} from '../model/storage-model/calculator-config';
-import {WebStorageService} from '../service/storage.service';
+import WebStorageService from '../service/storage.service';
 import {ImportDialogComponent} from './import/import-dialog.component';
 import {ExportDialogComponent} from './export/export-dialog.component';
 import {MatSelectModule} from '@angular/material/select';
 import {Locale, LocaleService} from '../service/locale.service';
 import {SettingsDialogComponent} from './settings/settings-dialog.component';
 import {MessageService} from '../service/message.service';
-import {CUSTOM_SERVERS, ServerConfig, ServerGroup, serverGroups} from '../model/server-api/server-config';
+import {CUSTOM_SERVERS, ServerConfig, serverGroups} from '../model/server-api/server-config';
 import {PriceCalculatorServerService} from '../service/price-calculator-server.service';
 import {ServerDialogComponent} from './server/server-dialog.component';
 import {ServerDialogResult} from '../model/server-dialog/server-dialog-result';
@@ -36,7 +36,7 @@ export class HeaderComponent {
   supportedLocales: Locale[];
   ecoLogoUrl: string;
   dialog = inject(MatDialog);
-  release = '5.0.4'
+  release = '6.0.0';
   retrievingReleaseNotes = false;
 
   // Server selection
@@ -96,37 +96,30 @@ export class HeaderComponent {
         name: signal(id.replaceAll('-', ' ')),
         hostname: signal(''),
         isCustom: true,
-        useInsecureHttp: signal(false),
+        useInsecureHttp: signal(true),
         connectionEstablished: signal(false)
       };
 
       serverConfig = newServer;
-
-      //Insert new server, leaving add-new at the end
-      CUSTOM_SERVERS.servers.update((servers) => [
-        ...servers.slice(0, servers.length - 1),
-        newServer,
-        servers[servers.length - 1]
-      ]);
     }
 
-    this.serverService.setSelectedServer(serverConfig);
     const dialogRef = this.dialog.open(ServerDialogComponent, {
       data: serverConfig,
       minHeight: '90vh'
     });
 
     dialogRef.afterClosed().subscribe((result: ServerDialogResult) => {
-      if (addingNew) {
-        const completed = result === 'saved';
+      this.serverService.resetParsedData();
+      const completed = result === 'saved';
 
-        if (!completed) {
-          // User canceled / closed dialog without saving:
-          // remove the temporary server and restore the previous selection
-          CUSTOM_SERVERS.servers.update((servers) =>
-            servers.filter((s) => s.id !== newServer.id)
-          );
-          this.serverService.setSelectedServer(previousServer);
+      if (completed) {
+        if (addingNew) {
+          //Insert new server, leaving add-new at the end
+          CUSTOM_SERVERS.servers.update((servers) => [
+            ...servers.slice(0, servers.length - 1),
+            newServer,
+            servers[servers.length - 1]
+          ]);
         }
       }
     });

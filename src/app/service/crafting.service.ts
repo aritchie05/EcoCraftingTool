@@ -1,9 +1,8 @@
-import {computed, effect, Injectable, linkedSignal, signal, Signal, untracked, WritableSignal} from '@angular/core';
+import {computed, effect, Injectable, linkedSignal, signal, Signal, WritableSignal} from '@angular/core';
 import {Skill} from '../model/skill';
 import {CraftingTable} from '../model/crafting-table';
-import {WebStorageService} from './storage.service';
+import WebStorageService from './storage.service';
 import {UpgradeModule} from '../model/upgrade-module';
-import {recipes} from '../../assets/data/recipes';
 import {Recipe} from '../model/recipe';
 import {Item} from '../model/item';
 import {OutputDisplay, SubRecipe} from '../model/output-display';
@@ -11,6 +10,7 @@ import {LaborCost} from '../model/labor-cost';
 import {laborCosts} from '../../assets/data/labor-costs';
 import {Ingredient} from '../model/ingredient';
 import {Output} from '../model/output';
+import {CraftingDataService} from './crafting-data.service';
 
 @Injectable({
   providedIn: 'root'
@@ -36,14 +36,14 @@ export class CraftingService {
   outputDisplays: Signal<OutputDisplay[]>;
   primaryOutputIds: Signal<Set<string>>;
 
-  constructor(private storageService: WebStorageService) {
+  constructor(storageService: WebStorageService, private craftingDataService: CraftingDataService) {
     this.craftResourceModifier = signal(storageService.getCraftResourceModifier());
     this.expensiveEndgameRecipes = signal(storageService.getExpensiveEndgameRecipes());
 
-    this.selectedSkills = signal(storageService.getSelectedSkills());
-    this.selectedTables = signal(storageService.getSelectedTables());
+    this.selectedSkills = signal(craftingDataService.getSelectedSkills());
+    this.selectedTables = signal(craftingDataService.getSelectedTables());
 
-    this.selectedRecipes = signal(storageService.getSelectedRecipes());
+    this.selectedRecipes = signal(craftingDataService.getSelectedRecipes());
 
     this.pricePerThousandCals = signal(storageService.getPricePerThousandCals());
     this.defaultProfitPercent = signal(storageService.getProfitPercent());
@@ -51,7 +51,7 @@ export class CraftingService {
     this.primaryOutputIds = computed(() => new Set(
       this.selectedRecipes()
         .filter((recipe) => !recipe.hidden)
-        .flatMap((recipe) => recipe.primaryOutput?.item.nameID)
+        .flatMap((recipe) => recipe.primaryOutput?.item?.nameID)
         .filter((nameID): nameID is string => nameID !== undefined))
     );
 
@@ -141,9 +141,7 @@ export class CraftingService {
       const pricePerThousandCals = this.pricePerThousandCals();
       const defaultProfitPercent = this.defaultProfitPercent();
 
-      this.computePricesAsync(recipes, inputs, byproducts, pricePerThousandCals, defaultProfitPercent).then(() =>
-        console.debug(`Promise returned from compute prices async`)
-      );
+      void this.computePricesAsync(recipes, inputs, byproducts, pricePerThousandCals, defaultProfitPercent);
     });
 
     effect(() => {
@@ -314,33 +312,38 @@ export class CraftingService {
     console.debug(`Computed all prices in ${numLoops} loops`);
   }
 
-  private restoreSavedPrices(): void {
-    const savedItems = this.storageService.getSelectedItems();
-    const savedByproducts = this.storageService.getSelectedByproducts();
-
-    if (savedItems.length === 0 && savedByproducts.length === 0) {
+  //Skill methods
+  async selectSkill(skill: Skill) {
+    if (this.selectedSkills().some(s => s.nameID === skill.nameID)) {
       return;
     }
 
-    // Create maps for efficient lookup
-    const savedItemPrices = new Map(savedItems.map(item => [item.nameID, item.price()]));
-    const savedByproductPrices = new Map(savedByproducts.map(item => [item.nameID, item.price()]));
+    this.selectedSkills.update(skills => [...skills, skill]);
 
-    // Restore input prices
-    this.selectedInputs().forEach(item => {
-      const savedPrice = savedItemPrices.get(item.nameID);
-      if (savedPrice !== undefined) {
-        item.price.set(savedPrice);
-      }
-    });
+    let recipesToAdd: Recipe[] = [];
+    let tablesToAdd: CraftingTable[] = [];
 
-    // Restore byproduct prices
-    this.selectedByproducts().forEach(item => {
-      const savedPrice = savedByproductPrices.get(item.nameID);
-      if (savedPrice !== undefined) {
-        item.price.set(savedPrice);
+    await new Promise(resolve => setTimeout(resolve));
+
+    //Find out which tables and recipes to add based on the selected skill
+    for (const recipe of this.craftingDataService.recipes().values()) {
+      if (!recipe.hidden && skill.nameID === recipe.skill?.nameID) {
+        if (!this.selectedRecipes().some(r => r.nameID === recipe.nameID)) {
+          recipesToAdd.push(recipe);
+        }
+
+        //Add the recipe's table as well, if it's not already marked for add and not already in the selected tables
+        if (!tablesToAdd.some(t => t.nameID === recipe.craftingTable.nameID) &&
+          !this.selectedTables().some(t => t.nameID === recipe.craftingTable.nameID)) {
+          tablesToAdd.push(recipe.craftingTable);
+        }
       }
-    });
+    }
+
+    await new Promise(resolve => setTimeout(resolve));
+
+    this.selectedTables.update(tables => [...tables, ...tablesToAdd]);
+    this.selectedRecipes.update(recipes => [...recipes, ...recipesToAdd]);
   }
 
   private resetTouchedForRemovedItems(removedRecipes: Recipe[]): void {
@@ -364,38 +367,30 @@ export class CraftingService {
     this.expensiveEndgameRecipes.update(value => !value);
   }
 
-  //Skill methods
-  async selectSkill(skill: Skill) {
-    if (this.selectedSkills().some(s => s.nameID === skill.nameID)) {
+  // Table methods
+  async selectTable(table: CraftingTable) {
+    if (this.selectedTables().some(t => t.nameID === table.nameID)) {
       return;
     }
 
-    this.selectedSkills.update(skills => [...skills, skill]);
-
-    let recipesToAdd: Recipe[] = [];
-    let tablesToAdd: CraftingTable[] = [];
+    // Add the table to the selected tables
+    this.selectedTables.update(tables => {
+      return [...tables, table];
+    });
 
     await new Promise(resolve => setTimeout(resolve));
 
-    //Find out which tables and recipes to add based on the selected skill
-    for (const recipe of recipes.values()) {
-      if (!recipe.hidden && skill.nameID === recipe.skill?.nameID) {
+    //Add all recipes and skills for that table
+    for (const recipe of this.craftingDataService.recipes().values()) {
+      if (!recipe.hidden && recipe.craftingTable.nameID === table.nameID) {
         if (!this.selectedRecipes().some(r => r.nameID === recipe.nameID)) {
-          recipesToAdd.push(recipe);
-        }
-
-        //Add the recipe's table as well, if it's not already marked for add and not already in the selected tables
-        if (!tablesToAdd.some(t => t.nameID === recipe.craftingTable.nameID) &&
-          !this.selectedTables().some(t => t.nameID === recipe.craftingTable.nameID)) {
-          tablesToAdd.push(recipe.craftingTable);
+          this.selectedRecipes.update(recipes => [...recipes, recipe]);
+          if (!this.selectedSkills().some(s => s.nameID === recipe.skill?.nameID)) {
+            this.selectedSkills.update(skills => [...skills, recipe.skill]);
+          }
         }
       }
     }
-
-    await new Promise(resolve => setTimeout(resolve));
-
-    this.selectedTables.update(tables => [...tables, ...tablesToAdd]);
-    this.selectedRecipes.update(recipes => [...recipes, ...recipesToAdd]);
   }
 
   updateSkillLevel(level: number, index: number) {
@@ -450,30 +445,46 @@ export class CraftingService {
     });
   }
 
-  // Table methods
-  async selectTable(table: CraftingTable) {
-    if (this.selectedTables().some(t => t.nameID === table.nameID)) {
-      return;
-    }
+  async removeOutput(outputIndex: number) {
+    const outputDisplay = this.outputDisplays()[outputIndex];
+    const subRecipeNameIds = outputDisplay.subRecipes.map(subRecipe => subRecipe.recipeNameID);
+    const recipesToRemove = subRecipeNameIds.map(nameID => this.craftingDataService.recipes().get(nameID) as Recipe);
 
-    // Add the table to the selected tables
-    this.selectedTables.update(tables => {
-      return [...tables, table];
+    const skillsToRemove = new Set<string>(recipesToRemove.map(recipe => recipe.skill.nameID));
+    const tablesToRemove = new Set<string>(recipesToRemove.map(recipe => recipe.craftingTable.nameID));
+
+    await new Promise(resolve => setTimeout(resolve));
+
+    this.selectedRecipes.update(recipes => {
+      for (let i = recipes.length - 1; i >= 0; i--) {
+        const recipe = recipes[i];
+        if (subRecipeNameIds.includes(recipe.nameID)) {
+          recipes.splice(i, 1);
+        } else {
+          if (skillsToRemove.has(recipe.skill.nameID)) {
+            skillsToRemove.delete(recipe.skill.nameID);
+          }
+          if (tablesToRemove.has(recipe.craftingTable.nameID)) {
+            tablesToRemove.delete(recipe.craftingTable.nameID);
+          }
+        }
+      }
+      return [...recipes];
     });
 
     await new Promise(resolve => setTimeout(resolve));
 
-    //Add all recipes and skills for that table
-    for (const recipe of recipes.values()) {
-      if (!recipe.hidden && recipe.craftingTable.nameID === table.nameID) {
-        if (!this.selectedRecipes().some(r => r.nameID === recipe.nameID)) {
-          this.selectedRecipes.update(recipes => [...recipes, recipe]);
-          if (!this.selectedSkills().some(s => s.nameID === recipe.skill?.nameID)) {
-            this.selectedSkills.update(skills => [...skills, recipe.skill]);
-          }
-        }
-      }
-    }
+    this.resetTouchedForRemovedItems(recipesToRemove);
+
+    this.selectedSkills.update(skills => {
+      return skills.filter(skill => !skillsToRemove.has(skill.nameID));
+    });
+
+    await new Promise(resolve => setTimeout(resolve));
+
+    this.selectedTables.update(tables => {
+      return tables.filter(table => !tablesToRemove.has(table.nameID));
+    });
   }
 
   updateSelectedUpgrade(index: number, value: UpgradeModule) {
@@ -559,51 +570,9 @@ export class CraftingService {
     }
   }
 
-  async removeOutput(outputIndex: number) {
-    const outputDisplay = this.outputDisplays()[outputIndex];
-    const subRecipeNameIds = outputDisplay.subRecipes.map(subRecipe => subRecipe.recipeNameID);
-    const recipesToRemove = subRecipeNameIds.map(nameID => recipes.get(nameID) as Recipe);
-
-    const skillsToRemove = new Set<string>(recipesToRemove.map(recipe => recipe.skill.nameID));
-    const tablesToRemove = new Set<string>(recipesToRemove.map(recipe => recipe.craftingTable.nameID));
-
-    await new Promise(resolve => setTimeout(resolve));
-
-    this.selectedRecipes.update(recipes => {
-      for (let i = recipes.length - 1; i >= 0; i--) {
-        const recipe = recipes[i];
-        if (subRecipeNameIds.includes(recipe.nameID)) {
-          recipes.splice(i, 1);
-        } else {
-          if (skillsToRemove.has(recipe.skill.nameID)) {
-            skillsToRemove.delete(recipe.skill.nameID);
-          }
-          if (tablesToRemove.has(recipe.craftingTable.nameID)) {
-            tablesToRemove.delete(recipe.craftingTable.nameID);
-          }
-        }
-      }
-      return [...recipes];
-    });
-
-    await new Promise(resolve => setTimeout(resolve));
-
-    this.resetTouchedForRemovedItems(recipesToRemove);
-
-    this.selectedSkills.update(skills => {
-      return skills.filter(skill => !skillsToRemove.has(skill.nameID));
-    });
-
-    await new Promise(resolve => setTimeout(resolve));
-
-    this.selectedTables.update(tables => {
-      return tables.filter(table => !tablesToRemove.has(table.nameID));
-    });
-  }
-
   async removeSubRecipe(outputIndex: number, subRecipeIndex: number) {
     const subRecipeToRemoveArray = this.outputDisplays()[outputIndex].subRecipes.splice(subRecipeIndex, 1);
-    const recipeToRemove = recipes.get(subRecipeToRemoveArray[0].recipeNameID) as Recipe;
+    const recipeToRemove = this.craftingDataService.recipes().get(subRecipeToRemoveArray[0].recipeNameID) as Recipe;
 
     //We need to remove the recipe's skill and table as well, if it's the only one that uses them
     const skillToRemove = recipeToRemove.skill.nameID;
@@ -648,6 +617,35 @@ export class CraftingService {
         return tables.filter(table => table.nameID !== tableToRemove);
       });
     }
+  }
+
+  private restoreSavedPrices(): void {
+    const savedItems = this.craftingDataService.getSelectedItems();
+    const savedByproducts = this.craftingDataService.getSelectedByproducts();
+
+    if (savedItems.length === 0 && savedByproducts.length === 0) {
+      return;
+    }
+
+    // Create maps for efficient lookup
+    const savedItemPrices = new Map(savedItems.map(item => [item.nameID, item.price()]));
+    const savedByproductPrices = new Map(savedByproducts.map(item => [item.nameID, item.price()]));
+
+    // Restore input prices
+    this.selectedInputs().forEach(item => {
+      const savedPrice = savedItemPrices.get(item.nameID);
+      if (savedPrice !== undefined) {
+        item.price.set(savedPrice);
+      }
+    });
+
+    // Restore byproduct prices
+    this.selectedByproducts().forEach(item => {
+      const savedPrice = savedByproductPrices.get(item.nameID);
+      if (savedPrice !== undefined) {
+        item.price.set(savedPrice);
+      }
+    });
   }
 
   updateProfitPercent(value: number, outputDisplay: OutputDisplay) {

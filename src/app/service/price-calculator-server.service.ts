@@ -1,5 +1,5 @@
-import {Injectable, signal, WritableSignal} from '@angular/core';
-import {PREDEFINED_SERVERS, ServerConfig, serverGroups} from '../model/server-api/server-config';
+import {effect, Injectable, signal, WritableSignal} from '@angular/core';
+import {CUSTOM_SERVERS, ServerConfig, serverGroups} from '../model/server-api/server-config';
 import {HttpClient} from '@angular/common/http';
 import {ServerItem, ServerItemsResponse} from '../model/server-api/server-item';
 import {catchError, forkJoin, map, Observable, of, tap} from 'rxjs';
@@ -7,7 +7,8 @@ import {
   ServerIngredient,
   ServerOutput,
   ServerRecipe,
-  ServerRecipesResponse, ServerSkill,
+  ServerRecipesResponse,
+  ServerSkill,
   ServerTable
 } from '../model/server-api/server-recipe';
 import {items} from '../../assets/data/items';
@@ -19,12 +20,13 @@ import {Ingredient} from '../model/ingredient';
 import {Output} from '../model/output';
 import {skills, skillsArray} from '../../assets/data/skills';
 import {tablesArray} from '../../assets/data/crafting-tables';
+import WebStorageService from './storage.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PriceCalculatorServerService {
-  private readonly selectedServer: WritableSignal<ServerConfig> = signal(PREDEFINED_SERVERS.servers()[0]);
+  private readonly selectedServer: WritableSignal<ServerConfig>;
 
   private readonly baseUrlPath = environment.serverBasePath;
   private readonly itemsPath = environment.serverItemsPath;
@@ -35,7 +37,19 @@ export class PriceCalculatorServerService {
   tempNewTables: WritableSignal<ServerTable[]> = signal([]);
   tempNewSkills: WritableSignal<ServerSkill[]> = signal([]);
 
-  constructor(private http: HttpClient, private craftingDataService: CraftingDataService) {
+  constructor(private http: HttpClient, private craftingDataService: CraftingDataService, private storageService: WebStorageService) {
+    this.selectedServer = signal(storageService.getSelectedServer());
+    CUSTOM_SERVERS.servers.set(storageService.getCustomServers());
+
+    effect(() => {
+      const server = this.selectedServer();
+      this.storageService.saveSelectedServer(server);
+    });
+
+    effect(() => {
+      const customServers = CUSTOM_SERVERS.servers();
+      this.storageService.saveCustomServers(customServers);
+    });
   }
 
   getSelectedServer(): ServerConfig {
@@ -47,8 +61,7 @@ export class PriceCalculatorServerService {
   }
 
   attemptConnection(server: ServerConfig) {
-    this.tempNewItems.set([]);
-    this.tempNewRecipes.set([]);
+    this.resetParsedData();
 
     const itemsRequest = this.getAllItems(server.useInsecureHttp(), server.hostname()).pipe(
       tap(response => this.tempNewItems.set(this.parseNewItems(response))),
@@ -125,48 +138,15 @@ export class PriceCalculatorServerService {
     );
   }
 
-  private processRecipe(recipe: ServerRecipe): void {
-    recipe.NameID = recipe.Key.replaceAll(' ', '');
-    recipe.CraftingTableNameID = this.convertNameToObjectNameID(recipe.CraftingTable);
-
-    const tableExists = tablesArray.some(t => t.nameID === recipe.CraftingTableNameID);
-    if (!tableExists) {
-      const newTable: ServerTable = {
-        NameID: recipe.CraftingTableNameID!,
-        Name: recipe.CraftingTable
+  getServerById(serverId: string): ServerConfig | undefined {
+    let server: ServerConfig | undefined;
+    for (let group of serverGroups) {
+      server = group.servers().find(server => server.id === serverId);
+      if (server) {
+        break;
       }
-      this.tempNewTables.update(tables => [...tables, newTable]);
     }
-
-    if (recipe.SkillNeeds.length > 0) {
-      const skill = recipe.SkillNeeds[0];
-      recipe.SkillNameID = this.convertNameToSkillNameID(skill.Skill);
-      skill.NameID = recipe.SkillNameID;
-      recipe.SkillLevel = skill.Level;
-      const skillExists = skillsArray.some(s => s.nameID === recipe.SkillNameID);
-      if (!skillExists) {
-        this.tempNewSkills.update(skills => [...skills, skill]);
-      }
-    } else {
-      recipe.SkillNameID = 'SelfImprovementSkill';
-      recipe.SkillLevel = 0;
-    }
-
-    if (recipe.NumberOfVariants > 0) {
-      recipe.Key = recipe.Variants[0].Name;
-      recipe.NameID = recipe.Variants[0].Key;
-      recipe.Ingredients = recipe.Variants[0].Ingredients;
-      recipe.Ingredients.forEach(ingredient => {
-        if (ingredient.Tag) {
-          ingredient.NameID = ingredient.Tag.replaceAll(' ', '');
-        } else {
-          ingredient.NameID = this.convertNameToItemNameID(ingredient.Name);
-        }
-      });
-
-      recipe.Outputs = recipe.Variants[0].Products;
-      recipe.Outputs.forEach(output => output.NameID = this.convertNameToItemNameID(output.Name));
-    }
+    return server;
   }
 
   private isUpdatedRecipe(newRecipe: ServerRecipe, existingRecipe: IRecipe): boolean {
@@ -275,23 +255,18 @@ export class PriceCalculatorServerService {
     return result;
   }
 
-  private convertNameToItemNameID(name: string): string {
-    // This is a bit of a hack, the server names are not the IDs. Since our items/tables/skills potentially have localized
-    // names, we need to remove spaces and append Item to the end (e.g. Steel Bar vs SteelBarItem)
-    let result = name.replaceAll(' ', '');
+  /**
+   * Saves the given server configuration along with the parsed new items and recipes to the calculator context.
+   * @param serverConfig the server configuration to save
+   */
+  saveConnection(serverConfig: ServerConfig) {
+    this.setSelectedServer(serverConfig);
+    this.craftingDataService.processServerSkills(this.tempNewSkills());
+    this.craftingDataService.processServerTables(this.tempNewTables());
+    this.craftingDataService.processServerItems(this.tempNewItems());
+    this.craftingDataService.processServerRecipes(this.tempNewRecipes());
 
-    //Exception for upgrades BasicUpgrade4 -> BasicUpgradeLvl4
-    let upgradeIndex = result.search(/Upgrade(\d)/);
-    if (upgradeIndex !== -1) {
-      result = result.substring(0, upgradeIndex + 7) + 'Lvl' + result.substring(upgradeIndex + 7);
-    }
-
-    //Exception for books, they are not named like other items
-    if (!name.endsWith('Book')) {
-      result += 'Item';
-    }
-
-    return result;
+    this.saveCustomDataToStorage();
   }
 
   private convertNameToObjectNameID(name: string): string {
@@ -302,24 +277,83 @@ export class PriceCalculatorServerService {
     return name.replaceAll(' ', '') + 'Skill';
   }
 
-  getServerById(serverId: string): ServerConfig | undefined {
-    let server: ServerConfig | undefined;
-    for (let group of serverGroups()) {
-      server = group.servers().find(server => server.id === serverId);
-      if (server) {
-        break;
-      }
-    }
-    return server;
+  resetParsedData() {
+    this.tempNewSkills.set([]);
+    this.tempNewTables.set([]);
+    this.tempNewItems.set([]);
+    this.tempNewRecipes.set([]);
   }
 
-  /**
-   * Saves the given server configuration along with the parsed new items and recipes to the calculator context.
-   * @param serverConfig the server configuration to save
-   */
-  saveConnection(serverConfig: ServerConfig) {
-    this.setSelectedServer(serverConfig);
-    this.craftingDataService.processNewItems(this.tempNewItems());
-    this.craftingDataService.processNewRecipes(this.tempNewRecipes());
+  saveCustomDataToStorage() {
+    this.storageService.saveCustomSkills(this.tempNewSkills());
+    this.storageService.saveCustomTables(this.tempNewTables());
+    this.storageService.saveCustomItems(this.tempNewItems());
+    this.storageService.saveCustomRecipes(this.tempNewRecipes());
+  }
+
+  private processRecipe(recipe: ServerRecipe): void {
+    recipe.NameID = recipe.Key.replaceAll(' ', '');
+    recipe.CraftingTableNameID = this.convertNameToObjectNameID(recipe.CraftingTable);
+
+    const tableExists = tablesArray.some(t => t.nameID === recipe.CraftingTableNameID) ||
+      this.tempNewTables().some(t => t.NameID === recipe.CraftingTableNameID);
+    if (!tableExists) {
+      const newTable: ServerTable = {
+        NameID: recipe.CraftingTableNameID!,
+        Name: recipe.CraftingTable,
+        CanUseModules: recipe.CraftingTableCanUseModules
+      }
+      this.tempNewTables.update(tables => [...tables, newTable]);
+    }
+
+    if (recipe.SkillNeeds.length > 0) {
+      const skill = recipe.SkillNeeds[0];
+      recipe.SkillNameID = this.convertNameToSkillNameID(skill.Skill);
+      skill.NameID = recipe.SkillNameID;
+      recipe.SkillLevel = skill.Level;
+      const skillExists = skillsArray.some(s => s.nameID === recipe.SkillNameID) ||
+        this.tempNewSkills().some(s => s.NameID === recipe.SkillNameID);
+      if (!skillExists) {
+        this.tempNewSkills.update(skills => [...skills, skill]);
+      }
+    } else {
+      recipe.SkillNameID = 'SelfImprovementSkill';
+      recipe.SkillLevel = 0;
+    }
+
+    if (recipe.NumberOfVariants > 0) {
+      recipe.Key = recipe.Variants[0].Name;
+      recipe.NameID = recipe.Variants[0].Key;
+      recipe.Ingredients = recipe.Variants[0].Ingredients;
+      recipe.Ingredients.forEach(ingredient => {
+        if (ingredient.Tag) {
+          ingredient.NameID = ingredient.Tag.replaceAll(' ', '');
+        } else {
+          ingredient.NameID = this.convertNameToItemNameID(ingredient.Name);
+        }
+      });
+
+      recipe.Outputs = recipe.Variants[0].Products;
+      recipe.Outputs.forEach(output => output.NameID = this.convertNameToItemNameID(output.Name));
+    }
+  }
+
+  private convertNameToItemNameID(name: string): string {
+    // This is a bit of a hack, the server names are not the IDs. Since our items/tables/skills potentially have localized
+    // names, we need to remove spaces and append Item to the end (e.g., Steel Bar vs. SteelBarItem)
+    let result = name.replaceAll(' ', '');
+
+    //Exception for upgrades BasicUpgrade4 -> BasicUpgradeLvl4
+    let upgradeIndex = result.search(/Upgrade(\d)/);
+    if (upgradeIndex !== -1) {
+      result = result.substring(0, upgradeIndex + 7) + 'Lvl' + result.substring(upgradeIndex + 7);
+    }
+
+    //Exception for books, they are not named like other items
+    if (!name.endsWith('Skill Book') && !name.endsWith('Skill Scroll')) {
+      result += 'Item';
+    }
+
+    return result;
   }
 }

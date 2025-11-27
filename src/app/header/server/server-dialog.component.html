@@ -1,6 +1,10 @@
 <div class="w-[70vw]">
   <h2 mat-dialog-title class="flex items-center mt-3">
-    New Server Connection
+    @if (isVanillaServer) {
+      Restore Default Config
+    } @else {
+      New Server Connection
+    }
     <button class="material-icons ml-2 text-2xl cursor-help hover:opacity-80"
             matTooltip="Attempt to import custom items and recipes from an Eco server. This requires UCat's Price
                         Calculator to be running on the server. Enter the host or IP and port for the server's web
@@ -10,12 +14,18 @@
     <span class="ml-auto material-icons cursor-pointer hover:opacity-80" (click)="close()">close</span>
   </h2>
   <mat-dialog-content>
-    <form>
+    <div class="flex items-center mb-4">
+      <span class="material-icons mr-2">warning_amber</span>
+      <span>
+        Modifying server connections may result in a broken calculator config. You should copy your current config using the Export function as a backup if you want to preserve it.
+      </span>
+    </div>
+    <form [class.hidden]="isVanillaServer" class="min-h-48">
       <mat-form-field appearance="outline" floatLabel="always" class="w-full my-2" subscriptSizing="dynamic">
         <mat-label>Server Label</mat-label>
         <input #serverNameInput matInput [readonly]="!serverConfig.isCustom" [value]="serverConfig.name()">
       </mat-form-field>
-      <mat-form-field appearance="outline" floatLabel="always" class="w-full my-2" subscriptSizing="dynamic"
+      <mat-form-field appearance="outline" class="w-full my-2" floatLabel="always" subscriptSizing="fixed"
                       [hintLabel]="connectionFailed() ? 'Error connecting to the server. Make sure you have entered a public Eco server running UCat\'s Price Calculator. Try switching HTTP/s?' : ''">
         <mat-label>Server Host / IP</mat-label>
         <input #serverHostNameInput matInput [readonly]="!serverConfig.isCustom" [value]="serverConfig.hostname()">
@@ -174,6 +184,10 @@
           </ul>
         </ng-template>
       </mat-expansion-panel>
+    }
+
+    @if (serverConfig.id === 'default') {
+      <span>Click Save Connection to remove any custom skills, tables, items, and recipes from the calculator context.</span>
     }
   </mat-dialog-content>
   <mat-dialog-actions align="end">
