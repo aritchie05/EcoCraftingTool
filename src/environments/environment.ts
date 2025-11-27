@@ -5,7 +5,12 @@
 export const environment = {
   production: false,
   releasesUrl: 'https://api.github.com/repos/aritchie05/EcoCraftingTool/releases',
-  imageBaseUrl: 'http://localhost:4200/assets/img/'
+  imageBaseUrl: 'http://localhost:4200/assets/img/',
+  mockServersResponse: false,
+  serverBasePath: '/api/v1/plugins/EcoPriceCalculator',
+  serverItemsPath: '/allItems',
+  serverRecipesPath: '/recipes',
+  whiteTigerHostName: 'https://white-tiger.play.eco'
 };
 
 /*

@@ -15,9 +15,25 @@
   </div>
   <div class="my-2 flex flex-wrap items-center">
     <button class="material-icons mx-3 cursor-pointer hover:opacity-80" (click)="openSettingsDialog()">settings</button>
+    <mat-form-field appearance="outline" class="mx-3 min-w-36">
+      <mat-label>{{ message('serverLabel') }} (Beta)</mat-label>
+      <mat-select [value]="selectedServer().id"
+                  (selectionChange)="onServerChange($event.value)"
+                  aria-label="Select server" panelClass="select-dropdown">
+        @for (serverGroup of serverGroups; track serverGroup.id) {
+          <mat-optgroup [label]="serverGroup.name">
+            @for (server of serverGroup.servers(); track server.id) {
+              <mat-option [value]="server.id">
+                {{ server.name() }}
+              </mat-option>
+            }
+          </mat-optgroup>
+        }
+      </mat-select>
+    </mat-form-field>
     <mat-form-field appearance="outline" class="mx-3">
       <mat-select [value]="selectedLocale().code" (selectionChange)="onLocaleChange($event.value)"
-                  panelClass="locale-select" aria-label="Select locale">
+                  aria-label="Select locale" panelClass="select-dropdown">
         @for (locale of supportedLocales; track locale.code) {
           <mat-option [value]="locale.code" class="f16">
             <span [class]="'flag ' + locale.regionCode"></span>

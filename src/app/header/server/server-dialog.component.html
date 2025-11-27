@@ -1,0 +1,205 @@
+<div class="w-[70vw]">
+  <h2 mat-dialog-title class="flex items-center mt-3">
+    @if (isVanillaServer) {
+      Restore Default Config
+    } @else {
+      New Server Connection
+    }
+    <button class="material-icons ml-2 text-2xl cursor-help hover:opacity-80"
+            matTooltip="Attempt to import custom items and recipes from an Eco server. This requires UCat's Price
+                        Calculator to be running on the server. Enter the host or IP and port for the server's web
+                        console.">
+      help_outline
+    </button>
+    <span class="ml-auto material-icons cursor-pointer hover:opacity-80" (click)="close()">close</span>
+  </h2>
+  <mat-dialog-content>
+    <div class="flex items-center mb-4">
+      <span class="material-icons mr-2">warning_amber</span>
+      <span>
+        Modifying server connections may result in a broken calculator config. You should copy your current config using the Export function as a backup if you want to preserve it.
+      </span>
+    </div>
+    <form [class.hidden]="isVanillaServer" class="min-h-48">
+      <mat-form-field appearance="outline" floatLabel="always" class="w-full my-2" subscriptSizing="dynamic">
+        <mat-label>Server Label</mat-label>
+        <input #serverNameInput matInput [readonly]="!serverConfig.isCustom" [value]="serverConfig.name()">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="w-full my-2" floatLabel="always" subscriptSizing="fixed"
+                      [hintLabel]="connectionFailed() ? 'Error connecting to the server. Make sure you have entered a public Eco server running UCat\'s Price Calculator. Try switching HTTP/s?' : ''">
+        <mat-label>Server Host / IP</mat-label>
+        <input #serverHostNameInput matInput [readonly]="!serverConfig.isCustom" [value]="serverConfig.hostname()">
+        <span matTextPrefix>http{{ serverConfig.useInsecureHttp() ? '' : 's' }}://</span>
+        @if (serverConfig.connectionEstablished()) {
+          <span matIconSuffix class="material-icons text-green">done</span>
+        } @else if (connectionFailed()) {
+          <span matIconSuffix class="material-icons text-red">error_outline</span>
+        } @else {
+          <span matIconSuffix class="material-icons">radio_button_unchecked</span>
+        }
+
+      </mat-form-field>
+      <mat-checkbox [checked]="serverConfig.useInsecureHttp()"
+                    (change)="serverConfig.useInsecureHttp.set($event.checked)">
+        Use Insecure HTTP
+      </mat-checkbox>
+    </form>
+    @if (connecting() || saving()) {
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    }
+    @if (newSkills().length > 0) {
+      <mat-expansion-panel class="my-2">
+        <mat-expansion-panel-header>
+          <mat-panel-title>New Skills: {{ newSkills().length }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <ul>
+            @for (skill of newSkills(); track $index) {
+              <li>{{ skill.Skill }}</li>
+            }
+          </ul>
+        </ng-template>
+      </mat-expansion-panel>
+    }
+    @if (newTables().length > 0) {
+      <mat-expansion-panel class="my-2">
+        <mat-expansion-panel-header>
+          <mat-panel-title>New Crafting Tables: {{ newTables().length }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <ul>
+            @for (table of newTables(); track $index) {
+              <li>{{ table.Name }}</li>
+            }
+          </ul>
+        </ng-template>
+      </mat-expansion-panel>
+    }
+    @if (newItems().length > 0) {
+      <mat-expansion-panel class="my-2">
+        <mat-expansion-panel-header>
+          <mat-panel-title>New Items: {{ newItems().length }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <ul>
+            @for (item of newItems(); track $index) {
+              <li>{{ item.PropertyInfos.DisplayName.LocString }}</li>
+            }
+          </ul>
+        </ng-template>
+      </mat-expansion-panel>
+    }
+    @if (newRecipes().length > 0) {
+      <mat-expansion-panel class="my-2">
+        <mat-expansion-panel-header>
+          <mat-panel-title>New Recipes: {{ newRecipes().length }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <ul>
+            @for (recipe of newRecipes(); track $index) {
+              <li class="mb-2">
+                <h3>{{ recipe.Key }}</h3>
+                <div class="ml-2 text-xs">
+                  <span [class.changed-recipe-element]="recipe.UpdatedSkillLevel">Level {{ recipe.SkillLevel }} </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedSkill">{{ recipe.SkillNameID }}, </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedLaborCost">{{ recipe.BaseLaborCost }} Cals </span>
+                  <span
+                    [class.changed-recipe-element]="recipe.UpdatedCraftingTable">at {{ recipe.CraftingTable }}</span>
+                  <br>
+                  <span [class.changed-recipe-element]="recipe.UpdatedIngredients">Inputs: </span>
+                  @for (input of recipe.Ingredients; track $index) {
+                    <span
+                      [class.changed-recipe-element]="input.UpdatedAmount || input.NewItem">{{ input.Ammount }} </span>
+                    <span
+                      [class.changed-recipe-element]="input.NewItem">{{ input.Name ? input.Name : input.Tag }} </span>
+                    <span
+                      [class.changed-recipe-element]="input.UpdatedStatic || input.NewItem">{{ input.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                    @if ($index < recipe.Ingredients!.length - 1) {
+                      ,
+                    }
+                  }
+                  <br>
+                  <span [class.changed-recipe-element]="recipe.UpdatedOutputs">Outputs: </span>
+                  @for (output of recipe.Outputs; track $index) {
+                    <span
+                      [class.changed-recipe-element]="output.UpdatedAmount || output.NewItem">{{ output.Ammount }} </span>
+                    <span [class.changed-recipe-element]="output.NewItem">{{ output.Name }} </span>
+                    <span
+                      [class.changed-recipe-element]="output.UpdatedStatic || output.NewItem">{{ output.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                    @if ($index < recipe.Outputs!.length - 1) {
+                      ,
+                    }
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+        </ng-template>
+      </mat-expansion-panel>
+    }
+    @if (modifiedRecipes().length > 0) {
+      <mat-expansion-panel class="my-2">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Modified Recipes: {{ modifiedRecipes().length }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <ul>
+            @for (recipe of modifiedRecipes(); track $index) {
+              <li class="mb-2">
+                <h3>{{ recipe.Key }}</h3>
+                <div class="ml-2 text-xs">
+                  <span [class.changed-recipe-element]="recipe.UpdatedSkillLevel">Level {{ recipe.SkillLevel }} </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedSkill">{{ recipe.SkillNameID }}, </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedLaborCost">{{ recipe.BaseLaborCost }} Cals </span>
+                  <span
+                    [class.changed-recipe-element]="recipe.UpdatedCraftingTable">at {{ recipe.CraftingTable }}</span>
+                  <br>
+                  <span [class.changed-recipe-element]="recipe.UpdatedIngredients">Inputs: </span>
+                  @for (input of recipe.Ingredients; track $index) {
+                    <span
+                      [class.changed-recipe-element]="input.UpdatedAmount || input.NewItem">{{ input.Ammount }} </span>
+                    <span
+                      [class.changed-recipe-element]="input.NewItem">{{ input.Name ? input.Name : input.Tag }} </span>
+                    <span
+                      [class.changed-recipe-element]="input.UpdatedStatic || input.NewItem">{{ input.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                    @if ($index < recipe.Ingredients!.length - 1) {
+                      ,
+                    }
+                  }
+                  <br>
+                  <span [class.changed-recipe-element]="recipe.UpdatedOutputs">Outputs: </span>
+                  @for (output of recipe.Outputs; track $index) {
+                    <span
+                      [class.changed-recipe-element]="output.UpdatedAmount || output.NewItem">{{ output.Ammount }} </span>
+                    <span [class.changed-recipe-element]="output.NewItem">{{ output.Name }} </span>
+                    <span
+                      [class.changed-recipe-element]="output.UpdatedStatic || output.NewItem">{{ output.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                    @if ($index < recipe.Outputs!.length - 1) {
+                      ,
+                    }
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+        </ng-template>
+      </mat-expansion-panel>
+    }
+
+    @if (serverConfig.id === 'default') {
+      <span>Click Save Connection to remove any custom skills, tables, items, and recipes from the calculator context.</span>
+    }
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button matButton (click)="close()">Cancel</button>
+    @if (!serverConfig.connectionEstablished()) {
+      <button matButton (click)="connect(serverHostNameInput.value)"
+              [disabled]="connecting() || serverConfig.connectionEstablished()">Test
+        Connection
+      </button>
+    } @else {
+      <button matButton (click)="saveConnection(serverNameInput.value)" [disabled]="saving()">Save Connection</button>
+    }
+
+  </mat-dialog-actions>
+</div>

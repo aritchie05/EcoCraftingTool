@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit, Signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, OnInit, Signal} from '@angular/core';
 import {Skill} from '../../model/skill';
 import {MatAutocompleteModule, MatOption} from '@angular/material/autocomplete';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -9,9 +9,8 @@ import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {UpgradeModule} from '../../model/upgrade-module';
 import {CraftingService} from '../../service/crafting.service';
-import {skills} from '../../../assets/data/skills';
-import {tables} from '../../../assets/data/crafting-tables';
 import {MessageService} from '../../service/message.service';
+import {CraftingDataService} from '../../service/crafting-data.service';
 
 @Component({
   selector: 'app-skills',
@@ -22,21 +21,28 @@ import {MessageService} from '../../service/message.service';
 })
 export class SkillsComponent implements OnInit {
 
-  allSkills: Skill[];
-  filteredSkills: Skill[];
+  allSkills: Signal<Skill[]>;
+  filteredSkills: Signal<Skill[]>;
 
-  allTables: CraftingTable[];
-  filteredTables: CraftingTable[];
+  allTables: Signal<CraftingTable[]>;
+  filteredTables: Signal<CraftingTable[]>;
 
   selectedSkills: Signal<Skill[]>;
   selectedTables: Signal<CraftingTable[]>;
 
-  constructor(private craftingService: CraftingService, protected imageService: ImageService,
-              private messageService: MessageService) {
-    this.allSkills = Array.from(skills.values());
+  constructor(private craftingService: CraftingService, private craftingDataService: CraftingDataService,
+              protected imageService: ImageService, private messageService: MessageService) {
+
+    this.allSkills = computed(() => {
+      const skills = this.craftingDataService.skills().values();
+      return Array.from(skills).sort((a, b) => a.name().localeCompare(b.name()));
+    });
     this.filteredSkills = this.allSkills;
 
-    this.allTables = Array.from(tables.values());
+    this.allTables = computed(() => {
+      const tables = this.craftingDataService.tables().values();
+      return Array.from(tables).sort((a, b) => a.name().localeCompare(b.name()));
+    });
     this.filteredTables = this.allTables;
 
     this.selectedSkills = this.craftingService.selectedSkills;
@@ -54,7 +60,7 @@ export class SkillsComponent implements OnInit {
   onSkillInput(value: string) {
     value = value.toLowerCase();
     if (value.length > 0) {
-      this.filteredSkills = this.allSkills.filter(skill => skill.name().toLowerCase().includes(value));
+      this.filteredSkills = computed(() => this.allSkills().filter(skill => skill.name().toLowerCase().includes(value)));
     } else {
       this.filteredSkills = this.allSkills;
     }
@@ -65,9 +71,7 @@ export class SkillsComponent implements OnInit {
     input.value = '';
     document.body.focus();
     const skill: Skill = option.value;
-    setTimeout(() => {
-      this.craftingService.selectSkill(skill);
-    });
+    void this.craftingService.selectSkill(skill);
 
     setTimeout(() => {
       this.filteredSkills = this.allSkills;
@@ -80,6 +84,7 @@ export class SkillsComponent implements OnInit {
       number = 0;
     } else {
       number = Math.min(7, Math.max(0, number));
+
     }
 
     this.craftingService.updateSkillLevel(number, index);
@@ -90,15 +95,13 @@ export class SkillsComponent implements OnInit {
   }
 
   onRemoveSkill(index: number) {
-    setTimeout(() => {
-      this.craftingService.removeSkillByIndex(index);
-    });
+    void this.craftingService.removeSkillByIndex(index);
   }
 
   onTableInput(value: string) {
     value = value.toLowerCase();
     if (value.length > 0) {
-      this.filteredTables = this.allTables.filter(table => table.name().toLowerCase().includes(value));
+      this.filteredTables = computed(() => this.allTables().filter(table => table.name().toLowerCase().includes(value)));
     } else {
       this.filteredTables = this.allTables;
     }
@@ -108,7 +111,7 @@ export class SkillsComponent implements OnInit {
     option.deselect(false);
     input.value = '';
     const table: CraftingTable = option.value;
-    this.craftingService.selectTable(table);
+    void this.craftingService.selectTable(table);
 
     setTimeout(() => {
       this.filteredTables = this.allTables;
@@ -120,6 +123,6 @@ export class SkillsComponent implements OnInit {
   }
 
   onRemoveTable(index: number) {
-    this.craftingService.removeTableByIndex(index);
+    void this.craftingService.removeTableByIndex(index);
   }
 }
