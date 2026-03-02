@@ -1,7 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {RecipeDialogComponent} from './recipe-dialog.component';
-import {provideDialogTestingDependencies} from '../../test-utils.spec';
+import {provideDialogTestingDependencies} from '../../test-utils';
 import {recipes} from '../../../assets/data/recipes';
 
 describe('RecipeDialogComponent', () => {

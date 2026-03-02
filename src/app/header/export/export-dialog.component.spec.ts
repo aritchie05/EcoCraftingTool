@@ -14,7 +14,7 @@ describe('ExportComponent', () => {
         {
           provide: MatDialogRef,
           useValue: {
-            close: jasmine.createSpy('close')
+            close: () => undefined
           }
         },
         {

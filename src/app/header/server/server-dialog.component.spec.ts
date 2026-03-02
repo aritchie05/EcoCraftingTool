@@ -2,7 +2,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ServerDialogComponent} from './server-dialog.component';
 import {provideHttpClient} from '@angular/common/http';
-import {provideDialogTestingDependencies} from '../../test-utils.spec';
+import {provideDialogTestingDependencies} from '../../test-utils';
 import {ServerConfig, serverGroups} from '../../model/server-api/server-config';
 
 describe('ServerDialogComponent', () => {

@@ -126,16 +126,6 @@ export class OutputsComponent {
     void this.craftingService.removeSubRecipe(outputIndex, subIndex);
   }
 
-  private filterRecipes(value: string) {
-    const searchTerm = value.toLowerCase();
-    if (searchTerm.length > 0) {
-      this.filteredRecipes = computed(() => this.allRecipes().filter(recipe =>
-        recipe.name().toLowerCase().includes(searchTerm))
-      );
-    } else {
-      this.filteredRecipes = this.allRecipes;
-    }
-  }
 
   onRemoveSkill(skill: Skill) {
     void this.craftingService.removeSkill(skill);

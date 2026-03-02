@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, computed, OnInit, Signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, signal, Signal, WritableSignal} from '@angular/core';
 import {Skill} from '../../model/skill';
 import {MatAutocompleteModule, MatOption} from '@angular/material/autocomplete';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -19,12 +19,14 @@ import {CraftingDataService} from '../../service/crafting-data.service';
   styleUrl: './skills.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
 
   allSkills: Signal<Skill[]>;
+  skillSearchTerm: WritableSignal<string> = signal('');
   filteredSkills: Signal<Skill[]>;
 
   allTables: Signal<CraftingTable[]>;
+  tableSearchTerm: WritableSignal<string> = signal('');
   filteredTables: Signal<CraftingTable[]>;
 
   selectedSkills: Signal<Skill[]>;
@@ -37,13 +39,23 @@ export class SkillsComponent implements OnInit {
       const skills = this.craftingDataService.skills().values();
       return Array.from(skills).sort((a, b) => a.name().localeCompare(b.name()));
     });
-    this.filteredSkills = this.allSkills;
+    this.filteredSkills = computed(() => {
+      const term = this.skillSearchTerm().toLowerCase();
+      return term.length > 0
+        ? this.allSkills().filter(skill => skill.name().toLowerCase().includes(term))
+        : this.allSkills();
+    });
 
     this.allTables = computed(() => {
       const tables = this.craftingDataService.tables().values();
       return Array.from(tables).sort((a, b) => a.name().localeCompare(b.name()));
     });
-    this.filteredTables = this.allTables;
+    this.filteredTables = computed(() => {
+      const term = this.tableSearchTerm().toLowerCase();
+      return term.length > 0
+        ? this.allTables().filter(table => table.name().toLowerCase().includes(term))
+        : this.allTables();
+    });
 
     this.selectedSkills = this.craftingService.selectedSkills;
     this.selectedTables = this.craftingService.selectedTables;
@@ -53,17 +65,8 @@ export class SkillsComponent implements OnInit {
     return this.messageService.getMessage(id);
   }
 
-  ngOnInit() {
-
-  }
-
   onSkillInput(value: string) {
-    value = value.toLowerCase();
-    if (value.length > 0) {
-      this.filteredSkills = computed(() => this.allSkills().filter(skill => skill.name().toLowerCase().includes(value)));
-    } else {
-      this.filteredSkills = this.allSkills;
-    }
+    this.skillSearchTerm.set(value);
   }
 
   onSkillSelected(option: MatOption, input: HTMLInputElement) {
@@ -74,7 +77,7 @@ export class SkillsComponent implements OnInit {
     void this.craftingService.selectSkill(skill);
 
     setTimeout(() => {
-      this.filteredSkills = this.allSkills;
+      this.skillSearchTerm.set('');
     }, 100);
   }
 
@@ -99,12 +102,7 @@ export class SkillsComponent implements OnInit {
   }
 
   onTableInput(value: string) {
-    value = value.toLowerCase();
-    if (value.length > 0) {
-      this.filteredTables = computed(() => this.allTables().filter(table => table.name().toLowerCase().includes(value)));
-    } else {
-      this.filteredTables = this.allTables;
-    }
+    this.tableSearchTerm.set(value);
   }
 
   onTableSelected(option: MatOption, input: HTMLInputElement) {
@@ -114,7 +112,7 @@ export class SkillsComponent implements OnInit {
     void this.craftingService.selectTable(table);
 
     setTimeout(() => {
-      this.filteredTables = this.allTables;
+      this.tableSearchTerm.set('');
     }, 100);
   }
 

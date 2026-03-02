@@ -1,7 +1,7 @@
-import {effect, Inject, Injectable, signal, WritableSignal} from '@angular/core';
+import {effect, Injectable, signal, WritableSignal} from '@angular/core';
 import {localeData, LocaleEntry} from '../../assets/data/locale/locale-data';
 import {upgradeModules} from '../../assets/data/upgrade-modules';
-import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {LocalStorageService} from 'ngx-webstorage';
 import {CraftingDataService} from './crafting-data.service';
 
 export class Locale {
@@ -26,10 +26,20 @@ export class LocaleService {
   readonly supportedLocales: Map<string, Locale>;
   readonly defaultLocale: Locale;
 
+  private readonly storageService: {
+    get(key: string): any;
+    set(key: string, value: unknown): unknown;
+  };
+
   selectedLocale: WritableSignal<Locale>;
 
-  constructor(@Inject(LOCAL_STORAGE) private storageService: StorageService,
+  constructor(localStorageService: LocalStorageService,
               private craftingDataService: CraftingDataService) {
+    this.storageService = {
+      get: (key: string) => localStorageService.retrieve(key),
+      set: (key: string, value: unknown) => localStorageService.store(key, value)
+    };
+
     this.defaultLocale = new Locale('English', 'en-US');
     this.supportedLocales = new Map([
       ['en', this.defaultLocale],

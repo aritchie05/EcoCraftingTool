@@ -2,7 +2,7 @@ import {TestBed} from '@angular/core/testing';
 
 import {ReleaseNotesService} from './release-notes.service';
 import {provideHttpClient} from '@angular/common/http';
-import {provideDialogTestingDependencies} from '../test-utils.spec';
+import {provideDialogTestingDependencies} from '../test-utils';
 
 describe('ReleaseNotesService', () => {
   let service: ReleaseNotesService;

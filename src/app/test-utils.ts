@@ -5,7 +5,7 @@ export function provideMockMatDialogRef<T = any>(): Provider {
   return {
     provide: MatDialogRef,
     useValue: {
-      close: jasmine.createSpy('close')
+      close: () => undefined
     }
   };
 }
