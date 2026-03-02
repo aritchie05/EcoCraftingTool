@@ -1,4 +1,4 @@
-# Eco Crafting Tool
+# Eco Calc - Crafting Calculator
 
 Crafting calculator for Eco Global Survival by Strange Loop Games located at https://eco-calc.com. Computes production
 costs for in-game items based on labor, materials, and crafting table upgrades.
