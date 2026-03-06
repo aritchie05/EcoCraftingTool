@@ -30,7 +30,9 @@
                    [innerText]="skill.level()"
                    (focusout)="onSkillLevelChange($index, levelInput.value)">
           </mat-form-field>
-          <button class="material-icons cursor-pointer hover:opacity-80" (click)="onRemoveSkill($index)">
+          <button class="material-icons cursor-pointer hover:opacity-80"
+                  [attr.aria-label]="'Remove ' + skill.name()"
+                  (click)="onRemoveSkill($index)">
             close
           </button>
         </div>
@@ -83,7 +85,9 @@
               }
             </mat-select>
           </mat-form-field>
-          <button class="material-icons cursor-pointer hover:opacity-80" (click)="onRemoveTable($index)">
+          <button class="material-icons cursor-pointer hover:opacity-80"
+                  [attr.aria-label]="'Remove ' + table.name()"
+                  (click)="onRemoveTable($index)">
             close
           </button>
         </div>
