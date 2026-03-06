@@ -2,7 +2,8 @@
   <h1 class="text-4xl my-1">{{ message('outputsHeader') }}</h1>
   <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>{{ message('recipeSearchPlaceholder') }}</mat-label>
-    <input #recipeInput matInput type="text" (input)="onRecipeInput(recipeInput.value)"
+    <input #recipeInput matInput type="text" aria-label="Search for a recipe to add"
+           (input)="onRecipeInput(recipeInput.value)"
            [matAutocomplete]="recipesAutocomplete">
   </mat-form-field>
   <mat-autocomplete #recipesAutocomplete="matAutocomplete" class="max-h-[70vh]"
@@ -37,12 +38,14 @@
                 <mat-form-field appearance="outline" class="w-24 mr-4">
                   <mat-label>{{ message('baseCostLabel') }}</mat-label>
                   <input #basePrice matInput type="text" readonly class="cursor-not-allowed"
+                         [attr.aria-label]="outputDisplay.itemName() + ' base cost'"
                          [value]="outputDisplay.basePrice().toLocaleString(localeService.selectedLocale().code,
                    {maximumFractionDigits: 2, minimumFractionDigits: 0})">
                 </mat-form-field>
                 <mat-form-field appearance="outline" floatLabel="always" class="w-24 mr-4">
                   <mat-label>{{ message('profitLabel') }}</mat-label>
                   <input #profitOverride matInput type="number" min="0" step="1" class="profit-input"
+                         [attr.aria-label]="outputDisplay.itemName() + ' profit %'"
                          [value]="outputDisplay.subRecipes[0].recipe.profitOverride() >= 0 ? outputDisplay.subRecipes[0].recipe.profitOverride() : defaultProfitPercent()"
                          (focusout)="onProfitOverrideChange(profitOverride.value, outputDisplay)"
                   >
@@ -51,10 +54,12 @@
                 <mat-form-field appearance="outline" class="w-24 mr-4">
                   <mat-label>{{ message('salePriceLabel') }}</mat-label>
                   <input #outputCost matInput type="text" readonly class="cursor-not-allowed"
+                         [attr.aria-label]="outputDisplay.itemName() + ' sale price'"
                          [value]="outputDisplay.itemPrice().toLocaleString(localeService.selectedLocale().code,
                    {maximumFractionDigits: 2, minimumFractionDigits: 0})">
                 </mat-form-field>
                 <button class="material-icons cursor-pointer hover:opacity-80 mr-2"
+                        [attr.aria-label]="'Remove ' + outputDisplay.itemName()"
                         (click)="onRemoveOutput(outputDisplays().indexOf(outputDisplay))">
                   close
                 </button>

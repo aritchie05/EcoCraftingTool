@@ -45,6 +45,7 @@
           <mat-form-field appearance="outline" class="w-24"
                           [class.highlight-zero-input]="shouldHighlightItemPrice(item)">
             <input #priceInput matInput type="number" step="0.1" min="0" [value]="item.price()"
+                   [attr.aria-label]="item.name() + ' price'"
                    (focus)="onItemPriceInputFocus(item)"
                    (focusout)="onInputPriceChange(index, priceInput.value)">
           </mat-form-field>
@@ -76,6 +77,7 @@
           <mat-form-field appearance="outline" class="w-24"
                           [class.highlight-zero-input]="shouldHighlightByproductPrice(byproduct)">
             <input #byproductInput matInput type="number" step="0.1" min="0" [value]="byproduct.price()"
+                   [attr.aria-label]="byproduct.name() + ' price'"
                    (focus)="onByproductPriceInputFocus(byproduct)"
                    (focusout)="onByproductPriceChange(index, byproductInput.value)">
           </mat-form-field>

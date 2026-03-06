@@ -2,7 +2,8 @@
   <h1 class="text-4xl my-1">{{ message('skillsHeader') }}</h1>
   <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>{{ message('skillSearchPlaceholder') }}</mat-label>
-    <input #skillInput matInput type="text" (input)="onSkillInput(skillInput.value)"
+    <input #skillInput matInput type="text" aria-label="Search for a skill to add"
+           (input)="onSkillInput(skillInput.value)"
            [matAutocomplete]="skillsAutocomplete">
   </mat-form-field>
   <mat-autocomplete #skillsAutocomplete="matAutocomplete" class="max-h-[70vh]"
@@ -25,6 +26,7 @@
         <div class="ml-auto flex items-center">
           <mat-form-field appearance="outline" class="w-16 mr-4" (click)="levelInput.select()">
             <input #levelInput matInput type="number" step="1" min="0" max="7" [value]="skill.level()"
+                   [attr.aria-label]="skill.name() + ' level'"
                    [innerText]="skill.level()"
                    (focusout)="onSkillLevelChange($index, levelInput.value)">
           </mat-form-field>
@@ -47,7 +49,8 @@
 
   <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>{{ message('tableSearchPlaceholder') }}</mat-label>
-    <input #tableInput matInput type="text" (input)="onTableInput(tableInput.value)"
+    <input #tableInput matInput type="text" aria-label="Search for a crafting table to add"
+           (input)="onTableInput(tableInput.value)"
            [matAutocomplete]="tablesAutocomplete">
   </mat-form-field>
   <mat-autocomplete #tablesAutocomplete="matAutocomplete" class="max-h-[50vh]"
@@ -70,6 +73,7 @@
         <div class="ml-auto flex items-center">
           <mat-form-field appearance="outline" class="mr-4">
             <mat-select #upgradeSelect [value]="table.selectedUpgrade()"
+                        [attr.aria-label]="table.name() + ' upgrade module'"
                         (selectionChange)="onTableUpgradeChange($index,$event.value)"
                         class="text-sm" panelClass="upgrade-select">
               @for (upgrade of table.availableUpgrades; track upgrade.nameID) {
