@@ -52,14 +52,6 @@ export const PREDEFINED_SERVERS: ServerGroup = {
       connectionEstablished: signal(false)
     },
     {
-      id: 'eco-antics',
-      name: signal('Eco Antics'),
-      hostname: signal('98.142.1.172:3001'),
-      isCustom: false,
-      useInsecureHttp: signal(true),
-      connectionEstablished: signal(false)
-    },
-    {
       id: 'be-eco',
       name: signal('BeEco'),
       hostname: signal('51.255.77.221:3001'),

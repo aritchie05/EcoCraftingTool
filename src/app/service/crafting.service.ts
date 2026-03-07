@@ -686,9 +686,97 @@ export class CraftingService {
     }
     const modifier = recipe.craftingTable.selectedUpgrade().modifier;
     quantity *= modifier;
-    if (recipe.skill.lavishChecked()) {
+    if (recipe.skill.lavishChecked() && output.primary) {
+      //Lavish reduction no longer applies to byproducts
       quantity *= .95;
     }
     return quantity;
+  }
+
+  /**
+   * Re-maps selectedRecipes, selectedSkills, and selectedTables to the current objects in
+   * the CraftingDataService central Maps. This must be called after server data changes
+   * (e.g. saveConnection) to prevent stale object references from being used in calculations.
+   * User state (skill levels, table upgrades, recipe profit overrides, item prices) is
+   * preserved across the refresh.
+   */
+  refreshSelectedData(): void {
+    const currentRecipes = this.craftingDataService.recipes();
+    const currentSkills = this.craftingDataService.skills();
+    const currentTables = this.craftingDataService.tables();
+
+    // Capture user state from current objects before swapping references
+    const skillState = new Map(this.selectedSkills().map(s =>
+      [s.nameID, {level: s.level(), lavish: s.lavishChecked()}]
+    ));
+    const tableState = new Map(this.selectedTables().map(t =>
+      [t.nameID, t.selectedUpgrade()]
+    ));
+    const recipeProfits = new Map(this.selectedRecipes().map(r =>
+      [r.nameID, r.profitOverride()]
+    ));
+    const inputPrices = new Map(this.selectedInputs().map(i =>
+      [i.nameID, i.price()]
+    ));
+    const byproductPrices = new Map(this.selectedByproducts().map(i =>
+      [i.nameID, i.price()]
+    ));
+
+    // Re-map to current objects from the central Maps
+    this.selectedRecipes.update(selected =>
+      selected
+        .map(r => currentRecipes.get(r.nameID))
+        .filter((r): r is Recipe => r !== undefined)
+    );
+
+    this.selectedSkills.update(selected =>
+      selected
+        .map(s => currentSkills.get(s.nameID))
+        .filter((s): s is Skill => s !== undefined)
+    );
+
+    this.selectedTables.update(selected =>
+      selected
+        .map(t => currentTables.get(t.nameID))
+        .filter((t): t is CraftingTable => t !== undefined)
+    );
+
+    // Restore user state on the new objects
+    this.selectedSkills().forEach(s => {
+      const saved = skillState.get(s.nameID);
+      if (saved) {
+        s.level.set(saved.level);
+        s.lavishChecked.set(saved.lavish);
+      }
+    });
+
+    this.selectedTables().forEach(t => {
+      const saved = tableState.get(t.nameID);
+      if (saved) {
+        t.selectedUpgrade.set(saved);
+      }
+    });
+
+    this.selectedRecipes().forEach(r => {
+      const saved = recipeProfits.get(r.nameID);
+      if (saved !== undefined) {
+        r.profitOverride.set(saved);
+      }
+    });
+
+    // Restore input/byproduct prices (linkedSignals recompute when read)
+    this.selectedInputs().forEach(i => {
+      const saved = inputPrices.get(i.nameID);
+      if (saved !== undefined) {
+        i.price.set(saved);
+      }
+    });
+
+    this.selectedByproducts().forEach(i => {
+      const saved = byproductPrices.get(i.nameID);
+      if (saved !== undefined) {
+        i.price.set(saved);
+      }
+    });
   }
 }

@@ -14,6 +14,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {ServerDialogResult} from '../../model/server-dialog/server-dialog-result';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {Clipboard} from '@angular/cdk/clipboard';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import WebStorageService from '../../service/storage.service';
+import {MessageService} from '../../service/message.service';
 
 @Component({
   selector: 'app-server-dialog',
@@ -36,7 +40,17 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 export class ServerDialogComponent {
   dialogRef = inject(MatDialogRef<ServerDialogComponent>);
   serverConfig = inject<ServerConfig>(MAT_DIALOG_DATA);
+  private readonly clipboard = inject(Clipboard);
+  private readonly snackBar = inject(MatSnackBar);
+  private readonly storageService = inject(WebStorageService);
+  private readonly serverService = inject(PriceCalculatorServerService);
+  private readonly messageService = inject(MessageService);
   isVanillaServer: boolean;
+
+  draftServerName: WritableSignal<string>;
+  draftHostname: WritableSignal<string>;
+  draftUseInsecureHttp: WritableSignal<boolean>;
+  draftConnectionEstablished: WritableSignal<boolean>;
 
   connecting: WritableSignal<boolean> = signal(false);
   connectionFailed: WritableSignal<boolean> = signal(false);
@@ -50,25 +64,60 @@ export class ServerDialogComponent {
   newRecipes: Signal<ServerRecipe[]>;
   modifiedRecipes: Signal<ServerRecipe[]>;
 
-  constructor(private serverService: PriceCalculatorServerService) {
+  constructor() {
     this.isVanillaServer = this.serverConfig.id === 'default';
-    this.newTables = serverService.tempNewTables;
-    this.newSkills = serverService.tempNewSkills;
-    this.newItems = serverService.tempNewItems;
-    this.newAndModifiedRecipes = serverService.tempNewRecipes;
+    this.draftServerName = signal(this.serverConfig.name());
+    this.draftHostname = signal(this.serverConfig.hostname());
+    this.draftUseInsecureHttp = signal(this.serverConfig.useInsecureHttp());
+    this.draftConnectionEstablished = signal(this.isVanillaServer && this.serverConfig.connectionEstablished());
+
+    this.newTables = this.serverService.tempNewTables;
+    this.newSkills = this.serverService.tempNewSkills;
+    this.newItems = this.serverService.tempNewItems;
+    this.newAndModifiedRecipes = this.serverService.tempNewRecipes;
 
     this.newRecipes = computed(() => this.newAndModifiedRecipes().filter(recipe => recipe.IsNew).sort((a, b) => a.Key.localeCompare(b.Key)));
     this.modifiedRecipes = computed(() => this.newAndModifiedRecipes().filter(recipe => !recipe.IsNew).sort((a, b) => a.Key.localeCompare(b.Key)));
+  }
+
+  message(id: string): string {
+    return this.messageService.getMessage(id);
   }
 
   close(result?: ServerDialogResult) {
     result ? this.dialogRef.close(result) : this.dialogRef.close();
   }
 
-  connect(hostname: string) {
+  copyConfig(): void {
+    const config = this.storageService.getCalcConfig();
+    this.clipboard.copy(JSON.stringify(config));
+    this.snackBar.open('Copied to clipboard', 'OK', {duration: 2000});
+  }
+
+  onServerNameInput(name: string): void {
+    this.draftServerName.set(name);
+  }
+
+  onHostnameInput(hostname: string): void {
+    if (this.draftHostname() !== hostname) {
+      this.draftHostname.set(hostname);
+      this.resetConnectionStatus();
+    }
+  }
+
+  onUseInsecureHttpChange(useInsecureHttp: boolean): void {
+    if (this.draftUseInsecureHttp() !== useInsecureHttp) {
+      this.draftUseInsecureHttp.set(useInsecureHttp);
+      this.resetConnectionStatus();
+    }
+  }
+
+  connect() {
+    const hostname = this.draftHostname().trim();
+    this.draftHostname.set(hostname);
     this.connecting.set(true);
-    this.serverConfig.hostname.set(hostname);
-    this.serverService.attemptConnection(this.serverConfig)
+    this.connectionFailed.set(false);
+    this.serverService.attemptConnection(this.getDraftServerConfig())
       .subscribe({
         next: (success) => {
           this.connecting.set(false);
@@ -78,18 +127,39 @@ export class ServerDialogComponent {
             this.connectionFailed.set(true);
           }
         },
-        error: (error) => {
+        error: () => {
           this.connecting.set(false);
+          this.draftConnectionEstablished.set(false);
           this.connectionFailed.set(true);
         }
       });
   }
 
-  saveConnection(serverLabel: string) {
+  saveConnection() {
     this.saving.set(true);
-    this.serverConfig.name.set(serverLabel);
+    this.serverConfig.name.set(this.draftServerName().trim());
+    this.serverConfig.hostname.set(this.draftHostname().trim());
+    this.serverConfig.useInsecureHttp.set(this.draftUseInsecureHttp());
+    this.serverConfig.connectionEstablished.set(this.draftConnectionEstablished());
     this.serverService.saveConnection(this.serverConfig);
     this.saving.set(false);
     this.close('saved');
+  }
+
+  private getDraftServerConfig(): ServerConfig {
+    return {
+      id: this.serverConfig.id,
+      name: this.draftServerName,
+      hostname: this.draftHostname,
+      isCustom: this.serverConfig.isCustom,
+      useInsecureHttp: this.draftUseInsecureHttp,
+      connectionEstablished: this.draftConnectionEstablished
+    };
+  }
+
+  private resetConnectionStatus(): void {
+    this.draftConnectionEstablished.set(false);
+    this.connectionFailed.set(false);
+    this.serverService.resetParsedData();
   }
 }

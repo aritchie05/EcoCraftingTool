@@ -41,6 +41,7 @@ export class HeaderComponent {
 
   // Server selection
   selectedServer: Signal<ServerConfig>;
+  selectedServerId: WritableSignal<string>;
   serverGroups = serverGroups;
 
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
@@ -53,6 +54,7 @@ export class HeaderComponent {
     this.supportedLocales = [...localeService.supportedLocales.values()]
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
     this.selectedServer = serverService.getSelectedServerSignal();
+    this.selectedServerId = signal(this.selectedServer().id);
   }
 
   retrieveReleaseNotes() {
@@ -121,6 +123,8 @@ export class HeaderComponent {
           ]);
         }
       }
+
+      this.selectedServerId.set(this.selectedServer().id);
     });
   }
 
@@ -137,9 +141,12 @@ export class HeaderComponent {
   }
 
   onServerChange(serverId: string): void {
+    this.selectedServerId.set(serverId);
     const server = this.serverService.getServerById(serverId);
     if (server) {
       this.openNewServerDialog(server);
+    } else {
+      this.selectedServerId.set(this.selectedServer().id);
     }
   }
 }

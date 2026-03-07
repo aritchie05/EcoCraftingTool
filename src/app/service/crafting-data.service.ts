@@ -1,5 +1,5 @@
 import {computed, Injectable, Signal, signal, WritableSignal} from '@angular/core';
-import {items} from '../../assets/data/items';
+import {items, itemsArray} from '../../assets/data/items';
 import {IItem, Item} from '../model/item';
 import {ServerItem} from '../model/server-api/server-item';
 import {
@@ -10,11 +10,11 @@ import {
   ServerTable
 } from '../model/server-api/server-recipe';
 import {IRecipe, Recipe} from '../model/recipe';
-import {recipes} from '../../assets/data/recipes';
+import {recipes, recipesArray} from '../../assets/data/recipes';
 import {ISkill, Skill} from '../model/skill';
-import {skills} from '../../assets/data/skills';
+import {skills, skillsArray} from '../../assets/data/skills';
 import {CraftingTable, ICraftingTable} from '../model/crafting-table';
-import {tables} from '../../assets/data/crafting-tables';
+import {tables, tablesArray} from '../../assets/data/crafting-tables';
 import {Ingredient} from '../model/ingredient';
 import {Output} from '../model/output';
 import WebStorageService from './storage.service';
@@ -120,20 +120,59 @@ export class CraftingDataService {
     return [];
   }
 
-  processServerSkills(serverSkills: ServerSkill[]) {
-    serverSkills.forEach(skill => {
-      const iSkill: ISkill = {
-        name: skill.Skill,
-        nameID: skill.NameID!,
-        level: 0,
-        lavishWorkspace: true,
-        basicUpgrade: true,
-        advancedUpgrade: false,
-        modernUpgrade: false
-      };
+  /**
+   * Removes all custom server data from the in-memory maps, restoring them to the vanilla baseline.
+   * This handles both newly-added entries and modified vanilla entries (e.g., recipes with changed labor costs).
+   */
+  removeCustomData(): void {
+    const vanillaSkillKeys = new Set(skillsArray.map(s => s.nameID));
+    this.skills.update(currentSkills => {
+      const cleaned = new Map(currentSkills);
+      for (const key of cleaned.keys()) {
+        if (!vanillaSkillKeys.has(key)) cleaned.delete(key);
+      }
+      return cleaned;
+    });
 
-      this.skills.update(skills => skills.set(skill.NameID!, new Skill(iSkill)));
-    })
+    const vanillaTableKeys = new Set(tablesArray.map(t => t.nameID));
+    this.tables.update(currentTables => {
+      const cleaned = new Map(currentTables);
+      for (const key of cleaned.keys()) {
+        if (!vanillaTableKeys.has(key)) cleaned.delete(key);
+      }
+      return cleaned;
+    });
+
+    const vanillaItemKeys = new Set(itemsArray.map(i => i.nameID));
+    this.items.update(currentItems => {
+      const cleaned = new Map(currentItems);
+      for (const key of cleaned.keys()) {
+        if (!vanillaItemKeys.has(key)) cleaned.delete(key);
+      }
+      return cleaned;
+    });
+
+    // Rebuild recipes from vanilla baseline to restore both new and modified entries
+    this.recipes.set(new Map(recipesArray.map(r => [r.nameID, new Recipe(r)])));
+  }
+
+  processServerSkills(serverSkills: ServerSkill[]) {
+    this.skills.update(skills => {
+      const updated = new Map(skills);
+      serverSkills.forEach(skill => {
+        const iSkill: ISkill = {
+          name: skill.Skill,
+          nameID: skill.NameID!,
+          level: 0,
+          lavishWorkspace: true,
+          basicUpgrade: true,
+          advancedUpgrade: false,
+          modernUpgrade: false
+        };
+        updated.set(skill.NameID!, new Skill(iSkill));
+      });
+      return updated;
+    });
   }
 
   processServerTables(serverTables: ServerTable[]) {
@@ -158,14 +197,17 @@ export class CraftingDataService {
    * @param newItems the new and modified items to be added
    */
   processServerItems(newItems: ServerItem[]) {
-    newItems.forEach(newItem => {
-      const iItem: IItem = {
-        name: newItem.PropertyInfos.DisplayName.LocString,
-        nameID: newItem.PropertyInfos.Name.String,
-        tag: false
-      };
-
-      this.items.update(items => items.set(iItem.nameID, new Item(iItem)));
+    this.items.update(items => {
+      const updated = new Map(items);
+      newItems.forEach(newItem => {
+        const iItem: IItem = {
+          name: newItem.PropertyInfos.DisplayName.LocString,
+          nameID: newItem.PropertyInfos.Name.String,
+          tag: false
+        };
+        updated.set(iItem.nameID, new Item(iItem));
+      });
+      return updated;
     });
   }
 
@@ -175,27 +217,29 @@ export class CraftingDataService {
    * @param newRecipes the new recipes to be added
    */
   processServerRecipes(newRecipes: ServerRecipe[]) {
-    newRecipes.forEach(newRecipe => {
+    this.recipes.update(recipes => {
+      const updated = new Map(recipes);
+      newRecipes.forEach(newRecipe => {
+        let table: CraftingTable | undefined;
+        if (this.tables().has(newRecipe.CraftingTableNameID!)) {
+          table = this.tables().get(newRecipe.CraftingTableNameID!);
+        }
 
-      let table: CraftingTable | undefined;
-      if (this.tables().has(newRecipe.CraftingTableNameID!)) {
-        table = this.tables().get(newRecipe.CraftingTableNameID!);
-      }
-
-      let skill = this.skills().get(newRecipe.SkillNameID!);
-      const iRecipe: IRecipe = {
-        name: newRecipe.Key,
-        nameID: newRecipe.NameID!,
-        craftingTable: table,
-        skill: skill,
-        hidden: false,
-        labor: newRecipe.BaseLaborCost,
-        level: newRecipe.SkillLevel!,
-        ingredients: this.createIngredients(newRecipe.Ingredients),
-        outputs: this.createOutputs(newRecipe.Outputs)
-      };
-
-      this.recipes.update(recipes => recipes.set(iRecipe.nameID, new Recipe(iRecipe)));
+        let skill = this.skills().get(newRecipe.SkillNameID!);
+        const iRecipe: IRecipe = {
+          name: newRecipe.Key,
+          nameID: newRecipe.NameID!,
+          craftingTable: table,
+          skill: skill,
+          hidden: false,
+          labor: newRecipe.BaseLaborCost,
+          level: newRecipe.SkillLevel!,
+          ingredients: this.createIngredients(newRecipe.Ingredients),
+          outputs: this.createOutputs(newRecipe.Outputs)
+        };
+        updated.set(iRecipe.nameID, new Recipe(iRecipe));
+      });
+      return updated;
     });
   }
 

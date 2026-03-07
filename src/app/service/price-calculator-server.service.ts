@@ -1,6 +1,6 @@
 import {effect, Injectable, signal, WritableSignal} from '@angular/core';
 import {CUSTOM_SERVERS, ServerConfig, serverGroups} from '../model/server-api/server-config';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {ServerItem, ServerItemsResponse} from '../model/server-api/server-item';
 import {catchError, forkJoin, map, Observable, of, tap} from 'rxjs';
 import {
@@ -15,6 +15,7 @@ import {items} from '../../assets/data/items';
 import {recipesArray} from '../../assets/data/recipes';
 import {environment} from '../../environments/environment';
 import {CraftingDataService} from './crafting-data.service';
+import {CraftingService} from './crafting.service';
 import {IRecipe} from '../model/recipe';
 import {Ingredient} from '../model/ingredient';
 import {Output} from '../model/output';
@@ -37,7 +38,8 @@ export class PriceCalculatorServerService {
   tempNewTables: WritableSignal<ServerTable[]> = signal([]);
   tempNewSkills: WritableSignal<ServerSkill[]> = signal([]);
 
-  constructor(private http: HttpClient, private craftingDataService: CraftingDataService, private storageService: WebStorageService) {
+  constructor(private http: HttpClient, private craftingDataService: CraftingDataService,
+              private craftingService: CraftingService, private storageService: WebStorageService) {
     this.selectedServer = signal(storageService.getSelectedServer());
     CUSTOM_SERVERS.servers.set(storageService.getCustomServers());
 
@@ -66,8 +68,8 @@ export class PriceCalculatorServerService {
     const itemsRequest = this.getAllItems(server.useInsecureHttp(), server.hostname()).pipe(
       tap(response => this.tempNewItems.set(this.parseNewItems(response))),
       map(() => true),
-      catchError((error) => {
-        console.error('Error connecting to server:', error);
+      catchError((error: unknown) => {
+        this.logConnectionError('allItems', server, error);
         return of(false);
       })
     );
@@ -75,8 +77,8 @@ export class PriceCalculatorServerService {
     const recipesRequest = this.getAllRecipes(server.useInsecureHttp(), server.hostname()).pipe(
       tap(response => this.tempNewRecipes.set(this.parseNewRecipes(response))),
       map(() => true),
-      catchError((error) => {
-        console.error('Error connecting to server:', error);
+      catchError((error: unknown) => {
+        this.logConnectionError('recipes', server, error);
         return of(false);
       })
     );
@@ -261,12 +263,32 @@ export class PriceCalculatorServerService {
    */
   saveConnection(serverConfig: ServerConfig) {
     this.setSelectedServer(serverConfig);
+    this.craftingDataService.removeCustomData();
     this.craftingDataService.processServerSkills(this.tempNewSkills());
     this.craftingDataService.processServerTables(this.tempNewTables());
     this.craftingDataService.processServerItems(this.tempNewItems());
     this.craftingDataService.processServerRecipes(this.tempNewRecipes());
+    this.craftingService.refreshSelectedData();
 
+    this.storageService.saveSelectedServer(serverConfig);
+    this.storageService.saveCustomServers(CUSTOM_SERVERS.servers());
     this.saveCustomDataToStorage();
+  }
+
+  private logConnectionError(endpoint: string, server: ServerConfig, error: unknown): void {
+    if (error instanceof HttpErrorResponse) {
+      console.error(`Error connecting to server (${endpoint})`, {
+        serverId: server.id,
+        hostname: server.hostname(),
+        protocol: server.useInsecureHttp() ? 'http' : 'https',
+        url: error.url,
+        status: error.status,
+        statusText: error.statusText,
+        message: error.message
+      });
+      return;
+    }
+    console.error(`Error connecting to server (${endpoint})`, error);
   }
 
   private convertNameToObjectNameID(name: string): string {

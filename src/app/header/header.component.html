@@ -16,10 +16,10 @@
   <div class="my-2 flex flex-wrap items-center">
     <button class="material-icons mx-3 cursor-pointer hover:opacity-80" (click)="openSettingsDialog()">settings</button>
     <mat-form-field appearance="outline" class="mx-3 min-w-36">
-      <mat-label>{{ message('serverLabel') }} (Beta)</mat-label>
-      <mat-select [value]="selectedServer().id"
+      <mat-label>{{ message('serverLabel') }} ({{ message('betaLabel') }})</mat-label>
+      <mat-select [value]="selectedServerId()"
                   (selectionChange)="onServerChange($event.value)"
-                  aria-label="Select server" panelClass="select-dropdown">
+                  [attr.aria-label]="message('selectServerLabel')" panelClass="select-dropdown">
         @for (serverGroup of serverGroups; track serverGroup.id) {
           <mat-optgroup [label]="serverGroup.name">
             @for (server of serverGroup.servers(); track server.id) {
@@ -45,6 +45,6 @@
         <span [class]="'flag ' + selectedLocale().regionCode"></span>
       </div>
     </mat-form-field>
-    <span class="mx-3">{{ message('version') }} 12.0.2</span>
+    <span class="mx-3">{{ message('version') }} 12.0.7</span>
   </div>
 </header>

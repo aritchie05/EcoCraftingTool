@@ -2710,6 +2710,1545 @@ const messages: Message[] =
           'lang': 'tr'
         }
       ]
+    },
+    {
+      'id': 'restoreDefaultConfigHeader',
+      'localizedMessages': [
+        {
+          'text': 'Restore Default Config',
+          'lang': 'en'
+        },
+        {
+          'text': 'Restaurer la configuration par défaut',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Restaurar configuración predeterminada',
+          'lang': 'es'
+        },
+        {
+          'text': 'Standardkonfiguration wiederherstellen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Restaurar configuração predefinida',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ripristina configurazione predefinita',
+          'lang': 'it'
+        },
+        {
+          'text': 'Varsayılan Yapılandırmayı Geri Yükle',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Przywróć domyślną konfigurację',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Восстановить настройки по умолчанию',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Відновити стандартну конфігурацію',
+          'lang': 'uk'
+        },
+        {
+          'text': '기본 구성 복원',
+          'lang': 'ko'
+        },
+        {
+          'text': '恢复默认配置',
+          'lang': 'zh'
+        },
+        {
+          'text': 'デフォルト設定を復元',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'newServerConnectionHeader',
+      'localizedMessages': [
+        {
+          'text': 'New Server Connection',
+          'lang': 'en'
+        },
+        {
+          'text': 'Nouvelle connexion au serveur',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Nueva conexión al servidor',
+          'lang': 'es'
+        },
+        {
+          'text': 'Neue Serververbindung',
+          'lang': 'de'
+        },
+        {
+          'text': 'Nova ligação ao servidor',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Nuova connessione al server',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yeni Sunucu Bağlantısı',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Nowe połączenie z serwerem',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Новое соединение с сервером',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Нове з’єднання з сервером',
+          'lang': 'uk'
+        },
+        {
+          'text': '새 서버 연결',
+          'lang': 'ko'
+        },
+        {
+          'text': '新服务器连接',
+          'lang': 'zh'
+        },
+        {
+          'text': '新しいサーバー接続',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'serverImportTooltip',
+      'localizedMessages': [
+        {
+          'text': 'Attempt to import custom items and recipes from an Eco server. This requires UCat\'s Price Calculator to be running on the server. Enter the host or IP and port for the server\'s web console.',
+          'lang': 'en'
+        },
+        {
+          'text': 'Tenter d\'importer des objets et des recettes personnalisés depuis un serveur Eco. Cela nécessite que le calculateur de prix d\'UCat soit en cours d\'exécution sur le serveur. Saisissez l\'hôte ou l\'adresse IP et le port de la console Web du serveur.',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Intenta importar elementos personalizados y recetas desde un servidor Eco. Esto requiere que la calculadora de precios de UCat se esté ejecutando en el servidor. Introduzca el host o la IP y el puerto de la consola web del servidor.',
+          'lang': 'es'
+        },
+        {
+          'text': 'Versuch, benutzerdefinierte Gegenstände und Rezepte von einem Eco-Server zu importieren. Dazu muss der UCat-Preisrechner auf dem Server ausgeführt werden. Geben Sie den Host oder die IP und den Port für die Webkonsole des Servers ein.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Tentar importar itens e receitas personalizados de um servidor Eco. Isto requer que a Calculadora de Preços do UCat esteja a ser executada no servidor. Introduza o anfitrião ou o IP e a porta para a consola web do servidor.',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Tentativo di importare oggetti e ricette personalizzati da un server Eco. Ciò richiede che il calcolatore di prezzi di UCat sia in esecuzione sul server. Inserisci l\'host o l\'IP e la porta per la console web del server.',
+          'lang': 'it'
+        },
+        {
+          'text': 'Özel öğeleri ve tarifleri bir Eco sunucusundan içe aktarmayı deneyin. Bu, UCat\'ın Fiyat Hesaplayıcısının sunucuda çalışıyor olmasını gerektirir. Sunucunun web konsolu için ana bilgisayar veya IP ve bağlantı noktasını girin.',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Spróbuj zaimportować niestandardowe przedmioty i przepisy z serwera Eco. Wymaga to, aby kalkulator cen UCat działał na serwerze. Wpisz host lub adres IP i port konsoli internetowej serwera.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Попытка импорта пользовательских предметов и рецептов с сервера Eco. Для этого на сервере должен быть запущен калькулятор цен UCat. Введите хост или IP и порт для веб-консоли сервера.',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Спроба імпортувати користувацькі предмети та рецепти з сервера Eco. Для цього на сервері має працювати калькулятор цін UCat. Введіть хост або IP-адресу та порт для вебконсолі сервера.',
+          'lang': 'uk'
+        },
+        {
+          'text': 'Eco 서버에서 사용자 지정 아이템과 레시피를 가져오려고 시도합니다. 이를 위해서는 UCat의 가격 계산기가 서버에서 실행 중이어야 합니다. 서버 웹 콘솔의 호스트 또는 IP와 포트를 입력하세요.',
+          'lang': 'ko'
+        },
+        {
+          'text': '尝试从Eco服务器导入自定义项目和配方。这需要 UCat 的价格计算器在服务器上运行。输入服务器 Web 控制台的主机或 IP 和端口。',
+          'lang': 'zh'
+        },
+        {
+          'text': 'Ecoサーバーからカスタムアイテムとレシピをインポートします。これには、サーバー上でUCatの価格計算機が実行されている必要があります。サーバーのWebコンソールのホストまたはIPとポートを入力します。',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'serverConnectionWarning',
+      'localizedMessages': [
+        {
+          'text': 'Modifying server connections may result in a broken calculator config. Back up your current config before proceeding.',
+          'lang': 'en'
+        },
+        {
+          'text': 'La modification des connexions au serveur peut entraîner une configuration de calculateur défectueuse. Sauvegardez votre configuration actuelle avant de continuer.',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Modificar las conexiones del servidor puede resultar en una configuración de calculadora rota. Haz una copia de seguridad de tu configuración actual antes de continuar.',
+          'lang': 'es'
+        },
+        {
+          'text': 'Das Ändern von Serververbindungen kann zu einer fehlerhaften Rechnerkonfiguration führen. Sichern Sie Ihre aktuelle Konfiguration, bevor Sie fortfahren.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Modificar as ligações do servidor pode resultar numa configuração de calculadora quebrada. Faça backup da sua configuração atual antes de prosseguir.',
+          'lang': 'pt'
+        },
+        {
+          'text': 'La modifica delle connessioni al server può causare una configurazione del calcolatore non valida. Esegui il backup della configurazione corrente prima di procedere.',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sunucu bağlantılarını değiştirmek, hesaplayıcı yapılandırmasının bozulmasına neden olabilir. Devam etmeden önce mevcut yapılandırmanızı yedekleyin.',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Modyfikowanie połączeń z serwerem może spowodować uszkodzenie konfiguracji kalkulatora. Zanim przejdziesz dalej, wykonaj kopię zapasową swojej obecnej konfiguracji.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Изменение подключений к серверу может привести к нарушению конфигурации калькулятора. Создайте резервную копию текущей конфигурации, прежде чем продолжить.',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Зміна з’єднань із сервером може призвести до неправильної конфігурації калькулятора. Створіть резервну копію поточної конфігурації, перш ніж продовжити.',
+          'lang': 'uk'
+        },
+        {
+          'text': '서버 연결을 수정하면 계산기 구성이 손상될 수 있습니다. 계속하기 전에 현재 구성을 백업하세요.',
+          'lang': 'ko'
+        },
+        {
+          'text': '修改服务器连接可能会导致计算器配置损坏。在继续之前，请备份当前配置。',
+          'lang': 'zh'
+        },
+        {
+          'text': 'サーバー接続を変更すると、計算機の設定が破損する可能性があります。続行する前に、現在の構成をバックアップしてください。',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'copyConfigButton',
+      'localizedMessages': [
+        {
+          'text': 'Copy Config',
+          'lang': 'en'
+        },
+        {
+          'text': 'Copier la configuration',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Copiar configuración',
+          'lang': 'es'
+        },
+        {
+          'text': 'Konfiguration kopieren',
+          'lang': 'de'
+        },
+        {
+          'text': 'Copiar Configuração',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Copia Config',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yapılandırmayı Kopyala',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Kopiuj konfigurację',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Копировать конфигурацию',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Копіювати конфігурацію',
+          'lang': 'uk'
+        },
+        {
+          'text': '구성 복사',
+          'lang': 'ko'
+        },
+        {
+          'text': '复制配置',
+          'lang': 'zh'
+        },
+        {
+          'text': '設定をコピー',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'serverNameLabel',
+      'localizedMessages': [
+        {
+          'text': 'Server Label',
+          'lang': 'en'
+        },
+        {
+          'text': 'Étiquette du serveur',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Etiqueta del servidor',
+          'lang': 'es'
+        },
+        {
+          'text': 'Server-Label',
+          'lang': 'de'
+        },
+        {
+          'text': 'Etiqueta do servidor',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Etichetta server',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sunucu Etiketi',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Etykieta serwera',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Метка сервера',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Мітка сервера',
+          'lang': 'uk'
+        },
+        {
+          'text': '서버 레이블',
+          'lang': 'ko'
+        },
+        {
+          'text': '服务器标签',
+          'lang': 'zh'
+        },
+        {
+          'text': 'サーバーラベル',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'serverHostLabel',
+      'localizedMessages': [
+        {
+          'text': 'Server Host / IP',
+          'lang': 'en'
+        },
+        {
+          'text': 'Serveur hôte/IP',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Host/IP del servidor',
+          'lang': 'es'
+        },
+        {
+          'text': 'Server-Host/IP',
+          'lang': 'de'
+        },
+        {
+          'text': 'Anfitrião/IP do servidor',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Host server / IP',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sunucu Ana Bilgisayarı / IP',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Host serwera / IP',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Хост сервера / IP',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Хост сервера / IP',
+          'lang': 'uk'
+        },
+        {
+          'text': '서버 호스트 / IP',
+          'lang': 'ko'
+        },
+        {
+          'text': '服务器主机/IP',
+          'lang': 'zh'
+        },
+        {
+          'text': 'サーバーホスト/IP',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'serverConnectionError',
+      'localizedMessages': [
+        {
+          'text': 'Error connecting to the server. Make sure you have entered a public Eco server running UCat\'s Price Calculator. Try switching HTTP/s?',
+          'lang': 'en'
+        },
+        {
+          'text': 'Erreur de connexion au serveur. Assurez-vous d\'avoir saisi un serveur Eco public exécutant le calculateur de prix UCat. Essayer de basculer HTTP/s ?',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Error al conectar con el servidor. Asegúrate de haber introducido un servidor Eco público que ejecute la calculadora de precios de UCat. ¿Probar con HTTP/s?',
+          'lang': 'es'
+        },
+        {
+          'text': 'Fehler beim Verbinden mit dem Server. Stellen Sie sicher, dass Sie einen öffentlichen Eco-Server eingegeben haben, auf dem der UCat-Preisrechner ausgeführt wird. HTTP/s wechseln?',
+          'lang': 'de'
+        },
+        {
+          'text': 'Erro ao ligar ao servidor. Certifique-se de que introduziu um servidor Eco público que esteja a executar a Calculadora de Preços do UCat. Tentar alternar HTTP/s?',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Errore di connessione al server. Assicurati di aver inserito un server Eco pubblico che esegue il calcolatore di prezzi di UCat. Provare a cambiare HTTP/s?',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sunucuya bağlanma hatası. UCat\'ın Fiyat Hesaplayıcısı\'nı çalıştıran herkese açık bir Eco sunucusu girdiğinizden emin olun. HTTP/s\'ye geçmeyi deneyelim mi?',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Błąd połączenia z serwerem. Upewnij się, że wpisałeś publiczny serwer Eco z uruchomionym kalkulatorem cen UCat. Przełączyć na HTTP/s?',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Ошибка подключения к серверу. Убедитесь, что вы ввели общедоступный сервер Eco, на котором работает калькулятор цен UCat. Попробовать переключить HTTP/s?',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Помилка підключення до сервера. Переконайтеся, що ви ввели загальнодоступний сервер Eco, на якому працює калькулятор цін UCat. Спробувати перемкнути HTTP/s?',
+          'lang': 'uk'
+        },
+        {
+          'text': '서버 연결 오류. UCat의 가격 계산기를 실행하는 공개 Eco 서버를 입력했는지 확인하세요. HTTP/s로 전환해 보시겠습니까?',
+          'lang': 'ko'
+        },
+        {
+          'text': '连接服务器时出错。请确保您输入了运行 UCat 价格计算器的公共 Eco 服务器。尝试切换HTTP/s？',
+          'lang': 'zh'
+        },
+        {
+          'text': 'サーバー接続エラー。UCatの価格計算機を実行している公開Ecoサーバーに入力したことを確認してください。HTTP/sに切り替えてみますか？',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'useInsecureHttpLabel',
+      'localizedMessages': [
+        {
+          'text': 'Use Insecure HTTP',
+          'lang': 'en'
+        },
+        {
+          'text': 'Utiliser HTTP non sécurisé',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Usar HTTP inseguro',
+          'lang': 'es'
+        },
+        {
+          'text': 'Unsicheres HTTP verwenden',
+          'lang': 'de'
+        },
+        {
+          'text': 'Usar HTTP inseguro',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Usa HTTP non sicuro',
+          'lang': 'it'
+        },
+        {
+          'text': 'Güvenli Olmayan HTTP Kullan',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Użyj niezabezpieczonego HTTP',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Использовать небезопасный HTTP',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Використовувати незахищений HTTP',
+          'lang': 'uk'
+        },
+        {
+          'text': '안전하지 않은 HTTP 사용',
+          'lang': 'ko'
+        },
+        {
+          'text': '使用不安全的HTTP',
+          'lang': 'zh'
+        },
+        {
+          'text': '安全でないHTTPを使用',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'newSkillsHeader',
+      'localizedMessages': [
+        {
+          'text': 'New Skills',
+          'lang': 'en'
+        },
+        {
+          'text': 'Nouvelles compétences',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Nuevas habilidades',
+          'lang': 'es'
+        },
+        {
+          'text': 'Neue Fähigkeiten',
+          'lang': 'de'
+        },
+        {
+          'text': 'Novas competências',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Nuove abilità',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yeni Beceriler',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Nowe umiejętności',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Новые навыки',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Нові навички',
+          'lang': 'uk'
+        },
+        {
+          'text': '새로운 스킬',
+          'lang': 'ko'
+        },
+        {
+          'text': '新技能',
+          'lang': 'zh'
+        },
+        {
+          'text': '新しいスキル',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'newCraftingTablesHeader',
+      'localizedMessages': [
+        {
+          'text': 'New Crafting Tables',
+          'lang': 'en'
+        },
+        {
+          'text': 'Nouvelles tables d\'artisanat',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Nuevas mesas de elaboración',
+          'lang': 'es'
+        },
+        {
+          'text': 'Neue Werkbänke',
+          'lang': 'de'
+        },
+        {
+          'text': 'Novas mesas de criação',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Nuovi banchi di lavoro',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yeni Zanaat Masaları',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Nowe stoły rzemieślnicze',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Новые столы для крафта',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Нові верстаки',
+          'lang': 'uk'
+        },
+        {
+          'text': '새로운 제작 테이블',
+          'lang': 'ko'
+        },
+        {
+          'text': '新合成台',
+          'lang': 'zh'
+        },
+        {
+          'text': '新しいクラフトテーブル',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'newItemsHeader',
+      'localizedMessages': [
+        {
+          'text': 'New Items',
+          'lang': 'en'
+        },
+        {
+          'text': 'Nouveaux articles',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Nuevos artículos',
+          'lang': 'es'
+        },
+        {
+          'text': 'Neue Items',
+          'lang': 'de'
+        },
+        {
+          'text': 'Novos Itens',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Nuovi articoli',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yeni Öğeler',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Nowe przedmioty',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Новые предметы',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Нові предмети',
+          'lang': 'uk'
+        },
+        {
+          'text': '새 아이템',
+          'lang': 'ko'
+        },
+        {
+          'text': '新物品',
+          'lang': 'zh'
+        },
+        {
+          'text': '新しいアイテム',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'newRecipesHeader',
+      'localizedMessages': [
+        {
+          'text': 'New Recipes',
+          'lang': 'en'
+        },
+        {
+          'text': 'Nouvelles recettes',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Nuevas recetas',
+          'lang': 'es'
+        },
+        {
+          'text': 'Neue Rezepte',
+          'lang': 'de'
+        },
+        {
+          'text': 'Novas Receitas',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Nuove ricette',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yeni Tarifler',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Nowe przepisy',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Новые рецепты',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Нові рецепти',
+          'lang': 'uk'
+        },
+        {
+          'text': '새로운 레시피',
+          'lang': 'ko'
+        },
+        {
+          'text': '新配方',
+          'lang': 'zh'
+        },
+        {
+          'text': '新しいレシピ',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'modifiedRecipesHeader',
+      'localizedMessages': [
+        {
+          'text': 'Modified Recipes',
+          'lang': 'en'
+        },
+        {
+          'text': 'Recettes modifiées',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Recetas modificadas',
+          'lang': 'es'
+        },
+        {
+          'text': 'Modifizierte Rezepte',
+          'lang': 'de'
+        },
+        {
+          'text': 'Receitas modificadas',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ricette modificate',
+          'lang': 'it'
+        },
+        {
+          'text': 'Değiştirilmiş Tarifler',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Zmodyfikowane przepisy',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Измененные рецепты',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Змінені рецепти',
+          'lang': 'uk'
+        },
+        {
+          'text': '수정된 레시피',
+          'lang': 'ko'
+        },
+        {
+          'text': '已修改的配方',
+          'lang': 'zh'
+        },
+        {
+          'text': '変更されたレシピ',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'restoreDefaultConfigInfo',
+      'localizedMessages': [
+        {
+          'text': 'Click Save Connection to remove any custom skills, tables, items, and recipes from the calculator context.',
+          'lang': 'en'
+        },
+        {
+          'text': 'Cliquez sur Enregistrer la connexion pour supprimer toutes les compétences, tables, objets et recettes personnalisés du contexte du calculateur.',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Haz clic en Guardar conexión para eliminar cualquier habilidad, tabla, elemento y receta personalizados del contexto de la calculadora.',
+          'lang': 'es'
+        },
+        {
+          'text': 'Klicken Sie auf Verbindung speichern, um benutzerdefinierte Fähigkeiten, Tabellen, Elemente und Rezepte aus dem Kontext des Rechners zu entfernen.',
+          'lang': 'de'
+        },
+        {
+          'text': 'Clique em Guardar Ligação para remover quaisquer competências, mesas, itens e receitas personalizados do contexto da calculadora.',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Fai clic su Salva connessione per rimuovere abilità, tabelle, oggetti e ricette personalizzati dal contesto del calcolatore.',
+          'lang': 'it'
+        },
+        {
+          'text': 'Özel becerileri, tabloları, öğeleri ve tarifleri hesaplayıcı bağlamından kaldırmak için Bağlantıyı Kaydet\'e tıklayın.',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Kliknij Zapisz połączenie, aby usunąć z kontekstu kalkulatora wszelkie niestandardowe umiejętności, stoły, przedmioty i przepisy.',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Нажмите «Сохранить соединение», чтобы удалить все пользовательские навыки, столы, предметы и рецепты из контекста калькулятора.',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Натисніть «Зберегти з’єднання», щоб видалити будь-які користувацькі навички, столи, предмети та рецепти з контексту калькулятора.',
+          'lang': 'uk'
+        },
+        {
+          'text': '연결 저장을 클릭하여 계산기 컨텍스트에서 사용자 지정 스킬, 테이블, 아이템 및 레시피를 제거합니다.',
+          'lang': 'ko'
+        },
+        {
+          'text': '单击“保存连接”以从计算器上下文中删除任何自定义技能、工作台、物品和配方。',
+          'lang': 'zh'
+        },
+        {
+          'text': '「接続を保存」をクリックして、カスタムスキル、テーブル、アイテム、レシピを計算機のコンテキストから削除します。',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'cancelButton',
+      'localizedMessages': [
+        {
+          'text': 'Cancel',
+          'lang': 'en'
+        },
+        {
+          'text': 'Annuler',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Cancelar',
+          'lang': 'es'
+        },
+        {
+          'text': 'Abbrechen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Cancelar',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Annulla',
+          'lang': 'it'
+        },
+        {
+          'text': 'İptal',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Anuluj',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Отмена',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Скасувати',
+          'lang': 'uk'
+        },
+        {
+          'text': '취소',
+          'lang': 'ko'
+        },
+        {
+          'text': '取消',
+          'lang': 'zh'
+        },
+        {
+          'text': 'キャンセル',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'testConnectionButton',
+      'localizedMessages': [
+        {
+          'text': 'Test Connection',
+          'lang': 'en'
+        },
+        {
+          'text': 'Tester la connexion',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Probar conexión',
+          'lang': 'es'
+        },
+        {
+          'text': 'Verbindung testen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Testar ligação',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Test connessione',
+          'lang': 'it'
+        },
+        {
+          'text': 'Bağlantıyı Test Et',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Test połączenia',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Проверка соединения',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Перевірити з’єднання',
+          'lang': 'uk'
+        },
+        {
+          'text': '연결 테스트',
+          'lang': 'ko'
+        },
+        {
+          'text': '测试连接',
+          'lang': 'zh'
+        },
+        {
+          'text': '接続テスト',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'saveConnectionButton',
+      'localizedMessages': [
+        {
+          'text': 'Save Connection',
+          'lang': 'en'
+        },
+        {
+          'text': 'Enregistrer la connexion',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Guardar conexión',
+          'lang': 'es'
+        },
+        {
+          'text': 'Verbindung speichern',
+          'lang': 'de'
+        },
+        {
+          'text': 'Guardar ligação',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Salva connessione',
+          'lang': 'it'
+        },
+        {
+          'text': 'Bağlantıyı Kaydet',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Zapisz połączenie',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Сохранить соединение',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Зберегти з’єднання',
+          'lang': 'uk'
+        },
+        {
+          'text': '연결 저장',
+          'lang': 'ko'
+        },
+        {
+          'text': '保存连接',
+          'lang': 'zh'
+        },
+        {
+          'text': '接続を保存',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'levelLabel',
+      'localizedMessages': [
+        {
+          'text': 'Level',
+          'lang': 'en'
+        },
+        {
+          'text': 'Niveau',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Nivel',
+          'lang': 'es'
+        },
+        {
+          'text': 'Level',
+          'lang': 'de'
+        },
+        {
+          'text': 'Nível',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Livello',
+          'lang': 'it'
+        },
+        {
+          'text': 'Seviye',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Poziom',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Уровень',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Рівень',
+          'lang': 'uk'
+        },
+        {
+          'text': '레벨',
+          'lang': 'ko'
+        },
+        {
+          'text': '等级',
+          'lang': 'zh'
+        },
+        {
+          'text': 'レベル',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'calsUnit',
+      'localizedMessages': [
+        {
+          'text': 'Cals',
+          'lang': 'en'
+        },
+        {
+          'text': 'Cals',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Cals',
+          'lang': 'es'
+        },
+        {
+          'text': 'Cals',
+          'lang': 'de'
+        },
+        {
+          'text': 'Cals',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Cals',
+          'lang': 'it'
+        },
+        {
+          'text': 'Kalori',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Cals',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Кал',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Кал',
+          'lang': 'uk'
+        },
+        {
+          'text': '칼로리',
+          'lang': 'ko'
+        },
+        {
+          'text': '卡路里',
+          'lang': 'zh'
+        },
+        {
+          'text': 'カロリー',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'atLabel',
+      'localizedMessages': [
+        {
+          'text': 'at',
+          'lang': 'en'
+        },
+        {
+          'text': 'à',
+          'lang': 'fr'
+        },
+        {
+          'text': 'en',
+          'lang': 'es'
+        },
+        {
+          'text': 'bei',
+          'lang': 'de'
+        },
+        {
+          'text': 'em',
+          'lang': 'pt'
+        },
+        {
+          'text': 'a',
+          'lang': 'it'
+        },
+        {
+          'text': 'şurada:',
+          'lang': 'tr'
+        },
+        {
+          'text': 'przy',
+          'lang': 'pl'
+        },
+        {
+          'text': 'в',
+          'lang': 'ru'
+        },
+        {
+          'text': 'на',
+          'lang': 'uk'
+        },
+        {
+          'text': '에서',
+          'lang': 'ko'
+        },
+        {
+          'text': '在',
+          'lang': 'zh'
+        },
+        {
+          'text': 'で',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'inputsLabel',
+      'localizedMessages': [
+        {
+          'text': 'Inputs',
+          'lang': 'en'
+        },
+        {
+          'text': 'Entrées',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Entradas',
+          'lang': 'es'
+        },
+        {
+          'text': 'Eingänge',
+          'lang': 'de'
+        },
+        {
+          'text': 'Entradas',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Ingressi',
+          'lang': 'it'
+        },
+        {
+          'text': 'Girişler',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Wejścia',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Входы',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Вхідні дані',
+          'lang': 'uk'
+        },
+        {
+          'text': '입력',
+          'lang': 'ko'
+        },
+        {
+          'text': '输入',
+          'lang': 'zh'
+        },
+        {
+          'text': '入力',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'outputsLabel',
+      'localizedMessages': [
+        {
+          'text': 'Outputs',
+          'lang': 'en'
+        },
+        {
+          'text': 'Sorties',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Salidas',
+          'lang': 'es'
+        },
+        {
+          'text': 'Ausgänge',
+          'lang': 'de'
+        },
+        {
+          'text': 'Saídas',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Output',
+          'lang': 'it'
+        },
+        {
+          'text': 'Çıktılar',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Wyjścia',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Выходы',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Вихідні дані',
+          'lang': 'uk'
+        },
+        {
+          'text': '출력',
+          'lang': 'ko'
+        },
+        {
+          'text': '输出',
+          'lang': 'zh'
+        },
+        {
+          'text': '出力',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'staticLabel',
+      'localizedMessages': [
+        {
+          'text': '(Static)',
+          'lang': 'en'
+        },
+        {
+          'text': '(Statique)',
+          'lang': 'fr'
+        },
+        {
+          'text': '(Estático)',
+          'lang': 'es'
+        },
+        {
+          'text': '(Statisch)',
+          'lang': 'de'
+        },
+        {
+          'text': '(Estático)',
+          'lang': 'pt'
+        },
+        {
+          'text': '(Statico)',
+          'lang': 'it'
+        },
+        {
+          'text': '(Statik)',
+          'lang': 'tr'
+        },
+        {
+          'text': '(Statyczny)',
+          'lang': 'pl'
+        },
+        {
+          'text': '(Статический)',
+          'lang': 'ru'
+        },
+        {
+          'text': '(Статичний)',
+          'lang': 'uk'
+        },
+        {
+          'text': '(고정)',
+          'lang': 'ko'
+        },
+        {
+          'text': '（静态）',
+          'lang': 'zh'
+        },
+        {
+          'text': '（静的）',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'reducibleLabel',
+      'localizedMessages': [
+        {
+          'text': '(Reducible)',
+          'lang': 'en'
+        },
+        {
+          'text': '(Réductible)',
+          'lang': 'fr'
+        },
+        {
+          'text': '(Reducible)',
+          'lang': 'es'
+        },
+        {
+          'text': '(Reduzierbar)',
+          'lang': 'de'
+        },
+        {
+          'text': '(Redutível)',
+          'lang': 'pt'
+        },
+        {
+          'text': '(Riducibile)',
+          'lang': 'it'
+        },
+        {
+          'text': '(İndirgenebilir)',
+          'lang': 'tr'
+        },
+        {
+          'text': '(Redukowalne)',
+          'lang': 'pl'
+        },
+        {
+          'text': '(Редуцируемый)',
+          'lang': 'ru'
+        },
+        {
+          'text': '(Редукований)',
+          'lang': 'uk'
+        },
+        {
+          'text': '(감소 가능)',
+          'lang': 'ko'
+        },
+        {
+          'text': '（可减少）',
+          'lang': 'zh'
+        },
+        {
+          'text': '（還元可能）',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'betaLabel',
+      'localizedMessages': [
+        {
+          'text': 'Beta',
+          'lang': 'en'
+        },
+        {
+          'text': 'Bêta',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Beta',
+          'lang': 'es'
+        },
+        {
+          'text': 'Beta',
+          'lang': 'de'
+        },
+        {
+          'text': 'Beta',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Beta',
+          'lang': 'it'
+        },
+        {
+          'text': 'Beta',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Beta',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Бета',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Бета',
+          'lang': 'uk'
+        },
+        {
+          'text': '베타',
+          'lang': 'ko'
+        },
+        {
+          'text': '测试版',
+          'lang': 'zh'
+        },
+        {
+          'text': 'ベータ',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'selectServerLabel',
+      'localizedMessages': [
+        {
+          'text': 'Select server',
+          'lang': 'en'
+        },
+        {
+          'text': 'Sélectionner un serveur',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Seleccionar servidor',
+          'lang': 'es'
+        },
+        {
+          'text': 'Server auswählen',
+          'lang': 'de'
+        },
+        {
+          'text': 'Selecionar servidor',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Seleziona server',
+          'lang': 'it'
+        },
+        {
+          'text': 'Sunucu seçin',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Wybierz serwer',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Выберите сервер',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Виберіть сервер',
+          'lang': 'uk'
+        },
+        {
+          'text': '서버 선택',
+          'lang': 'ko'
+        },
+        {
+          'text': '选择服务器',
+          'lang': 'zh'
+        },
+        {
+          'text': 'サーバーを選択',
+          'lang': 'ja'
+        }
+      ]
     }
   ]
 ;
