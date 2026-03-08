@@ -35,4 +35,17 @@ describe('HeaderComponent', () => {
     expect(openSpy).toHaveBeenCalled();
     expect(component.selectedServerId()).toBe(committedServerId);
   });
+
+  it('localizes server dropdown group and add-new labels', () => {
+    const predefinedGroup = component.serverGroups.find(group => group.id === 'predefined-servers');
+    const customGroup = component.serverGroups.find(group => group.id === 'custom-servers');
+    const addNewServer = customGroup?.servers().find(server => server.id === 'add-new');
+
+    expect(predefinedGroup).toBeDefined();
+    expect(customGroup).toBeDefined();
+    expect(addNewServer).toBeDefined();
+    expect(component.serverGroupLabel(predefinedGroup!)).toBe(component.message('predefinedServersGroupLabel'));
+    expect(component.serverGroupLabel(customGroup!)).toBe(component.message('customServersGroupLabel'));
+    expect(component.serverOptionLabel(addNewServer!)).toBe(component.message('addNewServerOption'));
+  });
 });

@@ -4249,6 +4249,177 @@ const messages: Message[] =
           'lang': 'ja'
         }
       ]
+    },
+    {
+      'id': 'predefinedServersGroupLabel',
+      'localizedMessages': [
+        {
+          'text': 'Predefined Servers',
+          'lang': 'en'
+        },
+        {
+          'text': 'Serveurs prédéfinis',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Servidores predefinidos',
+          'lang': 'es'
+        },
+        {
+          'text': 'Vordefinierte Server',
+          'lang': 'de'
+        },
+        {
+          'text': 'Servidores predefinidos',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Server predefiniti',
+          'lang': 'it'
+        },
+        {
+          'text': 'Önceden Tanımlanmış Sunucular',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Predefiniowane serwery',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Предустановленные серверы',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Попередньо визначені сервери',
+          'lang': 'uk'
+        },
+        {
+          'text': '사전 정의된 서버',
+          'lang': 'ko'
+        },
+        {
+          'text': '预定义服务器',
+          'lang': 'zh'
+        },
+        {
+          'text': '定義済みサーバー',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'customServersGroupLabel',
+      'localizedMessages': [
+        {
+          'text': 'Custom Servers',
+          'lang': 'en'
+        },
+        {
+          'text': 'Serveurs personnalisés',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Servidores personalizados',
+          'lang': 'es'
+        },
+        {
+          'text': 'Benutzerdefinierte Server',
+          'lang': 'de'
+        },
+        {
+          'text': 'Servidores personalizados',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Server personalizzati',
+          'lang': 'it'
+        },
+        {
+          'text': 'Özel Sunucular',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Serwery niestandardowe',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Пользовательские серверы',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Користувацькі сервери',
+          'lang': 'uk'
+        },
+        {
+          'text': '사용자 지정 서버',
+          'lang': 'ko'
+        },
+        {
+          'text': '自定义服务器',
+          'lang': 'zh'
+        },
+        {
+          'text': 'カスタムサーバー',
+          'lang': 'ja'
+        }
+      ]
+    },
+    {
+      'id': 'addNewServerOption',
+      'localizedMessages': [
+        {
+          'text': 'Add New...',
+          'lang': 'en'
+        },
+        {
+          'text': 'Ajouter un nouveau...',
+          'lang': 'fr'
+        },
+        {
+          'text': 'Añadir nuevo...',
+          'lang': 'es'
+        },
+        {
+          'text': 'Neu hinzufügen...',
+          'lang': 'de'
+        },
+        {
+          'text': 'Adicionar novo...',
+          'lang': 'pt'
+        },
+        {
+          'text': 'Aggiungi nuovo...',
+          'lang': 'it'
+        },
+        {
+          'text': 'Yeni Ekle...',
+          'lang': 'tr'
+        },
+        {
+          'text': 'Dodaj nowy...',
+          'lang': 'pl'
+        },
+        {
+          'text': 'Добавить...',
+          'lang': 'ru'
+        },
+        {
+          'text': 'Додати новий...',
+          'lang': 'uk'
+        },
+        {
+          'text': '새로 추가...',
+          'lang': 'ko'
+        },
+        {
+          'text': '新增...',
+          'lang': 'zh'
+        },
+        {
+          'text': '新規追加...',
+          'lang': 'ja'
+        }
+      ]
     }
   ]
 ;
