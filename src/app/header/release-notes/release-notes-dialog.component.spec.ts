@@ -2,7 +2,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ReleaseNotesDialogComponent} from './release-notes-dialog.component';
 import {provideHttpClient} from '@angular/common/http';
-import {provideDialogTestingDependencies} from '../../test-utils.spec';
+import {provideDialogTestingDependencies} from '../../test-utils';
 import {Release} from '../../model/release';
 import {signal, Signal} from '@angular/core';
 import {provideMarkdown} from 'ngx-markdown';

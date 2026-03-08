@@ -1,6 +1,6 @@
-import {Inject, Injectable, signal} from '@angular/core';
+import {Injectable, signal} from '@angular/core';
 import {CalculatorConfig} from '../model/storage-model/calculator-config';
-import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {LocalStorageService} from 'ngx-webstorage';
 import {StoredSkill} from '../model/storage-model/stored-skill';
 import {Skill} from '../model/skill';
 import {StoredTable} from '../model/storage-model/stored-table';
@@ -25,7 +25,16 @@ import {StoredServerConfig} from '../model/storage-model/stored-server-config';
 })
 class WebStorageService {
 
-  constructor(@Inject(LOCAL_STORAGE) private storageService: StorageService) {
+  private readonly storageService: {
+    get(key: string): any;
+    set(key: string, value: unknown): unknown;
+  };
+
+  constructor(localStorageService: LocalStorageService) {
+    this.storageService = {
+      get: (key: string) => localStorageService.retrieve(key),
+      set: (key: string, value: unknown) => localStorageService.store(key, value)
+    };
   }
 
   getCalcConfig(): CalculatorConfig {

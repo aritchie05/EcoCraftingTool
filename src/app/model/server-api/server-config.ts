@@ -11,13 +11,13 @@ export interface ServerConfig {
 
 export interface ServerGroup {
   id: string;
-  name: string;
+  labelMessageId: string;
   servers: WritableSignal<ServerConfig[]>;
 }
 
 export const PREDEFINED_SERVERS: ServerGroup = {
   id: 'predefined-servers',
-  name: 'Predefined Servers',
+  labelMessageId: 'predefinedServersGroupLabel',
   servers: signal([
     {
       id: 'default',
@@ -36,43 +36,27 @@ export const PREDEFINED_SERVERS: ServerGroup = {
       connectionEstablished: signal(false)
     },
     {
+      id: 'awl-gaming',
+      name: signal('AWL Gaming'),
+      hostname: signal('eco.awlgaming.net'),
+      isCustom: false,
+      useInsecureHttp: signal(false),
+      connectionEstablished: signal(false)
+    },
+    {
       id: 'greenleaf',
       name: signal('Greenleaf'),
       hostname: signal('148.251.154.60:3021'),
       isCustom: false,
       useInsecureHttp: signal(true),
       connectionEstablished: signal(false)
-    },
-    {
-      id: 'silvermoon',
-      name: signal('Silvermoon'),
-      hostname: signal('79.137.98.112:3001'),
-      isCustom: false,
-      useInsecureHttp: signal(true),
-      connectionEstablished: signal(false)
-    },
-    {
-      id: 'eco-antics',
-      name: signal('Eco Antics'),
-      hostname: signal('98.142.1.172:3001'),
-      isCustom: false,
-      useInsecureHttp: signal(true),
-      connectionEstablished: signal(false)
-    },
-    {
-      id: 'be-eco',
-      name: signal('BeEco'),
-      hostname: signal('51.255.77.221:3001'),
-      isCustom: false,
-      useInsecureHttp: signal(true),
-      connectionEstablished: signal(false)
-    },
+    }
   ])
 };
 
 export const CUSTOM_SERVERS: ServerGroup = {
   id: 'custom-servers',
-  name: 'Custom Servers',
+  labelMessageId: 'customServersGroupLabel',
   servers: signal([
     {
       id: 'add-new',

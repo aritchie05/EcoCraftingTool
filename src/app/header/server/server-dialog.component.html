@@ -1,14 +1,12 @@
 <div class="w-[70vw]">
   <h2 mat-dialog-title class="flex items-center mt-3">
     @if (isVanillaServer) {
-      Restore Default Config
+      {{ message('restoreDefaultConfigHeader') }}
     } @else {
-      New Server Connection
+      {{ message('newServerConnectionHeader') }}
     }
     <button class="material-icons ml-2 text-2xl cursor-help hover:opacity-80"
-            matTooltip="Attempt to import custom items and recipes from an Eco server. This requires UCat's Price
-                        Calculator to be running on the server. Enter the host or IP and port for the server's web
-                        console.">
+            [matTooltip]="message('serverImportTooltip')">
       help_outline
     </button>
     <span class="ml-auto material-icons cursor-pointer hover:opacity-80" (click)="close()">close</span>
@@ -17,20 +15,26 @@
     <div class="flex items-center mb-4">
       <span class="material-icons mr-2">warning_amber</span>
       <span>
-        Modifying server connections may result in a broken calculator config. You should copy your current config using the Export function as a backup if you want to preserve it.
+        {{ message('serverConnectionWarning') }}
       </span>
+      <button mat-stroked-button class="ml-3 shrink-0" (click)="copyConfig()">
+        <span class="material-icons text-base mr-1 align-middle">content_copy</span>
+        {{ message('copyConfigButton') }}
+      </button>
     </div>
     <form [class.hidden]="isVanillaServer" class="min-h-48">
       <mat-form-field appearance="outline" floatLabel="always" class="w-full my-2" subscriptSizing="dynamic">
-        <mat-label>Server Label</mat-label>
-        <input #serverNameInput matInput [readonly]="!serverConfig.isCustom" [value]="serverConfig.name()">
+        <mat-label>{{ message('serverNameLabel') }}</mat-label>
+        <input #serverNameInput matInput [readonly]="!serverConfig.isCustom" [value]="draftServerName()"
+               (input)="onServerNameInput(serverNameInput.value)">
       </mat-form-field>
       <mat-form-field appearance="outline" class="w-full my-2" floatLabel="always" subscriptSizing="fixed"
-                      [hintLabel]="connectionFailed() ? 'Error connecting to the server. Make sure you have entered a public Eco server running UCat\'s Price Calculator. Try switching HTTP/s?' : ''">
-        <mat-label>Server Host / IP</mat-label>
-        <input #serverHostNameInput matInput [readonly]="!serverConfig.isCustom" [value]="serverConfig.hostname()">
-        <span matTextPrefix>http{{ serverConfig.useInsecureHttp() ? '' : 's' }}://</span>
-        @if (serverConfig.connectionEstablished()) {
+                      [hintLabel]="connectionFailed() ? message('serverConnectionError') : ''">
+        <mat-label>{{ message('serverHostLabel') }}</mat-label>
+        <input #serverHostNameInput matInput [readonly]="!serverConfig.isCustom" [value]="draftHostname()"
+               (input)="onHostnameInput(serverHostNameInput.value)">
+        <span matTextPrefix>http{{ draftUseInsecureHttp() ? '' : 's' }}://</span>
+        @if (draftConnectionEstablished()) {
           <span matIconSuffix class="material-icons text-green">done</span>
         } @else if (connectionFailed()) {
           <span matIconSuffix class="material-icons text-red">error_outline</span>
@@ -39,9 +43,9 @@
         }
 
       </mat-form-field>
-      <mat-checkbox [checked]="serverConfig.useInsecureHttp()"
-                    (change)="serverConfig.useInsecureHttp.set($event.checked)">
-        Use Insecure HTTP
+      <mat-checkbox [checked]="draftUseInsecureHttp()"
+                    (change)="onUseInsecureHttpChange($event.checked)">
+        {{ message('useInsecureHttpLabel') }}
       </mat-checkbox>
     </form>
     @if (connecting() || saving()) {
@@ -50,7 +54,7 @@
     @if (newSkills().length > 0) {
       <mat-expansion-panel class="my-2">
         <mat-expansion-panel-header>
-          <mat-panel-title>New Skills: {{ newSkills().length }}</mat-panel-title>
+          <mat-panel-title>{{ message('newSkillsHeader') }}: {{ newSkills().length }}</mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <ul>
@@ -64,7 +68,7 @@
     @if (newTables().length > 0) {
       <mat-expansion-panel class="my-2">
         <mat-expansion-panel-header>
-          <mat-panel-title>New Crafting Tables: {{ newTables().length }}</mat-panel-title>
+          <mat-panel-title>{{ message('newCraftingTablesHeader') }}: {{ newTables().length }}</mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <ul>
@@ -78,7 +82,7 @@
     @if (newItems().length > 0) {
       <mat-expansion-panel class="my-2">
         <mat-expansion-panel-header>
-          <mat-panel-title>New Items: {{ newItems().length }}</mat-panel-title>
+          <mat-panel-title>{{ message('newItemsHeader') }}: {{ newItems().length }}</mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <ul>
@@ -92,7 +96,7 @@
     @if (newRecipes().length > 0) {
       <mat-expansion-panel class="my-2">
         <mat-expansion-panel-header>
-          <mat-panel-title>New Recipes: {{ newRecipes().length }}</mat-panel-title>
+          <mat-panel-title>{{ message('newRecipesHeader') }}: {{ newRecipes().length }}</mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <ul>
@@ -100,32 +104,34 @@
               <li class="mb-2">
                 <h3>{{ recipe.Key }}</h3>
                 <div class="ml-2 text-xs">
-                  <span [class.changed-recipe-element]="recipe.UpdatedSkillLevel">Level {{ recipe.SkillLevel }} </span>
-                  <span [class.changed-recipe-element]="recipe.UpdatedSkill">{{ recipe.SkillNameID }}, </span>
-                  <span [class.changed-recipe-element]="recipe.UpdatedLaborCost">{{ recipe.BaseLaborCost }} Cals </span>
                   <span
-                    [class.changed-recipe-element]="recipe.UpdatedCraftingTable">at {{ recipe.CraftingTable }}</span>
+                    [class.changed-recipe-element]="recipe.UpdatedSkillLevel">{{ message('levelLabel') }} {{ recipe.SkillLevel }} </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedSkill">{{ recipe.SkillNameID }}, </span>
+                  <span
+                    [class.changed-recipe-element]="recipe.UpdatedLaborCost">{{ recipe.BaseLaborCost }} {{ message('calsUnit') }} </span>
+                  <span
+                    [class.changed-recipe-element]="recipe.UpdatedCraftingTable">{{ message('atLabel') }} {{ recipe.CraftingTable }}</span>
                   <br>
-                  <span [class.changed-recipe-element]="recipe.UpdatedIngredients">Inputs: </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedIngredients">{{ message('inputsLabel') }}: </span>
                   @for (input of recipe.Ingredients; track $index) {
                     <span
                       [class.changed-recipe-element]="input.UpdatedAmount || input.NewItem">{{ input.Ammount }} </span>
                     <span
                       [class.changed-recipe-element]="input.NewItem">{{ input.Name ? input.Name : input.Tag }} </span>
                     <span
-                      [class.changed-recipe-element]="input.UpdatedStatic || input.NewItem">{{ input.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                      [class.changed-recipe-element]="input.UpdatedStatic || input.NewItem">{{ input.IsStatic ? message('staticLabel') : message('reducibleLabel') }}</span>
                     @if ($index < recipe.Ingredients!.length - 1) {
                       ,
                     }
                   }
                   <br>
-                  <span [class.changed-recipe-element]="recipe.UpdatedOutputs">Outputs: </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedOutputs">{{ message('outputsLabel') }}: </span>
                   @for (output of recipe.Outputs; track $index) {
                     <span
                       [class.changed-recipe-element]="output.UpdatedAmount || output.NewItem">{{ output.Ammount }} </span>
                     <span [class.changed-recipe-element]="output.NewItem">{{ output.Name }} </span>
                     <span
-                      [class.changed-recipe-element]="output.UpdatedStatic || output.NewItem">{{ output.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                      [class.changed-recipe-element]="output.UpdatedStatic || output.NewItem">{{ output.IsStatic ? message('staticLabel') : message('reducibleLabel') }}</span>
                     @if ($index < recipe.Outputs!.length - 1) {
                       ,
                     }
@@ -140,7 +146,7 @@
     @if (modifiedRecipes().length > 0) {
       <mat-expansion-panel class="my-2">
         <mat-expansion-panel-header>
-          <mat-panel-title>Modified Recipes: {{ modifiedRecipes().length }}</mat-panel-title>
+          <mat-panel-title>{{ message('modifiedRecipesHeader') }}: {{ modifiedRecipes().length }}</mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <ul>
@@ -148,32 +154,34 @@
               <li class="mb-2">
                 <h3>{{ recipe.Key }}</h3>
                 <div class="ml-2 text-xs">
-                  <span [class.changed-recipe-element]="recipe.UpdatedSkillLevel">Level {{ recipe.SkillLevel }} </span>
-                  <span [class.changed-recipe-element]="recipe.UpdatedSkill">{{ recipe.SkillNameID }}, </span>
-                  <span [class.changed-recipe-element]="recipe.UpdatedLaborCost">{{ recipe.BaseLaborCost }} Cals </span>
                   <span
-                    [class.changed-recipe-element]="recipe.UpdatedCraftingTable">at {{ recipe.CraftingTable }}</span>
+                    [class.changed-recipe-element]="recipe.UpdatedSkillLevel">{{ message('levelLabel') }} {{ recipe.SkillLevel }} </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedSkill">{{ recipe.SkillNameID }}, </span>
+                  <span
+                    [class.changed-recipe-element]="recipe.UpdatedLaborCost">{{ recipe.BaseLaborCost }} {{ message('calsUnit') }} </span>
+                  <span
+                    [class.changed-recipe-element]="recipe.UpdatedCraftingTable">{{ message('atLabel') }} {{ recipe.CraftingTable }}</span>
                   <br>
-                  <span [class.changed-recipe-element]="recipe.UpdatedIngredients">Inputs: </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedIngredients">{{ message('inputsLabel') }}: </span>
                   @for (input of recipe.Ingredients; track $index) {
                     <span
                       [class.changed-recipe-element]="input.UpdatedAmount || input.NewItem">{{ input.Ammount }} </span>
                     <span
                       [class.changed-recipe-element]="input.NewItem">{{ input.Name ? input.Name : input.Tag }} </span>
                     <span
-                      [class.changed-recipe-element]="input.UpdatedStatic || input.NewItem">{{ input.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                      [class.changed-recipe-element]="input.UpdatedStatic || input.NewItem">{{ input.IsStatic ? message('staticLabel') : message('reducibleLabel') }}</span>
                     @if ($index < recipe.Ingredients!.length - 1) {
                       ,
                     }
                   }
                   <br>
-                  <span [class.changed-recipe-element]="recipe.UpdatedOutputs">Outputs: </span>
+                  <span [class.changed-recipe-element]="recipe.UpdatedOutputs">{{ message('outputsLabel') }}: </span>
                   @for (output of recipe.Outputs; track $index) {
                     <span
                       [class.changed-recipe-element]="output.UpdatedAmount || output.NewItem">{{ output.Ammount }} </span>
                     <span [class.changed-recipe-element]="output.NewItem">{{ output.Name }} </span>
                     <span
-                      [class.changed-recipe-element]="output.UpdatedStatic || output.NewItem">{{ output.IsStatic ? '(Static)' : '(Reducible)' }}</span>
+                      [class.changed-recipe-element]="output.UpdatedStatic || output.NewItem">{{ output.IsStatic ? message('staticLabel') : message('reducibleLabel') }}</span>
                     @if ($index < recipe.Outputs!.length - 1) {
                       ,
                     }
@@ -187,18 +195,17 @@
     }
 
     @if (serverConfig.id === 'default') {
-      <span>Click Save Connection to remove any custom skills, tables, items, and recipes from the calculator context.</span>
+      <span>{{ message('restoreDefaultConfigInfo') }}</span>
     }
   </mat-dialog-content>
   <mat-dialog-actions align="end">
-    <button matButton (click)="close()">Cancel</button>
-    @if (!serverConfig.connectionEstablished()) {
-      <button matButton (click)="connect(serverHostNameInput.value)"
-              [disabled]="connecting() || serverConfig.connectionEstablished()">Test
-        Connection
+    <button matButton (click)="close()">{{ message('cancelButton') }}</button>
+    @if (!draftConnectionEstablished()) {
+      <button matButton (click)="connect()"
+              [disabled]="connecting() || draftHostname().trim().length === 0">{{ message('testConnectionButton') }}
       </button>
     } @else {
-      <button matButton (click)="saveConnection(serverNameInput.value)" [disabled]="saving()">Save Connection</button>
+      <button matButton (click)="saveConnection()" [disabled]="saving()">{{ message('saveConnectionButton') }}</button>
     }
 
   </mat-dialog-actions>

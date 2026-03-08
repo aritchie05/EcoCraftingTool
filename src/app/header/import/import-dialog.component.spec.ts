@@ -1,7 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ImportDialogComponent} from './import-dialog.component';
-import {provideDialogTestingDependencies} from '../../test-utils.spec';
+import {provideDialogTestingDependencies} from '../../test-utils';
 
 describe('ImportComponent', () => {
   let component: ImportDialogComponent;

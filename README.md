@@ -1,4 +1,4 @@
-# Eco Crafting Tool
+# Eco Calc - Crafting Calculator
 
 Crafting calculator for Eco Global Survival by Strange Loop Games located at https://eco-calc.com. Computes production
 costs for in-game items based on labor, materials, and crafting table upgrades.
@@ -73,10 +73,16 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ### Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
 ```bash
 ng test
+```
+
+For the CI-style single-run test command, use:
+
+```bash
+npm run test-ci
 ```
 
 ### Running end-to-end tests

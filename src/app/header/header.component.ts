@@ -15,7 +15,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {Locale, LocaleService} from '../service/locale.service';
 import {SettingsDialogComponent} from './settings/settings-dialog.component';
 import {MessageService} from '../service/message.service';
-import {CUSTOM_SERVERS, ServerConfig, serverGroups} from '../model/server-api/server-config';
+import {CUSTOM_SERVERS, ServerConfig, ServerGroup, serverGroups} from '../model/server-api/server-config';
 import {PriceCalculatorServerService} from '../service/price-calculator-server.service';
 import {ServerDialogComponent} from './server/server-dialog.component';
 import {ServerDialogResult} from '../model/server-dialog/server-dialog-result';
@@ -41,6 +41,7 @@ export class HeaderComponent {
 
   // Server selection
   selectedServer: Signal<ServerConfig>;
+  selectedServerId: WritableSignal<string>;
   serverGroups = serverGroups;
 
   constructor(private releaseNotesService: ReleaseNotesService, imageService: ImageService,
@@ -53,6 +54,7 @@ export class HeaderComponent {
     this.supportedLocales = [...localeService.supportedLocales.values()]
     this.ecoLogoUrl = imageService.imageBaseUrl + 'eco-logo-new.webp';
     this.selectedServer = serverService.getSelectedServerSignal();
+    this.selectedServerId = signal(this.selectedServer().id);
   }
 
   retrieveReleaseNotes() {
@@ -121,6 +123,8 @@ export class HeaderComponent {
           ]);
         }
       }
+
+      this.selectedServerId.set(this.selectedServer().id);
     });
   }
 
@@ -136,10 +140,21 @@ export class HeaderComponent {
     return this.messageService.getMessage(id);
   }
 
+  serverGroupLabel(serverGroup: ServerGroup): string {
+    return this.message(serverGroup.labelMessageId);
+  }
+
+  serverOptionLabel(server: ServerConfig): string {
+    return server.id === 'add-new' ? this.message('addNewServerOption') : server.name();
+  }
+
   onServerChange(serverId: string): void {
+    this.selectedServerId.set(serverId);
     const server = this.serverService.getServerById(serverId);
     if (server) {
       this.openNewServerDialog(server);
+    } else {
+      this.selectedServerId.set(this.selectedServer().id);
     }
   }
 }

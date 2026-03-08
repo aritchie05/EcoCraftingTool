@@ -24,7 +24,7 @@ describe('PriceCalculatorServerService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('gets mock recipes', (done: DoneFn) => {
+  it('gets mock recipes', async () => {
     const mockResponse = {
       Recipes: [
         {id: 1, name: 'Test Recipe'},
@@ -35,7 +35,6 @@ describe('PriceCalculatorServerService', () => {
     service.getAllRecipes(true).subscribe(result => {
       expect(result).toBeTruthy();
       expect(result.Recipes.length).toBeGreaterThan(0);
-      done();
     });
 
     const req = httpMock.expectOne(request => request.url.includes('recipes'));
@@ -43,16 +42,16 @@ describe('PriceCalculatorServerService', () => {
     req.flush(mockResponse);
   });
 
-  it('gets mock items', (done: DoneFn) => {
+  it('gets mock items', async () => {
     const mockResponse = {
       AllItems: {
-        "DummyItem": {
-          "PropertyInfos": {
-            "Name": {
-              "String": "DummyItem"
+        'DummyItem': {
+          'PropertyInfos': {
+            'Name': {
+              'String': 'DummyItem'
             },
-            "DisplayName": {
-              "LocString": "Dummy Item"
+            'DisplayName': {
+              'LocString': 'Dummy Item'
             }
           }
         }
@@ -64,7 +63,6 @@ describe('PriceCalculatorServerService', () => {
       expect(result.AllItems['DummyItem']).toBeTruthy();
       expect(result.AllItems['DummyItem'].PropertyInfos.DisplayName.LocString).toEqual('Dummy Item');
       expect(result.AllItems['DummyItem'].PropertyInfos.Name.String).toEqual('DummyItem');
-      done();
     });
 
     const req = httpMock.expectOne(request => request.url.includes('allItems'));
