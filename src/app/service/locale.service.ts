@@ -1,11 +1,8 @@
-import {effect, Inject, Injectable, signal, WritableSignal} from '@angular/core';
+import {effect, Injectable, signal, WritableSignal} from '@angular/core';
 import {localeData, LocaleEntry} from '../../assets/data/locale/locale-data';
-import {skills} from '../../assets/data/skills';
-import {items} from '../../assets/data/items';
-import {recipes} from '../../assets/data/recipes';
 import {upgradeModules} from '../../assets/data/upgrade-modules';
-import {tables} from '../../assets/data/crafting-tables';
-import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
+import {LocalStorageService} from 'ngx-webstorage';
+import {CraftingDataService} from './crafting-data.service';
 
 export class Locale {
   name: string;
@@ -29,9 +26,20 @@ export class LocaleService {
   readonly supportedLocales: Map<string, Locale>;
   readonly defaultLocale: Locale;
 
+  private readonly storageService: {
+    get(key: string): any;
+    set(key: string, value: unknown): unknown;
+  };
+
   selectedLocale: WritableSignal<Locale>;
 
-  constructor(@Inject(LOCAL_STORAGE) private storageService: StorageService) {
+  constructor(localStorageService: LocalStorageService,
+              private craftingDataService: CraftingDataService) {
+    this.storageService = {
+      get: (key: string) => localStorageService.retrieve(key),
+      set: (key: string, value: unknown) => localStorageService.store(key, value)
+    };
+
     this.defaultLocale = new Locale('English', 'en-US');
     this.supportedLocales = new Map([
       ['en', this.defaultLocale],
@@ -58,25 +66,45 @@ export class LocaleService {
 
     this.selectedLocale = signal(storageLocale !== undefined ? storageLocale : this.defaultLocale);
 
-    effect(() => {
-      skills.forEach(skill => {
-        skill.name.update((oldName) => this.localizeSkillName(oldName, skill.nameID, this.selectedLocale().langCode));
+    effect(async () => {
+      const langCode = this.selectedLocale().langCode;
+
+      this.craftingDataService.skills.update(skills => {
+        skills.forEach(skill => {
+          skill.name.update((oldName) => this.localizeSkillName(oldName, skill.nameID, langCode));
+        });
+        return new Map(skills);
+      })
+
+      await new Promise(resolve => setTimeout(resolve));
+
+      this.craftingDataService.items.update(items => {
+        items.forEach(item => {
+          item.name.update((oldName) => this.localizeItemName(oldName, item.nameID, langCode));
+        });
+        return new Map(items);
       });
 
-      items.forEach(item => {
-        item.name.update((oldName) => this.localizeItemName(oldName, item.nameID, this.selectedLocale().langCode));
+      await new Promise(resolve => setTimeout(resolve));
+
+      this.craftingDataService.recipes.update(recipes => {
+        recipes.forEach(recipe => {
+          recipe.name.update((oldName) => this.localizeRecipeName(oldName, recipe.nameID, langCode));
+        });
+        return new Map(recipes);
       });
 
-      recipes.forEach(recipe => {
-        recipe.name.update((oldName) => this.localizeRecipeName(oldName, recipe.nameID, this.selectedLocale().langCode));
+      await new Promise(resolve => setTimeout(resolve));
+
+      this.craftingDataService.tables.update(tables => {
+        tables.forEach(table => {
+          table.name.update((oldName) => this.localizeCraftingTableName(oldName, table.nameID, langCode));
+        });
+        return new Map(tables);
       });
 
       upgradeModules.forEach(upgrade => {
-        upgrade.name.update((oldName) => this.localizeUpgradeName(oldName, upgrade.nameID, this.selectedLocale().langCode));
-      });
-
-      tables.forEach(table => {
-        table.name.update((oldName) => this.localizeCraftingTableName(oldName, table.nameID, this.selectedLocale().langCode));
+        upgrade.name.update((oldName) => this.localizeUpgradeName(oldName, upgrade.nameID, langCode));
       });
     });
 

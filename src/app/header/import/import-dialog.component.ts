@@ -2,7 +2,7 @@ import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 import {CalculatorConfig} from '../../model/storage-model/calculator-config';
-import {WebStorageService} from '../../service/storage.service';
+import WebStorageService from '../../service/storage.service';
 import {MessageService} from '../../service/message.service';
 
 @Component({

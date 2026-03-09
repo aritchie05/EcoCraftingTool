@@ -2,10 +2,12 @@ import {ChangeDetectionStrategy, Component, inject, Signal} from '@angular/core'
 import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 import {Release} from '../../model/release';
 import {MessageService} from '../../service/message.service';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MarkdownModule} from 'ngx-markdown';
 
 @Component({
   selector: 'app-release-notes',
-  imports: [MatDialogModule],
+  imports: [MatDialogModule, MatProgressSpinnerModule, MarkdownModule],
   templateUrl: './release-notes-dialog.component.html',
   styleUrl: './release-notes-dialog.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

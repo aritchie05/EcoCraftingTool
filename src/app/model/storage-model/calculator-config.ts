@@ -3,6 +3,8 @@ import {StoredTable} from './stored-table';
 import {StoredItem} from './stored-item';
 import {StoredRecipe} from './stored-recipe';
 import {Locale} from '../../service/locale.service';
+import {ServerRecipe, ServerSkill, ServerTable} from '../server-api/server-recipe';
+import {ServerItem} from '../server-api/server-item';
 
 export interface CalculatorConfig {
   skills: StoredSkill[];
@@ -15,4 +17,8 @@ export interface CalculatorConfig {
   laborCost: number;
   profitPercent: number;
   locale: Locale;
+  customSkills: ServerSkill[];
+  customTables: ServerTable[];
+  customItems: ServerItem[];
+  customRecipes: ServerRecipe[];
 }

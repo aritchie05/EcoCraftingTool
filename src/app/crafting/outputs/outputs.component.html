@@ -2,12 +2,13 @@
   <h1 class="text-4xl my-1">{{ message('outputsHeader') }}</h1>
   <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>{{ message('recipeSearchPlaceholder') }}</mat-label>
-    <input #recipeInput matInput type="text" (input)="onRecipeInput(recipeInput.value)"
+    <input #recipeInput matInput type="text" aria-label="Search for a recipe to add"
+           (input)="onRecipeInput(recipeInput.value)"
            [matAutocomplete]="recipesAutocomplete">
   </mat-form-field>
   <mat-autocomplete #recipesAutocomplete="matAutocomplete" class="max-h-[70vh]"
                     (optionSelected)="onRecipeSelected($event.option, recipeInput)">
-    @for (recipe of filteredRecipes; track recipe.nameID) {
+    @for (recipe of filteredRecipes(); track recipe.nameID) {
       <mat-option [value]="recipe">
         {{ recipe.name() }}
       </mat-option>
@@ -18,7 +19,8 @@
       <mat-expansion-panel togglePosition="before" expanded class="my-1">
         <mat-expansion-panel-header>
           <mat-panel-title>{{ displayGroup.name() }}</mat-panel-title>
-          <mat-icon (click)="onRemoveSkill(displayGroup)">close</mat-icon>
+          <mat-icon [attr.aria-label]="'Remove ' + displayGroup.name() + ' skill group'"
+                   (click)="onRemoveSkill(displayGroup)">close</mat-icon>
         </mat-expansion-panel-header>
         @for (outputDisplay of groupedOutputDisplays().get(displayGroup); track outputDisplay.itemNameID) {
           <div class="output-container my-1 pl-1 py-2 rounded">
@@ -30,6 +32,7 @@
               </span>
               @if (outputDisplay.subRecipes.length === 1) {
                 <button class="material-icons cursor-pointer hover:opacity-80 ml-1"
+                        [attr.aria-label]="outputDisplay.itemName() + ' recipe details'"
                         (click)="onRecipeInfoClick(outputDisplay.subRecipes[0])">info_outline
                 </button>
               }
@@ -37,12 +40,14 @@
                 <mat-form-field appearance="outline" class="w-24 mr-4">
                   <mat-label>{{ message('baseCostLabel') }}</mat-label>
                   <input #basePrice matInput type="text" readonly class="cursor-not-allowed"
+                         [attr.aria-label]="outputDisplay.itemName() + ' base cost'"
                          [value]="outputDisplay.basePrice().toLocaleString(localeService.selectedLocale().code,
                    {maximumFractionDigits: 2, minimumFractionDigits: 0})">
                 </mat-form-field>
                 <mat-form-field appearance="outline" floatLabel="always" class="w-24 mr-4">
                   <mat-label>{{ message('profitLabel') }}</mat-label>
                   <input #profitOverride matInput type="number" min="0" step="1" class="profit-input"
+                         [attr.aria-label]="outputDisplay.itemName() + ' profit %'"
                          [value]="outputDisplay.subRecipes[0].recipe.profitOverride() >= 0 ? outputDisplay.subRecipes[0].recipe.profitOverride() : defaultProfitPercent()"
                          (focusout)="onProfitOverrideChange(profitOverride.value, outputDisplay)"
                   >
@@ -51,10 +56,12 @@
                 <mat-form-field appearance="outline" class="w-24 mr-4">
                   <mat-label>{{ message('salePriceLabel') }}</mat-label>
                   <input #outputCost matInput type="text" readonly class="cursor-not-allowed"
+                         [attr.aria-label]="outputDisplay.itemName() + ' sale price'"
                          [value]="outputDisplay.itemPrice().toLocaleString(localeService.selectedLocale().code,
                    {maximumFractionDigits: 2, minimumFractionDigits: 0})">
                 </mat-form-field>
                 <button class="material-icons cursor-pointer hover:opacity-80 mr-2"
+                        [attr.aria-label]="'Remove ' + outputDisplay.itemName()"
                         (click)="onRemoveOutput(outputDisplays().indexOf(outputDisplay))">
                   close
                 </button>
@@ -67,6 +74,7 @@
                     {{ subRecipe.recipeName() }} {{ message('recipeSuffix') }}
                   </span>
                   <button class="material-icons cursor-pointer hover:opacity-80 ml-1"
+                          [attr.aria-label]="subRecipe.recipeName() + ' recipe details'"
                           (click)="onRecipeInfoClick(subRecipe)">
                     info_outline
                   </button>
@@ -74,10 +82,12 @@
                     <mat-form-field appearance="outline" class="w-24 mr-4">
                       <mat-label>{{ message('baseCostLabel') }}</mat-label>
                       <input #subRecipeBasePrice matInput type="text" readonly class="cursor-not-allowed"
+                             [attr.aria-label]="subRecipe.recipeName() + ' base cost'"
                              [value]="subRecipe.basePrice().toLocaleString(localeService.selectedLocale().code,
                      {maximumFractionDigits: 2, minimumFractionDigits: 0})">
                     </mat-form-field>
                     <button class="material-icons cursor-pointer hover:opacity-80 mr-2"
+                            [attr.aria-label]="'Remove ' + subRecipe.recipeName() + ' recipe'"
                             (click)="onRemoveSubRecipe(outputDisplays().indexOf(outputDisplay), subIndex)">
                       close
                     </button>

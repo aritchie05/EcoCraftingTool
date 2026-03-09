@@ -9,6 +9,9 @@ module.exports = {
       'light-blue': '#47b4cd',
       'cyan': '#00dddd',
       'gray': '#808080',
+      'green': '#00ff00',
+      'red': '#ff0000',
+      'yellow' : '#ffff00',
     },
     extend: {
       flexBasis: {

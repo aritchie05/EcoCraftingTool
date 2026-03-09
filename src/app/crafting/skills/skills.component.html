@@ -2,12 +2,13 @@
   <h1 class="text-4xl my-1">{{ message('skillsHeader') }}</h1>
   <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>{{ message('skillSearchPlaceholder') }}</mat-label>
-    <input #skillInput matInput type="text" (input)="onSkillInput(skillInput.value)"
+    <input #skillInput matInput type="text" aria-label="Search for a skill to add"
+           (input)="onSkillInput(skillInput.value)"
            [matAutocomplete]="skillsAutocomplete">
   </mat-form-field>
   <mat-autocomplete #skillsAutocomplete="matAutocomplete" class="max-h-[70vh]"
                     (optionSelected)="onSkillSelected($event.option, skillInput)">
-    @for (skill of filteredSkills; track skill.nameID) {
+    @for (skill of filteredSkills(); track skill.nameID) {
       <mat-option [value]="skill">
         <img [src]="imageService.imageTemplateUrl" [style]="imageService.getSkillImgStyle(skill)"
              width="32" height="32" [alt]="skill.name() + ' Icon'" class="mr-2">
@@ -25,10 +26,13 @@
         <div class="ml-auto flex items-center">
           <mat-form-field appearance="outline" class="w-16 mr-4" (click)="levelInput.select()">
             <input #levelInput matInput type="number" step="1" min="0" max="7" [value]="skill.level()"
+                   [attr.aria-label]="skill.name() + ' level'"
                    [innerText]="skill.level()"
                    (focusout)="onSkillLevelChange($index, levelInput.value)">
           </mat-form-field>
-          <button class="material-icons cursor-pointer hover:opacity-80" (click)="onRemoveSkill($index)">
+          <button class="material-icons cursor-pointer hover:opacity-80"
+                  [attr.aria-label]="'Remove ' + skill.name()"
+                  (click)="onRemoveSkill($index)">
             close
           </button>
         </div>
@@ -47,12 +51,13 @@
 
   <mat-form-field appearance="outline" floatLabel="always" class="w-full my-1">
     <mat-label>{{ message('tableSearchPlaceholder') }}</mat-label>
-    <input #tableInput matInput type="text" (input)="onTableInput(tableInput.value)"
+    <input #tableInput matInput type="text" aria-label="Search for a crafting table to add"
+           (input)="onTableInput(tableInput.value)"
            [matAutocomplete]="tablesAutocomplete">
   </mat-form-field>
   <mat-autocomplete #tablesAutocomplete="matAutocomplete" class="max-h-[50vh]"
                     (optionSelected)="onTableSelected($event.option, tableInput)">
-    @for (table of filteredTables; track table.nameID) {
+    @for (table of filteredTables(); track table.nameID) {
       <mat-option [value]="table">
         <img [src]="imageService.imageTemplateUrl" [style]="imageService.getTableImgStyle(table)"
              width="32" height="32" [alt]="table.name() + ' Icon'" class="mr-2">
@@ -70,6 +75,7 @@
         <div class="ml-auto flex items-center">
           <mat-form-field appearance="outline" class="mr-4">
             <mat-select #upgradeSelect [value]="table.selectedUpgrade()"
+                        [attr.aria-label]="table.name() + ' upgrade module'"
                         (selectionChange)="onTableUpgradeChange($index,$event.value)"
                         class="text-sm" panelClass="upgrade-select">
               @for (upgrade of table.availableUpgrades; track upgrade.nameID) {
@@ -79,7 +85,9 @@
               }
             </mat-select>
           </mat-form-field>
-          <button class="material-icons cursor-pointer hover:opacity-80" (click)="onRemoveTable($index)">
+          <button class="material-icons cursor-pointer hover:opacity-80"
+                  [attr.aria-label]="'Remove ' + table.name()"
+                  (click)="onRemoveTable($index)">
             close
           </button>
         </div>
