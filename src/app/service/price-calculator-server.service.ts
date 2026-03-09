@@ -233,12 +233,7 @@ export class PriceCalculatorServerService {
       }
 
       if (serverOutput.IsStatic === undefined) {
-        //Special case where static is wrong for Crushed outputs of Ashlar recipes
-        if (serverOutputs.some(output => output.Name.startsWith('Ashlar')) && serverOutput.Name.startsWith('Crushed')) {
-          serverOutput.IsStatic = false;
-        } else {
-          serverOutput.IsStatic = true;
-        }
+        serverOutput.IsStatic = this.inferOutputStatic(serverOutput, serverOutputs);
       }
 
       if (match.quantity !== serverOutput.Ammount) {
@@ -255,6 +250,20 @@ export class PriceCalculatorServerService {
     }
 
     return result;
+  }
+
+  private inferOutputStatic(serverOutput: ServerOutput, serverOutputs: ServerOutput[]): boolean {
+    return !this.isReducibleOutputException(serverOutput, serverOutputs);
+  }
+
+  private isReducibleOutputException(serverOutput: ServerOutput, serverOutputs: ServerOutput[]): boolean {
+    const isAshlarCrushedOutput = serverOutputs.some(output => output.Name.startsWith('Ashlar')) &&
+      serverOutput.Name.startsWith('Crushed');
+    const isSpecialOutputInMultiOutputRecipe = ['Barrel', 'Sulfur'].includes(serverOutput.Name) &&
+      serverOutputs.length > 1 &&
+      serverOutputs.some(output => output.Name !== serverOutput.Name);
+
+    return isAshlarCrushedOutput || isSpecialOutputInMultiOutputRecipe;
   }
 
   /**
