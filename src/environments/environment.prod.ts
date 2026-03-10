@@ -4,6 +4,7 @@ export const environment = {
   imageBaseUrl: 'https://cdn.jsdelivr.net/gh/aritchie05/EcoCraftingTool@master/src/assets/img/',
   mockServersResponse: false,
   serverBasePath: '/api/v1/plugins/EcoPriceCalculator',
+  serverProxyPath: '/api/server-proxy',
   serverItemsPath: '/allItems',
   serverRecipesPath: '/recipes',
   whiteTigerHostName: 'https://white-tiger.play.eco'

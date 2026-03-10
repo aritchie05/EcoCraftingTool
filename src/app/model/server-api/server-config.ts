@@ -46,7 +46,7 @@ export const PREDEFINED_SERVERS: ServerGroup = {
     {
       id: 'greenleaf',
       name: signal('Greenleaf'),
-      hostname: signal('148.251.154.60:3021'),
+      hostname: signal('eco.greenleafserver.com:3021'),
       isCustom: false,
       useInsecureHttp: signal(true),
       connectionEstablished: signal(false)

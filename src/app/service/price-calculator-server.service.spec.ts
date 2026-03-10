@@ -1,3 +1,4 @@
+import {signal} from '@angular/core';
 import {TestBed} from '@angular/core/testing';
 
 import {PriceCalculatorServerService} from './price-calculator-server.service';
@@ -5,6 +6,8 @@ import {HttpTestingController, provideHttpClientTesting} from '@angular/common/h
 import {provideHttpClient} from '@angular/common/http';
 import {Item} from '../model/item';
 import {Output} from '../model/output';
+import {ServerDataResponse} from '../model/server-api/server-data-response';
+import {ServerConfig} from '../model/server-api/server-config';
 import {ServerOutput} from '../model/server-api/server-recipe';
 
 describe('PriceCalculatorServerService', () => {
@@ -74,6 +77,68 @@ describe('PriceCalculatorServerService', () => {
     const req = httpMock.expectOne(request => request.url.includes('allItems'));
     expect(req.request.method).toBe('GET');
     req.flush(mockResponse);
+  });
+
+  it('routes insecure HTTP servers through the proxy on HTTPS pages', () => {
+    const isHttpsContextSpy = vi.spyOn(service as unknown as { isHttpsContext: () => boolean }, 'isHttpsContext');
+    isHttpsContextSpy.mockReturnValue(true);
+    const serverConfig = createServerConfig('eco.greenleafserver.com:3021', true);
+    let connectionSucceeded = false;
+
+    service.attemptConnection(serverConfig).subscribe(result => connectionSucceeded = result);
+
+    const req = httpMock.expectOne('/api/server-proxy');
+    expect(req.request.method).toBe('POST');
+    expect(req.request.body).toEqual({host: 'eco.greenleafserver.com:3021'});
+
+    req.flush(createServerDataResponse());
+
+    expect(connectionSucceeded).toBe(true);
+    expect(serverConfig.connectionEstablished()).toBe(true);
+  });
+
+  it('keeps insecure HTTP servers direct on non-HTTPS pages', () => {
+    const isHttpsContextSpy = vi.spyOn(service as unknown as { isHttpsContext: () => boolean }, 'isHttpsContext');
+    isHttpsContextSpy.mockReturnValue(false);
+    const serverConfig = createServerConfig('eco.greenleafserver.com:3021', true);
+    let connectionSucceeded = false;
+
+    service.attemptConnection(serverConfig).subscribe(result => connectionSucceeded = result);
+
+    httpMock.expectNone('/api/server-proxy');
+
+    const itemsReq = httpMock.expectOne('http://eco.greenleafserver.com:3021/api/v1/plugins/EcoPriceCalculator/allItems');
+    const recipesReq = httpMock.expectOne('http://eco.greenleafserver.com:3021/api/v1/plugins/EcoPriceCalculator/recipes');
+    expect(itemsReq.request.method).toBe('GET');
+    expect(recipesReq.request.method).toBe('GET');
+
+    itemsReq.flush(createServerDataResponse().itemsResponse);
+    recipesReq.flush(createServerDataResponse().recipesResponse);
+
+    expect(connectionSucceeded).toBe(true);
+    expect(serverConfig.connectionEstablished()).toBe(true);
+  });
+
+  it('keeps HTTPS servers direct even on HTTPS pages', () => {
+    const isHttpsContextSpy = vi.spyOn(service as unknown as { isHttpsContext: () => boolean }, 'isHttpsContext');
+    isHttpsContextSpy.mockReturnValue(true);
+    const serverConfig = createServerConfig('white-tiger.play.eco', false);
+    let connectionSucceeded = false;
+
+    service.attemptConnection(serverConfig).subscribe(result => connectionSucceeded = result);
+
+    httpMock.expectNone('/api/server-proxy');
+
+    const itemsReq = httpMock.expectOne('https://white-tiger.play.eco/api/v1/plugins/EcoPriceCalculator/allItems');
+    const recipesReq = httpMock.expectOne('https://white-tiger.play.eco/api/v1/plugins/EcoPriceCalculator/recipes');
+    expect(itemsReq.request.method).toBe('GET');
+    expect(recipesReq.request.method).toBe('GET');
+
+    itemsReq.flush(createServerDataResponse().itemsResponse);
+    recipesReq.flush(createServerDataResponse().recipesResponse);
+
+    expect(connectionSucceeded).toBe(true);
+    expect(serverConfig.connectionEstablished()).toBe(true);
   });
 
   it('infers non-static Ashlar byproducts when the server omits output static flags', () => {
@@ -161,5 +226,27 @@ function createOutput(name: string, nameID: string, quantity: number, reducible:
     quantity,
     reducible,
     primary: true
+  };
+}
+
+function createServerConfig(hostname: string, useInsecureHttp: boolean): ServerConfig {
+  return {
+    id: 'test-server',
+    name: signal('Test Server'),
+    hostname: signal(hostname),
+    isCustom: true,
+    useInsecureHttp: signal(useInsecureHttp),
+    connectionEstablished: signal(false)
+  };
+}
+
+function createServerDataResponse(): ServerDataResponse {
+  return {
+    itemsResponse: {
+      AllItems: {}
+    },
+    recipesResponse: {
+      Recipes: []
+    }
   };
 }
