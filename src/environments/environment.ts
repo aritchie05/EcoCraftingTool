@@ -8,6 +8,7 @@ export const environment = {
   imageBaseUrl: 'http://localhost:4200/assets/img/',
   mockServersResponse: false,
   serverBasePath: '/api/v1/plugins/EcoPriceCalculator',
+  serverProxyPath: '/api/server-proxy',
   serverItemsPath: '/allItems',
   serverRecipesPath: '/recipes',
   whiteTigerHostName: 'https://white-tiger.play.eco'

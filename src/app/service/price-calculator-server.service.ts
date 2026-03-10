@@ -3,6 +3,7 @@ import {CUSTOM_SERVERS, ServerConfig, serverGroups} from '../model/server-api/se
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {ServerItem, ServerItemsResponse} from '../model/server-api/server-item';
 import {catchError, forkJoin, map, Observable, of, tap} from 'rxjs';
+import {ServerDataResponse} from '../model/server-api/server-data-response';
 import {
   ServerIngredient,
   ServerOutput,
@@ -32,6 +33,7 @@ export class PriceCalculatorServerService {
   private readonly baseUrlPath = environment.serverBasePath;
   private readonly itemsPath = environment.serverItemsPath;
   private readonly recipesPath = environment.serverRecipesPath;
+  private readonly proxyPath = environment.serverProxyPath;
 
   tempNewItems: WritableSignal<ServerItem[]> = signal([]);
   tempNewRecipes: WritableSignal<ServerRecipe[]> = signal([]);
@@ -65,6 +67,10 @@ export class PriceCalculatorServerService {
   attemptConnection(server: ServerConfig) {
     this.resetParsedData();
 
+    if (this.shouldUseServerProxy(server)) {
+      return this.attemptConnectionViaProxy(server);
+    }
+
     const itemsRequest = this.getAllItems(server.useInsecureHttp(), server.hostname()).pipe(
       tap(response => this.tempNewItems.set(this.parseNewItems(response))),
       map(() => true),
@@ -89,6 +95,21 @@ export class PriceCalculatorServerService {
     );
   }
 
+  private attemptConnectionViaProxy(server: ServerConfig): Observable<boolean> {
+    return this.getProxyServerData(server.hostname().trim()).pipe(
+      tap(({itemsResponse, recipesResponse}) => {
+        this.tempNewItems.set(this.parseNewItems(itemsResponse));
+        this.tempNewRecipes.set(this.parseNewRecipes(recipesResponse));
+      }),
+      map(() => true),
+      catchError((error: unknown) => {
+        this.logConnectionError('server-proxy', server, error);
+        return of(false);
+      }),
+      tap(success => server.connectionEstablished.set(success))
+    );
+  }
+
   getSelectedServerSignal(): WritableSignal<ServerConfig> {
     return this.selectedServer;
   }
@@ -105,6 +126,20 @@ export class PriceCalculatorServerService {
     const host = hostname ? hostname : this.getSelectedServer().hostname();
     const url = protocol + host + this.baseUrlPath + this.recipesPath;
     return this.http.get<ServerRecipesResponse>(url);
+  }
+
+  private getProxyServerData(hostname: string): Observable<ServerDataResponse> {
+    return this.http.post<ServerDataResponse>(this.proxyPath, {
+      host: hostname
+    });
+  }
+
+  private shouldUseServerProxy(server: ServerConfig): boolean {
+    return server.useInsecureHttp() && this.isHttpsContext();
+  }
+
+  private isHttpsContext(): boolean {
+    return globalThis.location?.protocol === 'https:';
   }
 
   parseNewItems(response: ServerItemsResponse): ServerItem[] {
