@@ -140,3 +140,34 @@ app-crafting {
     border-radius: 4px;
   }
 }
+
+.readonly-field {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid var(--mat-sys-outline);
+  border-radius: 4px;
+  padding: 0 0.75rem;
+  background-color: var(--mat-sys-surface-container-lowest);
+  cursor: not-allowed;
+  box-sizing: border-box;
+  justify-content: center;
+  height: 2rem;
+}
+
+.readonly-label {
+  position: absolute;
+  top: -0.55em;
+  left: 0.5rem;
+  font-size: 0.7rem;
+  padding: 0 0.25rem;
+  background: linear-gradient(to bottom, var(--mat-sys-surface-container-high) 50%, var(--mat-sys-surface-container-lowest) 50%);
+  color: var(--mat-sys-on-surface-variant);
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Ensure label background matches dialog surface when inside a dialog */
+mat-dialog-content .readonly-label {
+  /* No change needed as dialog uses surface-container-high */
+}

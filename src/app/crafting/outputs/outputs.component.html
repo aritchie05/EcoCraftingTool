@@ -16,12 +16,13 @@
   </mat-autocomplete>
   <div class="flex flex-col w-full text-sm selected-outputs-container my-1">
     @for (displayGroup of groupedDisplayKeys(); track displayGroup) {
-      <mat-expansion-panel togglePosition="before" expanded class="my-1">
+      <mat-expansion-panel togglePosition="before" [expanded]="$first" class="my-1">
         <mat-expansion-panel-header>
           <mat-panel-title>{{ displayGroup.name() }}</mat-panel-title>
           <mat-icon [attr.aria-label]="'Remove ' + displayGroup.name() + ' skill group'"
                    (click)="onRemoveSkill(displayGroup)">close</mat-icon>
         </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
         @for (outputDisplay of groupedOutputDisplays().get(displayGroup); track outputDisplay.itemNameID) {
           <div class="output-container my-1 pl-1 py-2 rounded">
             <div class="flex flex-row items-center w-full">
@@ -37,13 +38,11 @@
                 </button>
               }
               <div class="ml-auto flex items-center">
-                <mat-form-field appearance="outline" class="w-24 mr-4">
-                  <mat-label>{{ message('baseCostLabel') }}</mat-label>
-                  <input #basePrice matInput type="text" readonly class="cursor-not-allowed"
-                         [attr.aria-label]="outputDisplay.itemName() + ' base cost'"
-                         [value]="outputDisplay.basePrice().toLocaleString(localeService.selectedLocale().code,
-                   {maximumFractionDigits: 2, minimumFractionDigits: 0})">
-                </mat-form-field>
+                <div class="readonly-field w-24 mr-4"
+                     [attr.aria-label]="outputDisplay.itemName() + ' base cost'">
+                  <span class="readonly-label">{{ message('baseCostLabel') }}</span>
+                  <span>{{ outputDisplay.basePrice() | localeNumber:localeService.selectedLocale().code }}</span>
+                </div>
                 <mat-form-field appearance="outline" floatLabel="always" class="w-24 mr-4">
                   <mat-label>{{ message('profitLabel') }}</mat-label>
                   <input #profitOverride matInput type="number" min="0" step="1" class="profit-input"
@@ -53,13 +52,11 @@
                   >
                   <span matSuffix>%</span>
                 </mat-form-field>
-                <mat-form-field appearance="outline" class="w-24 mr-4">
-                  <mat-label>{{ message('salePriceLabel') }}</mat-label>
-                  <input #outputCost matInput type="text" readonly class="cursor-not-allowed"
-                         [attr.aria-label]="outputDisplay.itemName() + ' sale price'"
-                         [value]="outputDisplay.itemPrice().toLocaleString(localeService.selectedLocale().code,
-                   {maximumFractionDigits: 2, minimumFractionDigits: 0})">
-                </mat-form-field>
+                <div class="readonly-field w-24 mr-4"
+                     [attr.aria-label]="outputDisplay.itemName() + ' sale price'">
+                  <span class="readonly-label">{{ message('salePriceLabel') }}</span>
+                  <span>{{ outputDisplay.itemPrice() | localeNumber:localeService.selectedLocale().code }}</span>
+                </div>
                 <button class="material-icons cursor-pointer hover:opacity-80 mr-2"
                         [attr.aria-label]="'Remove ' + outputDisplay.itemName()"
                         (click)="onRemoveOutput(outputDisplays().indexOf(outputDisplay))">
@@ -79,13 +76,11 @@
                     info_outline
                   </button>
                   <div class="ml-auto flex items-center">
-                    <mat-form-field appearance="outline" class="w-24 mr-4">
-                      <mat-label>{{ message('baseCostLabel') }}</mat-label>
-                      <input #subRecipeBasePrice matInput type="text" readonly class="cursor-not-allowed"
-                             [attr.aria-label]="subRecipe.recipeName() + ' base cost'"
-                             [value]="subRecipe.basePrice().toLocaleString(localeService.selectedLocale().code,
-                     {maximumFractionDigits: 2, minimumFractionDigits: 0})">
-                    </mat-form-field>
+                    <div class="readonly-field w-24 mr-4"
+                         [attr.aria-label]="subRecipe.recipeName() + ' base cost'">
+                      <span class="readonly-label">{{ message('baseCostLabel') }}</span>
+                      <span>{{ subRecipe.basePrice() | localeNumber:localeService.selectedLocale().code }}</span>
+                    </div>
                     <button class="material-icons cursor-pointer hover:opacity-80 mr-2"
                             [attr.aria-label]="'Remove ' + subRecipe.recipeName() + ' recipe'"
                             (click)="onRemoveSubRecipe(outputDisplays().indexOf(outputDisplay), subIndex)">
@@ -97,6 +92,7 @@
             }
           </div>
         }
+        </ng-template>
       </mat-expansion-panel>
     }
     <!--
