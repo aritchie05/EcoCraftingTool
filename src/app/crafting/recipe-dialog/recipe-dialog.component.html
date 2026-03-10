@@ -40,9 +40,7 @@
       <span>{{ recipe.skill.name() }}</span>
     </div>
     <div class="col-start-4 col-span-1 flex items-center justify-center">
-      <mat-form-field appearance="outline" class="w-24">
-        <input matInput readonly class="cursor-not-allowed" [value]="recipe.level">
-      </mat-form-field>
+      <span class="readonly-field w-24">{{ recipe.level }}</span>
     </div>
   </div>
   <div class="col-span-1 flex items-center ml-auto">
@@ -55,15 +53,11 @@
       <span>{{ message('Calories') }}</span>
     </div>
     <div class="col-start-3 col-span-1 flex items-center justify-center">
-      <mat-form-field appearance="outline" class="w-24">
-        <input matInput readonly class="cursor-not-allowed"
-               [value]="formatNumber(craftingService.computeAdjustedLabor(recipe))">
-      </mat-form-field>
+      <span
+        class="readonly-field w-24">{{ craftingService.computeAdjustedLabor(recipe) | localeNumber:localeCode() }}</span>
     </div>
     <div class="col-start-4 col-span-1 flex items-center justify-center">
-      <mat-form-field appearance="outline" class="w-24">
-        <input matInput readonly class="cursor-not-allowed" [value]="recipe.labor">
-      </mat-form-field>
+      <span class="readonly-field w-24">{{ recipe.labor }}</span>
     </div>
   </div>
   <div class="col-span-1 flex items-center ml-auto">
@@ -78,15 +72,11 @@
         <span class="ml-2">{{ input.item.name() }}</span>
       </div>
       <div class="col-start-3 col-span-1 flex items-center justify-center">
-        <mat-form-field appearance="outline" class="w-24">
-          <input matInput readonly class="cursor-not-allowed"
-                 [value]="formatNumber(craftingService.computeAdjustedInputQuantity(recipe, input))">
-        </mat-form-field>
+        <span
+          class="readonly-field w-24">{{ craftingService.computeAdjustedInputQuantity(recipe, input) | localeNumber:localeCode() }}</span>
       </div>
       <div class="col-start-4 col-span-1 flex items-center justify-center">
-        <mat-form-field appearance="outline" class="w-24">
-          <input matInput readonly class="cursor-not-allowed" [value]="input.quantity">
-        </mat-form-field>
+        <span class="readonly-field w-24">{{ input.quantity }}</span>
       </div>
     }
   </div>
@@ -105,15 +95,11 @@
         }
       </div>
       <div class="col-start-3 col-span-1 flex items-center justify-center">
-        <mat-form-field appearance="outline" class="w-24">
-          <input matInput readonly class="cursor-not-allowed"
-                 [value]="formatNumber(craftingService.computeAdjustedOutputQuantity(recipe, output))">
-        </mat-form-field>
+        <span
+          class="readonly-field w-24">{{ craftingService.computeAdjustedOutputQuantity(recipe, output) | localeNumber:localeCode() }}</span>
       </div>
       <div class="col-start-4 col-span-1 flex items-center justify-center">
-        <mat-form-field appearance="outline" class="w-24">
-          <input matInput readonly class="cursor-not-allowed" [value]="output.quantity">
-        </mat-form-field>
+        <span class="readonly-field w-24">{{ output.quantity }}</span>
       </div>
     }
   </div>

@@ -38462,6 +38462,22 @@ export const localeData: LocaleData[] =
       "type": "upgrades",
       "entries": [
         {
+          "id": "ModernUpgrade5",
+          "en": "Modern Upgrade 5",
+          "fr": "Amélioration moderne nv. 5",
+          "es": "Mejora moderna 5",
+          "de": "Modernes Upgrade 5",
+          "pt": "Melhoria Moderna 5",
+          "it": "Aggiornamento Moderno 5",
+          "tr": "Modern Geliştirme 5",
+          "pl": "Nowoczesne ulepszenie 5",
+          "ru": "Современное улучшение 5",
+          "uk": "Новітнє покращення 5",
+          "ko": "현대식 업그레이드 5",
+          "zh": "现代升级5",
+          "ja": "近代アップグレード5"
+        },
+        {
           "id": "ModernUpgrade4",
           "en": "Modern Upgrade 4",
           "fr": "Amélioration moderne nv. 4",
@@ -38526,6 +38542,22 @@ export const localeData: LocaleData[] =
           "ja": "近代アップグレード1"
         },
         {
+          "id": "BasicUpgrade5",
+          "en": "Basic Upgrade 5",
+          "fr": "Amélioration basique nv. 5",
+          "es": "Mejora básica 5",
+          "de": "Grundlegendes Upgrade 5",
+          "pt": "Melhoria Básica 5",
+          "it": "Aggiornamento Base 5",
+          "tr": "Temel Geliştirme 5",
+          "pl": "Podstawowe ulepszenie 5",
+          "ru": "Базовое улучшение 5",
+          "uk": "Базове покращення 5",
+          "ko": "기초 업그레이드 5",
+          "zh": "基础升级5",
+          "ja": "基礎アップグレード5"
+        },
+        {
           "id": "BasicUpgrade4",
           "en": "Basic Upgrade 4",
           "fr": "Amélioration basique nv. 4",
@@ -38588,6 +38620,22 @@ export const localeData: LocaleData[] =
           "ko": "기초 업그레이드 1",
           "zh": "基础升级1",
           "ja": "基礎アップグレード1"
+        },
+        {
+          "id": "AdvancedUpgrade5",
+          "en": "Advanced Upgrade 5",
+          "fr": "Amélioration avancée nv. 5",
+          "es": "Mejora avanzada 5",
+          "de": "Fortschrittliches Upgrade 5",
+          "pt": "Melhoria Avançada 5",
+          "it": "Aggiornamento Avanzato 5",
+          "tr": "İleri Seviye Geliştirme 5",
+          "pl": "Zaawansowane ulepszenie 5",
+          "ru": "Продвинутое улучшение 5",
+          "uk": "Просунуте покращення 5",
+          "ko": "고급 업그레이드 5",
+          "zh": "高级升级5",
+          "ja": "Advanced Upgrade 5"
         },
         {
           "id": "AdvancedUpgrade4",

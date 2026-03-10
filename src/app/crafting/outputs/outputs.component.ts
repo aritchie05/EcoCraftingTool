@@ -17,6 +17,7 @@ import {MessageService} from '../../service/message.service';
 import {debounceTime, distinctUntilChanged, Subject} from 'rxjs';
 import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 import {CraftingDataService} from '../../service/crafting-data.service';
+import {LocaleNumberPipe} from '../../pipe/locale-number.pipe';
 
 @Component({
   selector: 'app-outputs',
@@ -26,7 +27,8 @@ import {CraftingDataService} from '../../service/crafting-data.service';
     MatOptionModule,
     MatAutocompleteModule,
     MatExpansionModule,
-    MatIcon
+    MatIcon,
+    LocaleNumberPipe
   ],
   templateUrl: './outputs.component.html',
   styleUrl: './outputs.component.scss',
@@ -114,7 +116,8 @@ export class OutputsComponent {
     this.dialog.open(RecipeDialogComponent, {
       data: {
         recipe: recipe
-      }
+      },
+      autoFocus: false
     });
   }
 
